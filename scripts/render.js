@@ -59,6 +59,7 @@ function normalizeConfig(raw) {
       headlineSize: presetDefault(chosenPreset, 66, chosenPreset === 'linkedin-landscape' ? 58 : 78),
       subheadSize: presetDefault(chosenPreset, 30, chosenPreset === 'linkedin-landscape' ? 28 : 32),
       ctaSize: 24, footerSize: presetDefault(chosenPreset, 18, chosenPreset === 'linkedin-landscape' ? 18 : 21),
+      subheadLineHeight: null,
       footerTracking: 3
     }, raw.typography || {}),
     layout: Object.assign({
@@ -71,6 +72,7 @@ function normalizeConfig(raw) {
       maxSubheadChars: chosenPreset === 'social-portrait' ? 28 : (chosenPreset === 'linkedin-landscape' ? 46 : 42),
       ctaWidth: chosenPreset === 'linkedin-landscape' ? 300 : 274, ctaHeight: 58, ctaRectX: 96,
       ctaRectY: chosenPreset === 'social-portrait' ? 612 : (chosenPreset === 'linkedin-landscape' ? 428 : 522),
+      ctaGroup: null,
       panelX: 80, panelY: chosenPreset === 'social-portrait' ? 110 : 90,
       panelWidth: chosenPreset === 'social-portrait' ? 840 : (chosenPreset === 'linkedin-landscape' ? 700 : 760),
       panelHeight: chosenPreset === 'social-portrait' ? 760 : (chosenPreset === 'linkedin-landscape' ? 390 : 600)
@@ -88,6 +90,25 @@ function normalizeConfig(raw) {
     textLayers: Array.isArray(raw.textLayers) ? raw.textLayers : []
   };
   if (cfg.review.enforcePanelFit && cfg.layout.personality === 'split-card') {
+    const panelPad = 40;
+    const panelLeft = cfg.layout.panelX + panelPad;
+    const panelTop = cfg.layout.panelY + panelPad;
+    const estHeadlineTop = cfg.layout.headlineY - Math.round(cfg.typography.headlineSize * 0.82);
+    if (estHeadlineTop < panelTop) cfg.layout.headlineY += (panelTop - estHeadlineTop);
+    if (cfg.layout.ctaRectX < panelLeft) {
+      const shift = panelLeft - cfg.layout.ctaRectX;
+      cfg.layout.ctaRectX += shift;
+      cfg.layout.ctaX += shift;
+    }
+    if (cfg.layout.leftX < panelLeft) cfg.layout.leftX = panelLeft;
+    const headlineLines = wrapText(cfg.text.headline, cfg.layout.maxHeadlineChars);
+    const subheadLines = wrapText(cfg.text.subhead, cfg.layout.maxSubheadChars);
+    const estHeadlineW = Math.round(Math.max(1, ...headlineLines.map(l => l.length)) * cfg.typography.headlineSize * 0.58);
+    const estSubheadW = Math.round(Math.max(1, ...subheadLines.map(l => l.length)) * cfg.typography.subheadSize * 0.58);
+    const maxTextRight = cfg.layout.leftX + Math.max(estHeadlineW, estSubheadW, cfg.layout.ctaWidth);
+    const requiredWidth = maxTextRight - cfg.layout.panelX + panelPad;
+    const maxPanelWidth = cfg.width - cfg.layout.panelX - 40;
+    if (requiredWidth > cfg.layout.panelWidth) cfg.layout.panelWidth = Math.min(requiredWidth, maxPanelWidth);
     const estimatedPanelBottom = cfg.layout.ctaRectY + cfg.layout.ctaHeight + 40;
     const requiredHeight = estimatedPanelBottom - cfg.layout.panelY;
     if (requiredHeight > cfg.layout.panelHeight) cfg.layout.panelHeight = requiredHeight;
@@ -115,20 +136,57 @@ function buildOverlaySvg(cfg) {
     </svg>`);
 }
 
+function getPrimaryRegion(cfg) {
+  return cfg.layout.personality === 'split-card'
+    ? { left: cfg.layout.panelX, top: cfg.layout.panelY, right: cfg.layout.panelX + cfg.layout.panelWidth, bottom: cfg.layout.panelY + cfg.layout.panelHeight }
+    : { left: 0, top: 0, right: cfg.width, bottom: cfg.height };
+}
+
+function getCtaGeometry(cfg) {
+  const isCentered = cfg.layout.personality === 'centered-hero' || cfg.layout.align === 'center';
+  const group = cfg.layout.ctaGroup;
+  if (group) {
+    const region = group.relativeTo === 'canvas' ? { left: 0, top: 0, right: cfg.width, bottom: cfg.height } : getPrimaryRegion(cfg);
+    const padX = group.offsetX || 0;
+    const padY = group.offsetY || 0;
+    let rectX = region.left + padX;
+    if (group.anchorX === 'center') rectX = Math.round((region.left + region.right - cfg.layout.ctaWidth) / 2) + padX;
+    if (group.anchorX === 'right') rectX = region.right - cfg.layout.ctaWidth - padX;
+    let rectY = region.top + padY;
+    if (group.anchorY === 'middle') rectY = Math.round((region.top + region.bottom - cfg.layout.ctaHeight) / 2) + padY;
+    if (group.anchorY === 'bottom') rectY = region.bottom - cfg.layout.ctaHeight - padY;
+    const textX = rectX + (group.textAlign === 'center' || isCentered ? Math.round(cfg.layout.ctaWidth / 2) : (group.textInsetX || 24));
+    const textY = rectY + Math.round(cfg.layout.ctaHeight / 2) + (group.textOffsetY || 0);
+    return {
+      rectX,
+      rectY,
+      textX,
+      textY,
+      textAnchor: (group.textAlign === 'center' || isCentered) ? 'middle' : ((group.textAlign === 'right') ? 'end' : 'start')
+    };
+  }
+  const rectX = isCentered ? Math.round((cfg.width - cfg.layout.ctaWidth) / 2) : cfg.layout.ctaRectX;
+  return {
+    rectX,
+    rectY: cfg.layout.ctaRectY,
+    textX: isCentered ? Math.round(cfg.width / 2) : cfg.layout.ctaX,
+    textY: cfg.layout.ctaY,
+    textAnchor: isCentered ? 'middle' : 'start'
+  };
+}
+
 function buildPrimaryTextSvg(cfg) {
   const { width, text, layout, theme, typography } = cfg;
   const headlineLines = wrapText(text.headline, layout.maxHeadlineChars);
   const subheadLines = wrapText(text.subhead, layout.maxSubheadChars);
   const headlineStep = cfg.preset === 'social-portrait' ? 82 : (cfg.preset === 'linkedin-landscape' ? 68 : 88);
-  const subheadStep = cfg.preset === 'linkedin-landscape' ? 34 : 40;
+  const subheadStep = cfg.typography.subheadLineHeight || (cfg.preset === 'linkedin-landscape' ? 34 : Math.round(cfg.typography.subheadSize * 1.22));
   const isCentered = layout.personality === 'centered-hero' || layout.align === 'center';
   const headlineAnchor = isCentered ? 'middle' : 'start';
   const headlineX = isCentered ? Math.round(width / 2) : layout.leftX;
   const subheadX = headlineX;
   const footerX = headlineX;
-  const ctaRectX = isCentered ? Math.round((width - layout.ctaWidth) / 2) : layout.ctaRectX;
-  const ctaTextX = isCentered ? Math.round(width / 2) : layout.ctaX;
-  const ctaAnchor = isCentered ? 'middle' : 'start';
+  const cta = getCtaGeometry(cfg);
   const panel = layout.personality === 'split-card'
     ? `<rect x="${layout.panelX}" y="${layout.panelY}" width="${layout.panelWidth}" height="${layout.panelHeight}" rx="36" fill="${theme.textPanelFill}" stroke="${theme.textPanelStroke}" />`
     : '';
@@ -137,10 +195,10 @@ function buildPrimaryTextSvg(cfg) {
   return Buffer.from(`
     <svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg">
       ${panel}
-      <rect x="${ctaRectX}" y="${layout.ctaRectY}" width="${layout.ctaWidth}" height="${layout.ctaHeight}" rx="29" fill="${theme.ctaFill}" stroke="${theme.ctaStroke}" />
+      <rect x="${cta.rectX}" y="${cta.rectY}" width="${layout.ctaWidth}" height="${layout.ctaHeight}" rx="29" fill="${theme.ctaFill}" stroke="${theme.ctaStroke}" />
       <text x="${headlineX}" y="${layout.headlineY}" text-anchor="${headlineAnchor}" fill="${theme.headlineColor}" font-size="${typography.headlineSize}" font-family="${typography.headlineFontFamily}" font-weight="${typography.headlineWeight}">${headlineTspans}</text>
       <text x="${subheadX}" y="${layout.subheadY}" text-anchor="${headlineAnchor}" fill="${theme.subheadColor}" font-size="${typography.subheadSize}" font-family="${typography.bodyFontFamily}" font-weight="${typography.subheadWeight}">${subheadTspans}</text>
-      <text x="${ctaTextX}" y="${layout.ctaY}" text-anchor="${ctaAnchor}" fill="${theme.ctaTextColor}" font-size="${typography.ctaSize}" font-family="${typography.bodyFontFamily}" font-weight="${typography.ctaWeight}">${escapeXml(text.cta)}</text>
+      <text x="${cta.textX}" y="${cta.textY}" text-anchor="${cta.textAnchor}" dominant-baseline="middle" fill="${theme.ctaTextColor}" font-size="${typography.ctaSize}" font-family="${typography.bodyFontFamily}" font-weight="${typography.ctaWeight}">${escapeXml(text.cta)}</text>
       <text x="${footerX}" y="${layout.footerY}" text-anchor="${headlineAnchor}" fill="${theme.footerColor}" font-size="${typography.footerSize}" font-family="${typography.bodyFontFamily}" font-weight="${typography.footerWeight}" letter-spacing="${typography.footerTracking}">${escapeXml(text.footer)}</text>
     </svg>`);
 }
@@ -220,20 +278,19 @@ function runReview(cfg, meta) {
   const failures = [];
   const canvas = { left: 0, top: 0, right: cfg.width, bottom: cfg.height };
   const isCentered = cfg.layout.personality === 'centered-hero' || cfg.layout.align === 'center';
-  const primaryRegion = cfg.layout.personality === 'split-card'
-    ? { left: cfg.layout.panelX, top: cfg.layout.panelY, right: cfg.layout.panelX + cfg.layout.panelWidth, bottom: cfg.layout.panelY + cfg.layout.panelHeight }
-    : canvas;
+  const primaryRegion = getPrimaryRegion(cfg);
 
   const headlineLines = wrapText(cfg.text.headline, cfg.layout.maxHeadlineChars);
   const subheadLines = wrapText(cfg.text.subhead, cfg.layout.maxSubheadChars);
   const headlineStep = cfg.preset === 'social-portrait' ? 82 : (cfg.preset === 'linkedin-landscape' ? 68 : 88);
-  const subheadStep = cfg.preset === 'linkedin-landscape' ? 34 : 40;
+  const subheadStep = cfg.typography.subheadLineHeight || (cfg.preset === 'linkedin-landscape' ? 34 : Math.round(cfg.typography.subheadSize * 1.22));
   const anchor = isCentered ? 'center' : 'left';
   const textX = isCentered ? Math.round(cfg.width / 2) : cfg.layout.leftX;
   const headlineBox = estimateTextBlock({ lines: headlineLines, fontSize: cfg.typography.headlineSize, lineStep: headlineStep, x: textX, y: cfg.layout.headlineY, align: anchor, maxChars: cfg.layout.maxHeadlineChars });
   const subheadBox = estimateTextBlock({ lines: subheadLines, fontSize: cfg.typography.subheadSize, lineStep: subheadStep, x: textX, y: cfg.layout.subheadY, align: anchor, maxChars: cfg.layout.maxSubheadChars });
   const footerBox = estimateTextBlock({ lines: [cfg.text.footer], fontSize: cfg.typography.footerSize, lineStep: cfg.typography.footerSize, x: textX, y: cfg.layout.footerY, align: anchor, maxChars: 60 });
-  const ctaRect = { left: isCentered ? Math.round((cfg.width - cfg.layout.ctaWidth) / 2) : cfg.layout.ctaRectX, top: cfg.layout.ctaRectY, right: (isCentered ? Math.round((cfg.width - cfg.layout.ctaWidth) / 2) : cfg.layout.ctaRectX) + cfg.layout.ctaWidth, bottom: cfg.layout.ctaRectY + cfg.layout.ctaHeight };
+  const ctaGeom = getCtaGeometry(cfg);
+  const ctaRect = { left: ctaGeom.rectX, top: ctaGeom.rectY, right: ctaGeom.rectX + cfg.layout.ctaWidth, bottom: ctaGeom.rectY + cfg.layout.ctaHeight };
 
   const headlineInside = boxInside(headlineBox, primaryRegion, 18);
   checks.push({ name: 'headline-inside-primary-region', pass: headlineInside, box: headlineBox });

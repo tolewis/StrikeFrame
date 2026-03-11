@@ -1,0 +1,99 @@
+{
+  "defaults": {
+    "preset": "linkedin-landscape",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#F5F7FB",
+      "subheadColor": "#D7DDE8",
+      "footerColor": "#AEB9CA",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(21,32,54,0.82)",
+      "ctaStroke": "rgba(132,157,198,0.28)",
+      "gradientStart": "#0A101B",
+      "gradientEnd": "#334A6A",
+      "textPanelFill": "rgba(255,255,255,0.04)",
+      "textPanelStroke": "rgba(255,255,255,0.09)"
+    },
+    "overlay": {
+      "leftColor": "7,11,19",
+      "midColor": "20,30,48",
+      "rightColor": "56,80,112",
+      "leftOpacity": 0.84,
+      "midOpacity": 0.48,
+      "rightOpacity": 0.18
+    },
+    "typography": {
+      "headlineFontFamily": "Outfit, Arial, sans-serif",
+      "bodyFontFamily": "Source Serif 4, Georgia, serif",
+      "headlineSize": 54,
+      "subheadSize": 25
+    },
+    "layout": {
+      "personality": "split-card",
+      "panelWidth": 720,
+      "panelHeight": 390
+    }
+  },
+  "renders": [
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/approved/source-grade-backgrounds/contractor-ai-sourcegrade-05.jpg",
+      "output": "output/waterfall/2026-03-10_linkedin_harper-short-1_ego.jpg",
+      "text": {
+        "headline": "Ego Is the Most Expensive Material",
+        "subhead": "It never shows up on a takeoff. But it drives every cost overrun you never saw coming.",
+        "cta": "CONTRACTOR-AI.COM",
+        "footer": "CONTRACTOR-AI \u00b7 LEADERSHIP"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/approved/source-grade-backgrounds/contractor-ai-sourcegrade-03.jpg",
+      "output": "output/waterfall/2026-03-11_linkedin_harper-short-2_bottleneck.jpg",
+      "text": {
+        "headline": "Two Weeks to Answer a Question",
+        "subhead": "The bottleneck on every project isn't labor. It's the speed of information.",
+        "cta": "CONTRACTOR-AI.COM",
+        "footer": "CONTRACTOR-AI \u00b7 LEADERSHIP"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/library/04-technology/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg",
+      "output": "output/waterfall/2026-03-12_linkedin_rfi-long_45-to-5.jpg",
+      "text": {
+        "headline": "From 45 Minutes to 5",
+        "subhead": "Every RFI costs $1,000 in PM labor. We built a system that writes them in five.",
+        "cta": "TRY RFI.MSG",
+        "footer": "CONTRACTOR-AI \u00b7 RFI AUTOMATION"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/library/04-technology/andras-vas-Bd7gNnWJBkU-unsplash.jpg",
+      "output": "output/waterfall/2026-03-17_linkedin_rfi-short-1_disappears.jpg",
+      "text": {
+        "headline": "One in Five RFIs Disappears",
+        "subhead": "That's not a communication problem. That's a construction problem.",
+        "cta": "CONTRACTOR-AI.COM",
+        "footer": "CONTRACTOR-AI \u00b7 RFI INSIGHTS"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/library/03-leadership/austin-distel-mpN7xjKQ_Ns-unsplash.jpg",
+      "output": "output/waterfall/2026-03-18_linkedin_harper-short-3_procore.jpg",
+      "text": {
+        "headline": "Procore Doesn't Fix Dysfunction",
+        "subhead": "It documents it in real time. Most companies spend $50K making their problems searchable.",
+        "cta": "CONTRACTOR-AI.COM",
+        "footer": "CONTRACTOR-AI \u00b7 LEADERSHIP"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/approved/source-grade-backgrounds/contractor-ai-sourcegrade-01.jpg",
+      "output": "output/waterfall/2026-03-19_linkedin_bid-day-long_100-bids.jpg",
+      "text": {
+        "headline": "100 Bids. Five Lessons.",
+        "subhead": "A mechanical sub hid an exclusion in the fine print. We won the job. We carried the cost.",
+        "cta": "CONTRACTOR-AI.COM",
+        "footer": "CONTRACTOR-AI \u00b7 BID DAY"
+      }
+    }
+  ]
+}
