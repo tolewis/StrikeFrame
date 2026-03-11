@@ -37,7 +37,7 @@ That gap caused:
 - Typography system controls
 - Button style controls
 - Layout personalities
-- Brand-aware framework presets
+- Brand-aware framework presets (TackleRoomSupply, Contractor-AI, Unhook Outdoors examples)
 - Sample outputs generated from saved stock images
 - Agent skill for reuse (`media-renderer`)
 - Waterfall system integration docs

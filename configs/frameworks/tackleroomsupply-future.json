@@ -1,0 +1,42 @@
+{
+  "preset": "landscape-banner",
+  "template": "banner",
+  "output": "examples/frameworks/tackleroomsupply-future.jpg",
+  "text": {
+    "headline": "Saltwater Content, Cleaner Future Aesthetic",
+    "subhead": "Editorial fishing energy with brighter depth, better hierarchy, and premium modern restraint.",
+    "cta": "EXPLORE THE DROP",
+    "footer": "STRIKEFRAME \u00b7 TACKLEROOMSUPPLY FUTURE"
+  },
+  "theme": {
+    "headlineColor": "#F7FBFF",
+    "subheadColor": "#D9E8F5",
+    "footerColor": "#B8CDE0",
+    "ctaTextColor": "#F7FBFF",
+    "ctaFill": "rgba(56,113,255,0.86)",
+    "ctaStroke": "rgba(153,193,255,0.34)",
+    "gradientStart": "#0A1624",
+    "gradientEnd": "#225B8F",
+    "textPanelFill": "rgba(255,255,255,0.05)",
+    "textPanelStroke": "rgba(255,255,255,0.12)"
+  },
+  "overlay": {
+    "leftColor": "8,18,31",
+    "midColor": "15,40,68",
+    "rightColor": "37,101,155",
+    "leftOpacity": 0.84,
+    "midOpacity": 0.44,
+    "rightOpacity": 0.16
+  },
+  "typography": {
+    "headlineFontFamily": "Outfit, Arial, sans-serif",
+    "bodyFontFamily": "Source Serif 4, Georgia, serif",
+    "headlineSize": 76,
+    "subheadSize": 31
+  },
+  "layout": {
+    "personality": "split-card",
+    "panelWidth": 760,
+    "panelHeight": 600
+  }
+}

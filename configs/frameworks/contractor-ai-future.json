@@ -1,0 +1,42 @@
+{
+  "preset": "linkedin-landscape",
+  "template": "banner",
+  "output": "examples/frameworks/contractor-ai-future.jpg",
+  "text": {
+    "headline": "AI For the People Who Build Things",
+    "subhead": "Tighter, sharper, more credible system styling for serious operator-facing software marketing.",
+    "cta": "SEE THE SYSTEM",
+    "footer": "STRIKEFRAME \u00b7 CONTRACTOR-AI FUTURE"
+  },
+  "theme": {
+    "headlineColor": "#F8FAFC",
+    "subheadColor": "#D5DEE8",
+    "footerColor": "#B0C0D0",
+    "ctaTextColor": "#0C1520",
+    "ctaFill": "rgba(217,244,255,0.92)",
+    "ctaStroke": "rgba(168,214,234,0.34)",
+    "gradientStart": "#0C1520",
+    "gradientEnd": "#2C495E",
+    "textPanelFill": "rgba(255,255,255,0.04)",
+    "textPanelStroke": "rgba(255,255,255,0.10)"
+  },
+  "overlay": {
+    "leftColor": "10,17,25",
+    "midColor": "19,33,47",
+    "rightColor": "52,84,104",
+    "leftOpacity": 0.86,
+    "midOpacity": 0.46,
+    "rightOpacity": 0.18
+  },
+  "typography": {
+    "headlineFontFamily": "Outfit, Arial, sans-serif",
+    "bodyFontFamily": "Source Serif 4, Georgia, serif",
+    "headlineSize": 58,
+    "subheadSize": 26
+  },
+  "layout": {
+    "personality": "split-card",
+    "panelWidth": 720,
+    "panelHeight": 390
+  }
+}

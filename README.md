@@ -26,9 +26,12 @@ without demanding a full marketing brief every time.
 ## Brand-aware default
 If a brand/site already exists, take a quick look at it and match the spirit — then modernize it.
 
-Example:
-- `thetackleroom.com` uses a light neutral base, **Montserrat** headings, **Source Sans Pro** body copy, and a strong cobalt CTA.
-- StrikeFrame can borrow that language, clean it up, and push it into a more modern campaign look without cloning the site 1:1.
+Examples:
+- `tackleroomsupply.com` → editorial outdoor/fishing palette, premium but still commercial
+- `contractor-ai.com` → restrained operator-tech palette, credible and sharp
+- `unhookoutdoors.com` → cleaner outdoor lifestyle direction with fresher energy
+
+StrikeFrame should borrow the language, then modernize it — not clone the site 1:1.
 
 ## Presets
 - `landscape-banner`
@@ -44,10 +47,20 @@ Example:
 ## Design frameworks
 These are starting systems, not handcuffs.
 
-### TackleRoom Modern
-Inspired by The Tackle Room, but tightened up and modernized.
+### TackleRoomSupply Future
+Built off the newer TackleRoomSupply direction: cleaner, brighter, more premium, less dated.
 
-![tackleroom-modern](./examples/frameworks/tackleroom-modern.jpg)
+![tackleroomsupply-future](./examples/frameworks/tackleroomsupply-future.jpg)
+
+### Contractor-AI Future
+Sharper operator-tech styling for serious software, analytics, and industrial AI marketing.
+
+![contractor-ai-future](./examples/frameworks/contractor-ai-future.jpg)
+
+### Unhook Outdoors Future
+Outdoor-lifestyle system with cleaner energy and a more modern adventure aesthetic.
+
+![unhookoutdoors-future](./examples/frameworks/unhookoutdoors-future.jpg)
 
 ### Editorial Premium
 Warmer, more refined, more story-driven.
@@ -107,7 +120,9 @@ These show the same core layout with different modern palette directions.
 - `node scripts/render.js configs/sample-linkedin-landscape.json`
 
 ### Frameworks
-- `node scripts/render.js configs/frameworks/tackleroom-modern.json`
+- `node scripts/render.js configs/frameworks/tackleroomsupply-future.json`
+- `node scripts/render.js configs/frameworks/contractor-ai-future.json`
+- `node scripts/render.js configs/frameworks/unhookoutdoors-future.json`
 - `node scripts/render.js configs/frameworks/editorial-premium.json`
 - `node scripts/render.js configs/frameworks/punchy-social.json`
 - `node scripts/render.js configs/frameworks/linkedin-clean.json`

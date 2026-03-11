@@ -1,0 +1,47 @@
+{
+  "preset": "social-square",
+  "template": "banner",
+  "output": "examples/frameworks/unhookoutdoors-future.jpg",
+  "text": {
+    "headline": "Get Outside. Stay Outside.",
+    "subhead": "Outdoor lifestyle creative with cleaner rhythm, softer luxury, and more modern motion.",
+    "cta": "CHASE THE WATER",
+    "footer": "STRIKEFRAME \u00b7 UNHOOK FUTURE"
+  },
+  "theme": {
+    "headlineColor": "#F8FFF8",
+    "subheadColor": "#DCEEDB",
+    "footerColor": "#B9D4B8",
+    "ctaTextColor": "#0E2318",
+    "ctaFill": "rgba(181,245,184,0.92)",
+    "ctaStroke": "rgba(233,255,234,0.26)",
+    "gradientStart": "#10251A",
+    "gradientEnd": "#4B8C57"
+  },
+  "overlay": {
+    "leftColor": "12,29,20",
+    "midColor": "24,67,38",
+    "rightColor": "75,140,87",
+    "leftOpacity": 0.8,
+    "midOpacity": 0.4,
+    "rightOpacity": 0.16
+  },
+  "typography": {
+    "headlineFontFamily": "Outfit, Arial, sans-serif",
+    "bodyFontFamily": "Source Serif 4, Georgia, serif",
+    "headlineSize": 70,
+    "subheadSize": 28
+  },
+  "layout": {
+    "personality": "centered-hero",
+    "align": "center",
+    "maxHeadlineChars": 14,
+    "maxSubheadChars": 24,
+    "headlineY": 180,
+    "subheadY": 470,
+    "ctaRectY": 660,
+    "ctaY": 698,
+    "footerY": 1000,
+    "ctaWidth": 310
+  }
+}
