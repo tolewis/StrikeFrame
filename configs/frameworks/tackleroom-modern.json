@@ -1,0 +1,43 @@
+{
+  "preset": "landscape-banner",
+  "template": "banner",
+  "output": "examples/frameworks/tackleroom-modern.jpg",
+  "text": {
+    "headline": "Premium Saltwater Gear, Cleaner Creative",
+    "subhead": "TackleRoom-inspired styling with stronger hierarchy, modern spacing, and clean CTA treatment.",
+    "cta": "SHOP THE LINEUP",
+    "footer": "STRIKEFRAME \u00b7 TACKLEROOM MODERN"
+  },
+  "theme": {
+    "headlineColor": "#F7F7F5",
+    "subheadColor": "#E2E6EE",
+    "footerColor": "#C9D2E1",
+    "ctaTextColor": "#FFFFFF",
+    "ctaFill": "rgba(0,30,195,0.90)",
+    "ctaStroke": "rgba(113,143,255,0.55)",
+    "gradientStart": "#0B172A",
+    "gradientEnd": "#204B84",
+    "textPanelFill": "rgba(255,255,255,0.06)",
+    "textPanelStroke": "rgba(255,255,255,0.14)"
+  },
+  "overlay": {
+    "leftColor": "9,18,33",
+    "midColor": "17,36,69",
+    "rightColor": "32,75,132",
+    "leftOpacity": 0.84,
+    "midOpacity": 0.48,
+    "rightOpacity": 0.18
+  },
+  "typography": {
+    "headlineFontFamily": "Montserrat, Arial, sans-serif",
+    "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+    "headlineWeight": 700,
+    "subheadWeight": 400,
+    "footerWeight": 600
+  },
+  "layout": {
+    "personality": "split-card",
+    "panelWidth": 760,
+    "panelHeight": 600
+  }
+}

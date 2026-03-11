@@ -1,6 +1,6 @@
 # PRD — StrikeFrame
 
-**Version:** v0.2.0  
+**Version:** v0.3.0  
 **Status:** SHIPPED (early MVP)  
 **Date:** 2026-03-10
 
@@ -34,6 +34,10 @@ That gap caused:
 - Preset export sizes
 - Banner template
 - Product-composite template scaffold
+- Typography system controls
+- Button style controls
+- Layout personalities
+- Brand-aware framework presets
 - Sample outputs generated from saved stock images
 - Agent skill for reuse (`media-renderer`)
 - Waterfall system integration docs

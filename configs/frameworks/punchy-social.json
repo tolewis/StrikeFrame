@@ -1,0 +1,47 @@
+{
+  "preset": "social-square",
+  "template": "banner",
+  "output": "examples/frameworks/punchy-social.jpg",
+  "text": {
+    "headline": "Bold Social Creative",
+    "subhead": "Centered hierarchy, high contrast, and clean buttons for sharp promo moments.",
+    "cta": "MAKE IT POP",
+    "footer": "STRIKEFRAME \u00b7 PUNCHY SOCIAL"
+  },
+  "theme": {
+    "headlineColor": "#FFFFFF",
+    "subheadColor": "#DDF7F8",
+    "footerColor": "#B7DADC",
+    "ctaTextColor": "#041C20",
+    "ctaFill": "rgba(168,255,232,0.92)",
+    "ctaStroke": "rgba(255,255,255,0.26)",
+    "gradientStart": "#09252D",
+    "gradientEnd": "#0D7B7A"
+  },
+  "overlay": {
+    "leftColor": "6,28,33",
+    "midColor": "8,72,73",
+    "rightColor": "23,152,143",
+    "leftOpacity": 0.74,
+    "midOpacity": 0.38,
+    "rightOpacity": 0.14
+  },
+  "typography": {
+    "headlineFontFamily": "Montserrat, Arial, sans-serif",
+    "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+    "headlineSize": 72,
+    "subheadSize": 28
+  },
+  "layout": {
+    "personality": "centered-hero",
+    "align": "center",
+    "maxHeadlineChars": 14,
+    "maxSubheadChars": 24,
+    "headlineY": 180,
+    "subheadY": 470,
+    "ctaRectY": 660,
+    "ctaY": 698,
+    "footerY": 1000,
+    "ctaWidth": 290
+  }
+}

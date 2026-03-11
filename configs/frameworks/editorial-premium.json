@@ -1,0 +1,41 @@
+{
+  "preset": "landscape-banner",
+  "template": "banner",
+  "output": "examples/frameworks/editorial-premium.jpg",
+  "text": {
+    "headline": "Editorial Premium Gives You Breathing Room",
+    "subhead": "More elegant typography, warm contrast, and high-end presentation for thoughtful marketing assets.",
+    "cta": "READ THE STORY",
+    "footer": "STRIKEFRAME \u00b7 EDITORIAL PREMIUM"
+  },
+  "theme": {
+    "headlineColor": "#FFF8F0",
+    "subheadColor": "#F1E2D0",
+    "footerColor": "#D6BEA2",
+    "ctaTextColor": "#FFF8F0",
+    "ctaFill": "rgba(132,84,48,0.68)",
+    "ctaStroke": "rgba(243,214,180,0.32)",
+    "gradientStart": "#3D261B",
+    "gradientEnd": "#B9875C",
+    "textPanelFill": "rgba(255,248,240,0.08)",
+    "textPanelStroke": "rgba(255,236,216,0.16)"
+  },
+  "overlay": {
+    "leftColor": "38,21,16",
+    "midColor": "78,48,33",
+    "rightColor": "171,119,80",
+    "leftOpacity": 0.76,
+    "midOpacity": 0.34,
+    "rightOpacity": 0.1
+  },
+  "typography": {
+    "headlineFontFamily": "Georgia, Times New Roman, serif",
+    "bodyFontFamily": "Arial, Helvetica, sans-serif",
+    "headlineWeight": 700,
+    "headlineSize": 74,
+    "subheadSize": 31
+  },
+  "layout": {
+    "personality": "editorial-left"
+  }
+}

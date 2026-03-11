@@ -52,23 +52,37 @@ function wrapText(text, maxChars) {
   return lines;
 }
 
+function presetDefault(preset, portraitValue, defaultValue) {
+  return preset === 'social-portrait' ? portraitValue : defaultValue;
+}
+
 function normalizeConfig(raw) {
   const preset = PRESETS[raw.preset || 'landscape-banner'];
   if (!preset) throw new Error(`Unknown preset: ${raw.preset}`);
+  const chosenPreset = raw.preset || 'landscape-banner';
+
   return {
-    preset: raw.preset || 'landscape-banner',
+    preset: chosenPreset,
     template: raw.template || 'banner',
     width: raw.width || preset.width,
     height: raw.height || preset.height,
     output: path.isAbsolute(raw.output) ? raw.output : path.join(projectRoot, raw.output || 'output/render.jpg'),
     backgroundPath: raw.backgroundPath,
     productPath: raw.productPath || null,
-    overlay: Object.assign({ leftOpacity: 0.78, midOpacity: 0.42, rightOpacity: 0.18, vignetteBottom: 0.30, leftColor: '5,14,24', midColor: '5,14,24', rightColor: '5,14,24' }, raw.overlay || {}),
+    overlay: Object.assign({
+      leftOpacity: 0.78,
+      midOpacity: 0.42,
+      rightOpacity: 0.18,
+      vignetteBottom: 0.30,
+      leftColor: '5,14,24',
+      midColor: '5,14,24',
+      rightColor: '5,14,24'
+    }, raw.overlay || {}),
     text: Object.assign({
       headline: 'Headline goes here',
       subhead: 'Subhead goes here',
       cta: 'LEARN MORE',
-      footer: 'MEDIA RENDERER MVP'
+      footer: 'STRIKEFRAME'
     }, raw.text || {}),
     theme: Object.assign({
       headlineColor: '#ffffff',
@@ -83,34 +97,57 @@ function normalizeConfig(raw) {
       badgeStroke: 'rgba(255,255,255,0.24)',
       badgeTextColor: '#ffffff',
       productCircleFill: 'rgba(255,255,255,0.94)',
-      productShadowColor: '0,0,0'
+      productShadowColor: '0,0,0',
+      textPanelFill: 'rgba(255,255,255,0.08)',
+      textPanelStroke: 'rgba(255,255,255,0.16)'
     }, raw.theme || {}),
+    typography: Object.assign({
+      headlineFontFamily: 'Montserrat, Arial, sans-serif',
+      bodyFontFamily: 'Source Sans Pro, Arial, sans-serif',
+      headlineWeight: 700,
+      subheadWeight: 400,
+      ctaWeight: 700,
+      footerWeight: 600,
+      headlineSize: presetDefault(chosenPreset, 66, chosenPreset === 'linkedin-landscape' ? 58 : 78),
+      subheadSize: presetDefault(chosenPreset, 30, chosenPreset === 'linkedin-landscape' ? 28 : 32),
+      ctaSize: 24,
+      footerSize: presetDefault(chosenPreset, 18, chosenPreset === 'linkedin-landscape' ? 18 : 21),
+      headlineTracking: 0,
+      footerTracking: 3
+    }, raw.typography || {}),
     layout: Object.assign({
+      personality: 'editorial-left',
+      align: 'left',
       leftX: 120,
-      headlineY: raw.preset === 'social-portrait' ? 180 : 168,
-      subheadY: raw.preset === 'social-portrait' ? 470 : 392,
+      headlineY: chosenPreset === 'social-portrait' ? 180 : (chosenPreset === 'linkedin-landscape' ? 140 : 168),
+      subheadY: chosenPreset === 'social-portrait' ? 470 : (chosenPreset === 'linkedin-landscape' ? 320 : 392),
       ctaX: 132,
-      ctaY: raw.preset === 'social-portrait' ? 650 : 560,
-      footerY: raw.preset === 'social-portrait' ? preset.height - 84 : preset.height - 88,
-      maxHeadlineChars: raw.preset === 'social-portrait' ? 18 : 22,
-      maxSubheadChars: raw.preset === 'social-portrait' ? 28 : 42,
-      ctaWidth: 274,
+      ctaY: chosenPreset === 'social-portrait' ? 650 : (chosenPreset === 'linkedin-landscape' ? 466 : 560),
+      footerY: chosenPreset === 'social-portrait' ? preset.height - 84 : (chosenPreset === 'linkedin-landscape' ? 565 : preset.height - 88),
+      maxHeadlineChars: chosenPreset === 'social-portrait' ? 18 : (chosenPreset === 'linkedin-landscape' ? 24 : 22),
+      maxSubheadChars: chosenPreset === 'social-portrait' ? 28 : (chosenPreset === 'linkedin-landscape' ? 46 : 42),
+      ctaWidth: chosenPreset === 'linkedin-landscape' ? 300 : 274,
       ctaHeight: 58,
       ctaRectX: 96,
-      ctaRectY: raw.preset === 'social-portrait' ? 612 : 522
+      ctaRectY: chosenPreset === 'social-portrait' ? 612 : (chosenPreset === 'linkedin-landscape' ? 428 : 522),
+      panelX: 80,
+      panelY: chosenPreset === 'social-portrait' ? 110 : 90,
+      panelWidth: chosenPreset === 'social-portrait' ? 840 : (chosenPreset === 'linkedin-landscape' ? 700 : 760),
+      panelHeight: chosenPreset === 'social-portrait' ? 760 : (chosenPreset === 'linkedin-landscape' ? 390 : 600),
+      centerWidth: chosenPreset === 'social-portrait' ? 820 : 1100
     }, raw.layout || {}),
     productComposite: Object.assign({
       enabled: raw.template === 'product-composite',
-      circleDiameter: raw.preset === 'social-portrait' ? 360 : 300,
-      circleX: raw.preset === 'social-portrait' ? preset.width - 420 : preset.width - 380,
-      circleY: raw.preset === 'social-portrait' ? 260 : 180,
+      circleDiameter: chosenPreset === 'social-portrait' ? 360 : 300,
+      circleX: chosenPreset === 'social-portrait' ? preset.width - 420 : preset.width - 380,
+      circleY: chosenPreset === 'social-portrait' ? 260 : 180,
       shadowOpacity: 0.16,
-      productWidth: raw.preset === 'social-portrait' ? 260 : 230,
+      productWidth: chosenPreset === 'social-portrait' ? 260 : 230,
       productOffsetX: 35,
       productOffsetY: 35,
       badgeText: 'PRODUCT',
-      badgeX: raw.preset === 'social-portrait' ? preset.width - 360 : preset.width - 330,
-      badgeY: raw.preset === 'social-portrait' ? 180 : 120
+      badgeX: chosenPreset === 'social-portrait' ? preset.width - 360 : preset.width - 330,
+      badgeY: chosenPreset === 'social-portrait' ? 180 : 120
     }, raw.productComposite || {})
   };
 }
@@ -136,28 +173,48 @@ function buildOverlaySvg(cfg) {
 }
 
 function buildTextSvg(cfg) {
-  const { width, height, text, layout, theme } = cfg;
+  const { width, height, text, layout, theme, typography } = cfg;
   const headlineLines = wrapText(text.headline, layout.maxHeadlineChars);
   const subheadLines = wrapText(text.subhead, layout.maxSubheadChars);
-  const headlineStep = cfg.preset === 'social-portrait' ? 82 : 88;
-  const subheadStep = 40;
-  const headlineFont = cfg.preset === 'social-portrait' ? 66 : 78;
-  const subheadFont = cfg.preset === 'social-portrait' ? 30 : 32;
-  const footerFont = cfg.preset === 'social-portrait' ? 18 : 21;
-  const headlineTspans = headlineLines.map((line, i) => `<tspan x="${layout.leftX}" dy="${i === 0 ? 0 : headlineStep}">${escapeXml(line)}</tspan>`).join('');
-  const subheadTspans = subheadLines.map((line, i) => `<tspan x="${layout.leftX}" dy="${i === 0 ? 0 : subheadStep}">${escapeXml(line)}</tspan>`).join('');
+  const headlineStep = cfg.preset === 'social-portrait' ? 82 : (cfg.preset === 'linkedin-landscape' ? 68 : 88);
+  const subheadStep = cfg.preset === 'linkedin-landscape' ? 34 : 40;
+
+  const isCentered = layout.personality === 'centered-hero' || layout.align === 'center';
+  const headlineAnchor = isCentered ? 'middle' : 'start';
+  const subheadAnchor = isCentered ? 'middle' : 'start';
+  const footerAnchor = isCentered ? 'middle' : 'start';
+  const ctaCenterX = isCentered ? Math.round(width / 2) : null;
+  const headlineX = isCentered ? Math.round(width / 2) : layout.leftX;
+  const subheadX = isCentered ? Math.round(width / 2) : layout.leftX;
+  const footerX = isCentered ? Math.round(width / 2) : layout.leftX;
+  const ctaRectX = isCentered ? Math.round((width - layout.ctaWidth) / 2) : layout.ctaRectX;
+  const ctaTextX = isCentered ? ctaCenterX : layout.ctaX;
+  const ctaAnchor = isCentered ? 'middle' : 'start';
+
+  const headlineTspans = headlineLines
+    .map((line, i) => `<tspan x="${headlineX}" dy="${i === 0 ? 0 : headlineStep}">${escapeXml(line)}</tspan>`)
+    .join('');
+  const subheadTspans = subheadLines
+    .map((line, i) => `<tspan x="${subheadX}" dy="${i === 0 ? 0 : subheadStep}">${escapeXml(line)}</tspan>`)
+    .join('');
+
+  const panel = layout.personality === 'split-card'
+    ? `<rect x="${layout.panelX}" y="${layout.panelY}" width="${layout.panelWidth}" height="${layout.panelHeight}" rx="36" fill="${theme.textPanelFill}" stroke="${theme.textPanelStroke}" />`
+    : '';
+
   return Buffer.from(`
     <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
-      <rect x="${layout.ctaRectX}" y="${layout.ctaRectY}" width="${layout.ctaWidth}" height="${layout.ctaHeight}" rx="29" fill="${theme.ctaFill}" stroke="${theme.ctaStroke}" />
-      <text x="${layout.leftX}" y="${layout.headlineY}" fill="${theme.headlineColor}" font-size="${headlineFont}" font-family="Arial, Helvetica, sans-serif" font-weight="700">${headlineTspans}</text>
-      <text x="${layout.leftX}" y="${layout.subheadY}" fill="${theme.subheadColor}" font-size="${subheadFont}" font-family="Arial, Helvetica, sans-serif" font-weight="400">${subheadTspans}</text>
-      <text x="${layout.ctaX}" y="${layout.ctaY}" fill="${theme.ctaTextColor}" font-size="24" font-family="Arial, Helvetica, sans-serif" font-weight="700">${escapeXml(text.cta)}</text>
-      <text x="${layout.leftX}" y="${layout.footerY}" fill="${theme.footerColor}" font-size="${footerFont}" font-family="Arial, Helvetica, sans-serif" letter-spacing="3">${escapeXml(text.footer)}</text>
+      ${panel}
+      <rect x="${ctaRectX}" y="${layout.ctaRectY}" width="${layout.ctaWidth}" height="${layout.ctaHeight}" rx="29" fill="${theme.ctaFill}" stroke="${theme.ctaStroke}" />
+      <text x="${headlineX}" y="${layout.headlineY}" text-anchor="${headlineAnchor}" fill="${theme.headlineColor}" font-size="${typography.headlineSize}" font-family="${typography.headlineFontFamily}" font-weight="${typography.headlineWeight}">${headlineTspans}</text>
+      <text x="${subheadX}" y="${layout.subheadY}" text-anchor="${subheadAnchor}" fill="${theme.subheadColor}" font-size="${typography.subheadSize}" font-family="${typography.bodyFontFamily}" font-weight="${typography.subheadWeight}">${subheadTspans}</text>
+      <text x="${ctaTextX}" y="${layout.ctaY}" text-anchor="${ctaAnchor}" fill="${theme.ctaTextColor}" font-size="${typography.ctaSize}" font-family="${typography.bodyFontFamily}" font-weight="${typography.ctaWeight}">${escapeXml(text.cta)}</text>
+      <text x="${footerX}" y="${layout.footerY}" text-anchor="${footerAnchor}" fill="${theme.footerColor}" font-size="${typography.footerSize}" font-family="${typography.bodyFontFamily}" font-weight="${typography.footerWeight}" letter-spacing="${typography.footerTracking}">${escapeXml(text.footer)}</text>
     </svg>`);
 }
 
 function buildCompositeSvg(cfg) {
-  const { width, height, productComposite, theme } = cfg;
+  const { width, height, productComposite, theme, typography } = cfg;
   if (!productComposite.enabled) return null;
   const d = productComposite.circleDiameter;
   return Buffer.from(`
@@ -165,7 +222,7 @@ function buildCompositeSvg(cfg) {
       <circle cx="${productComposite.circleX + d / 2}" cy="${productComposite.circleY + d / 2 + 20}" r="${d / 2}" fill="rgba(${theme.productShadowColor},${productComposite.shadowOpacity})" />
       <circle cx="${productComposite.circleX + d / 2}" cy="${productComposite.circleY + d / 2}" r="${d / 2}" fill="${theme.productCircleFill}" />
       <rect x="${productComposite.badgeX}" y="${productComposite.badgeY}" width="170" height="42" rx="21" fill="${theme.badgeFill}" stroke="${theme.badgeStroke}" />
-      <text x="${productComposite.badgeX + 24}" y="${productComposite.badgeY + 28}" fill="${theme.badgeTextColor}" font-size="20" font-family="Arial, Helvetica, sans-serif" font-weight="700">${escapeXml(productComposite.badgeText)}</text>
+      <text x="${productComposite.badgeX + 24}" y="${productComposite.badgeY + 28}" fill="${theme.badgeTextColor}" font-size="20" font-family="${typography.bodyFontFamily}" font-weight="700">${escapeXml(productComposite.badgeText)}</text>
     </svg>`);
 }
 
@@ -226,7 +283,7 @@ async function main() {
     .toFile(cfg.output);
 
   const meta = await sharp(cfg.output).metadata();
-  console.log(JSON.stringify({ output: cfg.output, width: meta.width, height: meta.height, preset: cfg.preset, template: cfg.template }, null, 2));
+  console.log(JSON.stringify({ output: cfg.output, width: meta.width, height: meta.height, preset: cfg.preset, template: cfg.template, personality: cfg.layout.personality }, null, 2));
 }
 
 main().catch((err) => {

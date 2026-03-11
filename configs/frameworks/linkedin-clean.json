@@ -1,0 +1,34 @@
+{
+  "preset": "linkedin-landscape",
+  "template": "banner",
+  "output": "examples/frameworks/linkedin-clean.jpg",
+  "text": {
+    "headline": "Clean LinkedIn Creative Still Sells",
+    "subhead": "Professional, restrained, and readable without looking like a corporate coma slide.",
+    "cta": "SHIP THE POST",
+    "footer": "STRIKEFRAME \u00b7 LINKEDIN CLEAN"
+  },
+  "theme": {
+    "headlineColor": "#F9FAFC",
+    "subheadColor": "#DCE4EE",
+    "footerColor": "#B5C2D3",
+    "ctaTextColor": "#FFFFFF",
+    "ctaFill": "rgba(32,95,171,0.84)",
+    "ctaStroke": "rgba(129,177,231,0.28)",
+    "gradientStart": "#14283B",
+    "gradientEnd": "#2F6288",
+    "textPanelFill": "rgba(255,255,255,0.04)",
+    "textPanelStroke": "rgba(255,255,255,0.10)"
+  },
+  "typography": {
+    "headlineFontFamily": "Montserrat, Arial, sans-serif",
+    "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+    "headlineSize": 56,
+    "subheadSize": 26
+  },
+  "layout": {
+    "personality": "split-card",
+    "panelWidth": 720,
+    "panelHeight": 390
+  }
+}
