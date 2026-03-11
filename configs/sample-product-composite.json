@@ -1,0 +1,15 @@
+{
+  "preset": "social-portrait",
+  "template": "product-composite",
+  "output": "output/sample-product-composite.jpg",
+  "text": {
+    "headline": "Launch Creative Faster.",
+    "subhead": "Use a lifestyle background, product plate, and CTA without a design tool bottleneck.",
+    "cta": "BUILD THE ASSET",
+    "footer": "STRIKEFRAME \u00b7 PRODUCT COMPOSITE MVP"
+  },
+  "productComposite": {
+    "enabled": true,
+    "badgeText": "PRODUCT SPOTLIGHT"
+  }
+}

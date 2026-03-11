@@ -1,0 +1,11 @@
+{
+  "preset": "landscape-banner",
+  "template": "banner",
+  "output": "output/sample-banner.jpg",
+  "text": {
+    "headline": "Turn One Story Into More Content",
+    "subhead": "Generate repeatable banner graphics locally with no Canva dependency.",
+    "cta": "TRY STRIKEFRAME",
+    "footer": "STRIKEFRAME \u00b7 LOCAL RENDERER V0.2"
+  }
+}

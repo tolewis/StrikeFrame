@@ -1,0 +1,14 @@
+{
+  "name": "strikeframe",
+  "version": "0.2.0",
+  "private": false,
+  "description": "Local renderer for banners, social graphics, and simple product composites",
+  "scripts": {
+    "generate": "node scripts/render.js configs/sample-banner.json",
+    "generate:banner": "node scripts/render.js configs/sample-banner.json",
+    "generate:product": "node scripts/render.js configs/sample-product-composite.json"
+  },
+  "dependencies": {
+    "sharp": "^0.33.5"
+  }
+}
