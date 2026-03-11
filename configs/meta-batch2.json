@@ -1,0 +1,179 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#F8FBFF",
+      "subheadColor": "#D8E4EF",
+      "footerColor": "#BCD0E4",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(34,88,170,0.88)",
+      "ctaStroke": "rgba(145,184,242,0.40)",
+      "gradientStart": "#0B1B2B",
+      "gradientEnd": "#2D5C8F",
+      "textPanelFill": "rgba(255,255,255,0.05)",
+      "textPanelStroke": "rgba(255,255,255,0.12)"
+    },
+    "overlay": {
+      "leftColor": "9,19,31",
+      "midColor": "20,48,79",
+      "rightColor": "44,94,141",
+      "leftOpacity": 0.82,
+      "midOpacity": 0.46,
+      "rightOpacity": 0.16
+    },
+    "typography": {
+      "headlineFontFamily": "Outfit, Arial, sans-serif",
+      "bodyFontFamily": "Source Serif 4, Georgia, serif",
+      "headlineSize": 64,
+      "subheadSize": 24,
+      "headlineWeight": 700,
+      "subheadWeight": 400,
+      "ctaSize": 22,
+      "footerSize": 16,
+      "footerTracking": 3
+    },
+    "layout": {
+      "personality": "split-card",
+      "align": "left",
+      "leftX": 120,
+      "maxHeadlineChars": 16,
+      "maxSubheadChars": 30,
+      "headlineY": 220,
+      "subheadY": 520,
+      "ctaRectX": 120,
+      "ctaRectY": 680,
+      "ctaX": 156,
+      "ctaY": 718,
+      "footerY": 990,
+      "ctaWidth": 260,
+      "ctaHeight": 54,
+      "panelX": 60,
+      "panelY": 100,
+      "panelWidth": 680,
+      "panelHeight": 680
+    }
+  },
+  "renders": [
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-batch2/lead-collection-01-weight-kit.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/01.jpg",
+      "text": {
+        "headline": "Build Your Weight Kit",
+        "subhead": "3-5 weight sizes per technique. Deep drop, trolling, bottom.",
+        "cta": "SHOP SINKERS",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-batch2/lead-collection-02-swordfish.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/07.jpg",
+      "text": {
+        "headline": "Swordfish Season Means Heavy Lead",
+        "subhead": "5-10 lb weights for 1500+ ft. Poured clean and heavy.",
+        "cta": "SHOP WEIGHTS",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-batch2/lead-collection-03-checklist.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/09.jpg",
+      "text": {
+        "headline": "Pre-Trip Checklist",
+        "subhead": "Deep drops. Trolling sinkers. Bank sinkers. Stock up now.",
+        "cta": "SHOP SINKERS",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-batch2/lead-pdp-04-hand-poured.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/10.jpg",
+      "text": {
+        "headline": "Hand Poured vs. Machine Made",
+        "subhead": "No flash lines. Smooth drops. Clean at 500 feet.",
+        "cta": "SHOP NOW",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-batch2/lead-pdp-05-how-to-rig.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/13.jpg",
+      "text": {
+        "headline": "How To Rig A Trolling Weight",
+        "subhead": "6-10 ft ahead. Heavy cable. Match weight to speed.",
+        "cta": "SHOP WEIGHTS",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-batch2/lead-pdp-06-tournament.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/06.jpg",
+      "text": {
+        "headline": "Tournament Prep Starts With Tackle",
+        "subhead": "Clean pours. Quality snaps. The stuff you check the night before.",
+        "cta": "SHOP NOW",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-batch2/belts-premium-07-captains.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/12.jpg",
+      "text": {
+        "headline": "What Captains Put On The Rail",
+        "subhead": "Charter boats trust Seamount. Thick padding. Solid gimbal.",
+        "cta": "SHOP BELTS",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-batch2/belts-premium-08-comfort.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/04.jpg",
+      "text": {
+        "headline": "Comfort Is Not A Luxury Offshore",
+        "subhead": "A 30-min tuna fight without padding wrecks your back for days.",
+        "cta": "SHOP BELTS",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-batch2/belts-premium-09-upgrade.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/08.jpg",
+      "text": {
+        "headline": "Belt First. Harness When Ready.",
+        "subhead": "Handles 90% of offshore. Add a harness for 100+ lb class fish.",
+        "cta": "SHOP FROM $89",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-batch2/belts-proof-10-gift.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/02.jpg",
+      "text": {
+        "headline": "The Gift Every Angler Wants",
+        "subhead": "Seamount fighting belt. Used every trip. Never bought for themselves.",
+        "cta": "SHOP NOW",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-batch2/belts-proof-11-value.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/03.jpg",
+      "text": {
+        "headline": "Pays For Itself In One Fish",
+        "subhead": "Lose a yellowfin because you couldn't hold the rod steady? That's $200 walking away.",
+        "cta": "SHOP BELTS",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-batch2/belts-proof-12-marlin.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/11.jpg",
+      "text": {
+        "headline": "Marlin Do Not Wait For You",
+        "subhead": "Seconds to set the rod. Solid gimbal. Ready when the fish is.",
+        "cta": "SHOP BELTS",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#F8FBFF",
+      "subheadColor": "#D8E4EF",
+      "footerColor": "#BCD0E4",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(34,88,170,0.88)",
+      "ctaStroke": "rgba(145,184,242,0.40)",
+      "gradientStart": "#0B1B2B",
+      "gradientEnd": "#2D5C8F",
+      "textPanelFill": "rgba(255,255,255,0.05)",
+      "textPanelStroke": "rgba(255,255,255,0.12)"
+    },
+    "overlay": {
+      "leftColor": "9,19,31",
+      "midColor": "20,48,79",
+      "rightColor": "44,94,141",
+      "leftOpacity": 0.82,
+      "midOpacity": 0.46,
+      "rightOpacity": 0.16
+    },
+    "typography": {
+      "headlineFontFamily": "Outfit, Arial, sans-serif",
+      "bodyFontFamily": "Source Serif 4, Georgia, serif",
+      "headlineSize": 64,
+      "subheadSize": 24,
+      "headlineWeight": 700,
+      "subheadWeight": 400,
+      "ctaSize": 22,
+      "footerSize": 16,
+      "footerTracking": 3
+    },
+    "layout": {
+      "personality": "split-card",
+      "align": "left",
+      "leftX": 120,
+      "maxHeadlineChars": 16,
+      "maxSubheadChars": 30,
+      "headlineY": 220,
+      "subheadY": 520,
+      "ctaRectX": 120,
+      "ctaRectY": 680,
+      "ctaX": 156,
+      "ctaY": 718,
+      "footerY": 990,
+      "ctaWidth": 260,
+      "ctaHeight": 54,
+      "panelX": 60,
+      "panelY": 100,
+      "panelWidth": 680,
+      "panelHeight": 680
+    }
+  },
+  "renders": [
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-dredges-planers/dredge-edu-01-kingfish.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/06.jpg",
+      "text": {
+        "headline": "Kingfish Eat What They See First",
+        "subhead": "A dredge creates the bait school illusion behind your boat.",
+        "cta": "LEARN MORE",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-dredges-planers/dredge-edu-02-raise-fish.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/10.jpg",
+      "text": {
+        "headline": "Raise The Fish Before You Hook Them",
+        "subhead": "Dredges pull fish up in the water column for better strikes.",
+        "cta": "LEARN MORE",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-dredges-planers/dredge-proof-03-charter.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/12.jpg",
+      "text": {
+        "headline": "Dredges Work. Ask Any Charter.",
+        "subhead": "Every serious charter boat runs one. Maybe you should too.",
+        "cta": "SHOP DREDGES",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-dredges-planers/dredge-proof-04-more-bites.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/09.jpg",
+      "text": {
+        "headline": "More Bites Starts Behind The Boat",
+        "subhead": "Visual stimulation from a dredge triggers competitive feeding.",
+        "cta": "SHOP DREDGES",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-dredges-planers/dredge-shop-05-one-order.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/01.jpg",
+      "text": {
+        "headline": "Bars. Chains. Teasers. One Order.",
+        "subhead": "Get all the dredge hardware in one place.",
+        "cta": "SHOP HARDWARE",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-dredges-planers/dredge-shop-06-everything.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/07.jpg",
+      "text": {
+        "headline": "Everything For A Working Dredge",
+        "subhead": "No guesswork. No missing parts. One order.",
+        "cta": "SHOP HARDWARE",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-dredges-planers/planer-col-07-how-it-works.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/13.jpg",
+      "text": {
+        "headline": "How A Planer Actually Works",
+        "subhead": "Dives your bait 10-30 ft. Trips on the strike. Fight the fish.",
+        "cta": "SHOP PLANERS",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-dredges-planers/planer-col-08-depth.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/08.jpg",
+      "text": {
+        "headline": "Get Baits Where The Fish Are",
+        "subhead": "Dolphin, wahoo, and kings hold 15-25 ft below the surface.",
+        "cta": "SHOP PLANERS",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-dredges-planers/planer-col-09-vs-downrigger.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/11.jpg",
+      "text": {
+        "headline": "Planers vs. Downriggers",
+        "subhead": "Same depth zone. Fraction of the cost. Zero permanent mounting.",
+        "cta": "SHOP PLANERS",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-dredges-planers/planer-pdp-10-complete-kit.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/02.jpg",
+      "text": {
+        "headline": "One Kit. Zero Missing Parts.",
+        "subhead": "Planer Bridle Kit. Everything to rig your first planer.",
+        "cta": "SHOP NOW",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-dredges-planers/planer-pdp-11-speed.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/04.jpg",
+      "text": {
+        "headline": "Rigging That Holds At Speed",
+        "subhead": "Quality hardware. Clean release. Every time.",
+        "cta": "SHOP NOW",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    },
+    {
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-10-meta-dredges-planers/planer-pdp-12-beginner.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/03.jpg",
+      "text": {
+        "headline": "New To Planers? Start Here.",
+        "subhead": "Complete Bridle Kit. No YouTube rabbit holes required.",
+        "cta": "SHOP NOW",
+        "footer": "TACKLEROOM SUPPLY"
+      }
+    }
+  ]
+}

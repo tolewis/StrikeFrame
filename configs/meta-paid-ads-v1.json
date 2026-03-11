@@ -1,0 +1,691 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#FFFFFF",
+      "subheadColor": "#E8EDF4",
+      "footerColor": "#8BA3C0",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(220,60,20,0.95)",
+      "ctaStroke": "rgba(255,120,80,0.50)",
+      "gradientStart": "#06111E",
+      "gradientEnd": "#1A3A5C"
+    },
+    "overlay": {
+      "leftColor": "6,17,30",
+      "midColor": "12,30,50",
+      "rightColor": "26,58,92",
+      "leftOpacity": 0.88,
+      "midOpacity": 0.60,
+      "rightOpacity": 0.30,
+      "vignetteBottom": 0.4
+    },
+    "typography": {
+      "headlineFontFamily": "Outfit, Arial, sans-serif",
+      "bodyFontFamily": "Outfit, Arial, sans-serif",
+      "headlineSize": 76,
+      "subheadSize": 26,
+      "headlineWeight": 800,
+      "subheadWeight": 400,
+      "ctaSize": 24,
+      "ctaWeight": 700,
+      "footerSize": 14,
+      "footerTracking": 4
+    },
+    "layout": {
+      "personality": "centered-hero",
+      "align": "center",
+      "maxHeadlineChars": 14,
+      "maxSubheadChars": 26,
+      "headlineY": 200,
+      "subheadY": 560,
+      "ctaRectX": 340,
+      "ctaRectY": 720,
+      "ctaX": 540,
+      "ctaY": 758,
+      "ctaWidth": 400,
+      "ctaHeight": 60,
+      "footerY": 1010
+    }
+  },
+  "renders": [
+    {
+      "_comment": "=== LEAD: Product Hero + Price ===",
+      "template": "product-composite",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-paid-ads/lead-product-hero.jpg",
+      "productPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/deep-drop-weights-detail.png",
+      "text": {
+        "headline": "From $10.99",
+        "subhead": "Hand-poured deep drop weights. 1-10 lb. Made in USA.",
+        "cta": "SHOP NOW",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "DEEP DROP WEIGHTS",
+        "circleDiameter": 380,
+        "circleX": 540,
+        "circleY": 500,
+        "productWidth": 320,
+        "shadowOpacity": 0.5
+      },
+      "theme": {
+        "headlineColor": "#FFD700",
+        "subheadColor": "#E8EDF4",
+        "ctaFill": "rgba(220,60,20,0.95)",
+        "ctaStroke": "rgba(255,120,80,0.50)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "#8BA3C0",
+        "gradientStart": "#06111E",
+        "gradientEnd": "#1A3A5C",
+        "productCircleFill": "rgba(255,255,255,0.95)",
+        "productShadowColor": "rgba(0,0,0,0.35)",
+        "badgeFill": "rgba(220,60,20,0.95)",
+        "badgeStroke": "rgba(255,120,80,0.40)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 30,
+        "headlineY": 140,
+        "subheadY": 800,
+        "ctaRectX": 340,
+        "ctaRectY": 900,
+        "ctaX": 540,
+        "ctaY": 938,
+        "ctaWidth": 400,
+        "ctaHeight": 60,
+        "footerY": 1010
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 84,
+        "subheadSize": 24,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 24,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      }
+    },
+    {
+      "_comment": "=== LEAD: Bold Hook on Lifestyle ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-paid-ads/lead-bold-hook.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/06.jpg",
+      "text": {
+        "headline": "Nobody Loses A Tournament Over A $12 Weight.",
+        "subhead": "Deep drop weights from $10.99. Hand-poured. Made in USA.",
+        "cta": "SHOP WEIGHTS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 62,
+        "subheadSize": 24,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 24,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 18,
+        "maxSubheadChars": 30,
+        "headlineY": 160,
+        "subheadY": 620,
+        "ctaRectX": 340,
+        "ctaRectY": 740,
+        "ctaX": 540,
+        "ctaY": 778,
+        "ctaWidth": 400,
+        "ctaHeight": 60,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,17,30",
+        "midColor": "6,17,30",
+        "rightColor": "6,17,30",
+        "leftOpacity": 0.75,
+        "midOpacity": 0.65,
+        "rightOpacity": 0.55,
+        "vignetteBottom": 0.5
+      }
+    },
+    {
+      "_comment": "=== LEAD: Social Proof / Review ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-paid-ads/lead-review-card.jpg",
+      "text": {
+        "headline": "\"High quality with no sharp edges.\"",
+        "subhead": "— William R., Verified Purchase",
+        "cta": "SHOP SINKERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Source Serif 4, Georgia, serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 56,
+        "subheadSize": 22,
+        "headlineWeight": 600,
+        "subheadWeight": 400,
+        "subheadLineHeight": 32,
+        "ctaSize": 24,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 40,
+        "headlineY": 300,
+        "subheadY": 600,
+        "ctaRectX": 340,
+        "ctaRectY": 720,
+        "ctaX": 540,
+        "ctaY": 758,
+        "ctaWidth": 400,
+        "ctaHeight": 60,
+        "footerY": 1010
+      },
+      "textLayers": [
+        {
+          "content": "\u2605\u2605\u2605\u2605\u2605",
+          "x": 540,
+          "y": 200,
+          "fontSize": 48,
+          "fontFamily": "Arial, sans-serif",
+          "fontWeight": 400,
+          "color": "#FFD700",
+          "align": "center"
+        }
+      ]
+    },
+    {
+      "_comment": "=== BELTS: Product Hero + Price ===",
+      "template": "product-composite",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-paid-ads/belts-product-hero.jpg",
+      "productPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/seamount-belt.jpg",
+      "text": {
+        "headline": "$179.99",
+        "subhead": "Seamount fighting belt. Thick EVA padding. Solid gimbal.",
+        "cta": "SHOP NOW",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "SEAMOUNT FIGHTING BELT",
+        "circleDiameter": 380,
+        "circleX": 540,
+        "circleY": 500,
+        "productWidth": 340,
+        "shadowOpacity": 0.5
+      },
+      "theme": {
+        "headlineColor": "#FFD700",
+        "subheadColor": "#E8EDF4",
+        "ctaFill": "rgba(220,60,20,0.95)",
+        "ctaStroke": "rgba(255,120,80,0.50)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "#8BA3C0",
+        "gradientStart": "#06111E",
+        "gradientEnd": "#1A3A5C",
+        "productCircleFill": "rgba(255,255,255,0.95)",
+        "productShadowColor": "rgba(0,0,0,0.35)",
+        "badgeFill": "rgba(220,60,20,0.95)",
+        "badgeStroke": "rgba(255,120,80,0.40)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 30,
+        "headlineY": 140,
+        "subheadY": 800,
+        "ctaRectX": 340,
+        "ctaRectY": 900,
+        "ctaX": 540,
+        "ctaY": 938,
+        "ctaWidth": 400,
+        "ctaHeight": 60,
+        "footerY": 1010
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 84,
+        "subheadSize": 24,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 24,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      }
+    },
+    {
+      "_comment": "=== BELTS: Bold Hook on Lifestyle ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-paid-ads/belts-bold-hook.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/12.jpg",
+      "text": {
+        "headline": "Lose One Fish. That's $200 Gone.",
+        "subhead": "Seamount fighting belts from $179.99. Built for the fight.",
+        "cta": "SHOP BELTS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 68,
+        "subheadSize": 24,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 24,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 16,
+        "maxSubheadChars": 30,
+        "headlineY": 180,
+        "subheadY": 620,
+        "ctaRectX": 340,
+        "ctaRectY": 740,
+        "ctaX": 540,
+        "ctaY": 778,
+        "ctaWidth": 400,
+        "ctaHeight": 60,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,17,30",
+        "midColor": "6,17,30",
+        "rightColor": "6,17,30",
+        "leftOpacity": 0.78,
+        "midOpacity": 0.65,
+        "rightOpacity": 0.55,
+        "vignetteBottom": 0.5
+      }
+    },
+    {
+      "_comment": "=== BELTS: Social Proof / Review ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-paid-ads/belts-review-card.jpg",
+      "text": {
+        "headline": "\"Charter captains put these on the rail every morning.\"",
+        "subhead": "Seamount Fish Fighting Belt \u00b7 $179.99",
+        "cta": "SHOP BELTS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Source Serif 4, Georgia, serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 50,
+        "subheadSize": 24,
+        "headlineWeight": 600,
+        "subheadWeight": 500,
+        "ctaSize": 24,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 40,
+        "headlineY": 280,
+        "subheadY": 620,
+        "ctaRectX": 340,
+        "ctaRectY": 720,
+        "ctaX": 540,
+        "ctaY": 758,
+        "ctaWidth": 400,
+        "ctaHeight": 60,
+        "footerY": 1010
+      },
+      "textLayers": [
+        {
+          "content": "\u2605\u2605\u2605\u2605\u2605",
+          "x": 540,
+          "y": 180,
+          "fontSize": 48,
+          "fontFamily": "Arial, sans-serif",
+          "fontWeight": 400,
+          "color": "#FFD700",
+          "align": "center"
+        }
+      ]
+    },
+    {
+      "_comment": "=== DREDGES: Product Hero + Price ===",
+      "template": "product-composite",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-paid-ads/dredge-product-hero.jpg",
+      "productPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/compact-dredge.jpg",
+      "text": {
+        "headline": "$249.99",
+        "subhead": "Complete squid dredge. Ready to fish out of the bag.",
+        "cta": "SHOP NOW",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "SQUID DREDGE",
+        "circleDiameter": 380,
+        "circleX": 540,
+        "circleY": 500,
+        "productWidth": 340,
+        "shadowOpacity": 0.5
+      },
+      "theme": {
+        "headlineColor": "#FFD700",
+        "subheadColor": "#E8EDF4",
+        "ctaFill": "rgba(220,60,20,0.95)",
+        "ctaStroke": "rgba(255,120,80,0.50)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "#8BA3C0",
+        "gradientStart": "#06111E",
+        "gradientEnd": "#1A3A5C",
+        "productCircleFill": "rgba(255,255,255,0.95)",
+        "productShadowColor": "rgba(0,0,0,0.35)",
+        "badgeFill": "rgba(220,60,20,0.95)",
+        "badgeStroke": "rgba(255,120,80,0.40)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 30,
+        "headlineY": 140,
+        "subheadY": 800,
+        "ctaRectX": 340,
+        "ctaRectY": 900,
+        "ctaX": 540,
+        "ctaY": 938,
+        "ctaWidth": 400,
+        "ctaHeight": 60,
+        "footerY": 1010
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 84,
+        "subheadSize": 24,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 24,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      }
+    },
+    {
+      "_comment": "=== DREDGES: Bold Hook on Lifestyle ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-paid-ads/dredge-bold-hook.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/04.jpg",
+      "text": {
+        "headline": "Every Charter Runs One. You Should Too.",
+        "subhead": "Squid dredges from $249.99. Build your spread.",
+        "cta": "SHOP DREDGES",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 62,
+        "subheadSize": 24,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 24,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 16,
+        "maxSubheadChars": 30,
+        "headlineY": 170,
+        "subheadY": 620,
+        "ctaRectX": 340,
+        "ctaRectY": 740,
+        "ctaX": 540,
+        "ctaY": 778,
+        "ctaWidth": 400,
+        "ctaHeight": 60,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,17,30",
+        "midColor": "6,17,30",
+        "rightColor": "6,17,30",
+        "leftOpacity": 0.78,
+        "midOpacity": 0.65,
+        "rightOpacity": 0.55,
+        "vignetteBottom": 0.5
+      }
+    },
+    {
+      "_comment": "=== DREDGES: Social Proof ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-paid-ads/dredge-review-card.jpg",
+      "text": {
+        "headline": "\"Works as good as it looks.\"",
+        "subhead": "— James B., Verified Purchase",
+        "cta": "SHOP DREDGES",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Source Serif 4, Georgia, serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 60,
+        "subheadSize": 24,
+        "headlineWeight": 600,
+        "subheadWeight": 400,
+        "ctaSize": 24,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 40,
+        "headlineY": 300,
+        "subheadY": 580,
+        "ctaRectX": 340,
+        "ctaRectY": 720,
+        "ctaX": 540,
+        "ctaY": 758,
+        "ctaWidth": 400,
+        "ctaHeight": 60,
+        "footerY": 1010
+      },
+      "textLayers": [
+        {
+          "content": "\u2605\u2605\u2605\u2605\u2605",
+          "x": 540,
+          "y": 200,
+          "fontSize": 48,
+          "fontFamily": "Arial, sans-serif",
+          "fontWeight": 400,
+          "color": "#FFD700",
+          "align": "center"
+        }
+      ]
+    },
+    {
+      "_comment": "=== PLANERS: Product Hero + Price ===",
+      "template": "product-composite",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-paid-ads/planer-product-hero.jpg",
+      "productPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/planer-bridle-kit.jpg",
+      "text": {
+        "headline": "From $45.99",
+        "subhead": "Planer bridle kit. Everything to rig your first planer.",
+        "cta": "SHOP NOW",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "PLANER BRIDLE KIT",
+        "circleDiameter": 380,
+        "circleX": 540,
+        "circleY": 500,
+        "productWidth": 320,
+        "shadowOpacity": 0.5
+      },
+      "theme": {
+        "headlineColor": "#FFD700",
+        "subheadColor": "#E8EDF4",
+        "ctaFill": "rgba(220,60,20,0.95)",
+        "ctaStroke": "rgba(255,120,80,0.50)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "#8BA3C0",
+        "gradientStart": "#06111E",
+        "gradientEnd": "#1A3A5C",
+        "productCircleFill": "rgba(255,255,255,0.95)",
+        "productShadowColor": "rgba(0,0,0,0.35)",
+        "badgeFill": "rgba(220,60,20,0.95)",
+        "badgeStroke": "rgba(255,120,80,0.40)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 30,
+        "headlineY": 140,
+        "subheadY": 800,
+        "ctaRectX": 340,
+        "ctaRectY": 900,
+        "ctaX": 540,
+        "ctaY": 938,
+        "ctaWidth": 400,
+        "ctaHeight": 60,
+        "footerY": 1010
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 84,
+        "subheadSize": 24,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 24,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      }
+    },
+    {
+      "_comment": "=== PLANERS: Bold Hook on Lifestyle ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-paid-ads/planer-bold-hook.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/02.jpg",
+      "text": {
+        "headline": "$800 Downrigger Or $30 Planer. Same Depth.",
+        "subhead": "Planer kits from $45.99. No mounting. No hassle.",
+        "cta": "SHOP PLANERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 60,
+        "subheadSize": 24,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 24,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 18,
+        "maxSubheadChars": 30,
+        "headlineY": 160,
+        "subheadY": 620,
+        "ctaRectX": 340,
+        "ctaRectY": 740,
+        "ctaX": 540,
+        "ctaY": 778,
+        "ctaWidth": 400,
+        "ctaHeight": 60,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,17,30",
+        "midColor": "6,17,30",
+        "rightColor": "6,17,30",
+        "leftOpacity": 0.78,
+        "midOpacity": 0.65,
+        "rightOpacity": 0.55,
+        "vignetteBottom": 0.5
+      }
+    },
+    {
+      "_comment": "=== PLANERS: Social Proof / Review ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-paid-ads/planer-review-card.jpg",
+      "text": {
+        "headline": "\"It really allows us to get the lure down deep. Most productive position.\"",
+        "subhead": "— David H., Verified Purchase",
+        "cta": "SHOP PLANERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Source Serif 4, Georgia, serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 46,
+        "subheadSize": 22,
+        "headlineWeight": 600,
+        "subheadWeight": 400,
+        "ctaSize": 24,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 24,
+        "maxSubheadChars": 40,
+        "headlineY": 260,
+        "subheadY": 620,
+        "ctaRectX": 340,
+        "ctaRectY": 720,
+        "ctaX": 540,
+        "ctaY": 758,
+        "ctaWidth": 400,
+        "ctaHeight": 60,
+        "footerY": 1010
+      },
+      "textLayers": [
+        {
+          "content": "\u2605\u2605\u2605\u2605\u2605",
+          "x": 540,
+          "y": 160,
+          "fontSize": 48,
+          "fontFamily": "Arial, sans-serif",
+          "fontWeight": 400,
+          "color": "#FFD700",
+          "align": "center"
+        }
+      ]
+    }
+  ]
+}
