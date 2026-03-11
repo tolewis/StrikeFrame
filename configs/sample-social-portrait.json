@@ -1,0 +1,11 @@
+{
+  "preset": "social-portrait",
+  "template": "banner",
+  "output": "examples/social-portrait.jpg",
+  "text": {
+    "headline": "Portrait Feed Creative That Stops Scrolls",
+    "subhead": "Built for 4:5 social posts, ads, and waterfall promos.",
+    "cta": "MAKE THE POST",
+    "footer": "STRIKEFRAME \u00b7 SOCIAL PORTRAIT"
+  }
+}

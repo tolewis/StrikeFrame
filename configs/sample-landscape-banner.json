@@ -1,0 +1,11 @@
+{
+  "preset": "landscape-banner",
+  "template": "banner",
+  "output": "examples/landscape-banner.jpg",
+  "text": {
+    "headline": "Turn One Story Into Many Assets",
+    "subhead": "Landscape hero for article headers, waterfalls, and promo pages.",
+    "cta": "BUILD THE BANNER",
+    "footer": "STRIKEFRAME \u00b7 LANDSCAPE BANNER"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "preset": "linkedin-landscape",
+  "template": "banner",
+  "output": "examples/linkedin-landscape.jpg",
+  "text": {
+    "headline": "LinkedIn Visuals Without a Design Tool Bottleneck",
+    "subhead": "Landscape preset for article links, thought-leadership, and professional promos.",
+    "cta": "SHIP THE CREATIVE",
+    "footer": "STRIKEFRAME \u00b7 LINKEDIN LANDSCAPE"
+  },
+  "layout": {
+    "maxHeadlineChars": 24,
+    "maxSubheadChars": 46,
+    "headlineY": 140,
+    "subheadY": 320,
+    "ctaRectY": 428,
+    "ctaY": 466,
+    "footerY": 565,
+    "ctaWidth": 300
+  }
+}

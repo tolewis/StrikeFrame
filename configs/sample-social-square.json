@@ -1,0 +1,20 @@
+{
+  "preset": "social-square",
+  "template": "banner",
+  "output": "examples/social-square.jpg",
+  "text": {
+    "headline": "Square Social, Zero Canva",
+    "subhead": "Fast repeatable creative for posts that need clean text on image.",
+    "cta": "RUN THE PRESET",
+    "footer": "STRIKEFRAME \u00b7 SOCIAL SQUARE"
+  },
+  "layout": {
+    "maxHeadlineChars": 16,
+    "maxSubheadChars": 28,
+    "headlineY": 154,
+    "subheadY": 410,
+    "ctaRectY": 590,
+    "ctaY": 628,
+    "footerY": 996
+  }
+}

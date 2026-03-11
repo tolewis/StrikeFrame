@@ -20,10 +20,30 @@ Local renderer for banners, social graphics, and simple product composites.
 - `banner`
 - `product-composite`
 
+## Preset examples
+
+### landscape-banner
+![landscape-banner](./examples/landscape-banner.jpg)
+
+### social-square
+![social-square](./examples/social-square.jpg)
+
+### social-portrait
+![social-portrait](./examples/social-portrait.jpg)
+
+### linkedin-landscape
+![linkedin-landscape](./examples/linkedin-landscape.jpg)
+
 ## Run
 - `npm install`
 - `npm run generate:banner`
 - `npm run generate:product`
+
+## Generate each preset example
+- `node scripts/render.js configs/sample-landscape-banner.json`
+- `node scripts/render.js configs/sample-social-square.json`
+- `node scripts/render.js configs/sample-social-portrait.json`
+- `node scripts/render.js configs/sample-linkedin-landscape.json`
 
 ## Notes
 - Works with a real background image if `backgroundPath` is provided in config
