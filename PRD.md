@@ -1,6 +1,6 @@
 # PRD — StrikeFrame
 
-**Version:** v0.4.0  
+**Version:** v0.4.1  
 **Status:** SHIPPED  
 **Date:** 2026-03-10
 

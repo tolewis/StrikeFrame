@@ -198,6 +198,85 @@ async function buildProductLayer(cfg) {
   return sharp(cfg.productPath).resize({ width: cfg.productComposite.productWidth, fit: 'inside' }).png().toBuffer();
 }
 
+
+function estimateTextBlock({ lines, fontSize, lineStep, x, y, align = 'left', maxChars = 24 }) {
+  const maxLen = Math.max(1, ...lines.map((l) => l.length));
+  const estWidth = Math.round(maxLen * fontSize * 0.58);
+  const estHeight = Math.round(fontSize + ((Math.max(lines.length, 1) - 1) * lineStep));
+  let left = x;
+  if (align === 'center') left = Math.round(x - estWidth / 2);
+  if (align === 'right') left = Math.round(x - estWidth);
+  const top = Math.round(y - fontSize * 0.82);
+  return { left, top, width: estWidth, height: estHeight, right: left + estWidth, bottom: top + estHeight, lines: lines.length, maxChars };
+}
+
+function boxInside(inner, outer, pad = 0) {
+  return inner.left >= outer.left + pad && inner.top >= outer.top + pad && inner.right <= outer.right - pad && inner.bottom <= outer.bottom - pad;
+}
+
+function runReview(cfg, meta) {
+  const checks = [];
+  const warnings = [];
+  const failures = [];
+  const canvas = { left: 0, top: 0, right: cfg.width, bottom: cfg.height };
+  const isCentered = cfg.layout.personality === 'centered-hero' || cfg.layout.align === 'center';
+  const primaryRegion = cfg.layout.personality === 'split-card'
+    ? { left: cfg.layout.panelX, top: cfg.layout.panelY, right: cfg.layout.panelX + cfg.layout.panelWidth, bottom: cfg.layout.panelY + cfg.layout.panelHeight }
+    : canvas;
+
+  const headlineLines = wrapText(cfg.text.headline, cfg.layout.maxHeadlineChars);
+  const subheadLines = wrapText(cfg.text.subhead, cfg.layout.maxSubheadChars);
+  const headlineStep = cfg.preset === 'social-portrait' ? 82 : (cfg.preset === 'linkedin-landscape' ? 68 : 88);
+  const subheadStep = cfg.preset === 'linkedin-landscape' ? 34 : 40;
+  const anchor = isCentered ? 'center' : 'left';
+  const textX = isCentered ? Math.round(cfg.width / 2) : cfg.layout.leftX;
+  const headlineBox = estimateTextBlock({ lines: headlineLines, fontSize: cfg.typography.headlineSize, lineStep: headlineStep, x: textX, y: cfg.layout.headlineY, align: anchor, maxChars: cfg.layout.maxHeadlineChars });
+  const subheadBox = estimateTextBlock({ lines: subheadLines, fontSize: cfg.typography.subheadSize, lineStep: subheadStep, x: textX, y: cfg.layout.subheadY, align: anchor, maxChars: cfg.layout.maxSubheadChars });
+  const footerBox = estimateTextBlock({ lines: [cfg.text.footer], fontSize: cfg.typography.footerSize, lineStep: cfg.typography.footerSize, x: textX, y: cfg.layout.footerY, align: anchor, maxChars: 60 });
+  const ctaRect = { left: isCentered ? Math.round((cfg.width - cfg.layout.ctaWidth) / 2) : cfg.layout.ctaRectX, top: cfg.layout.ctaRectY, right: (isCentered ? Math.round((cfg.width - cfg.layout.ctaWidth) / 2) : cfg.layout.ctaRectX) + cfg.layout.ctaWidth, bottom: cfg.layout.ctaRectY + cfg.layout.ctaHeight };
+
+  const headlineInside = boxInside(headlineBox, primaryRegion, 18);
+  checks.push({ name: 'headline-inside-primary-region', pass: headlineInside, box: headlineBox });
+  if (!headlineInside) failures.push('Headline exceeds the intended primary region.');
+
+  const subheadInside = boxInside(subheadBox, primaryRegion, 18);
+  checks.push({ name: 'subhead-inside-primary-region', pass: subheadInside, box: subheadBox });
+  if (!subheadInside) failures.push('Subhead exceeds the intended primary region.');
+
+  const ctaInside = boxInside(ctaRect, primaryRegion, 18);
+  checks.push({ name: 'cta-inside-primary-region', pass: ctaInside, box: ctaRect });
+  if (!ctaInside) failures.push('CTA box exceeds the intended primary region.');
+
+  const verticalGap1 = subheadBox.top - headlineBox.bottom;
+  const verticalGap2 = ctaRect.top - subheadBox.bottom;
+  const verticalGap3 = footerBox.top - ctaRect.bottom;
+  checks.push({ name: 'headline-to-subhead-gap', pass: verticalGap1 >= 24, value: verticalGap1 });
+  if (verticalGap1 < 24) warnings.push('Headline/subhead spacing is too tight.');
+  checks.push({ name: 'subhead-to-cta-gap', pass: verticalGap2 >= 24, value: verticalGap2 });
+  if (verticalGap2 < 24) warnings.push('Subhead/CTA spacing is too tight.');
+  checks.push({ name: 'cta-to-footer-gap', pass: verticalGap3 >= 20, value: verticalGap3 });
+  if (verticalGap3 < 20) warnings.push('CTA/footer spacing is too tight.');
+
+  if (cfg.layout.personality === 'split-card') {
+    const panelPaddingLeft = headlineBox.left - primaryRegion.left;
+    const panelPaddingRight = primaryRegion.right - headlineBox.right;
+    checks.push({ name: 'panel-left-padding', pass: panelPaddingLeft >= 36, value: panelPaddingLeft });
+    checks.push({ name: 'panel-right-padding', pass: panelPaddingRight >= 36, value: panelPaddingRight });
+    if (panelPaddingLeft < 36 || panelPaddingRight < 36) warnings.push('Text padding inside panel is too tight.');
+  }
+
+  for (const [i, layer] of cfg.textLayers.entries()) {
+    const lines = wrapText(layer.content || '', layer.maxChars || 26);
+    const box = estimateTextBlock({ lines, fontSize: layer.fontSize || 28, lineStep: layer.lineHeight || Math.round((layer.fontSize || 28) * 1.15), x: layer.x || 0, y: layer.y || 0, align: layer.align || 'left' });
+    const insideCanvas = boxInside(box, canvas, 12);
+    checks.push({ name: `text-layer-${i + 1}-inside-canvas`, pass: insideCanvas, box });
+    if (!insideCanvas) failures.push(`Text layer ${i + 1} exceeds the canvas.`);
+  }
+
+  const status = failures.length ? 'fail' : (warnings.length ? 'warn' : 'pass');
+  return { status, checks, warnings, failures, regions: { canvas, primaryRegion }, output: cfg.output, dimensions: { width: meta.width, height: meta.height } };
+}
+
 async function renderOne(rawConfig) {
   const cfg = normalizeConfig(rawConfig);
   ensureDir(cfg.output);
@@ -211,9 +290,17 @@ async function renderOne(rawConfig) {
   const base = (cfg.backgroundPath && fileExists(cfg.backgroundPath))
     ? sharp(cfg.backgroundPath).resize(cfg.width, cfg.height, { fit: 'cover', position: 'center' }).modulate({ brightness: 0.82, saturation: 1.05 })
     : sharp({ create: { width: cfg.width, height: cfg.height, channels: 3, background: { r: 11, g: 42, b: 64 } } }).composite([{ input: Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="${cfg.theme.gradientStart}"/><stop offset="100%" stop-color="${cfg.theme.gradientEnd}"/></linearGradient></defs><rect width="100%" height="100%" fill="url(#g)"/></svg>`) }]);
-  await base.composite(composites).jpeg({ quality: 90 }).toFile(cfg.output);
+  const ext = path.extname(cfg.output).toLowerCase();
+  let pipeline = base.composite(composites);
+  if (ext === '.png') pipeline = pipeline.png({ compressionLevel: 9 });
+  else if (ext === '.webp') pipeline = pipeline.webp({ quality: 92 });
+  else pipeline = pipeline.jpeg({ quality: 90 });
+  await pipeline.toFile(cfg.output);
   const meta = await sharp(cfg.output).metadata();
-  return { output: cfg.output, width: meta.width, height: meta.height, preset: cfg.preset, template: cfg.template, personality: cfg.layout.personality };
+  const review = runReview(cfg, meta);
+  const reviewPath = cfg.output.replace(/\.[^.]+$/, '') + '.review.json';
+  fs.writeFileSync(reviewPath, JSON.stringify(review, null, 2));
+  return { output: cfg.output, width: meta.width, height: meta.height, preset: cfg.preset, template: cfg.template, personality: cfg.layout.personality, reviewStatus: review.status, reviewPath };
 }
 
 async function main() {

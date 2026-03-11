@@ -51,6 +51,20 @@ Current example brand directions in the repo:
 ### Editorial Premium
 ![editorial-premium](./examples/featured/editorial-premium.jpg)
 
+## QA/QC review layer
+StrikeFrame now runs a **single-pass review after file creation**.
+
+It does **not** auto-rerender in a loop. It renders once, inspects once, writes a review file, and reports `pass`, `warn`, or `fail`.
+
+Review output:
+- `<asset>.review.json`
+
+Checks include:
+- headline/subhead/CTA fit inside the intended primary region
+- panel padding
+- spacing between headline/subhead/CTA/footer
+- text-layer canvas overflow
+
 ## Review process
 Do not trust the first render blindly.
 

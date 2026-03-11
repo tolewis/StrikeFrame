@@ -11,9 +11,11 @@
 - Added shape overlays
 - Added multiple text layers
 - Added batch manifest rendering
+- Added post-render QA/QC review layer
 
 ## Next
 - Add real product PNG workflow
 - Add focal-point crop controls
 - Add font tokens / brand theme tokens
+- Improve text sharpness and spacing logic
 - Add smarter panel fit / collision review
