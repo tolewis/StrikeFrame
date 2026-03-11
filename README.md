@@ -72,6 +72,7 @@ Current built-in guardrail:
 - `npm run generate:product`
 
 ## Example configs
+- `node scripts/render.js configs/sample-batch.json`
 - `node scripts/render.js configs/frameworks/tackleroomsupply-2030.json`
 - `node scripts/render.js configs/frameworks/contractor-ai-2030.json`
 - `node scripts/render.js configs/frameworks/unhookoutdoors-2030.json`
@@ -81,6 +82,11 @@ More examples and experiments live in:
 - `configs/frameworks/`
 - `configs/styles/`
 - `examples/`
+
+## New in this phase
+- shape overlays (`ellipse`, `rectangle`)
+- multiple text layers
+- batch manifest rendering via `sample-batch.json`
 
 ## Configurable systems
 ### Typography

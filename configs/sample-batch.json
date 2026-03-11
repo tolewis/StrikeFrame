@@ -1,0 +1,111 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#FFFFFF",
+      "subheadColor": "#DDF1F4",
+      "footerColor": "#B7D4DA",
+      "ctaTextColor": "#08161A",
+      "ctaFill": "rgba(181,248,255,0.92)",
+      "ctaStroke": "rgba(255,255,255,0.24)",
+      "gradientStart": "#09252D",
+      "gradientEnd": "#0D7B7A"
+    },
+    "overlay": {
+      "leftColor": "6,18,22",
+      "midColor": "8,48,60",
+      "rightColor": "25,112,124",
+      "leftOpacity": 0.78,
+      "midOpacity": 0.42,
+      "rightOpacity": 0.16
+    },
+    "typography": {
+      "headlineFontFamily": "Outfit, Arial, sans-serif",
+      "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+      "headlineSize": 74,
+      "subheadSize": 26
+    },
+    "layout": {
+      "personality": "centered-hero",
+      "align": "center",
+      "maxHeadlineChars": 14,
+      "maxSubheadChars": 23,
+      "headlineY": 185,
+      "subheadY": 470,
+      "ctaRectY": 655,
+      "ctaY": 693,
+      "footerY": 1000,
+      "ctaWidth": 300
+    }
+  },
+  "renders": [
+    {
+      "output": "output/batch-1.jpg",
+      "text": {
+        "headline": "Variant One",
+        "subhead": "Batch mode from one manifest.",
+        "cta": "BUILD FAST",
+        "footer": "STRIKEFRAME \u00b7 BATCH"
+      },
+      "shapes": [
+        {
+          "type": "ellipse",
+          "x": 770,
+          "y": 90,
+          "width": 220,
+          "height": 220,
+          "fill": "rgba(255,255,255,0.10)",
+          "stroke": "rgba(255,255,255,0.20)",
+          "strokeWidth": 2
+        }
+      ],
+      "textLayers": [
+        {
+          "content": "v1",
+          "x": 910,
+          "y": 210,
+          "align": "center",
+          "fontSize": 48,
+          "fontWeight": 700,
+          "color": "#ffffff",
+          "fontFamily": "Outfit, Arial, sans-serif"
+        }
+      ]
+    },
+    {
+      "output": "output/batch-2.jpg",
+      "text": {
+        "headline": "Variant Two",
+        "subhead": "Same defaults. Different asset.",
+        "cta": "SHIP IT",
+        "footer": "STRIKEFRAME \u00b7 BATCH"
+      },
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 120,
+          "y": 118,
+          "width": 180,
+          "height": 40,
+          "radius": 20,
+          "fill": "rgba(255,255,255,0.14)",
+          "stroke": "rgba(255,255,255,0.22)",
+          "strokeWidth": 1
+        }
+      ],
+      "textLayers": [
+        {
+          "content": "BATCH MODE",
+          "x": 210,
+          "y": 145,
+          "align": "center",
+          "fontSize": 18,
+          "fontWeight": 700,
+          "color": "#ffffff",
+          "fontFamily": "Outfit, Arial, sans-serif"
+        }
+      ]
+    }
+  ]
+}

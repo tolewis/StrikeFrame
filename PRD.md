@@ -1,7 +1,7 @@
 # PRD — StrikeFrame
 
-**Version:** v0.3.0  
-**Status:** SHIPPED (early MVP)  
+**Version:** v0.4.0  
+**Status:** SHIPPED  
 **Date:** 2026-03-10
 
 ## Product
@@ -84,6 +84,12 @@ That gap caused:
 ## Shipped proof
 - `output/sample-banner.jpg`
 - `output/sample-product-composite.jpg`
+- Visible GitHub README examples for 4 featured directions:
+  - TackleRoomSupply 2030
+  - Contractor-AI 2030
+  - Unhook Outdoors 2030
+  - Editorial Premium
+- Repo live: `https://github.com/tolewis/StrikeFrame`
 
 ## Integration points
 - `skills/media-renderer/`

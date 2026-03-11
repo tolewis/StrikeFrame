@@ -7,12 +7,13 @@
 - Added JSON-driven render path
 - Added platform presets
 - Added product-composite template scaffold
-- Generated sample banner output
-- Generated sample product-composite output
-- Documented rerun steps
+- Added design frameworks and layout personalities
+- Added shape overlays
+- Added multiple text layers
+- Added batch manifest rendering
 
 ## Next
 - Add real product PNG workflow
 - Add focal-point crop controls
 - Add font tokens / brand theme tokens
-- Add batch rendering from manifests
+- Add smarter panel fit / collision review
