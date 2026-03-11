@@ -1,0 +1,41 @@
+{
+  "preset": "landscape-banner",
+  "template": "banner",
+  "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/07.jpg",
+  "output": "examples/featured/tackleroomsupply-2030.jpg",
+  "text": {
+    "headline": "Saltwater Content, Modernized",
+    "subhead": "Editorial fishing visuals with cleaner hierarchy and calmer luxury than the older TackleRoom palette.",
+    "cta": "BUILD THE ASSET",
+    "footer": "STRIKEFRAME \u00b7 TACKLEROOM SUPPLY 2030"
+  },
+  "theme": {
+    "headlineColor": "#F8FBFF",
+    "subheadColor": "#D8E4EF",
+    "footerColor": "#BCD0E4",
+    "ctaTextColor": "#FFFFFF",
+    "ctaFill": "rgba(34,88,170,0.88)",
+    "ctaStroke": "rgba(145,184,242,0.40)",
+    "gradientStart": "#0B1B2B",
+    "gradientEnd": "#2D5C8F",
+    "textPanelFill": "rgba(255,255,255,0.05)",
+    "textPanelStroke": "rgba(255,255,255,0.12)"
+  },
+  "overlay": {
+    "leftColor": "9,19,31",
+    "midColor": "20,48,79",
+    "rightColor": "44,94,141",
+    "leftOpacity": 0.82,
+    "midOpacity": 0.46,
+    "rightOpacity": 0.16
+  },
+  "typography": {
+    "headlineFontFamily": "Outfit, Arial, sans-serif",
+    "bodyFontFamily": "Source Serif 4, Georgia, serif",
+    "headlineSize": 74,
+    "subheadSize": 30
+  },
+  "layout": {
+    "personality": "split-card"
+  }
+}

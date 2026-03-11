@@ -61,7 +61,7 @@ function normalizeConfig(raw) {
   if (!preset) throw new Error(`Unknown preset: ${raw.preset}`);
   const chosenPreset = raw.preset || 'landscape-banner';
 
-  return {
+  const cfg = {
     preset: chosenPreset,
     template: raw.template || 'banner',
     width: raw.width || preset.width,
@@ -148,8 +148,19 @@ function normalizeConfig(raw) {
       badgeText: 'PRODUCT',
       badgeX: chosenPreset === 'social-portrait' ? preset.width - 360 : preset.width - 330,
       badgeY: chosenPreset === 'social-portrait' ? 180 : 120
-    }, raw.productComposite || {})
+    }, raw.productComposite || {}),
+    review: Object.assign({
+      enforcePanelFit: true
+    }, raw.review || {})
   };
+
+  if (cfg.review.enforcePanelFit && cfg.layout.personality === 'split-card') {
+    const estimatedPanelBottom = cfg.layout.ctaRectY + cfg.layout.ctaHeight + 40;
+    const requiredHeight = estimatedPanelBottom - cfg.layout.panelY;
+    if (requiredHeight > cfg.layout.panelHeight) cfg.layout.panelHeight = requiredHeight;
+  }
+
+  return cfg;
 }
 
 function buildOverlaySvg(cfg) {

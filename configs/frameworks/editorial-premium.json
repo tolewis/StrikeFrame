@@ -1,39 +1,37 @@
 {
   "preset": "landscape-banner",
   "template": "banner",
-  "output": "examples/frameworks/editorial-premium.jpg",
+  "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/14.jpg",
+  "output": "examples/featured/editorial-premium.jpg",
   "text": {
-    "headline": "Editorial Premium Gives You Breathing Room",
-    "subhead": "More elegant typography, warm contrast, and high-end presentation for thoughtful marketing assets.",
+    "headline": "Editorial Premium Still Has Teeth",
+    "subhead": "Warmer serif-led direction for long-form stories, premium campaigns, and quieter authority.",
     "cta": "READ THE STORY",
     "footer": "STRIKEFRAME \u00b7 EDITORIAL PREMIUM"
   },
   "theme": {
     "headlineColor": "#FFF8F0",
-    "subheadColor": "#F1E2D0",
-    "footerColor": "#D6BEA2",
+    "subheadColor": "#EEDFCF",
+    "footerColor": "#D6C0A8",
     "ctaTextColor": "#FFF8F0",
-    "ctaFill": "rgba(132,84,48,0.68)",
-    "ctaStroke": "rgba(243,214,180,0.32)",
-    "gradientStart": "#3D261B",
-    "gradientEnd": "#B9875C",
-    "textPanelFill": "rgba(255,248,240,0.08)",
-    "textPanelStroke": "rgba(255,236,216,0.16)"
+    "ctaFill": "rgba(112,71,42,0.72)",
+    "ctaStroke": "rgba(242,221,196,0.30)",
+    "gradientStart": "#3A2419",
+    "gradientEnd": "#A87956"
   },
   "overlay": {
-    "leftColor": "38,21,16",
-    "midColor": "78,48,33",
-    "rightColor": "171,119,80",
-    "leftOpacity": 0.76,
+    "leftColor": "35,20,15",
+    "midColor": "74,47,34",
+    "rightColor": "166,116,82",
+    "leftOpacity": 0.8,
     "midOpacity": 0.34,
     "rightOpacity": 0.1
   },
   "typography": {
-    "headlineFontFamily": "Georgia, Times New Roman, serif",
-    "bodyFontFamily": "Arial, Helvetica, sans-serif",
-    "headlineWeight": 700,
-    "headlineSize": 74,
-    "subheadSize": 31
+    "headlineFontFamily": "Source Serif 4, Georgia, serif",
+    "bodyFontFamily": "Outfit, Arial, sans-serif",
+    "headlineSize": 72,
+    "subheadSize": 29
   },
   "layout": {
     "personality": "editorial-left"

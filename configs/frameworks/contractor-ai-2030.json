@@ -1,0 +1,43 @@
+{
+  "preset": "linkedin-landscape",
+  "template": "banner",
+  "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/10.jpg",
+  "output": "examples/featured/contractor-ai-2030.jpg",
+  "text": {
+    "headline": "AI for the People Who Build Things",
+    "subhead": "Sharper, darker, more disciplined creative direction for Contractor-AI style thought leadership and product promos.",
+    "cta": "SHOW THE SYSTEM",
+    "footer": "STRIKEFRAME \u00b7 CONTRACTOR-AI 2030"
+  },
+  "theme": {
+    "headlineColor": "#F5F7FB",
+    "subheadColor": "#D7DDE8",
+    "footerColor": "#AEB9CA",
+    "ctaTextColor": "#FFFFFF",
+    "ctaFill": "rgba(21,32,54,0.82)",
+    "ctaStroke": "rgba(132,157,198,0.28)",
+    "gradientStart": "#0A101B",
+    "gradientEnd": "#334A6A",
+    "textPanelFill": "rgba(255,255,255,0.04)",
+    "textPanelStroke": "rgba(255,255,255,0.09)"
+  },
+  "overlay": {
+    "leftColor": "7,11,19",
+    "midColor": "20,30,48",
+    "rightColor": "56,80,112",
+    "leftOpacity": 0.84,
+    "midOpacity": 0.48,
+    "rightOpacity": 0.18
+  },
+  "typography": {
+    "headlineFontFamily": "Outfit, Arial, sans-serif",
+    "bodyFontFamily": "Source Serif 4, Georgia, serif",
+    "headlineSize": 54,
+    "subheadSize": 25
+  },
+  "layout": {
+    "personality": "split-card",
+    "panelWidth": 720,
+    "panelHeight": 390
+  }
+}

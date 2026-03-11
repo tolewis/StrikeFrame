@@ -1,6 +1,6 @@
 # StrikeFrame
 
-Version: **v0.3.0**
+Version: **v0.3.1**
 
 Local renderer for banners, social graphics, and simple product composites.
 
@@ -12,7 +12,7 @@ Local renderer for banners, social graphics, and simple product composites.
 - avoids GUI-tool dependency for simple asset generation
 
 ## Core idea
-StrikeFrame should feel like an **inspiring default design system**, not a blank utility.
+StrikeFrame should feel like an inspiring default design system, not a blank utility.
 
 The LLM should usually be able to make a strong first-pass decision on:
 - font direction
@@ -26,86 +26,45 @@ without demanding a full marketing brief every time.
 ## Brand-aware default
 If a brand/site already exists, take a quick look at it and match the spirit — then modernize it.
 
-Examples:
-- `tackleroomsupply.com` → editorial outdoor/fishing palette, premium but still commercial
-- `contractor-ai.com` → restrained operator-tech palette, credible and sharp
-- `unhookoutdoors.com` → cleaner outdoor lifestyle direction with fresher energy
-
-StrikeFrame should borrow the language, then modernize it — not clone the site 1:1.
-
-## Presets
-- `landscape-banner`
-- `social-square`
-- `social-portrait`
-- `linkedin-landscape`
+Current example brand directions in the repo:
+- **TackleRoomSupply 2030**
+- **Contractor-AI 2030**
+- **Unhook Outdoors 2030**
+- **Editorial Premium**
 
 ## Layout personalities
-- `editorial-left` — classic marketing banner, strong left hierarchy
-- `centered-hero` — centered high-impact promo/social layout
-- `split-card` — modern panel/card treatment with more polish and readability
+- `editorial-left`
+- `centered-hero`
+- `split-card`
 
-## Design frameworks
-These are starting systems, not handcuffs.
+## Featured examples
 
-### TackleRoomSupply Future
-Built off the newer TackleRoomSupply direction: cleaner, brighter, more premium, less dated.
+### TackleRoomSupply 2030
+![tackleroomsupply-2030](./examples/featured/tackleroomsupply-2030.jpg)
 
-![tackleroomsupply-future](./examples/frameworks/tackleroomsupply-future.jpg)
+### Contractor-AI 2030
+![contractor-ai-2030](./examples/featured/contractor-ai-2030.jpg)
 
-### Contractor-AI Future
-Sharper operator-tech styling for serious software, analytics, and industrial AI marketing.
-
-![contractor-ai-future](./examples/frameworks/contractor-ai-future.jpg)
-
-### Unhook Outdoors Future
-Outdoor-lifestyle system with cleaner energy and a more modern adventure aesthetic.
-
-![unhookoutdoors-future](./examples/frameworks/unhookoutdoors-future.jpg)
+### Unhook Outdoors 2030
+![unhookoutdoors-2030](./examples/featured/unhookoutdoors-2030.jpg)
 
 ### Editorial Premium
-Warmer, more refined, more story-driven.
+![editorial-premium](./examples/featured/editorial-premium.jpg)
 
-![editorial-premium](./examples/frameworks/editorial-premium.jpg)
+## Review process
+Do not trust the first render blindly.
 
-### Punchy Social
-Sharper, bolder, high-contrast social promo style.
+Before calling an asset done, check:
+- headline stays inside the intended composition area
+- text does not overflow card/panel treatments
+- CTA remains readable and visually distinct
+- hierarchy reads fast on mobile
+- colors feel modern, not muddy or dated
+- image + typography mood match the brand/use case
+- if the first render looks off, adjust the config and rerun
 
-![punchy-social](./examples/frameworks/punchy-social.jpg)
-
-### LinkedIn Clean
-Restrained, credible, professional, but not dead.
-
-![linkedin-clean](./examples/frameworks/linkedin-clean.jpg)
-
-## Preset examples
-
-### landscape-banner
-![landscape-banner](./examples/landscape-banner.jpg)
-
-### social-square
-![social-square](./examples/social-square.jpg)
-
-### social-portrait
-![social-portrait](./examples/social-portrait.jpg)
-
-### linkedin-landscape
-![linkedin-landscape](./examples/linkedin-landscape.jpg)
-
-## Style gallery
-
-These show the same core layout with different modern palette directions.
-
-### Midnight Signal
-![midnight-signal](./examples/styles/midnight-signal.jpg)
-
-### Editorial Sand
-![editorial-sand](./examples/styles/editorial-sand.jpg)
-
-### Aurora Mint
-![aurora-mint](./examples/styles/aurora-mint.jpg)
-
-### Plum Luxe
-![plum-luxe](./examples/styles/plum-luxe.jpg)
+Current built-in guardrail:
+- split-card layouts now auto-expand the panel height when needed so the CTA/text block does not hang outside the card
 
 ## Run
 - `npm install`
@@ -113,19 +72,15 @@ These show the same core layout with different modern palette directions.
 - `npm run generate:product`
 
 ## Example configs
-### Presets
-- `node scripts/render.js configs/sample-landscape-banner.json`
-- `node scripts/render.js configs/sample-social-square.json`
-- `node scripts/render.js configs/sample-social-portrait.json`
-- `node scripts/render.js configs/sample-linkedin-landscape.json`
-
-### Frameworks
-- `node scripts/render.js configs/frameworks/tackleroomsupply-future.json`
-- `node scripts/render.js configs/frameworks/contractor-ai-future.json`
-- `node scripts/render.js configs/frameworks/unhookoutdoors-future.json`
+- `node scripts/render.js configs/frameworks/tackleroomsupply-2030.json`
+- `node scripts/render.js configs/frameworks/contractor-ai-2030.json`
+- `node scripts/render.js configs/frameworks/unhookoutdoors-2030.json`
 - `node scripts/render.js configs/frameworks/editorial-premium.json`
-- `node scripts/render.js configs/frameworks/punchy-social.json`
-- `node scripts/render.js configs/frameworks/linkedin-clean.json`
+
+More examples and experiments live in:
+- `configs/frameworks/`
+- `configs/styles/`
+- `examples/`
 
 ## Configurable systems
 ### Typography

@@ -1,0 +1,48 @@
+{
+  "preset": "social-square",
+  "template": "banner",
+  "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/03.jpg",
+  "output": "examples/featured/unhookoutdoors-2030.jpg",
+  "text": {
+    "headline": "Get Outside. Stay Outside.",
+    "subhead": "Outdoor-forward, cleaner, more atmospheric social styling for Unhook-style brand work.",
+    "cta": "LAUNCH THE POST",
+    "footer": "STRIKEFRAME \u00b7 UNHOOK OUTDOORS 2030"
+  },
+  "theme": {
+    "headlineColor": "#FBFFF9",
+    "subheadColor": "#DDE7D8",
+    "footerColor": "#B8C7B4",
+    "ctaTextColor": "#102012",
+    "ctaFill": "rgba(216,236,198,0.92)",
+    "ctaStroke": "rgba(255,255,255,0.24)",
+    "gradientStart": "#1D2D1E",
+    "gradientEnd": "#587A4E"
+  },
+  "overlay": {
+    "leftColor": "19,34,18",
+    "midColor": "48,78,41",
+    "rightColor": "104,142,84",
+    "leftOpacity": 0.78,
+    "midOpacity": 0.38,
+    "rightOpacity": 0.16
+  },
+  "typography": {
+    "headlineFontFamily": "Outfit, Arial, sans-serif",
+    "bodyFontFamily": "Source Serif 4, Georgia, serif",
+    "headlineSize": 68,
+    "subheadSize": 27
+  },
+  "layout": {
+    "personality": "centered-hero",
+    "align": "center",
+    "maxHeadlineChars": 15,
+    "maxSubheadChars": 23,
+    "headlineY": 185,
+    "subheadY": 470,
+    "ctaRectY": 655,
+    "ctaY": 693,
+    "footerY": 1000,
+    "ctaWidth": 300
+  }
+}
