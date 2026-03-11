@@ -1,6 +1,6 @@
 # StrikeFrame
 
-Version: **v0.3.1**
+Version: **v0.4.1**
 
 Local renderer for banners, social graphics, and simple product composites.
 
@@ -8,29 +8,22 @@ Local renderer for banners, social graphics, and simple product composites.
 - renders marketing graphics locally
 - uses JSON config files
 - supports reusable size presets
-- supports design frameworks, typography, button styles, and layout personalities
+- supports design frameworks, typography, button styles, layout personalities, and grouped CTA placement
+- supports shape overlays, multiple text layers, batch rendering, and single-pass QA/QC review
 - avoids GUI-tool dependency for simple asset generation
 
 ## Core idea
 StrikeFrame should feel like an inspiring default design system, not a blank utility.
 
-The LLM should usually be able to make a strong first-pass decision on:
-- font direction
-- color palette
-- CTA treatment
-- spacing and hierarchy
-- layout personality
+But the examples in this repo are **references, not the lane markers**.
+If agents overfit to the examples, all output will look the same. That is failure, not consistency.
 
-without demanding a full marketing brief every time.
-
-## Brand-aware default
-If a brand/site already exists, take a quick look at it and match the spirit — then modernize it.
-
-Current example brand directions in the repo:
-- **TackleRoomSupply 2030**
-- **Contractor-AI 2030**
-- **Unhook Outdoors 2030**
-- **Editorial Premium**
+## Design philosophy
+- Use examples to understand what is possible
+- Build new layouts intentionally for the job at hand
+- Do not blindly reuse the same layout, same photo, same left-text stack, or same CTA treatment
+- Treat buttons and button labels as one grouped component
+- Prefer brand-aware adaptation over rigid template reuse
 
 ## Layout personalities
 - `editorial-left`
@@ -52,7 +45,7 @@ Current example brand directions in the repo:
 ![editorial-premium](./examples/featured/editorial-premium.jpg)
 
 ## QA/QC review layer
-StrikeFrame now runs a **single-pass review after file creation**.
+StrikeFrame runs a **single-pass review after file creation**.
 
 It does **not** auto-rerender in a loop. It renders once, inspects once, writes a review file, and reports `pass`, `warn`, or `fail`.
 
@@ -75,59 +68,16 @@ Before calling an asset done, check:
 - hierarchy reads fast on mobile
 - colors feel modern, not muddy or dated
 - image + typography mood match the brand/use case
-- if the first render looks off, adjust the config and rerun
-
-Current built-in guardrail:
-- split-card layouts now auto-expand the panel height when needed so the CTA/text block does not hang outside the card
+- if the first render looks off, adjust the config and rerun once intentionally
 
 ## Run
 - `npm install`
-- `npm run generate:banner`
-- `npm run generate:product`
-
-## Example configs
 - `node scripts/render.js configs/sample-batch.json`
-- `node scripts/render.js configs/frameworks/tackleroomsupply-2030.json`
 - `node scripts/render.js configs/frameworks/contractor-ai-2030.json`
-- `node scripts/render.js configs/frameworks/unhookoutdoors-2030.json`
-- `node scripts/render.js configs/frameworks/editorial-premium.json`
 
 More examples and experiments live in:
 - `configs/frameworks/`
 - `configs/styles/`
+- `configs/proof/`
 - `examples/`
-
-## New in this phase
-- shape overlays (`ellipse`, `rectangle`)
-- multiple text layers
-- batch manifest rendering via `sample-batch.json`
-
-## Configurable systems
-### Typography
-- headline font family
-- body font family
-- font weights
-- type scale
-
-### Buttons
-- fill color
-- stroke color
-- text color
-- width/placement
-
-### Layout
-- alignment
-- hierarchy spacing
-- card/panel treatment
-- centered vs left-led composition
-
-### Theme
-- gradient background
-- overlay colors
-- text colors
-- badge/product plate styling
-
-## Notes
-- Works with a real background image if `backgroundPath` is provided in config
-- Falls back to a generated gradient background if no source image is provided
-- Current product-composite flow is still early; real product cutouts are the next important upgrade
+- `skills/`
