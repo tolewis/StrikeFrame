@@ -1,0 +1,29 @@
+{
+  "preset": "landscape-banner",
+  "template": "banner",
+  "output": "examples/styles/plum-luxe.jpg",
+  "text": {
+    "headline": "One Engine. Many Looks.",
+    "subhead": "StrikeFrame can shift mood, polish, and platform feel without changing the workflow.",
+    "cta": "EXPLORE STYLES",
+    "footer": "STRIKEFRAME \u00b7 STYLE GALLERY"
+  },
+  "overlay": {
+    "leftColor": "28,10,36",
+    "midColor": "62,22,74",
+    "rightColor": "149,94,166",
+    "leftOpacity": 0.82,
+    "midOpacity": 0.42,
+    "rightOpacity": 0.18
+  },
+  "theme": {
+    "headlineColor": "#FFF6FD",
+    "subheadColor": "#EEDAF1",
+    "footerColor": "#DAB7E0",
+    "ctaFill": "rgba(246,214,255,0.14)",
+    "ctaStroke": "rgba(246,214,255,0.38)",
+    "ctaTextColor": "#FFF6FD",
+    "gradientStart": "#2A1035",
+    "gradientEnd": "#9662A7"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "preset": "landscape-banner",
+  "template": "banner",
+  "output": "examples/styles/aurora-mint.jpg",
+  "text": {
+    "headline": "One Engine. Many Looks.",
+    "subhead": "StrikeFrame can shift mood, polish, and platform feel without changing the workflow.",
+    "cta": "EXPLORE STYLES",
+    "footer": "STRIKEFRAME \u00b7 STYLE GALLERY"
+  },
+  "overlay": {
+    "leftColor": "9,32,41",
+    "midColor": "14,66,68",
+    "rightColor": "72,151,140",
+    "leftOpacity": 0.78,
+    "midOpacity": 0.38,
+    "rightOpacity": 0.16
+  },
+  "theme": {
+    "headlineColor": "#F3FFFC",
+    "subheadColor": "#D5F2EA",
+    "footerColor": "#B2DDD1",
+    "ctaFill": "rgba(168,255,232,0.16)",
+    "ctaStroke": "rgba(168,255,232,0.42)",
+    "ctaTextColor": "#F3FFFC",
+    "gradientStart": "#0A2E33",
+    "gradientEnd": "#4DAE9F"
+  }
+}

@@ -34,6 +34,23 @@ Local renderer for banners, social graphics, and simple product composites.
 ### linkedin-landscape
 ![linkedin-landscape](./examples/linkedin-landscape.jpg)
 
+
+## Style gallery
+
+These show the same core layout with different modern palette directions.
+
+### Midnight Signal
+![midnight-signal](./examples/styles/midnight-signal.jpg)
+
+### Editorial Sand
+![editorial-sand](./examples/styles/editorial-sand.jpg)
+
+### Aurora Mint
+![aurora-mint](./examples/styles/aurora-mint.jpg)
+
+### Plum Luxe
+![plum-luxe](./examples/styles/plum-luxe.jpg)
+
 ## Run
 - `npm install`
 - `npm run generate:banner`

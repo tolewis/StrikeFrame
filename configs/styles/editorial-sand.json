@@ -1,0 +1,29 @@
+{
+  "preset": "landscape-banner",
+  "template": "banner",
+  "output": "examples/styles/editorial-sand.jpg",
+  "text": {
+    "headline": "One Engine. Many Looks.",
+    "subhead": "StrikeFrame can shift mood, polish, and platform feel without changing the workflow.",
+    "cta": "EXPLORE STYLES",
+    "footer": "STRIKEFRAME \u00b7 STYLE GALLERY"
+  },
+  "overlay": {
+    "leftColor": "47,33,24",
+    "midColor": "86,63,45",
+    "rightColor": "187,151,120",
+    "leftOpacity": 0.72,
+    "midOpacity": 0.34,
+    "rightOpacity": 0.12
+  },
+  "theme": {
+    "headlineColor": "#FFF8F0",
+    "subheadColor": "#F3E6D4",
+    "footerColor": "#E1CCB2",
+    "ctaFill": "rgba(255,244,228,0.18)",
+    "ctaStroke": "rgba(255,230,196,0.45)",
+    "ctaTextColor": "#FFF8F0",
+    "gradientStart": "#5B4031",
+    "gradientEnd": "#C89C71"
+  }
+}

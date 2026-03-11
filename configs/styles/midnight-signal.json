@@ -1,0 +1,29 @@
+{
+  "preset": "landscape-banner",
+  "template": "banner",
+  "output": "examples/styles/midnight-signal.jpg",
+  "text": {
+    "headline": "One Engine. Many Looks.",
+    "subhead": "StrikeFrame can shift mood, polish, and platform feel without changing the workflow.",
+    "cta": "EXPLORE STYLES",
+    "footer": "STRIKEFRAME \u00b7 STYLE GALLERY"
+  },
+  "overlay": {
+    "leftColor": "5,14,24",
+    "midColor": "9,30,52",
+    "rightColor": "19,55,88",
+    "leftOpacity": 0.82,
+    "midOpacity": 0.5,
+    "rightOpacity": 0.24
+  },
+  "theme": {
+    "headlineColor": "#F8FBFF",
+    "subheadColor": "#D7E6F5",
+    "footerColor": "#B7CBE0",
+    "ctaFill": "rgba(91,155,213,0.25)",
+    "ctaStroke": "rgba(144,192,236,0.55)",
+    "ctaTextColor": "#F8FBFF",
+    "gradientStart": "#081C2E",
+    "gradientEnd": "#1E5D86"
+  }
+}
