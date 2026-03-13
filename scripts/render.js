@@ -33,6 +33,60 @@ function wrapText(text, maxChars) {
 }
 function presetDefault(preset, portraitValue, defaultValue) { return preset === 'social-portrait' ? portraitValue : defaultValue; }
 
+async function removeWhiteBackground(inputBuffer) {
+  const { data, info } = await sharp(inputBuffer).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  const { width, height, channels } = info;
+  const pixels = Buffer.from(data);
+  const total = width * height;
+  const minCh = (k) => { const i = k * channels; return Math.min(pixels[i], pixels[i + 1], pixels[i + 2]); };
+  // Analyze edge pixels to pick strategy
+  const edgeBri = [];
+  for (let x = 0; x < width; x++) {
+    for (const y of [0, 1, height - 1, height - 2]) edgeBri.push(minCh(y * width + x));
+  }
+  for (let y = 2; y < height - 2; y++) {
+    for (const x of [0, 1, width - 1, width - 2]) edgeBri.push(minCh(y * width + x));
+  }
+  edgeBri.sort((a, b) => a - b);
+  const p50 = edgeBri[Math.floor(edgeBri.length * 0.5)];
+  if (p50 >= 245) {
+    // Clean white background — flood fill from edges
+    const threshold = 240;
+    const visited = new Uint8Array(total);
+    const queue = new Int32Array(total);
+    let head = 0, tail = 0;
+    const isWhite = (k) => minCh(k) >= threshold;
+    const seed = (x, y) => {
+      const k = y * width + x;
+      if (!visited[k] && isWhite(k)) { visited[k] = 1; queue[tail++] = k; }
+    };
+    for (let x = 0; x < width; x++) { seed(x, 0); seed(x, height - 1); }
+    for (let y = 1; y < height - 1; y++) { seed(0, y); seed(width - 1, y); }
+    while (head < tail) {
+      const k = queue[head++];
+      pixels[k * channels + 3] = 0;
+      const cx = k % width, cy = (k - cx) / width;
+      if (cx > 0) seed(cx - 1, cy);
+      if (cx < width - 1) seed(cx + 1, cy);
+      if (cy > 0) seed(cx, cy - 1);
+      if (cy < height - 1) seed(cx, cy + 1);
+    }
+  } else {
+    // Gradient/gray background — soft brightness mask
+    const threshold = Math.max(p50 - 5, 200);
+    const feather = 30;
+    for (let k = 0; k < total; k++) {
+      const b = minCh(k);
+      if (b >= threshold) {
+        pixels[k * channels + 3] = 0;
+      } else if (b >= threshold - feather) {
+        pixels[k * channels + 3] = Math.round(255 * (threshold - b) / feather);
+      }
+    }
+  }
+  return sharp(pixels, { raw: { width, height, channels } }).png().toBuffer();
+}
+
 function normalizeConfig(raw) {
   const preset = PRESETS[raw.preset || 'landscape-banner'];
   if (!preset) throw new Error(`Unknown preset: ${raw.preset}`);
@@ -86,8 +140,11 @@ function normalizeConfig(raw) {
       badgeY: chosenPreset === 'social-portrait' ? 180 : 120
     }, raw.productComposite || {}),
     review: Object.assign({ enforcePanelFit: true }, raw.review || {}),
+    productImage: raw.productImage || null,
     shapes: Array.isArray(raw.shapes) ? raw.shapes : [],
-    textLayers: Array.isArray(raw.textLayers) ? raw.textLayers : []
+    textLayers: Array.isArray(raw.textLayers) ? raw.textLayers : [],
+    statBlocks: Array.isArray(raw.statBlocks) ? raw.statBlocks : [],
+    dividers: Array.isArray(raw.dividers) ? raw.dividers : []
   };
   if (cfg.review.enforcePanelFit && cfg.layout.personality === 'split-card') {
     const panelPad = 40;
@@ -169,9 +226,9 @@ function getCtaGeometry(cfg) {
   return {
     rectX,
     rectY: cfg.layout.ctaRectY,
-    textX: isCentered ? Math.round(cfg.width / 2) : cfg.layout.ctaX,
-    textY: cfg.layout.ctaY,
-    textAnchor: isCentered ? 'middle' : 'start'
+    textX: rectX + Math.round(cfg.layout.ctaWidth / 2),
+    textY: cfg.layout.ctaRectY + Math.round(cfg.layout.ctaHeight / 2),
+    textAnchor: 'middle'
   };
 }
 
@@ -198,7 +255,7 @@ function buildPrimaryTextSvg(cfg) {
       <rect x="${cta.rectX}" y="${cta.rectY}" width="${layout.ctaWidth}" height="${layout.ctaHeight}" rx="29" fill="${theme.ctaFill}" stroke="${theme.ctaStroke}" />
       <text x="${headlineX}" y="${layout.headlineY}" text-anchor="${headlineAnchor}" fill="${theme.headlineColor}" font-size="${typography.headlineSize}" font-family="${typography.headlineFontFamily}" font-weight="${typography.headlineWeight}">${headlineTspans}</text>
       <text x="${subheadX}" y="${layout.subheadY}" text-anchor="${headlineAnchor}" fill="${theme.subheadColor}" font-size="${typography.subheadSize}" font-family="${typography.bodyFontFamily}" font-weight="${typography.subheadWeight}">${subheadTspans}</text>
-      <text x="${cta.textX}" y="${cta.textY}" text-anchor="${cta.textAnchor}" dominant-baseline="middle" fill="${theme.ctaTextColor}" font-size="${typography.ctaSize}" font-family="${typography.bodyFontFamily}" font-weight="${typography.ctaWeight}">${escapeXml(text.cta)}</text>
+      <text x="${cta.textX}" y="${cta.textY}" dy="0.35em" text-anchor="${cta.textAnchor}" fill="${theme.ctaTextColor}" font-size="${typography.ctaSize}" font-family="${typography.bodyFontFamily}" font-weight="${typography.ctaWeight}">${escapeXml(text.cta).replace(/★+/g, m => `<tspan fill="#FFD700">${m}</tspan>`)}</text>
       <text x="${footerX}" y="${layout.footerY}" text-anchor="${headlineAnchor}" fill="${theme.footerColor}" font-size="${typography.footerSize}" font-family="${typography.bodyFontFamily}" font-weight="${typography.footerWeight}" letter-spacing="${typography.footerTracking}">${escapeXml(text.footer)}</text>
     </svg>`);
 }
@@ -233,7 +290,47 @@ function buildTextLayersSvg(cfg) {
     const y = t.y || 0;
     const tspans = lines.map((line, i) => `<tspan x="${x}" dy="${i === 0 ? 0 : step}">${escapeXml(line)}</tspan>`).join('');
     const shadow = t.shadow ? `<text x="${x + (t.shadow.dx || 2)}" y="${y + (t.shadow.dy || 2)}" text-anchor="${anchor}" fill="${t.shadow.color || 'rgba(0,0,0,0.35)'}" font-size="${t.fontSize || 28}" font-family="${t.fontFamily || cfg.typography.bodyFontFamily}" font-weight="${t.fontWeight || 600}">${tspans}</text>` : '';
-    return `${shadow}<text x="${x}" y="${y}" text-anchor="${anchor}" fill="${t.color || '#ffffff'}" font-size="${t.fontSize || 28}" font-family="${t.fontFamily || cfg.typography.bodyFontFamily}" font-weight="${t.fontWeight || 600}">${tspans}</text>`;
+    return `${shadow}<text x="${x}" y="${y}" text-anchor="${anchor}" fill="${t.color || '#ffffff'}" font-size="${t.fontSize || 28}" font-family="${t.fontFamily || cfg.typography.bodyFontFamily}" font-weight="${t.fontWeight || 600}">${tspans}</text>`.replace(/✓/g, '<tspan fill="#4CAF50" font-weight="800">✓</tspan>');
+  }).join('\n');
+  return Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg">${nodes}</svg>`);
+}
+
+function buildStatBlocksSvg(cfg) {
+  if (!cfg.statBlocks || !cfg.statBlocks.length) return null;
+  const nodes = cfg.statBlocks.map((s) => {
+    const x = s.x || 0;
+    const y = s.y || 0;
+    const valueSize = s.valueSize || 72;
+    const labelSize = s.labelSize || 18;
+    const valueColor = s.valueColor || '#ffffff';
+    const labelColor = s.labelColor || 'rgba(255,255,255,0.6)';
+    const valueWeight = s.valueWeight || 800;
+    const labelWeight = s.labelWeight || 500;
+    const valueFontFamily = s.valueFontFamily || cfg.typography.headlineFontFamily;
+    const labelFontFamily = s.labelFontFamily || cfg.typography.bodyFontFamily;
+    const anchor = s.align === 'center' ? 'middle' : (s.align === 'right' ? 'end' : 'start');
+    const labelGap = s.labelGap || 8;
+    const labelY = y + valueSize + labelGap;
+    const labelTracking = s.labelTracking || 2;
+
+    // Optional accent line above the value
+    const accent = s.accent ? `<rect x="${s.accent.align === 'center' ? x - (s.accent.width || 40) / 2 : x}" y="${y - (s.accent.gap || 16) - (s.accent.height || 3)}" width="${s.accent.width || 40}" height="${s.accent.height || 3}" rx="${(s.accent.height || 3) / 2}" fill="${s.accent.color || 'rgba(255,255,255,0.3)'}"/>` : '';
+
+    // Optional background pill/card behind the stat
+    const bg = s.background ? `<rect x="${s.background.x || x - 20}" y="${s.background.y || y - 20}" width="${s.background.width || 200}" height="${s.background.height || valueSize + labelSize + labelGap + 40}" rx="${s.background.radius || 16}" fill="${s.background.fill || 'rgba(255,255,255,0.06)'}" stroke="${s.background.stroke || 'rgba(255,255,255,0.1)'}" stroke-width="${s.background.strokeWidth || 1}"/>` : '';
+
+    return `${bg}${accent}<text x="${x}" y="${y + valueSize * 0.82}" text-anchor="${anchor}" fill="${valueColor}" font-size="${valueSize}" font-family="${valueFontFamily}" font-weight="${valueWeight}">${escapeXml(s.value)}</text><text x="${x}" y="${labelY + labelSize * 0.82}" text-anchor="${anchor}" fill="${labelColor}" font-size="${labelSize}" font-family="${labelFontFamily}" font-weight="${labelWeight}" letter-spacing="${labelTracking}">${escapeXml((s.label || '').toUpperCase())}</text>`;
+  }).join('\n');
+  return Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg">${nodes}</svg>`);
+}
+
+function buildDividersSvg(cfg) {
+  if (!cfg.dividers || !cfg.dividers.length) return null;
+  const nodes = cfg.dividers.map((d) => {
+    if (d.type === 'vertical') {
+      return `<rect x="${d.x || 0}" y="${d.y || 0}" width="${d.width || 1}" height="${d.height || 100}" rx="${(d.width || 1) / 2}" fill="${d.color || 'rgba(255,255,255,0.12)'}"/>`;
+    }
+    return `<rect x="${d.x || 0}" y="${d.y || 0}" width="${d.width || 100}" height="${d.height || 1}" rx="${(d.height || 1) / 2}" fill="${d.color || 'rgba(255,255,255,0.12)'}"/>`;
   }).join('\n');
   return Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg">${nodes}</svg>`);
 }
@@ -242,18 +339,51 @@ function buildCompositeSvg(cfg) {
   const { productComposite, theme, typography } = cfg;
   if (!productComposite.enabled) return null;
   const d = productComposite.circleDiameter;
+  const shadowFill = String(theme.productShadowColor).startsWith('rgb')
+    ? theme.productShadowColor
+    : `rgba(${theme.productShadowColor},${productComposite.shadowOpacity})`;
+  const badgeLabel = escapeXml(productComposite.badgeText);
+  const badgeWidth = Math.max(170, Math.round(badgeLabel.length * 11 + 48));
+  const badgeTextX = productComposite.badgeX + Math.round(badgeWidth / 2);
   return Buffer.from(`
     <svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="${productComposite.circleX + d / 2}" cy="${productComposite.circleY + d / 2 + 20}" r="${d / 2}" fill="rgba(${theme.productShadowColor},${productComposite.shadowOpacity})" />
+      <circle cx="${productComposite.circleX + d / 2}" cy="${productComposite.circleY + d / 2 + 20}" r="${d / 2}" fill="${shadowFill}" />
       <circle cx="${productComposite.circleX + d / 2}" cy="${productComposite.circleY + d / 2}" r="${d / 2}" fill="${theme.productCircleFill}" />
-      <rect x="${productComposite.badgeX}" y="${productComposite.badgeY}" width="170" height="42" rx="21" fill="${theme.badgeFill}" stroke="${theme.badgeStroke}" />
-      <text x="${productComposite.badgeX + 24}" y="${productComposite.badgeY + 28}" fill="${theme.badgeTextColor}" font-size="20" font-family="${typography.bodyFontFamily}" font-weight="700">${escapeXml(productComposite.badgeText)}</text>
+      <rect x="${productComposite.badgeX}" y="${productComposite.badgeY}" width="${badgeWidth}" height="42" rx="21" fill="${theme.badgeFill}" stroke="${theme.badgeStroke}" />
+      <text x="${badgeTextX}" y="${productComposite.badgeY + 28}" text-anchor="middle" fill="${theme.badgeTextColor}" font-size="20" font-family="${typography.bodyFontFamily}" font-weight="700">${badgeLabel}</text>
     </svg>`);
 }
 
 async function buildProductLayer(cfg) {
   if (!cfg.productComposite.enabled || !cfg.productPath || !fileExists(cfg.productPath)) return null;
-  return sharp(cfg.productPath).resize({ width: cfg.productComposite.productWidth, fit: 'inside' }).png().toBuffer();
+  const d = cfg.productComposite.circleDiameter;
+  const r = d / 2;
+  const inset = 20;
+  const fitSize = d - inset * 2;
+  let productBuf = await sharp(cfg.productPath)
+    .resize({ width: fitSize, height: fitSize, fit: 'inside', background: { r: 0, g: 0, b: 0, alpha: 0 } })
+    .png()
+    .toBuffer();
+  productBuf = await removeWhiteBackground(productBuf);
+  const prodMeta = await sharp(productBuf).metadata();
+  const centered = await sharp({
+    create: { width: d, height: d, channels: 4, background: { r: 0, g: 0, b: 0, alpha: 0 } }
+  })
+    .composite([{
+      input: productBuf,
+      left: Math.round((d - prodMeta.width) / 2),
+      top: Math.round((d - prodMeta.height) / 2)
+    }])
+    .png()
+    .toBuffer();
+  const circleMask = Buffer.from(
+    `<svg width="${d}" height="${d}" xmlns="http://www.w3.org/2000/svg"><circle cx="${r}" cy="${r}" r="${r}" fill="white"/></svg>`
+  );
+  const maskBuf = await sharp(circleMask).resize(d, d).png().toBuffer();
+  return sharp(centered)
+    .composite([{ input: maskBuf, blend: 'dest-in' }])
+    .png()
+    .toBuffer();
 }
 
 
@@ -270,6 +400,73 @@ function estimateTextBlock({ lines, fontSize, lineStep, x, y, align = 'left', ma
 
 function boxInside(inner, outer, pad = 0) {
   return inner.left >= outer.left + pad && inner.top >= outer.top + pad && inner.right <= outer.right - pad && inner.bottom <= outer.bottom - pad;
+}
+
+function boxCenter(box) {
+  return { x: (box.left + box.right) / 2, y: (box.top + box.bottom) / 2 };
+}
+
+function runCompositionChecks(cfg, { headlineBox, subheadBox, ctaRect, footerBox, canvas }) {
+  const checks = [];
+  const warnings = [];
+  const scores = {};
+  const w = cfg.width;
+  const h = cfg.height;
+  const thirdX = w / 3;
+  const thirdY = h / 3;
+
+  // 1. Rule of thirds — headline vertical alignment
+  // Best: headline center Y near top-third line (h/3) within 15% tolerance
+  const headlineCenter = boxCenter(headlineBox);
+  const headlineThirdDist = Math.abs(headlineCenter.y - thirdY) / h;
+  const headlineThirdScore = Math.max(0, Math.round((1 - headlineThirdDist / 0.25) * 100));
+  scores.headlineThirdsAlignment = headlineThirdScore;
+  checks.push({ name: 'thirds-headline-vertical', pass: headlineThirdScore >= 40, value: headlineThirdScore, note: `Headline center ${Math.round(headlineCenter.y)}px vs top-third ${Math.round(thirdY)}px` });
+  if (headlineThirdScore < 40) warnings.push('Headline is far from the rule-of-thirds grid line.');
+
+  // 2. Vertical reading order
+  const ctaCenterY = (ctaRect.top + ctaRect.bottom) / 2;
+  const footerCenterY = (footerBox.top + footerBox.bottom) / 2;
+  const orderCorrect = headlineCenter.y < subheadBox.top && (ctaCenterY <= 0 || subheadBox.bottom < ctaCenterY) && (footerCenterY <= 0 || footerCenterY > headlineCenter.y);
+  scores.readingOrder = orderCorrect ? 100 : 0;
+  checks.push({ name: 'reading-order', pass: orderCorrect, value: orderCorrect ? 100 : 0 });
+  if (!orderCorrect) warnings.push('Elements break natural top-to-bottom reading order.');
+
+  // 3. Edge margins — no key text within 60px of canvas edge
+  const minMargin = 60;
+  const allBoxes = [headlineBox, subheadBox];
+  if (ctaRect.left >= 0) allBoxes.push(ctaRect);
+  let marginOk = true;
+  for (const box of allBoxes) {
+    if (box.left < minMargin || box.top < minMargin || (w - box.right) < minMargin) { marginOk = false; break; }
+  }
+  scores.edgeMargins = marginOk ? 100 : 30;
+  checks.push({ name: 'edge-margins', pass: marginOk, value: marginOk ? 100 : 30 });
+  if (!marginOk) warnings.push('Key text is within 60px of the canvas edge — tight margins reduce perceived quality.');
+
+  // 4. Visual hierarchy — headline must be larger than subhead
+  const hlSize = cfg.typography.headlineSize || 42;
+  const shSize = cfg.typography.subheadSize || 22;
+  const hierarchyRatio = hlSize / Math.max(shSize, 1);
+  const hierarchyOk = hierarchyRatio >= 1.4;
+  scores.visualHierarchy = hierarchyOk ? 100 : Math.round(hierarchyRatio / 1.4 * 100);
+  checks.push({ name: 'visual-hierarchy', pass: hierarchyOk, value: Math.round(hierarchyRatio * 100) / 100, note: `headline ${hlSize}px / subhead ${shSize}px = ${Math.round(hierarchyRatio * 100) / 100}x (want ≥1.4x)` });
+  if (!hierarchyOk) warnings.push(`Headline-to-subhead size ratio is only ${Math.round(hierarchyRatio * 100) / 100}x — weak visual hierarchy.`);
+
+  // 5. Canvas utilization — content shouldn't be crammed into < 40% or sprawled > 90% of height
+  const contentTop = headlineBox.top;
+  const contentBottom = Math.max(subheadBox.bottom, ctaRect.bottom > 0 ? ctaRect.bottom : 0, footerBox.bottom);
+  const utilization = (contentBottom - contentTop) / h;
+  const utilizationOk = utilization >= 0.35 && utilization <= 0.92;
+  scores.canvasUtilization = utilizationOk ? 100 : 50;
+  checks.push({ name: 'canvas-utilization', pass: utilizationOk, value: Math.round(utilization * 100), note: `Content spans ${Math.round(utilization * 100)}% of canvas height` });
+  if (!utilizationOk) warnings.push(`Content uses ${Math.round(utilization * 100)}% of canvas height — ${utilization < 0.35 ? 'feels empty' : 'feels crammed'}.`);
+
+  // Composite score (average of all sub-scores)
+  const scoreValues = Object.values(scores);
+  scores.overall = Math.round(scoreValues.reduce((a, b) => a + b, 0) / scoreValues.length);
+
+  return { checks, warnings, scores };
 }
 
 function runReview(cfg, meta) {
@@ -330,8 +527,36 @@ function runReview(cfg, meta) {
     if (!insideCanvas) failures.push(`Text layer ${i + 1} exceeds the canvas.`);
   }
 
+  // --- Composition checks (marketing design frameworks) ---
+  const composition = runCompositionChecks(cfg, { headlineBox, subheadBox, ctaRect, footerBox, canvas });
+  checks.push(...composition.checks);
+  warnings.push(...composition.warnings);
+
   const status = failures.length ? 'fail' : (warnings.length ? 'warn' : 'pass');
-  return { status, checks, warnings, failures, regions: { canvas, primaryRegion }, output: cfg.output, dimensions: { width: meta.width, height: meta.height } };
+  return { status, checks, warnings, failures, composition: composition.scores, regions: { canvas, primaryRegion }, output: cfg.output, dimensions: { width: meta.width, height: meta.height } };
+}
+
+async function buildRectProductLayer(cfg) {
+  const pi = cfg.productImage;
+  if (!pi || !pi.path || !fileExists(pi.path)) return null;
+  const w = pi.width || 400;
+  const h = pi.height || 400;
+  const pad = pi.padding || 20;
+  const productBuf = await sharp(pi.path)
+    .resize({ width: w - pad * 2, height: h - pad * 2, fit: 'contain', background: { r: 255, g: 255, b: 255, alpha: 1 } })
+    .png()
+    .toBuffer();
+  const prodMeta = await sharp(productBuf).metadata();
+  return sharp({
+    create: { width: w, height: h, channels: 4, background: { r: 255, g: 255, b: 255, alpha: 1 } }
+  })
+    .composite([{
+      input: productBuf,
+      left: Math.round((w - prodMeta.width) / 2),
+      top: Math.round((h - prodMeta.height) / 2)
+    }])
+    .png()
+    .toBuffer();
 }
 
 async function renderOne(rawConfig) {
@@ -339,11 +564,16 @@ async function renderOne(rawConfig) {
   ensureDir(cfg.output);
   const composites = [{ input: buildOverlaySvg(cfg) }];
   const shapes = buildShapesSvg(cfg); if (shapes) composites.push({ input: shapes });
+  const dividers = buildDividersSvg(cfg); if (dividers) composites.push({ input: dividers });
+  // Rectangular product image (for explainer cards)
+  const rectProduct = await buildRectProductLayer(cfg);
+  if (rectProduct) composites.push({ input: rectProduct, left: cfg.productImage.x || 0, top: cfg.productImage.y || 0 });
   composites.push({ input: buildPrimaryTextSvg(cfg) });
   const textLayers = buildTextLayersSvg(cfg); if (textLayers) composites.push({ input: textLayers });
+  const statBlocksSvg = buildStatBlocksSvg(cfg); if (statBlocksSvg) composites.push({ input: statBlocksSvg });
   const compositeSvg = buildCompositeSvg(cfg); if (compositeSvg) composites.push({ input: compositeSvg });
   const productLayer = await buildProductLayer(cfg);
-  if (productLayer) composites.push({ input: productLayer, left: cfg.productComposite.circleX + cfg.productComposite.productOffsetX, top: cfg.productComposite.circleY + cfg.productComposite.productOffsetY });
+  if (productLayer) composites.push({ input: productLayer, left: cfg.productComposite.circleX, top: cfg.productComposite.circleY });
   const base = (cfg.backgroundPath && fileExists(cfg.backgroundPath))
     ? sharp(cfg.backgroundPath).resize(cfg.width, cfg.height, { fit: 'cover', position: 'center' }).modulate({ brightness: 0.82, saturation: 1.05 })
     : sharp({ create: { width: cfg.width, height: cfg.height, channels: 3, background: { r: 11, g: 42, b: 64 } } }).composite([{ input: Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="${cfg.theme.gradientStart}"/><stop offset="100%" stop-color="${cfg.theme.gradientEnd}"/></linearGradient></defs><rect width="100%" height="100%" fill="url(#g)"/></svg>`) }]);

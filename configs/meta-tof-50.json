@@ -1,0 +1,2466 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#FFFFFF",
+      "subheadColor": "#e4e4e7",
+      "footerColor": "rgba(255,255,255,0.35)",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(232,93,58,0.92)",
+      "ctaStroke": "rgba(255,160,120,0.35)"
+    }
+  },
+  "renders": [
+    {
+      "_comment": "=== sportfisher-running | Variant A ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-running-a.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
+      "text": {
+        "headline": "This Is The Life.",
+        "subhead": "Offshore gear for the ones who live it.",
+        "cta": "200+ PRODUCTS IN STOCK",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "8,30,50",
+        "midColor": "8,30,50",
+        "rightColor": "8,30,50",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 280,
+        "subheadY": 470,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 609,
+        "ctaX": 400,
+        "ctaY": 654,
+        "ctaWidth": 641,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== sportfisher-running | Variant B ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-running-b.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
+      "text": {
+        "headline": "The Ocean Doesn't Negotiate.",
+        "subhead": "Neither does our gear.",
+        "cta": "FREE SHIPPING OVER $99",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "8,30,50",
+        "midColor": "8,30,50",
+        "rightColor": "8,30,50",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 280,
+        "subheadY": 513,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 580,
+        "ctaX": 400,
+        "ctaY": 625,
+        "ctaWidth": 641,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== sportfisher-running | Variant C ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-running-c.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
+      "text": {
+        "headline": "Rigged Right. Every Time.",
+        "subhead": "Tested by the anglers who sell it.",
+        "cta": "\u2605\u2605\u2605\u2605\u2605  RATED 4.8 BY ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "8,30,50",
+        "midColor": "8,30,50",
+        "rightColor": "8,30,50",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 280,
+        "subheadY": 470,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 609,
+        "ctaX": 464,
+        "ctaY": 654,
+        "ctaWidth": 769,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== sportfisher-running | Variant D ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-running-d.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
+      "text": {
+        "headline": "Built For Days Like This.",
+        "subhead": "No middlemen. No markup. Just gear.",
+        "cta": "DIRECT-TO-ANGLER PRICING",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "8,30,50",
+        "midColor": "8,30,50",
+        "rightColor": "8,30,50",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 280,
+        "subheadY": 470,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 609,
+        "ctaX": 426,
+        "ctaY": 654,
+        "ctaWidth": 692,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== sportfisher-running | Variant E ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-running-e.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
+      "text": {
+        "headline": "You Don't Outwork The Ocean.",
+        "subhead": "You out-gear it.",
+        "cta": "JOIN 12,000+ ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "8,30,50",
+        "midColor": "8,30,50",
+        "rightColor": "8,30,50",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 280,
+        "subheadY": 513,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 580,
+        "ctaX": 390,
+        "ctaY": 625,
+        "ctaWidth": 620,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== underwater-mahi-sunlight | Variant A ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-sunlight-a.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_133588506.jpeg",
+      "text": {
+        "headline": "This Is The Life.",
+        "subhead": "Offshore gear for the ones who live it.",
+        "cta": "200+ PRODUCTS IN STOCK",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "0,20,40",
+        "midColor": "0,20,40",
+        "rightColor": "0,20,40",
+        "leftOpacity": 0.25,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.25,
+        "vignetteBottom": 0.45
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 200,
+        "subheadY": 610,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 753,
+        "ctaX": 540,
+        "ctaY": 798,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== underwater-mahi-sunlight | Variant B ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-sunlight-b.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_133588506.jpeg",
+      "text": {
+        "headline": "The Ocean Doesn't Negotiate.",
+        "subhead": "Neither does our gear.",
+        "cta": "FREE SHIPPING OVER $99",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "0,20,40",
+        "midColor": "0,20,40",
+        "rightColor": "0,20,40",
+        "leftOpacity": 0.25,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.25,
+        "vignetteBottom": 0.45
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 200,
+        "subheadY": 610,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 678,
+        "ctaX": 540,
+        "ctaY": 723,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== underwater-mahi-sunlight | Variant C ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-sunlight-c.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_133588506.jpeg",
+      "text": {
+        "headline": "Rigged Right. Every Time.",
+        "subhead": "Tested by the anglers who sell it.",
+        "cta": "\u2605\u2605\u2605\u2605\u2605  RATED 4.8 BY ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "0,20,40",
+        "midColor": "0,20,40",
+        "rightColor": "0,20,40",
+        "leftOpacity": 0.25,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.25,
+        "vignetteBottom": 0.45
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 200,
+        "subheadY": 610,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 753,
+        "ctaX": 540,
+        "ctaY": 798,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== underwater-mahi-sunlight | Variant D ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-sunlight-d.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_133588506.jpeg",
+      "text": {
+        "headline": "Built For Days Like This.",
+        "subhead": "No middlemen. No markup. Just gear.",
+        "cta": "DIRECT-TO-ANGLER PRICING",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "0,20,40",
+        "midColor": "0,20,40",
+        "rightColor": "0,20,40",
+        "leftOpacity": 0.25,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.25,
+        "vignetteBottom": 0.45
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 200,
+        "subheadY": 610,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 753,
+        "ctaX": 540,
+        "ctaY": 798,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== underwater-mahi-sunlight | Variant E ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-sunlight-e.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_133588506.jpeg",
+      "text": {
+        "headline": "You Don't Outwork The Ocean.",
+        "subhead": "You out-gear it.",
+        "cta": "JOIN 12,000+ ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "0,20,40",
+        "midColor": "0,20,40",
+        "rightColor": "0,20,40",
+        "leftOpacity": 0.25,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.25,
+        "vignetteBottom": 0.45
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 200,
+        "subheadY": 610,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 678,
+        "ctaX": 540,
+        "ctaY": 723,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== reel-sunset-silhouette | Variant A ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-sunset-silhouette-a.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_175678582.jpeg",
+      "text": {
+        "headline": "This Is The Life.",
+        "subhead": "Offshore gear for the ones who live it.",
+        "cta": "200+ PRODUCTS IN STOCK",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "10,20,30",
+        "midColor": "10,20,30",
+        "rightColor": "10,20,30",
+        "leftOpacity": 0.35,
+        "midOpacity": 0.25,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.5
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 210,
+        "subheadY": 600,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 743,
+        "ctaX": 540,
+        "ctaY": 788,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== reel-sunset-silhouette | Variant B ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-sunset-silhouette-b.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_175678582.jpeg",
+      "text": {
+        "headline": "The Ocean Doesn't Negotiate.",
+        "subhead": "Neither does our gear.",
+        "cta": "FREE SHIPPING OVER $99",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "10,20,30",
+        "midColor": "10,20,30",
+        "rightColor": "10,20,30",
+        "leftOpacity": 0.35,
+        "midOpacity": 0.25,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.5
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 210,
+        "subheadY": 600,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 668,
+        "ctaX": 540,
+        "ctaY": 713,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== reel-sunset-silhouette | Variant C ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-sunset-silhouette-c.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_175678582.jpeg",
+      "text": {
+        "headline": "Rigged Right. Every Time.",
+        "subhead": "Tested by the anglers who sell it.",
+        "cta": "\u2605\u2605\u2605\u2605\u2605  RATED 4.8 BY ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "10,20,30",
+        "midColor": "10,20,30",
+        "rightColor": "10,20,30",
+        "leftOpacity": 0.35,
+        "midOpacity": 0.25,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.5
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 210,
+        "subheadY": 600,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 743,
+        "ctaX": 540,
+        "ctaY": 788,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== reel-sunset-silhouette | Variant D ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-sunset-silhouette-d.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_175678582.jpeg",
+      "text": {
+        "headline": "Built For Days Like This.",
+        "subhead": "No middlemen. No markup. Just gear.",
+        "cta": "DIRECT-TO-ANGLER PRICING",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "10,20,30",
+        "midColor": "10,20,30",
+        "rightColor": "10,20,30",
+        "leftOpacity": 0.35,
+        "midOpacity": 0.25,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.5
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 210,
+        "subheadY": 600,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 743,
+        "ctaX": 540,
+        "ctaY": 788,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== reel-sunset-silhouette | Variant E ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-sunset-silhouette-e.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_175678582.jpeg",
+      "text": {
+        "headline": "You Don't Outwork The Ocean.",
+        "subhead": "You out-gear it.",
+        "cta": "JOIN 12,000+ ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "10,20,30",
+        "midColor": "10,20,30",
+        "rightColor": "10,20,30",
+        "leftOpacity": 0.35,
+        "midOpacity": 0.25,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.5
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 210,
+        "subheadY": 600,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 668,
+        "ctaX": 540,
+        "ctaY": 713,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== aerial-sharks-boat | Variant A ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/aerial-sharks-boat-a.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_219637627.jpeg",
+      "text": {
+        "headline": "This Is The Life.",
+        "subhead": "Offshore gear for the ones who live it.",
+        "cta": "200+ PRODUCTS IN STOCK",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "0,30,40",
+        "midColor": "0,30,40",
+        "rightColor": "0,30,40",
+        "leftOpacity": 0.45,
+        "midOpacity": 0.25,
+        "rightOpacity": 0.1,
+        "vignetteBottom": 0.2
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 260,
+        "subheadY": 450,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 589,
+        "ctaX": 400,
+        "ctaY": 634,
+        "ctaWidth": 641,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== aerial-sharks-boat | Variant B ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/aerial-sharks-boat-b.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_219637627.jpeg",
+      "text": {
+        "headline": "The Ocean Doesn't Negotiate.",
+        "subhead": "Neither does our gear.",
+        "cta": "FREE SHIPPING OVER $99",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "0,30,40",
+        "midColor": "0,30,40",
+        "rightColor": "0,30,40",
+        "leftOpacity": 0.45,
+        "midOpacity": 0.25,
+        "rightOpacity": 0.1,
+        "vignetteBottom": 0.2
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 260,
+        "subheadY": 493,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 560,
+        "ctaX": 400,
+        "ctaY": 605,
+        "ctaWidth": 641,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== aerial-sharks-boat | Variant C ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/aerial-sharks-boat-c.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_219637627.jpeg",
+      "text": {
+        "headline": "Rigged Right. Every Time.",
+        "subhead": "Tested by the anglers who sell it.",
+        "cta": "\u2605\u2605\u2605\u2605\u2605  RATED 4.8 BY ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "0,30,40",
+        "midColor": "0,30,40",
+        "rightColor": "0,30,40",
+        "leftOpacity": 0.45,
+        "midOpacity": 0.25,
+        "rightOpacity": 0.1,
+        "vignetteBottom": 0.2
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 260,
+        "subheadY": 450,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 589,
+        "ctaX": 464,
+        "ctaY": 634,
+        "ctaWidth": 769,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== aerial-sharks-boat | Variant D ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/aerial-sharks-boat-d.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_219637627.jpeg",
+      "text": {
+        "headline": "Built For Days Like This.",
+        "subhead": "No middlemen. No markup. Just gear.",
+        "cta": "DIRECT-TO-ANGLER PRICING",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "0,30,40",
+        "midColor": "0,30,40",
+        "rightColor": "0,30,40",
+        "leftOpacity": 0.45,
+        "midOpacity": 0.25,
+        "rightOpacity": 0.1,
+        "vignetteBottom": 0.2
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 260,
+        "subheadY": 450,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 589,
+        "ctaX": 426,
+        "ctaY": 634,
+        "ctaWidth": 692,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== aerial-sharks-boat | Variant E ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/aerial-sharks-boat-e.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_219637627.jpeg",
+      "text": {
+        "headline": "You Don't Outwork The Ocean.",
+        "subhead": "You out-gear it.",
+        "cta": "JOIN 12,000+ ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "0,30,40",
+        "midColor": "0,30,40",
+        "rightColor": "0,30,40",
+        "leftOpacity": 0.45,
+        "midOpacity": 0.25,
+        "rightOpacity": 0.1,
+        "vignetteBottom": 0.2
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 260,
+        "subheadY": 493,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 560,
+        "ctaX": 390,
+        "ctaY": 605,
+        "ctaWidth": 620,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== fighting-fish-dusk | Variant A ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/fighting-fish-dusk-a.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_331722964.jpeg",
+      "text": {
+        "headline": "This Is The Life.",
+        "subhead": "Offshore gear for the ones who live it.",
+        "cta": "200+ PRODUCTS IN STOCK",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "8,20,40",
+        "midColor": "8,20,40",
+        "rightColor": "8,20,40",
+        "leftOpacity": 0.5,
+        "midOpacity": 0.3,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 240,
+        "subheadY": 430,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 569,
+        "ctaX": 400,
+        "ctaY": 614,
+        "ctaWidth": 641,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== fighting-fish-dusk | Variant B ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/fighting-fish-dusk-b.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_331722964.jpeg",
+      "text": {
+        "headline": "The Ocean Doesn't Negotiate.",
+        "subhead": "Neither does our gear.",
+        "cta": "FREE SHIPPING OVER $99",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "8,20,40",
+        "midColor": "8,20,40",
+        "rightColor": "8,20,40",
+        "leftOpacity": 0.5,
+        "midOpacity": 0.3,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 240,
+        "subheadY": 473,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 540,
+        "ctaX": 400,
+        "ctaY": 585,
+        "ctaWidth": 641,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== fighting-fish-dusk | Variant C ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/fighting-fish-dusk-c.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_331722964.jpeg",
+      "text": {
+        "headline": "Rigged Right. Every Time.",
+        "subhead": "Tested by the anglers who sell it.",
+        "cta": "\u2605\u2605\u2605\u2605\u2605  RATED 4.8 BY ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "8,20,40",
+        "midColor": "8,20,40",
+        "rightColor": "8,20,40",
+        "leftOpacity": 0.5,
+        "midOpacity": 0.3,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 240,
+        "subheadY": 430,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 569,
+        "ctaX": 464,
+        "ctaY": 614,
+        "ctaWidth": 769,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== fighting-fish-dusk | Variant D ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/fighting-fish-dusk-d.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_331722964.jpeg",
+      "text": {
+        "headline": "Built For Days Like This.",
+        "subhead": "No middlemen. No markup. Just gear.",
+        "cta": "DIRECT-TO-ANGLER PRICING",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "8,20,40",
+        "midColor": "8,20,40",
+        "rightColor": "8,20,40",
+        "leftOpacity": 0.5,
+        "midOpacity": 0.3,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 240,
+        "subheadY": 430,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 569,
+        "ctaX": 426,
+        "ctaY": 614,
+        "ctaWidth": 692,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== fighting-fish-dusk | Variant E ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/fighting-fish-dusk-e.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_331722964.jpeg",
+      "text": {
+        "headline": "You Don't Outwork The Ocean.",
+        "subhead": "You out-gear it.",
+        "cta": "JOIN 12,000+ ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "8,20,40",
+        "midColor": "8,20,40",
+        "rightColor": "8,20,40",
+        "leftOpacity": 0.5,
+        "midOpacity": 0.3,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 240,
+        "subheadY": 473,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 540,
+        "ctaX": 390,
+        "ctaY": 585,
+        "ctaWidth": 620,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== underwater-mahi-deep | Variant A ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-deep-a.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_284446852.jpeg",
+      "text": {
+        "headline": "This Is The Life.",
+        "subhead": "Offshore gear for the ones who live it.",
+        "cta": "200+ PRODUCTS IN STOCK",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "0,10,30",
+        "midColor": "0,10,30",
+        "rightColor": "0,10,30",
+        "leftOpacity": 0.35,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.1,
+        "vignetteBottom": 0.3
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 280,
+        "subheadY": 470,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 609,
+        "ctaX": 400,
+        "ctaY": 654,
+        "ctaWidth": 641,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== underwater-mahi-deep | Variant B ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-deep-b.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_284446852.jpeg",
+      "text": {
+        "headline": "The Ocean Doesn't Negotiate.",
+        "subhead": "Neither does our gear.",
+        "cta": "FREE SHIPPING OVER $99",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "0,10,30",
+        "midColor": "0,10,30",
+        "rightColor": "0,10,30",
+        "leftOpacity": 0.35,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.1,
+        "vignetteBottom": 0.3
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 280,
+        "subheadY": 513,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 580,
+        "ctaX": 400,
+        "ctaY": 625,
+        "ctaWidth": 641,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== underwater-mahi-deep | Variant C ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-deep-c.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_284446852.jpeg",
+      "text": {
+        "headline": "Rigged Right. Every Time.",
+        "subhead": "Tested by the anglers who sell it.",
+        "cta": "\u2605\u2605\u2605\u2605\u2605  RATED 4.8 BY ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "0,10,30",
+        "midColor": "0,10,30",
+        "rightColor": "0,10,30",
+        "leftOpacity": 0.35,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.1,
+        "vignetteBottom": 0.3
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 280,
+        "subheadY": 470,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 609,
+        "ctaX": 464,
+        "ctaY": 654,
+        "ctaWidth": 769,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== underwater-mahi-deep | Variant D ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-deep-d.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_284446852.jpeg",
+      "text": {
+        "headline": "Built For Days Like This.",
+        "subhead": "No middlemen. No markup. Just gear.",
+        "cta": "DIRECT-TO-ANGLER PRICING",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "0,10,30",
+        "midColor": "0,10,30",
+        "rightColor": "0,10,30",
+        "leftOpacity": 0.35,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.1,
+        "vignetteBottom": 0.3
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 280,
+        "subheadY": 470,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 609,
+        "ctaX": 426,
+        "ctaY": 654,
+        "ctaWidth": 692,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== underwater-mahi-deep | Variant E ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-deep-e.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_284446852.jpeg",
+      "text": {
+        "headline": "You Don't Outwork The Ocean.",
+        "subhead": "You out-gear it.",
+        "cta": "JOIN 12,000+ ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "0,10,30",
+        "midColor": "0,10,30",
+        "rightColor": "0,10,30",
+        "leftOpacity": 0.35,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.1,
+        "vignetteBottom": 0.3
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 280,
+        "subheadY": 513,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 580,
+        "ctaX": 390,
+        "ctaY": 625,
+        "ctaWidth": 620,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== reel-golden-sunset | Variant A ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-golden-sunset-a.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_229283027.jpeg",
+      "text": {
+        "headline": "This Is The Life.",
+        "subhead": "Offshore gear for the ones who live it.",
+        "cta": "200+ PRODUCTS IN STOCK",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "20,10,0",
+        "midColor": "20,10,0",
+        "rightColor": "20,10,0",
+        "leftOpacity": 0.3,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.3,
+        "vignetteBottom": 0.45
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 230,
+        "subheadY": 600,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 743,
+        "ctaX": 540,
+        "ctaY": 788,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== reel-golden-sunset | Variant B ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-golden-sunset-b.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_229283027.jpeg",
+      "text": {
+        "headline": "The Ocean Doesn't Negotiate.",
+        "subhead": "Neither does our gear.",
+        "cta": "FREE SHIPPING OVER $99",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "20,10,0",
+        "midColor": "20,10,0",
+        "rightColor": "20,10,0",
+        "leftOpacity": 0.3,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.3,
+        "vignetteBottom": 0.45
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 230,
+        "subheadY": 600,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 668,
+        "ctaX": 540,
+        "ctaY": 713,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== reel-golden-sunset | Variant C ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-golden-sunset-c.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_229283027.jpeg",
+      "text": {
+        "headline": "Rigged Right. Every Time.",
+        "subhead": "Tested by the anglers who sell it.",
+        "cta": "\u2605\u2605\u2605\u2605\u2605  RATED 4.8 BY ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "20,10,0",
+        "midColor": "20,10,0",
+        "rightColor": "20,10,0",
+        "leftOpacity": 0.3,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.3,
+        "vignetteBottom": 0.45
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 230,
+        "subheadY": 600,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 743,
+        "ctaX": 540,
+        "ctaY": 788,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== reel-golden-sunset | Variant D ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-golden-sunset-d.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_229283027.jpeg",
+      "text": {
+        "headline": "Built For Days Like This.",
+        "subhead": "No middlemen. No markup. Just gear.",
+        "cta": "DIRECT-TO-ANGLER PRICING",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "20,10,0",
+        "midColor": "20,10,0",
+        "rightColor": "20,10,0",
+        "leftOpacity": 0.3,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.3,
+        "vignetteBottom": 0.45
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 230,
+        "subheadY": 600,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 743,
+        "ctaX": 540,
+        "ctaY": 788,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== reel-golden-sunset | Variant E ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-golden-sunset-e.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_229283027.jpeg",
+      "text": {
+        "headline": "You Don't Outwork The Ocean.",
+        "subhead": "You out-gear it.",
+        "cta": "JOIN 12,000+ ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "20,10,0",
+        "midColor": "20,10,0",
+        "rightColor": "20,10,0",
+        "leftOpacity": 0.3,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.3,
+        "vignetteBottom": 0.45
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 230,
+        "subheadY": 600,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 668,
+        "ctaX": 540,
+        "ctaY": 713,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== rod-holders-lures | Variant A ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/rod-holders-lures-a.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_337378282.jpeg",
+      "text": {
+        "headline": "This Is The Life.",
+        "subhead": "Offshore gear for the ones who live it.",
+        "cta": "200+ PRODUCTS IN STOCK",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "10,15,25",
+        "midColor": "10,15,25",
+        "rightColor": "10,15,25",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 260,
+        "subheadY": 450,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 589,
+        "ctaX": 400,
+        "ctaY": 634,
+        "ctaWidth": 641,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== rod-holders-lures | Variant B ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/rod-holders-lures-b.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_337378282.jpeg",
+      "text": {
+        "headline": "The Ocean Doesn't Negotiate.",
+        "subhead": "Neither does our gear.",
+        "cta": "FREE SHIPPING OVER $99",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "10,15,25",
+        "midColor": "10,15,25",
+        "rightColor": "10,15,25",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 260,
+        "subheadY": 493,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 560,
+        "ctaX": 400,
+        "ctaY": 605,
+        "ctaWidth": 641,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== rod-holders-lures | Variant C ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/rod-holders-lures-c.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_337378282.jpeg",
+      "text": {
+        "headline": "Rigged Right. Every Time.",
+        "subhead": "Tested by the anglers who sell it.",
+        "cta": "\u2605\u2605\u2605\u2605\u2605  RATED 4.8 BY ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "10,15,25",
+        "midColor": "10,15,25",
+        "rightColor": "10,15,25",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 260,
+        "subheadY": 450,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 589,
+        "ctaX": 464,
+        "ctaY": 634,
+        "ctaWidth": 769,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== rod-holders-lures | Variant D ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/rod-holders-lures-d.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_337378282.jpeg",
+      "text": {
+        "headline": "Built For Days Like This.",
+        "subhead": "No middlemen. No markup. Just gear.",
+        "cta": "DIRECT-TO-ANGLER PRICING",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "10,15,25",
+        "midColor": "10,15,25",
+        "rightColor": "10,15,25",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 260,
+        "subheadY": 450,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 589,
+        "ctaX": 426,
+        "ctaY": 634,
+        "ctaWidth": 692,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== rod-holders-lures | Variant E ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/rod-holders-lures-e.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_337378282.jpeg",
+      "text": {
+        "headline": "You Don't Outwork The Ocean.",
+        "subhead": "You out-gear it.",
+        "cta": "JOIN 12,000+ ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "10,15,25",
+        "midColor": "10,15,25",
+        "rightColor": "10,15,25",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 260,
+        "subheadY": 493,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 560,
+        "ctaX": 390,
+        "ctaY": 605,
+        "ctaWidth": 620,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== sportfisher-jetty | Variant A ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-jetty-a.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_345435684.jpeg",
+      "text": {
+        "headline": "This Is The Life.",
+        "subhead": "Offshore gear for the ones who live it.",
+        "cta": "200+ PRODUCTS IN STOCK",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "5,25,40",
+        "midColor": "5,25,40",
+        "rightColor": "5,25,40",
+        "leftOpacity": 0.35,
+        "midOpacity": 0.25,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.4
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 200,
+        "subheadY": 600,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 743,
+        "ctaX": 540,
+        "ctaY": 788,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== sportfisher-jetty | Variant B ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-jetty-b.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_345435684.jpeg",
+      "text": {
+        "headline": "The Ocean Doesn't Negotiate.",
+        "subhead": "Neither does our gear.",
+        "cta": "FREE SHIPPING OVER $99",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "5,25,40",
+        "midColor": "5,25,40",
+        "rightColor": "5,25,40",
+        "leftOpacity": 0.35,
+        "midOpacity": 0.25,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.4
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 200,
+        "subheadY": 600,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 668,
+        "ctaX": 540,
+        "ctaY": 713,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== sportfisher-jetty | Variant C ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-jetty-c.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_345435684.jpeg",
+      "text": {
+        "headline": "Rigged Right. Every Time.",
+        "subhead": "Tested by the anglers who sell it.",
+        "cta": "\u2605\u2605\u2605\u2605\u2605  RATED 4.8 BY ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "5,25,40",
+        "midColor": "5,25,40",
+        "rightColor": "5,25,40",
+        "leftOpacity": 0.35,
+        "midOpacity": 0.25,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.4
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 200,
+        "subheadY": 600,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 743,
+        "ctaX": 540,
+        "ctaY": 788,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== sportfisher-jetty | Variant D ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-jetty-d.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_345435684.jpeg",
+      "text": {
+        "headline": "Built For Days Like This.",
+        "subhead": "No middlemen. No markup. Just gear.",
+        "cta": "DIRECT-TO-ANGLER PRICING",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "5,25,40",
+        "midColor": "5,25,40",
+        "rightColor": "5,25,40",
+        "leftOpacity": 0.35,
+        "midOpacity": 0.25,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.4
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 200,
+        "subheadY": 600,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 743,
+        "ctaX": 540,
+        "ctaY": 788,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== sportfisher-jetty | Variant E ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-jetty-e.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_345435684.jpeg",
+      "text": {
+        "headline": "You Don't Outwork The Ocean.",
+        "subhead": "You out-gear it.",
+        "cta": "JOIN 12,000+ ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "5,25,40",
+        "midColor": "5,25,40",
+        "rightColor": "5,25,40",
+        "leftOpacity": 0.35,
+        "midOpacity": 0.25,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.4
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 200,
+        "subheadY": 600,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 668,
+        "ctaX": 540,
+        "ctaY": 713,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== fisherman-rough-seas | Variant A ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/fisherman-rough-seas-a.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_991789270.jpeg",
+      "text": {
+        "headline": "This Is The Life.",
+        "subhead": "Offshore gear for the ones who live it.",
+        "cta": "200+ PRODUCTS IN STOCK",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "10,15,20",
+        "midColor": "10,15,20",
+        "rightColor": "10,15,20",
+        "leftOpacity": 0.4,
+        "midOpacity": 0.3,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.45
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 200,
+        "subheadY": 610,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 753,
+        "ctaX": 540,
+        "ctaY": 798,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== fisherman-rough-seas | Variant B ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/fisherman-rough-seas-b.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_991789270.jpeg",
+      "text": {
+        "headline": "The Ocean Doesn't Negotiate.",
+        "subhead": "Neither does our gear.",
+        "cta": "FREE SHIPPING OVER $99",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "10,15,20",
+        "midColor": "10,15,20",
+        "rightColor": "10,15,20",
+        "leftOpacity": 0.4,
+        "midOpacity": 0.3,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.45
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 200,
+        "subheadY": 610,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 678,
+        "ctaX": 540,
+        "ctaY": 723,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== fisherman-rough-seas | Variant C ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/fisherman-rough-seas-c.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_991789270.jpeg",
+      "text": {
+        "headline": "Rigged Right. Every Time.",
+        "subhead": "Tested by the anglers who sell it.",
+        "cta": "\u2605\u2605\u2605\u2605\u2605  RATED 4.8 BY ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "10,15,20",
+        "midColor": "10,15,20",
+        "rightColor": "10,15,20",
+        "leftOpacity": 0.4,
+        "midOpacity": 0.3,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.45
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 200,
+        "subheadY": 610,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 753,
+        "ctaX": 540,
+        "ctaY": 798,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== fisherman-rough-seas | Variant D ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/fisherman-rough-seas-d.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_991789270.jpeg",
+      "text": {
+        "headline": "Built For Days Like This.",
+        "subhead": "No middlemen. No markup. Just gear.",
+        "cta": "DIRECT-TO-ANGLER PRICING",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "10,15,20",
+        "midColor": "10,15,20",
+        "rightColor": "10,15,20",
+        "leftOpacity": 0.4,
+        "midOpacity": 0.3,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.45
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 200,
+        "subheadY": 610,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 753,
+        "ctaX": 540,
+        "ctaY": 798,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== fisherman-rough-seas | Variant E ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/fisherman-rough-seas-e.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_991789270.jpeg",
+      "text": {
+        "headline": "You Don't Outwork The Ocean.",
+        "subhead": "You out-gear it.",
+        "cta": "JOIN 12,000+ ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "10,15,20",
+        "midColor": "10,15,20",
+        "rightColor": "10,15,20",
+        "leftOpacity": 0.4,
+        "midOpacity": 0.3,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.45
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 200,
+        "subheadY": 610,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 678,
+        "ctaX": 540,
+        "ctaY": 723,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    }
+  ]
+}
