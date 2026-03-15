@@ -476,7 +476,7 @@ def build_renders():
         },
         "badges": [{
             "text": "TOURNAMENT GRADE",
-            "x": 400, "y": 120,
+            "x": 80, "y": 50,
             "fill": BRAND["accent"], "textColor": "#ffffff", "fontSize": 16,
         }],
     })
