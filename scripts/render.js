@@ -33,6 +33,258 @@ function wrapText(text, maxChars) {
 }
 function presetDefault(preset, portraitValue, defaultValue) { return preset === 'social-portrait' ? portraitValue : defaultValue; }
 
+// --- Icon glyph SVG paths (simple 24x24 viewBox paths) ---
+const ICON_PATHS = {
+  shield: 'M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z',
+  check: 'M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z',
+  wave: 'M2 12c1.5-2 3-3 4.5-1s3 1 4.5-1 3-3 4.5-1 3 1 4.5-1M2 17c1.5-2 3-3 4.5-1s3 1 4.5-1 3-3 4.5-1 3 1 4.5-1M2 7c1.5-2 3-3 4.5-1s3 1 4.5-1 3-3 4.5-1 3 1 4.5-1',
+  anchor: 'M12 2a3 3 0 00-3 3c0 1.3.84 2.4 2 2.82V11H8v2h3v6.95A8 8 0 014 12H2a10 10 0 0010 10 10 10 0 0010-10h-2a8 8 0 01-7 7.95V13h3v-2h-3V7.82A3 3 0 0015 5a3 3 0 00-3-3zm0 2a1 1 0 110 2 1 1 0 010-2z',
+  gear: 'M19.14 12.94c.04-.3.06-.61.06-.94s-.02-.64-.07-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.49.49 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.48.48 0 00-.48-.41h-3.84a.48.48 0 00-.48.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.49.49 0 00-.59.22L2.74 8.87a.48.48 0 00.12.61l2.03 1.58c-.05.3-.07.62-.07.94s.02.64.07.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.26.41.48.41h3.84c.24 0 .44-.17.48-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6A3.6 3.6 0 1115.6 12 3.6 3.6 0 0112 15.6z',
+  arrow: 'M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z',
+  target: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6a2 2 0 100 4 2 2 0 000-4z',
+  fish: 'M12 20l-2-2c-3-3-8-6-8-10a4 4 0 018 0 4 4 0 018 0c0 4-5 7-8 10l1 1zM18 6a6 6 0 00-6 6c2.5-2.5 6-5 6-6z'
+};
+
+function buildIconGlyphSvg(type, x, y, size, color) {
+  const pathData = ICON_PATHS[type] || ICON_PATHS.check;
+  const scale = size / 24;
+  const isStroke = (type === 'wave');
+  const fill = isStroke ? 'none' : color;
+  const stroke = isStroke ? `stroke="${color}" stroke-width="2" stroke-linecap="round"` : '';
+  return `<g transform="translate(${x},${y}) scale(${scale})"><path d="${pathData}" fill="${fill}" ${stroke}/></g>`;
+}
+
+function buildBadgesSvg(cfg) {
+  if (!cfg.badges || !cfg.badges.length) return null;
+  const nodes = cfg.badges.map((b) => {
+    const fontSize = b.fontSize || 16;
+    const textLen = (b.text || '').length;
+    const width = b.width || Math.max(100, Math.round(textLen * fontSize * 0.6 + 32));
+    const height = b.height || 36;
+    const rx = b.radius || Math.round(height / 2);
+    const fill = b.fill || 'rgba(232,93,58,0.92)';
+    const textColor = b.textColor || '#ffffff';
+    const textX = (b.x || 0) + Math.round(width / 2);
+    const textY = (b.y || 0) + Math.round(height / 2);
+    return `<rect x="${b.x || 0}" y="${b.y || 0}" width="${width}" height="${height}" rx="${rx}" fill="${fill}"/>` +
+      `<text x="${textX}" y="${textY}" dy="0.35em" text-anchor="middle" fill="${textColor}" font-size="${fontSize}" font-family="Montserrat, Arial, sans-serif" font-weight="700">${escapeXml(b.text)}</text>`;
+  }).join('\n');
+  return Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg">${nodes}</svg>`);
+}
+
+function buildStarRatingSvg(x, y, stars, size, cfg) {
+  const gap = Math.round(size * 0.25);
+  const total = 5;
+  const nodes = [];
+  for (let i = 0; i < total; i++) {
+    const sx = x + i * (size + gap);
+    const color = i < stars ? '#FFD700' : 'rgba(255,255,255,0.2)';
+    nodes.push(`<text x="${sx}" y="${y}" fill="${color}" font-size="${size}" font-family="Arial">★</text>`);
+  }
+  return nodes.join('\n');
+}
+
+function buildBenefitStackSvg(cfg) {
+  if (!cfg.benefitStack || !cfg.benefitStack.items || !cfg.benefitStack.items.length) return null;
+  const bs = cfg.benefitStack;
+  const startX = bs.startX || cfg.layout.leftX || 80;
+  const startY = bs.startY || 580;
+  const spacing = bs.spacing || 90;
+  const iconSize = bs.iconSize || 36;
+  const textSize = bs.textSize || 28;
+  const iconColor = bs.iconColor || '#63b3ed';
+  const textColor = bs.textColor || '#ffffff';
+  const textMaxChars = bs.textMaxChars || 32;
+  const textFont = bs.fontFamily || cfg.typography.bodyFontFamily;
+
+  const nodes = bs.items.map((item, i) => {
+    const iy = startY + i * spacing;
+    const iconCenterY = iy - Math.round(iconSize / 2);
+    const icon = buildIconGlyphSvg(item.icon || 'check', startX, iconCenterY, iconSize, item.color || iconColor);
+    const textX = startX + iconSize + 16;
+    const lines = wrapText(item.label || '', textMaxChars);
+    const lineStep = Math.round(textSize * 1.2);
+    const tspans = lines.map((line, li) => `<tspan x="${textX}" dy="${li === 0 ? 0 : lineStep}">${escapeXml(line)}</tspan>`).join('');
+    return `${icon}<text x="${textX}" y="${iy}" fill="${textColor}" font-size="${textSize}" font-family="${textFont}" font-weight="600">${tspans}</text>`;
+  }).join('\n');
+
+  return Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg">${nodes}</svg>`);
+}
+
+function buildTestimonialSvg(cfg) {
+  if (!cfg.testimonial) return null;
+  const t = cfg.testimonial;
+  const quoteSize = t.quoteSize || 36;
+  const nameSize = t.nameSize || 22;
+  const starSize = t.starSize || 32;
+  const quoteColor = t.quoteColor || '#ffffff';
+  const attributionColor = t.attributionColor || 'rgba(255,255,255,0.7)';
+  const maxChars = t.quoteMaxChars || 28;
+  const quoteFont = t.fontFamily || cfg.typography.bodyFontFamily;
+  const isCentered = (cfg.layout.personality === 'centered-hero' || cfg.layout.align === 'center');
+  const anchor = isCentered ? 'middle' : 'start';
+  const baseX = isCentered ? Math.round(cfg.width / 2) : (cfg.layout.leftX || 80);
+  const quoteMarkY = t.startY || 300;
+  const quoteTextY = quoteMarkY + 80;
+  const quoteLineStep = Math.round(quoteSize * 1.35);
+  const lines = wrapText(t.quote || '', maxChars);
+  const tspans = lines.map((line, i) => `<tspan x="${baseX}" dy="${i === 0 ? 0 : quoteLineStep}">${escapeXml(line)}</tspan>`).join('');
+  const quoteBlockHeight = (lines.length - 1) * quoteLineStep + quoteSize;
+  const starsY = quoteTextY + quoteBlockHeight + 40;
+  const starsTotalWidth = 5 * (starSize + Math.round(starSize * 0.25)) - Math.round(starSize * 0.25);
+  const starsX = isCentered ? Math.round(baseX - starsTotalWidth / 2) : baseX;
+  const starsSvg = buildStarRatingSvg(starsX, starsY, t.stars || 5, starSize, cfg);
+  const nameY = starsY + starSize + 24;
+  const roleY = nameY + nameSize + 8;
+  const quoteMarkX = isCentered ? Math.round(baseX - 20) : baseX;
+
+  return Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg">
+    <text x="${quoteMarkX}" y="${quoteMarkY}" fill="${t.quoteMarkColor || 'rgba(232,93,58,0.8)'}" font-size="120" font-family="Georgia, serif" font-weight="700">\u201C</text>
+    <text x="${baseX}" y="${quoteTextY}" text-anchor="${anchor}" fill="${quoteColor}" font-size="${quoteSize}" font-family="${quoteFont}" font-weight="500" font-style="italic">${tspans}</text>
+    ${starsSvg}
+    <text x="${baseX}" y="${nameY}" text-anchor="${anchor}" fill="${quoteColor}" font-size="${nameSize}" font-family="${cfg.typography.headlineFontFamily}" font-weight="700">${escapeXml(t.name || '')}</text>
+    <text x="${baseX}" y="${roleY}" text-anchor="${anchor}" fill="${attributionColor}" font-size="${Math.round(nameSize * 0.82)}" font-family="${cfg.typography.bodyFontFamily}" font-weight="400">${escapeXml(t.role || '')}</text>
+  </svg>`);
+}
+
+function buildSplitRevealSvg(cfg) {
+  if (!cfg.splitReveal) return null;
+  const sr = cfg.splitReveal;
+  const dividerX = sr.dividerX || Math.round(cfg.width / 2);
+  const startY = sr.startY || 400;
+  const rowHeight = sr.rowHeight || 60;
+  const textSize = sr.textSize || 24;
+  const labelSize = sr.labelSize || 16;
+  const leftColor = sr.leftColor || 'rgba(255,255,255,0.5)';
+  const rightColor = sr.rightColor || '#ffffff';
+  const labelColor = sr.labelColor || 'rgba(255,255,255,0.4)';
+  const accentColor = sr.accentColor || 'rgba(232,93,58,0.8)';
+  const font = cfg.typography.bodyFontFamily;
+  const leftX = sr.leftX || Math.round(dividerX / 2);
+  const rightX = sr.rightX || Math.round(dividerX + (cfg.width - dividerX) / 2);
+  const labelY = startY - 30;
+
+  let nodes = '';
+  // Divider line
+  nodes += `<rect x="${dividerX - 1}" y="${labelY - 10}" width="2" height="${(sr.items || []).length * rowHeight + 60}" rx="1" fill="rgba(255,255,255,0.15)"/>`;
+  // Labels
+  nodes += `<text x="${leftX}" y="${labelY}" text-anchor="middle" fill="${labelColor}" font-size="${labelSize}" font-family="${font}" font-weight="700" letter-spacing="2">${escapeXml(sr.problemLabel || 'THE PROBLEM')}</text>`;
+  nodes += `<text x="${rightX}" y="${labelY}" text-anchor="middle" fill="${accentColor}" font-size="${labelSize}" font-family="${font}" font-weight="700" letter-spacing="2">${escapeXml(sr.solutionLabel || 'THE FIX')}</text>`;
+  // Rows
+  (sr.items || []).forEach((item, i) => {
+    const ry = startY + i * rowHeight + 20;
+    nodes += `<text x="${leftX}" y="${ry}" text-anchor="middle" fill="${leftColor}" font-size="${textSize}" font-family="${font}" font-weight="400">${escapeXml(item.left || '')}</text>`;
+    nodes += `<text x="${rightX}" y="${ry}" text-anchor="middle" fill="${rightColor}" font-size="${textSize}" font-family="${font}" font-weight="600">${escapeXml(item.right || '')}</text>`;
+  });
+
+  return Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg">${nodes}</svg>`);
+}
+
+function buildOfferFrameSvg(cfg) {
+  if (!cfg.offerFrame) return null;
+  const of = cfg.offerFrame;
+  const isCentered = (cfg.layout.personality === 'centered-hero' || cfg.layout.align === 'center');
+  const baseX = isCentered ? Math.round(cfg.width / 2) : (of.priceX || cfg.layout.leftX || 80);
+  const anchor = isCentered ? 'middle' : 'start';
+  const priceY = of.priceY || 600;
+  const salePriceSize = of.salePriceSize || 72;
+  const origPriceSize = of.originalPriceSize || 28;
+  const font = cfg.typography.headlineFontFamily;
+
+  let nodes = '';
+  // Original price with strikethrough
+  if (of.originalPrice) {
+    const origY = priceY - salePriceSize - 12;
+    const origTextWidth = Math.round(of.originalPrice.length * origPriceSize * 0.58);
+    const origTextX = isCentered ? Math.round(baseX - origTextWidth / 2) : baseX;
+    nodes += `<text x="${baseX}" y="${origY}" text-anchor="${anchor}" fill="rgba(255,255,255,0.45)" font-size="${origPriceSize}" font-family="${font}" font-weight="400">${escapeXml(of.originalPrice)}</text>`;
+    nodes += `<rect x="${origTextX - 4}" y="${origY - Math.round(origPriceSize * 0.35)}" width="${origTextWidth + 8}" height="2" fill="rgba(255,255,255,0.6)"/>`;
+  }
+  // Sale price
+  nodes += `<text x="${baseX}" y="${priceY}" text-anchor="${anchor}" fill="#ffffff" font-size="${salePriceSize}" font-family="${font}" font-weight="800">${escapeXml(of.salePrice || '')}</text>`;
+  // Savings badge
+  if (of.savings) {
+    const savingsY = priceY + 30;
+    const badgeWidth = Math.round(of.savings.length * 14 + 32);
+    const badgeX = isCentered ? Math.round(baseX - badgeWidth / 2) : baseX;
+    nodes += `<rect x="${badgeX}" y="${savingsY}" width="${badgeWidth}" height="32" rx="16" fill="rgba(40,180,80,0.9)"/>`;
+    nodes += `<text x="${badgeX + Math.round(badgeWidth / 2)}" y="${savingsY + 16}" dy="0.35em" text-anchor="middle" fill="#ffffff" font-size="14" font-family="${font}" font-weight="700">${escapeXml(of.savings)}</text>`;
+  }
+  // Offer text
+  if (of.offerText) {
+    const offerY = priceY + (of.savings ? 80 : 40);
+    nodes += `<text x="${baseX}" y="${offerY}" text-anchor="${anchor}" fill="rgba(255,255,255,0.6)" font-size="20" font-family="${cfg.typography.bodyFontFamily}" font-weight="500">${escapeXml(of.offerText)}</text>`;
+  }
+
+  return Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg">${nodes}</svg>`);
+}
+
+function buildComparisonTableSvg(cfg) {
+  if (!cfg.comparisonTable) return null;
+  const ct = cfg.comparisonTable;
+  const startX = ct.startX || 60;
+  const startY = ct.startY || 350;
+  const colWidth = ct.colWidth || Math.round((cfg.width - startX * 2 - 40) / 2);
+  const rowHeight = ct.rowHeight || 60;
+  const headerSize = ct.headerSize || 24;
+  const bodySize = ct.bodySize || 20;
+  const font = cfg.typography.bodyFontFamily;
+  const headFont = cfg.typography.headlineFontFamily;
+  const highlightCol = ct.highlightCol || 'right';
+  const leftCenter = startX + Math.round(colWidth / 2);
+  const rightCenter = startX + colWidth + 40 + Math.round(colWidth / 2);
+  const dividerX = startX + colWidth + 19;
+  const rows = ct.rows || [];
+  const headerY = startY;
+  const rowStartY = startY + 50;
+
+  let nodes = '';
+  // Highlight column background
+  if (highlightCol === 'right') {
+    nodes += `<rect x="${startX + colWidth + 20}" y="${startY - 20}" width="${colWidth + 20}" height="${rows.length * rowHeight + 80}" rx="16" fill="rgba(232,93,58,0.08)" stroke="rgba(232,93,58,0.2)" stroke-width="1"/>`;
+  } else {
+    nodes += `<rect x="${startX - 10}" y="${startY - 20}" width="${colWidth + 20}" height="${rows.length * rowHeight + 80}" rx="16" fill="rgba(232,93,58,0.08)" stroke="rgba(232,93,58,0.2)" stroke-width="1"/>`;
+  }
+  // Column headers
+  nodes += `<text x="${leftCenter}" y="${headerY}" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="${headerSize}" font-family="${headFont}" font-weight="700" letter-spacing="1">${escapeXml((ct.leftHeader || 'STATUS QUO').toUpperCase())}</text>`;
+  nodes += `<text x="${rightCenter}" y="${headerY}" text-anchor="middle" fill="rgba(232,93,58,0.92)" font-size="${headerSize}" font-family="${headFont}" font-weight="700" letter-spacing="1">${escapeXml((ct.rightHeader || 'TACKLEROOM').toUpperCase())}</text>`;
+  // Divider
+  nodes += `<rect x="${dividerX}" y="${startY - 10}" width="2" height="${rows.length * rowHeight + 60}" rx="1" fill="rgba(255,255,255,0.1)"/>`;
+  // Rows
+  rows.forEach((row, i) => {
+    const ry = rowStartY + i * rowHeight + 30;
+    // Row separator line
+    if (i > 0) {
+      nodes += `<rect x="${startX}" y="${ry - Math.round(rowHeight / 2) - 5}" width="${colWidth * 2 + 40}" height="1" fill="rgba(255,255,255,0.06)"/>`;
+    }
+    nodes += `<text x="${leftCenter}" y="${ry}" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="${bodySize}" font-family="${font}" font-weight="400">${escapeXml(row.left || '')}</text>`;
+    nodes += `<text x="${rightCenter}" y="${ry}" text-anchor="middle" fill="#ffffff" font-size="${bodySize}" font-family="${font}" font-weight="600">${escapeXml(row.right || '')}</text>`;
+  });
+
+  return Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg">${nodes}</svg>`);
+}
+
+function buildAuthorityBarSvg(cfg) {
+  if (!cfg.authorityBar) return null;
+  const ab = cfg.authorityBar;
+  const pubs = ab.publications || [];
+  if (!pubs.length) return null;
+  const barY = ab.barY || Math.round(cfg.height * 0.75);
+  const barHeight = ab.barHeight || 40;
+  const textSize = ab.textSize || 14;
+  const textColor = ab.textColor || 'rgba(255,255,255,0.5)';
+  const barFill = ab.barFill || 'rgba(255,255,255,0.06)';
+  const font = cfg.typography.bodyFontFamily;
+  const joined = pubs.join('  \u2022  ');
+  const centerX = Math.round(cfg.width / 2);
+
+  let nodes = '';
+  nodes += `<rect x="0" y="${barY}" width="${cfg.width}" height="${barHeight}" fill="${barFill}"/>`;
+  nodes += `<text x="${centerX}" y="${barY + Math.round(barHeight / 2)}" dy="0.35em" text-anchor="middle" fill="${textColor}" font-size="${textSize}" font-family="${font}" font-weight="600" letter-spacing="2">${escapeXml(joined.toUpperCase())}</text>`;
+
+  return Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg">${nodes}</svg>`);
+}
+
 async function removeWhiteBackground(inputBuffer) {
   const { data, info } = await sharp(inputBuffer).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
   const { width, height, channels } = info;
@@ -98,6 +350,7 @@ function normalizeConfig(raw) {
     height: raw.height || preset.height,
     output: path.isAbsolute(raw.output || '') ? raw.output : path.join(projectRoot, raw.output || 'output/render.jpg'),
     backgroundPath: raw.backgroundPath,
+    backgroundPosition: raw.backgroundPosition || null,
     productPath: raw.productPath || null,
     overlay: Object.assign({ leftOpacity: 0.78, midOpacity: 0.42, rightOpacity: 0.18, vignetteBottom: 0.30, leftColor: '5,14,24', midColor: '5,14,24', rightColor: '5,14,24' }, raw.overlay || {}),
     text: Object.assign({ headline: 'Headline goes here', subhead: 'Subhead goes here', cta: 'LEARN MORE', footer: 'STRIKEFRAME' }, raw.text || {}),
@@ -144,7 +397,15 @@ function normalizeConfig(raw) {
     shapes: Array.isArray(raw.shapes) ? raw.shapes : [],
     textLayers: Array.isArray(raw.textLayers) ? raw.textLayers : [],
     statBlocks: Array.isArray(raw.statBlocks) ? raw.statBlocks : [],
-    dividers: Array.isArray(raw.dividers) ? raw.dividers : []
+    dividers: Array.isArray(raw.dividers) ? raw.dividers : [],
+    // New template-specific config keys
+    benefitStack: raw.benefitStack || null,
+    testimonial: raw.testimonial || null,
+    splitReveal: raw.splitReveal || null,
+    offerFrame: raw.offerFrame || null,
+    comparisonTable: raw.comparisonTable || null,
+    authorityBar: raw.authorityBar || null,
+    badges: Array.isArray(raw.badges) ? raw.badges : null
   };
   if (cfg.review.enforcePanelFit && cfg.layout.personality === 'split-card') {
     const panelPad = 40;
@@ -571,11 +832,19 @@ async function renderOne(rawConfig) {
   composites.push({ input: buildPrimaryTextSvg(cfg) });
   const textLayers = buildTextLayersSvg(cfg); if (textLayers) composites.push({ input: textLayers });
   const statBlocksSvg = buildStatBlocksSvg(cfg); if (statBlocksSvg) composites.push({ input: statBlocksSvg });
+  // New template layers
+  const benefitStackSvg = buildBenefitStackSvg(cfg); if (benefitStackSvg) composites.push({ input: benefitStackSvg });
+  const testimonialSvg = buildTestimonialSvg(cfg); if (testimonialSvg) composites.push({ input: testimonialSvg });
+  const splitRevealSvg = buildSplitRevealSvg(cfg); if (splitRevealSvg) composites.push({ input: splitRevealSvg });
+  const offerFrameSvg = buildOfferFrameSvg(cfg); if (offerFrameSvg) composites.push({ input: offerFrameSvg });
+  const comparisonTableSvg = buildComparisonTableSvg(cfg); if (comparisonTableSvg) composites.push({ input: comparisonTableSvg });
+  const authorityBarSvg = buildAuthorityBarSvg(cfg); if (authorityBarSvg) composites.push({ input: authorityBarSvg });
+  const badgesSvg = buildBadgesSvg(cfg); if (badgesSvg) composites.push({ input: badgesSvg });
   const compositeSvg = buildCompositeSvg(cfg); if (compositeSvg) composites.push({ input: compositeSvg });
   const productLayer = await buildProductLayer(cfg);
   if (productLayer) composites.push({ input: productLayer, left: cfg.productComposite.circleX, top: cfg.productComposite.circleY });
   const base = (cfg.backgroundPath && fileExists(cfg.backgroundPath))
-    ? sharp(cfg.backgroundPath).resize(cfg.width, cfg.height, { fit: 'cover', position: 'center' }).modulate({ brightness: 0.82, saturation: 1.05 })
+    ? sharp(cfg.backgroundPath).resize(cfg.width, cfg.height, { fit: 'cover', position: cfg.backgroundPosition || 'center' }).modulate({ brightness: 0.82, saturation: 1.05 })
     : sharp({ create: { width: cfg.width, height: cfg.height, channels: 3, background: { r: 11, g: 42, b: 64 } } }).composite([{ input: Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="${cfg.theme.gradientStart}"/><stop offset="100%" stop-color="${cfg.theme.gradientEnd}"/></linearGradient></defs><rect width="100%" height="100%" fill="url(#g)"/></svg>`) }]);
   const ext = path.extname(cfg.output).toLowerCase();
   let pipeline = base.composite(composites);

@@ -154,3 +154,61 @@ Different platforms crop differently. Design for the safe zone.
 - Adjust `maxHeadlineChars` and `maxSubheadChars` per preset
 - Portrait presets need tighter copy — fewer words, not just smaller font
 - LinkedIn: `headlineSize` can be smaller since the format is intimate; don't waste the width
+
+## 11. Template-Specific Design Guidance
+
+### Benefit Stack
+- 3-4 benefit items is the sweet spot. 5+ feels crowded on 1080x1080.
+- Icon color should contrast with background but not compete with headline. `#63b3ed` (soft blue) works on dark backgrounds.
+- Keep benefit labels under 32 characters — they should scan in 1-2 seconds.
+- Place the benefit stack in the middle third of the canvas, below the headline/subhead, above the CTA.
+- `spacing: 90` works for 3-4 items on social-square. Reduce to 70 for 5 items or portrait formats.
+
+### Testimonial
+- The open-quote mark is a visual anchor — it signals "this is a quote" before the text is read. Use accent color, not white.
+- Italic quote text reads as authentic and personal. Keep `quoteMaxChars` tight (26-28) for dramatic line breaks.
+- Star rating row goes between quote and attribution — it bridges the emotional quote and the factual source.
+- Attribution (name + role) should be significantly smaller than the quote text. The quote is the hero, not the person.
+- On centered layouts, all elements center-align. On editorial-left, everything left-aligns from `leftX`.
+
+### Problem-Solution (Split Reveal)
+- The vertical divider creates visual tension — it's the structural core of this template.
+- Left side (problem) should feel weaker: lower opacity, lighter weight, muted color.
+- Right side (solution) should feel stronger: full white, bold weight, optionally accent-colored label.
+- Keep items to 3-5 rows. More than 5 and the comparison becomes a list, not a reveal.
+- The `startY` should be well below the headline/subhead — leave breathing room. Minimum 100px gap.
+
+### Offer Frame
+- Sale price must visually dominate — `salePriceSize` should be at least 2.5x `originalPriceSize`.
+- Strikethrough on original price must be visible but subtle — the eye should jump past it to the sale price.
+- Savings badge (green pill) goes immediately below sale price for instant gratification.
+- Offer text (e.g., "FREE SHIPPING OVER $99") sits below the savings badge at lower opacity — supporting info, not hero.
+- Price block typically sits in the center-vertical zone (y ≈ 50-60% of canvas).
+
+### Comparison Table
+- The highlight column background creates visual weight — it draws the eye to the winning side.
+- Row separators should be very subtle (`rgba(255,255,255,0.06)`) — they guide the eye without creating visual noise.
+- Column headers use brand accent for the highlight column, muted for the competitor/status quo column.
+- Keep row text short — comparison cells should be scannable in under 2 seconds per row.
+- Works best on dark gradient backgrounds without photos — the table IS the visual.
+
+### Authority
+- Serif headline font (Georgia) signals credibility, editorial quality, and authority.
+- The authority bar (credibility badges) sits in the lower third — it's proof, not headline.
+- Bar fill should be nearly transparent (`rgba(255,255,255,0.06)`) — it's a subtle structural element.
+- Credibility items separated by bullet characters, all uppercase with letter-spacing for editorial feel.
+- Best paired with `centered-hero` personality and a strong background photo.
+
+### Contrarian
+- The bold statement IS the design. Headline should be the largest element on the canvas (60px+, 800 weight).
+- Subhead provides the "why" — it should be significantly smaller and lower contrast than the headline.
+- Dark overlay should be heavy (0.7+) to ensure the text punches through any background.
+- CTA should feel like the natural resolution of the provocative statement.
+- No extra visual elements needed — icons, badges, and decorations dilute the bold simplicity.
+
+### Listicle
+- Number prefixes create automatic visual structure — they guide the eye down the page.
+- Keep all items at the same font size and weight for consistency.
+- Items should be left-aligned with consistent X position — use `editorial-left` personality.
+- 5 items is ideal. 3 feels thin, 7+ feels overwhelming.
+- Each item should be a single line or two at most — tighten copy aggressively.

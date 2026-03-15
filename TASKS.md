@@ -12,10 +12,20 @@
 - Added multiple text layers
 - Added batch manifest rendering
 - Added post-render QA/QC review layer
+- Added white background removal (flood-fill + soft-mask)
+- Added rectangular product image compositing (explainer cards)
+- Added gold star (★) and green checkmark (✓) SVG coloring
+- Built TOF lifestyle ad batch generator (10 images × 5 variants = 50 ads)
+- Built product explainer card batch generator (21 products × 3 variants = 63 cards)
+- Added QA/QC pipeline script (pre-render alignment + render + post-render grading)
+- Added DESIGN.md with 10 marketing design principles
+- Updated SKILL.md with full capability reference
+- Produced 50 TOF lifestyle ads — pushed to Dropbox 2026-03-12
+- Produced 63 product explainer cards (100% pass QA) — pushed to Dropbox 2026-03-12
 
 ## Next
-- Add real product PNG workflow
 - Add focal-point crop controls
 - Add font tokens / brand theme tokens
 - Improve text sharpness and spacing logic
-- Add smarter panel fit / collision review
+- Expand product image matching (only 21/50 top products matched)
+- Add 1080×1350 portrait variant for explainer cards

@@ -1,0 +1,78 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#ffffff",
+      "subheadColor": "#e4e4e7",
+      "footerColor": "rgba(255,255,255,0.35)",
+      "ctaTextColor": "#ffffff",
+      "ctaFill": "rgba(232,93,58,0.92)",
+      "ctaStroke": "rgba(255,160,120,0.35)",
+      "gradientStart": "#0b2a40",
+      "gradientEnd": "#1f6b8f"
+    }
+  },
+  "renders": [
+    {
+      "_comment": "=== Benefit Stack: planer-kit ===",
+      "output": "/mnt/raid/Data/tmp/ads/test/benefit-stack-planer.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
+      "text": {
+        "headline": "Complete Planer Kit",
+        "subhead": "Everything matched. Nothing missing.",
+        "cta": "SHOP KITS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "8,30,50", "midColor": "8,30,50", "rightColor": "8,30,50",
+        "leftOpacity": 0.55, "midOpacity": 0.35, "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 52,
+        "subheadSize": 26,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 200,
+        "subheadY": 320,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 36,
+        "ctaWidth": 260,
+        "ctaHeight": 58,
+        "ctaRectX": 80,
+        "ctaRectY": 900,
+        "ctaX": 210,
+        "ctaY": 929,
+        "footerY": 1040
+      },
+      "benefitStack": {
+        "startX": 80,
+        "startY": 440,
+        "spacing": 90,
+        "iconSize": 36,
+        "iconColor": "#63b3ed",
+        "textSize": 26,
+        "textColor": "#ffffff",
+        "textMaxChars": 32,
+        "items": [
+          { "icon": "shield", "label": "500lb rated hardware" },
+          { "icon": "wave", "label": "Built for offshore current" },
+          { "icon": "check", "label": "Complete kit, nothing missing" },
+          { "icon": "gear", "label": "Matched bridles included" }
+        ]
+      }
+    }
+  ]
+}

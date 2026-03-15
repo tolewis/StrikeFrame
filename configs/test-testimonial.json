@@ -1,0 +1,73 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#ffffff",
+      "subheadColor": "#e4e4e7",
+      "footerColor": "rgba(255,255,255,0.35)",
+      "ctaTextColor": "#ffffff",
+      "ctaFill": "rgba(232,93,58,0.92)",
+      "ctaStroke": "rgba(255,160,120,0.35)",
+      "gradientStart": "#0b2a40",
+      "gradientEnd": "#1f6b8f"
+    }
+  },
+  "renders": [
+    {
+      "_comment": "=== Testimonial: captain-quote ===",
+      "output": "/mnt/raid/Data/tmp/ads/test/testimonial-captain.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_133588506.jpeg",
+      "text": {
+        "headline": "Trusted By Captains",
+        "subhead": "",
+        "cta": "SHOP CAPTAIN'S PICKS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "10,10,10", "midColor": "10,10,10", "rightColor": "10,10,10",
+        "leftOpacity": 0.7, "midOpacity": 0.7, "rightOpacity": 0.7,
+        "vignetteBottom": 0.2
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 36,
+        "subheadSize": 22,
+        "headlineWeight": 700,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 160,
+        "subheadY": 220,
+        "maxHeadlineChars": 24,
+        "maxSubheadChars": 36,
+        "ctaWidth": 320,
+        "ctaHeight": 58,
+        "ctaRectX": 380,
+        "ctaRectY": 900,
+        "ctaX": 540,
+        "ctaY": 929,
+        "footerY": 1040
+      },
+      "testimonial": {
+        "quote": "This dredge changed our tournament results completely. Best purchase we made all season.",
+        "stars": 5,
+        "starSize": 32,
+        "name": "Capt. Mike Henderson",
+        "role": "Blue Water Charters, Islamorada",
+        "quoteSize": 34,
+        "quoteMaxChars": 26,
+        "nameSize": 22,
+        "startY": 280
+      }
+    }
+  ]
+}

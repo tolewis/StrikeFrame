@@ -79,6 +79,216 @@ def check_alignment(cfg: dict) -> dict:
     if dividers and stat_blocks:
         fixes.update(fix_divider_alignment(stat_blocks, dividers))
 
+    # Template-specific checks
+    fixes.update(check_benefit_stack(cfg))
+    fixes.update(check_testimonial(cfg))
+    fixes.update(check_offer_frame(cfg))
+    fixes.update(check_comparison_table(cfg))
+    fixes.update(check_split_reveal(cfg))
+
+    return fixes
+
+
+def check_benefit_stack(cfg: dict) -> dict:
+    """Verify benefit stack items have consistent icon X alignment."""
+    bs = cfg.get("benefitStack")
+    if not bs or not bs.get("items"):
+        return {}
+    fixes = {"benefit_stack_fixes": []}
+    items = bs["items"]
+
+    # All icon circles should be at a consistent startX
+    start_x = bs.get("startX", cfg.get("layout", {}).get("leftX", 80))
+    start_y = bs.get("startY", 580)
+    spacing = bs.get("spacing", 90)
+
+    # Check that items won't overflow canvas height
+    canvas_h = 1080  # default social-square
+    preset = cfg.get("preset", "social-square")
+    if preset == "social-portrait":
+        canvas_h = 1350
+    elif preset == "landscape-banner":
+        canvas_h = 900
+    elif preset == "linkedin-landscape":
+        canvas_h = 627
+
+    last_item_y = start_y + (len(items) - 1) * spacing
+    if last_item_y > canvas_h - 80:
+        # Too many items or spacing too large — reduce spacing
+        max_spacing = max(50, (canvas_h - 80 - start_y) // max(len(items) - 1, 1))
+        fixes["benefit_stack_fixes"].append(
+            f"Benefit stack spacing {spacing} -> {max_spacing} (overflow at y={last_item_y})"
+        )
+        bs["spacing"] = max_spacing
+
+    if not fixes["benefit_stack_fixes"]:
+        del fixes["benefit_stack_fixes"]
+    return fixes
+
+
+def check_testimonial(cfg: dict) -> dict:
+    """Check testimonial quote won't overflow past CTA region."""
+    t = cfg.get("testimonial")
+    if not t:
+        return {}
+    fixes = {"testimonial_fixes": []}
+
+    quote = t.get("quote", "")
+    quote_size = t.get("quoteSize", 36)
+    max_chars = t.get("quoteMaxChars", 28)
+    start_y = t.get("startY", 300)
+    star_size = t.get("starSize", 32)
+    name_size = t.get("nameSize", 22)
+
+    # Estimate total height of testimonial block
+    words = quote.split()
+    lines = []
+    current = ""
+    for word in words:
+        nxt = f"{current} {word}" if current else word
+        if len(nxt) > max_chars and current:
+            lines.append(current)
+            current = word
+        else:
+            current = nxt
+    if current:
+        lines.append(current)
+
+    line_step = round(quote_size * 1.35)
+    quote_text_y = start_y + 80
+    quote_block_h = (len(lines) - 1) * line_step + quote_size
+    stars_y = quote_text_y + quote_block_h + 40
+    name_y = stars_y + star_size + 24
+    role_y = name_y + name_size + 8
+    total_bottom = role_y + round(name_size * 0.82)
+
+    # Check against CTA position
+    cta_y = cfg.get("layout", {}).get("ctaRectY", 900)
+    if total_bottom > cta_y - 30:
+        # Reduce quote size to fit
+        new_size = max(24, quote_size - 4)
+        fixes["testimonial_fixes"].append(
+            f"Testimonial bottom ({total_bottom}) overlaps CTA ({cta_y}), quoteSize {quote_size} -> {new_size}"
+        )
+        t["quoteSize"] = new_size
+
+    if not fixes["testimonial_fixes"]:
+        del fixes["testimonial_fixes"]
+    return fixes
+
+
+def check_offer_frame(cfg: dict) -> dict:
+    """Ensure sale price font is larger than original price font."""
+    of = cfg.get("offerFrame")
+    if not of:
+        return {}
+    fixes = {"offer_frame_fixes": []}
+
+    sale_size = of.get("salePriceSize", 72)
+    orig_size = of.get("originalPriceSize", 28)
+
+    if sale_size <= orig_size:
+        new_sale = max(orig_size * 2, 48)
+        fixes["offer_frame_fixes"].append(
+            f"Sale price size ({sale_size}) must be larger than original ({orig_size}), salePriceSize -> {new_sale}"
+        )
+        of["salePriceSize"] = new_sale
+
+    # Check sale price hierarchy — should be at least 2x original
+    if sale_size < orig_size * 1.8:
+        new_orig = max(16, round(sale_size / 2.5))
+        fixes["offer_frame_fixes"].append(
+            f"Price hierarchy weak: original {orig_size}px vs sale {sale_size}px, originalPriceSize -> {new_orig}"
+        )
+        of["originalPriceSize"] = new_orig
+
+    if not fixes["offer_frame_fixes"]:
+        del fixes["offer_frame_fixes"]
+    return fixes
+
+
+def check_comparison_table(cfg: dict) -> dict:
+    """Check comparison table row spacing and column balance."""
+    ct = cfg.get("comparisonTable")
+    if not ct:
+        return {}
+    fixes = {"comparison_fixes": []}
+    rows = ct.get("rows", [])
+
+    if not rows:
+        return {}
+
+    canvas_h = 1080
+    preset = cfg.get("preset", "social-square")
+    if preset == "social-portrait":
+        canvas_h = 1350
+    elif preset == "landscape-banner":
+        canvas_h = 900
+    elif preset == "linkedin-landscape":
+        canvas_h = 627
+
+    start_y = ct.get("startY", 350)
+    row_height = ct.get("rowHeight", 60)
+    table_bottom = start_y + 50 + len(rows) * row_height + 30
+
+    cta_y = cfg.get("layout", {}).get("ctaRectY", 900)
+    if table_bottom > cta_y - 40:
+        # Reduce row height to fit
+        available = cta_y - 40 - start_y - 80
+        new_row_h = max(40, available // max(len(rows), 1))
+        fixes["comparison_fixes"].append(
+            f"Table bottom ({table_bottom}) overlaps CTA ({cta_y}), rowHeight {row_height} -> {new_row_h}"
+        )
+        ct["rowHeight"] = new_row_h
+
+    # Check column widths fit canvas
+    start_x = ct.get("startX", 60)
+    col_width = ct.get("colWidth", 440)
+    table_right = start_x + col_width * 2 + 40
+    canvas_w = 1080
+    if preset == "landscape-banner":
+        canvas_w = 1600
+    elif preset == "linkedin-landscape":
+        canvas_w = 1200
+
+    if table_right > canvas_w - 40:
+        new_col_w = max(150, (canvas_w - start_x * 2 - 80) // 2)
+        fixes["comparison_fixes"].append(
+            f"Table too wide ({table_right}px), colWidth {col_width} -> {new_col_w}"
+        )
+        ct["colWidth"] = new_col_w
+
+    if not fixes["comparison_fixes"]:
+        del fixes["comparison_fixes"]
+    return fixes
+
+
+def check_split_reveal(cfg: dict) -> dict:
+    """Check split reveal items fit between headline and CTA."""
+    sr = cfg.get("splitReveal")
+    if not sr:
+        return {}
+    fixes = {"split_reveal_fixes": []}
+    items = sr.get("items", [])
+
+    if not items:
+        return {}
+
+    start_y = sr.get("startY", 400)
+    row_height = sr.get("rowHeight", 60)
+    bottom = start_y + len(items) * row_height + 30
+
+    cta_y = cfg.get("layout", {}).get("ctaRectY", 880)
+    if bottom > cta_y - 30:
+        available = cta_y - 30 - start_y - 30
+        new_row_h = max(40, available // max(len(items), 1))
+        fixes["split_reveal_fixes"].append(
+            f"Split reveal bottom ({bottom}) overlaps CTA ({cta_y}), rowHeight {row_height} -> {new_row_h}"
+        )
+        sr["rowHeight"] = new_row_h
+
+    if not fixes["split_reveal_fixes"]:
+        del fixes["split_reveal_fixes"]
     return fixes
 
 

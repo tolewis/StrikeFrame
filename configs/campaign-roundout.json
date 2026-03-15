@@ -1,0 +1,1691 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#FFFFFF",
+      "subheadColor": "#e4e4e7",
+      "footerColor": "rgba(255,255,255,0.35)",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(232,93,58,0.92)",
+      "ctaStroke": "rgba(255,160,120,0.35)",
+      "gradientStart": "#0b2a40",
+      "gradientEnd": "#1f6b8f"
+    },
+    "typography": {
+      "headlineFontFamily": "Montserrat, Arial, sans-serif",
+      "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+      "headlineWeight": 800,
+      "subheadWeight": 400,
+      "ctaWeight": 700,
+      "footerSize": 14,
+      "footerTracking": 4
+    }
+  },
+  "renders": [
+    {
+      "_comment": "BELTS | benefit-stack | Built For The Fight",
+      "_category": "belts",
+      "_template": "benefit-stack",
+      "_thesis": "new",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/belts/belts-benefit-stack-fight.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_331722964.jpeg",
+      "overlay": {
+        "leftColor": "8,30,50",
+        "midColor": "8,30,50",
+        "rightColor": "8,30,50",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "text": {
+        "headline": "Built For The Fight, Not The Photo",
+        "subhead": "Comfort that lasts longer than the fish.",
+        "cta": "SHOP FIGHTING BELTS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 48,
+        "subheadSize": 24
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 34,
+        "ctaWidth": 260,
+        "ctaHeight": 58,
+        "ctaRectX": 80,
+        "ctaRectY": 900,
+        "footerY": 1040
+      },
+      "benefitStack": {
+        "startX": 80,
+        "startY": 430,
+        "spacing": 90,
+        "iconSize": 36,
+        "iconColor": "#63b3ed",
+        "textSize": 26,
+        "textColor": "#ffffff",
+        "textMaxChars": 32,
+        "items": [
+          {
+            "icon": "shield",
+            "label": "Wide padded lumbar support"
+          },
+          {
+            "icon": "gear",
+            "label": "Gimbal pin locks rod in position"
+          },
+          {
+            "icon": "check",
+            "label": "Adjustable harness attachment points"
+          },
+          {
+            "icon": "anchor",
+            "label": "Rated for 40+ minute fights"
+          }
+        ]
+      }
+    },
+    {
+      "_comment": "BELTS | testimonial | Captain Marlin Quote",
+      "_category": "belts",
+      "_template": "testimonial",
+      "_thesis": "T11",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/belts/belts-testimonial-captain.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_284446852.jpeg",
+      "overlay": {
+        "leftColor": "10,10,10",
+        "midColor": "10,10,10",
+        "rightColor": "10,10,10",
+        "leftOpacity": 0.7,
+        "midOpacity": 0.7,
+        "rightOpacity": 0.7,
+        "vignetteBottom": 0.2
+      },
+      "text": {
+        "headline": "What Captains Trust",
+        "subhead": "",
+        "cta": "SHOP FIGHTING BELTS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 36,
+        "subheadSize": 22
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 34,
+        "ctaWidth": 320,
+        "ctaHeight": 58,
+        "ctaRectX": 380,
+        "ctaRectY": 900,
+        "footerY": 1040
+      },
+      "testimonial": {
+        "quote": "Forty minutes on a blue marlin and the belt was the only thing that wasn't sore the next day.",
+        "stars": 5,
+        "starSize": 32,
+        "name": "Capt. Rick Stanczyk",
+        "role": "Bud N' Mary's Marina, Islamorada",
+        "quoteSize": 32,
+        "quoteMaxChars": 26,
+        "nameSize": 22,
+        "startY": 260
+      }
+    },
+    {
+      "_comment": "BELTS | contrarian | $30 Belt Costs $200 Fish",
+      "_category": "belts",
+      "_template": "contrarian",
+      "_thesis": "T22",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/belts/belts-contrarian-cheap.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_229283027.jpeg",
+      "overlay": {
+        "leftColor": "10,10,10",
+        "midColor": "10,10,10",
+        "rightColor": "10,10,10",
+        "leftOpacity": 0.7,
+        "midOpacity": 0.7,
+        "rightOpacity": 0.7,
+        "vignetteBottom": 0.2
+      },
+      "text": {
+        "headline": "A $30 Belt Costs You A $200 Fish.",
+        "subhead": "Lose your footing once and the yellowfin wins. The belt is where you don't cut corners.",
+        "cta": "SHOP QUALITY BELTS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 56,
+        "subheadSize": 24
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 18,
+        "maxSubheadChars": 32,
+        "ctaWidth": 320,
+        "ctaHeight": 58,
+        "ctaRectX": 380,
+        "ctaRectY": 800,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "BELTS | comparison | Cheap vs Quality Belt",
+      "_category": "belts",
+      "_template": "comparison",
+      "_thesis": "T20",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/belts/belts-comparison-quality.jpg",
+      "overlay": {
+        "leftColor": "10,10,10",
+        "midColor": "10,10,10",
+        "rightColor": "10,10,10",
+        "leftOpacity": 0.7,
+        "midOpacity": 0.7,
+        "rightOpacity": 0.7,
+        "vignetteBottom": 0.2
+      },
+      "text": {
+        "headline": "Why Your Belt Matters",
+        "subhead": "The difference shows at minute 20.",
+        "cta": "SHOP FIGHTING BELTS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 46,
+        "subheadSize": 22
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 34,
+        "ctaWidth": 320,
+        "ctaHeight": 58,
+        "ctaRectX": 380,
+        "ctaRectY": 900,
+        "footerY": 1040
+      },
+      "comparisonTable": {
+        "startX": 80,
+        "startY": 360,
+        "colWidth": 440,
+        "rowHeight": 60,
+        "headerSize": 22,
+        "bodySize": 20,
+        "highlightCol": "right",
+        "leftHeader": "Generic Belt",
+        "rightHeader": "TackleRoom",
+        "rows": [
+          {
+            "left": "Thin foam padding",
+            "right": "Wide lumbar support"
+          },
+          {
+            "left": "Plastic gimbal",
+            "right": "Stainless gimbal pin"
+          },
+          {
+            "left": "Fixed size",
+            "right": "Adjustable harness points"
+          },
+          {
+            "left": "20-minute comfort",
+            "right": "Built for the full fight"
+          },
+          {
+            "left": "Replace every season",
+            "right": "Buy once, fish forever"
+          }
+        ]
+      }
+    },
+    {
+      "_comment": "LEAD | benefit-stack | Three Sizes Cover 90%",
+      "_category": "lead",
+      "_template": "benefit-stack",
+      "_thesis": "T9",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/lead/lead-benefit-stack-kit.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_175678582.jpeg",
+      "overlay": {
+        "leftColor": "8,30,50",
+        "midColor": "8,30,50",
+        "rightColor": "8,30,50",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "text": {
+        "headline": "Three Sizes Cover 90% Of Trips",
+        "subhead": "Stop guessing which weight to pack.",
+        "cta": "SHOP WEIGHT KITS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 46,
+        "subheadSize": 24
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 34,
+        "ctaWidth": 260,
+        "ctaHeight": 58,
+        "ctaRectX": 80,
+        "ctaRectY": 900,
+        "footerY": 1040
+      },
+      "benefitStack": {
+        "startX": 80,
+        "startY": 440,
+        "spacing": 90,
+        "iconSize": 36,
+        "iconColor": "#63b3ed",
+        "textSize": 26,
+        "textColor": "#ffffff",
+        "textMaxChars": 34,
+        "items": [
+          {
+            "icon": "anchor",
+            "label": "8oz for shallow trolling under 4kts"
+          },
+          {
+            "icon": "wave",
+            "label": "16oz for standard offshore depth"
+          },
+          {
+            "icon": "target",
+            "label": "24oz for deep drops and current"
+          },
+          {
+            "icon": "check",
+            "label": "Hand-poured, flash-free finish"
+          }
+        ]
+      }
+    },
+    {
+      "_comment": "LEAD | listicle | 5 Rigging Mistakes",
+      "_category": "lead",
+      "_template": "listicle",
+      "_thesis": "new",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/lead/lead-listicle-mistakes.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_219637627.jpeg",
+      "overlay": {
+        "leftColor": "8,30,50",
+        "midColor": "8,30,50",
+        "rightColor": "8,30,50",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "text": {
+        "headline": "5 Rigging Mistakes That Cost You Fish",
+        "subhead": "Most happen before you leave the dock.",
+        "cta": "SHOP TROLLING WEIGHTS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 44,
+        "subheadSize": 22
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 34,
+        "ctaWidth": 260,
+        "ctaHeight": 58,
+        "ctaRectX": 80,
+        "ctaRectY": 920,
+        "footerY": 1040
+      },
+      "textLayers": [
+        {
+          "content": "1. Wrong weight for your trolling speed",
+          "x": 80,
+          "y": 400,
+          "fontSize": 26,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 36
+        },
+        {
+          "content": "2. Flash lines that spook gamefish",
+          "x": 80,
+          "y": 480,
+          "fontSize": 26,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 36
+        },
+        {
+          "content": "3. Machine-poured seams that catch weed",
+          "x": 80,
+          "y": 560,
+          "fontSize": 26,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 36
+        },
+        {
+          "content": "4. Only carrying one size on the boat",
+          "x": 80,
+          "y": 640,
+          "fontSize": 26,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 36
+        },
+        {
+          "content": "5. Running out of weights mid-season",
+          "x": 80,
+          "y": 720,
+          "fontSize": 26,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 36
+        }
+      ]
+    },
+    {
+      "_comment": "LEAD | offer | Weight Kit Pricing",
+      "_category": "lead",
+      "_template": "offer",
+      "_thesis": "T9",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/lead/lead-offer-kit.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_337378282.jpeg",
+      "overlay": {
+        "leftColor": "10,10,10",
+        "midColor": "10,10,10",
+        "rightColor": "10,10,10",
+        "leftOpacity": 0.7,
+        "midOpacity": 0.7,
+        "rightOpacity": 0.7,
+        "vignetteBottom": 0.2
+      },
+      "text": {
+        "headline": "Deep Drop Weights",
+        "subhead": "Hand-poured. Flash-free. Tournament-legal.",
+        "cta": "SHOP WEIGHTS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 48,
+        "subheadSize": 24
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 34,
+        "ctaWidth": 320,
+        "ctaHeight": 58,
+        "ctaRectX": 380,
+        "ctaRectY": 880,
+        "footerY": 1040
+      },
+      "offerFrame": {
+        "originalPrice": "$18.99",
+        "salePrice": "$12.99",
+        "savings": "BEST SELLER",
+        "offerText": "FREE SHIPPING OVER $99",
+        "salePriceSize": 72,
+        "originalPriceSize": 28,
+        "priceY": 580
+      },
+      "badges": [
+        {
+          "text": "HAND POURED",
+          "x": 430,
+          "y": 120,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#ffffff",
+          "fontSize": 16
+        }
+      ]
+    },
+    {
+      "_comment": "LEAD | authority | Hand-Poured Tournament-Legal",
+      "_category": "lead",
+      "_template": "authority",
+      "_thesis": "T8",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/lead/lead-authority-handpoured.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_345435684.jpeg",
+      "overlay": {
+        "leftColor": "8,30,50",
+        "midColor": "8,30,50",
+        "rightColor": "8,30,50",
+        "leftOpacity": 0.6,
+        "midOpacity": 0.4,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "text": {
+        "headline": "Hand-Poured. Flash-Free. Tournament-Legal.",
+        "subhead": "Every weight inspected by hand. No flash lines, no seams, no weed catchers.",
+        "cta": "SHOP TROLLING WEIGHTS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Georgia, 'Times New Roman', serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 700,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 48,
+        "subheadSize": 22
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 160,
+        "subheadY": 420,
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 34,
+        "ctaWidth": 320,
+        "ctaHeight": 58,
+        "ctaRectX": 380,
+        "ctaRectY": 880,
+        "footerY": 1040
+      },
+      "authorityBar": {
+        "barY": 700,
+        "barHeight": 40,
+        "textSize": 13,
+        "textColor": "rgba(255,255,255,0.5)",
+        "barFill": "rgba(255,255,255,0.06)",
+        "publications": [
+          "HAND INSPECTED",
+          "FLASH-FREE",
+          "TOURNAMENT LEGAL",
+          "MADE IN USA"
+        ]
+      }
+    },
+    {
+      "_comment": "DREDGES | testimonial | Captain Raising Fish",
+      "_category": "dredges",
+      "_template": "testimonial",
+      "_thesis": "T5",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/dredges/dredge-testimonial-captain.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_133588506.jpeg",
+      "overlay": {
+        "leftColor": "10,10,10",
+        "midColor": "10,10,10",
+        "rightColor": "10,10,10",
+        "leftOpacity": 0.7,
+        "midOpacity": 0.7,
+        "rightOpacity": 0.7,
+        "vignetteBottom": 0.2
+      },
+      "text": {
+        "headline": "Ask Any Captain",
+        "subhead": "",
+        "cta": "SHOP DREDGE SYSTEMS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 36,
+        "subheadSize": 22
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 34,
+        "ctaWidth": 320,
+        "ctaHeight": 58,
+        "ctaRectX": 380,
+        "ctaRectY": 900,
+        "footerY": 1040
+      },
+      "testimonial": {
+        "quote": "If you aren't pulling dredges you aren't competing. They raise fish better than anything else in the spread.",
+        "stars": 5,
+        "starSize": 32,
+        "name": "Capt. Wheeler",
+        "role": "Tournament Circuit, South Florida",
+        "quoteSize": 32,
+        "quoteMaxChars": 26,
+        "nameSize": 22,
+        "startY": 260
+      }
+    },
+    {
+      "_comment": "DREDGES | comparison | With vs Without Dredge",
+      "_category": "dredges",
+      "_template": "comparison",
+      "_thesis": "T4",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/dredges/dredge-comparison-spread.jpg",
+      "overlay": {
+        "leftColor": "10,10,10",
+        "midColor": "10,10,10",
+        "rightColor": "10,10,10",
+        "leftOpacity": 0.7,
+        "midOpacity": 0.7,
+        "rightOpacity": 0.7,
+        "vignetteBottom": 0.2
+      },
+      "text": {
+        "headline": "The Spread Matters",
+        "subhead": "Dredges raise fish. Empty water doesn't.",
+        "cta": "UPGRADE YOUR SPREAD",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 46,
+        "subheadSize": 22
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 34,
+        "ctaWidth": 320,
+        "ctaHeight": 58,
+        "ctaRectX": 380,
+        "ctaRectY": 900,
+        "footerY": 1040
+      },
+      "comparisonTable": {
+        "startX": 80,
+        "startY": 360,
+        "colWidth": 440,
+        "rowHeight": 60,
+        "headerSize": 22,
+        "bodySize": 20,
+        "highlightCol": "right",
+        "leftHeader": "Without Dredge",
+        "rightHeader": "With Dredge",
+        "rows": [
+          {
+            "left": "Flat spread, no depth",
+            "right": "3D bait school at depth"
+          },
+          {
+            "left": "Fish ignore surface lures",
+            "right": "Fish rise into strike zone"
+          },
+          {
+            "left": "Random hookup pattern",
+            "right": "90% hookup rate on teasers"
+          },
+          {
+            "left": "Hope for the best",
+            "right": "Tournament-proven results"
+          }
+        ]
+      }
+    },
+    {
+      "_comment": "DREDGES | benefit-stack | Heavy Bar UV Squid",
+      "_category": "dredges",
+      "_template": "benefit-stack",
+      "_thesis": "T6",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/dredges/dredge-benefit-stack-specs.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
+      "overlay": {
+        "leftColor": "8,30,50",
+        "midColor": "8,30,50",
+        "rightColor": "8,30,50",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "text": {
+        "headline": "Heavy Bar. UV Squid. 400lb Mono.",
+        "subhead": "Built for current, not calm water.",
+        "cta": "SEE THE FULL BUILD",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 44,
+        "subheadSize": 24
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 34,
+        "ctaWidth": 260,
+        "ctaHeight": 58,
+        "ctaRectX": 80,
+        "ctaRectY": 900,
+        "footerY": 1040
+      },
+      "benefitStack": {
+        "startX": 80,
+        "startY": 440,
+        "spacing": 90,
+        "iconSize": 36,
+        "iconColor": "#63b3ed",
+        "textSize": 26,
+        "textColor": "#ffffff",
+        "textMaxChars": 34,
+        "items": [
+          {
+            "icon": "anchor",
+            "label": "38\" heavy bar handles Gulf Stream"
+          },
+          {
+            "icon": "wave",
+            "label": "UV-enhanced squid visible at depth"
+          },
+          {
+            "icon": "shield",
+            "label": "400lb mono won't fail on billfish"
+          },
+          {
+            "icon": "check",
+            "label": "Mesh bag included, ready to fish"
+          }
+        ]
+      }
+    },
+    {
+      "_comment": "DREDGES | problem-solution | Spread Missing Key Element",
+      "_category": "dredges",
+      "_template": "problem-solution",
+      "_thesis": "T4",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/dredges/dredge-problem-solution-spread.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_991789270.jpeg",
+      "overlay": {
+        "leftColor": "10,10,10",
+        "midColor": "10,10,10",
+        "rightColor": "10,10,10",
+        "leftOpacity": 0.8,
+        "midOpacity": 0.8,
+        "rightOpacity": 0.8,
+        "vignetteBottom": 0.2
+      },
+      "text": {
+        "headline": "Your Spread Is Missing One Thing",
+        "subhead": "Fish don't eat what they can't see.",
+        "cta": "ADD A DREDGE",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 44,
+        "subheadSize": 24
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 34,
+        "ctaWidth": 320,
+        "ctaHeight": 58,
+        "ctaRectX": 380,
+        "ctaRectY": 880,
+        "footerY": 1040
+      },
+      "splitReveal": {
+        "dividerX": 540,
+        "startY": 420,
+        "rowHeight": 70,
+        "textSize": 22,
+        "problemLabel": "WITHOUT DREDGE",
+        "solutionLabel": "WITH DREDGE",
+        "items": [
+          {
+            "left": "Surface-only spread",
+            "right": "Bait school at depth"
+          },
+          {
+            "left": "Fish stay down",
+            "right": "Fish rise to strike zone"
+          },
+          {
+            "left": "Random hookups",
+            "right": "Consistent teaser bites"
+          },
+          {
+            "left": "Dead-looking water",
+            "right": "Life behind the boat"
+          }
+        ]
+      }
+    },
+    {
+      "_comment": "DREDGES | offer | Complete System Pricing",
+      "_category": "dredges",
+      "_template": "offer",
+      "_thesis": "T16",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/dredges/dredge-offer-system.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_175678638.jpeg",
+      "overlay": {
+        "leftColor": "10,10,10",
+        "midColor": "10,10,10",
+        "rightColor": "10,10,10",
+        "leftOpacity": 0.7,
+        "midOpacity": 0.7,
+        "rightOpacity": 0.7,
+        "vignetteBottom": 0.2
+      },
+      "text": {
+        "headline": "Complete Dredge System",
+        "subhead": "Bar, squid, mono, bag. Nothing else to buy.",
+        "cta": "SHOP DREDGE KITS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 48,
+        "subheadSize": 22
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 34,
+        "ctaWidth": 320,
+        "ctaHeight": 58,
+        "ctaRectX": 380,
+        "ctaRectY": 880,
+        "footerY": 1040
+      },
+      "offerFrame": {
+        "originalPrice": "$529.99",
+        "salePrice": "$429.99",
+        "savings": "SAVE $100",
+        "offerText": "FREE SHIPPING",
+        "salePriceSize": 72,
+        "originalPriceSize": 28,
+        "priceY": 580
+      },
+      "badges": [
+        {
+          "text": "TOURNAMENT GRADE",
+          "x": 400,
+          "y": 120,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#ffffff",
+          "fontSize": 16
+        }
+      ]
+    },
+    {
+      "_comment": "PLANERS | problem-solution | Stop Guessing Setup",
+      "_category": "planers",
+      "_template": "problem-solution",
+      "_thesis": "T1",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/planers/planer-problem-solution-setup.jpg",
+      "overlay": {
+        "leftColor": "10,10,10",
+        "midColor": "10,10,10",
+        "rightColor": "10,10,10",
+        "leftOpacity": 0.8,
+        "midOpacity": 0.8,
+        "rightOpacity": 0.8,
+        "vignetteBottom": 0.2
+      },
+      "text": {
+        "headline": "Stop Guessing Your Planer Setup",
+        "subhead": "One kit. Zero missing parts.",
+        "cta": "SHOP COMPLETE KITS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 44,
+        "subheadSize": 24
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 34,
+        "ctaWidth": 320,
+        "ctaHeight": 58,
+        "ctaRectX": 380,
+        "ctaRectY": 880,
+        "footerY": 1040
+      },
+      "splitReveal": {
+        "dividerX": 540,
+        "startY": 420,
+        "rowHeight": 70,
+        "textSize": 22,
+        "problemLabel": "THE PROBLEM",
+        "solutionLabel": "THE FIX",
+        "items": [
+          {
+            "left": "Incomplete kits online",
+            "right": "Every piece included"
+          },
+          {
+            "left": "Wrong bridle for your planer",
+            "right": "Matched to your model"
+          },
+          {
+            "left": "Hardware fails at speed",
+            "right": "500lb rated clips & snaps"
+          },
+          {
+            "left": "3 orders to rig 1 planer",
+            "right": "One order. Done."
+          }
+        ]
+      }
+    },
+    {
+      "_comment": "PLANERS | benefit-stack | One Kit Zero Missing Parts",
+      "_category": "planers",
+      "_template": "benefit-stack",
+      "_thesis": "T3",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/planers/planer-benefit-stack-kit.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_194759350.jpeg",
+      "overlay": {
+        "leftColor": "8,30,50",
+        "midColor": "8,30,50",
+        "rightColor": "8,30,50",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "text": {
+        "headline": "One Kit. Zero Missing Parts.",
+        "subhead": "Fish today, not next week.",
+        "cta": "SHOP PLANER KITS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 48,
+        "subheadSize": 24
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 34,
+        "ctaWidth": 260,
+        "ctaHeight": 58,
+        "ctaRectX": 80,
+        "ctaRectY": 900,
+        "footerY": 1040
+      },
+      "benefitStack": {
+        "startX": 80,
+        "startY": 430,
+        "spacing": 90,
+        "iconSize": 36,
+        "iconColor": "#63b3ed",
+        "textSize": 26,
+        "textColor": "#ffffff",
+        "textMaxChars": 34,
+        "items": [
+          {
+            "icon": "check",
+            "label": "Planer, bridle, and hardware matched"
+          },
+          {
+            "icon": "shield",
+            "label": "500lb rated clips and snaps"
+          },
+          {
+            "icon": "gear",
+            "label": "Runs clean at trolling speed"
+          },
+          {
+            "icon": "wave",
+            "label": "Dives 20-30ft then releases on strike"
+          }
+        ]
+      }
+    },
+    {
+      "_comment": "PLANERS | comparison | Planer vs Downrigger",
+      "_category": "planers",
+      "_template": "comparison",
+      "_thesis": "T19",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/planers/planer-comparison-downrigger.jpg",
+      "overlay": {
+        "leftColor": "10,10,10",
+        "midColor": "10,10,10",
+        "rightColor": "10,10,10",
+        "leftOpacity": 0.7,
+        "midOpacity": 0.7,
+        "rightOpacity": 0.7,
+        "vignetteBottom": 0.2
+      },
+      "text": {
+        "headline": "Planer vs Downrigger",
+        "subhead": "Same depth. Very different price.",
+        "cta": "SHOP PLANERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 46,
+        "subheadSize": 22
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 34,
+        "ctaWidth": 320,
+        "ctaHeight": 58,
+        "ctaRectX": 380,
+        "ctaRectY": 900,
+        "footerY": 1040
+      },
+      "comparisonTable": {
+        "startX": 80,
+        "startY": 360,
+        "colWidth": 440,
+        "rowHeight": 60,
+        "headerSize": 22,
+        "bodySize": 20,
+        "highlightCol": "right",
+        "leftHeader": "Downrigger",
+        "rightHeader": "Planer Kit",
+        "rows": [
+          {
+            "left": "$800+ installed",
+            "right": "Under $40 complete"
+          },
+          {
+            "left": "Permanent mount needed",
+            "right": "Clips to any line"
+          },
+          {
+            "left": "Mechanical maintenance",
+            "right": "Zero maintenance"
+          },
+          {
+            "left": "One depth at a time",
+            "right": "Run multiple depths"
+          },
+          {
+            "left": "Releases on strike",
+            "right": "Releases on strike"
+          }
+        ]
+      }
+    },
+    {
+      "_comment": "PLANERS | contrarian | Setup Is Probably Wrong",
+      "_category": "planers",
+      "_template": "contrarian",
+      "_thesis": "T1",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/planers/planer-contrarian-wrong.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_167858576.jpeg",
+      "overlay": {
+        "leftColor": "10,10,10",
+        "midColor": "10,10,10",
+        "rightColor": "10,10,10",
+        "leftOpacity": 0.7,
+        "midOpacity": 0.7,
+        "rightOpacity": 0.7,
+        "vignetteBottom": 0.2
+      },
+      "text": {
+        "headline": "Your Planer Setup Is Probably Wrong.",
+        "subhead": "Wrong bridle size means wrong depth, wrong action, wrong results.",
+        "cta": "FIX YOUR SETUP",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 56,
+        "subheadSize": 24
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 18,
+        "maxSubheadChars": 30,
+        "ctaWidth": 320,
+        "ctaHeight": 58,
+        "ctaRectX": 380,
+        "ctaRectY": 800,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "LURES | benefit-stack | Build A Cleaner Spread",
+      "_category": "lures",
+      "_template": "benefit-stack",
+      "_thesis": "T12",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/lures/lure-benefit-stack-spread.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_180645942.jpeg",
+      "overlay": {
+        "leftColor": "8,30,50",
+        "midColor": "8,30,50",
+        "rightColor": "8,30,50",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "text": {
+        "headline": "Build A Cleaner Spread In Half The Time",
+        "subhead": "Matched lures that work together.",
+        "cta": "BUILD YOUR SPREAD",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 44,
+        "subheadSize": 24
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 34,
+        "ctaWidth": 260,
+        "ctaHeight": 58,
+        "ctaRectX": 80,
+        "ctaRectY": 900,
+        "footerY": 1040
+      },
+      "benefitStack": {
+        "startX": 80,
+        "startY": 440,
+        "spacing": 90,
+        "iconSize": 36,
+        "iconColor": "#63b3ed",
+        "textSize": 26,
+        "textColor": "#ffffff",
+        "textMaxChars": 34,
+        "items": [
+          {
+            "icon": "fish",
+            "label": "Lures matched by spread position"
+          },
+          {
+            "icon": "target",
+            "label": "Species-specific color patterns"
+          },
+          {
+            "icon": "gear",
+            "label": "Pre-rigged, ready to deploy"
+          },
+          {
+            "icon": "check",
+            "label": "Reordered by charter crews"
+          }
+        ]
+      }
+    },
+    {
+      "_comment": "LURES | testimonial | Crew Reorder Proof",
+      "_category": "lures",
+      "_template": "testimonial",
+      "_thesis": "T11",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/lures/lure-testimonial-reorder.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_195400385.jpeg",
+      "overlay": {
+        "leftColor": "10,10,10",
+        "midColor": "10,10,10",
+        "rightColor": "10,10,10",
+        "leftOpacity": 0.7,
+        "midOpacity": 0.7,
+        "rightOpacity": 0.7,
+        "vignetteBottom": 0.2
+      },
+      "text": {
+        "headline": "What Crews Keep Rigged",
+        "subhead": "",
+        "cta": "SHOP CONFIDENCE LURES",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 36,
+        "subheadSize": 22
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 34,
+        "ctaWidth": 320,
+        "ctaHeight": 58,
+        "ctaRectX": 380,
+        "ctaRectY": 900,
+        "footerY": 1040
+      },
+      "testimonial": {
+        "quote": "We keep three of these rigged and ready. When something works you don't mess with it.",
+        "stars": 5,
+        "starSize": 32,
+        "name": "Tournament Mate",
+        "role": "South Florida Circuit",
+        "quoteSize": 32,
+        "quoteMaxChars": 26,
+        "nameSize": 22,
+        "startY": 260
+      }
+    },
+    {
+      "_comment": "LURES | listicle | 4 Signs Your Spread Is Wrong",
+      "_category": "lures",
+      "_template": "listicle",
+      "_thesis": "T10",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/lures/lure-listicle-spread-signs.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_186432960.jpeg",
+      "overlay": {
+        "leftColor": "8,30,50",
+        "midColor": "8,30,50",
+        "rightColor": "8,30,50",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "text": {
+        "headline": "4 Signs Your Spread Is Working Against You",
+        "subhead": "Fix these before your next trip.",
+        "cta": "SHOP TESTED LURE SETUPS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 42,
+        "subheadSize": 22
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 34,
+        "ctaWidth": 260,
+        "ctaHeight": 58,
+        "ctaRectX": 80,
+        "ctaRectY": 900,
+        "footerY": 1040
+      },
+      "textLayers": [
+        {
+          "content": "1. Same color in every position \u2014 fish see one meal, not a school",
+          "x": 80,
+          "y": 420,
+          "fontSize": 24,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 36
+        },
+        {
+          "content": "2. Lures tangle at speed \u2014 bad combo, not bad luck",
+          "x": 80,
+          "y": 530,
+          "fontSize": 24,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 36
+        },
+        {
+          "content": "3. No teaser in front \u2014 fish need a reason to look",
+          "x": 80,
+          "y": 640,
+          "fontSize": 24,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 36
+        },
+        {
+          "content": "4. Rigging every trip \u2014 buy pre-rigged, fish more",
+          "x": 80,
+          "y": 750,
+          "fontSize": 24,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 36
+        }
+      ]
+    },
+    {
+      "_comment": "LURES | authority | Rigged By Captains",
+      "_category": "lures",
+      "_template": "authority",
+      "_thesis": "T11",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/lures/lure-authority-captains.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_183199836.jpeg",
+      "overlay": {
+        "leftColor": "8,30,50",
+        "midColor": "8,30,50",
+        "rightColor": "8,30,50",
+        "leftOpacity": 0.6,
+        "midOpacity": 0.4,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "text": {
+        "headline": "Rigged By Captains. Reordered By Crews.",
+        "subhead": "The lures serious offshore teams keep buying. Not because of marketing. Because they work.",
+        "cta": "SHOP PROVEN LURES",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Georgia, 'Times New Roman', serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 700,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 48,
+        "subheadSize": 22
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 220,
+        "subheadY": 460,
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 34,
+        "ctaWidth": 320,
+        "ctaHeight": 58,
+        "ctaRectX": 380,
+        "ctaRectY": 880,
+        "footerY": 1040
+      },
+      "authorityBar": {
+        "barY": 700,
+        "barHeight": 40,
+        "textSize": 13,
+        "textColor": "rgba(255,255,255,0.5)",
+        "barFill": "rgba(255,255,255,0.06)",
+        "publications": [
+          "CHARTER TESTED",
+          "TOURNAMENT PROVEN",
+          "CAPTAIN SELECTED",
+          "REORDER RATE: HIGH"
+        ]
+      }
+    },
+    {
+      "_comment": "RETARGET | offer | Free Shipping Over $99",
+      "_category": "retarget",
+      "_template": "offer",
+      "_thesis": "T18",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/retarget/retarget-offer-shipping.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_134773205.jpeg",
+      "overlay": {
+        "leftColor": "10,10,10",
+        "midColor": "10,10,10",
+        "rightColor": "10,10,10",
+        "leftOpacity": 0.7,
+        "midOpacity": 0.7,
+        "rightOpacity": 0.7,
+        "vignetteBottom": 0.2
+      },
+      "text": {
+        "headline": "You Were Looking At Something",
+        "subhead": "Come back and we'll ship it free.",
+        "cta": "FINISH YOUR ORDER",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 48,
+        "subheadSize": 24
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 34,
+        "ctaWidth": 320,
+        "ctaHeight": 58,
+        "ctaRectX": 380,
+        "ctaRectY": 860,
+        "footerY": 1040
+      },
+      "offerFrame": {
+        "salePrice": "FREE SHIPPING",
+        "savings": "ORDERS OVER $99",
+        "offerText": "Premium offshore tackle. No surprises at checkout.",
+        "salePriceSize": 56,
+        "originalPriceSize": 24,
+        "priceY": 560
+      }
+    },
+    {
+      "_comment": "RETARGET | testimonial | Best Customer Quote",
+      "_category": "retarget",
+      "_template": "testimonial",
+      "_thesis": "T11",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/retarget/retarget-testimonial-trust.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_139875840.jpeg",
+      "overlay": {
+        "leftColor": "10,10,10",
+        "midColor": "10,10,10",
+        "rightColor": "10,10,10",
+        "leftOpacity": 0.7,
+        "midOpacity": 0.7,
+        "rightOpacity": 0.7,
+        "vignetteBottom": 0.2
+      },
+      "text": {
+        "headline": "Why Anglers Come Back",
+        "subhead": "",
+        "cta": "SHOP THETACKLEROOM.COM",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 36,
+        "subheadSize": 22
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 34,
+        "ctaWidth": 320,
+        "ctaHeight": 58,
+        "ctaRectX": 380,
+        "ctaRectY": 900,
+        "footerY": 1040
+      },
+      "testimonial": {
+        "quote": "Best tackle shop online. Everything is what they say it is. Ships fast. Will order again.",
+        "stars": 5,
+        "starSize": 32,
+        "name": "Verified Buyer",
+        "role": "Repeat Customer",
+        "quoteSize": 34,
+        "quoteMaxChars": 26,
+        "nameSize": 22,
+        "startY": 260
+      }
+    },
+    {
+      "_comment": "RETARGET | benefit-stack | Simple Enough To Run",
+      "_category": "retarget",
+      "_template": "benefit-stack",
+      "_thesis": "T21",
+      "output": "/mnt/raid/Data/tmp/ads/campaign-roundout/retarget/retarget-benefit-stack-trust.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_144669694.jpeg",
+      "overlay": {
+        "leftColor": "8,30,50",
+        "midColor": "8,30,50",
+        "rightColor": "8,30,50",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "text": {
+        "headline": "Simple Enough To Run. Durable Enough To Trust.",
+        "subhead": "Offshore tackle that works the first time.",
+        "cta": "SHOP NOW",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4,
+        "headlineSize": 42,
+        "subheadSize": 24
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 180,
+        "subheadY": 290,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 34,
+        "ctaWidth": 260,
+        "ctaHeight": 58,
+        "ctaRectX": 80,
+        "ctaRectY": 900,
+        "footerY": 1040
+      },
+      "benefitStack": {
+        "startX": 80,
+        "startY": 440,
+        "spacing": 90,
+        "iconSize": 36,
+        "iconColor": "#63b3ed",
+        "textSize": 26,
+        "textColor": "#ffffff",
+        "textMaxChars": 34,
+        "items": [
+          {
+            "icon": "shield",
+            "label": "Tournament-grade hardware"
+          },
+          {
+            "icon": "check",
+            "label": "Complete kits, nothing missing"
+          },
+          {
+            "icon": "wave",
+            "label": "Tested offshore, not in a warehouse"
+          },
+          {
+            "icon": "arrow",
+            "label": "Free shipping over $99"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#ffffff",
+      "subheadColor": "#e4e4e7",
+      "footerColor": "rgba(255,255,255,0.35)",
+      "ctaTextColor": "#ffffff",
+      "ctaFill": "rgba(232,93,58,0.92)",
+      "ctaStroke": "rgba(255,160,120,0.35)",
+      "gradientStart": "#0b2a40",
+      "gradientEnd": "#1f6b8f"
+    }
+  },
+  "renders": [
+    {
+      "_comment": "=== Comparison: planer-kits ===",
+      "output": "/mnt/raid/Data/tmp/ads/test/comparison-planer.jpg",
+      "text": {
+        "headline": "Why Piece It Together?",
+        "subhead": "The difference is in the details.",
+        "cta": "SHOP COMPLETE KITS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "10,10,10", "midColor": "10,10,10", "rightColor": "10,10,10",
+        "leftOpacity": 0.8, "midOpacity": 0.8, "rightOpacity": 0.8,
+        "vignetteBottom": 0.15
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 46,
+        "subheadSize": 22,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 180,
+        "subheadY": 260,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 36,
+        "ctaWidth": 320,
+        "ctaHeight": 58,
+        "ctaRectX": 380,
+        "ctaRectY": 900,
+        "ctaX": 540,
+        "ctaY": 929,
+        "footerY": 1040
+      },
+      "comparisonTable": {
+        "startX": 80,
+        "startY": 360,
+        "colWidth": 440,
+        "rowHeight": 65,
+        "headerSize": 22,
+        "bodySize": 20,
+        "highlightCol": "right",
+        "leftHeader": "Piecing It Together",
+        "rightHeader": "TackleRoom Kit",
+        "rows": [
+          { "left": "3-4 separate orders", "right": "One complete order" },
+          { "left": "Mismatched hardware", "right": "Matched 500lb rated" },
+          { "left": "Wrong bridle size risk", "right": "Pre-matched bridles" },
+          { "left": "No setup guidance", "right": "Rigging instructions" },
+          { "left": "Hope it works", "right": "Captain-tested system" }
+        ]
+      }
+    }
+  ]
+}

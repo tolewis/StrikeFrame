@@ -1,0 +1,70 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#ffffff",
+      "subheadColor": "#e4e4e7",
+      "footerColor": "rgba(255,255,255,0.35)",
+      "ctaTextColor": "#ffffff",
+      "ctaFill": "rgba(232,93,58,0.92)",
+      "ctaStroke": "rgba(255,160,120,0.35)",
+      "gradientStart": "#0b2a40",
+      "gradientEnd": "#1f6b8f"
+    }
+  },
+  "renders": [
+    {
+      "_comment": "=== Authority: offshore-expertise ===",
+      "output": "/mnt/raid/Data/tmp/ads/test/authority-offshore.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_331722964.jpeg",
+      "text": {
+        "headline": "Built by Captains, Not Marketers",
+        "subhead": "Every product selected by working offshore professionals who depend on their gear.",
+        "cta": "SHOP CAPTAIN'S PICKS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "10,10,10", "midColor": "10,10,10", "rightColor": "10,10,10",
+        "leftOpacity": 0.7, "midOpacity": 0.65, "rightOpacity": 0.6,
+        "vignetteBottom": 0.25
+      },
+      "typography": {
+        "headlineFontFamily": "Georgia, 'Times New Roman', serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 52,
+        "subheadSize": 24,
+        "headlineWeight": 700,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 280,
+        "subheadY": 480,
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 34,
+        "ctaWidth": 320,
+        "ctaHeight": 58,
+        "ctaRectX": 380,
+        "ctaRectY": 880,
+        "ctaX": 540,
+        "ctaY": 909,
+        "footerY": 1040
+      },
+      "authorityBar": {
+        "barY": 680,
+        "barHeight": 40,
+        "textSize": 13,
+        "textColor": "rgba(255,255,255,0.5)",
+        "barFill": "rgba(255,255,255,0.06)",
+        "publications": ["TOURNAMENT TESTED", "CAPTAIN VERIFIED", "OFFSHORE PROVEN", "SINCE 2023"]
+      }
+    }
+  ]
+}

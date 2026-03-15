@@ -107,26 +107,67 @@ def extract_features(spec):
 
 
 def extract_feature_bodies(spec):
-    """Extract short feature clauses from content spec."""
+    """Extract short, COMPLETE benefit statements — never truncate."""
     mf = spec.get("metafields", {})
+    titles = extract_features(spec)
     bodies = []
     for i in range(1, 4):
         b = mf.get(f"feature_{i}_body", "")
-        if b:
-            # First clause before ", " or ". " or " and "
-            clause = re.split(r'[,.]\s|\s+and\s+', b)[0].strip()
-            if len(clause) > 50:
-                clause = clause[:47].rsplit(" ", 1)[0] + "..."
-            bodies.append(clause)
+        title = titles[i - 1] if (i - 1) < len(titles) else None
+        if not b:
+            if title:
+                bodies.append(title)
+            continue
+        # Strip HTML tags
+        b = re.sub(r'<[^>]+>', '', b).strip()
+        # Split into sentences, find first complete one that fits (15-48 chars)
+        sentences = re.split(r'[.?!]\s+', b)
+        found = False
+        for sent in sentences[:4]:
+            sent = sent.strip().rstrip('.!?')
+            # Skip fragments starting with conjunctions
+            if re.match(r'^(and|but|or|so|then|also)\b', sent, re.I):
+                continue
+            if 15 <= len(sent) <= 48:
+                bodies.append(sent)
+                found = True
+                break
+        if not found and title:
+            bodies.append(title)
+        elif not found:
+            # Last resort: take first sentence, cut at last space before 48
+            s = sentences[0].strip().rstrip('.!?')
+            if len(s) > 48:
+                s = s[:45].rsplit(' ', 1)[0]
+            bodies.append(s)
     return bodies
 
 
 def extract_specs_from_body(spec):
-    """Extract spec-like bullet points from body_html."""
+    """Extract spec-like bullet points from body_html — only complete statements."""
     body = spec.get("body_html", "")
     items = re.findall(r"<li>(.*?)</li>", body, re.I)
-    specs = [re.sub(r"<[^>]+>", "", item).strip() for item in items]
-    return [s for s in specs if s and len(s) < 55][:4]
+    specs = []
+    for item in items:
+        s = re.sub(r"<[^>]+>", "", item).strip()
+        if not s:
+            continue
+        # Reject items that end with a dangling word (incomplete thought)
+        if re.search(r'\b(for|the|a|an|in|on|of|to|with|from|at|and|or|stiff|heavy|light|strong|full|all|each|every)\s*$', s, re.I):
+            continue
+        if len(s) <= 48:
+            specs.append(s)
+        else:
+            # Try cutting at a natural break (comma, dash, colon)
+            for sep in [' - ', ': ', ', ']:
+                idx = s.find(sep)
+                if 15 <= idx <= 48:
+                    cut = s[:idx]
+                    # Also reject cuts ending with dangling words
+                    if not re.search(r'\b(for|the|a|an|in|on|of|to|with|from|at|and|or|stiff|heavy|light|strong|full|all|each|every)\s*$', cut, re.I):
+                        specs.append(cut)
+                    break
+    return specs[:4]
 
 
 def build_render(product, spec, image_path, variant, bg_index):
@@ -135,7 +176,7 @@ def build_render(product, spec, image_path, variant, bg_index):
     bg = OCEAN_BGS[bg_index % len(OCEAN_BGS)]
 
     features = variant["features"]
-    num_feats = min(len(features), 4)
+    num_feats = min(len(features), 3)
     headline = variant["headline"]
 
     # Layout constants (1080x1080)
@@ -144,14 +185,14 @@ def build_render(product, spec, image_path, variant, bg_index):
     PANEL_X = PRODUCT_W  # dark panel starts here
     PANEL_W = 1080 - PANEL_X  # 640px dark panel
 
-    # Feature panel layout
-    FEAT_SIZE = 20
-    FEAT_STEP = 65
+    # Feature panel layout — 34px text (was 20→40→34), tighter to edges
+    FEAT_SIZE = 34
+    FEAT_STEP = 100
     FEAT_MAX_CHARS = 30
 
-    feat_x = PANEL_X + 35
-    header_y = SPLIT_Y + 35
-    feat_start_y = SPLIT_Y + 80
+    feat_x = PANEL_X + 15
+    header_y = SPLIT_Y + 40
+    feat_start_y = SPLIT_Y + 95
 
     # Feature text layers
     feature_layers = []
@@ -161,13 +202,13 @@ def build_render(product, spec, image_path, variant, bg_index):
         "content": variant.get("header", "FEATURES"),
         "x": feat_x,
         "y": header_y,
-        "fontSize": 17,
+        "fontSize": 28,
         "fontWeight": 700,
         "color": "rgba(255,255,255,0.5)",
-        "maxChars": 40,
+        "maxChars": 30,
     })
 
-    for i, feat in enumerate(features[:4]):
+    for i, feat in enumerate(features[:3]):
         feature_layers.append({
             "content": f"✓ {feat}",
             "x": feat_x,
@@ -179,16 +220,16 @@ def build_render(product, spec, image_path, variant, bg_index):
         })
 
     # CTA position: after last feature + gap
-    cta_y = feat_start_y + num_feats * FEAT_STEP + 15
+    cta_y = feat_start_y + num_feats * FEAT_STEP + 10
 
     # Domain text at bottom of dark panel
     feature_layers.append({
         "content": "THETACKLEROOM.COM",
         "x": PANEL_X + PANEL_W // 2,
-        "y": 1055,
-        "fontSize": 12,
+        "y": 1060,
+        "fontSize": 14,
         "fontWeight": 600,
-        "color": "rgba(255,255,255,0.25)",
+        "color": "rgba(255,255,255,0.3)",
         "maxChars": 40,
         "align": "center",
     })
@@ -201,6 +242,7 @@ def build_render(product, spec, image_path, variant, bg_index):
         "_comment": f"=== {handle} | Variant {variant['id']} ===",
         "output": f"{OUT}/{handle}-{variant['id']}.jpg",
         "backgroundPath": bg,
+        "backgroundPosition": "attention",
         "productImage": {
             "path": image_path,
             "x": 20,
@@ -250,7 +292,7 @@ def build_render(product, spec, image_path, variant, bg_index):
                 "offsetY": cta_y,
                 "textAlign": "center",
             },
-            "footerY": 1055,
+            "footerY": 1060,
         },
         "shapes": [
             # White product area (left bottom)
@@ -282,10 +324,16 @@ def build_variants(product, spec):
     value_heading = mf.get("value_story_heading", "")
 
     # Pad features to at least 3
+    _fallback = ["Premium Build Quality", "Built for Saltwater", "Trusted by Tournament Anglers"]
     while len(features) < 3:
-        features.append("Premium Quality")
+        features.append(_fallback[len(features)] if len(features) < len(_fallback) else _fallback[-1])
+    # If bodies are thin, fill from feature titles (index-based, no dedup)
     while len(bodies) < 3:
-        bodies.append("Built for serious anglers")
+        idx = len(bodies)
+        if idx < len(features):
+            bodies.append(features[idx])
+        else:
+            bodies.append(_fallback[idx] if idx < len(_fallback) else "Built for Saltwater")
     # If no real specs, fall back to feature titles
     if not specs_list:
         specs_list = list(features)
