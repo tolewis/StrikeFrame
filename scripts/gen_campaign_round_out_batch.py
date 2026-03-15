@@ -89,22 +89,23 @@ def out(category, name):
     return f"{OUTPUT_DIR}/{category}/{name}.jpg"
 
 
-def base_layout(personality="centered-hero", headline_size=48, subhead_size=24,
-                max_hl_chars=20, max_sh_chars=34, cta_y=900):
+def base_layout(personality="centered-hero", max_hl_chars=20, max_sh_chars=34, cta_y=920):
     """Build common layout dict."""
     is_centered = personality == "centered-hero"
+    cta_w = 560 if is_centered else 360
     return {
         "personality": personality,
         "align": "center" if is_centered else "left",
         "leftX": 540 if is_centered else 80,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 140,
+        "subheadY": 380,
         "maxHeadlineChars": max_hl_chars,
         "maxSubheadChars": max_sh_chars,
-        "ctaWidth": 320 if is_centered else 260,
-        "ctaHeight": 58,
-        "ctaRectX": 380 if is_centered else 80,
+        "ctaWidth": cta_w,
+        "ctaHeight": 62,
+        "ctaRectX": (1080 - cta_w) // 2 if is_centered else 80,
         "ctaRectY": cta_y,
+        "ctaRadius": 20,
         "footerY": 1040,
     }
 
@@ -131,12 +132,12 @@ def build_renders():
             "cta": "SHOP FIGHTING BELTS",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 48, "subheadSize": 24},
+        "typography": {**DEFAULTS["typography"], "headlineSize": 58, "subheadSize": 24},
         "layout": base_layout("editorial-left", cta_y=900),
         "benefitStack": {
-            "startX": 80, "startY": 430, "spacing": 90,
+            "startX": 80, "startY": 500, "spacing": 110,
             "iconSize": 36, "iconColor": "#63b3ed",
-            "textSize": 26, "textColor": "#ffffff", "textMaxChars": 32,
+            "textSize": 28, "textColor": "#ffffff", "textMaxChars": 32,
             "items": [
                 {"icon": "shield", "label": "Wide padded lumbar support"},
                 {"icon": "gear", "label": "Gimbal pin locks rod in position"},
@@ -159,15 +160,15 @@ def build_renders():
             "cta": "SHOP FIGHTING BELTS",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 36, "subheadSize": 22},
-        "layout": base_layout("centered-hero", headline_size=36, cta_y=900),
+        "typography": {**DEFAULTS["typography"], "headlineSize": 44, "subheadSize": 22},
+        "layout": {**base_layout("centered-hero", cta_y=900), "headlineY": 200},
         "testimonial": {
             "quote": "Forty minutes on a blue marlin and the belt was the only thing that wasn't sore the next day.",
             "stars": 5, "starSize": 32,
             "name": "Capt. Rick Stanczyk",
             "role": "Bud N' Mary's Marina, Islamorada",
             "quoteSize": 32, "quoteMaxChars": 26,
-            "nameSize": 22, "startY": 260,
+            "nameSize": 22, "startY": 330,
         },
     })
 
@@ -184,7 +185,7 @@ def build_renders():
             "cta": "SHOP QUALITY BELTS",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 56, "subheadSize": 24},
+        "typography": {**DEFAULTS["typography"], "headlineSize": 62, "subheadSize": 24},
         "layout": base_layout("centered-hero", max_hl_chars=18, max_sh_chars=32, cta_y=800),
     })
 
@@ -200,10 +201,10 @@ def build_renders():
             "cta": "SHOP FIGHTING BELTS",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 46, "subheadSize": 22},
+        "typography": {**DEFAULTS["typography"], "headlineSize": 56, "subheadSize": 22},
         "layout": base_layout("centered-hero", cta_y=900),
         "comparisonTable": {
-            "startX": 80, "startY": 360, "colWidth": 440, "rowHeight": 60,
+            "startX": 80, "startY": 460, "colWidth": 440, "rowHeight": 60,
             "headerSize": 22, "bodySize": 20,
             "highlightCol": "right",
             "leftHeader": "Generic Belt",
@@ -235,12 +236,12 @@ def build_renders():
             "cta": "SHOP WEIGHT KITS",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 46, "subheadSize": 24},
+        "typography": {**DEFAULTS["typography"], "headlineSize": 56, "subheadSize": 24},
         "layout": base_layout("editorial-left", cta_y=900),
         "benefitStack": {
-            "startX": 80, "startY": 440, "spacing": 90,
+            "startX": 80, "startY": 500, "spacing": 110,
             "iconSize": 36, "iconColor": "#63b3ed",
-            "textSize": 26, "textColor": "#ffffff", "textMaxChars": 34,
+            "textSize": 28, "textColor": "#ffffff", "textMaxChars": 34,
             "items": [
                 {"icon": "anchor", "label": "8oz for shallow trolling under 4kts"},
                 {"icon": "wave", "label": "16oz for standard offshore depth"},
@@ -263,14 +264,14 @@ def build_renders():
             "cta": "SHOP TROLLING WEIGHTS",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 44, "subheadSize": 22},
+        "typography": {**DEFAULTS["typography"], "headlineSize": 54, "subheadSize": 22},
         "layout": base_layout("editorial-left", max_hl_chars=22, cta_y=920),
         "textLayers": [
-            {"content": "1. Wrong weight for your trolling speed", "x": 80, "y": 400, "fontSize": 26, "fontWeight": 600, "color": "#ffffff", "maxChars": 36},
-            {"content": "2. Flash lines that spook gamefish", "x": 80, "y": 480, "fontSize": 26, "fontWeight": 600, "color": "#ffffff", "maxChars": 36},
-            {"content": "3. Machine-poured seams that catch weed", "x": 80, "y": 560, "fontSize": 26, "fontWeight": 600, "color": "#ffffff", "maxChars": 36},
-            {"content": "4. Only carrying one size on the boat", "x": 80, "y": 640, "fontSize": 26, "fontWeight": 600, "color": "#ffffff", "maxChars": 36},
-            {"content": "5. Running out of weights mid-season", "x": 80, "y": 720, "fontSize": 26, "fontWeight": 600, "color": "#ffffff", "maxChars": 36},
+            {"content": "1. Wrong weight for your trolling speed", "x": 80, "y": 480, "fontSize": 28, "fontWeight": 600, "color": "#ffffff", "maxChars": 36},
+            {"content": "2. Flash lines that spook gamefish", "x": 80, "y": 556, "fontSize": 28, "fontWeight": 600, "color": "#ffffff", "maxChars": 36},
+            {"content": "3. Machine-poured seams that catch weed", "x": 80, "y": 632, "fontSize": 28, "fontWeight": 600, "color": "#ffffff", "maxChars": 36},
+            {"content": "4. Only carrying one size on the boat", "x": 80, "y": 708, "fontSize": 28, "fontWeight": 600, "color": "#ffffff", "maxChars": 36},
+            {"content": "5. Running out of weights mid-season", "x": 80, "y": 784, "fontSize": 28, "fontWeight": 600, "color": "#ffffff", "maxChars": 36},
         ],
     })
 
@@ -287,8 +288,8 @@ def build_renders():
             "cta": "SHOP WEIGHTS",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 48, "subheadSize": 24},
-        "layout": base_layout("centered-hero", cta_y=880),
+        "typography": {**DEFAULTS["typography"], "headlineSize": 58, "subheadSize": 24},
+        "layout": {**base_layout("centered-hero", cta_y=880), "headlineY": 240},
         "offerFrame": {
             "originalPrice": "$18.99",
             "salePrice": "$12.99",
@@ -320,7 +321,7 @@ def build_renders():
         "typography": {
             **DEFAULTS["typography"],
             "headlineFontFamily": BRAND["serif_font"],
-            "headlineSize": 48, "subheadSize": 22,
+            "headlineSize": 58, "subheadSize": 22,
             "headlineWeight": 700,
         },
         "layout": {
@@ -353,15 +354,15 @@ def build_renders():
             "cta": "SHOP DREDGE SYSTEMS",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 36, "subheadSize": 22},
-        "layout": base_layout("centered-hero", headline_size=36, cta_y=900),
+        "typography": {**DEFAULTS["typography"], "headlineSize": 44, "subheadSize": 22},
+        "layout": {**base_layout("centered-hero", cta_y=900), "headlineY": 200},
         "testimonial": {
             "quote": "If you aren't pulling dredges you aren't competing. They raise fish better than anything else in the spread.",
             "stars": 5, "starSize": 32,
             "name": "Capt. Wheeler",
             "role": "Tournament Circuit, South Florida",
             "quoteSize": 32, "quoteMaxChars": 26,
-            "nameSize": 22, "startY": 260,
+            "nameSize": 22, "startY": 330,
         },
     })
 
@@ -377,10 +378,10 @@ def build_renders():
             "cta": "UPGRADE YOUR SPREAD",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 46, "subheadSize": 22},
-        "layout": base_layout("centered-hero", cta_y=900),
+        "typography": {**DEFAULTS["typography"], "headlineSize": 56, "subheadSize": 22},
+        "layout": {**base_layout("centered-hero", cta_y=900), "headlineY": 240},
         "comparisonTable": {
-            "startX": 80, "startY": 360, "colWidth": 440, "rowHeight": 60,
+            "startX": 80, "startY": 460, "colWidth": 440, "rowHeight": 60,
             "headerSize": 22, "bodySize": 20,
             "highlightCol": "right",
             "leftHeader": "Without Dredge",
@@ -407,12 +408,12 @@ def build_renders():
             "cta": "SEE THE FULL BUILD",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 44, "subheadSize": 24},
+        "typography": {**DEFAULTS["typography"], "headlineSize": 54, "subheadSize": 24},
         "layout": base_layout("editorial-left", max_hl_chars=22, cta_y=900),
         "benefitStack": {
-            "startX": 80, "startY": 440, "spacing": 90,
+            "startX": 80, "startY": 500, "spacing": 110,
             "iconSize": 36, "iconColor": "#63b3ed",
-            "textSize": 26, "textColor": "#ffffff", "textMaxChars": 34,
+            "textSize": 28, "textColor": "#ffffff", "textMaxChars": 34,
             "items": [
                 {"icon": "anchor", "label": "38\" heavy bar handles Gulf Stream"},
                 {"icon": "wave", "label": "UV-enhanced squid visible at depth"},
@@ -435,10 +436,10 @@ def build_renders():
             "cta": "ADD A DREDGE",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 44, "subheadSize": 24},
+        "typography": {**DEFAULTS["typography"], "headlineSize": 54, "subheadSize": 24},
         "layout": base_layout("centered-hero", max_hl_chars=22, cta_y=880),
         "splitReveal": {
-            "dividerX": 540, "startY": 420, "rowHeight": 70, "textSize": 22,
+            "dividerX": 540, "startY": 500, "rowHeight": 70, "textSize": 22,
             "problemLabel": "WITHOUT DREDGE",
             "solutionLabel": "WITH DREDGE",
             "items": [
@@ -463,7 +464,7 @@ def build_renders():
             "cta": "SHOP DREDGE KITS",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 48, "subheadSize": 22},
+        "typography": {**DEFAULTS["typography"], "headlineSize": 58, "subheadSize": 22},
         "layout": base_layout("centered-hero", cta_y=880),
         "offerFrame": {
             "originalPrice": "$529.99",
@@ -496,10 +497,10 @@ def build_renders():
             "cta": "SHOP COMPLETE KITS",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 44, "subheadSize": 24},
+        "typography": {**DEFAULTS["typography"], "headlineSize": 54, "subheadSize": 24},
         "layout": base_layout("centered-hero", max_hl_chars=22, cta_y=880),
         "splitReveal": {
-            "dividerX": 540, "startY": 420, "rowHeight": 70, "textSize": 22,
+            "dividerX": 540, "startY": 500, "rowHeight": 70, "textSize": 22,
             "problemLabel": "THE PROBLEM",
             "solutionLabel": "THE FIX",
             "items": [
@@ -524,12 +525,12 @@ def build_renders():
             "cta": "SHOP PLANER KITS",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 48, "subheadSize": 24},
+        "typography": {**DEFAULTS["typography"], "headlineSize": 58, "subheadSize": 24},
         "layout": base_layout("editorial-left", cta_y=900),
         "benefitStack": {
-            "startX": 80, "startY": 430, "spacing": 90,
+            "startX": 80, "startY": 500, "spacing": 110,
             "iconSize": 36, "iconColor": "#63b3ed",
-            "textSize": 26, "textColor": "#ffffff", "textMaxChars": 34,
+            "textSize": 28, "textColor": "#ffffff", "textMaxChars": 34,
             "items": [
                 {"icon": "check", "label": "Planer, bridle, and hardware matched"},
                 {"icon": "shield", "label": "500lb rated clips and snaps"},
@@ -551,10 +552,10 @@ def build_renders():
             "cta": "SHOP PLANERS",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 46, "subheadSize": 22},
-        "layout": base_layout("centered-hero", cta_y=900),
+        "typography": {**DEFAULTS["typography"], "headlineSize": 56, "subheadSize": 22},
+        "layout": {**base_layout("centered-hero", cta_y=900), "headlineY": 240},
         "comparisonTable": {
-            "startX": 80, "startY": 360, "colWidth": 440, "rowHeight": 60,
+            "startX": 80, "startY": 460, "colWidth": 440, "rowHeight": 60,
             "headerSize": 22, "bodySize": 20,
             "highlightCol": "right",
             "leftHeader": "Downrigger",
@@ -582,7 +583,7 @@ def build_renders():
             "cta": "FIX YOUR SETUP",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 56, "subheadSize": 24},
+        "typography": {**DEFAULTS["typography"], "headlineSize": 62, "subheadSize": 24},
         "layout": base_layout("centered-hero", max_hl_chars=18, max_sh_chars=30, cta_y=800),
     })
 
@@ -603,12 +604,12 @@ def build_renders():
             "cta": "BUILD YOUR SPREAD",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 44, "subheadSize": 24},
+        "typography": {**DEFAULTS["typography"], "headlineSize": 54, "subheadSize": 24},
         "layout": base_layout("editorial-left", max_hl_chars=22, cta_y=900),
         "benefitStack": {
-            "startX": 80, "startY": 440, "spacing": 90,
+            "startX": 80, "startY": 500, "spacing": 110,
             "iconSize": 36, "iconColor": "#63b3ed",
-            "textSize": 26, "textColor": "#ffffff", "textMaxChars": 34,
+            "textSize": 28, "textColor": "#ffffff", "textMaxChars": 34,
             "items": [
                 {"icon": "fish", "label": "Lures matched by spread position"},
                 {"icon": "target", "label": "Species-specific color patterns"},
@@ -631,8 +632,8 @@ def build_renders():
             "cta": "SHOP CONFIDENCE LURES",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 36, "subheadSize": 22},
-        "layout": base_layout("centered-hero", headline_size=36, cta_y=900),
+        "typography": {**DEFAULTS["typography"], "headlineSize": 44, "subheadSize": 22},
+        "layout": base_layout("centered-hero", cta_y=900),
         "testimonial": {
             "quote": "We keep three of these rigged and ready. When something works you don't mess with it.",
             "stars": 5, "starSize": 32,
@@ -656,13 +657,13 @@ def build_renders():
             "cta": "SHOP TESTED LURE SETUPS",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 42, "subheadSize": 22},
+        "typography": {**DEFAULTS["typography"], "headlineSize": 52, "subheadSize": 22},
         "layout": base_layout("editorial-left", max_hl_chars=22, cta_y=900),
         "textLayers": [
-            {"content": "1. Same color in every position — fish see one meal, not a school", "x": 80, "y": 420, "fontSize": 24, "fontWeight": 600, "color": "#ffffff", "maxChars": 36},
-            {"content": "2. Lures tangle at speed — bad combo, not bad luck", "x": 80, "y": 530, "fontSize": 24, "fontWeight": 600, "color": "#ffffff", "maxChars": 36},
-            {"content": "3. No teaser in front — fish need a reason to look", "x": 80, "y": 640, "fontSize": 24, "fontWeight": 600, "color": "#ffffff", "maxChars": 36},
-            {"content": "4. Rigging every trip — buy pre-rigged, fish more", "x": 80, "y": 750, "fontSize": 24, "fontWeight": 600, "color": "#ffffff", "maxChars": 36},
+            {"content": "1. Same color in every position — fish see one meal, not a school", "x": 80, "y": 500, "fontSize": 26, "fontWeight": 600, "color": "#ffffff", "maxChars": 36},
+            {"content": "2. Lures tangle at speed — bad combo, not bad luck", "x": 80, "y": 610, "fontSize": 26, "fontWeight": 600, "color": "#ffffff", "maxChars": 36},
+            {"content": "3. No teaser in front — fish need a reason to look", "x": 80, "y": 720, "fontSize": 26, "fontWeight": 600, "color": "#ffffff", "maxChars": 36},
+            {"content": "4. Rigging every trip — buy pre-rigged, fish more", "x": 80, "y": 830, "fontSize": 26, "fontWeight": 600, "color": "#ffffff", "maxChars": 36},
         ],
     })
 
@@ -682,7 +683,7 @@ def build_renders():
         "typography": {
             **DEFAULTS["typography"],
             "headlineFontFamily": BRAND["serif_font"],
-            "headlineSize": 48, "subheadSize": 22,
+            "headlineSize": 58, "subheadSize": 22,
             "headlineWeight": 700,
         },
         "layout": {
@@ -715,7 +716,7 @@ def build_renders():
             "cta": "FINISH YOUR ORDER",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 48, "subheadSize": 24},
+        "typography": {**DEFAULTS["typography"], "headlineSize": 58, "subheadSize": 24},
         "layout": base_layout("centered-hero", cta_y=860),
         "offerFrame": {
             "salePrice": "FREE SHIPPING",
@@ -739,8 +740,8 @@ def build_renders():
             "cta": "SHOP THETACKLEROOM.COM",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 36, "subheadSize": 22},
-        "layout": base_layout("centered-hero", headline_size=36, cta_y=900),
+        "typography": {**DEFAULTS["typography"], "headlineSize": 44, "subheadSize": 22},
+        "layout": base_layout("centered-hero", cta_y=900),
         "testimonial": {
             "quote": "Best tackle shop online. Everything is what they say it is. Ships fast. Will order again.",
             "stars": 5, "starSize": 32,
@@ -764,12 +765,12 @@ def build_renders():
             "cta": "SHOP NOW",
             "footer": "THETACKLEROOM.COM",
         },
-        "typography": {**DEFAULTS["typography"], "headlineSize": 42, "subheadSize": 24},
+        "typography": {**DEFAULTS["typography"], "headlineSize": 52, "subheadSize": 24},
         "layout": base_layout("editorial-left", max_hl_chars=22, cta_y=900),
         "benefitStack": {
-            "startX": 80, "startY": 440, "spacing": 90,
+            "startX": 80, "startY": 500, "spacing": 110,
             "iconSize": 36, "iconColor": "#63b3ed",
-            "textSize": 26, "textColor": "#ffffff", "textMaxChars": 34,
+            "textSize": 28, "textColor": "#ffffff", "textMaxChars": 34,
             "items": [
                 {"icon": "shield", "label": "Tournament-grade hardware"},
                 {"icon": "check", "label": "Complete kits, nothing missing"},

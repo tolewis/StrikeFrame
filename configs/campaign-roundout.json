@@ -34,10 +34,10 @@
         "leftColor": "8,30,50",
         "midColor": "8,30,50",
         "rightColor": "8,30,50",
-        "leftOpacity": 0.55,
-        "midOpacity": 0.35,
-        "rightOpacity": 0.15,
-        "vignetteBottom": 0.35
+        "leftOpacity": 0.68,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.28,
+        "vignetteBottom": 0.4
       },
       "text": {
         "headline": "Built For The Fight, Not The Photo",
@@ -53,30 +53,31 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 48,
+        "headlineSize": 58,
         "subheadSize": 24
       },
       "layout": {
         "personality": "editorial-left",
         "align": "left",
         "leftX": 80,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 140,
+        "subheadY": 380,
         "maxHeadlineChars": 20,
         "maxSubheadChars": 34,
-        "ctaWidth": 260,
-        "ctaHeight": 58,
+        "ctaWidth": 360,
+        "ctaHeight": 62,
         "ctaRectX": 80,
         "ctaRectY": 900,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "benefitStack": {
         "startX": 80,
-        "startY": 430,
-        "spacing": 90,
+        "startY": 500,
+        "spacing": 110,
         "iconSize": 36,
         "iconColor": "#63b3ed",
-        "textSize": 26,
+        "textSize": 28,
         "textColor": "#ffffff",
         "textMaxChars": 32,
         "items": [
@@ -110,9 +111,9 @@
         "leftColor": "10,10,10",
         "midColor": "10,10,10",
         "rightColor": "10,10,10",
-        "leftOpacity": 0.7,
-        "midOpacity": 0.7,
-        "rightOpacity": 0.7,
+        "leftOpacity": 0.75,
+        "midOpacity": 0.75,
+        "rightOpacity": 0.75,
         "vignetteBottom": 0.2
       },
       "text": {
@@ -129,21 +130,22 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 36,
+        "headlineSize": 44,
         "subheadSize": 22
       },
       "layout": {
         "personality": "centered-hero",
         "align": "center",
         "leftX": 540,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 200,
+        "subheadY": 380,
         "maxHeadlineChars": 20,
         "maxSubheadChars": 34,
-        "ctaWidth": 320,
-        "ctaHeight": 58,
-        "ctaRectX": 380,
+        "ctaWidth": 560,
+        "ctaHeight": 62,
+        "ctaRectX": 260,
         "ctaRectY": 900,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "testimonial": {
@@ -155,7 +157,7 @@
         "quoteSize": 32,
         "quoteMaxChars": 26,
         "nameSize": 22,
-        "startY": 260
+        "startY": 330
       }
     },
     {
@@ -169,9 +171,9 @@
         "leftColor": "10,10,10",
         "midColor": "10,10,10",
         "rightColor": "10,10,10",
-        "leftOpacity": 0.7,
-        "midOpacity": 0.7,
-        "rightOpacity": 0.7,
+        "leftOpacity": 0.75,
+        "midOpacity": 0.75,
+        "rightOpacity": 0.75,
         "vignetteBottom": 0.2
       },
       "text": {
@@ -188,21 +190,22 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 56,
+        "headlineSize": 62,
         "subheadSize": 24
       },
       "layout": {
         "personality": "centered-hero",
         "align": "center",
         "leftX": 540,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 140,
+        "subheadY": 380,
         "maxHeadlineChars": 18,
         "maxSubheadChars": 32,
-        "ctaWidth": 320,
-        "ctaHeight": 58,
-        "ctaRectX": 380,
+        "ctaWidth": 560,
+        "ctaHeight": 62,
+        "ctaRectX": 260,
         "ctaRectY": 800,
+        "ctaRadius": 20,
         "footerY": 1040
       }
     },
@@ -216,9 +219,9 @@
         "leftColor": "10,10,10",
         "midColor": "10,10,10",
         "rightColor": "10,10,10",
-        "leftOpacity": 0.7,
-        "midOpacity": 0.7,
-        "rightOpacity": 0.7,
+        "leftOpacity": 0.75,
+        "midOpacity": 0.75,
+        "rightOpacity": 0.75,
         "vignetteBottom": 0.2
       },
       "text": {
@@ -235,26 +238,27 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 46,
+        "headlineSize": 56,
         "subheadSize": 22
       },
       "layout": {
         "personality": "centered-hero",
         "align": "center",
         "leftX": 540,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 140,
+        "subheadY": 380,
         "maxHeadlineChars": 20,
         "maxSubheadChars": 34,
-        "ctaWidth": 320,
-        "ctaHeight": 58,
-        "ctaRectX": 380,
+        "ctaWidth": 560,
+        "ctaHeight": 62,
+        "ctaRectX": 260,
         "ctaRectY": 900,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "comparisonTable": {
         "startX": 80,
-        "startY": 360,
+        "startY": 460,
         "colWidth": 440,
         "rowHeight": 60,
         "headerSize": 22,
@@ -297,10 +301,10 @@
         "leftColor": "8,30,50",
         "midColor": "8,30,50",
         "rightColor": "8,30,50",
-        "leftOpacity": 0.55,
-        "midOpacity": 0.35,
-        "rightOpacity": 0.15,
-        "vignetteBottom": 0.35
+        "leftOpacity": 0.68,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.28,
+        "vignetteBottom": 0.4
       },
       "text": {
         "headline": "Three Sizes Cover 90% Of Trips",
@@ -316,30 +320,31 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 46,
+        "headlineSize": 56,
         "subheadSize": 24
       },
       "layout": {
         "personality": "editorial-left",
         "align": "left",
         "leftX": 80,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 140,
+        "subheadY": 380,
         "maxHeadlineChars": 20,
         "maxSubheadChars": 34,
-        "ctaWidth": 260,
-        "ctaHeight": 58,
+        "ctaWidth": 360,
+        "ctaHeight": 62,
         "ctaRectX": 80,
         "ctaRectY": 900,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "benefitStack": {
         "startX": 80,
-        "startY": 440,
-        "spacing": 90,
+        "startY": 500,
+        "spacing": 110,
         "iconSize": 36,
         "iconColor": "#63b3ed",
-        "textSize": 26,
+        "textSize": 28,
         "textColor": "#ffffff",
         "textMaxChars": 34,
         "items": [
@@ -373,10 +378,10 @@
         "leftColor": "8,30,50",
         "midColor": "8,30,50",
         "rightColor": "8,30,50",
-        "leftOpacity": 0.55,
-        "midOpacity": 0.35,
-        "rightOpacity": 0.15,
-        "vignetteBottom": 0.35
+        "leftOpacity": 0.68,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.28,
+        "vignetteBottom": 0.4
       },
       "text": {
         "headline": "5 Rigging Mistakes That Cost You Fish",
@@ -392,29 +397,30 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 44,
+        "headlineSize": 54,
         "subheadSize": 22
       },
       "layout": {
         "personality": "editorial-left",
         "align": "left",
         "leftX": 80,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 140,
+        "subheadY": 380,
         "maxHeadlineChars": 22,
         "maxSubheadChars": 34,
-        "ctaWidth": 260,
-        "ctaHeight": 58,
+        "ctaWidth": 360,
+        "ctaHeight": 62,
         "ctaRectX": 80,
         "ctaRectY": 920,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "textLayers": [
         {
           "content": "1. Wrong weight for your trolling speed",
           "x": 80,
-          "y": 400,
-          "fontSize": 26,
+          "y": 480,
+          "fontSize": 28,
           "fontWeight": 600,
           "color": "#ffffff",
           "maxChars": 36
@@ -422,8 +428,8 @@
         {
           "content": "2. Flash lines that spook gamefish",
           "x": 80,
-          "y": 480,
-          "fontSize": 26,
+          "y": 556,
+          "fontSize": 28,
           "fontWeight": 600,
           "color": "#ffffff",
           "maxChars": 36
@@ -431,8 +437,8 @@
         {
           "content": "3. Machine-poured seams that catch weed",
           "x": 80,
-          "y": 560,
-          "fontSize": 26,
+          "y": 632,
+          "fontSize": 28,
           "fontWeight": 600,
           "color": "#ffffff",
           "maxChars": 36
@@ -440,8 +446,8 @@
         {
           "content": "4. Only carrying one size on the boat",
           "x": 80,
-          "y": 640,
-          "fontSize": 26,
+          "y": 708,
+          "fontSize": 28,
           "fontWeight": 600,
           "color": "#ffffff",
           "maxChars": 36
@@ -449,8 +455,8 @@
         {
           "content": "5. Running out of weights mid-season",
           "x": 80,
-          "y": 720,
-          "fontSize": 26,
+          "y": 784,
+          "fontSize": 28,
           "fontWeight": 600,
           "color": "#ffffff",
           "maxChars": 36
@@ -468,9 +474,9 @@
         "leftColor": "10,10,10",
         "midColor": "10,10,10",
         "rightColor": "10,10,10",
-        "leftOpacity": 0.7,
-        "midOpacity": 0.7,
-        "rightOpacity": 0.7,
+        "leftOpacity": 0.75,
+        "midOpacity": 0.75,
+        "rightOpacity": 0.75,
         "vignetteBottom": 0.2
       },
       "text": {
@@ -487,21 +493,22 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 48,
+        "headlineSize": 58,
         "subheadSize": 24
       },
       "layout": {
         "personality": "centered-hero",
         "align": "center",
         "leftX": 540,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 240,
+        "subheadY": 380,
         "maxHeadlineChars": 20,
         "maxSubheadChars": 34,
-        "ctaWidth": 320,
-        "ctaHeight": 58,
-        "ctaRectX": 380,
+        "ctaWidth": 560,
+        "ctaHeight": 62,
+        "ctaRectX": 260,
         "ctaRectY": 880,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "offerFrame": {
@@ -537,8 +544,8 @@
         "rightColor": "8,30,50",
         "leftOpacity": 0.6,
         "midOpacity": 0.4,
-        "rightOpacity": 0.15,
-        "vignetteBottom": 0.35
+        "rightOpacity": 0.28,
+        "vignetteBottom": 0.4
       },
       "text": {
         "headline": "Hand-Poured. Flash-Free. Tournament-Legal.",
@@ -554,7 +561,7 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 48,
+        "headlineSize": 58,
         "subheadSize": 22
       },
       "layout": {
@@ -565,10 +572,11 @@
         "subheadY": 420,
         "maxHeadlineChars": 20,
         "maxSubheadChars": 34,
-        "ctaWidth": 320,
-        "ctaHeight": 58,
-        "ctaRectX": 380,
+        "ctaWidth": 560,
+        "ctaHeight": 62,
+        "ctaRectX": 260,
         "ctaRectY": 880,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "authorityBar": {
@@ -596,9 +604,9 @@
         "leftColor": "10,10,10",
         "midColor": "10,10,10",
         "rightColor": "10,10,10",
-        "leftOpacity": 0.7,
-        "midOpacity": 0.7,
-        "rightOpacity": 0.7,
+        "leftOpacity": 0.75,
+        "midOpacity": 0.75,
+        "rightOpacity": 0.75,
         "vignetteBottom": 0.2
       },
       "text": {
@@ -615,21 +623,22 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 36,
+        "headlineSize": 44,
         "subheadSize": 22
       },
       "layout": {
         "personality": "centered-hero",
         "align": "center",
         "leftX": 540,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 200,
+        "subheadY": 380,
         "maxHeadlineChars": 20,
         "maxSubheadChars": 34,
-        "ctaWidth": 320,
-        "ctaHeight": 58,
-        "ctaRectX": 380,
+        "ctaWidth": 560,
+        "ctaHeight": 62,
+        "ctaRectX": 260,
         "ctaRectY": 900,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "testimonial": {
@@ -641,7 +650,7 @@
         "quoteSize": 32,
         "quoteMaxChars": 26,
         "nameSize": 22,
-        "startY": 260
+        "startY": 330
       }
     },
     {
@@ -654,9 +663,9 @@
         "leftColor": "10,10,10",
         "midColor": "10,10,10",
         "rightColor": "10,10,10",
-        "leftOpacity": 0.7,
-        "midOpacity": 0.7,
-        "rightOpacity": 0.7,
+        "leftOpacity": 0.75,
+        "midOpacity": 0.75,
+        "rightOpacity": 0.75,
         "vignetteBottom": 0.2
       },
       "text": {
@@ -673,26 +682,27 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 46,
+        "headlineSize": 56,
         "subheadSize": 22
       },
       "layout": {
         "personality": "centered-hero",
         "align": "center",
         "leftX": 540,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 240,
+        "subheadY": 380,
         "maxHeadlineChars": 20,
         "maxSubheadChars": 34,
-        "ctaWidth": 320,
-        "ctaHeight": 58,
-        "ctaRectX": 380,
+        "ctaWidth": 560,
+        "ctaHeight": 62,
+        "ctaRectX": 260,
         "ctaRectY": 900,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "comparisonTable": {
         "startX": 80,
-        "startY": 360,
+        "startY": 460,
         "colWidth": 440,
         "rowHeight": 60,
         "headerSize": 22,
@@ -731,10 +741,10 @@
         "leftColor": "8,30,50",
         "midColor": "8,30,50",
         "rightColor": "8,30,50",
-        "leftOpacity": 0.55,
-        "midOpacity": 0.35,
-        "rightOpacity": 0.15,
-        "vignetteBottom": 0.35
+        "leftOpacity": 0.68,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.28,
+        "vignetteBottom": 0.4
       },
       "text": {
         "headline": "Heavy Bar. UV Squid. 400lb Mono.",
@@ -750,30 +760,31 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 44,
+        "headlineSize": 54,
         "subheadSize": 24
       },
       "layout": {
         "personality": "editorial-left",
         "align": "left",
         "leftX": 80,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 140,
+        "subheadY": 380,
         "maxHeadlineChars": 22,
         "maxSubheadChars": 34,
-        "ctaWidth": 260,
-        "ctaHeight": 58,
+        "ctaWidth": 360,
+        "ctaHeight": 62,
         "ctaRectX": 80,
         "ctaRectY": 900,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "benefitStack": {
         "startX": 80,
-        "startY": 440,
-        "spacing": 90,
+        "startY": 500,
+        "spacing": 110,
         "iconSize": 36,
         "iconColor": "#63b3ed",
-        "textSize": 26,
+        "textSize": 28,
         "textColor": "#ffffff",
         "textMaxChars": 34,
         "items": [
@@ -826,26 +837,27 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 44,
+        "headlineSize": 54,
         "subheadSize": 24
       },
       "layout": {
         "personality": "centered-hero",
         "align": "center",
         "leftX": 540,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 140,
+        "subheadY": 380,
         "maxHeadlineChars": 22,
         "maxSubheadChars": 34,
-        "ctaWidth": 320,
-        "ctaHeight": 58,
-        "ctaRectX": 380,
+        "ctaWidth": 560,
+        "ctaHeight": 62,
+        "ctaRectX": 260,
         "ctaRectY": 880,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "splitReveal": {
         "dividerX": 540,
-        "startY": 420,
+        "startY": 500,
         "rowHeight": 70,
         "textSize": 22,
         "problemLabel": "WITHOUT DREDGE",
@@ -881,9 +893,9 @@
         "leftColor": "10,10,10",
         "midColor": "10,10,10",
         "rightColor": "10,10,10",
-        "leftOpacity": 0.7,
-        "midOpacity": 0.7,
-        "rightOpacity": 0.7,
+        "leftOpacity": 0.75,
+        "midOpacity": 0.75,
+        "rightOpacity": 0.75,
         "vignetteBottom": 0.2
       },
       "text": {
@@ -900,21 +912,22 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 48,
+        "headlineSize": 58,
         "subheadSize": 22
       },
       "layout": {
         "personality": "centered-hero",
         "align": "center",
         "leftX": 540,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 140,
+        "subheadY": 380,
         "maxHeadlineChars": 20,
         "maxSubheadChars": 34,
-        "ctaWidth": 320,
-        "ctaHeight": 58,
-        "ctaRectX": 380,
+        "ctaWidth": 560,
+        "ctaHeight": 62,
+        "ctaRectX": 260,
         "ctaRectY": 880,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "offerFrame": {
@@ -966,26 +979,27 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 44,
+        "headlineSize": 54,
         "subheadSize": 24
       },
       "layout": {
         "personality": "centered-hero",
         "align": "center",
         "leftX": 540,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 140,
+        "subheadY": 380,
         "maxHeadlineChars": 22,
         "maxSubheadChars": 34,
-        "ctaWidth": 320,
-        "ctaHeight": 58,
-        "ctaRectX": 380,
+        "ctaWidth": 560,
+        "ctaHeight": 62,
+        "ctaRectX": 260,
         "ctaRectY": 880,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "splitReveal": {
         "dividerX": 540,
-        "startY": 420,
+        "startY": 500,
         "rowHeight": 70,
         "textSize": 22,
         "problemLabel": "THE PROBLEM",
@@ -1021,10 +1035,10 @@
         "leftColor": "8,30,50",
         "midColor": "8,30,50",
         "rightColor": "8,30,50",
-        "leftOpacity": 0.55,
-        "midOpacity": 0.35,
-        "rightOpacity": 0.15,
-        "vignetteBottom": 0.35
+        "leftOpacity": 0.68,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.28,
+        "vignetteBottom": 0.4
       },
       "text": {
         "headline": "One Kit. Zero Missing Parts.",
@@ -1040,30 +1054,31 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 48,
+        "headlineSize": 58,
         "subheadSize": 24
       },
       "layout": {
         "personality": "editorial-left",
         "align": "left",
         "leftX": 80,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 140,
+        "subheadY": 380,
         "maxHeadlineChars": 20,
         "maxSubheadChars": 34,
-        "ctaWidth": 260,
-        "ctaHeight": 58,
+        "ctaWidth": 360,
+        "ctaHeight": 62,
         "ctaRectX": 80,
         "ctaRectY": 900,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "benefitStack": {
         "startX": 80,
-        "startY": 430,
-        "spacing": 90,
+        "startY": 500,
+        "spacing": 110,
         "iconSize": 36,
         "iconColor": "#63b3ed",
-        "textSize": 26,
+        "textSize": 28,
         "textColor": "#ffffff",
         "textMaxChars": 34,
         "items": [
@@ -1096,9 +1111,9 @@
         "leftColor": "10,10,10",
         "midColor": "10,10,10",
         "rightColor": "10,10,10",
-        "leftOpacity": 0.7,
-        "midOpacity": 0.7,
-        "rightOpacity": 0.7,
+        "leftOpacity": 0.75,
+        "midOpacity": 0.75,
+        "rightOpacity": 0.75,
         "vignetteBottom": 0.2
       },
       "text": {
@@ -1115,26 +1130,27 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 46,
+        "headlineSize": 56,
         "subheadSize": 22
       },
       "layout": {
         "personality": "centered-hero",
         "align": "center",
         "leftX": 540,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 240,
+        "subheadY": 380,
         "maxHeadlineChars": 20,
         "maxSubheadChars": 34,
-        "ctaWidth": 320,
-        "ctaHeight": 58,
-        "ctaRectX": 380,
+        "ctaWidth": 560,
+        "ctaHeight": 62,
+        "ctaRectX": 260,
         "ctaRectY": 900,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "comparisonTable": {
         "startX": 80,
-        "startY": 360,
+        "startY": 460,
         "colWidth": 440,
         "rowHeight": 60,
         "headerSize": 22,
@@ -1177,9 +1193,9 @@
         "leftColor": "10,10,10",
         "midColor": "10,10,10",
         "rightColor": "10,10,10",
-        "leftOpacity": 0.7,
-        "midOpacity": 0.7,
-        "rightOpacity": 0.7,
+        "leftOpacity": 0.75,
+        "midOpacity": 0.75,
+        "rightOpacity": 0.75,
         "vignetteBottom": 0.2
       },
       "text": {
@@ -1196,21 +1212,22 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 56,
+        "headlineSize": 62,
         "subheadSize": 24
       },
       "layout": {
         "personality": "centered-hero",
         "align": "center",
         "leftX": 540,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 140,
+        "subheadY": 380,
         "maxHeadlineChars": 18,
         "maxSubheadChars": 30,
-        "ctaWidth": 320,
-        "ctaHeight": 58,
-        "ctaRectX": 380,
+        "ctaWidth": 560,
+        "ctaHeight": 62,
+        "ctaRectX": 260,
         "ctaRectY": 800,
+        "ctaRadius": 20,
         "footerY": 1040
       }
     },
@@ -1225,10 +1242,10 @@
         "leftColor": "8,30,50",
         "midColor": "8,30,50",
         "rightColor": "8,30,50",
-        "leftOpacity": 0.55,
-        "midOpacity": 0.35,
-        "rightOpacity": 0.15,
-        "vignetteBottom": 0.35
+        "leftOpacity": 0.68,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.28,
+        "vignetteBottom": 0.4
       },
       "text": {
         "headline": "Build A Cleaner Spread In Half The Time",
@@ -1244,30 +1261,31 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 44,
+        "headlineSize": 54,
         "subheadSize": 24
       },
       "layout": {
         "personality": "editorial-left",
         "align": "left",
         "leftX": 80,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 140,
+        "subheadY": 380,
         "maxHeadlineChars": 22,
         "maxSubheadChars": 34,
-        "ctaWidth": 260,
-        "ctaHeight": 58,
+        "ctaWidth": 360,
+        "ctaHeight": 62,
         "ctaRectX": 80,
         "ctaRectY": 900,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "benefitStack": {
         "startX": 80,
-        "startY": 440,
-        "spacing": 90,
+        "startY": 500,
+        "spacing": 110,
         "iconSize": 36,
         "iconColor": "#63b3ed",
-        "textSize": 26,
+        "textSize": 28,
         "textColor": "#ffffff",
         "textMaxChars": 34,
         "items": [
@@ -1301,9 +1319,9 @@
         "leftColor": "10,10,10",
         "midColor": "10,10,10",
         "rightColor": "10,10,10",
-        "leftOpacity": 0.7,
-        "midOpacity": 0.7,
-        "rightOpacity": 0.7,
+        "leftOpacity": 0.75,
+        "midOpacity": 0.75,
+        "rightOpacity": 0.75,
         "vignetteBottom": 0.2
       },
       "text": {
@@ -1320,21 +1338,22 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 36,
+        "headlineSize": 44,
         "subheadSize": 22
       },
       "layout": {
         "personality": "centered-hero",
         "align": "center",
         "leftX": 540,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 140,
+        "subheadY": 380,
         "maxHeadlineChars": 20,
         "maxSubheadChars": 34,
-        "ctaWidth": 320,
-        "ctaHeight": 58,
-        "ctaRectX": 380,
+        "ctaWidth": 560,
+        "ctaHeight": 62,
+        "ctaRectX": 260,
         "ctaRectY": 900,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "testimonial": {
@@ -1360,10 +1379,10 @@
         "leftColor": "8,30,50",
         "midColor": "8,30,50",
         "rightColor": "8,30,50",
-        "leftOpacity": 0.55,
-        "midOpacity": 0.35,
-        "rightOpacity": 0.15,
-        "vignetteBottom": 0.35
+        "leftOpacity": 0.68,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.28,
+        "vignetteBottom": 0.4
       },
       "text": {
         "headline": "4 Signs Your Spread Is Working Against You",
@@ -1379,29 +1398,30 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 42,
+        "headlineSize": 52,
         "subheadSize": 22
       },
       "layout": {
         "personality": "editorial-left",
         "align": "left",
         "leftX": 80,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 140,
+        "subheadY": 380,
         "maxHeadlineChars": 22,
         "maxSubheadChars": 34,
-        "ctaWidth": 260,
-        "ctaHeight": 58,
+        "ctaWidth": 360,
+        "ctaHeight": 62,
         "ctaRectX": 80,
         "ctaRectY": 900,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "textLayers": [
         {
           "content": "1. Same color in every position \u2014 fish see one meal, not a school",
           "x": 80,
-          "y": 420,
-          "fontSize": 24,
+          "y": 500,
+          "fontSize": 26,
           "fontWeight": 600,
           "color": "#ffffff",
           "maxChars": 36
@@ -1409,8 +1429,8 @@
         {
           "content": "2. Lures tangle at speed \u2014 bad combo, not bad luck",
           "x": 80,
-          "y": 530,
-          "fontSize": 24,
+          "y": 610,
+          "fontSize": 26,
           "fontWeight": 600,
           "color": "#ffffff",
           "maxChars": 36
@@ -1418,8 +1438,8 @@
         {
           "content": "3. No teaser in front \u2014 fish need a reason to look",
           "x": 80,
-          "y": 640,
-          "fontSize": 24,
+          "y": 720,
+          "fontSize": 26,
           "fontWeight": 600,
           "color": "#ffffff",
           "maxChars": 36
@@ -1427,8 +1447,8 @@
         {
           "content": "4. Rigging every trip \u2014 buy pre-rigged, fish more",
           "x": 80,
-          "y": 750,
-          "fontSize": 24,
+          "y": 830,
+          "fontSize": 26,
           "fontWeight": 600,
           "color": "#ffffff",
           "maxChars": 36
@@ -1448,8 +1468,8 @@
         "rightColor": "8,30,50",
         "leftOpacity": 0.6,
         "midOpacity": 0.4,
-        "rightOpacity": 0.15,
-        "vignetteBottom": 0.35
+        "rightOpacity": 0.28,
+        "vignetteBottom": 0.4
       },
       "text": {
         "headline": "Rigged By Captains. Reordered By Crews.",
@@ -1465,7 +1485,7 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 48,
+        "headlineSize": 58,
         "subheadSize": 22
       },
       "layout": {
@@ -1476,10 +1496,11 @@
         "subheadY": 460,
         "maxHeadlineChars": 20,
         "maxSubheadChars": 34,
-        "ctaWidth": 320,
-        "ctaHeight": 58,
-        "ctaRectX": 380,
+        "ctaWidth": 560,
+        "ctaHeight": 62,
+        "ctaRectX": 260,
         "ctaRectY": 880,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "authorityBar": {
@@ -1507,9 +1528,9 @@
         "leftColor": "10,10,10",
         "midColor": "10,10,10",
         "rightColor": "10,10,10",
-        "leftOpacity": 0.7,
-        "midOpacity": 0.7,
-        "rightOpacity": 0.7,
+        "leftOpacity": 0.75,
+        "midOpacity": 0.75,
+        "rightOpacity": 0.75,
         "vignetteBottom": 0.2
       },
       "text": {
@@ -1526,21 +1547,22 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 48,
+        "headlineSize": 58,
         "subheadSize": 24
       },
       "layout": {
         "personality": "centered-hero",
         "align": "center",
         "leftX": 540,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 140,
+        "subheadY": 380,
         "maxHeadlineChars": 20,
         "maxSubheadChars": 34,
-        "ctaWidth": 320,
-        "ctaHeight": 58,
-        "ctaRectX": 380,
+        "ctaWidth": 560,
+        "ctaHeight": 62,
+        "ctaRectX": 260,
         "ctaRectY": 860,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "offerFrame": {
@@ -1563,9 +1585,9 @@
         "leftColor": "10,10,10",
         "midColor": "10,10,10",
         "rightColor": "10,10,10",
-        "leftOpacity": 0.7,
-        "midOpacity": 0.7,
-        "rightOpacity": 0.7,
+        "leftOpacity": 0.75,
+        "midOpacity": 0.75,
+        "rightOpacity": 0.75,
         "vignetteBottom": 0.2
       },
       "text": {
@@ -1582,21 +1604,22 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 36,
+        "headlineSize": 44,
         "subheadSize": 22
       },
       "layout": {
         "personality": "centered-hero",
         "align": "center",
         "leftX": 540,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 140,
+        "subheadY": 380,
         "maxHeadlineChars": 20,
         "maxSubheadChars": 34,
-        "ctaWidth": 320,
-        "ctaHeight": 58,
-        "ctaRectX": 380,
+        "ctaWidth": 560,
+        "ctaHeight": 62,
+        "ctaRectX": 260,
         "ctaRectY": 900,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "testimonial": {
@@ -1622,10 +1645,10 @@
         "leftColor": "8,30,50",
         "midColor": "8,30,50",
         "rightColor": "8,30,50",
-        "leftOpacity": 0.55,
-        "midOpacity": 0.35,
-        "rightOpacity": 0.15,
-        "vignetteBottom": 0.35
+        "leftOpacity": 0.68,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.28,
+        "vignetteBottom": 0.4
       },
       "text": {
         "headline": "Simple Enough To Run. Durable Enough To Trust.",
@@ -1641,30 +1664,31 @@
         "ctaWeight": 700,
         "footerSize": 14,
         "footerTracking": 4,
-        "headlineSize": 42,
+        "headlineSize": 52,
         "subheadSize": 24
       },
       "layout": {
         "personality": "editorial-left",
         "align": "left",
         "leftX": 80,
-        "headlineY": 180,
-        "subheadY": 290,
+        "headlineY": 140,
+        "subheadY": 380,
         "maxHeadlineChars": 22,
         "maxSubheadChars": 34,
-        "ctaWidth": 260,
-        "ctaHeight": 58,
+        "ctaWidth": 360,
+        "ctaHeight": 62,
         "ctaRectX": 80,
         "ctaRectY": 900,
+        "ctaRadius": 20,
         "footerY": 1040
       },
       "benefitStack": {
         "startX": 80,
-        "startY": 440,
-        "spacing": 90,
+        "startY": 500,
+        "spacing": 110,
         "iconSize": 36,
         "iconColor": "#63b3ed",
-        "textSize": 26,
+        "textSize": 28,
         "textColor": "#ffffff",
         "textMaxChars": 34,
         "items": [

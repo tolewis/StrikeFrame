@@ -78,20 +78,20 @@ CATEGORY_VOICE = {
 
 OVERLAY_OCEAN = {
     "leftColor": "5,20,35", "midColor": "5,20,35", "rightColor": "5,20,35",
-    "leftOpacity": 0.25, "midOpacity": 0.2, "rightOpacity": 0.25,
-    "vignetteBottom": 0.3,
+    "leftOpacity": 0.45, "midOpacity": 0.38, "rightOpacity": 0.35,
+    "vignetteBottom": 0.35,
 }
 
 OVERLAY_DARK = {
     "leftColor": "10,10,10", "midColor": "10,10,10", "rightColor": "10,10,10",
-    "leftOpacity": 0.7, "midOpacity": 0.7, "rightOpacity": 0.7,
+    "leftOpacity": 0.75, "midOpacity": 0.75, "rightOpacity": 0.75,
     "vignetteBottom": 0.2,
 }
 
 OVERLAY_EDITORIAL = {
     "leftColor": "8,30,50", "midColor": "8,30,50", "rightColor": "8,30,50",
-    "leftOpacity": 0.55, "midOpacity": 0.35, "rightOpacity": 0.15,
-    "vignetteBottom": 0.35,
+    "leftOpacity": 0.68, "midOpacity": 0.48, "rightOpacity": 0.28,
+    "vignetteBottom": 0.4,
 }
 
 STOCK_DIR = "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock"
