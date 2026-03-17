@@ -1,0 +1,43 @@
+{
+  "preset": "linkedin-landscape",
+  "template": "banner",
+  "backgroundPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/launch-computers/laptop-work.jpg",
+  "output": "output/x-followup-3.jpg",
+  "text": {
+    "headline": "StrikeFrame",
+    "subhead": "Local renderer. JSON configs. Presets. Typography, buttons, layout personalities.",
+    "cta": "LIVE ON GITHUB",
+    "footer": "BUILT TODAY \u00b7 SHIPPED TODAY"
+  },
+  "theme": {
+    "headlineColor": "#F5F7FB",
+    "subheadColor": "#D7DEE7",
+    "footerColor": "#B0BBC6",
+    "ctaTextColor": "#FFFFFF",
+    "ctaFill": "rgba(24,79,178,0.92)",
+    "ctaStroke": "rgba(154,191,245,0.40)",
+    "textPanelFill": "rgba(9,18,35,0.42)",
+    "textPanelStroke": "rgba(255,255,255,0.10)"
+  },
+  "overlay": {
+    "leftColor": "6,12,23",
+    "midColor": "17,31,56",
+    "rightColor": "52,89,139",
+    "leftOpacity": 0.84,
+    "midOpacity": 0.5,
+    "rightOpacity": 0.2
+  },
+  "typography": {
+    "headlineFontFamily": "Outfit, Arial, sans-serif",
+    "bodyFontFamily": "Source Serif 4, Georgia, serif",
+    "headlineSize": 58,
+    "subheadSize": 24
+  },
+  "layout": {
+    "personality": "split-card",
+    "panelWidth": 720,
+    "panelHeight": 390,
+    "maxHeadlineChars": 16,
+    "maxSubheadChars": 42
+  }
+}

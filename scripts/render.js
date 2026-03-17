@@ -10,7 +10,9 @@ const PRESETS = {
   'landscape-banner': { width: 1600, height: 900 },
   'social-square': { width: 1080, height: 1080 },
   'social-portrait': { width: 1080, height: 1350 },
-  'linkedin-landscape': { width: 1200, height: 627 }
+  'linkedin-landscape': { width: 1200, height: 627 },
+  'google-landscape': { width: 1200, height: 628 },
+  'google-portrait': { width: 960, height: 1200 }
 };
 
 function fileExists(filePath) {
@@ -339,10 +341,17 @@ async function removeWhiteBackground(inputBuffer) {
   return sharp(pixels, { raw: { width, height, channels } }).png().toBuffer();
 }
 
+// Map Google presets to layout-equivalent presets for default calculations
+const PRESET_LAYOUT_ALIAS = {
+  'google-landscape': 'linkedin-landscape',
+  'google-portrait': 'social-portrait'
+};
+
 function normalizeConfig(raw) {
   const preset = PRESETS[raw.preset || 'landscape-banner'];
   if (!preset) throw new Error(`Unknown preset: ${raw.preset}`);
-  const chosenPreset = raw.preset || 'landscape-banner';
+  // Use alias for layout defaults so Google presets inherit correct positioning
+  const chosenPreset = PRESET_LAYOUT_ALIAS[raw.preset] || raw.preset || 'landscape-banner';
   const cfg = {
     preset: chosenPreset,
     template: raw.template || 'banner',

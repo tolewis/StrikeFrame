@@ -1,0 +1,23 @@
+{
+  "renders": [
+    {
+      "output": "/mnt/raid/Data/tmp/ads/test/benefit-stack-planer.jpg",
+      "final_status": "warn",
+      "composition_overall": 87,
+      "composition_scores": {
+        "headlineThirdsAlignment": 34,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 87
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [
+        "Headline is far from the rule-of-thirds grid line."
+      ],
+      "failures": []
+    }
+  ]
+}

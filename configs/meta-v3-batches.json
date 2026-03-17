@@ -1,0 +1,1788 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#FFFFFF",
+      "subheadColor": "#F5EDE0",
+      "footerColor": "#B8C4CE",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(232,93,58,0.95)",
+      "ctaStroke": "rgba(255,160,120,0.45)",
+      "gradientStart": "#0A4D6E",
+      "gradientEnd": "#1A8BAD"
+    },
+    "overlay": {
+      "leftColor": "8,45,68",
+      "midColor": "12,55,78",
+      "rightColor": "16,65,88",
+      "leftOpacity": 0.52,
+      "midOpacity": 0.4,
+      "rightOpacity": 0.28,
+      "vignetteBottom": 0.38
+    },
+    "typography": {
+      "headlineFontFamily": "Outfit, Arial, sans-serif",
+      "bodyFontFamily": "Outfit, Arial, sans-serif",
+      "headlineSize": 72,
+      "subheadSize": 30,
+      "headlineWeight": 800,
+      "subheadWeight": 400,
+      "ctaSize": 32,
+      "ctaWeight": 700,
+      "footerSize": 14,
+      "footerTracking": 4
+    },
+    "layout": {
+      "personality": "centered-hero",
+      "align": "center",
+      "maxHeadlineChars": 18,
+      "maxSubheadChars": 30,
+      "headlineY": 170,
+      "subheadY": 620,
+      "ctaRectX": 340,
+      "ctaRectY": 730,
+      "ctaX": 540,
+      "ctaY": 778,
+      "ctaWidth": 500,
+      "ctaHeight": 78,
+      "footerY": 1010
+    }
+  },
+  "renders": [
+    {
+      "_comment": "=== BATCH 1 / DREDGES #1: Surface Gap — Problem/Solution ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/dredge-01-surface-gap.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_175678579.jpeg",
+      "text": {
+        "headline": "Your Lures Are On The Surface. The Fish Are Not.",
+        "subhead": "A dredge pulls fish up from 30 feet. Simple physics, more bites.",
+        "cta": "SHOP DREDGES",
+        "footer": "THE TACKLEROOM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 58,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 24,
+        "maxSubheadChars": 34,
+        "headlineY": 140,
+        "subheadY": 640,
+        "ctaRectX": 340,
+        "ctaRectY": 730,
+        "ctaX": 540,
+        "ctaY": 769,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,35,55",
+        "midColor": "6,35,55",
+        "rightColor": "6,35,55",
+        "leftOpacity": 0.6,
+        "midOpacity": 0.5,
+        "rightOpacity": 0.4,
+        "vignetteBottom": 0.42
+      }
+    },
+    {
+      "_comment": "=== BATCH 1 / DREDGES #2: 14 Mahi — Big Number Stat ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/dredge-02-14-mahi.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_133588386.jpeg",
+      "text": {
+        "headline": "14 Mahi. 3 Hours.",
+        "subhead": "The boat without a dredge pulled 2. Same water. Same bait.",
+        "cta": "SHOP DREDGES",
+        "footer": "THE TACKLEROOM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 89,
+        "subheadSize": 33,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 12,
+        "maxSubheadChars": 32,
+        "headlineY": 200,
+        "subheadY": 560,
+        "ctaRectX": 340,
+        "ctaRectY": 700,
+        "ctaX": 540,
+        "ctaY": 739,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,35,55",
+        "midColor": "6,35,55",
+        "rightColor": "6,35,55",
+        "leftOpacity": 0.58,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.38,
+        "vignetteBottom": 0.4
+      }
+    },
+    {
+      "_comment": "=== BATCH 1 / DREDGES #3: Every Charter — Authority ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/dredge-03-every-charter.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_175678638.jpeg",
+      "text": {
+        "headline": "Not Some Charters. Every Charter.",
+        "subhead": "Dredges aren't optional offshore. They're standard equipment.",
+        "cta": "BUILD YOUR SPREAD",
+        "footer": "THE TACKLEROOM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 73,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 18,
+        "maxSubheadChars": 32,
+        "headlineY": 180,
+        "subheadY": 600,
+        "ctaRectX": 320,
+        "ctaRectY": 700,
+        "ctaX": 540,
+        "ctaY": 739,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,35,55",
+        "midColor": "6,35,55",
+        "rightColor": "6,35,55",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.45,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.38
+      }
+    },
+    {
+      "_comment": "=== BATCH 1 / DREDGES #4: One Order — System + Product ===",
+      "template": "product-composite",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/dredge-04-one-order.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_134773205.jpeg",
+      "productPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/compact-dredge.jpg",
+      "text": {
+        "headline": "From $249.99",
+        "subhead": "Bars. Chains. Teasers. Rigging. One order. Ready to fish.",
+        "cta": "SHOP DREDGES",
+        "footer": "THE TACKLEROOM"
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "COMPLETE DREDGE",
+        "circleDiameter": 300,
+        "circleX": 390,
+        "circleY": 260,
+        "badgeX": 700,
+        "badgeY": 110,
+        "shadowOpacity": 0.3
+      },
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#F5EDE0",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.45)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "#B8C4CE",
+        "gradientStart": "#0A4D6E",
+        "gradientEnd": "#1A8BAD",
+        "productCircleFill": "rgba(10,60,85,0.82)",
+        "productShadowColor": "rgba(0,0,0,0.25)",
+        "badgeFill": "rgba(232,93,58,0.95)",
+        "badgeStroke": "rgba(255,160,120,0.35)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 85,
+        "subheadSize": 28,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 32,
+        "headlineY": 120,
+        "subheadY": 650,
+        "ctaRectX": 340,
+        "ctaRectY": 770,
+        "ctaX": 540,
+        "ctaY": 809,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 960
+      },
+      "overlay": {
+        "leftColor": "8,45,68",
+        "midColor": "8,45,68",
+        "rightColor": "8,45,68",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.45,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.35
+      }
+    },
+    {
+      "_comment": "=== BATCH 1 / DREDGES #5: Sailfish Commit — Species Hook ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/dredge-05-sailfish.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_274826315.jpeg",
+      "text": {
+        "headline": "Sailfish Commit Before They See Your Hook.",
+        "subhead": "A dredge simulates a bait ball. The instinct does the rest.",
+        "cta": "SHOP DREDGES",
+        "footer": "THE TACKLEROOM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 61,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 32,
+        "headlineY": 160,
+        "subheadY": 620,
+        "ctaRectX": 340,
+        "ctaRectY": 730,
+        "ctaX": 540,
+        "ctaY": 769,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,35,55",
+        "midColor": "6,35,55",
+        "rightColor": "6,35,55",
+        "leftOpacity": 0.56,
+        "midOpacity": 0.46,
+        "rightOpacity": 0.36,
+        "vignetteBottom": 0.4
+      }
+    },
+    {
+      "_comment": "=== BATCH 1 / DREDGES #6: Wahoo Speed — Species Urgency ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/dredge-06-wahoo-speed.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_269599324.jpeg",
+      "text": {
+        "headline": "Wahoo Strike At 50 MPH. They Don't Circle Back.",
+        "subhead": "Your spread has one chance. Make it look alive.",
+        "cta": "BUILD YOUR SPREAD",
+        "footer": "THE TACKLEROOM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 60,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 24,
+        "maxSubheadChars": 30,
+        "headlineY": 140,
+        "subheadY": 640,
+        "ctaRectX": 320,
+        "ctaRectY": 730,
+        "ctaX": 540,
+        "ctaY": 769,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,35,55",
+        "midColor": "6,35,55",
+        "rightColor": "6,35,55",
+        "leftOpacity": 0.58,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.38,
+        "vignetteBottom": 0.42
+      }
+    },
+    {
+      "_comment": "=== BATCH 2 / PLANERS #1: Depth Gap — Problem/Solution ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/planer-01-depth-gap.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_305516327.jpeg",
+      "text": {
+        "headline": "Kingfish At 20 Feet. Your Lure At Zero.",
+        "subhead": "A $30 planer fixes the only problem that matters.",
+        "cta": "SHOP PLANERS",
+        "footer": "THE TACKLEROOM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 66,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 30,
+        "headlineY": 160,
+        "subheadY": 610,
+        "ctaRectX": 340,
+        "ctaRectY": 730,
+        "ctaX": 540,
+        "ctaY": 769,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,35,55",
+        "midColor": "6,35,55",
+        "rightColor": "6,35,55",
+        "leftOpacity": 0.56,
+        "midOpacity": 0.46,
+        "rightOpacity": 0.36,
+        "vignetteBottom": 0.4
+      }
+    },
+    {
+      "_comment": "=== BATCH 2 / PLANERS #2: Snap Story — Fear + Product ===",
+      "template": "product-composite",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/planer-02-snap-story.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/13.jpg",
+      "productPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/planer-bridle-kit.jpg",
+      "text": {
+        "headline": "From $45.99",
+        "subhead": "Cheap bridle snapped at 7 knots. Lost the planer and the fish.",
+        "cta": "SHOP BRIDLE KITS",
+        "footer": "THE TACKLEROOM"
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "BRIDLE KIT",
+        "circleDiameter": 300,
+        "circleX": 390,
+        "circleY": 260,
+        "badgeX": 700,
+        "badgeY": 110,
+        "shadowOpacity": 0.3
+      },
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#F5EDE0",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.45)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "#B8C4CE",
+        "gradientStart": "#0A4D6E",
+        "gradientEnd": "#1A8BAD",
+        "productCircleFill": "rgba(10,60,85,0.82)",
+        "productShadowColor": "rgba(0,0,0,0.25)",
+        "badgeFill": "rgba(232,93,58,0.95)",
+        "badgeStroke": "rgba(255,160,120,0.35)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 85,
+        "subheadSize": 28,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 34,
+        "headlineY": 120,
+        "subheadY": 650,
+        "ctaRectX": 320,
+        "ctaRectY": 770,
+        "ctaX": 540,
+        "ctaY": 809,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 960
+      },
+      "overlay": {
+        "leftColor": "8,45,68",
+        "midColor": "8,45,68",
+        "rightColor": "8,45,68",
+        "leftOpacity": 0.58,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.38,
+        "vignetteBottom": 0.38
+      }
+    },
+    {
+      "_comment": "=== BATCH 2 / PLANERS #3: First Trip — Beginner Story ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/planer-03-first-trip.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/12.jpg",
+      "text": {
+        "headline": "First Planer Trip. One Board. Three Kingfish.",
+        "subhead": "It's not complicated. A planer, a bridle, and a clip.",
+        "cta": "START HERE",
+        "footer": "THE TACKLEROOM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 63,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 30,
+        "headlineY": 150,
+        "subheadY": 620,
+        "ctaRectX": 340,
+        "ctaRectY": 730,
+        "ctaX": 540,
+        "ctaY": 769,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,35,55",
+        "midColor": "6,35,55",
+        "rightColor": "6,35,55",
+        "leftOpacity": 0.58,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.38,
+        "vignetteBottom": 0.4
+      }
+    },
+    {
+      "_comment": "=== BATCH 2 / PLANERS #4: 37 Videos — Beginner + Product ===",
+      "template": "product-composite",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/planer-04-37-videos.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_305520743.jpeg",
+      "productPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/planer-bridle-kit.jpg",
+      "text": {
+        "headline": "From $45.99",
+        "subhead": "37 YouTube videos or one kit with instructions.",
+        "cta": "SHOP BRIDLE KITS",
+        "footer": "THE TACKLEROOM"
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "PLANER BRIDLE KIT",
+        "circleDiameter": 300,
+        "circleX": 390,
+        "circleY": 260,
+        "badgeX": 700,
+        "badgeY": 110,
+        "shadowOpacity": 0.3
+      },
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#F5EDE0",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.45)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "#B8C4CE",
+        "gradientStart": "#0A4D6E",
+        "gradientEnd": "#1A8BAD",
+        "productCircleFill": "rgba(10,60,85,0.82)",
+        "productShadowColor": "rgba(0,0,0,0.25)",
+        "badgeFill": "rgba(232,93,58,0.95)",
+        "badgeStroke": "rgba(255,160,120,0.35)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 85,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 30,
+        "headlineY": 120,
+        "subheadY": 650,
+        "ctaRectX": 320,
+        "ctaRectY": 770,
+        "ctaX": 540,
+        "ctaY": 809,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 960
+      },
+      "overlay": {
+        "leftColor": "8,45,68",
+        "midColor": "8,45,68",
+        "rightColor": "8,45,68",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.45,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.35
+      }
+    },
+    {
+      "_comment": "=== BATCH 2 / PLANERS #5: $800 vs $30 — Price Contrast ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/planer-05-price-contrast.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_142643765.jpeg",
+      "text": {
+        "headline": "$800 Downrigger. $30 Planer. Fish Don't Know.",
+        "subhead": "Same depth. No mounting brackets. No hull holes.",
+        "cta": "SHOP PLANERS",
+        "footer": "THE TACKLEROOM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 63,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 30,
+        "headlineY": 150,
+        "subheadY": 620,
+        "ctaRectX": 340,
+        "ctaRectY": 730,
+        "ctaX": 540,
+        "ctaY": 769,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,35,55",
+        "midColor": "6,35,55",
+        "rightColor": "6,35,55",
+        "leftOpacity": 0.56,
+        "midOpacity": 0.46,
+        "rightOpacity": 0.36,
+        "vignetteBottom": 0.4
+      }
+    },
+    {
+      "_comment": "=== BATCH 2 / PLANERS #6: Zero Missing Parts — Kit System + Product ===",
+      "template": "product-composite",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/planer-06-zero-missing.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/10.jpg",
+      "productPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/planer-bridle-kit.jpg",
+      "text": {
+        "headline": "From $45.99",
+        "subhead": "Planer. Bridle. Clips. Hardware. Zero missing parts.",
+        "cta": "SHOP KITS",
+        "footer": "THE TACKLEROOM"
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "COMPLETE KIT",
+        "circleDiameter": 300,
+        "circleX": 390,
+        "circleY": 260,
+        "badgeX": 700,
+        "badgeY": 110,
+        "shadowOpacity": 0.3
+      },
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#F5EDE0",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.45)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "#B8C4CE",
+        "gradientStart": "#0A4D6E",
+        "gradientEnd": "#1A8BAD",
+        "productCircleFill": "rgba(10,60,85,0.82)",
+        "productShadowColor": "rgba(0,0,0,0.25)",
+        "badgeFill": "rgba(232,93,58,0.95)",
+        "badgeStroke": "rgba(255,160,120,0.35)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 85,
+        "subheadSize": 28,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 32,
+        "headlineY": 120,
+        "subheadY": 650,
+        "ctaRectX": 340,
+        "ctaRectY": 770,
+        "ctaX": 540,
+        "ctaY": 809,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 960
+      },
+      "overlay": {
+        "leftColor": "8,45,68",
+        "midColor": "8,45,68",
+        "rightColor": "8,45,68",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.45,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.35
+      }
+    },
+    {
+      "_comment": "=== BATCH 3 / LEAD #1: Ascending Stakes — Consequence ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/lead-01-ascending-stakes.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_144669694.jpeg",
+      "text": {
+        "headline": "1,500 Feet Of Line. $400 Of Bait. One Bad Weight.",
+        "subhead": "Hand-poured deep drop weights from $10.99. No flash lines.",
+        "cta": "SHOP WEIGHTS",
+        "footer": "THE TACKLEROOM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 58,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 24,
+        "maxSubheadChars": 32,
+        "headlineY": 140,
+        "subheadY": 640,
+        "ctaRectX": 340,
+        "ctaRectY": 730,
+        "ctaX": 540,
+        "ctaY": 769,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,35,55",
+        "midColor": "6,35,55",
+        "rightColor": "6,35,55",
+        "leftOpacity": 0.6,
+        "midOpacity": 0.5,
+        "rightOpacity": 0.4,
+        "vignetteBottom": 0.42
+      }
+    },
+    {
+      "_comment": "=== BATCH 3 / LEAD #2: Flash Lines — Quality + Product ===",
+      "template": "product-composite",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/lead-02-flash-lines.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/09.jpg",
+      "productPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/deep-drop-weights-detail.png",
+      "text": {
+        "headline": "From $10.99",
+        "subhead": "Flash lines on cheap weights cut 60 lb leader. Hand-poured don't.",
+        "cta": "SHOP WEIGHTS",
+        "footer": "THE TACKLEROOM"
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "HAND POURED",
+        "circleDiameter": 300,
+        "circleX": 390,
+        "circleY": 260,
+        "badgeX": 700,
+        "badgeY": 110,
+        "shadowOpacity": 0.3
+      },
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#F5EDE0",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.45)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "#B8C4CE",
+        "gradientStart": "#0A4D6E",
+        "gradientEnd": "#1A8BAD",
+        "productCircleFill": "rgba(10,60,85,0.82)",
+        "productShadowColor": "rgba(0,0,0,0.25)",
+        "badgeFill": "rgba(232,93,58,0.95)",
+        "badgeStroke": "rgba(255,160,120,0.35)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 85,
+        "subheadSize": 28,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 36,
+        "headlineY": 120,
+        "subheadY": 650,
+        "ctaRectX": 340,
+        "ctaRectY": 770,
+        "ctaX": 540,
+        "ctaY": 809,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 960
+      },
+      "overlay": {
+        "leftColor": "8,45,68",
+        "midColor": "8,45,68",
+        "rightColor": "8,45,68",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.45,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.35
+      }
+    },
+    {
+      "_comment": "=== BATCH 3 / LEAD #3: Three Sizes — System + Product ===",
+      "template": "product-composite",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/lead-03-three-sizes.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_233054744.jpeg",
+      "productPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/deep-drop-weights-detail.png",
+      "text": {
+        "headline": "From $10.99",
+        "subhead": "6 oz. 8 oz. 12 oz. Three sizes cover 90% of offshore trips.",
+        "cta": "BUILD YOUR KIT",
+        "footer": "THE TACKLEROOM"
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "DEEP DROP WEIGHTS",
+        "circleDiameter": 300,
+        "circleX": 390,
+        "circleY": 260,
+        "badgeX": 700,
+        "badgeY": 110,
+        "shadowOpacity": 0.3
+      },
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#F5EDE0",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.45)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "#B8C4CE",
+        "gradientStart": "#0A4D6E",
+        "gradientEnd": "#1A8BAD",
+        "productCircleFill": "rgba(10,60,85,0.82)",
+        "productShadowColor": "rgba(0,0,0,0.25)",
+        "badgeFill": "rgba(232,93,58,0.95)",
+        "badgeStroke": "rgba(255,160,120,0.35)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 85,
+        "subheadSize": 28,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 36,
+        "headlineY": 120,
+        "subheadY": 650,
+        "ctaRectX": 320,
+        "ctaRectY": 770,
+        "ctaX": 540,
+        "ctaY": 809,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 960
+      },
+      "overlay": {
+        "leftColor": "8,45,68",
+        "midColor": "8,45,68",
+        "rightColor": "8,45,68",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.45,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.35
+      }
+    },
+    {
+      "_comment": "=== BATCH 3 / LEAD #4: July — Seasonal Urgency ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/lead-04-july-urgency.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/01.jpg",
+      "text": {
+        "headline": "Every Year. Same Thing. July Hits. You're Short.",
+        "subhead": "Deep drop weights from $10.99. Stock your box now.",
+        "cta": "STOCK UP",
+        "footer": "THE TACKLEROOM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 63,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 30,
+        "headlineY": 150,
+        "subheadY": 620,
+        "ctaRectX": 340,
+        "ctaRectY": 730,
+        "ctaX": 540,
+        "ctaY": 769,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,35,55",
+        "midColor": "6,35,55",
+        "rightColor": "6,35,55",
+        "leftOpacity": 0.56,
+        "midOpacity": 0.46,
+        "rightOpacity": 0.36,
+        "vignetteBottom": 0.4
+      }
+    },
+    {
+      "_comment": "=== BATCH 3 / LEAD #5: Swordfish — Species Hook ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/lead-05-swordfish.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_161423570.jpeg",
+      "text": {
+        "headline": "1,500 Feet Between You And A Swordfish.",
+        "subhead": "Your weight is the only thing holding the line. Make it count.",
+        "cta": "SHOP DEEP DROP",
+        "footer": "THE TACKLEROOM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 64,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 34,
+        "headlineY": 160,
+        "subheadY": 620,
+        "ctaRectX": 320,
+        "ctaRectY": 730,
+        "ctaX": 540,
+        "ctaY": 769,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,35,55",
+        "midColor": "6,35,55",
+        "rightColor": "6,35,55",
+        "leftOpacity": 0.56,
+        "midOpacity": 0.46,
+        "rightOpacity": 0.36,
+        "vignetteBottom": 0.42
+      }
+    },
+    {
+      "_comment": "=== BATCH 3 / LEAD #6: No Flash Lines — Triple Negative + Product ===",
+      "template": "product-composite",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/lead-06-no-flash.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_113028695.jpeg",
+      "productPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/deep-drop-weights-detail.png",
+      "text": {
+        "headline": "From $10.99",
+        "subhead": "No flash lines. No air pockets. No cut leaders. Hand-poured USA.",
+        "cta": "SHOP WEIGHTS",
+        "footer": "THE TACKLEROOM"
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "MADE IN USA",
+        "circleDiameter": 300,
+        "circleX": 390,
+        "circleY": 260,
+        "badgeX": 700,
+        "badgeY": 110,
+        "shadowOpacity": 0.3
+      },
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#F5EDE0",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.45)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "#B8C4CE",
+        "gradientStart": "#0A4D6E",
+        "gradientEnd": "#1A8BAD",
+        "productCircleFill": "rgba(10,60,85,0.82)",
+        "productShadowColor": "rgba(0,0,0,0.25)",
+        "badgeFill": "rgba(232,93,58,0.95)",
+        "badgeStroke": "rgba(255,160,120,0.35)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 85,
+        "subheadSize": 28,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 36,
+        "headlineY": 120,
+        "subheadY": 650,
+        "ctaRectX": 340,
+        "ctaRectY": 770,
+        "ctaX": 540,
+        "ctaY": 809,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 960
+      },
+      "overlay": {
+        "leftColor": "8,45,68",
+        "midColor": "8,45,68",
+        "rightColor": "8,45,68",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.45,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.35
+      }
+    },
+    {
+      "_comment": "=== BATCH 4 / BELTS #1: 40 Minutes — Pain Story ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/belt-01-40-minutes.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_114517933.jpeg",
+      "text": {
+        "headline": "40-Minute Fight. No Belt. Bruised For A Week.",
+        "subhead": "Seamount fighting belts from $89. Built for the long fight.",
+        "cta": "SHOP BELTS",
+        "footer": "THE TACKLEROOM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 63,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 30,
+        "headlineY": 150,
+        "subheadY": 620,
+        "ctaRectX": 340,
+        "ctaRectY": 730,
+        "ctaX": 540,
+        "ctaY": 769,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,35,55",
+        "midColor": "6,35,55",
+        "rightColor": "6,35,55",
+        "leftOpacity": 0.58,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.38,
+        "vignetteBottom": 0.4
+      }
+    },
+    {
+      "_comment": "=== BATCH 4 / BELTS #2: One Fish — ROI Math ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/belt-02-one-fish.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/06.jpg",
+      "text": {
+        "headline": "Lose One Yellowfin. That's $200 Of Meat.",
+        "subhead": "A belt pays for itself on the first fish you don't drop.",
+        "cta": "SHOP BELTS",
+        "footer": "THE TACKLEROOM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 64,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 32,
+        "headlineY": 160,
+        "subheadY": 620,
+        "ctaRectX": 340,
+        "ctaRectY": 730,
+        "ctaX": 540,
+        "ctaY": 769,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,35,55",
+        "midColor": "6,35,55",
+        "rightColor": "6,35,55",
+        "leftOpacity": 0.58,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.38,
+        "vignetteBottom": 0.42
+      }
+    },
+    {
+      "_comment": "=== BATCH 4 / BELTS #3: Never The Belt — Authority ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/belt-03-never-the-belt.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_123810295.jpeg",
+      "text": {
+        "headline": "Captains Replace Rods. Reels. Tackle. Never The Belt.",
+        "subhead": "Seamount fighting belts. What charters trust.",
+        "cta": "SHOP BELTS",
+        "footer": "THE TACKLEROOM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 58,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 24,
+        "maxSubheadChars": 30,
+        "headlineY": 140,
+        "subheadY": 640,
+        "ctaRectX": 340,
+        "ctaRectY": 730,
+        "ctaX": 540,
+        "ctaY": 769,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,35,55",
+        "midColor": "6,35,55",
+        "rightColor": "6,35,55",
+        "leftOpacity": 0.6,
+        "midOpacity": 0.5,
+        "rightOpacity": 0.4,
+        "vignetteBottom": 0.42
+      }
+    },
+    {
+      "_comment": "=== BATCH 4 / BELTS #4: 3 Seconds — Marlin Urgency ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/belt-04-3-seconds.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_233057004.jpeg",
+      "text": {
+        "headline": "Blue Marlin Hits. 3 Seconds To Set.",
+        "subhead": "Belt or no belt. That's the difference between a fight and a story.",
+        "cta": "SHOP BELTS",
+        "footer": "THE TACKLEROOM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 68,
+        "subheadSize": 29,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 36,
+        "headlineY": 170,
+        "subheadY": 610,
+        "ctaRectX": 340,
+        "ctaRectY": 730,
+        "ctaX": 540,
+        "ctaY": 769,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,35,55",
+        "midColor": "6,35,55",
+        "rightColor": "6,35,55",
+        "leftOpacity": 0.56,
+        "midOpacity": 0.46,
+        "rightOpacity": 0.36,
+        "vignetteBottom": 0.4
+      }
+    },
+    {
+      "_comment": "=== BATCH 4 / BELTS #5: Fishing Shirts — Gift + Product ===",
+      "template": "product-composite",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/belt-05-gift.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/11.jpg",
+      "productPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/seamount-belt.jpg",
+      "text": {
+        "headline": "$179.99",
+        "subhead": "Stop buying fishing shirts. This is the gift they'll actually use.",
+        "cta": "SHOP BELTS",
+        "footer": "THE TACKLEROOM"
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "FIGHTING BELT",
+        "circleDiameter": 300,
+        "circleX": 390,
+        "circleY": 260,
+        "badgeX": 700,
+        "badgeY": 110,
+        "shadowOpacity": 0.3
+      },
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#F5EDE0",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.45)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "#B8C4CE",
+        "gradientStart": "#0A4D6E",
+        "gradientEnd": "#1A8BAD",
+        "productCircleFill": "rgba(10,60,85,0.82)",
+        "productShadowColor": "rgba(0,0,0,0.25)",
+        "badgeFill": "rgba(232,93,58,0.95)",
+        "badgeStroke": "rgba(255,160,120,0.35)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 85,
+        "subheadSize": 28,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 34,
+        "headlineY": 120,
+        "subheadY": 650,
+        "ctaRectX": 340,
+        "ctaRectY": 770,
+        "ctaX": 540,
+        "ctaY": 809,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 960
+      },
+      "overlay": {
+        "leftColor": "8,45,68",
+        "midColor": "8,45,68",
+        "rightColor": "8,45,68",
+        "leftOpacity": 0.58,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.38,
+        "vignetteBottom": 0.38
+      }
+    },
+    {
+      "_comment": "=== BATCH 4 / BELTS #6: 90% — Entry Point + Product ===",
+      "template": "product-composite",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/belt-06-entry-point.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_180645942.jpeg",
+      "productPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/seamount-belt.jpg",
+      "text": {
+        "headline": "From $89",
+        "subhead": "A belt handles 90% of fights. Upgrade to a harness when the fish demand it.",
+        "cta": "START HERE",
+        "footer": "THE TACKLEROOM"
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "SEAMOUNT BELT",
+        "circleDiameter": 300,
+        "circleX": 390,
+        "circleY": 260,
+        "badgeX": 700,
+        "badgeY": 110,
+        "shadowOpacity": 0.3
+      },
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#F5EDE0",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.45)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "#B8C4CE",
+        "gradientStart": "#0A4D6E",
+        "gradientEnd": "#1A8BAD",
+        "productCircleFill": "rgba(10,60,85,0.82)",
+        "productShadowColor": "rgba(0,0,0,0.25)",
+        "badgeFill": "rgba(232,93,58,0.95)",
+        "badgeStroke": "rgba(255,160,120,0.35)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 89,
+        "subheadSize": 28,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 12,
+        "maxSubheadChars": 38,
+        "headlineY": 120,
+        "subheadY": 650,
+        "ctaRectX": 340,
+        "ctaRectY": 770,
+        "ctaX": 540,
+        "ctaY": 809,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 960
+      },
+      "overlay": {
+        "leftColor": "8,45,68",
+        "midColor": "8,45,68",
+        "rightColor": "8,45,68",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.45,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.35
+      }
+    },
+    {
+      "_comment": "=== BATCH 5 / LURES #1: Wahoo Season — Seasonal Urgency ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/lure-01-wahoo-season.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_379764722.jpeg",
+      "text": {
+        "headline": "Wahoo Season Doesn't Wait.",
+        "subhead": "Your spread shouldn't either. High-speed trolling lures in stock.",
+        "cta": "SHOP LURES",
+        "footer": "THE TACKLEROOM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 78,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 16,
+        "maxSubheadChars": 32,
+        "headlineY": 180,
+        "subheadY": 580,
+        "ctaRectX": 340,
+        "ctaRectY": 700,
+        "ctaX": 540,
+        "ctaY": 739,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,35,55",
+        "midColor": "6,35,55",
+        "rightColor": "6,35,55",
+        "leftOpacity": 0.56,
+        "midOpacity": 0.46,
+        "rightOpacity": 0.36,
+        "vignetteBottom": 0.38
+      }
+    },
+    {
+      "_comment": "=== BATCH 5 / LURES #2: Mahi Color — Education + Product ===",
+      "template": "product-composite",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/lure-02-mahi-color.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_186432960.jpeg",
+      "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/ProductImages/Dolphin-Dino-Mite-Blue-Dolphin-Weenie.jpg",
+      "text": {
+        "headline": "Mahi See Color.",
+        "subhead": "Better than any pelagic. Most trolling lures ignore that.",
+        "cta": "SHOP DOLPHIN LURES",
+        "footer": "THE TACKLEROOM"
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "DOLPHIN WEENIE",
+        "circleDiameter": 300,
+        "circleX": 390,
+        "circleY": 260,
+        "badgeX": 700,
+        "badgeY": 110,
+        "shadowOpacity": 0.3
+      },
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#F5EDE0",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.45)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "#B8C4CE",
+        "gradientStart": "#0A4D6E",
+        "gradientEnd": "#1A8BAD",
+        "productCircleFill": "rgba(10,60,85,0.82)",
+        "productShadowColor": "rgba(0,0,0,0.25)",
+        "badgeFill": "rgba(232,93,58,0.95)",
+        "badgeStroke": "rgba(255,160,120,0.35)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 81,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 32,
+        "headlineY": 120,
+        "subheadY": 650,
+        "ctaRectX": 300,
+        "ctaRectY": 770,
+        "ctaX": 540,
+        "ctaY": 809,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 960
+      },
+      "overlay": {
+        "leftColor": "8,45,68",
+        "midColor": "8,45,68",
+        "rightColor": "8,45,68",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.45,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.35
+      }
+    },
+    {
+      "_comment": "=== BATCH 5 / LURES #3: Red Disappears — Science Hook ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/lure-03-red-disappears.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_625655132.jpeg",
+      "text": {
+        "headline": "At 50 Feet, Red Disappears.",
+        "subhead": "At 100 feet, so does orange. Choose lures fish can actually see.",
+        "cta": "SHOP LURES",
+        "footer": "THE TACKLEROOM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 74,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 16,
+        "maxSubheadChars": 32,
+        "headlineY": 180,
+        "subheadY": 590,
+        "ctaRectX": 340,
+        "ctaRectY": 700,
+        "ctaX": 540,
+        "ctaY": 739,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,35,55",
+        "midColor": "6,35,55",
+        "rightColor": "6,35,55",
+        "leftOpacity": 0.56,
+        "midOpacity": 0.46,
+        "rightOpacity": 0.36,
+        "vignetteBottom": 0.4
+      }
+    },
+    {
+      "_comment": "=== BATCH 5 / LURES #4: Three Species — System + Product ===",
+      "template": "product-composite",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/lure-04-three-species.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/14.jpg",
+      "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/ProductImages/Dolphin Weenie 3 Pack.png",
+      "text": {
+        "headline": "3 Species. 1 Lure.",
+        "subhead": "Wahoo. Kingfish. Mahi. Dolphin weenies work.",
+        "cta": "SHOP PACKS",
+        "footer": "THE TACKLEROOM"
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "3-PACK",
+        "circleDiameter": 300,
+        "circleX": 390,
+        "circleY": 260,
+        "badgeX": 700,
+        "badgeY": 110,
+        "shadowOpacity": 0.3
+      },
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#F5EDE0",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.45)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "#B8C4CE",
+        "gradientStart": "#0A4D6E",
+        "gradientEnd": "#1A8BAD",
+        "productCircleFill": "rgba(10,60,85,0.82)",
+        "productShadowColor": "rgba(0,0,0,0.25)",
+        "badgeFill": "rgba(232,93,58,0.95)",
+        "badgeStroke": "rgba(255,160,120,0.35)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 85,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 30,
+        "headlineY": 120,
+        "subheadY": 650,
+        "ctaRectX": 340,
+        "ctaRectY": 770,
+        "ctaX": 540,
+        "ctaY": 809,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 960
+      },
+      "overlay": {
+        "leftColor": "8,45,68",
+        "midColor": "8,45,68",
+        "rightColor": "8,45,68",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.45,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.35
+      }
+    },
+    {
+      "_comment": "=== BATCH 5 / LURES #5: Wash Out — Performance + Product ===",
+      "template": "product-composite",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/lure-05-wash-out.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_305521598.jpeg",
+      "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/ProductImages/Dolphin-Dino-Mite-Green-Chartreuse-Dolphin-Weenie.jpg",
+      "text": {
+        "headline": "Runs Clean At 12.",
+        "subhead": "Most lures wash out at 9 knots. Built for wahoo speed.",
+        "cta": "SHOP LURES",
+        "footer": "THE TACKLEROOM"
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "HIGH SPEED",
+        "circleDiameter": 300,
+        "circleX": 390,
+        "circleY": 260,
+        "badgeX": 700,
+        "badgeY": 110,
+        "shadowOpacity": 0.3
+      },
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#F5EDE0",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.45)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "#B8C4CE",
+        "gradientStart": "#0A4D6E",
+        "gradientEnd": "#1A8BAD",
+        "productCircleFill": "rgba(10,60,85,0.82)",
+        "productShadowColor": "rgba(0,0,0,0.25)",
+        "badgeFill": "rgba(232,93,58,0.95)",
+        "badgeStroke": "rgba(255,160,120,0.35)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 85,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 30,
+        "headlineY": 120,
+        "subheadY": 650,
+        "ctaRectX": 340,
+        "ctaRectY": 770,
+        "ctaX": 540,
+        "ctaY": 809,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 960
+      },
+      "overlay": {
+        "leftColor": "8,45,68",
+        "midColor": "8,45,68",
+        "rightColor": "8,45,68",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.45,
+        "rightOpacity": 0.35,
+        "vignetteBottom": 0.35
+      }
+    },
+    {
+      "_comment": "=== BATCH 5 / LURES #6: Wrong Everything — Consequence ===",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-11-v3-batches/lure-06-wrong-everything.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_269599617.jpeg",
+      "text": {
+        "headline": "Wrong Color. Wrong Depth. Wrong Size. No Bites.",
+        "subhead": "Species-matched trolling lures. Know what you're pulling.",
+        "cta": "SHOP BY SPECIES",
+        "footer": "THE TACKLEROOM"
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Outfit, Arial, sans-serif",
+        "headlineSize": 60,
+        "subheadSize": 30,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 32,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 24,
+        "maxSubheadChars": 30,
+        "headlineY": 140,
+        "subheadY": 640,
+        "ctaRectX": 320,
+        "ctaRectY": 730,
+        "ctaX": 540,
+        "ctaY": 769,
+        "ctaWidth": 500,
+        "ctaHeight": 78,
+        "footerY": 1010
+      },
+      "overlay": {
+        "leftColor": "6,35,55",
+        "midColor": "6,35,55",
+        "rightColor": "6,35,55",
+        "leftOpacity": 0.58,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.38,
+        "vignetteBottom": 0.42
+      }
+    }
+  ]
+}

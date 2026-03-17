@@ -515,7 +515,7 @@
         "originalPrice": "$18.99",
         "salePrice": "$12.99",
         "savings": "BEST SELLER",
-        "offerText": "FREE SHIPPING OVER $99",
+        "offerText": "FREE SHIPPING OVER $69",
         "salePriceSize": 72,
         "originalPriceSize": 28,
         "priceY": 580
@@ -1518,7 +1518,7 @@
       }
     },
     {
-      "_comment": "RETARGET | offer | Free Shipping Over $99",
+      "_comment": "RETARGET | offer | Free Shipping Over $69",
       "_category": "retarget",
       "_template": "offer",
       "_thesis": "T18",
@@ -1567,7 +1567,7 @@
       },
       "offerFrame": {
         "salePrice": "FREE SHIPPING",
-        "savings": "ORDERS OVER $99",
+        "savings": "ORDERS OVER $69",
         "offerText": "Premium offshore tackle. No surprises at checkout.",
         "salePriceSize": 56,
         "originalPriceSize": 24,
@@ -1706,7 +1706,7 @@
           },
           {
             "icon": "arrow",
-            "label": "Free shipping over $99"
+            "label": "Free shipping over $69"
           }
         ]
       }

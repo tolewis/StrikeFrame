@@ -1,0 +1,46 @@
+{
+  "preset": "social-square",
+  "template": "banner",
+  "backgroundPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/launch-computers/dual-screens.jpg",
+  "output": "output/x-followup-2.jpg",
+  "text": {
+    "headline": "StrikeFrame",
+    "subhead": "Local renderer. JSON configs. Presets. Typography, buttons, layout personalities.",
+    "cta": "LIVE ON GITHUB",
+    "footer": "BUILT TODAY \u00b7 SHIPPED TODAY"
+  },
+  "theme": {
+    "headlineColor": "#FFFFFF",
+    "subheadColor": "#DDF1F4",
+    "footerColor": "#B7D4DA",
+    "ctaTextColor": "#08161A",
+    "ctaFill": "rgba(181,248,255,0.92)",
+    "ctaStroke": "rgba(255,255,255,0.24)"
+  },
+  "overlay": {
+    "leftColor": "6,18,22",
+    "midColor": "8,48,60",
+    "rightColor": "25,112,124",
+    "leftOpacity": 0.78,
+    "midOpacity": 0.42,
+    "rightOpacity": 0.16
+  },
+  "typography": {
+    "headlineFontFamily": "Outfit, Arial, sans-serif",
+    "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+    "headlineSize": 74,
+    "subheadSize": 26
+  },
+  "layout": {
+    "personality": "centered-hero",
+    "align": "center",
+    "maxHeadlineChars": 14,
+    "maxSubheadChars": 23,
+    "headlineY": 195,
+    "subheadY": 470,
+    "ctaRectY": 660,
+    "ctaY": 698,
+    "footerY": 1000,
+    "ctaWidth": 300
+  }
+}

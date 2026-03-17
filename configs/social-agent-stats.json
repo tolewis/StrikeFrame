@@ -1,0 +1,189 @@
+{
+  "preset": "social-square",
+  "template": "banner",
+  "output": "output/social-agent-stats.png",
+  "theme": {
+    "gradientStart": "#0a0a0a",
+    "gradientEnd": "#1a1a2e",
+    "headlineColor": "#ffffff",
+    "subheadColor": "#9ca3af",
+    "footerColor": "#4b5563",
+    "ctaTextColor": "#ffffff",
+    "ctaFill": "rgba(255,255,255,0.08)",
+    "ctaStroke": "rgba(255,255,255,0.15)",
+    "textPanelFill": "rgba(0,0,0,0)",
+    "textPanelStroke": "rgba(0,0,0,0)"
+  },
+  "overlay": {
+    "leftOpacity": 0.0,
+    "midOpacity": 0.0,
+    "rightOpacity": 0.0,
+    "vignetteBottom": 0.0,
+    "leftColor": "0,0,0",
+    "midColor": "0,0,0",
+    "rightColor": "0,0,0"
+  },
+  "typography": {
+    "headlineFontFamily": "Montserrat, Arial, sans-serif",
+    "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+    "headlineSize": 42,
+    "headlineWeight": 800,
+    "subheadSize": 22,
+    "subheadWeight": 400,
+    "ctaSize": 0,
+    "footerSize": 16,
+    "footerTracking": 3
+  },
+  "layout": {
+    "personality": "editorial-left",
+    "leftX": 80,
+    "headlineY": 88,
+    "subheadY": 148,
+    "ctaRectY": -200,
+    "ctaRectX": -200,
+    "ctaX": -200,
+    "ctaY": -200,
+    "ctaWidth": 0,
+    "ctaHeight": 0,
+    "footerY": 1040,
+    "maxHeadlineChars": 40,
+    "maxSubheadChars": 50
+  },
+  "text": {
+    "headline": "48 Hours. One AI Agent.",
+    "subhead": "Zero ad agencies. Zero designers. Zero freelancers.",
+    "cta": "",
+    "footer": "@TOLEWIS"
+  },
+  "shapes": [
+    {
+      "type": "rectangle",
+      "x": 60,
+      "y": 198,
+      "width": 960,
+      "height": 2,
+      "fill": "rgba(255,255,255,0.08)"
+    },
+    {
+      "type": "rectangle",
+      "x": 60,
+      "y": 730,
+      "width": 960,
+      "height": 2,
+      "fill": "rgba(255,255,255,0.08)"
+    }
+  ],
+  "statBlocks": [
+    {
+      "value": "118",
+      "label": "Campaigns Audited",
+      "x": 200,
+      "y": 248,
+      "align": "center",
+      "valueSize": 64,
+      "labelSize": 14,
+      "valueColor": "#ffffff",
+      "labelColor": "rgba(255,255,255,0.5)",
+      "valueWeight": 800,
+      "labelTracking": 3,
+      "accent": { "width": 32, "height": 3, "gap": 14, "color": "rgba(99,179,237,0.5)", "align": "center" }
+    },
+    {
+      "value": "1,658",
+      "label": "Ads Analyzed",
+      "x": 540,
+      "y": 248,
+      "align": "center",
+      "valueSize": 64,
+      "labelSize": 14,
+      "valueColor": "#ffffff",
+      "labelColor": "rgba(255,255,255,0.5)",
+      "valueWeight": 800,
+      "labelTracking": 3,
+      "accent": { "width": 32, "height": 3, "gap": 14, "color": "rgba(99,179,237,0.5)", "align": "center" }
+    },
+    {
+      "value": "$131K",
+      "label": "Lifetime Spend",
+      "x": 880,
+      "y": 248,
+      "align": "center",
+      "valueSize": 64,
+      "labelSize": 14,
+      "valueColor": "#ffffff",
+      "labelColor": "rgba(255,255,255,0.5)",
+      "valueWeight": 800,
+      "labelTracking": 3,
+      "accent": { "width": 32, "height": 3, "gap": 14, "color": "rgba(99,179,237,0.5)", "align": "center" }
+    },
+    {
+      "value": "97",
+      "label": "Active Ads",
+      "x": 200,
+      "y": 440,
+      "align": "center",
+      "valueSize": 84,
+      "labelSize": 16,
+      "valueColor": "#63b3ed",
+      "labelColor": "rgba(255,255,255,0.5)",
+      "valueWeight": 800,
+      "labelGap": 12,
+      "labelTracking": 4
+    },
+    {
+      "value": "40",
+      "label": "New Ads Created",
+      "x": 540,
+      "y": 440,
+      "align": "center",
+      "valueSize": 84,
+      "labelSize": 16,
+      "valueColor": "#63b3ed",
+      "labelColor": "rgba(255,255,255,0.5)",
+      "valueWeight": 800,
+      "labelGap": 12,
+      "labelTracking": 4
+    },
+    {
+      "value": "499",
+      "label": "Ads Archived",
+      "x": 880,
+      "y": 440,
+      "align": "center",
+      "valueSize": 84,
+      "labelSize": 16,
+      "valueColor": "#63b3ed",
+      "labelColor": "rgba(255,255,255,0.5)",
+      "valueWeight": 800,
+      "labelGap": 12,
+      "labelTracking": 4
+    }
+  ],
+  "dividers": [
+    { "type": "vertical", "x": 370, "y": 228, "width": 1, "height": 120, "color": "rgba(255,255,255,0.08)" },
+    { "type": "vertical", "x": 710, "y": 228, "width": 1, "height": 120, "color": "rgba(255,255,255,0.08)" },
+    { "type": "vertical", "x": 370, "y": 420, "width": 1, "height": 160, "color": "rgba(255,255,255,0.06)" },
+    { "type": "vertical", "x": 710, "y": 420, "width": 1, "height": 160, "color": "rgba(255,255,255,0.06)" }
+  ],
+  "textLayers": [
+    {
+      "content": "Custom image renderer built from scratch. JSON config in, production creative out. Unique copy per ad. Chunked upload pipeline for 200MB video files. Full account audit, copy archived, dead campaigns flagged. Two proven historical ad variants revived and deployed.",
+      "x": 80,
+      "y": 760,
+      "fontSize": 19,
+      "fontWeight": 400,
+      "color": "rgba(255,255,255,0.55)",
+      "maxChars": 58,
+      "lineHeight": 28
+    },
+    {
+      "content": "Small systems compound.",
+      "x": 80,
+      "y": 990,
+      "fontSize": 22,
+      "fontWeight": 600,
+      "color": "rgba(255,255,255,0.7)",
+      "maxChars": 40
+    }
+  ]
+}

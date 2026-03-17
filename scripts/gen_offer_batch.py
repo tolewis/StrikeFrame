@@ -143,12 +143,12 @@ def build_variants(product, spec):
     variants = [{
         "id": "a",
         "headline": title,
-        "subhead": "Everything in one order. Free shipping over $99.",
+        "subhead": "Everything in one order. Free shipping over $69.",
         "cta": "SHOP NOW",
         "offerFrame": {
             "salePrice": price_str,
             "salePriceSize": 64,
-            "offerText": "FREE SHIPPING OVER $99",
+            "offerText": "FREE SHIPPING OVER $69",
             "priceY": 620,
         },
     }]

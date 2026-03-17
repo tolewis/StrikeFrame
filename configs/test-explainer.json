@@ -1,0 +1,403 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#FFFFFF",
+      "subheadColor": "#e4e4e7",
+      "footerColor": "rgba(255,255,255,0.01)",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(232,93,58,0.92)",
+      "ctaStroke": "rgba(255,160,120,0.35)"
+    }
+  },
+  "renders": [
+    {
+      "_comment": "=== deep-drop-weights | Variant a ===",
+      "output": "/mnt/raid/Data/tmp/ads/explainer/deep-drop-weights-a.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
+      "productImage": {
+        "path": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/deep-drop-weights.jpg",
+        "x": 20,
+        "y": 600,
+        "width": 400,
+        "height": 460,
+        "padding": 20
+      },
+      "text": {
+        "headline": "GET TO THE BOTTOM. STAY AT THE BOTTOM.",
+        "subhead": "",
+        "cta": "SHOP NOW",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,20,35",
+        "midColor": "5,20,35",
+        "rightColor": "5,20,35",
+        "leftOpacity": 0.25,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.25,
+        "vignetteBottom": 0.3
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 64,
+        "subheadSize": 1,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 20,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 280,
+        "subheadY": 570,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 520,
+        "ctaHeight": 50,
+        "ctaGroup": {
+          "relativeTo": "canvas",
+          "anchorX": "left",
+          "anchorY": "top",
+          "offsetX": 500,
+          "offsetY": 870,
+          "textAlign": "center"
+        },
+        "footerY": 1055
+      },
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 0,
+          "y": 580,
+          "width": 440,
+          "height": 500,
+          "fill": "rgba(255,255,255,0.95)"
+        },
+        {
+          "type": "rectangle",
+          "x": 440,
+          "y": 580,
+          "width": 640,
+          "height": 500,
+          "fill": "rgba(30,30,30,0.92)"
+        }
+      ],
+      "textLayers": [
+        {
+          "content": "FEATURES",
+          "x": 475,
+          "y": 615,
+          "fontSize": 17,
+          "fontWeight": 700,
+          "color": "rgba(255,255,255,0.5)",
+          "maxChars": 40
+        },
+        {
+          "content": "\u2713 Narrow Diameter Profile",
+          "x": 475,
+          "y": 660,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 Deep-Seated Brass Eyelets",
+          "x": 475,
+          "y": 725,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 Eight Sizes for Every Depth",
+          "x": 475,
+          "y": 790,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "THETACKLEROOM.COM",
+          "x": 760,
+          "y": 1055,
+          "fontSize": 12,
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.25)",
+          "maxChars": 40,
+          "align": "center"
+        }
+      ]
+    },
+    {
+      "_comment": "=== deep-drop-weights | Variant b ===",
+      "output": "/mnt/raid/Data/tmp/ads/explainer/deep-drop-weights-b.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
+      "productImage": {
+        "path": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/deep-drop-weights.jpg",
+        "x": 20,
+        "y": 600,
+        "width": 400,
+        "height": 460,
+        "padding": 20
+      },
+      "text": {
+        "headline": "WHY DEEP DROP WEIGHTS?",
+        "subhead": "",
+        "cta": "FROM $10.99",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,20,35",
+        "midColor": "5,20,35",
+        "rightColor": "5,20,35",
+        "leftOpacity": 0.25,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.25,
+        "vignetteBottom": 0.3
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 64,
+        "subheadSize": 1,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 20,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 280,
+        "subheadY": 570,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 520,
+        "ctaHeight": 50,
+        "ctaGroup": {
+          "relativeTo": "canvas",
+          "anchorX": "left",
+          "anchorY": "top",
+          "offsetX": 500,
+          "offsetY": 870,
+          "textAlign": "center"
+        },
+        "footerY": 1055
+      },
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 0,
+          "y": 580,
+          "width": 440,
+          "height": 500,
+          "fill": "rgba(255,255,255,0.95)"
+        },
+        {
+          "type": "rectangle",
+          "x": 440,
+          "y": 580,
+          "width": 640,
+          "height": 500,
+          "fill": "rgba(30,30,30,0.92)"
+        }
+      ],
+      "textLayers": [
+        {
+          "content": "WHY THIS ONE",
+          "x": 475,
+          "y": 615,
+          "fontSize": 17,
+          "fontWeight": 700,
+          "color": "rgba(255,255,255,0.5)",
+          "maxChars": 40
+        },
+        {
+          "content": "\u2713 1.5-inch diameter across all sizes...",
+          "x": 475,
+          "y": 660,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 Brass eyelets are set into the lead...",
+          "x": 475,
+          "y": 725,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 1lb for shallow deep drops",
+          "x": 475,
+          "y": 790,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "THETACKLEROOM.COM",
+          "x": 760,
+          "y": 1055,
+          "fontSize": 12,
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.25)",
+          "maxChars": 40,
+          "align": "center"
+        }
+      ]
+    },
+    {
+      "_comment": "=== deep-drop-weights | Variant c ===",
+      "output": "/mnt/raid/Data/tmp/ads/explainer/deep-drop-weights-c.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
+      "productImage": {
+        "path": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/deep-drop-weights.jpg",
+        "x": 20,
+        "y": 600,
+        "width": 400,
+        "height": 460,
+        "padding": 20
+      },
+      "text": {
+        "headline": "DEEP DROP WEIGHTS",
+        "subhead": "",
+        "cta": "GET IT NOW",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,20,35",
+        "midColor": "5,20,35",
+        "rightColor": "5,20,35",
+        "leftOpacity": 0.25,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.25,
+        "vignetteBottom": 0.3
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 64,
+        "subheadSize": 1,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 20,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 280,
+        "subheadY": 570,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 520,
+        "ctaHeight": 50,
+        "ctaGroup": {
+          "relativeTo": "canvas",
+          "anchorX": "left",
+          "anchorY": "top",
+          "offsetX": 500,
+          "offsetY": 935,
+          "textAlign": "center"
+        },
+        "footerY": 1055
+      },
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 0,
+          "y": 580,
+          "width": 440,
+          "height": 500,
+          "fill": "rgba(255,255,255,0.95)"
+        },
+        {
+          "type": "rectangle",
+          "x": 440,
+          "y": 580,
+          "width": 640,
+          "height": 500,
+          "fill": "rgba(30,30,30,0.92)"
+        }
+      ],
+      "textLayers": [
+        {
+          "content": "THE SPECS",
+          "x": 475,
+          "y": 615,
+          "fontSize": 17,
+          "fontWeight": 700,
+          "color": "rgba(255,255,255,0.5)",
+          "maxChars": 40
+        },
+        {
+          "content": "\u2713 Hand-poured lead with deep-seated brass eyelets",
+          "x": 475,
+          "y": 660,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 Consistent 1.5-inch diameter across all sizes",
+          "x": 475,
+          "y": 725,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 8 sizes: 1, 2, 3, 4, 5, 6, 8, 10 lbs",
+          "x": 475,
+          "y": 790,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 Narrow profile cuts through current",
+          "x": 475,
+          "y": 855,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "THETACKLEROOM.COM",
+          "x": 760,
+          "y": 1055,
+          "fontSize": 12,
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.25)",
+          "maxChars": 40,
+          "align": "center"
+        }
+      ]
+    }
+  ]
+}

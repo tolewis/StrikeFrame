@@ -32,7 +32,7 @@ BADGES = {
     "complete_kit": {"text": "COMPLETE KIT", "fill": "rgba(40,120,80,0.9)", "textColor": "#ffffff"},
     "new": {"text": "NEW", "fill": "rgba(59,130,246,0.9)", "textColor": "#ffffff"},
     "tournament_proven": {"text": "TOURNAMENT PROVEN", "fill": "rgba(232,93,58,0.92)", "textColor": "#ffffff"},
-    "free_shipping": {"text": "FREE SHIPPING OVER $99", "fill": "rgba(255,255,255,0.16)", "textColor": "#ffffff"},
+    "free_shipping": {"text": "FREE SHIPPING OVER $69", "fill": "rgba(255,255,255,0.16)", "textColor": "#ffffff"},
 }
 
 ICON_MAP = {

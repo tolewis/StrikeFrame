@@ -1,0 +1,533 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#FFFFFF",
+      "subheadColor": "#d4d4d8",
+      "footerColor": "rgba(255,255,255,0.35)",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(232,93,58,0.95)",
+      "ctaStroke": "rgba(255,160,120,0.4)"
+    },
+    "typography": {
+      "headlineFontFamily": "Montserrat, Arial, sans-serif",
+      "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+      "headlineWeight": 800,
+      "subheadWeight": 400,
+      "ctaSize": 22,
+      "ctaWeight": 700,
+      "footerSize": 14,
+      "footerTracking": 4
+    },
+    "text": {
+      "footer": "THETACKLEROOM.COM"
+    }
+  },
+  "renders": [
+    {
+      "_comment": "=== LEAD 1: Feature Hook — editorial-left, gradient bg ===",
+      "output": "/mnt/raid/Data/tmp/ads/lead-feature-hook.jpg",
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#d4d4d8",
+        "gradientStart": "#0c2d3f",
+        "gradientEnd": "#163a4f",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.4)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "rgba(255,255,255,0.35)"
+      },
+      "text": {
+        "headline": "Built For The Drop.",
+        "subhead": "Hand-poured deep drop weights. No flash, no flaws. Just the right weight at the right depth.",
+        "cta": "SHOP WEIGHTS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 72,
+        "subheadSize": 26,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 36,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 80,
+        "headlineY": 320,
+        "subheadY": 520,
+        "maxHeadlineChars": 16,
+        "maxSubheadChars": 32,
+        "ctaRectX": 80,
+        "ctaRectY": 740,
+        "ctaX": 230,
+        "ctaY": 775,
+        "ctaWidth": 300,
+        "ctaHeight": 56,
+        "footerY": 1020
+      },
+      "shapes": [
+        { "type": "rectangle", "x": 80, "y": 280, "width": 48, "height": 4, "fill": "rgba(232,93,58,0.8)" }
+      ],
+      "textLayers": [
+        {
+          "content": "FROM $10.99",
+          "x": 80,
+          "y": 250,
+          "fontSize": 16,
+          "fontWeight": 700,
+          "color": "rgba(232,93,58,0.9)",
+          "maxChars": 20
+        }
+      ]
+    },
+    {
+      "_comment": "=== LEAD 2: Product composite — centered-hero ===",
+      "template": "product-composite",
+      "output": "/mnt/raid/Data/tmp/ads/lead-product-card.jpg",
+      "productPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/deep-drop-weights-detail.png",
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#d4d4d8",
+        "gradientStart": "#0a1628",
+        "gradientEnd": "#152238",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.4)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "rgba(255,255,255,0.35)",
+        "productCircleFill": "rgba(15,40,65,0.85)",
+        "productShadowColor": "rgba(0,0,0,0.3)",
+        "badgeFill": "rgba(232,93,58,0.9)",
+        "badgeStroke": "rgba(255,160,120,0.3)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "text": {
+        "headline": "Your Weights Are Costing You Fish.",
+        "subhead": "Cheap weights roll. Ours don't. From $10.99.",
+        "cta": "SHOP NOW",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 58,
+        "subheadSize": 24,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 18,
+        "maxSubheadChars": 30,
+        "headlineY": 140,
+        "subheadY": 680,
+        "ctaRectX": 360,
+        "ctaRectY": 780,
+        "ctaX": 540,
+        "ctaY": 815,
+        "ctaWidth": 360,
+        "ctaHeight": 56,
+        "footerY": 1020
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "DEEP DROP WEIGHTS",
+        "circleDiameter": 320,
+        "circleX": 380,
+        "circleY": 280,
+        "badgeX": 690,
+        "badgeY": 130,
+        "shadowOpacity": 0.25
+      }
+    },
+    {
+      "_comment": "=== BELTS 1: Urgency hook — editorial-left ===",
+      "output": "/mnt/raid/Data/tmp/ads/belts-urgency-hook.jpg",
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#d4d4d8",
+        "gradientStart": "#1a0f0a",
+        "gradientEnd": "#2d1810",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.4)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "rgba(255,255,255,0.35)"
+      },
+      "text": {
+        "headline": "A Bad Belt Costs More Than A Good One.",
+        "subhead": "Seamount fighting belts. Thick EVA. Solid gimbal. Used by charter captains daily.",
+        "cta": "SHOP BELTS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 62,
+        "subheadSize": 24,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 34,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 80,
+        "headlineY": 300,
+        "subheadY": 540,
+        "maxHeadlineChars": 18,
+        "maxSubheadChars": 34,
+        "ctaRectX": 80,
+        "ctaRectY": 740,
+        "ctaX": 210,
+        "ctaY": 775,
+        "ctaWidth": 260,
+        "ctaHeight": 56,
+        "footerY": 1020
+      },
+      "shapes": [
+        { "type": "rectangle", "x": 80, "y": 260, "width": 48, "height": 4, "fill": "rgba(232,93,58,0.8)" }
+      ],
+      "textLayers": [
+        {
+          "content": "$179.99",
+          "x": 80,
+          "y": 232,
+          "fontSize": 16,
+          "fontWeight": 700,
+          "color": "rgba(232,93,58,0.9)",
+          "maxChars": 20
+        }
+      ]
+    },
+    {
+      "_comment": "=== BELTS 2: Product composite — centered-hero ===",
+      "template": "product-composite",
+      "output": "/mnt/raid/Data/tmp/ads/belts-product-card.jpg",
+      "productPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/seamount-belt.jpg",
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#d4d4d8",
+        "gradientStart": "#1a0f0a",
+        "gradientEnd": "#2d1810",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.4)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "rgba(255,255,255,0.35)",
+        "productCircleFill": "rgba(35,20,12,0.85)",
+        "productShadowColor": "rgba(0,0,0,0.3)",
+        "badgeFill": "rgba(232,93,58,0.9)",
+        "badgeStroke": "rgba(255,160,120,0.3)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "text": {
+        "headline": "Built For The Fight.",
+        "subhead": "Seamount EVA fighting belt. $179.99.",
+        "cta": "SHOP NOW",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 72,
+        "subheadSize": 24,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 16,
+        "maxSubheadChars": 30,
+        "headlineY": 140,
+        "subheadY": 680,
+        "ctaRectX": 360,
+        "ctaRectY": 780,
+        "ctaX": 540,
+        "ctaY": 815,
+        "ctaWidth": 360,
+        "ctaHeight": 56,
+        "footerY": 1020
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "FIGHTING BELT",
+        "circleDiameter": 320,
+        "circleX": 380,
+        "circleY": 280,
+        "badgeX": 690,
+        "badgeY": 130,
+        "shadowOpacity": 0.25
+      }
+    },
+    {
+      "_comment": "=== DREDGES 1: Benefit hook — editorial-left ===",
+      "output": "/mnt/raid/Data/tmp/ads/dredge-benefit-hook.jpg",
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#d4d4d8",
+        "gradientStart": "#0a2a1a",
+        "gradientEnd": "#143828",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.4)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "rgba(255,255,255,0.35)"
+      },
+      "text": {
+        "headline": "The Spread Starts Here.",
+        "subhead": "Complete squid dredge. Pre-rigged. Ready to fish out of the bag.",
+        "cta": "SHOP DREDGES",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 68,
+        "subheadSize": 26,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 36,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 80,
+        "headlineY": 320,
+        "subheadY": 520,
+        "maxHeadlineChars": 16,
+        "maxSubheadChars": 32,
+        "ctaRectX": 80,
+        "ctaRectY": 740,
+        "ctaX": 240,
+        "ctaY": 775,
+        "ctaWidth": 320,
+        "ctaHeight": 56,
+        "footerY": 1020
+      },
+      "shapes": [
+        { "type": "rectangle", "x": 80, "y": 280, "width": 48, "height": 4, "fill": "rgba(232,93,58,0.8)" }
+      ],
+      "textLayers": [
+        {
+          "content": "FROM $249.99",
+          "x": 80,
+          "y": 250,
+          "fontSize": 16,
+          "fontWeight": 700,
+          "color": "rgba(232,93,58,0.9)",
+          "maxChars": 20
+        }
+      ]
+    },
+    {
+      "_comment": "=== DREDGES 2: Product composite — centered-hero ===",
+      "template": "product-composite",
+      "output": "/mnt/raid/Data/tmp/ads/dredge-product-card.jpg",
+      "productPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/compact-dredge.jpg",
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#d4d4d8",
+        "gradientStart": "#0a2a1a",
+        "gradientEnd": "#143828",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.4)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "rgba(255,255,255,0.35)",
+        "productCircleFill": "rgba(12,40,25,0.85)",
+        "productShadowColor": "rgba(0,0,0,0.3)",
+        "badgeFill": "rgba(232,93,58,0.9)",
+        "badgeStroke": "rgba(255,160,120,0.3)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "text": {
+        "headline": "Five More Strikes Per Trip.",
+        "subhead": "Squid dredges from $249.99. Build the spread that pulls.",
+        "cta": "SHOP NOW",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 62,
+        "subheadSize": 24,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 18,
+        "maxSubheadChars": 32,
+        "headlineY": 140,
+        "subheadY": 680,
+        "ctaRectX": 360,
+        "ctaRectY": 780,
+        "ctaX": 540,
+        "ctaY": 815,
+        "ctaWidth": 360,
+        "ctaHeight": 56,
+        "footerY": 1020
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "SQUID DREDGE",
+        "circleDiameter": 320,
+        "circleX": 380,
+        "circleY": 280,
+        "badgeX": 690,
+        "badgeY": 130,
+        "shadowOpacity": 0.25
+      }
+    },
+    {
+      "_comment": "=== PLANERS 1: Comparison hook — editorial-left ===",
+      "output": "/mnt/raid/Data/tmp/ads/planer-comparison-hook.jpg",
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#d4d4d8",
+        "gradientStart": "#0c2d3f",
+        "gradientEnd": "#163a4f",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.4)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "rgba(255,255,255,0.35)"
+      },
+      "text": {
+        "headline": "Same Depth. 95% Less Money.",
+        "subhead": "Planer kits replace $800 downriggers. No mounting. No wiring. Just clip and troll.",
+        "cta": "SHOP PLANERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 66,
+        "subheadSize": 24,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 34,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 80,
+        "headlineY": 310,
+        "subheadY": 520,
+        "maxHeadlineChars": 16,
+        "maxSubheadChars": 32,
+        "ctaRectX": 80,
+        "ctaRectY": 740,
+        "ctaX": 240,
+        "ctaY": 775,
+        "ctaWidth": 320,
+        "ctaHeight": 56,
+        "footerY": 1020
+      },
+      "shapes": [
+        { "type": "rectangle", "x": 80, "y": 270, "width": 48, "height": 4, "fill": "rgba(232,93,58,0.8)" }
+      ],
+      "textLayers": [
+        {
+          "content": "FROM $45.99",
+          "x": 80,
+          "y": 242,
+          "fontSize": 16,
+          "fontWeight": 700,
+          "color": "rgba(232,93,58,0.9)",
+          "maxChars": 20
+        }
+      ]
+    },
+    {
+      "_comment": "=== PLANERS 2: Product composite — centered-hero ===",
+      "template": "product-composite",
+      "output": "/mnt/raid/Data/tmp/ads/planer-product-card.jpg",
+      "productPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/planer-bridle-kit.jpg",
+      "theme": {
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#d4d4d8",
+        "gradientStart": "#0c2d3f",
+        "gradientEnd": "#163a4f",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.4)",
+        "ctaTextColor": "#FFFFFF",
+        "footerColor": "rgba(255,255,255,0.35)",
+        "productCircleFill": "rgba(10,40,58,0.85)",
+        "productShadowColor": "rgba(0,0,0,0.3)",
+        "badgeFill": "rgba(232,93,58,0.9)",
+        "badgeStroke": "rgba(255,160,120,0.3)",
+        "badgeTextColor": "#FFFFFF"
+      },
+      "text": {
+        "headline": "Get Deep Without A Downrigger.",
+        "subhead": "Planer bridle kits from $45.99. Clip on, drop down, troll.",
+        "cta": "SHOP NOW",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 58,
+        "subheadSize": 24,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 18,
+        "maxSubheadChars": 32,
+        "headlineY": 140,
+        "subheadY": 680,
+        "ctaRectX": 360,
+        "ctaRectY": 780,
+        "ctaX": 540,
+        "ctaY": 815,
+        "ctaWidth": 360,
+        "ctaHeight": 56,
+        "footerY": 1020
+      },
+      "productComposite": {
+        "enabled": true,
+        "badgeText": "PLANER BRIDLE KIT",
+        "circleDiameter": 320,
+        "circleX": 380,
+        "circleY": 280,
+        "badgeX": 690,
+        "badgeY": 130,
+        "shadowOpacity": 0.25
+      }
+    }
+  ]
+}

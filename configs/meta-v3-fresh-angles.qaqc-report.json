@@ -1,0 +1,148 @@
+{
+  "renders": [
+    {
+      "output": "/mnt/raid/Data/tmp/ads/lead-feature-hook.jpg",
+      "final_status": "pass",
+      "composition_overall": 99,
+      "composition_scores": {
+        "headlineThirdsAlignment": 93,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 99
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/lead-product-card.jpg",
+      "final_status": "warn",
+      "composition_overall": 86,
+      "composition_scores": {
+        "headlineThirdsAlignment": 28,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 86
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [
+        "Headline is far from the rule-of-thirds grid line."
+      ],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/belts-urgency-hook.jpg",
+      "final_status": "pass",
+      "composition_overall": 99,
+      "composition_scores": {
+        "headlineThirdsAlignment": 97,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 99
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/belts-product-card.jpg",
+      "final_status": "warn",
+      "composition_overall": 85,
+      "composition_scores": {
+        "headlineThirdsAlignment": 26,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 85
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [
+        "Headline is far from the rule-of-thirds grid line."
+      ],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/dredge-benefit-hook.jpg",
+      "final_status": "pass",
+      "composition_overall": 99,
+      "composition_scores": {
+        "headlineThirdsAlignment": 93,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 99
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/dredge-product-card.jpg",
+      "final_status": "warn",
+      "composition_overall": 85,
+      "composition_scores": {
+        "headlineThirdsAlignment": 27,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 85
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [
+        "Headline is far from the rule-of-thirds grid line."
+      ],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/planer-comparison-hook.jpg",
+      "final_status": "pass",
+      "composition_overall": 98,
+      "composition_scores": {
+        "headlineThirdsAlignment": 90,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 98
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/planer-product-card.jpg",
+      "final_status": "warn",
+      "composition_overall": 86,
+      "composition_scores": {
+        "headlineThirdsAlignment": 28,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 86
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [
+        "Headline is far from the rule-of-thirds grid line."
+      ],
+      "failures": []
+    }
+  ]
+}

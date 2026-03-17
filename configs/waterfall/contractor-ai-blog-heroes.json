@@ -1,0 +1,55 @@
+{
+  "defaults": {
+    "preset": "landscape-banner",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#F5F7FB",
+      "subheadColor": "#D7DDE8",
+      "footerColor": "#AEB9CA",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(21,32,54,0.82)",
+      "ctaStroke": "rgba(132,157,198,0.28)",
+      "gradientStart": "#0A101B",
+      "gradientEnd": "#334A6A"
+    },
+    "overlay": {
+      "leftColor": "7,11,19",
+      "midColor": "20,30,48",
+      "rightColor": "56,80,112",
+      "leftOpacity": 0.84,
+      "midOpacity": 0.48,
+      "rightOpacity": 0.18
+    },
+    "typography": {
+      "headlineFontFamily": "Outfit, Arial, sans-serif",
+      "bodyFontFamily": "Source Serif 4, Georgia, serif",
+      "headlineSize": 74,
+      "subheadSize": 30
+    },
+    "layout": {
+      "personality": "editorial-left"
+    }
+  },
+  "renders": [
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/library/04-technology/kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg",
+      "output": "output/waterfall/blog_hero_ai-office-work.jpg",
+      "text": {
+        "headline": "AI Changes the Office First",
+        "subhead": "Before it changes the field. The admin sludge around construction is the first pressure point.",
+        "cta": "CONTRACTOR-AI.COM",
+        "footer": "CONTRACTOR-AI \u00b7 LONG READ"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/library/03-leadership/cherrydeck-Qx7A7SChpnI-unsplash.jpg",
+      "output": "output/waterfall/blog_hero_ai-consultant.jpg",
+      "text": {
+        "headline": "How to Design AI Systems That Get Used",
+        "subhead": "Most construction companies don't need more AI tools. They need less workflow chaos.",
+        "cta": "CONTRACTOR-AI.COM",
+        "footer": "CONTRACTOR-AI \u00b7 LONG READ"
+      }
+    }
+  ]
+}

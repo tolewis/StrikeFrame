@@ -1,0 +1,874 @@
+{
+  "renders": [
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-running-a.jpg",
+      "final_status": "pass",
+      "composition_overall": 95,
+      "composition_scores": {
+        "headlineThirdsAlignment": 76,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 95
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-running-b.jpg",
+      "final_status": "warn",
+      "composition_overall": 98,
+      "composition_scores": {
+        "headlineThirdsAlignment": 92,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 98
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [
+        "Headline/subhead spacing is too tight."
+      ],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-running-c.jpg",
+      "final_status": "pass",
+      "composition_overall": 95,
+      "composition_scores": {
+        "headlineThirdsAlignment": 76,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 95
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-running-d.jpg",
+      "final_status": "pass",
+      "composition_overall": 95,
+      "composition_scores": {
+        "headlineThirdsAlignment": 76,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 95
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-running-e.jpg",
+      "final_status": "warn",
+      "composition_overall": 98,
+      "composition_scores": {
+        "headlineThirdsAlignment": 92,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 98
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [
+        "Headline/subhead spacing is too tight."
+      ],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-sunlight-a.jpg",
+      "final_status": "pass",
+      "composition_overall": 89,
+      "composition_scores": {
+        "headlineThirdsAlignment": 46,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 89
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-sunlight-b.jpg",
+      "final_status": "pass",
+      "composition_overall": 92,
+      "composition_scores": {
+        "headlineThirdsAlignment": 62,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 92
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-sunlight-c.jpg",
+      "final_status": "pass",
+      "composition_overall": 89,
+      "composition_scores": {
+        "headlineThirdsAlignment": 46,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 89
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-sunlight-d.jpg",
+      "final_status": "pass",
+      "composition_overall": 89,
+      "composition_scores": {
+        "headlineThirdsAlignment": 46,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 89
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-sunlight-e.jpg",
+      "final_status": "pass",
+      "composition_overall": 92,
+      "composition_scores": {
+        "headlineThirdsAlignment": 62,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 92
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-sunset-silhouette-a.jpg",
+      "final_status": "pass",
+      "composition_overall": 90,
+      "composition_scores": {
+        "headlineThirdsAlignment": 49,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 90
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-sunset-silhouette-b.jpg",
+      "final_status": "pass",
+      "composition_overall": 93,
+      "composition_scores": {
+        "headlineThirdsAlignment": 66,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 93
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-sunset-silhouette-c.jpg",
+      "final_status": "pass",
+      "composition_overall": 90,
+      "composition_scores": {
+        "headlineThirdsAlignment": 49,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 90
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-sunset-silhouette-d.jpg",
+      "final_status": "pass",
+      "composition_overall": 90,
+      "composition_scores": {
+        "headlineThirdsAlignment": 49,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 90
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-sunset-silhouette-e.jpg",
+      "final_status": "pass",
+      "composition_overall": 93,
+      "composition_scores": {
+        "headlineThirdsAlignment": 66,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 93
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/aerial-sharks-boat-a.jpg",
+      "final_status": "pass",
+      "composition_overall": 94,
+      "composition_scores": {
+        "headlineThirdsAlignment": 69,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 94
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/aerial-sharks-boat-b.jpg",
+      "final_status": "warn",
+      "composition_overall": 97,
+      "composition_scores": {
+        "headlineThirdsAlignment": 85,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 97
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [
+        "Headline/subhead spacing is too tight."
+      ],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/aerial-sharks-boat-c.jpg",
+      "final_status": "pass",
+      "composition_overall": 94,
+      "composition_scores": {
+        "headlineThirdsAlignment": 69,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 94
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/aerial-sharks-boat-d.jpg",
+      "final_status": "pass",
+      "composition_overall": 94,
+      "composition_scores": {
+        "headlineThirdsAlignment": 69,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 94
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/aerial-sharks-boat-e.jpg",
+      "final_status": "warn",
+      "composition_overall": 97,
+      "composition_scores": {
+        "headlineThirdsAlignment": 85,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 97
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [
+        "Headline/subhead spacing is too tight."
+      ],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/fighting-fish-dusk-a.jpg",
+      "final_status": "pass",
+      "composition_overall": 92,
+      "composition_scores": {
+        "headlineThirdsAlignment": 61,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 92
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/fighting-fish-dusk-b.jpg",
+      "final_status": "warn",
+      "composition_overall": 95,
+      "composition_scores": {
+        "headlineThirdsAlignment": 77,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 95
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [
+        "Headline/subhead spacing is too tight."
+      ],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/fighting-fish-dusk-c.jpg",
+      "final_status": "pass",
+      "composition_overall": 92,
+      "composition_scores": {
+        "headlineThirdsAlignment": 61,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 92
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/fighting-fish-dusk-d.jpg",
+      "final_status": "pass",
+      "composition_overall": 92,
+      "composition_scores": {
+        "headlineThirdsAlignment": 61,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 92
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/fighting-fish-dusk-e.jpg",
+      "final_status": "warn",
+      "composition_overall": 95,
+      "composition_scores": {
+        "headlineThirdsAlignment": 77,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 95
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [
+        "Headline/subhead spacing is too tight."
+      ],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-deep-a.jpg",
+      "final_status": "pass",
+      "composition_overall": 95,
+      "composition_scores": {
+        "headlineThirdsAlignment": 76,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 95
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-deep-b.jpg",
+      "final_status": "warn",
+      "composition_overall": 98,
+      "composition_scores": {
+        "headlineThirdsAlignment": 92,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 98
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [
+        "Headline/subhead spacing is too tight."
+      ],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-deep-c.jpg",
+      "final_status": "pass",
+      "composition_overall": 95,
+      "composition_scores": {
+        "headlineThirdsAlignment": 76,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 95
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-deep-d.jpg",
+      "final_status": "pass",
+      "composition_overall": 95,
+      "composition_scores": {
+        "headlineThirdsAlignment": 76,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 95
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/underwater-mahi-deep-e.jpg",
+      "final_status": "warn",
+      "composition_overall": 98,
+      "composition_scores": {
+        "headlineThirdsAlignment": 92,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 98
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [
+        "Headline/subhead spacing is too tight."
+      ],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-golden-sunset-a.jpg",
+      "final_status": "pass",
+      "composition_overall": 91,
+      "composition_scores": {
+        "headlineThirdsAlignment": 57,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 91
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-golden-sunset-b.jpg",
+      "final_status": "pass",
+      "composition_overall": 95,
+      "composition_scores": {
+        "headlineThirdsAlignment": 73,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 95
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-golden-sunset-c.jpg",
+      "final_status": "pass",
+      "composition_overall": 91,
+      "composition_scores": {
+        "headlineThirdsAlignment": 57,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 91
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-golden-sunset-d.jpg",
+      "final_status": "pass",
+      "composition_overall": 91,
+      "composition_scores": {
+        "headlineThirdsAlignment": 57,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 91
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/reel-golden-sunset-e.jpg",
+      "final_status": "pass",
+      "composition_overall": 95,
+      "composition_scores": {
+        "headlineThirdsAlignment": 73,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 95
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/rod-holders-lures-a.jpg",
+      "final_status": "pass",
+      "composition_overall": 94,
+      "composition_scores": {
+        "headlineThirdsAlignment": 69,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 94
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/rod-holders-lures-b.jpg",
+      "final_status": "warn",
+      "composition_overall": 97,
+      "composition_scores": {
+        "headlineThirdsAlignment": 85,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 97
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [
+        "Headline/subhead spacing is too tight."
+      ],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/rod-holders-lures-c.jpg",
+      "final_status": "pass",
+      "composition_overall": 94,
+      "composition_scores": {
+        "headlineThirdsAlignment": 69,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 94
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/rod-holders-lures-d.jpg",
+      "final_status": "pass",
+      "composition_overall": 94,
+      "composition_scores": {
+        "headlineThirdsAlignment": 69,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 94
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/rod-holders-lures-e.jpg",
+      "final_status": "warn",
+      "composition_overall": 97,
+      "composition_scores": {
+        "headlineThirdsAlignment": 85,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 97
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [
+        "Headline/subhead spacing is too tight."
+      ],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-jetty-a.jpg",
+      "final_status": "pass",
+      "composition_overall": 89,
+      "composition_scores": {
+        "headlineThirdsAlignment": 46,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 89
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-jetty-b.jpg",
+      "final_status": "pass",
+      "composition_overall": 92,
+      "composition_scores": {
+        "headlineThirdsAlignment": 62,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 92
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-jetty-c.jpg",
+      "final_status": "pass",
+      "composition_overall": 89,
+      "composition_scores": {
+        "headlineThirdsAlignment": 46,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 89
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-jetty-d.jpg",
+      "final_status": "pass",
+      "composition_overall": 89,
+      "composition_scores": {
+        "headlineThirdsAlignment": 46,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 89
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/sportfisher-jetty-e.jpg",
+      "final_status": "pass",
+      "composition_overall": 92,
+      "composition_scores": {
+        "headlineThirdsAlignment": 62,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 92
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/fisherman-rough-seas-a.jpg",
+      "final_status": "pass",
+      "composition_overall": 89,
+      "composition_scores": {
+        "headlineThirdsAlignment": 46,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 89
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/fisherman-rough-seas-b.jpg",
+      "final_status": "pass",
+      "composition_overall": 92,
+      "composition_scores": {
+        "headlineThirdsAlignment": 62,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 92
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/fisherman-rough-seas-c.jpg",
+      "final_status": "pass",
+      "composition_overall": 89,
+      "composition_scores": {
+        "headlineThirdsAlignment": 46,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 89
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/fisherman-rough-seas-d.jpg",
+      "final_status": "pass",
+      "composition_overall": 89,
+      "composition_scores": {
+        "headlineThirdsAlignment": 46,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 89
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "output": "/mnt/raid/Data/tmp/ads/tof/fisherman-rough-seas-e.jpg",
+      "final_status": "pass",
+      "composition_overall": 92,
+      "composition_scores": {
+        "headlineThirdsAlignment": 62,
+        "readingOrder": 100,
+        "edgeMargins": 100,
+        "visualHierarchy": 100,
+        "canvasUtilization": 100,
+        "overall": 92
+      },
+      "pre_fixes": [],
+      "post_fixes": [],
+      "warnings": [],
+      "failures": []
+    }
+  ]
+}

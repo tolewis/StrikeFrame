@@ -294,7 +294,7 @@ def build_renders():
             "originalPrice": "$18.99",
             "salePrice": "$12.99",
             "savings": "BEST SELLER",
-            "offerText": "FREE SHIPPING OVER $99",
+            "offerText": "FREE SHIPPING OVER $69",
             "salePriceSize": 72, "originalPriceSize": 28,
             "priceY": 580,
         },
@@ -705,7 +705,7 @@ def build_renders():
 
     # Retarget 1: Offer — free shipping threshold
     renders.append({
-        "_comment": "RETARGET | offer | Free Shipping Over $99",
+        "_comment": "RETARGET | offer | Free Shipping Over $69",
         "_category": "retarget", "_template": "offer", "_thesis": "T18",
         "output": out("retarget", "retarget-offer-shipping"),
         "backgroundPath": BG["retarget_offer"],
@@ -720,7 +720,7 @@ def build_renders():
         "layout": base_layout("centered-hero", cta_y=860),
         "offerFrame": {
             "salePrice": "FREE SHIPPING",
-            "savings": "ORDERS OVER $99",
+            "savings": "ORDERS OVER $69",
             "offerText": "Premium offshore tackle. No surprises at checkout.",
             "salePriceSize": 56, "originalPriceSize": 24,
             "priceY": 560,
@@ -775,7 +775,7 @@ def build_renders():
                 {"icon": "shield", "label": "Tournament-grade hardware"},
                 {"icon": "check", "label": "Complete kits, nothing missing"},
                 {"icon": "wave", "label": "Tested offshore, not in a warehouse"},
-                {"icon": "arrow", "label": "Free shipping over $99"},
+                {"icon": "arrow", "label": "Free shipping over $69"},
             ],
         },
     })

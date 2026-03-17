@@ -1,0 +1,94 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#F5F7FB",
+      "subheadColor": "#D7DDE8",
+      "footerColor": "#AEB9CA",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(21,32,54,0.82)",
+      "ctaStroke": "rgba(132,157,198,0.28)",
+      "gradientStart": "#0A101B",
+      "gradientEnd": "#334A6A"
+    },
+    "overlay": {
+      "leftColor": "7,11,19",
+      "midColor": "20,30,48",
+      "rightColor": "56,80,112",
+      "leftOpacity": 0.84,
+      "midOpacity": 0.48,
+      "rightOpacity": 0.18
+    },
+    "typography": {
+      "headlineFontFamily": "Outfit, Arial, sans-serif",
+      "bodyFontFamily": "Source Serif 4, Georgia, serif",
+      "headlineSize": 72,
+      "subheadSize": 28
+    },
+    "layout": {
+      "personality": "centered-hero",
+      "align": "center",
+      "maxHeadlineChars": 14,
+      "maxSubheadChars": 24,
+      "headlineY": 180,
+      "subheadY": 470,
+      "ctaRectY": 660,
+      "ctaY": 698,
+      "footerY": 1000,
+      "ctaWidth": 290
+    }
+  },
+  "renders": [
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/approved/source-grade-backgrounds/contractor-ai-sourcegrade-07.jpg",
+      "output": "output/waterfall/x_article_harper_why-i-left.jpg",
+      "text": {
+        "headline": "Why I Left Harper",
+        "subhead": "Ten years. Regional Director. A company I love.",
+        "cta": "READ",
+        "footer": "CONTRACTOR-AI \u00b7 @TOLEWIS"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/approved/source-grade-backgrounds/contractor-ai-sourcegrade-08.jpg",
+      "output": "output/waterfall/x_article_rfi_45-to-5.jpg",
+      "text": {
+        "headline": "45 Minutes to 5",
+        "subhead": "AI that writes spec-grade RFIs.",
+        "cta": "READ",
+        "footer": "CONTRACTOR-AI \u00b7 @TOLEWIS"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/approved/source-grade-backgrounds/contractor-ai-sourcegrade-09.jpg",
+      "output": "output/waterfall/x_article_bid-day_lessons.jpg",
+      "text": {
+        "headline": "What Bid Day Taught Me",
+        "subhead": "Five lessons from 100+ competitive bids.",
+        "cta": "READ",
+        "footer": "CONTRACTOR-AI \u00b7 @TOLEWIS"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/approved/source-grade-backgrounds/contractor-ai-sourcegrade-10.jpg",
+      "output": "output/waterfall/x_article_ai-office_before-field.jpg",
+      "text": {
+        "headline": "Office Before Field",
+        "subhead": "AI changes admin first. Not the slab.",
+        "cta": "READ",
+        "footer": "CONTRACTOR-AI \u00b7 @TOLEWIS"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/library/03-leadership/brooke-cagle--uHVRvDr7pg-unsplash.jpg",
+      "output": "output/waterfall/x_article_ai-consultant_less-tools.jpg",
+      "text": {
+        "headline": "Less Tools. Less Chaos.",
+        "subhead": "What most companies actually need.",
+        "cta": "READ",
+        "footer": "CONTRACTOR-AI \u00b7 @TOLEWIS"
+      }
+    }
+  ]
+}

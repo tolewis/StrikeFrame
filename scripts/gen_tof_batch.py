@@ -17,7 +17,7 @@ VARIANTS = [
     {"id": "b",
      "headline": "The Ocean Doesn't Negotiate.",
      "subhead": "Neither does our gear.",
-     "cta": "FREE SHIPPING OVER $99"},
+     "cta": "FREE SHIPPING OVER $69"},
     {"id": "c",
      "headline": "Rigged Right. Every Time.",
      "subhead": "Tested by the anglers who sell it.",

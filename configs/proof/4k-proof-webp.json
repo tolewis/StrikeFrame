@@ -1,0 +1,59 @@
+{
+  "preset": "landscape-banner",
+  "width": 3840,
+  "height": 2160,
+  "template": "banner",
+  "backgroundPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/launch-computers/dual-screens.jpg",
+  "output": "output/strikeframe-proof-4k.webp",
+  "text": {
+    "headline": "StrikeFrame 4K WEBP",
+    "subhead": "Same system, different output target. Useful when you want smaller web delivery without turning the asset into mush.",
+    "cta": "WEBP PROOF",
+    "footer": "STRIKEFRAME · 4K WEBP"
+  },
+  "theme": {
+    "headlineColor": "#F7FCFF",
+    "subheadColor": "#D9EEF3",
+    "footerColor": "#AFD2DA",
+    "ctaTextColor": "#08161A",
+    "ctaFill": "rgba(180,248,255,0.94)",
+    "ctaStroke": "rgba(255,255,255,0.24)",
+    "textPanelFill": "rgba(7,25,30,0.44)",
+    "textPanelStroke": "rgba(255,255,255,0.10)"
+  },
+  "overlay": {
+    "leftColor": "6,18,22",
+    "midColor": "8,48,60",
+    "rightColor": "23,111,124",
+    "leftOpacity": 0.80,
+    "midOpacity": 0.42,
+    "rightOpacity": 0.16
+  },
+  "typography": {
+    "headlineFontFamily": "Outfit, Arial, sans-serif",
+    "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+    "headlineSize": 208,
+    "subheadSize": 60,
+    "ctaSize": 44,
+    "footerSize": 34
+  },
+  "layout": {
+    "personality": "split-card",
+    "leftX": 220,
+    "headlineY": 300,
+    "subheadY": 840,
+    "ctaX": 252,
+    "ctaY": 1180,
+    "footerY": 1940,
+    "maxHeadlineChars": 18,
+    "maxSubheadChars": 40,
+    "ctaWidth": 540,
+    "ctaHeight": 110,
+    "ctaRectX": 210,
+    "ctaRectY": 1100,
+    "panelX": 140,
+    "panelY": 120,
+    "panelWidth": 1940,
+    "panelHeight": 1320
+  }
+}

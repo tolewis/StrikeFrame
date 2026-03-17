@@ -1,0 +1,176 @@
+{
+  "renders": [
+    {
+      "preset": "linkedin-landscape",
+      "template": "banner",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/01.jpg",
+      "output": "output/waterfall/tackleroom_linkedin_content-factory.jpg",
+      "text": {
+        "headline": "Content Factory, Not a Blog",
+        "subhead": "A ten year old tackle shop doesn't need motivation. It needs a system that publishes at scale.",
+        "cta": "TACKLEROOMSUPPLY.COM",
+        "footer": "TACKLEROOM SUPPLY \u00b7 CONTENT OPS"
+      },
+      "theme": {
+        "headlineColor": "#F8FBFF",
+        "subheadColor": "#D8E4EF",
+        "footerColor": "#BCD0E4",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(34,88,170,0.88)",
+        "ctaStroke": "rgba(145,184,242,0.40)",
+        "gradientStart": "#0B1B2B",
+        "gradientEnd": "#2D5C8F",
+        "textPanelFill": "rgba(255,255,255,0.05)",
+        "textPanelStroke": "rgba(255,255,255,0.12)"
+      },
+      "overlay": {
+        "leftColor": "9,19,31",
+        "midColor": "20,48,79",
+        "rightColor": "44,94,141",
+        "leftOpacity": 0.82,
+        "midOpacity": 0.46,
+        "rightOpacity": 0.16
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Source Serif 4, Georgia, serif",
+        "headlineSize": 54,
+        "subheadSize": 25
+      },
+      "layout": {
+        "personality": "split-card",
+        "panelWidth": 720,
+        "panelHeight": 390
+      }
+    },
+    {
+      "preset": "social-square",
+      "template": "banner",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/03.jpg",
+      "output": "output/waterfall/tackleroom_x_content-factory.jpg",
+      "text": {
+        "headline": "Build the Pipeline First",
+        "subhead": "50 articles. One system. No hustle.",
+        "cta": "READ",
+        "footer": "TACKLEROOM \u00b7 @TOLEWIS"
+      },
+      "theme": {
+        "headlineColor": "#F8FBFF",
+        "subheadColor": "#D8E4EF",
+        "footerColor": "#BCD0E4",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(34,88,170,0.88)",
+        "ctaStroke": "rgba(145,184,242,0.40)",
+        "gradientStart": "#0B1B2B",
+        "gradientEnd": "#2D5C8F"
+      },
+      "overlay": {
+        "leftColor": "9,19,31",
+        "midColor": "20,48,79",
+        "rightColor": "44,94,141",
+        "leftOpacity": 0.82,
+        "midOpacity": 0.46,
+        "rightOpacity": 0.16
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Source Serif 4, Georgia, serif",
+        "headlineSize": 72,
+        "subheadSize": 28
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "headlineY": 180,
+        "subheadY": 470,
+        "ctaRectY": 660,
+        "ctaY": 698,
+        "footerY": 1000,
+        "ctaWidth": 290
+      }
+    },
+    {
+      "preset": "landscape-banner",
+      "template": "banner",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/05.jpg",
+      "output": "output/waterfall/tackleroom_blog_content-factory.jpg",
+      "text": {
+        "headline": "Building a Content Factory",
+        "subhead": "How a 10-year e-commerce tackle shop went from occasional blog posts to scaled content production.",
+        "cta": "TACKLEROOMSUPPLY.COM",
+        "footer": "TACKLEROOM SUPPLY \u00b7 LONG READ"
+      },
+      "theme": {
+        "headlineColor": "#F8FBFF",
+        "subheadColor": "#D8E4EF",
+        "footerColor": "#BCD0E4",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(34,88,170,0.88)",
+        "ctaStroke": "rgba(145,184,242,0.40)",
+        "gradientStart": "#0B1B2B",
+        "gradientEnd": "#2D5C8F"
+      },
+      "overlay": {
+        "leftColor": "9,19,31",
+        "midColor": "20,48,79",
+        "rightColor": "44,94,141",
+        "leftOpacity": 0.82,
+        "midOpacity": 0.46,
+        "rightOpacity": 0.16
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Source Serif 4, Georgia, serif",
+        "headlineSize": 74,
+        "subheadSize": 30
+      },
+      "layout": {
+        "personality": "editorial-left"
+      }
+    },
+    {
+      "preset": "social-portrait",
+      "template": "banner",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/09.jpg",
+      "output": "output/waterfall/tackleroom_ig_content-factory-cover.jpg",
+      "text": {
+        "headline": "Content Factory for E-Commerce",
+        "subhead": "7 slides on building a system that publishes at scale.",
+        "cta": "SWIPE \u2192",
+        "footer": "TACKLEROOM SUPPLY \u00b7 CAROUSEL"
+      },
+      "theme": {
+        "headlineColor": "#F8FBFF",
+        "subheadColor": "#D8E4EF",
+        "footerColor": "#BCD0E4",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(34,88,170,0.88)",
+        "ctaStroke": "rgba(145,184,242,0.40)",
+        "gradientStart": "#0B1B2B",
+        "gradientEnd": "#2D5C8F"
+      },
+      "overlay": {
+        "leftColor": "9,19,31",
+        "midColor": "20,48,79",
+        "rightColor": "44,94,141",
+        "leftOpacity": 0.82,
+        "midOpacity": 0.46,
+        "rightOpacity": 0.16
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Source Serif 4, Georgia, serif",
+        "headlineSize": 66,
+        "subheadSize": 28
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "maxHeadlineChars": 16,
+        "maxSubheadChars": 28
+      }
+    }
+  ]
+}

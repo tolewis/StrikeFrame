@@ -1,0 +1,114 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#FFFFFF",
+      "subheadColor": "#e4e4e7",
+      "footerColor": "rgba(255,255,255,0.35)",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(232,93,58,0.92)",
+      "ctaStroke": "rgba(255,160,120,0.35)"
+    }
+  },
+  "renders": [
+    {
+      "_comment": "=== sportfisher-running | Variant C ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/test-stars-editorial.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
+      "text": {
+        "headline": "Rigged Right. Every Time.",
+        "subhead": "Offshore tackle tested by the anglers who sell it.",
+        "cta": "\u2605\u2605\u2605\u2605\u2605  RATED 4.8 BY ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "8,30,50",
+        "midColor": "8,30,50",
+        "rightColor": "8,30,50",
+        "leftOpacity": 0.55,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.15,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 90,
+        "subheadSize": 58,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 72,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 80,
+        "headlineY": 280,
+        "subheadY": 470,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 80,
+        "ctaRectY": 681,
+        "ctaX": 365,
+        "ctaY": 726,
+        "ctaWidth": 570,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    },
+    {
+      "_comment": "=== underwater-mahi-sunlight | Variant C ===",
+      "output": "/mnt/raid/Data/tmp/ads/tof/test-stars-centered.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_133588506.jpeg",
+      "text": {
+        "headline": "Rigged Right. Every Time.",
+        "subhead": "Offshore tackle tested by the anglers who sell it.",
+        "cta": "\u2605\u2605\u2605\u2605\u2605  RATED 4.8 BY ANGLERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "0,20,40",
+        "midColor": "0,20,40",
+        "rightColor": "0,20,40",
+        "leftOpacity": 0.25,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.25,
+        "vignetteBottom": 0.45
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 96,
+        "subheadSize": 60,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "subheadLineHeight": 75,
+        "ctaSize": 44,
+        "ctaWeight": 700,
+        "footerSize": 14,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 200,
+        "subheadY": 610,
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "ctaRectX": 135,
+        "ctaRectY": 828,
+        "ctaX": 540,
+        "ctaY": 873,
+        "ctaWidth": 810,
+        "ctaHeight": 90,
+        "footerY": 1040
+      }
+    }
+  ]
+}

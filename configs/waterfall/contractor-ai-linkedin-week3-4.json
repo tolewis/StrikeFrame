@@ -1,0 +1,129 @@
+{
+  "defaults": {
+    "preset": "linkedin-landscape",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#F5F7FB",
+      "subheadColor": "#D7DDE8",
+      "footerColor": "#AEB9CA",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(21,32,54,0.82)",
+      "ctaStroke": "rgba(132,157,198,0.28)",
+      "gradientStart": "#0A101B",
+      "gradientEnd": "#334A6A",
+      "textPanelFill": "rgba(255,255,255,0.04)",
+      "textPanelStroke": "rgba(255,255,255,0.09)"
+    },
+    "overlay": {
+      "leftColor": "7,11,19",
+      "midColor": "20,30,48",
+      "rightColor": "56,80,112",
+      "leftOpacity": 0.84,
+      "midOpacity": 0.48,
+      "rightOpacity": 0.18
+    },
+    "typography": {
+      "headlineFontFamily": "Outfit, Arial, sans-serif",
+      "bodyFontFamily": "Source Serif 4, Georgia, serif",
+      "headlineSize": 54,
+      "subheadSize": 25
+    },
+    "layout": {
+      "personality": "split-card",
+      "panelWidth": 720,
+      "panelHeight": 390
+    }
+  },
+  "renders": [
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/approved/source-grade-backgrounds/contractor-ai-sourcegrade-02.jpg",
+      "output": "output/waterfall/2026-03-20_linkedin_harper-long_resigned.jpg",
+      "text": {
+        "headline": "I Resigned After Ten Years",
+        "subhead": "Harper was the best thing that happened to me. Walking away was the only way to honor it.",
+        "cta": "CONTRACTOR-AI.COM",
+        "footer": "CONTRACTOR-AI \u00b7 CAREER"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/library/04-technology/christopher-gower-m_HRfLhgABo-unsplash.jpg",
+      "output": "output/waterfall/2026-03-21_linkedin_ai-office-work_office-first.jpg",
+      "text": {
+        "headline": "Office Work Changes First",
+        "subhead": "AI won't start on the slab. It starts with the RFIs, reports, and routing that nobody sees.",
+        "cta": "CONTRACTOR-AI.COM",
+        "footer": "CONTRACTOR-AI \u00b7 AI + CONSTRUCTION"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/library/03-leadership/marvin-meyer-SYTO3xs06fU-unsplash.jpg",
+      "output": "output/waterfall/2026-03-24_linkedin_ai-consultant_less-chaos.jpg",
+      "text": {
+        "headline": "Less Chaos, Not More Tools",
+        "subhead": "Most companies shopping for AI are shopping for relief. The workflow is the real problem.",
+        "cta": "CONTRACTOR-AI.COM",
+        "footer": "CONTRACTOR-AI \u00b7 AI CONSULTING"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/library/04-technology/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg",
+      "output": "output/waterfall/2026-03-25_linkedin_pdf-vision_reads-drawings.jpg",
+      "text": {
+        "headline": "AI That Reads Drawings",
+        "subhead": "Most tools just OCR PDFs. The real wedge is understanding what the building is.",
+        "cta": "CONTRACTOR-AI.COM",
+        "footer": "CONTRACTOR-AI \u00b7 PDF VISION"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/approved/source-grade-backgrounds/contractor-ai-sourcegrade-04.jpg",
+      "output": "output/waterfall/2026-03-26_linkedin_bid-day-short-1_400k-fax.jpg",
+      "text": {
+        "headline": "The $400K Fax",
+        "subhead": "A mechanical sub buried an exclusion in a fax cover sheet. We won the job. We carried the cost.",
+        "cta": "CONTRACTOR-AI.COM",
+        "footer": "CONTRACTOR-AI \u00b7 BID DAY"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/approved/source-grade-backgrounds/contractor-ai-sourcegrade-06.jpg",
+      "output": "output/waterfall/2026-03-27_linkedin_bid-day-short-2_right-vs-game.jpg",
+      "text": {
+        "headline": "Right vs In the Game",
+        "subhead": "Our estimate was $14.2M. They won at $12.8M. Their final cost hit $16M in change orders.",
+        "cta": "CONTRACTOR-AI.COM",
+        "footer": "CONTRACTOR-AI \u00b7 BID DAY"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/library/03-leadership/randy-fath-ymf4_9Y9S_A-unsplash.jpg",
+      "output": "output/waterfall/2026-03-28_linkedin_bid-day-short-3_relationship.jpg",
+      "text": {
+        "headline": "The Best Number Isn't on Bid Day",
+        "subhead": "It comes from the phone call two weeks before. Subs who trust you give you their best price.",
+        "cta": "CONTRACTOR-AI.COM",
+        "footer": "CONTRACTOR-AI \u00b7 BID DAY"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/library/05-people-field/tungart7-engineer-8733874_1920.jpg",
+      "output": "output/waterfall/2026-03-31_linkedin_rfi-short-2_superintendent.jpg",
+      "text": {
+        "headline": "He Sees It. Can't Write the Fix.",
+        "subhead": "The people who know the most about field problems are the least equipped to document them.",
+        "cta": "CONTRACTOR-AI.COM",
+        "footer": "CONTRACTOR-AI \u00b7 RFI INSIGHTS"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/library/04-technology/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg",
+      "output": "output/waterfall/2026-04-01_linkedin_rfi-short-3_ai-smell.jpg",
+      "text": {
+        "headline": "AI Documents Have a Smell",
+        "subhead": "\"A discrepancy has been observed.\" Nobody on a jobsite talks like that. Voice matters.",
+        "cta": "TRY RFI.MSG",
+        "footer": "CONTRACTOR-AI \u00b7 RFI AUTOMATION"
+      }
+    }
+  ]
+}

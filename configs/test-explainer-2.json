@@ -1,0 +1,772 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#FFFFFF",
+      "subheadColor": "#e4e4e7",
+      "footerColor": "rgba(255,255,255,0.01)",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(232,93,58,0.92)",
+      "ctaStroke": "rgba(255,160,120,0.35)"
+    }
+  },
+  "renders": [
+    {
+      "_comment": "=== planer-bridle-kit | Variant a ===",
+      "output": "/mnt/raid/Data/tmp/ads/explainer/planer-bridle-kit-a.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_133588506.jpeg",
+      "productImage": {
+        "path": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/planer-bridle-kit.jpg",
+        "x": 20,
+        "y": 600,
+        "width": 400,
+        "height": 460,
+        "padding": 20
+      },
+      "text": {
+        "headline": "SKIP THE GUESSWORK, START PLANER FISHING TODAY",
+        "subhead": "",
+        "cta": "SHOP NOW",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,20,35",
+        "midColor": "5,20,35",
+        "rightColor": "5,20,35",
+        "leftOpacity": 0.25,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.25,
+        "vignetteBottom": 0.3
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 64,
+        "subheadSize": 1,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 20,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 280,
+        "subheadY": 570,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 520,
+        "ctaHeight": 50,
+        "ctaGroup": {
+          "relativeTo": "canvas",
+          "anchorX": "left",
+          "anchorY": "top",
+          "offsetX": 500,
+          "offsetY": 870,
+          "textAlign": "center"
+        },
+        "footerY": 1055
+      },
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 0,
+          "y": 580,
+          "width": 440,
+          "height": 500,
+          "fill": "rgba(255,255,255,0.95)"
+        },
+        {
+          "type": "rectangle",
+          "x": 440,
+          "y": 580,
+          "width": 640,
+          "height": 500,
+          "fill": "rgba(30,30,30,0.92)"
+        }
+      ],
+      "textLayers": [
+        {
+          "content": "FEATURES",
+          "x": 475,
+          "y": 615,
+          "fontSize": 17,
+          "fontWeight": 700,
+          "color": "rgba(255,255,255,0.5)",
+          "maxChars": 40
+        },
+        {
+          "content": "\u2713 150lb Momoi Leader, 100ft Ready to Rig",
+          "x": 475,
+          "y": 660,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 Matched Planer and Bridle System",
+          "x": 475,
+          "y": 725,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 Full Rigging Kit and Free YoYo Reel",
+          "x": 475,
+          "y": 790,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "THETACKLEROOM.COM",
+          "x": 760,
+          "y": 1055,
+          "fontSize": 12,
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.25)",
+          "maxChars": 40,
+          "align": "center"
+        }
+      ]
+    },
+    {
+      "_comment": "=== planer-bridle-kit | Variant b ===",
+      "output": "/mnt/raid/Data/tmp/ads/explainer/planer-bridle-kit-b.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_133588506.jpeg",
+      "productImage": {
+        "path": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/planer-bridle-kit.jpg",
+        "x": 20,
+        "y": 600,
+        "width": 400,
+        "height": 460,
+        "padding": 20
+      },
+      "text": {
+        "headline": "WHY PLANER BRIDLE KIT?",
+        "subhead": "",
+        "cta": "FROM $104.99",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,20,35",
+        "midColor": "5,20,35",
+        "rightColor": "5,20,35",
+        "leftOpacity": 0.25,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.25,
+        "vignetteBottom": 0.3
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 64,
+        "subheadSize": 1,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 20,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 280,
+        "subheadY": 570,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 520,
+        "ctaHeight": 50,
+        "ctaGroup": {
+          "relativeTo": "canvas",
+          "anchorX": "left",
+          "anchorY": "top",
+          "offsetX": 500,
+          "offsetY": 870,
+          "textAlign": "center"
+        },
+        "footerY": 1055
+      },
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 0,
+          "y": 580,
+          "width": 440,
+          "height": 500,
+          "fill": "rgba(255,255,255,0.95)"
+        },
+        {
+          "type": "rectangle",
+          "x": 440,
+          "y": 580,
+          "width": 640,
+          "height": 500,
+          "fill": "rgba(30,30,30,0.92)"
+        }
+      ],
+      "textLayers": [
+        {
+          "content": "WHY THIS ONE",
+          "x": 475,
+          "y": 615,
+          "fontSize": 17,
+          "fontWeight": 700,
+          "color": "rgba(255,255,255,0.5)",
+          "maxChars": 40
+        },
+        {
+          "content": "\u2713 Every kit ships with a full 100-foot...",
+          "x": 475,
+          "y": 660,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 The bridle is built specifically for the...",
+          "x": 475,
+          "y": 725,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 The included rigging kit has every piece...",
+          "x": 475,
+          "y": 790,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "THETACKLEROOM.COM",
+          "x": 760,
+          "y": 1055,
+          "fontSize": 12,
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.25)",
+          "maxChars": 40,
+          "align": "center"
+        }
+      ]
+    },
+    {
+      "_comment": "=== planer-bridle-kit | Variant c ===",
+      "output": "/mnt/raid/Data/tmp/ads/explainer/planer-bridle-kit-c.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_133588506.jpeg",
+      "productImage": {
+        "path": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/planer-bridle-kit.jpg",
+        "x": 20,
+        "y": 600,
+        "width": 400,
+        "height": 460,
+        "padding": 20
+      },
+      "text": {
+        "headline": "PLANER BRIDLE KIT",
+        "subhead": "",
+        "cta": "GET IT NOW",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,20,35",
+        "midColor": "5,20,35",
+        "rightColor": "5,20,35",
+        "leftOpacity": 0.25,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.25,
+        "vignetteBottom": 0.3
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 64,
+        "subheadSize": 1,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 20,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 280,
+        "subheadY": 570,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 520,
+        "ctaHeight": 50,
+        "ctaGroup": {
+          "relativeTo": "canvas",
+          "anchorX": "left",
+          "anchorY": "top",
+          "offsetX": 500,
+          "offsetY": 870,
+          "textAlign": "center"
+        },
+        "footerY": 1055
+      },
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 0,
+          "y": 580,
+          "width": 440,
+          "height": 500,
+          "fill": "rgba(255,255,255,0.95)"
+        },
+        {
+          "type": "rectangle",
+          "x": 440,
+          "y": 580,
+          "width": 640,
+          "height": 500,
+          "fill": "rgba(30,30,30,0.92)"
+        }
+      ],
+      "textLayers": [
+        {
+          "content": "THE SPECS",
+          "x": 475,
+          "y": 615,
+          "fontSize": 17,
+          "fontWeight": 700,
+          "color": "rgba(255,255,255,0.5)",
+          "maxChars": 40
+        },
+        {
+          "content": "\u2713 By Epic Fishing Co.",
+          "x": 475,
+          "y": 660,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 By Epic Fishing Co.",
+          "x": 475,
+          "y": 725,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 By Epic Fishing Co.",
+          "x": 475,
+          "y": 790,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "THETACKLEROOM.COM",
+          "x": 760,
+          "y": 1055,
+          "fontSize": 12,
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.25)",
+          "maxChars": 40,
+          "align": "center"
+        }
+      ]
+    },
+    {
+      "_comment": "=== stainless-wahoo-trolling-lure-kit-with-weight-epic-axis | Variant a ===",
+      "output": "/mnt/raid/Data/tmp/ads/explainer/stainless-wahoo-trolling-lure-kit-with-weight-epic-axis-a.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_175678582.jpeg",
+      "productImage": {
+        "path": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Products/EpicAxisWahooLureMahiPattern.jpg",
+        "x": 20,
+        "y": 600,
+        "width": 400,
+        "height": 460,
+        "padding": 20
+      },
+      "text": {
+        "headline": "DROP A TOURNAMENT-READY WAHOO SPREAD IN MINUTES, NOT HOURS",
+        "subhead": "",
+        "cta": "SHOP NOW",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,20,35",
+        "midColor": "5,20,35",
+        "rightColor": "5,20,35",
+        "leftOpacity": 0.25,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.25,
+        "vignetteBottom": 0.3
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 64,
+        "subheadSize": 1,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 20,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 280,
+        "subheadY": 570,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 520,
+        "ctaHeight": 50,
+        "ctaGroup": {
+          "relativeTo": "canvas",
+          "anchorX": "left",
+          "anchorY": "top",
+          "offsetX": 500,
+          "offsetY": 870,
+          "textAlign": "center"
+        },
+        "footerY": 1055
+      },
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 0,
+          "y": 580,
+          "width": 440,
+          "height": 500,
+          "fill": "rgba(255,255,255,0.95)"
+        },
+        {
+          "type": "rectangle",
+          "x": 440,
+          "y": 580,
+          "width": 640,
+          "height": 500,
+          "fill": "rgba(30,30,30,0.92)"
+        }
+      ],
+      "textLayers": [
+        {
+          "content": "FEATURES",
+          "x": 475,
+          "y": 615,
+          "fontSize": 17,
+          "fontWeight": 700,
+          "color": "rgba(255,255,255,0.5)",
+          "maxChars": 40
+        },
+        {
+          "content": "\u2713 480lb Stainless Cable Stiff Rig",
+          "x": 475,
+          "y": 660,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 32oz Inline Trolling Weight",
+          "x": 475,
+          "y": 725,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 25ft 250lb Mono Shock Leader",
+          "x": 475,
+          "y": 790,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "THETACKLEROOM.COM",
+          "x": 760,
+          "y": 1055,
+          "fontSize": 12,
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.25)",
+          "maxChars": 40,
+          "align": "center"
+        }
+      ]
+    },
+    {
+      "_comment": "=== stainless-wahoo-trolling-lure-kit-with-weight-epic-axis | Variant b ===",
+      "output": "/mnt/raid/Data/tmp/ads/explainer/stainless-wahoo-trolling-lure-kit-with-weight-epic-axis-b.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_175678582.jpeg",
+      "productImage": {
+        "path": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Products/EpicAxisWahooLureMahiPattern.jpg",
+        "x": 20,
+        "y": 600,
+        "width": 400,
+        "height": 460,
+        "padding": 20
+      },
+      "text": {
+        "headline": "WHY STAINLESS WAHOO TROLLING LURE KIT WITH WEIGHT?",
+        "subhead": "",
+        "cta": "FROM $84.99",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,20,35",
+        "midColor": "5,20,35",
+        "rightColor": "5,20,35",
+        "leftOpacity": 0.25,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.25,
+        "vignetteBottom": 0.3
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 64,
+        "subheadSize": 1,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 20,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 280,
+        "subheadY": 570,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 520,
+        "ctaHeight": 50,
+        "ctaGroup": {
+          "relativeTo": "canvas",
+          "anchorX": "left",
+          "anchorY": "top",
+          "offsetX": 500,
+          "offsetY": 870,
+          "textAlign": "center"
+        },
+        "footerY": 1055
+      },
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 0,
+          "y": 580,
+          "width": 440,
+          "height": 500,
+          "fill": "rgba(255,255,255,0.95)"
+        },
+        {
+          "type": "rectangle",
+          "x": 440,
+          "y": 580,
+          "width": 640,
+          "height": 500,
+          "fill": "rgba(30,30,30,0.92)"
+        }
+      ],
+      "textLayers": [
+        {
+          "content": "WHY THIS ONE",
+          "x": 475,
+          "y": 615,
+          "fontSize": 17,
+          "fontWeight": 700,
+          "color": "rgba(255,255,255,0.5)",
+          "maxChars": 40
+        },
+        {
+          "content": "\u2713 The 6ft stiff rig uses 480lb test...",
+          "x": 475,
+          "y": 660,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 The 32oz trolling weight comes pre-rigged...",
+          "x": 475,
+          "y": 725,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 A wahoo hitting a lure at 60mph generates...",
+          "x": 475,
+          "y": 790,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "THETACKLEROOM.COM",
+          "x": 760,
+          "y": 1055,
+          "fontSize": 12,
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.25)",
+          "maxChars": 40,
+          "align": "center"
+        }
+      ]
+    },
+    {
+      "_comment": "=== stainless-wahoo-trolling-lure-kit-with-weight-epic-axis | Variant c ===",
+      "output": "/mnt/raid/Data/tmp/ads/explainer/stainless-wahoo-trolling-lure-kit-with-weight-epic-axis-c.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_175678582.jpeg",
+      "productImage": {
+        "path": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Products/EpicAxisWahooLureMahiPattern.jpg",
+        "x": 20,
+        "y": 600,
+        "width": 400,
+        "height": 460,
+        "padding": 20
+      },
+      "text": {
+        "headline": "STAINLESS WAHOO TROLLING LURE KIT WITH WEIGHT",
+        "subhead": "",
+        "cta": "GET IT NOW",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,20,35",
+        "midColor": "5,20,35",
+        "rightColor": "5,20,35",
+        "leftOpacity": 0.25,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.25,
+        "vignetteBottom": 0.3
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 64,
+        "subheadSize": 1,
+        "headlineWeight": 800,
+        "subheadWeight": 400,
+        "ctaSize": 20,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 280,
+        "subheadY": 570,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 520,
+        "ctaHeight": 50,
+        "ctaGroup": {
+          "relativeTo": "canvas",
+          "anchorX": "left",
+          "anchorY": "top",
+          "offsetX": 500,
+          "offsetY": 870,
+          "textAlign": "center"
+        },
+        "footerY": 1055
+      },
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 0,
+          "y": 580,
+          "width": 440,
+          "height": 500,
+          "fill": "rgba(255,255,255,0.95)"
+        },
+        {
+          "type": "rectangle",
+          "x": 440,
+          "y": 580,
+          "width": 640,
+          "height": 500,
+          "fill": "rgba(30,30,30,0.92)"
+        }
+      ],
+      "textLayers": [
+        {
+          "content": "THE SPECS",
+          "x": 475,
+          "y": 615,
+          "fontSize": 17,
+          "fontWeight": 700,
+          "color": "rgba(255,255,255,0.5)",
+          "maxChars": 40
+        },
+        {
+          "content": "\u2713 By Epic Fishing Co.",
+          "x": 475,
+          "y": 660,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 By Epic Fishing Co.",
+          "x": 475,
+          "y": 725,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 By Epic Fishing Co.",
+          "x": 475,
+          "y": 790,
+          "fontSize": 20,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "THETACKLEROOM.COM",
+          "x": 760,
+          "y": 1055,
+          "fontSize": 12,
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.25)",
+          "maxChars": 40,
+          "align": "center"
+        }
+      ]
+    }
+  ]
+}

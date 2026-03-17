@@ -1,0 +1,152 @@
+{
+  "defaults": {
+    "preset": "linkedin-landscape",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#F5F7FB",
+      "subheadColor": "#D7DDE8",
+      "footerColor": "#AEB9CA",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(21,32,54,0.82)",
+      "ctaStroke": "rgba(132,157,198,0.28)",
+      "gradientStart": "#0A101B",
+      "gradientEnd": "#334A6A",
+      "textPanelFill": "rgba(255,255,255,0.05)",
+      "textPanelStroke": "rgba(255,255,255,0.10)"
+    },
+    "overlay": {
+      "leftColor": "7,11,19",
+      "midColor": "20,30,48",
+      "rightColor": "56,80,112",
+      "leftOpacity": 0.58,
+      "midOpacity": 0.18,
+      "rightOpacity": 0.06
+    },
+    "typography": {
+      "headlineFontFamily": "Outfit, Arial, sans-serif",
+      "bodyFontFamily": "Source Serif 4, Georgia, serif",
+      "headlineSize": 56,
+      "subheadSize": 25,
+      "footerSize": 18
+    },
+    "layout": {
+      "personality": "split-card",
+      "panelWidth": 720,
+      "panelHeight": 390,
+      "maxHeadlineChars": 24,
+      "maxSubheadChars": 46
+    }
+  },
+  "renders": [
+    {
+      "backgroundPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/generated/x-batch-2026-03-16/01_strikeframe_collage.jpg",
+      "output": "output/waterfall/2026-03-16_strikeframe-built-instead.jpg",
+      "text": {
+        "headline": "Built StrikeFrame",
+        "subhead": "90+ ads in 3 days after 4 refactors.",
+        "cta": "BUILT THIS WEEK",
+        "footer": "@TOLEWIS \u00b7 STRIKEFRAME"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/generated/x-batch-2026-03-16/02_bidday_fax.jpg",
+      "output": "output/waterfall/2026-03-16_bid-day-scar.jpg",
+      "text": {
+        "headline": "The $400K Fax",
+        "subhead": "We won the job. We carried the cost.",
+        "cta": "JOBSITE SCAR",
+        "footer": "@TOLEWIS \u00b7 BID DAY"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/generated/x-batch-2026-03-16/03_token_meter.jpg",
+      "output": "output/waterfall/2026-03-16_tokens-are-the-ceiling.jpg",
+      "text": {
+        "headline": "Tokens are the ceiling",
+        "subhead": "I burned a 4-hour window in 2 and the agent lost the thread.",
+        "cta": "GUARDRAIL",
+        "footer": "@TOLEWIS \u00b7 AI OPS"
+      },
+      "theme": {
+        "headlineColor": "#FFF8F0",
+        "subheadColor": "#EEDFCF",
+        "footerColor": "#D6C0A8",
+        "ctaTextColor": "#FFF8F0",
+        "ctaFill": "rgba(112,71,42,0.74)",
+        "ctaStroke": "rgba(242,221,196,0.30)",
+        "gradientStart": "#3A2419",
+        "gradientEnd": "#A87956",
+        "textPanelFill": "rgba(255,255,255,0.04)",
+        "textPanelStroke": "rgba(255,255,255,0.09)"
+      },
+      "overlay": {
+        "leftColor": "35,20,15",
+        "midColor": "74,47,34",
+        "rightColor": "166,116,82",
+        "leftOpacity": 0.58,
+        "midOpacity": 0.18,
+        "rightOpacity": 0.05
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/generated/x-batch-2026-03-16/04_plumbing_stack.jpg",
+      "output": "output/waterfall/2026-03-16_plumbing-comes-first.jpg",
+      "text": {
+        "headline": "Plumbing comes first",
+        "subhead": "GA + Ads + Shopify before lunch. Then 50 articles went live.",
+        "cta": "SYSTEMS",
+        "footer": "@TOLEWIS \u00b7 CONTENT OPS"
+      },
+      "theme": {
+        "headlineColor": "#F8FBFF",
+        "subheadColor": "#D8E4EF",
+        "footerColor": "#BCD0E4",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(34,88,170,0.88)",
+        "ctaStroke": "rgba(145,184,242,0.40)",
+        "gradientStart": "#0B1B2B",
+        "gradientEnd": "#2D5C8F",
+        "textPanelFill": "rgba(255,255,255,0.05)",
+        "textPanelStroke": "rgba(255,255,255,0.12)"
+      },
+      "overlay": {
+        "leftColor": "9,19,31",
+        "midColor": "20,48,79",
+        "rightColor": "44,94,141",
+        "leftOpacity": 0.6,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.05
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/generated/x-batch-2026-03-16/05_open_loops.jpg",
+      "output": "output/waterfall/2026-03-16_open-loops-rule.jpg",
+      "text": {
+        "headline": "3-4 loops = ship",
+        "subhead": "5-7 loops = refactor theater.",
+        "cta": "OPERATING RULE",
+        "footer": "@TOLEWIS \u00b7 EXECUTION"
+      },
+      "theme": {
+        "headlineColor": "#FFF8F0",
+        "subheadColor": "#EEDFCF",
+        "footerColor": "#D6C0A8",
+        "ctaTextColor": "#FFF8F0",
+        "ctaFill": "rgba(112,71,42,0.74)",
+        "ctaStroke": "rgba(242,221,196,0.30)",
+        "gradientStart": "#3A2419",
+        "gradientEnd": "#A87956",
+        "textPanelFill": "rgba(255,255,255,0.04)",
+        "textPanelStroke": "rgba(255,255,255,0.09)"
+      },
+      "overlay": {
+        "leftColor": "35,20,15",
+        "midColor": "74,47,34",
+        "rightColor": "166,116,82",
+        "leftOpacity": 0.58,
+        "midOpacity": 0.18,
+        "rightOpacity": 0.05
+      }
+    }
+  ]
+}

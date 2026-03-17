@@ -1,0 +1,59 @@
+{
+  "preset": "landscape-banner",
+  "width": 3840,
+  "height": 2160,
+  "template": "banner",
+  "backgroundPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/launch-computers/desk-monitor.jpg",
+  "output": "output/strikeframe-proof-4k.png",
+  "text": {
+    "headline": "StrikeFrame 4K PNG",
+    "subhead": "3840x2160 proof render with stronger contrast and cleaner modern launch styling.",
+    "cta": "PNG PROOF",
+    "footer": "STRIKEFRAME · 4K PNG"
+  },
+  "theme": {
+    "headlineColor": "#F7FAFE",
+    "subheadColor": "#D6E0EA",
+    "footerColor": "#ACBBCD",
+    "ctaTextColor": "#FFFFFF",
+    "ctaFill": "rgba(20,82,186,0.92)",
+    "ctaStroke": "rgba(151,194,255,0.42)",
+    "textPanelFill": "rgba(8,17,32,0.50)",
+    "textPanelStroke": "rgba(255,255,255,0.12)"
+  },
+  "overlay": {
+    "leftColor": "7,12,22",
+    "midColor": "18,32,58",
+    "rightColor": "54,91,142",
+    "leftOpacity": 0.84,
+    "midOpacity": 0.50,
+    "rightOpacity": 0.22
+  },
+  "typography": {
+    "headlineFontFamily": "Outfit, Arial, sans-serif",
+    "bodyFontFamily": "Source Serif 4, Georgia, serif",
+    "headlineSize": 214,
+    "subheadSize": 64,
+    "ctaSize": 46,
+    "footerSize": 34
+  },
+  "layout": {
+    "personality": "split-card",
+    "leftX": 220,
+    "headlineY": 290,
+    "subheadY": 840,
+    "ctaX": 252,
+    "ctaY": 1180,
+    "footerY": 1940,
+    "maxHeadlineChars": 18,
+    "maxSubheadChars": 42,
+    "ctaWidth": 520,
+    "ctaHeight": 110,
+    "ctaRectX": 210,
+    "ctaRectY": 1100,
+    "panelX": 140,
+    "panelY": 120,
+    "panelWidth": 1900,
+    "panelHeight": 1320
+  }
+}

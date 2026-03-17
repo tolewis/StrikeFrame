@@ -14,7 +14,7 @@
   "renders": [
     {
       "_comment": "=== deep-drop-weights | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/deep-drop-weights-a.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/deep-drop-weights-a.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -101,7 +101,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Narrow Diameter Profile",
+          "content": "\u2713 Narrow 1.5\" diameter cuts current drift",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -110,7 +110,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Deep-Seated Brass Eyelets",
+          "content": "\u2713 Deep-seated brass eyelets won't pull free",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -119,7 +119,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Eight Sizes for Every Depth",
+          "content": "\u2713 Eight sizes from 1lb to 10lb",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -141,7 +141,7 @@
     },
     {
       "_comment": "=== deep-drop-weights | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/deep-drop-weights-b.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/deep-drop-weights-b.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -153,7 +153,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "WHY DEEP DROP WEIGHTS?",
+        "headline": "LESS DRIFT. MORE TIME ON TARGET. FROM $10.99.",
         "subhead": "",
         "cta": "FROM $10.99",
         "footer": ""
@@ -228,7 +228,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 That means less line out and more time on target",
+          "content": "\u2713 Wide weights catch current \u2014 these cut through it",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -237,7 +237,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Deep-Seated Brass Eyelets",
+          "content": "\u2713 Consistent 1.5\" diameter across all eight sizes",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -246,7 +246,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 1lb for shallow deep drops",
+          "content": "\u2713 Deep-seated brass eyelets, hand-poured lead",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -268,7 +268,7 @@
     },
     {
       "_comment": "=== deep-drop-weights | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/deep-drop-weights-c.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/deep-drop-weights-c.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -280,7 +280,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "DEEP DROP WEIGHTS",
+        "headline": "THE DEEP DROP WEIGHT THAT HOLDS ITS LINE",
         "subhead": "",
         "cta": "GET IT NOW",
         "footer": ""
@@ -355,7 +355,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Hand-poured lead with deep-seated brass eyelets",
+          "content": "\u2713 Hand-poured lead, consistent 1.5\" diameter",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -364,7 +364,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Consistent 1.5-inch diameter across all sizes",
+          "content": "\u2713 Deep-seated brass eyelets on every size",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -373,7 +373,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 8 sizes: 1, 2, 3, 4, 5, 6, 8, 10 lbs",
+          "content": "\u2713 1, 2, 3, 4, 5, 6, 8, and 10lb sizes",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -395,7 +395,7 @@
     },
     {
       "_comment": "=== planer-bridle-kit | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/planer-bridle-kit-a.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/planer-bridle-kit-a.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_133588506.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -407,7 +407,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "SKIP THE GUESSWORK, START PLANER FISHING TODAY",
+        "headline": "SKIP THE GUESSWORK. START PLANER FISHING TODAY.",
         "subhead": "",
         "cta": "SHOP NOW",
         "footer": ""
@@ -482,7 +482,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 150lb Momoi Leader, 100ft Ready to Rig",
+          "content": "\u2713 150lb Momoi leader, 100ft ready to rig",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -491,7 +491,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Matched Planer and Bridle System",
+          "content": "\u2713 Matched planer, bridle, and hardware",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -500,7 +500,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Full Rigging Kit and Free YoYo Reel",
+          "content": "\u2713 Includes free Cuban YoYo storage reel",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -522,7 +522,7 @@
     },
     {
       "_comment": "=== planer-bridle-kit | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/planer-bridle-kit-b.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/planer-bridle-kit-b.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_133588506.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -534,7 +534,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "WHY PLANER BRIDLE KIT?",
+        "headline": "EVERYTHING YOU NEED TO PLANER FISH. $104.99.",
         "subhead": "",
         "cta": "FROM $104.99",
         "footer": ""
@@ -609,7 +609,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 150lb Momoi Leader, 100ft Ready to Rig",
+          "content": "\u2713 Planer + bridle + leader + rigging kit + YoYo reel",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -618,7 +618,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Matched Planer and Bridle System",
+          "content": "\u2713 150lb Momoi leader, pre-cut at 100ft",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -627,7 +627,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 No extra trips to the tackle shop",
+          "content": "\u2713 No sourcing parts. No compatibility guessing.",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -649,7 +649,7 @@
     },
     {
       "_comment": "=== planer-bridle-kit | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/planer-bridle-kit-c.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/planer-bridle-kit-c.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_133588506.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -661,7 +661,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "PLANER BRIDLE KIT",
+        "headline": "YOUR COMPLETE PLANER FISHING STARTER KIT",
         "subhead": "",
         "cta": "GET IT NOW",
         "footer": ""
@@ -736,7 +736,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 150lb Momoi Leader, 100ft Ready to Rig",
+          "content": "\u2713 Matched planer and bridle system",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -745,7 +745,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Matched Planer and Bridle System",
+          "content": "\u2713 100ft of 150lb Momoi monofilament leader",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -754,7 +754,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Full Rigging Kit and Free YoYo Reel",
+          "content": "\u2713 Full rigging hardware + free Cuban YoYo reel",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -776,7 +776,7 @@
     },
     {
       "_comment": "=== stainless-wahoo-trolling-lure-kit-with-weight-epic-axis | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/stainless-wahoo-trolling-lure-kit-with-weight-epic-axis-a.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/stainless-wahoo-trolling-lure-kit-with-weight-epic-axis-a.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_175678582.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -863,7 +863,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 480lb Stainless Cable Stiff Rig",
+          "content": "\u2713 Stainless lure + cable rig wahoo can't bite through",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -872,7 +872,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 32oz Inline Trolling Weight",
+          "content": "\u2713 32oz inline weight keeps it in the strike zone",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -881,7 +881,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 25ft 250lb Mono Shock Leader",
+          "content": "\u2713 25ft shock leader absorbs the hit",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -903,7 +903,7 @@
     },
     {
       "_comment": "=== stainless-wahoo-trolling-lure-kit-with-weight-epic-axis | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/stainless-wahoo-trolling-lure-kit-with-weight-epic-axis-b.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/stainless-wahoo-trolling-lure-kit-with-weight-epic-axis-b.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_175678582.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -915,7 +915,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "WHY STAINLESS WAHOO TROLLING LURE KIT WITH WEIGHT?",
+        "headline": "ONE KIT. LURE, WEIGHT, LEADER, RIG. $84.99.",
         "subhead": "",
         "cta": "FROM $84.99",
         "footer": ""
@@ -990,7 +990,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 480lb Stainless Cable Stiff Rig",
+          "content": "\u2713 Four components, matched and ready to fish",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -999,7 +999,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 32oz Inline Trolling Weight",
+          "content": "\u2713 480lb stainless cable rig \u2014 no bite-offs",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -1008,7 +1008,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 25ft 250lb Mono Shock Leader",
+          "content": "\u2713 Clip to your snap swivel and start trolling",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -1030,7 +1030,7 @@
     },
     {
       "_comment": "=== stainless-wahoo-trolling-lure-kit-with-weight-epic-axis | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/stainless-wahoo-trolling-lure-kit-with-weight-epic-axis-c.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/stainless-wahoo-trolling-lure-kit-with-weight-epic-axis-c.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_175678582.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -1042,7 +1042,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "STAINLESS WAHOO TROLLING LURE KIT WITH WEIGHT",
+        "headline": "RIGGED AND READY \u2014 CLIP ON AND TROLL",
         "subhead": "",
         "cta": "GET IT NOW",
         "footer": ""
@@ -1117,7 +1117,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 480lb Stainless Cable Stiff Rig",
+          "content": "\u2713 Epic Axis stainless lure on 480lb cable stiff rig",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -1126,7 +1126,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 32oz Inline Trolling Weight",
+          "content": "\u2713 32oz inline trolling weight for wahoo depth",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -1135,7 +1135,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 25ft 250lb Mono Shock Leader",
+          "content": "\u2713 25ft of 250lb Momoi shock leader included",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -1157,7 +1157,7 @@
     },
     {
       "_comment": "=== planer-bridle | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/planer-bridle-a.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/planer-bridle-a.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_219637627.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -1244,7 +1244,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 500lb Jerry Brown Hollow Core Braid",
+          "content": "\u2713 500lb Jerry Brown hollow core braid",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -1253,7 +1253,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 130lb SPRO Power Swivels on Both Ends",
+          "content": "\u2713 130lb SPRO power swivels on both ends",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -1262,7 +1262,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 24-Inch Length, Handmade in the USA",
+          "content": "\u2713 24 inches, handmade in the USA",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -1284,7 +1284,7 @@
     },
     {
       "_comment": "=== planer-bridle | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/planer-bridle-b.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/planer-bridle-b.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_219637627.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -1296,7 +1296,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "WHY PLANER FISHING BRIDLE?",
+        "headline": "500LB BRAID. SPRO SWIVELS. HANDMADE. $29.99.",
         "subhead": "",
         "cta": "FROM $29.99",
         "footer": ""
@@ -1371,7 +1371,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 500lb Jerry Brown Hollow Core Braid",
+          "content": "\u2713 Cheap bridles snap when the fish hits \u2014 this one holds",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -1380,7 +1380,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 130lb SPRO Power Swivels on Both Ends",
+          "content": "\u2713 130lb SPRO power swivels, both ends",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -1389,7 +1389,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 The 24-inch overall length is not arbitrary",
+          "content": "\u2713 24\" tuned length for clean planer release",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -1411,7 +1411,7 @@
     },
     {
       "_comment": "=== planer-bridle | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/planer-bridle-c.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/planer-bridle-c.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_219637627.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -1423,7 +1423,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "PLANER FISHING BRIDLE",
+        "headline": "THE BRIDLE BUILT FOR LOADS THAT BREAK CHEAP GEAR",
         "subhead": "",
         "cta": "GET IT NOW",
         "footer": ""
@@ -1498,7 +1498,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 500lb Jerry Brown Hollow Core Braid",
+          "content": "\u2713 500lb Jerry Brown hollow core braid",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -1507,7 +1507,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 130lb SPRO Power Swivels on Both Ends",
+          "content": "\u2713 130lb SPRO power swivels on both ends",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -1516,7 +1516,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 24-Inch Length, Handmade in the USA",
+          "content": "\u2713 24-inch length, handmade in the USA",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -1538,7 +1538,7 @@
     },
     {
       "_comment": "=== high-speed-trolling-weights | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/high-speed-trolling-weights-a.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/high-speed-trolling-weights-a.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_331722964.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -1625,7 +1625,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Cigar Shape Design",
+          "content": "\u2713 Cigar shape eliminates spin and flutter",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -1634,7 +1634,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 480lb Stainless Cable",
+          "content": "\u2713 480lb stainless cable with chafe protection",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -1643,7 +1643,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Dual BB Snap Swivels",
+          "content": "\u2713 Dual BB snap swivels \u2014 clip on, clip off",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -1665,7 +1665,7 @@
     },
     {
       "_comment": "=== high-speed-trolling-weights | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/high-speed-trolling-weights-b.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/high-speed-trolling-weights-b.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_331722964.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -1677,7 +1677,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "WHY TROLLING WEIGHTS?",
+        "headline": "ROUND WEIGHTS SPIN OUT AT SPEED. THESE DON'T. $14.99.",
         "subhead": "",
         "cta": "FROM $14.99",
         "footer": ""
@@ -1752,7 +1752,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Cigar Shape Design",
+          "content": "\u2713 Cigar shape tracks true from 8 to 14 knots",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -1761,7 +1761,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Chafe gear protects every cable loop",
+          "content": "\u2713 Chafe gear protects every cable connection",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -1770,7 +1770,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Clip on and off quickly",
+          "content": "\u2713 Five sizes: 16oz, 24oz, 32oz, 48oz, 64oz",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -1792,7 +1792,7 @@
     },
     {
       "_comment": "=== high-speed-trolling-weights | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/high-speed-trolling-weights-c.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/high-speed-trolling-weights-c.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_331722964.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -1804,7 +1804,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "TROLLING WEIGHTS",
+        "headline": "CIGAR-SHAPED FOR CLEAN TRACKING AT HIGH SPEED",
         "subhead": "",
         "cta": "GET IT NOW",
         "footer": ""
@@ -1879,9 +1879,18 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Cigar-shaped for clean tracking at high speed",
+          "content": "\u2713 480lb stainless steel cable rigging",
           "x": 455,
           "y": 675,
+          "fontSize": 34,
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "maxChars": 30
+        },
+        {
+          "content": "\u2713 Dual BB snap swivels for quick changes",
+          "x": 455,
+          "y": 775,
           "fontSize": 34,
           "fontWeight": 600,
           "color": "#ffffff",
@@ -1889,396 +1898,6 @@
         },
         {
           "content": "\u2713 16oz, 24oz, 32oz, 48oz, and 64oz",
-          "x": 455,
-          "y": 775,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Rigged on 480lb stainless steel cable",
-          "x": 455,
-          "y": 875,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "THETACKLEROOM.COM",
-          "x": 760,
-          "y": 1060,
-          "fontSize": 14,
-          "fontWeight": 600,
-          "color": "rgba(255,255,255,0.3)",
-          "maxChars": 40,
-          "align": "center"
-        }
-      ]
-    },
-    {
-      "_comment": "=== duck-decoy-weights | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/duck-decoy-weights-a.jpg",
-      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_284446852.jpeg",
-      "backgroundPosition": "attention",
-      "productImage": {
-        "path": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Products/duck-decoy-weights (1).jpg",
-        "x": 20,
-        "y": 600,
-        "width": 400,
-        "height": 460,
-        "padding": 20
-      },
-      "text": {
-        "headline": "KEEP YOUR DECOYS WHERE THEY BELONG, NOT DRIFTING DOWNWIND",
-        "subhead": "",
-        "cta": "SHOP NOW",
-        "footer": ""
-      },
-      "overlay": {
-        "leftColor": "5,20,35",
-        "midColor": "5,20,35",
-        "rightColor": "5,20,35",
-        "leftOpacity": 0.25,
-        "midOpacity": 0.2,
-        "rightOpacity": 0.25,
-        "vignetteBottom": 0.3
-      },
-      "typography": {
-        "headlineFontFamily": "Montserrat, Arial, sans-serif",
-        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
-        "headlineSize": 64,
-        "subheadSize": 1,
-        "headlineWeight": 800,
-        "subheadWeight": 400,
-        "ctaSize": 20,
-        "ctaWeight": 700,
-        "footerSize": 1,
-        "footerTracking": 4
-      },
-      "layout": {
-        "personality": "centered-hero",
-        "align": "center",
-        "leftX": 540,
-        "headlineY": 280,
-        "subheadY": 570,
-        "maxHeadlineChars": 22,
-        "maxSubheadChars": 1,
-        "ctaWidth": 520,
-        "ctaHeight": 50,
-        "ctaGroup": {
-          "relativeTo": "canvas",
-          "anchorX": "left",
-          "anchorY": "top",
-          "offsetX": 500,
-          "offsetY": 985,
-          "textAlign": "center"
-        },
-        "footerY": 1060
-      },
-      "shapes": [
-        {
-          "type": "rectangle",
-          "x": 0,
-          "y": 580,
-          "width": 440,
-          "height": 500,
-          "fill": "rgba(255,255,255,0.95)"
-        },
-        {
-          "type": "rectangle",
-          "x": 440,
-          "y": 580,
-          "width": 640,
-          "height": 500,
-          "fill": "rgba(30,30,30,0.92)"
-        }
-      ],
-      "textLayers": [
-        {
-          "content": "FEATURES",
-          "x": 455,
-          "y": 620,
-          "fontSize": 28,
-          "fontWeight": 700,
-          "color": "rgba(255,255,255,0.5)",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Mushroom Profile That Actually Holds",
-          "x": 455,
-          "y": 675,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Made in USA from 100% Reclaimed Lead",
-          "x": 455,
-          "y": 775,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Buy One or Buy a Bag, Your Call",
-          "x": 455,
-          "y": 875,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "THETACKLEROOM.COM",
-          "x": 760,
-          "y": 1060,
-          "fontSize": 14,
-          "fontWeight": 600,
-          "color": "rgba(255,255,255,0.3)",
-          "maxChars": 40,
-          "align": "center"
-        }
-      ]
-    },
-    {
-      "_comment": "=== duck-decoy-weights | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/duck-decoy-weights-b.jpg",
-      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_284446852.jpeg",
-      "backgroundPosition": "attention",
-      "productImage": {
-        "path": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Products/duck-decoy-weights (1).jpg",
-        "x": 20,
-        "y": 600,
-        "width": 400,
-        "height": 460,
-        "padding": 20
-      },
-      "text": {
-        "headline": "WHY DUCK DECOY WEIGHTS?",
-        "subhead": "",
-        "cta": "FROM $1.79",
-        "footer": ""
-      },
-      "overlay": {
-        "leftColor": "5,20,35",
-        "midColor": "5,20,35",
-        "rightColor": "5,20,35",
-        "leftOpacity": 0.25,
-        "midOpacity": 0.2,
-        "rightOpacity": 0.25,
-        "vignetteBottom": 0.3
-      },
-      "typography": {
-        "headlineFontFamily": "Montserrat, Arial, sans-serif",
-        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
-        "headlineSize": 64,
-        "subheadSize": 1,
-        "headlineWeight": 800,
-        "subheadWeight": 400,
-        "ctaSize": 20,
-        "ctaWeight": 700,
-        "footerSize": 1,
-        "footerTracking": 4
-      },
-      "layout": {
-        "personality": "centered-hero",
-        "align": "center",
-        "leftX": 540,
-        "headlineY": 280,
-        "subheadY": 570,
-        "maxHeadlineChars": 22,
-        "maxSubheadChars": 1,
-        "ctaWidth": 520,
-        "ctaHeight": 50,
-        "ctaGroup": {
-          "relativeTo": "canvas",
-          "anchorX": "left",
-          "anchorY": "top",
-          "offsetX": 500,
-          "offsetY": 985,
-          "textAlign": "center"
-        },
-        "footerY": 1060
-      },
-      "shapes": [
-        {
-          "type": "rectangle",
-          "x": 0,
-          "y": 580,
-          "width": 440,
-          "height": 500,
-          "fill": "rgba(255,255,255,0.95)"
-        },
-        {
-          "type": "rectangle",
-          "x": 440,
-          "y": 580,
-          "width": 640,
-          "height": 500,
-          "fill": "rgba(30,30,30,0.92)"
-        }
-      ],
-      "textLayers": [
-        {
-          "content": "WHY THIS ONE",
-          "x": 455,
-          "y": 620,
-          "fontSize": 28,
-          "fontWeight": 700,
-          "color": "rgba(255,255,255,0.5)",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Mushroom Profile That Actually Holds",
-          "x": 455,
-          "y": 675,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Made in USA from 100% Reclaimed Lead",
-          "x": 455,
-          "y": 775,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Buy them individually starting at $1.79",
-          "x": 455,
-          "y": 875,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "THETACKLEROOM.COM",
-          "x": 760,
-          "y": 1060,
-          "fontSize": 14,
-          "fontWeight": 600,
-          "color": "rgba(255,255,255,0.3)",
-          "maxChars": 40,
-          "align": "center"
-        }
-      ]
-    },
-    {
-      "_comment": "=== duck-decoy-weights | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/duck-decoy-weights-c.jpg",
-      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_284446852.jpeg",
-      "backgroundPosition": "attention",
-      "productImage": {
-        "path": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Products/duck-decoy-weights (1).jpg",
-        "x": 20,
-        "y": 600,
-        "width": 400,
-        "height": 460,
-        "padding": 20
-      },
-      "text": {
-        "headline": "DUCK DECOY WEIGHTS",
-        "subhead": "",
-        "cta": "GET IT NOW",
-        "footer": ""
-      },
-      "overlay": {
-        "leftColor": "5,20,35",
-        "midColor": "5,20,35",
-        "rightColor": "5,20,35",
-        "leftOpacity": 0.25,
-        "midOpacity": 0.2,
-        "rightOpacity": 0.25,
-        "vignetteBottom": 0.3
-      },
-      "typography": {
-        "headlineFontFamily": "Montserrat, Arial, sans-serif",
-        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
-        "headlineSize": 64,
-        "subheadSize": 1,
-        "headlineWeight": 800,
-        "subheadWeight": 400,
-        "ctaSize": 20,
-        "ctaWeight": 700,
-        "footerSize": 1,
-        "footerTracking": 4
-      },
-      "layout": {
-        "personality": "centered-hero",
-        "align": "center",
-        "leftX": 540,
-        "headlineY": 280,
-        "subheadY": 570,
-        "maxHeadlineChars": 22,
-        "maxSubheadChars": 1,
-        "ctaWidth": 520,
-        "ctaHeight": 50,
-        "ctaGroup": {
-          "relativeTo": "canvas",
-          "anchorX": "left",
-          "anchorY": "top",
-          "offsetX": 500,
-          "offsetY": 985,
-          "textAlign": "center"
-        },
-        "footerY": 1060
-      },
-      "shapes": [
-        {
-          "type": "rectangle",
-          "x": 0,
-          "y": 580,
-          "width": 440,
-          "height": 500,
-          "fill": "rgba(255,255,255,0.95)"
-        },
-        {
-          "type": "rectangle",
-          "x": 440,
-          "y": 580,
-          "width": 640,
-          "height": 500,
-          "fill": "rgba(30,30,30,0.92)"
-        }
-      ],
-      "textLayers": [
-        {
-          "content": "THE SPECS",
-          "x": 455,
-          "y": 620,
-          "fontSize": 28,
-          "fontWeight": 700,
-          "color": "rgba(255,255,255,0.5)",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Mushroom Profile That Actually Holds",
-          "x": 455,
-          "y": 675,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Made in USA from 100% Reclaimed Lead",
-          "x": 455,
-          "y": 775,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Buy One or Buy a Bag, Your Call",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -2300,7 +1919,7 @@
     },
     {
       "_comment": "=== seamount-fish-fighting-belt | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/seamount-fish-fighting-belt-a.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/seamount-fish-fighting-belt-a.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_229283027.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -2387,7 +2006,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Padded Gimbal Cup",
+          "content": "\u2713 Padded gimbal cup absorbs rod pressure",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -2396,7 +2015,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Stainless Steel Hardware",
+          "content": "\u2713 All stainless steel hardware",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -2405,7 +2024,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Adjustable Waist System",
+          "content": "\u2713 Adjustable waist in three sizes",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -2427,7 +2046,7 @@
     },
     {
       "_comment": "=== seamount-fish-fighting-belt | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/seamount-fish-fighting-belt-b.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/seamount-fish-fighting-belt-b.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_229283027.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -2439,7 +2058,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "WHY SEAMOUNT FISH FIGHTING BELT?",
+        "headline": "YOUR BACK WILL THANK YOU ON FISH NUMBER THREE. $179.99.",
         "subhead": "",
         "cta": "FROM $179.99",
         "footer": ""
@@ -2514,7 +2133,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Padded Gimbal Cup",
+          "content": "\u2713 Padded gimbal cup \u2014 not a plastic rod socket",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -2523,7 +2142,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Stainless Steel Hardware",
+          "content": "\u2713 Velcro leashes lock the gimbal pad in place",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -2532,7 +2151,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Adjustable Waist System",
+          "content": "\u2713 Stainless hardware that won't corrode in salt",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -2554,7 +2173,7 @@
     },
     {
       "_comment": "=== seamount-fish-fighting-belt | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/seamount-fish-fighting-belt-c.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/seamount-fish-fighting-belt-c.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_229283027.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -2566,7 +2185,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "SEAMOUNT FISH FIGHTING BELT",
+        "headline": "SEAMOUNT STAND-UP FIGHTING BELT \u2014 THREE SIZES",
         "subhead": "",
         "cta": "GET IT NOW",
         "footer": ""
@@ -2641,7 +2260,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Durable stainless steel hardware throughout",
+          "content": "\u2713 Padded gimbal cup with Velcro retention leashes",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -2650,7 +2269,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Velcro leashes keep gimbal pad secure",
+          "content": "\u2713 All stainless steel hardware throughout",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -2659,7 +2278,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 3 sizes: S/M (26-34\")",
+          "content": "\u2713 S/M (26\u201334\"), L/XL (34\u201342\"), XXL (42\u201350\")",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -2681,7 +2300,7 @@
     },
     {
       "_comment": "=== uv-sea-witch-hair | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/uv-sea-witch-hair-a.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/uv-sea-witch-hair-a.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_337378282.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -2768,7 +2387,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 UV-Infused Fiber",
+          "content": "\u2713 UV-infused fiber \u2014 glows where it counts",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -2777,7 +2396,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 7\" Pre-Cut Length",
+          "content": "\u2713 7\" pre-cut, ready to tie",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -2786,7 +2405,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Bulk Pricing That Makes Sense",
+          "content": "\u2713 Bulk pricing that rewards the serious builder",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -2808,7 +2427,7 @@
     },
     {
       "_comment": "=== uv-sea-witch-hair | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/uv-sea-witch-hair-b.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/uv-sea-witch-hair-b.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_337378282.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -2820,7 +2439,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "WHY UV SEA WITCH HAIR?",
+        "headline": "UV FIBER. PRE-CUT. READY TO TIE. FROM $4.19.",
         "subhead": "",
         "cta": "FROM $4.19",
         "footer": ""
@@ -2895,7 +2514,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 UV-Infused Fiber",
+          "content": "\u2713 UV-infused nylon \u2014 visible in deep blue water",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -2904,7 +2523,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 No trimming needed for most builds",
+          "content": "\u2713 7\" length means no trimming for most builds",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -2913,7 +2532,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 A full hank drops that even further",
+          "content": "\u2713 One bundle makes roughly 10 lures",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -2935,7 +2554,7 @@
     },
     {
       "_comment": "=== uv-sea-witch-hair | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/uv-sea-witch-hair-c.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/uv-sea-witch-hair-c.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_337378282.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -2947,7 +2566,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "UV SEA WITCH HAIR",
+        "headline": "10 LURES PER BUNDLE. UV-INFUSED. $4.19.",
         "subhead": "",
         "cta": "GET IT NOW",
         "footer": ""
@@ -3022,7 +2641,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Top grade UV-infused nylon sea witch hair",
+          "content": "\u2713 Top-grade UV-infused nylon sea witch hair",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -3040,7 +2659,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 1oz bundle makes roughly 10 lures",
+          "content": "\u2713 1oz bundle \u2014 enough for roughly 10 lures",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -3062,7 +2681,7 @@
     },
     {
       "_comment": "=== epic-fishing-flying-fish-daisy-chain | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/epic-fishing-flying-fish-daisy-chain-a.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/epic-fishing-flying-fish-daisy-chain-a.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_345435684.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -3149,7 +2768,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Realistic Multi-Fish Profile",
+          "content": "\u2713 Realistic multi-fish profile draws strikes to your spread",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -3158,7 +2777,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 300lb Clear Mono Leader",
+          "content": "\u2713 300lb clear mono vanishes in blue water",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -3167,7 +2786,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Hookless Chugger Tail",
+          "content": "\u2713 Hookless chugger tail \u2014 a teaser that does its job",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -3189,7 +2808,7 @@
     },
     {
       "_comment": "=== epic-fishing-flying-fish-daisy-chain | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/epic-fishing-flying-fish-daisy-chain-b.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/epic-fishing-flying-fish-daisy-chain-b.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_345435684.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -3201,7 +2820,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "WHY FLYING FISH DAISY CHAIN?",
+        "headline": "THE TEASER THAT DISAPPEARS IN BLUE WATER. $69.99.",
         "subhead": "",
         "cta": "FROM $69.99",
         "footer": ""
@@ -3276,7 +2895,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Realistic Multi-Fish Profile",
+          "content": "\u2713 Realistic flying fish school on one leader",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -3285,7 +2904,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 The clear material disappears in blue water",
+          "content": "\u2713 300lb clear mono \u2014 invisible offshore",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -3294,7 +2913,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Hookless Chugger Tail",
+          "content": "\u2713 Hookless chugger tail, legal in all tournaments",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -3316,7 +2935,7 @@
     },
     {
       "_comment": "=== epic-fishing-flying-fish-daisy-chain | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/epic-fishing-flying-fish-daisy-chain-c.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/epic-fishing-flying-fish-daisy-chain-c.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_345435684.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -3328,7 +2947,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "FLYING FISH DAISY CHAIN",
+        "headline": "REALISTIC BAIT SCHOOL ON 300LB CLEAR MONO",
         "subhead": "",
         "cta": "GET IT NOW",
         "footer": ""
@@ -3403,7 +3022,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Realistic Multi-Fish Profile",
+          "content": "\u2713 Multiple flying fish bodies per chain",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -3412,7 +3031,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 300lb Clear Mono Leader",
+          "content": "\u2713 300lb clear monofilament leader",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -3421,7 +3040,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Hookless Chugger Tail",
+          "content": "\u2713 Hookless chugger tail for clean teasering",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -3443,7 +3062,7 @@
     },
     {
       "_comment": "=== wahoo-shock-leader | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/wahoo-shock-leader-a.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/wahoo-shock-leader-a.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_991789270.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -3530,7 +3149,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 25 Foot Length",
+          "content": "\u2713 25ft of heavy mono absorbs wahoo strikes",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -3539,7 +3158,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Smoke Blue Mono",
+          "content": "\u2713 Smoke blue blends with offshore water",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -3548,7 +3167,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 BB Snap Swivels",
+          "content": "\u2713 BB snap swivels \u2014 change lures without cutting",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -3570,7 +3189,7 @@
     },
     {
       "_comment": "=== wahoo-shock-leader | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/wahoo-shock-leader-b.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/wahoo-shock-leader-b.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_991789270.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -3582,7 +3201,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "WHY WAHOO SHOCK LEADER?",
+        "headline": "CHANGE LURES WITHOUT CUTTING LEADER. FROM $19.99.",
         "subhead": "",
         "cta": "FROM $19.99",
         "footer": ""
@@ -3657,7 +3276,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 25 Foot Length",
+          "content": "\u2713 25ft of 250lb or 400lb smoke blue mono",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -3666,7 +3285,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 The smoke blue color blends with offshore water",
+          "content": "\u2713 BB snap swivels on both ends for quick swaps",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -3675,7 +3294,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Change lures or weights without cutting leader",
+          "content": "\u2713 Long enough to protect, short enough to troll clean",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -3697,7 +3316,7 @@
     },
     {
       "_comment": "=== wahoo-shock-leader | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/wahoo-shock-leader-c.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/wahoo-shock-leader-c.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_991789270.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -3709,7 +3328,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "WAHOO SHOCK LEADER",
+        "headline": "25FT WAHOO SHOCK LEADER \u2014 250LB OR 400LB",
         "subhead": "",
         "cta": "GET IT NOW",
         "footer": ""
@@ -3784,7 +3403,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 25 foot length for wahoo trolling",
+          "content": "\u2713 Smoke blue monofilament for offshore stealth",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -3793,7 +3412,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 250lb or 400lb smoke blue mono",
+          "content": "\u2713 320lb Epic ball bearing snap swivels, both ends",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -3802,7 +3421,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 320lb Epic ball bearing snap swivels on each end",
+          "content": "\u2713 Purpose-built for high-speed wahoo trolling",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -3824,7 +3443,7 @@
     },
     {
       "_comment": "=== fishing-bridle-leader-reel | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/fishing-bridle-leader-reel-a.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/fishing-bridle-leader-reel-a.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -3911,7 +3530,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 100ft of 150lb Momoi Monofilament Leader",
+          "content": "\u2713 100ft of 150lb Momoi monofilament, on a reel",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -3920,7 +3539,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Handmade Planer Fishing Bridle",
+          "content": "\u2713 Handmade planer fishing bridle included",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -3929,7 +3548,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Cuban YoYo Storage System",
+          "content": "\u2713 Cuban YoYo keeps it tangle-free and ready",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -3951,7 +3570,7 @@
     },
     {
       "_comment": "=== fishing-bridle-leader-reel | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/fishing-bridle-leader-reel-b.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/fishing-bridle-leader-reel-b.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -3963,7 +3582,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "WHY FISHING BRIDLE & LEADER REEL?",
+        "headline": "A BAD BRIDLE COSTS YOU FISH. FROM $54.99.",
         "subhead": "",
         "cta": "FROM $54.99",
         "footer": ""
@@ -4038,7 +3657,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 This is not bargain-bin mono",
+          "content": "\u2713 150lb Momoi mono \u2014 not bargain-bin leader",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -4047,7 +3666,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 A bad bridle costs you fish",
+          "content": "\u2713 Handmade bridle + 100ft of leader, ready to rig",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -4056,7 +3675,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 No moving parts",
+          "content": "\u2713 YoYo storage system \u2014 no tangles, no waste",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -4078,7 +3697,7 @@
     },
     {
       "_comment": "=== fishing-bridle-leader-reel | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/fishing-bridle-leader-reel-c.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/fishing-bridle-leader-reel-c.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -4090,7 +3709,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "FISHING BRIDLE & LEADER REEL",
+        "headline": "100FT MOMOI LEADER + HANDMADE BRIDLE + YOYO REEL",
         "subhead": "",
         "cta": "GET IT NOW",
         "footer": ""
@@ -4165,7 +3784,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 100ft of 150lb Momoi Monofilament Leader",
+          "content": "\u2713 150lb Momoi monofilament leader, 100ft",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -4174,7 +3793,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Handmade Planer Fishing Bridle",
+          "content": "\u2713 Handmade planer fishing bridle",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -4183,7 +3802,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Cuban YoYo Storage System",
+          "content": "\u2713 Cuban YoYo reel for tangle-free storage",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -4205,7 +3824,7 @@
     },
     {
       "_comment": "=== planer-bridle-rigging-kit | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/planer-bridle-rigging-kit-a.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/planer-bridle-rigging-kit-a.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_133588506.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -4292,7 +3911,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Stainless Locking D-Rings",
+          "content": "\u2713 Stainless locking D-rings hold under full load",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -4301,7 +3920,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Dual Snap Quick Release",
+          "content": "\u2713 Dual snap quick release for fast changes",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -4310,7 +3929,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Even Load Distribution",
+          "content": "\u2713 Even load distribution \u2014 no single-point failures",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -4332,7 +3951,7 @@
     },
     {
       "_comment": "=== planer-bridle-rigging-kit | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/planer-bridle-rigging-kit-b.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/planer-bridle-rigging-kit-b.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_133588506.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -4344,7 +3963,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "WHY PLANER BRIDLE RIGGING KIT?",
+        "headline": "SNAP ON. FISH. SNAP OFF. FROM $16.99.",
         "subhead": "",
         "cta": "FROM $16.99",
         "footer": ""
@@ -4419,7 +4038,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Stainless Locking D-Rings",
+          "content": "\u2713 Stainless locking D-rings \u2014 won't corrode or bend",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -4428,7 +4047,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Snap on, fish, snap off",
+          "content": "\u2713 Dual snap quick release design",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -4437,7 +4056,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Even Load Distribution",
+          "content": "\u2713 Distributes load evenly across the bridle connection",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -4459,7 +4078,7 @@
     },
     {
       "_comment": "=== planer-bridle-rigging-kit | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/planer-bridle-rigging-kit-c.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/planer-bridle-rigging-kit-c.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_133588506.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -4471,7 +4090,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "PLANER BRIDLE RIGGING KIT",
+        "headline": "STAINLESS RIGGING KIT \u2014 D-RINGS + DUAL SNAP RELEASE",
         "subhead": "",
         "cta": "GET IT NOW",
         "footer": ""
@@ -4564,7 +4183,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Two stainless locking D-rings",
+          "content": "\u2713 Two stainless locking D-rings for load distribution",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -4586,7 +4205,7 @@
     },
     {
       "_comment": "=== stiff-rig-hooksets | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/stiff-rig-hooksets-a.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/stiff-rig-hooksets-a.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_175678582.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -4598,7 +4217,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "SKIP THE CRIMPING - FISH PRE-MADE STIFF RIGS",
+        "headline": "SKIP THE CRIMPING \u2014 FISH PRE-MADE STIFF RIGS",
         "subhead": "",
         "cta": "SHOP NOW",
         "footer": ""
@@ -4673,7 +4292,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Three Hook Configurations",
+          "content": "\u2713 The cable rig wahoo can't bite through",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -4682,7 +4301,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Stainless Southern Tuna Hooks",
+          "content": "\u2713 8/0 stainless Southern Tuna hooks",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -4691,7 +4310,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Stainless Cable Construction",
+          "content": "\u2713 Single, double, and triple configurations",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -4713,7 +4332,7 @@
     },
     {
       "_comment": "=== stiff-rig-hooksets | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/stiff-rig-hooksets-b.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/stiff-rig-hooksets-b.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_175678582.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -4725,7 +4344,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "WHY STIFF RIG HOOKSETS?",
+        "headline": "TOURNAMENT STIFF RIGS, READY TO FISH. FROM $11.99.",
         "subhead": "",
         "cta": "FROM $11.99",
         "footer": ""
@@ -4800,7 +4419,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Three Hook Configurations",
+          "content": "\u2713 No crimping tool needed \u2014 these ship rigged",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -4809,7 +4428,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Stainless Southern Tuna Hooks",
+          "content": "\u2713 480lb stainless cable won't kink or fray",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -4818,7 +4437,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Stainless Cable Construction",
+          "content": "\u2713 8/0 Southern Tuna hooks, sharp out of the pack",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -4840,7 +4459,7 @@
     },
     {
       "_comment": "=== stiff-rig-hooksets | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/stiff-rig-hooksets-c.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/stiff-rig-hooksets-c.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_175678582.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -4852,7 +4471,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "STIFF RIG HOOKSETS",
+        "headline": "PRE-RIGGED STIFF RIGS \u2014 SINGLE, DOUBLE, AND TRIPLE",
         "subhead": "",
         "cta": "GET IT NOW",
         "footer": ""
@@ -4927,7 +4546,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Hook sizes: 8/0",
+          "content": "\u2713 8/0 stainless Southern Tuna hooks",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -4936,7 +4555,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Configurations: single hook",
+          "content": "\u2713 480lb stainless cable construction",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -4945,7 +4564,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Prices from $11.99 to $15.99",
+          "content": "\u2713 Three configurations from $11.99 to $15.99",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -4967,7 +4586,7 @@
     },
     {
       "_comment": "=== ball-bearing-snap-swivels-epic-fishing-co | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/ball-bearing-snap-swivels-epic-fishing-co-a.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/ball-bearing-snap-swivels-epic-fishing-co-a.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_219637627.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -4979,7 +4598,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "SMOOTH SPINNING WITHOUT THE PREMIUM PRICE",
+        "headline": "BARREL SWIVELS BIND UNDER TENSION. THESE DON'T.",
         "subhead": "",
         "cta": "SHOP NOW",
         "footer": ""
@@ -5054,7 +4673,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Dual Rotation Ball Bearings",
+          "content": "\u2713 Dual rotation ball bearings spin free under load",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -5063,7 +4682,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Stainless Steel Throughout",
+          "content": "\u2713 Body, bearings, and snap \u2014 all stainless steel",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -5072,7 +4691,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Six Sizes, 5-Packs",
+          "content": "\u2713 Six sizes, sold in 5-packs",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -5094,7 +4713,7 @@
     },
     {
       "_comment": "=== ball-bearing-snap-swivels-epic-fishing-co | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/ball-bearing-snap-swivels-epic-fishing-co-b.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/ball-bearing-snap-swivels-epic-fishing-co-b.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_219637627.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -5106,7 +4725,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "WHY BALL BEARING SNAP SWIVELS?",
+        "headline": "THE SWIVEL THAT ACTUALLY SPINS UNDER LOAD. $15.99.",
         "subhead": "",
         "cta": "FROM $15.99",
         "footer": ""
@@ -5181,7 +4800,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Standard barrel swivels bind under tension",
+          "content": "\u2713 Standard barrel swivels seize when you need them most",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -5190,7 +4809,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Body, bearings, and snaps are stainless steel",
+          "content": "\u2713 Dual ball bearings keep spinning at full tension",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -5199,7 +4818,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Six Sizes, 5-Packs",
+          "content": "\u2713 All stainless \u2014 body, bearings, snap, ring",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -5221,7 +4840,7 @@
     },
     {
       "_comment": "=== ball-bearing-snap-swivels-epic-fishing-co | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/ball-bearing-snap-swivels-epic-fishing-co-c.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/ball-bearing-snap-swivels-epic-fishing-co-c.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_219637627.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -5233,7 +4852,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "BALL BEARING SNAP SWIVELS",
+        "headline": "DUAL BEARING. ALL STAINLESS. SIX SIZES.",
         "subhead": "",
         "cta": "GET IT NOW",
         "footer": ""
@@ -5308,7 +4927,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Dual Rotation Ball Bearings",
+          "content": "\u2713 Dual rotation ball bearing mechanism",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -5317,7 +4936,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Stainless Steel Throughout",
+          "content": "\u2713 Stainless steel throughout \u2014 no plated parts",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -5326,7 +4945,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Six Sizes, 5-Packs",
+          "content": "\u2713 5-packs in six sizes",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -5348,7 +4967,7 @@
     },
     {
       "_comment": "=== axis-junior-stainless-steel-wahoo-trolling-lure-epic-fishing-co | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/axis-junior-stainless-steel-wahoo-trolling-lure-epic-fishing-co-a.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/axis-junior-stainless-steel-wahoo-trolling-lure-epic-fishing-co-a.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_331722964.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -5360,7 +4979,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "MATCH THE BAIT AND GET MORE BITES",
+        "headline": "THE COMPACT WAHOO LURE THAT'S READY WHEN YOU ARE",
         "subhead": "",
         "cta": "SHOP NOW",
         "footer": ""
@@ -5435,7 +5054,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Compact Stainless Steel Head",
+          "content": "\u2713 Stainless steel head runs true at any troll speed",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -5444,7 +5063,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 UV Double Skirts in 5 Colors",
+          "content": "\u2713 UV double skirts in 5 proven color patterns",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -5453,7 +5072,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Pre-Rigged 480lb Cable Stiff Rig",
+          "content": "\u2713 Pre-rigged on 480lb cable \u2014 clip on and fish",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -5475,7 +5094,7 @@
     },
     {
       "_comment": "=== axis-junior-stainless-steel-wahoo-trolling-lure-epic-fishing-co | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/axis-junior-stainless-steel-wahoo-trolling-lure-epic-fishing-co-b.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/axis-junior-stainless-steel-wahoo-trolling-lure-epic-fishing-co-b.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_331722964.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -5487,7 +5106,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "WHY AXIS JUNIOR?",
+        "headline": "CLIP IT ON. START TROLLING. FROM $34.99.",
         "subhead": "",
         "cta": "FROM $34.99",
         "footer": ""
@@ -5562,7 +5181,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Compact Stainless Steel Head",
+          "content": "\u2713 Compact stainless head matches small bait profiles",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -5571,7 +5190,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 UV Double Skirts in 5 Colors",
+          "content": "\u2713 UV double skirts visible below the surface",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -5580,7 +5199,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Clip it to your snap swivel and fish",
+          "content": "\u2713 Pre-rigged 480lb cable stiff rig \u2014 no assembly",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -5602,7 +5221,7 @@
     },
     {
       "_comment": "=== axis-junior-stainless-steel-wahoo-trolling-lure-epic-fishing-co | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/axis-junior-stainless-steel-wahoo-trolling-lure-epic-fishing-co-c.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/axis-junior-stainless-steel-wahoo-trolling-lure-epic-fishing-co-c.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_331722964.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -5614,7 +5233,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "AXIS JUNIOR",
+        "headline": "AXIS JUNIOR \u2014 COMPACT STAINLESS WAHOO LURE",
         "subhead": "",
         "cta": "GET IT NOW",
         "footer": ""
@@ -5689,7 +5308,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Compact Stainless Steel Head",
+          "content": "\u2713 Compact stainless steel head",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -5698,7 +5317,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 UV Double Skirts in 5 Colors",
+          "content": "\u2713 UV double skirts in 5 color patterns",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -5707,7 +5326,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Pre-Rigged 480lb Cable Stiff Rig",
+          "content": "\u2713 Pre-rigged on 480lb cable with 8/0 hook",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -5729,11 +5348,11 @@
     },
     {
       "_comment": "=== sea-witch-heads | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/sea-witch-heads-a.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/sea-witch-heads-a.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_284446852.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
-        "path": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Products/bulk-sea-witch-hair-group-shot.jpg",
+        "path": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/sea-witch-heads-product-shot.png",
         "x": 20,
         "y": 600,
         "width": 400,
@@ -5741,7 +5360,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "BUILD YOUR OWN LUCKY TROLLING COMBO",
+        "headline": "PICK YOUR COLOR. BUILD YOUR RIG. FROM $2.99.",
         "subhead": "",
         "cta": "SHOP NOW",
         "footer": ""
@@ -5816,7 +5435,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Liquid-Painted Lead, Built to Last",
+          "content": "\u2713 Liquid-painted lead \u2014 tougher than sprayed finish",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -5825,7 +5444,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 8 Colors for Every Condition",
+          "content": "\u2713 8 colors for every water and light condition",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -5834,7 +5453,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Complete Presentation: Head + Hair + Ballyhoo",
+          "content": "\u2713 Pair with hair and ballyhoo for a complete presentation",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -5856,11 +5475,11 @@
     },
     {
       "_comment": "=== sea-witch-heads | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/sea-witch-heads-b.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/sea-witch-heads-b.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_284446852.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
-        "path": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Products/bulk-sea-witch-hair-group-shot.jpg",
+        "path": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/sea-witch-heads-product-shot.png",
         "x": 20,
         "y": 600,
         "width": 400,
@@ -5868,7 +5487,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "WHY SEA WITCH HEADS?",
+        "headline": "LIQUID-PAINTED, NOT SPRAYED. THEY LAST. $2.99.",
         "subhead": "",
         "cta": "FROM $2.99",
         "footer": ""
@@ -5943,7 +5562,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 These heads are liquid-painted, not sprayed",
+          "content": "\u2713 Spray paint chips in the tackle box \u2014 liquid paint holds",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -5952,7 +5571,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 8 Colors for Every Condition",
+          "content": "\u2713 8 colors to match any condition offshore",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -5961,7 +5580,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Complete Presentation: Head + Hair + Ballyhoo",
+          "content": "\u2713 Head + hair + ballyhoo = your complete trolling rig",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -5983,11 +5602,11 @@
     },
     {
       "_comment": "=== sea-witch-heads | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/sea-witch-heads-c.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/sea-witch-heads-c.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_284446852.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
-        "path": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Products/bulk-sea-witch-hair-group-shot.jpg",
+        "path": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/product-photos/sea-witch-heads-product-shot.png",
         "x": 20,
         "y": 600,
         "width": 400,
@@ -5995,7 +5614,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "SEA WITCH HEADS",
+        "headline": "SEA WITCH HEADS \u2014 8 COLORS, LIQUID-PAINTED LEAD",
         "subhead": "",
         "cta": "GET IT NOW",
         "footer": ""
@@ -6070,7 +5689,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Liquid-Painted Lead, Built to Last",
+          "content": "\u2713 Durable liquid-painted lead construction",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -6079,7 +5698,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 8 Colors for Every Condition",
+          "content": "\u2713 8 colors for every condition",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -6088,388 +5707,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Complete Presentation: Head + Hair + Ballyhoo",
-          "x": 455,
-          "y": 875,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "THETACKLEROOM.COM",
-          "x": 760,
-          "y": 1060,
-          "fontSize": 14,
-          "fontWeight": 600,
-          "color": "rgba(255,255,255,0.3)",
-          "maxChars": 40,
-          "align": "center"
-        }
-      ]
-    },
-    {
-      "_comment": "=== bluefin-tuna-gyotaku-artwork-print-by-dwight-hwang | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/bluefin-tuna-gyotaku-artwork-print-by-dwight-hwang-a.jpg",
-      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_229283027.jpeg",
-      "backgroundPosition": "attention",
-      "productImage": {
-        "path": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/ProductImages/TunaPrint.png",
-        "x": 20,
-        "y": 600,
-        "width": 400,
-        "height": 460,
-        "padding": 20
-      },
-      "text": {
-        "headline": "A BLUEFIN TUNA WORTH HANGING ON YOUR WALL",
-        "subhead": "",
-        "cta": "SHOP NOW",
-        "footer": ""
-      },
-      "overlay": {
-        "leftColor": "5,20,35",
-        "midColor": "5,20,35",
-        "rightColor": "5,20,35",
-        "leftOpacity": 0.25,
-        "midOpacity": 0.2,
-        "rightOpacity": 0.25,
-        "vignetteBottom": 0.3
-      },
-      "typography": {
-        "headlineFontFamily": "Montserrat, Arial, sans-serif",
-        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
-        "headlineSize": 64,
-        "subheadSize": 1,
-        "headlineWeight": 800,
-        "subheadWeight": 400,
-        "ctaSize": 20,
-        "ctaWeight": 700,
-        "footerSize": 1,
-        "footerTracking": 4
-      },
-      "layout": {
-        "personality": "centered-hero",
-        "align": "center",
-        "leftX": 540,
-        "headlineY": 280,
-        "subheadY": 570,
-        "maxHeadlineChars": 22,
-        "maxSubheadChars": 1,
-        "ctaWidth": 520,
-        "ctaHeight": 50,
-        "ctaGroup": {
-          "relativeTo": "canvas",
-          "anchorX": "left",
-          "anchorY": "top",
-          "offsetX": 500,
-          "offsetY": 985,
-          "textAlign": "center"
-        },
-        "footerY": 1060
-      },
-      "shapes": [
-        {
-          "type": "rectangle",
-          "x": 0,
-          "y": 580,
-          "width": 440,
-          "height": 500,
-          "fill": "rgba(255,255,255,0.95)"
-        },
-        {
-          "type": "rectangle",
-          "x": 440,
-          "y": 580,
-          "width": 640,
-          "height": 500,
-          "fill": "rgba(30,30,30,0.92)"
-        }
-      ],
-      "textLayers": [
-        {
-          "content": "FEATURES",
-          "x": 455,
-          "y": 620,
-          "fontSize": 28,
-          "fontWeight": 700,
-          "color": "rgba(255,255,255,0.5)",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Traditional Direct Method",
-          "x": 455,
-          "y": 675,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Archival Reproduction",
-          "x": 455,
-          "y": 775,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Two Display Sizes",
-          "x": 455,
-          "y": 875,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "THETACKLEROOM.COM",
-          "x": 760,
-          "y": 1060,
-          "fontSize": 14,
-          "fontWeight": 600,
-          "color": "rgba(255,255,255,0.3)",
-          "maxChars": 40,
-          "align": "center"
-        }
-      ]
-    },
-    {
-      "_comment": "=== bluefin-tuna-gyotaku-artwork-print-by-dwight-hwang | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/bluefin-tuna-gyotaku-artwork-print-by-dwight-hwang-b.jpg",
-      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_229283027.jpeg",
-      "backgroundPosition": "attention",
-      "productImage": {
-        "path": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/ProductImages/TunaPrint.png",
-        "x": 20,
-        "y": 600,
-        "width": 400,
-        "height": 460,
-        "padding": 20
-      },
-      "text": {
-        "headline": "WHY BLUEFIN TUNA GYOTAKU ARTWORK PRINT?",
-        "subhead": "",
-        "cta": "FROM $149.99",
-        "footer": ""
-      },
-      "overlay": {
-        "leftColor": "5,20,35",
-        "midColor": "5,20,35",
-        "rightColor": "5,20,35",
-        "leftOpacity": 0.25,
-        "midOpacity": 0.2,
-        "rightOpacity": 0.25,
-        "vignetteBottom": 0.3
-      },
-      "typography": {
-        "headlineFontFamily": "Montserrat, Arial, sans-serif",
-        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
-        "headlineSize": 64,
-        "subheadSize": 1,
-        "headlineWeight": 800,
-        "subheadWeight": 400,
-        "ctaSize": 20,
-        "ctaWeight": 700,
-        "footerSize": 1,
-        "footerTracking": 4
-      },
-      "layout": {
-        "personality": "centered-hero",
-        "align": "center",
-        "leftX": 540,
-        "headlineY": 280,
-        "subheadY": 570,
-        "maxHeadlineChars": 22,
-        "maxSubheadChars": 1,
-        "ctaWidth": 520,
-        "ctaHeight": 50,
-        "ctaGroup": {
-          "relativeTo": "canvas",
-          "anchorX": "left",
-          "anchorY": "top",
-          "offsetX": 500,
-          "offsetY": 985,
-          "textAlign": "center"
-        },
-        "footerY": 1060
-      },
-      "shapes": [
-        {
-          "type": "rectangle",
-          "x": 0,
-          "y": 580,
-          "width": 440,
-          "height": 500,
-          "fill": "rgba(255,255,255,0.95)"
-        },
-        {
-          "type": "rectangle",
-          "x": 440,
-          "y": 580,
-          "width": 640,
-          "height": 500,
-          "fill": "rgba(30,30,30,0.92)"
-        }
-      ],
-      "textLayers": [
-        {
-          "content": "WHY THIS ONE",
-          "x": 455,
-          "y": 620,
-          "fontSize": 28,
-          "fontWeight": 700,
-          "color": "rgba(255,255,255,0.5)",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Traditional Direct Method",
-          "x": 455,
-          "y": 675,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Archival Reproduction",
-          "x": 455,
-          "y": 775,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Two Display Sizes",
-          "x": 455,
-          "y": 875,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "THETACKLEROOM.COM",
-          "x": 760,
-          "y": 1060,
-          "fontSize": 14,
-          "fontWeight": 600,
-          "color": "rgba(255,255,255,0.3)",
-          "maxChars": 40,
-          "align": "center"
-        }
-      ]
-    },
-    {
-      "_comment": "=== bluefin-tuna-gyotaku-artwork-print-by-dwight-hwang | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/bluefin-tuna-gyotaku-artwork-print-by-dwight-hwang-c.jpg",
-      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_229283027.jpeg",
-      "backgroundPosition": "attention",
-      "productImage": {
-        "path": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/ProductImages/TunaPrint.png",
-        "x": 20,
-        "y": 600,
-        "width": 400,
-        "height": 460,
-        "padding": 20
-      },
-      "text": {
-        "headline": "BLUEFIN TUNA GYOTAKU ARTWORK PRINT",
-        "subhead": "",
-        "cta": "GET IT NOW",
-        "footer": ""
-      },
-      "overlay": {
-        "leftColor": "5,20,35",
-        "midColor": "5,20,35",
-        "rightColor": "5,20,35",
-        "leftOpacity": 0.25,
-        "midOpacity": 0.2,
-        "rightOpacity": 0.25,
-        "vignetteBottom": 0.3
-      },
-      "typography": {
-        "headlineFontFamily": "Montserrat, Arial, sans-serif",
-        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
-        "headlineSize": 64,
-        "subheadSize": 1,
-        "headlineWeight": 800,
-        "subheadWeight": 400,
-        "ctaSize": 20,
-        "ctaWeight": 700,
-        "footerSize": 1,
-        "footerTracking": 4
-      },
-      "layout": {
-        "personality": "centered-hero",
-        "align": "center",
-        "leftX": 540,
-        "headlineY": 280,
-        "subheadY": 570,
-        "maxHeadlineChars": 22,
-        "maxSubheadChars": 1,
-        "ctaWidth": 520,
-        "ctaHeight": 50,
-        "ctaGroup": {
-          "relativeTo": "canvas",
-          "anchorX": "left",
-          "anchorY": "top",
-          "offsetX": 500,
-          "offsetY": 985,
-          "textAlign": "center"
-        },
-        "footerY": 1060
-      },
-      "shapes": [
-        {
-          "type": "rectangle",
-          "x": 0,
-          "y": 580,
-          "width": 440,
-          "height": 500,
-          "fill": "rgba(255,255,255,0.95)"
-        },
-        {
-          "type": "rectangle",
-          "x": 440,
-          "y": 580,
-          "width": 640,
-          "height": 500,
-          "fill": "rgba(30,30,30,0.92)"
-        }
-      ],
-      "textLayers": [
-        {
-          "content": "THE SPECS",
-          "x": 455,
-          "y": 620,
-          "fontSize": 28,
-          "fontWeight": 700,
-          "color": "rgba(255,255,255,0.5)",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Created by world-renowned artist Dwight Hwang",
-          "x": 455,
-          "y": 675,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Printed on archival quality paper",
-          "x": 455,
-          "y": 775,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Available in 13x19 and 20x30 inch sizes",
+          "content": "\u2713 Pair with sea witch hair and ballyhoo for a complete rig",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -6491,7 +5729,7 @@
     },
     {
       "_comment": "=== schoolie-daisy-chain | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/schoolie-daisy-chain-a.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/schoolie-daisy-chain-a.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_337378282.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -6578,7 +5816,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 3 Colors Per Pack",
+          "content": "\u2713 3 colors per pack \u2014 cover every condition",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -6587,7 +5825,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Pre-Rigged on 130 lb Momoi",
+          "content": "\u2713 Pre-rigged on 130lb Momoi, ready to clip on",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -6596,7 +5834,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Right-Sized 4.5-Inch Squid Skirts",
+          "content": "\u2713 4.5\" squid skirts sized for schoolie mahi",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -6618,7 +5856,7 @@
     },
     {
       "_comment": "=== schoolie-daisy-chain | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/schoolie-daisy-chain-b.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/schoolie-daisy-chain-b.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_337378282.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -6630,7 +5868,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "WHY SCHOOLIE DOLPHIN DAISY CHAIN?",
+        "headline": "BUILT FOR SCHOOLIE MAHI AND BLACKFIN. $44.99.",
         "subhead": "",
         "cta": "FROM $44.99",
         "footer": ""
@@ -6705,7 +5943,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 3 Colors Per Pack",
+          "content": "\u2713 Three color chains, pre-rigged and ready to fish",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -6714,7 +5952,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 No crimping, no rigging time",
+          "content": "\u2713 4.5\" skirts match school-size bait profiles",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -6723,7 +5961,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 These are purpose-built for school fish",
+          "content": "\u2713 No crimping, no rigging \u2014 clip on and troll",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -6745,7 +5983,7 @@
     },
     {
       "_comment": "=== schoolie-daisy-chain | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/schoolie-daisy-chain-c.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/schoolie-daisy-chain-c.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_337378282.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -6757,7 +5995,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "SCHOOLIE DOLPHIN DAISY CHAIN",
+        "headline": "3 COLOR CHAINS. SCHOOL-SIZE SKIRTS. $44.99.",
         "subhead": "",
         "cta": "GET IT NOW",
         "footer": ""
@@ -6832,7 +6070,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 3 separate color chains in 1 pack",
+          "content": "\u2713 3 separate color chains in one pack",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -6841,7 +6079,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Built for school-size mahi and blackfin tuna",
+          "content": "\u2713 4.5\" squid skirts on 130lb Momoi leader",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -6850,7 +6088,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Affordable teaser at $44.99 for all 3 chains",
+          "content": "\u2713 Built for school-size mahi and blackfin tuna",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -6872,7 +6110,7 @@
     },
     {
       "_comment": "=== epic-axis-stainless-steel-wahoo-trolling-lure | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/epic-axis-stainless-steel-wahoo-trolling-lure-a.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/epic-axis-stainless-steel-wahoo-trolling-lure-a.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_345435684.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -6884,7 +6122,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "OUTRUN EVERY WAHOO ON THE TROLL",
+        "headline": "THE STAINLESS LURE BUILT FOR HIGH-SPEED WAHOO",
         "subhead": "",
         "cta": "SHOP NOW",
         "footer": ""
@@ -6959,7 +6197,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 High Polish Stainless Steel Construction",
+          "content": "\u2713 High polish stainless head \u2014 won't crack at 14 knots",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -6968,7 +6206,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 UV Double Skirts in 5 Color Patterns",
+          "content": "\u2713 UV double skirts in 5 proven color patterns",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -6977,7 +6215,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Pre-Rigged 480lb Cable and 8/0 Hook",
+          "content": "\u2713 Pre-rigged on 480lb cable with 8/0 hook",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -6999,7 +6237,7 @@
     },
     {
       "_comment": "=== epic-axis-stainless-steel-wahoo-trolling-lure | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/epic-axis-stainless-steel-wahoo-trolling-lure-b.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/epic-axis-stainless-steel-wahoo-trolling-lure-b.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_345435684.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -7011,7 +6249,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "WHY EPIC FISHING CO. AXIS?",
+        "headline": "PLASTIC HEADS CRACK AT SPEED. STAINLESS DOESN'T. $69.99.",
         "subhead": "",
         "cta": "FROM $69.99",
         "footer": ""
@@ -7086,7 +6324,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 High Polish Stainless Steel Construction",
+          "content": "\u2713 High polish stainless steel construction",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -7095,7 +6333,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 UV Double Skirts in 5 Color Patterns",
+          "content": "\u2713 UV double skirts visible below the surface",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -7104,7 +6342,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 This is not a mono or fluoro leader",
+          "content": "\u2713 Pre-rigged 480lb cable stiff rig \u2014 clip on and fish",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -7126,7 +6364,7 @@
     },
     {
       "_comment": "=== epic-axis-stainless-steel-wahoo-trolling-lure | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/epic-axis-stainless-steel-wahoo-trolling-lure-c.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/epic-axis-stainless-steel-wahoo-trolling-lure-c.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_345435684.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -7138,7 +6376,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "EPIC FISHING CO. AXIS",
+        "headline": "EPIC AXIS \u2014 HIGH-SPEED STAINLESS WAHOO LURE",
         "subhead": "",
         "cta": "GET IT NOW",
         "footer": ""
@@ -7213,7 +6451,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 High Polish Stainless Steel Construction",
+          "content": "\u2713 High polish stainless steel head",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -7222,7 +6460,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 UV Double Skirts in 5 Color Patterns",
+          "content": "\u2713 UV double skirts in 5 color patterns",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -7231,388 +6469,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Pre-Rigged 480lb Cable and 8/0 Hook",
-          "x": 455,
-          "y": 875,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "THETACKLEROOM.COM",
-          "x": 760,
-          "y": 1060,
-          "fontSize": 14,
-          "fontWeight": 600,
-          "color": "rgba(255,255,255,0.3)",
-          "maxChars": 40,
-          "align": "center"
-        }
-      ]
-    },
-    {
-      "_comment": "=== hawaiian-ono-wahoo-gyotaku-artwork-print-by-dwight-hwang | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/hawaiian-ono-wahoo-gyotaku-artwork-print-by-dwight-hwang-a.jpg",
-      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_991789270.jpeg",
-      "backgroundPosition": "attention",
-      "productImage": {
-        "path": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/ProductImages/WahooPrint.png",
-        "x": 20,
-        "y": 600,
-        "width": 400,
-        "height": 460,
-        "padding": 20
-      },
-      "text": {
-        "headline": "A HAWAIIAN ONO (WAHOO) WORTH HANGING ON YOUR WALL",
-        "subhead": "",
-        "cta": "SHOP NOW",
-        "footer": ""
-      },
-      "overlay": {
-        "leftColor": "5,20,35",
-        "midColor": "5,20,35",
-        "rightColor": "5,20,35",
-        "leftOpacity": 0.25,
-        "midOpacity": 0.2,
-        "rightOpacity": 0.25,
-        "vignetteBottom": 0.3
-      },
-      "typography": {
-        "headlineFontFamily": "Montserrat, Arial, sans-serif",
-        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
-        "headlineSize": 64,
-        "subheadSize": 1,
-        "headlineWeight": 800,
-        "subheadWeight": 400,
-        "ctaSize": 20,
-        "ctaWeight": 700,
-        "footerSize": 1,
-        "footerTracking": 4
-      },
-      "layout": {
-        "personality": "centered-hero",
-        "align": "center",
-        "leftX": 540,
-        "headlineY": 280,
-        "subheadY": 570,
-        "maxHeadlineChars": 22,
-        "maxSubheadChars": 1,
-        "ctaWidth": 520,
-        "ctaHeight": 50,
-        "ctaGroup": {
-          "relativeTo": "canvas",
-          "anchorX": "left",
-          "anchorY": "top",
-          "offsetX": 500,
-          "offsetY": 985,
-          "textAlign": "center"
-        },
-        "footerY": 1060
-      },
-      "shapes": [
-        {
-          "type": "rectangle",
-          "x": 0,
-          "y": 580,
-          "width": 440,
-          "height": 500,
-          "fill": "rgba(255,255,255,0.95)"
-        },
-        {
-          "type": "rectangle",
-          "x": 440,
-          "y": 580,
-          "width": 640,
-          "height": 500,
-          "fill": "rgba(30,30,30,0.92)"
-        }
-      ],
-      "textLayers": [
-        {
-          "content": "FEATURES",
-          "x": 455,
-          "y": 620,
-          "fontSize": 28,
-          "fontWeight": 700,
-          "color": "rgba(255,255,255,0.5)",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Traditional Direct Method",
-          "x": 455,
-          "y": 675,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Archival Reproduction",
-          "x": 455,
-          "y": 775,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Two Display Sizes",
-          "x": 455,
-          "y": 875,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "THETACKLEROOM.COM",
-          "x": 760,
-          "y": 1060,
-          "fontSize": 14,
-          "fontWeight": 600,
-          "color": "rgba(255,255,255,0.3)",
-          "maxChars": 40,
-          "align": "center"
-        }
-      ]
-    },
-    {
-      "_comment": "=== hawaiian-ono-wahoo-gyotaku-artwork-print-by-dwight-hwang | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/hawaiian-ono-wahoo-gyotaku-artwork-print-by-dwight-hwang-b.jpg",
-      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_991789270.jpeg",
-      "backgroundPosition": "attention",
-      "productImage": {
-        "path": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/ProductImages/WahooPrint.png",
-        "x": 20,
-        "y": 600,
-        "width": 400,
-        "height": 460,
-        "padding": 20
-      },
-      "text": {
-        "headline": "WHY HAWAIIAN ONO (WAHOO) GYOTAKU ARTWORK PRINT?",
-        "subhead": "",
-        "cta": "FROM $149.99",
-        "footer": ""
-      },
-      "overlay": {
-        "leftColor": "5,20,35",
-        "midColor": "5,20,35",
-        "rightColor": "5,20,35",
-        "leftOpacity": 0.25,
-        "midOpacity": 0.2,
-        "rightOpacity": 0.25,
-        "vignetteBottom": 0.3
-      },
-      "typography": {
-        "headlineFontFamily": "Montserrat, Arial, sans-serif",
-        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
-        "headlineSize": 64,
-        "subheadSize": 1,
-        "headlineWeight": 800,
-        "subheadWeight": 400,
-        "ctaSize": 20,
-        "ctaWeight": 700,
-        "footerSize": 1,
-        "footerTracking": 4
-      },
-      "layout": {
-        "personality": "centered-hero",
-        "align": "center",
-        "leftX": 540,
-        "headlineY": 280,
-        "subheadY": 570,
-        "maxHeadlineChars": 22,
-        "maxSubheadChars": 1,
-        "ctaWidth": 520,
-        "ctaHeight": 50,
-        "ctaGroup": {
-          "relativeTo": "canvas",
-          "anchorX": "left",
-          "anchorY": "top",
-          "offsetX": 500,
-          "offsetY": 985,
-          "textAlign": "center"
-        },
-        "footerY": 1060
-      },
-      "shapes": [
-        {
-          "type": "rectangle",
-          "x": 0,
-          "y": 580,
-          "width": 440,
-          "height": 500,
-          "fill": "rgba(255,255,255,0.95)"
-        },
-        {
-          "type": "rectangle",
-          "x": 440,
-          "y": 580,
-          "width": 640,
-          "height": 500,
-          "fill": "rgba(30,30,30,0.92)"
-        }
-      ],
-      "textLayers": [
-        {
-          "content": "WHY THIS ONE",
-          "x": 455,
-          "y": 620,
-          "fontSize": 28,
-          "fontWeight": 700,
-          "color": "rgba(255,255,255,0.5)",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Traditional Direct Method",
-          "x": 455,
-          "y": 675,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Archival Reproduction",
-          "x": 455,
-          "y": 775,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Two Display Sizes",
-          "x": 455,
-          "y": 875,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "THETACKLEROOM.COM",
-          "x": 760,
-          "y": 1060,
-          "fontSize": 14,
-          "fontWeight": 600,
-          "color": "rgba(255,255,255,0.3)",
-          "maxChars": 40,
-          "align": "center"
-        }
-      ]
-    },
-    {
-      "_comment": "=== hawaiian-ono-wahoo-gyotaku-artwork-print-by-dwight-hwang | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/hawaiian-ono-wahoo-gyotaku-artwork-print-by-dwight-hwang-c.jpg",
-      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_991789270.jpeg",
-      "backgroundPosition": "attention",
-      "productImage": {
-        "path": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/ProductImages/WahooPrint.png",
-        "x": 20,
-        "y": 600,
-        "width": 400,
-        "height": 460,
-        "padding": 20
-      },
-      "text": {
-        "headline": "HAWAIIAN ONO (WAHOO) GYOTAKU ARTWORK PRINT",
-        "subhead": "",
-        "cta": "GET IT NOW",
-        "footer": ""
-      },
-      "overlay": {
-        "leftColor": "5,20,35",
-        "midColor": "5,20,35",
-        "rightColor": "5,20,35",
-        "leftOpacity": 0.25,
-        "midOpacity": 0.2,
-        "rightOpacity": 0.25,
-        "vignetteBottom": 0.3
-      },
-      "typography": {
-        "headlineFontFamily": "Montserrat, Arial, sans-serif",
-        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
-        "headlineSize": 64,
-        "subheadSize": 1,
-        "headlineWeight": 800,
-        "subheadWeight": 400,
-        "ctaSize": 20,
-        "ctaWeight": 700,
-        "footerSize": 1,
-        "footerTracking": 4
-      },
-      "layout": {
-        "personality": "centered-hero",
-        "align": "center",
-        "leftX": 540,
-        "headlineY": 280,
-        "subheadY": 570,
-        "maxHeadlineChars": 22,
-        "maxSubheadChars": 1,
-        "ctaWidth": 520,
-        "ctaHeight": 50,
-        "ctaGroup": {
-          "relativeTo": "canvas",
-          "anchorX": "left",
-          "anchorY": "top",
-          "offsetX": 500,
-          "offsetY": 985,
-          "textAlign": "center"
-        },
-        "footerY": 1060
-      },
-      "shapes": [
-        {
-          "type": "rectangle",
-          "x": 0,
-          "y": 580,
-          "width": 440,
-          "height": 500,
-          "fill": "rgba(255,255,255,0.95)"
-        },
-        {
-          "type": "rectangle",
-          "x": 440,
-          "y": 580,
-          "width": 640,
-          "height": 500,
-          "fill": "rgba(30,30,30,0.92)"
-        }
-      ],
-      "textLayers": [
-        {
-          "content": "THE SPECS",
-          "x": 455,
-          "y": 620,
-          "fontSize": 28,
-          "fontWeight": 700,
-          "color": "rgba(255,255,255,0.5)",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Created by world-renowned artist Dwight Hwang",
-          "x": 455,
-          "y": 675,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Printed on archival quality paper",
-          "x": 455,
-          "y": 775,
-          "fontSize": 34,
-          "fontWeight": 600,
-          "color": "#ffffff",
-          "maxChars": 30
-        },
-        {
-          "content": "\u2713 Available in 13x19 and 20x30 inch sizes",
+          "content": "\u2713 Pre-rigged on 480lb cable with 8/0 hook",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -7634,7 +6491,7 @@
     },
     {
       "_comment": "=== momoi-leader-monofilament-leader | Variant a ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/momoi-leader-monofilament-leader-a.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/momoi-leader-monofilament-leader-a.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -7646,7 +6503,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "MOMOI HI-CATCH LEADER",
+        "headline": "THE LEADER THAT WON'T COIL, KINK, OR QUIT",
         "subhead": "",
         "cta": "SHOP NOW",
         "footer": ""
@@ -7721,7 +6578,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Premium Build Quality",
+          "content": "\u2713 Crystal clear \u2014 disappears in offshore water",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -7730,7 +6587,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Built for Saltwater",
+          "content": "\u2713 Low memory, straight off the spool",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -7739,7 +6596,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Trusted by Tournament Anglers",
+          "content": "\u2713 Built for saltwater abrasion and trusted by tournament pros",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -7761,7 +6618,7 @@
     },
     {
       "_comment": "=== momoi-leader-monofilament-leader | Variant b ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/momoi-leader-monofilament-leader-b.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/momoi-leader-monofilament-leader-b.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -7773,7 +6630,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "WHY MOMOI HI-CATCH LEADER?",
+        "headline": "LOW MEMORY. HIGH ABRASION RESISTANCE. FROM $26.99.",
         "subhead": "",
         "cta": "FROM $26.99",
         "footer": ""
@@ -7848,7 +6705,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Premium Build Quality",
+          "content": "\u2713 Cheap leader coils and kinks \u2014 Momoi doesn't",
           "x": 455,
           "y": 675,
           "fontSize": 34,
@@ -7857,7 +6714,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Built for Saltwater",
+          "content": "\u2713 Crystal clear monofilament for invisible presentations",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -7866,7 +6723,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Trusted by Tournament Anglers",
+          "content": "\u2713 The leader material tournament anglers actually use",
           "x": 455,
           "y": 875,
           "fontSize": 34,
@@ -7888,7 +6745,7 @@
     },
     {
       "_comment": "=== momoi-leader-monofilament-leader | Variant c ===",
-      "output": "/mnt/raid/Data/tmp/ads/explainer/momoi-leader-monofilament-leader-c.jpg",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-12-explainer/momoi-leader-monofilament-leader-c.jpg",
       "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
       "backgroundPosition": "attention",
       "productImage": {
@@ -7900,7 +6757,7 @@
         "padding": 20
       },
       "text": {
-        "headline": "MOMOI HI-CATCH LEADER",
+        "headline": "MOMOI HI-CATCH \u2014 CRYSTAL CLEAR MONO LEADER",
         "subhead": "",
         "cta": "GET IT NOW",
         "footer": ""
@@ -7984,7 +6841,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Low memory for clean rigging",
+          "content": "\u2713 Low memory for clean, straight rigging",
           "x": 455,
           "y": 775,
           "fontSize": 34,
@@ -7993,7 +6850,7 @@
           "maxChars": 30
         },
         {
-          "content": "\u2713 Superior abrasion resistance",
+          "content": "\u2713 Superior abrasion resistance in saltwater",
           "x": 455,
           "y": 875,
           "fontSize": 34,

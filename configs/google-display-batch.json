@@ -1,0 +1,553 @@
+{
+  "defaults": {
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#FFFFFF",
+      "subheadColor": "#e4e4e7",
+      "footerColor": "rgba(255,255,255,0.40)",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(232,93,58,0.92)",
+      "ctaStroke": "rgba(255,160,120,0.35)"
+    },
+    "typography": {
+      "headlineFontFamily": "Montserrat, Arial, sans-serif",
+      "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+      "headlineWeight": 800,
+      "subheadWeight": 400,
+      "ctaSize": 20,
+      "ctaWeight": 700,
+      "footerSize": 14,
+      "footerTracking": 4
+    }
+  },
+  "renders": [
+    {
+      "_comment": "=== DEEP DROP WEIGHTS — Landscape 1200x628 ===",
+      "preset": "google-landscape",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-16-google-display/deep-drop-weights-landscape.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_372953083.jpeg",
+      "backgroundPosition": "center",
+      "text": {
+        "headline": "Drop Deep. Land Big.",
+        "subhead": "Hand-poured lead weights. 1-32oz. Ships tomorrow.",
+        "cta": "SHOP WEIGHTS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "5,15,30",
+        "midColor": "5,15,30",
+        "rightColor": "5,15,30",
+        "leftOpacity": 0.88,
+        "midOpacity": 0.55,
+        "rightOpacity": 0.20,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineSize": 62,
+        "subheadSize": 24
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 60,
+        "headlineY": 150,
+        "subheadY": 340,
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 50,
+        "ctaWidth": 260,
+        "ctaHeight": 48,
+        "ctaRectX": 60,
+        "ctaRectY": 430,
+        "ctaX": 96,
+        "ctaY": 464,
+        "footerY": 580
+      }
+    },
+    {
+      "_comment": "=== DEEP DROP WEIGHTS — Portrait 960x1200 ===",
+      "preset": "google-portrait",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-16-google-display/deep-drop-weights-portrait.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/02.jpg",
+      "backgroundPosition": "center",
+      "text": {
+        "headline": "Swordfish Weight Kits",
+        "subhead": "Hand-poured lead. Bulk pricing. Ready to rig.",
+        "cta": "SHOP WEIGHTS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "5,12,25",
+        "midColor": "5,12,25",
+        "rightColor": "5,12,25",
+        "leftOpacity": 0.85,
+        "midOpacity": 0.60,
+        "rightOpacity": 0.40,
+        "vignetteBottom": 0.30
+      },
+      "typography": {
+        "headlineSize": 68,
+        "subheadSize": 28
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 480,
+        "headlineY": 240,
+        "subheadY": 500,
+        "maxHeadlineChars": 16,
+        "maxSubheadChars": 32,
+        "ctaWidth": 300,
+        "ctaHeight": 52,
+        "ctaGroup": {
+          "relativeTo": "canvas",
+          "anchorX": "left",
+          "anchorY": "top",
+          "offsetX": 450,
+          "offsetY": 680,
+          "textAlign": "center"
+        },
+        "footerY": 1120
+      }
+    },
+    {
+      "_comment": "=== TROLLING LURES — Landscape 1200x628 ===",
+      "preset": "google-landscape",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-16-google-display/trolling-lures-landscape.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_337378282.jpeg",
+      "backgroundPosition": "center",
+      "text": {
+        "headline": "Run The Spread That Works",
+        "subhead": "Sea witches, squid chains, spreader bars. Complete kits.",
+        "cta": "SHOP LURES",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "8,20,38",
+        "midColor": "8,20,38",
+        "rightColor": "8,20,38",
+        "leftOpacity": 0.88,
+        "midOpacity": 0.52,
+        "rightOpacity": 0.18,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineSize": 58,
+        "subheadSize": 24
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 60,
+        "headlineY": 145,
+        "subheadY": 340,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 52,
+        "ctaWidth": 240,
+        "ctaHeight": 48,
+        "ctaRectX": 60,
+        "ctaRectY": 430,
+        "ctaX": 96,
+        "ctaY": 464,
+        "footerY": 580
+      }
+    },
+    {
+      "_comment": "=== TROLLING LURES — Portrait 960x1200 ===",
+      "preset": "google-portrait",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-16-google-display/trolling-lures-portrait.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/06.jpg",
+      "backgroundPosition": "center",
+      "text": {
+        "headline": "Tournament Lure Kits",
+        "subhead": "Jagahoo, sea witch, daisy chain kits. Everything to run a spread.",
+        "cta": "SHOP LURES",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "6,18,32",
+        "midColor": "6,18,32",
+        "rightColor": "6,18,32",
+        "leftOpacity": 0.85,
+        "midOpacity": 0.58,
+        "rightOpacity": 0.38,
+        "vignetteBottom": 0.30
+      },
+      "typography": {
+        "headlineSize": 68,
+        "subheadSize": 28
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 480,
+        "headlineY": 240,
+        "subheadY": 500,
+        "maxHeadlineChars": 16,
+        "maxSubheadChars": 34,
+        "ctaWidth": 280,
+        "ctaHeight": 52,
+        "ctaGroup": {
+          "relativeTo": "canvas",
+          "anchorX": "left",
+          "anchorY": "top",
+          "offsetX": 450,
+          "offsetY": 680,
+          "textAlign": "center"
+        },
+        "footerY": 1120
+      }
+    },
+    {
+      "_comment": "=== FIGHTING BELTS — Landscape 1200x628 ===",
+      "preset": "google-landscape",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-16-google-display/fighting-belts-landscape.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_133588506.jpeg",
+      "backgroundPosition": "center",
+      "text": {
+        "headline": "Fight Longer. Hurt Less.",
+        "subhead": "Padded, vented, rod-holder ready. Built for all-day fights.",
+        "cta": "SHOP BELTS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "10,18,30",
+        "midColor": "10,18,30",
+        "rightColor": "10,18,30",
+        "leftOpacity": 0.88,
+        "midOpacity": 0.55,
+        "rightOpacity": 0.22,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineSize": 62,
+        "subheadSize": 24
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 60,
+        "headlineY": 150,
+        "subheadY": 340,
+        "maxHeadlineChars": 20,
+        "maxSubheadChars": 52,
+        "ctaWidth": 240,
+        "ctaHeight": 48,
+        "ctaRectX": 60,
+        "ctaRectY": 430,
+        "ctaX": 96,
+        "ctaY": 464,
+        "footerY": 580
+      }
+    },
+    {
+      "_comment": "=== FIGHTING BELTS — Portrait 960x1200 ===",
+      "preset": "google-portrait",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-16-google-display/fighting-belts-portrait.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/09.jpg",
+      "backgroundPosition": "center",
+      "text": {
+        "headline": "Seamount Fighting Belts",
+        "subhead": "All-day comfort. 500lb rated hardware. Win more fights.",
+        "cta": "SHOP BELTS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "8,15,28",
+        "midColor": "8,15,28",
+        "rightColor": "8,15,28",
+        "leftOpacity": 0.85,
+        "midOpacity": 0.60,
+        "rightOpacity": 0.40,
+        "vignetteBottom": 0.30
+      },
+      "typography": {
+        "headlineSize": 64,
+        "subheadSize": 28
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 480,
+        "headlineY": 240,
+        "subheadY": 520,
+        "maxHeadlineChars": 16,
+        "maxSubheadChars": 32,
+        "ctaWidth": 280,
+        "ctaHeight": 52,
+        "ctaGroup": {
+          "relativeTo": "canvas",
+          "anchorX": "left",
+          "anchorY": "top",
+          "offsetX": 450,
+          "offsetY": 700,
+          "textAlign": "center"
+        },
+        "footerY": 1120
+      }
+    },
+    {
+      "_comment": "=== PLANERS — Landscape 1200x628 ===",
+      "preset": "google-landscape",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-16-google-display/planers-landscape.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_175678582.jpeg",
+      "backgroundPosition": "center",
+      "text": {
+        "headline": "Get Baits Down 30 Feet",
+        "subhead": "Trips on strike. Dives 10-30ft. Fight the fish, not the gear.",
+        "cta": "SHOP PLANERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "5,18,35",
+        "midColor": "5,18,35",
+        "rightColor": "5,18,35",
+        "leftOpacity": 0.88,
+        "midOpacity": 0.52,
+        "rightOpacity": 0.18,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineSize": 58,
+        "subheadSize": 24
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 60,
+        "headlineY": 145,
+        "subheadY": 335,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 55,
+        "ctaWidth": 270,
+        "ctaHeight": 48,
+        "ctaRectX": 60,
+        "ctaRectY": 430,
+        "ctaX": 96,
+        "ctaY": 464,
+        "footerY": 580
+      }
+    },
+    {
+      "_comment": "=== PLANERS — Portrait 960x1200 ===",
+      "preset": "google-portrait",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-16-google-display/planers-portrait.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/13.jpg",
+      "backgroundPosition": "center",
+      "text": {
+        "headline": "Planer + Bridle Kits",
+        "subhead": "Complete rigging system. No missing parts. One order.",
+        "cta": "SHOP PLANERS",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "5,16,30",
+        "midColor": "5,16,30",
+        "rightColor": "5,16,30",
+        "leftOpacity": 0.85,
+        "midOpacity": 0.58,
+        "rightOpacity": 0.38,
+        "vignetteBottom": 0.30
+      },
+      "typography": {
+        "headlineSize": 68,
+        "subheadSize": 28
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 480,
+        "headlineY": 240,
+        "subheadY": 500,
+        "maxHeadlineChars": 16,
+        "maxSubheadChars": 34,
+        "ctaWidth": 300,
+        "ctaHeight": 52,
+        "ctaGroup": {
+          "relativeTo": "canvas",
+          "anchorX": "left",
+          "anchorY": "top",
+          "offsetX": 450,
+          "offsetY": 680,
+          "textAlign": "center"
+        },
+        "footerY": 1120
+      }
+    },
+    {
+      "_comment": "=== DREDGES — Landscape 1200x628 ===",
+      "preset": "google-landscape",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-16-google-display/dredges-landscape.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_219637627.jpeg",
+      "backgroundPosition": "center",
+      "text": {
+        "headline": "Run A Dredge. Pull More Fish.",
+        "subhead": "Squid bars, strip chains, complete dredge systems.",
+        "cta": "SHOP DREDGES",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "5,18,32",
+        "midColor": "5,18,32",
+        "rightColor": "5,18,32",
+        "leftOpacity": 0.88,
+        "midOpacity": 0.55,
+        "rightOpacity": 0.20,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineSize": 56,
+        "subheadSize": 24
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 60,
+        "headlineY": 140,
+        "subheadY": 340,
+        "maxHeadlineChars": 24,
+        "maxSubheadChars": 50,
+        "ctaWidth": 270,
+        "ctaHeight": 48,
+        "ctaRectX": 60,
+        "ctaRectY": 430,
+        "ctaX": 96,
+        "ctaY": 464,
+        "footerY": 580
+      }
+    },
+    {
+      "_comment": "=== DREDGES — Portrait 960x1200 ===",
+      "preset": "google-portrait",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-16-google-display/dredges-portrait.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/01.jpg",
+      "backgroundPosition": "center",
+      "text": {
+        "headline": "More Bites Behind The Boat",
+        "subhead": "Dredges create the bait school illusion. Fish can't resist.",
+        "cta": "SHOP DREDGES",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "5,14,28",
+        "midColor": "5,14,28",
+        "rightColor": "5,14,28",
+        "leftOpacity": 0.85,
+        "midOpacity": 0.60,
+        "rightOpacity": 0.40,
+        "vignetteBottom": 0.30
+      },
+      "typography": {
+        "headlineSize": 64,
+        "subheadSize": 28
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 480,
+        "headlineY": 240,
+        "subheadY": 520,
+        "maxHeadlineChars": 18,
+        "maxSubheadChars": 34,
+        "ctaWidth": 300,
+        "ctaHeight": 52,
+        "ctaGroup": {
+          "relativeTo": "canvas",
+          "anchorX": "left",
+          "anchorY": "top",
+          "offsetX": 450,
+          "offsetY": 700,
+          "textAlign": "center"
+        },
+        "footerY": 1120
+      }
+    },
+    {
+      "_comment": "=== TERMINAL TACKLE — Landscape 1200x628 ===",
+      "preset": "google-landscape",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-16-google-display/terminal-tackle-landscape.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Assets/AdobeStock/AdobeStock_331722964.jpeg",
+      "backgroundPosition": "center",
+      "text": {
+        "headline": "The Hardware That Holds",
+        "subhead": "Swivels, snaps, crimps, leaders. Offshore-rated.",
+        "cta": "SHOP TACKLE",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "8,18,32",
+        "midColor": "8,18,32",
+        "rightColor": "8,18,32",
+        "leftOpacity": 0.88,
+        "midOpacity": 0.55,
+        "rightOpacity": 0.20,
+        "vignetteBottom": 0.35
+      },
+      "typography": {
+        "headlineSize": 62,
+        "subheadSize": 24
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "align": "left",
+        "leftX": 60,
+        "headlineY": 150,
+        "subheadY": 340,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 48,
+        "ctaWidth": 260,
+        "ctaHeight": 48,
+        "ctaRectX": 60,
+        "ctaRectY": 430,
+        "ctaX": 96,
+        "ctaY": 464,
+        "footerY": 580
+      }
+    },
+    {
+      "_comment": "=== TERMINAL TACKLE — Portrait 960x1200 ===",
+      "preset": "google-portrait",
+      "output": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/StrikeFrame/2026-03-16-google-display/terminal-tackle-portrait.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/08.jpg",
+      "backgroundPosition": "center",
+      "text": {
+        "headline": "Offshore Terminal Tackle",
+        "subhead": "Crane swivels, snap swivels, crimps. 500lb rated.",
+        "cta": "SHOP TACKLE",
+        "footer": "THETACKLEROOM.COM"
+      },
+      "overlay": {
+        "leftColor": "6,16,30",
+        "midColor": "6,16,30",
+        "rightColor": "6,16,30",
+        "leftOpacity": 0.85,
+        "midOpacity": 0.58,
+        "rightOpacity": 0.38,
+        "vignetteBottom": 0.30
+      },
+      "typography": {
+        "headlineSize": 64,
+        "subheadSize": 28
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 480,
+        "headlineY": 240,
+        "subheadY": 520,
+        "maxHeadlineChars": 16,
+        "maxSubheadChars": 34,
+        "ctaWidth": 280,
+        "ctaHeight": 52,
+        "ctaGroup": {
+          "relativeTo": "canvas",
+          "anchorX": "left",
+          "anchorY": "top",
+          "offsetX": 450,
+          "offsetY": 700,
+          "textAlign": "center"
+        },
+        "footerY": 1120
+      }
+    }
+  ]
+}

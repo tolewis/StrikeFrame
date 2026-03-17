@@ -1,0 +1,45 @@
+{
+  "preset": "landscape-banner",
+  "template": "banner",
+  "output": "output/strikeframe-x-launch.jpg",
+  "text": {
+    "headline": "StrikeFrame",
+    "subhead": "Local media renderer for banners, social graphics, and product composites. Built and shipped today.",
+    "cta": "LIVE ON GITHUB",
+    "footer": "JSON \u00b7 PRESETS \u00b7 TYPE \u00b7 LAYOUTS"
+  },
+  "theme": {
+    "headlineColor": "#F5F7FB",
+    "subheadColor": "#D5DEEA",
+    "footerColor": "#AEBBCB",
+    "ctaTextColor": "#FFFFFF",
+    "ctaFill": "rgba(27,81,171,0.90)",
+    "ctaStroke": "rgba(148,185,241,0.38)",
+    "gradientStart": "#0C1220",
+    "gradientEnd": "#315B90",
+    "textPanelFill": "rgba(255,255,255,0.05)",
+    "textPanelStroke": "rgba(255,255,255,0.10)"
+  },
+  "overlay": {
+    "leftColor": "8,12,22",
+    "midColor": "18,30,50",
+    "rightColor": "48,89,140",
+    "leftOpacity": 0.84,
+    "midOpacity": 0.48,
+    "rightOpacity": 0.18
+  },
+  "typography": {
+    "headlineFontFamily": "Outfit, Arial, sans-serif",
+    "bodyFontFamily": "Source Serif 4, Georgia, serif",
+    "headlineSize": 96,
+    "subheadSize": 30,
+    "footerSize": 18
+  },
+  "layout": {
+    "personality": "split-card",
+    "panelWidth": 820,
+    "panelHeight": 620,
+    "maxHeadlineChars": 14,
+    "maxSubheadChars": 40
+  }
+}

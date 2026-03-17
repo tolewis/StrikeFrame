@@ -1,0 +1,62 @@
+{
+  "preset": "landscape-banner",
+  "width": 3840,
+  "height": 2160,
+  "template": "banner",
+  "backgroundPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/assets/launch-computers/desk-monitor.jpg",
+  "output": "output/strikeframe-good-sample-4k.png",
+  "text": {
+    "headline": "StrikeFrame",
+    "subhead": "Local media renderer for banners, social graphics, and product composites. Cleaner spacing. Better panel fit. Sharper hierarchy.",
+    "cta": "PNG SAMPLE",
+    "footer": "STRIKEFRAME · QA PASSED"
+  },
+  "theme": {
+    "headlineColor": "#F8FBFF",
+    "subheadColor": "#D8E2ED",
+    "footerColor": "#AEBACA",
+    "ctaTextColor": "#FFFFFF",
+    "ctaFill": "rgba(24,82,186,0.94)",
+    "ctaStroke": "rgba(153,193,255,0.34)",
+    "textPanelFill": "rgba(7,16,31,0.58)",
+    "textPanelStroke": "rgba(255,255,255,0.10)"
+  },
+  "overlay": {
+    "leftColor": "7,12,22",
+    "midColor": "18,31,56",
+    "rightColor": "54,91,142",
+    "leftOpacity": 0.86,
+    "midOpacity": 0.48,
+    "rightOpacity": 0.18
+  },
+  "typography": {
+    "headlineFontFamily": "Outfit, Arial, sans-serif",
+    "bodyFontFamily": "Source Serif 4, Georgia, serif",
+    "headlineSize": 178,
+    "subheadSize": 58,
+    "ctaSize": 42,
+    "footerSize": 30
+  },
+  "layout": {
+    "personality": "split-card",
+    "leftX": 240,
+    "headlineY": 360,
+    "subheadY": 720,
+    "ctaX": 272,
+    "ctaY": 1136,
+    "footerY": 1375,
+    "maxHeadlineChars": 16,
+    "maxSubheadChars": 36,
+    "ctaWidth": 500,
+    "ctaHeight": 102,
+    "ctaRectX": 230,
+    "ctaRectY": 1060,
+    "panelX": 160,
+    "panelY": 150,
+    "panelWidth": 1760,
+    "panelHeight": 1360
+  },
+  "review": {
+    "enforcePanelFit": true
+  }
+}
