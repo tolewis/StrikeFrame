@@ -1,0 +1,50 @@
+{
+  "renders": [
+    {
+      "preset": "linkedin-landscape",
+      "template": "banner",
+      "backgroundPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/review-board-strikeframe-mar18.jpg",
+      "output": "output/waterfall/2026-03-19_x_strikeframe_grok_variant.jpg",
+      "text": {
+        "headline": "One ad is never enough",
+        "subhead": "15 angles. 3 sizes. Fresh variants by lunch.",
+        "cta": "90+ ADS / 3 DAYS",
+        "footer": "@TOLEWIS \u00b7 STRIKEFRAME"
+      },
+      "theme": {
+        "headlineColor": "#F5F7FB",
+        "subheadColor": "#D7DDE8",
+        "footerColor": "#AEB9CA",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(21,32,54,0.88)",
+        "ctaStroke": "rgba(132,157,198,0.38)",
+        "gradientStart": "#0A101B",
+        "gradientEnd": "#334A6A",
+        "textPanelFill": "rgba(9,15,24,0.68)",
+        "textPanelStroke": "rgba(255,255,255,0.12)"
+      },
+      "overlay": {
+        "leftColor": "7,11,19",
+        "midColor": "20,30,48",
+        "rightColor": "56,80,112",
+        "leftOpacity": 0.72,
+        "midOpacity": 0.26,
+        "rightOpacity": 0.08
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Source Serif 4, Georgia, serif",
+        "headlineSize": 62,
+        "subheadSize": 26,
+        "footerSize": 18
+      },
+      "layout": {
+        "personality": "split-card",
+        "panelWidth": 720,
+        "panelHeight": 390,
+        "maxHeadlineChars": 24,
+        "maxSubheadChars": 46
+      }
+    }
+  ]
+}

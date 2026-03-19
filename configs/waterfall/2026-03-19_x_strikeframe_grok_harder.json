@@ -1,0 +1,142 @@
+{
+  "renders": [
+    {
+      "preset": "linkedin-landscape",
+      "template": "banner",
+      "backgroundPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/review-board-strikeframe-mar18.jpg",
+      "output": "output/waterfall/2026-03-19_x_strikeframe_grok_harder_1.jpg",
+      "text": {
+        "headline": "One ad is dead",
+        "subhead": "StrikeFrame forces 15+ variations before lunch. Operators only.",
+        "cta": "PROOF",
+        "footer": ""
+      },
+      "theme": {
+        "headlineColor": "#F5F7FB",
+        "subheadColor": "#D7DDE8",
+        "footerColor": "rgba(174,185,202,0.05)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(0,0,0,0)",
+        "ctaStroke": "rgba(0,0,0,0)",
+        "gradientStart": "#0A101B",
+        "gradientEnd": "#1F2A3F",
+        "textPanelFill": "rgba(9,15,24,0.55)",
+        "textPanelStroke": "rgba(255,255,255,0.08)"
+      },
+      "overlay": {
+        "leftColor": "7,11,19",
+        "midColor": "20,30,48",
+        "rightColor": "56,80,112",
+        "leftOpacity": 0.58,
+        "midOpacity": 0.18,
+        "rightOpacity": 0.04
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Source Serif 4, Georgia, serif",
+        "headlineSize": 62,
+        "subheadSize": 26,
+        "footerSize": 1
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "panelWidth": 680,
+        "panelHeight": 410,
+        "maxHeadlineChars": 24,
+        "maxSubheadChars": 46
+      }
+    },
+    {
+      "preset": "linkedin-landscape",
+      "template": "banner",
+      "backgroundPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/strikeframe-x-launch.jpg",
+      "output": "output/waterfall/2026-03-19_x_strikeframe_grok_harder_2.jpg",
+      "text": {
+        "headline": "42 angles tested",
+        "subhead": "Week 1. Zero fluff. Raw output from the last 14-day sprint.",
+        "cta": "42 LIVE",
+        "footer": ""
+      },
+      "theme": {
+        "headlineColor": "#FFFBEB",
+        "subheadColor": "#EDE4D3",
+        "footerColor": "rgba(174,185,202,0.05)",
+        "ctaTextColor": "#FFFBEB",
+        "ctaFill": "rgba(0,0,0,0)",
+        "ctaStroke": "rgba(0,0,0,0)",
+        "gradientStart": "#1C1208",
+        "gradientEnd": "#3F2A14",
+        "textPanelFill": "rgba(28,18,8,0.78)",
+        "textPanelStroke": "rgba(245, 212, 110, 0.25)"
+      },
+      "overlay": {
+        "leftColor": "28,18,8",
+        "midColor": "48,32,18",
+        "rightColor": "92,66,38",
+        "leftOpacity": 0.72,
+        "midOpacity": 0.41,
+        "rightOpacity": 0.09
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Source Serif 4, Georgia, serif",
+        "headlineSize": 59,
+        "subheadSize": 24,
+        "footerSize": 1
+      },
+      "layout": {
+        "personality": "split-card",
+        "panelWidth": 710,
+        "panelHeight": 395,
+        "maxHeadlineChars": 24,
+        "maxSubheadChars": 46
+      }
+    },
+    {
+      "preset": "linkedin-landscape",
+      "template": "banner",
+      "backgroundPath": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/x-followup-3.jpg",
+      "output": "output/waterfall/2026-03-19_x_strikeframe_grok_harder_3.jpg",
+      "text": {
+        "headline": "STOP SCROLLING",
+        "subhead": "Your next 9 ads are already generated. Execution speed wins.",
+        "cta": "9 READY",
+        "footer": ""
+      },
+      "theme": {
+        "headlineColor": "#FFEA80",
+        "subheadColor": "#F4E4C8",
+        "footerColor": "rgba(174,185,202,0.05)",
+        "ctaTextColor": "#FFEA80",
+        "ctaFill": "rgba(0,0,0,0)",
+        "ctaStroke": "rgba(0,0,0,0)",
+        "gradientStart": "#0F0A1F",
+        "gradientEnd": "#3B1A4A",
+        "textPanelFill": "rgba(15,10,31,0.65)",
+        "textPanelStroke": "rgba(255,234,128,0.22)"
+      },
+      "overlay": {
+        "leftColor": "15,10,31",
+        "midColor": "45,22,58",
+        "rightColor": "98,48,118",
+        "leftOpacity": 0.65,
+        "midOpacity": 0.29,
+        "rightOpacity": 0.11
+      },
+      "typography": {
+        "headlineFontFamily": "Outfit, Arial, sans-serif",
+        "bodyFontFamily": "Source Serif 4, Georgia, serif",
+        "headlineSize": 64,
+        "subheadSize": 25,
+        "footerSize": 1
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "panelWidth": 760,
+        "panelHeight": 380,
+        "maxHeadlineChars": 24,
+        "maxSubheadChars": 46
+      }
+    }
+  ]
+}
