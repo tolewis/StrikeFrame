@@ -47,6 +47,20 @@ For Tim/X and high-judgment social work, the bar should be **9/10 or better** be
 - **Tim** — should stop seeing obvious StrikeFrame/template slop presented as done
 
 ## 4. Non-goals
+## 4A. Benchmark policy
+The vision reviewer must be calibrated against **external, highly qualified social-media evidence** for what strong paid/social creative looks like.
+
+Do **not** use internal Tim content, legacy StrikeFrame outputs, or our own published posts as the gold standard for great creative. Those are useful as negative cases, edge cases, or regression fixtures — not as proof of excellence.
+
+Primary benchmark sources should come from external knowledge and competitive intelligence, especially:
+- `30 Projects/Master Social Media/`
+- `30 Projects/TackleRoom/Competitive Ad Intelligence/`
+- `30 Projects/TackleRoom/Integrations/Meta Ads API/2026-03-10 - Paid Ads Skill Adoption and Thesis Framework.md`
+
+Implication:
+- **good fixtures** should be sourced from external, qualified examples and research
+- **bad fixtures** may include internal misses like the rejected StrikeFrame/X asset
+
 Not in scope for v1:
 - automatic infinite rerender loops
 - full autonomous creative direction with no human review
@@ -244,7 +258,7 @@ Mitigation:
 
 ## 12. Immediate next tasks
 1. Create review JSON contract doc
-2. Build fixture set from known good/bad StrikeFrame outputs
+2. Build fixture set from **external qualified good examples** plus known-bad internal failures
 3. Implement `scripts/vision_review.py` against Popeye `minicpm-v:latest`
 4. Wire non-blocking output into `qaqc.py`
 5. Add hard-gate mode for X / Tim persona once fixture calibration is done

@@ -11,5 +11,6 @@
       "expected_not_pass": true,
       "reason": "Known bad concept for Tim/X; used to calibrate harsh multimodal review."
     }
-  ]
+  ],
+  "benchmark_policy": "External qualified social-media examples define good; internal content is allowed only for bad/diagnostic fixtures."
 }

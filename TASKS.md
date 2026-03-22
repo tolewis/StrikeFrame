@@ -25,7 +25,7 @@
 
 ## Next
 - Build Popeye vision-model QA/QC layer with channel/persona thresholds (`docs/PRD-vision-model-qaqc.md`)
-- Create good/bad fixture set for creative regression testing
+- Create fixture set for creative regression testing using external qualified good examples and internal bad/diagnostic misses
 - Split monolithic review responsibilities out of `scripts/qaqc.py` before vision integration lands
 - Add focal-point crop controls
 - Add font tokens / brand theme tokens

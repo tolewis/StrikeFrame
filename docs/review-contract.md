@@ -52,3 +52,8 @@ Structured output contract for multimodal creative review in StrikeFrame.
 - Prompt files live in repo under `prompts/`
 - Generated review JSON belongs next to the reviewed output asset
 - Scratch/test renders for calibration belong in `/mnt/raid/Data/tmp/openclaw-builds/katya/...`
+
+## Calibration policy
+- High-quality benchmark examples for paid/social creative must come from **external, qualified sources**.
+- Internal StrikeFrame outputs and legacy Tim content are allowed as negative fixtures or diagnostic cases, not as the definition of excellence.
+- Calibration/reference research should be drawn from the social-media and competitive-ad knowledge base, not from our own internal posts.
