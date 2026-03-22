@@ -3,7 +3,7 @@
     {
       "preset": "linkedin-landscape",
       "template": "banner",
-      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/01.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier4-marginal/01.jpg",
       "output": "output/waterfall/tackleroom_linkedin_content-factory.jpg",
       "text": {
         "headline": "Content Factory, Not a Blog",
@@ -46,7 +46,7 @@
     {
       "preset": "social-square",
       "template": "banner",
-      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/03.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier4-marginal/03.jpg",
       "output": "output/waterfall/tackleroom_x_content-factory.jpg",
       "text": {
         "headline": "Build the Pipeline First",
@@ -94,7 +94,7 @@
     {
       "preset": "landscape-banner",
       "template": "banner",
-      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/05.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier4-marginal/05.jpg",
       "output": "output/waterfall/tackleroom_blog_content-factory.jpg",
       "text": {
         "headline": "Building a Content Factory",
@@ -133,7 +133,7 @@
     {
       "preset": "social-portrait",
       "template": "banner",
-      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/Stock/Unsplash/2026-03-10-fishing-lifestyle-queue/09.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier4-marginal/09.jpg",
       "output": "output/waterfall/tackleroom_ig_content-factory-cover.jpg",
       "text": {
         "headline": "Content Factory for E-Commerce",
