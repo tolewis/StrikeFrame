@@ -24,6 +24,7 @@
 - Produced 63 product explainer cards (100% pass QA) — pushed to Dropbox 2026-03-12
 
 ## Next
+- Use calibration runner against external benchmark manifest and tune Popeye reviewer until good seeds pass/warn and bad diagnostics fail/reject consistently
 - Build calibration ingestion/eval tooling against `/home/tlewis/Dropbox/Tim/Datasets/social-media-kb/03_calibration/strikeframe-vision/benchmark-manifest.json`
 - Stand up Dropbox-backed social-media calibration dataset under `/home/tlewis/Dropbox/Tim/Datasets/social-media-kb/` and absorb `AdExamples-kb` deliberately
 - Build Popeye vision-model QA/QC layer with channel/persona thresholds (`docs/PRD-vision-model-qaqc.md`)

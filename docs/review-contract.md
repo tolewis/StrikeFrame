@@ -61,3 +61,5 @@ Structured output contract for multimodal creative review in StrikeFrame.
 ## Current dataset entrypoint
 - `/home/tlewis/Dropbox/Tim/Datasets/social-media-kb/03_calibration/strikeframe-vision/benchmark-manifest.json`
 - Repo helper: `python3 scripts/load_calibration_manifest.py`
+
+- Calibration runner: `python3 scripts/run_calibration_eval.py`

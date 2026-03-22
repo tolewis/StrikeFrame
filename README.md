@@ -109,3 +109,7 @@ More examples and experiments live in:
 - `configs/proof/`
 - `examples/`
 - `skills/`
+
+## Calibration eval
+- `python3 scripts/run_calibration_eval.py --limit-good 5 --limit-bad 1`
+- Writes durable run outputs to `/home/tlewis/Dropbox/Tim/Datasets/social-media-kb/03_calibration/strikeframe-vision/runs/`
