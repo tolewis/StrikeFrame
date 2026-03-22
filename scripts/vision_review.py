@@ -204,6 +204,18 @@ def normalize_verdict(data: dict, channel: str, persona: str) -> dict:
     return data
 
 
+def rubric_dimension_score(parsed: dict, field: str) -> float:
+    aliases = {
+        'text_readability_score': ['readability_score'],
+    }
+    candidates = [field, *aliases.get(field, [])]
+    for key in candidates:
+        value = parsed.get(key)
+        if isinstance(value, (int, float)):
+            return min(5.0, max(1.0, float(value)))
+    return 3.0
+
+
 def compute_rubric_total(parsed: dict) -> int:
     """Compute the weighted rubric total from dimension scores (0-100)."""
     weights = {
@@ -216,14 +228,10 @@ def compute_rubric_total(parsed: dict) -> int:
         'brand_authenticity_score': 2,
         'platform_fit_score': 2,
     }
-    total = 0
+    total = 0.0
     for field, weight in weights.items():
-        score = parsed.get(field, 3)  # default 3 if missing
-        if isinstance(score, (int, float)):
-            total += min(5, max(1, int(score))) * weight
-        else:
-            total += 3 * weight
-    return total
+        total += rubric_dimension_score(parsed, field) * weight
+    return int(round(total))
 
 
 def build_report(args, parsed: dict, raw_response: str) -> dict:
@@ -266,14 +274,14 @@ def build_report(args, parsed: dict, raw_response: str) -> dict:
         report['rubric_total'] = rubric_total
         report['rubric_max'] = 100
         report['dimension_scores'] = {
-            'scroll_stop': int(parsed.get('scroll_stop_score', 3)),
-            'composition': int(parsed.get('composition_score', 3)),
-            'readability': int(parsed.get('text_readability_score', parsed.get('readability_score', 3))),
-            'color_contrast': int(parsed.get('color_contrast_score', 3)),
-            'image_quality': int(parsed.get('image_quality_score', 3)),
-            'content_value': int(parsed.get('content_value_score', 3)),
-            'brand_authenticity': int(parsed.get('brand_authenticity_score', 3)),
-            'platform_fit': int(parsed.get('platform_fit_score', 3)),
+            'scroll_stop': rubric_dimension_score(parsed, 'scroll_stop_score'),
+            'composition': rubric_dimension_score(parsed, 'composition_score'),
+            'readability': rubric_dimension_score(parsed, 'text_readability_score'),
+            'color_contrast': rubric_dimension_score(parsed, 'color_contrast_score'),
+            'image_quality': rubric_dimension_score(parsed, 'image_quality_score'),
+            'content_value': rubric_dimension_score(parsed, 'content_value_score'),
+            'brand_authenticity': rubric_dimension_score(parsed, 'brand_authenticity_score'),
+            'platform_fit': rubric_dimension_score(parsed, 'platform_fit_score'),
         }
     
     return report
