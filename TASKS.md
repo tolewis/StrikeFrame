@@ -24,6 +24,9 @@
 - Produced 63 product explainer cards (100% pass QA) — pushed to Dropbox 2026-03-12
 
 ## Next
+- Build Popeye vision-model QA/QC layer with channel/persona thresholds (`docs/PRD-vision-model-qaqc.md`)
+- Create good/bad fixture set for creative regression testing
+- Split monolithic review responsibilities out of `scripts/qaqc.py` before vision integration lands
 - Add focal-point crop controls
 - Add font tokens / brand theme tokens
 - Improve text sharpness and spacing logic
