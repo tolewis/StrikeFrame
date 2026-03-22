@@ -1,8 +1,8 @@
 # PRD — StrikeFrame
 
-**Version:** v0.4.1  
-**Status:** SHIPPED  
-**Date:** 2026-03-10
+**Version:** v0.5.0  
+**Status:** PROJECT COMPLETE  
+**Date:** 2026-03-22
 
 ## Product
 StrikeFrame
@@ -40,6 +40,9 @@ That gap caused:
 - Brand-aware framework presets (TackleRoomSupply, Contractor-AI, Unhook Outdoors examples)
 - Sample outputs generated from saved stock images
 - Agent skill for reuse (`media-renderer`)
+- Popeye vision-review integration with external benchmark calibration
+- Dropbox-backed social-media calibration dataset + manifest loader
+- Calibration eval runner for good/bad benchmark regression checks
 - Waterfall system integration docs
 
 ### Not included
@@ -84,6 +87,10 @@ That gap caused:
 ## Shipped proof
 - `output/sample-banner.jpg`
 - `output/sample-product-composite.jpg`
+- `docs/GRADING-RUBRIC.md`
+- `scripts/vision_review.py`
+- `scripts/run_calibration_eval.py`
+- Dropbox calibration manifest at `/home/tlewis/Dropbox/Tim/Datasets/social-media-kb/03_calibration/strikeframe-vision/benchmark-manifest.json`
 - Visible GitHub README examples for 4 featured directions:
   - TackleRoomSupply 2030
   - Contractor-AI 2030
@@ -97,7 +104,7 @@ That gap caused:
 - `31 Content Waterfall System/Media Renderer Integration.md`
 - `31 Content Waterfall System/Image Selection Framework.md`
 
-## Next likely iterations
+## Future backlog (not blockers for v0.5.0 closeout)
 1. Real product PNG/cutout flow
 2. Theme tokens and font system
 3. Batch rendering from content manifests

@@ -1,8 +1,10 @@
 # StrikeFrame
 
-Version: **v0.4.1**
+Version: **v0.5.0**
 
 Local renderer for banners, social graphics, and simple product composites.
+
+Status: **PROJECT COMPLETE (v0.5.0 scope)**
 
 ## What it does
 - renders marketing graphics locally
@@ -49,7 +51,7 @@ StrikeFrame runs a **single-pass review after file creation**.
 
 It does **not** auto-rerender in a loop. It renders once, inspects once, writes a review file, and reports `pass`, `warn`, or `fail`.
 
-Phase-1 vision review is now scaffolded as an optional second-stage critic against Popeye:
+StrikeFrame now includes a calibrated second-stage Popeye critic for benchmarked review and evaluation:
 - `python3 scripts/vision_review.py <image> --channel x --persona tim-operator ...`
 - `python3 scripts/qaqc.py <config> --vision on --channel x --persona tim-operator`
 - `python3 scripts/qaqc.py <config> --vision required --channel x --persona tim-operator`
@@ -83,6 +85,8 @@ Before calling an asset done, check:
 - `npm run render:linkedin`
 - `npm run render:product`
 - `npm run qaqc`
+- `npm run qaqc:vision`
+- `npm run calibration:eval`
 
 ## Test and config hygiene
 - `npm test` — config validation + smoke tests
@@ -113,3 +117,9 @@ More examples and experiments live in:
 ## Calibration eval
 - `python3 scripts/run_calibration_eval.py --limit-good 5 --limit-bad 1`
 - Writes durable run outputs to `/home/tlewis/Dropbox/Tim/Datasets/social-media-kb/03_calibration/strikeframe-vision/runs/`
+
+## Release status
+- v0.5.0 closes the current StrikeFrame project scope.
+- Local render/test/config lane is working.
+- Popeye vision review is integrated, benchmarked against external paid-social seeds, and wired to the Dropbox-backed calibration dataset.
+- Future improvements are backlog, not blockers for closing this version.

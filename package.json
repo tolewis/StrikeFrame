@@ -1,6 +1,6 @@
 {
   "name": "strikeframe",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "private": false,
   "description": "Local renderer for banners, social graphics, and simple product composites",
   "scripts": {
@@ -12,7 +12,9 @@
     "qaqc": "python3 scripts/qaqc.py configs/sample-batch.json",
     "validate:configs": "node scripts/validate-configs.js",
     "test:smoke": "node scripts/test.js",
-    "test": "npm run validate:configs && npm run test:smoke"
+    "test": "npm run validate:configs && npm run test:smoke",
+    "qaqc:vision": "python3 scripts/qaqc.py configs/sample-batch.json --vision on --channel paid-social --persona generic",
+    "calibration:eval": "python3 scripts/run_calibration_eval.py --limit-good 3 --limit-bad 1 --timeout 180 --retries 1"
   },
   "dependencies": {
     "sharp": "^0.33.5"

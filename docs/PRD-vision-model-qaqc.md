@@ -1,10 +1,22 @@
 # PRD — Vision Model QA/QC for StrikeFrame
 
 **Product:** StrikeFrame  
-**Status:** Proposed  
+**Status:** SHIPPED IN v0.5.0 SCOPE  
 **Date:** 2026-03-22  
 **Author:** Katya  
 **Driver:** Tim rejected a live X asset that built-in StrikeFrame QA scored as `93/pass`, while Popeye multimodal review scored it `3/10 reject`.
+
+
+## Outcome
+This PRD is now shipped for the v0.5.0 project scope at the level required to close StrikeFrame cleanly:
+- vision review script exists
+- paid-social / generic / X prompt variants exist
+- Dropbox-backed calibration dataset exists
+- benchmark manifest loader exists
+- calibration eval runner exists
+- external good seeds and internal bad diagnostics are registered
+
+Remaining work is iterative calibration improvement, not a blocker to call the project shipped.
 
 ## 1. Problem
 StrikeFrame currently has a geometry-first QA/QC layer.
