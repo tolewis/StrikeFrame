@@ -1,14 +1,14 @@
 # PRD — Vision Model QA/QC for StrikeFrame
 
 **Product:** StrikeFrame  
-**Status:** SHIPPED IN v0.5.0 SCOPE  
+**Status:** SHIPPED IN v0.5.1 SCOPE  
 **Date:** 2026-03-22  
 **Author:** Katya  
 **Driver:** Tim rejected a live X asset that built-in StrikeFrame QA scored as `93/pass`, while Popeye multimodal review scored it `3/10 reject`.
 
 
 ## Outcome
-This PRD is now shipped for the v0.5.0 project scope at the level required to close StrikeFrame cleanly:
+This PRD is now shipped for the v0.5.1 project scope at the level required to close StrikeFrame cleanly:
 - vision review script exists
 - paid-social / generic / X prompt variants exist
 - Dropbox-backed calibration dataset exists

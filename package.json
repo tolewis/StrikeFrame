@@ -1,6 +1,6 @@
 {
   "name": "strikeframe",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "private": false,
   "description": "Local renderer for banners, social graphics, and simple product composites",
   "scripts": {

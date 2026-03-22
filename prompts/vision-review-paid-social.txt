@@ -50,8 +50,8 @@ Return strict JSON only:
 
 Paid social thresholds:
 - 85-100 points = pass (ship to Meta)
-- 72-84 = warn (review, may need creative iteration)
-- 60-71 = fail (iterate before spending budget)
+- 70-84 = warn (review, may need creative iteration)
+- 60-69 = fail (iterate before spending budget)
 - <60 = reject (do not run)
 
 Be specific in reasons and fixes. Name exact elements.

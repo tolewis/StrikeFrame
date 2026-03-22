@@ -14,7 +14,7 @@ except ModuleNotFoundError:
     from scripts.review_prompts import load_prompt
 
 DEFAULT_HOST = 'http://192.168.0.160:11434'
-DEFAULT_MODEL = 'llava:7b'
+DEFAULT_MODEL = 'minicpm-v:latest'
 CONTRACT_VERSION = '1.0'
 
 
@@ -144,20 +144,51 @@ def extract_json(text: str) -> dict:
 
 
 def normalize_verdict(data: dict, channel: str, persona: str) -> dict:
-    overall = clamp_score(data.get('overall_score', 0))
-    fit = clamp_score(data.get('copy_visual_fit_score', overall))
-    slop = normalize_label_score(data.get('slop_risk', 'high'), 'slop')
-
-    verdict = str(data.get('verdict', '')).lower().strip()
-    if verdict not in {'pass', 'warn', 'fail', 'reject'}:
-        if overall >= 9.0:
-            verdict = 'pass'
-        elif overall >= 7.5:
-            verdict = 'warn'
-        elif overall >= 5.0:
-            verdict = 'fail'
+    if 'scroll_stop_score' in data:
+        total = compute_rubric_total(data)
+        overall = round(total / 10, 1)
+        channel_fit = clamp_score(data.get('platform_fit_score', 3) * 2)
+        fit = clamp_score(data.get('content_value_score', 3) * 2)
+        readability = clamp_score(data.get('readability_score', data.get('text_readability_score', 3)) * 2)
+        brand = clamp_score(data.get('brand_authenticity_score', 3))
+        slop = 'low' if brand >= 4 else 'medium' if brand >= 3 else 'high'
+        data['overall_score'] = overall
+        data['channel_fit_score'] = channel_fit
+        data['copy_visual_fit_score'] = fit
+        data['readability_score'] = readability
+        data['slop_risk'] = slop
+        if channel == 'paid-social':
+            if total >= 85:
+                verdict = 'pass'
+            elif total >= 70:
+                verdict = 'warn'
+            elif total >= 60:
+                verdict = 'fail'
+            else:
+                verdict = 'reject'
         else:
-            verdict = 'reject'
+            if total >= 85:
+                verdict = 'pass'
+            elif total >= 72:
+                verdict = 'warn'
+            elif total >= 60:
+                verdict = 'fail'
+            else:
+                verdict = 'reject'
+    else:
+        overall = clamp_score(data.get('overall_score', 0))
+        fit = clamp_score(data.get('copy_visual_fit_score', overall))
+        slop = normalize_label_score(data.get('slop_risk', 'high'), 'slop')
+        verdict = str(data.get('verdict', '')).lower().strip()
+        if verdict not in {'pass', 'warn', 'fail', 'reject'}:
+            if overall >= 9.0:
+                verdict = 'pass'
+            elif overall >= 7.5:
+                verdict = 'warn'
+            elif overall >= 5.0:
+                verdict = 'fail'
+            else:
+                verdict = 'reject'
 
     if channel == 'x' and persona == 'tim-operator':
         if overall < 9.0 or fit < 9.0 or slop != 'low':
@@ -178,7 +209,7 @@ def compute_rubric_total(parsed: dict) -> int:
     weights = {
         'scroll_stop_score': 4,
         'composition_score': 3,
-        'readability_score': 3,
+        'text_readability_score': 3,
         'color_contrast_score': 2,
         'image_quality_score': 2,
         'content_value_score': 2,
@@ -237,7 +268,7 @@ def build_report(args, parsed: dict, raw_response: str) -> dict:
         report['dimension_scores'] = {
             'scroll_stop': int(parsed.get('scroll_stop_score', 3)),
             'composition': int(parsed.get('composition_score', 3)),
-            'readability': int(parsed.get('readability_score', 3)),
+            'readability': int(parsed.get('text_readability_score', parsed.get('readability_score', 3))),
             'color_contrast': int(parsed.get('color_contrast_score', 3)),
             'image_quality': int(parsed.get('image_quality_score', 3)),
             'content_value': int(parsed.get('content_value_score', 3)),

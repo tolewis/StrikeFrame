@@ -1,6 +1,6 @@
 # PRD — StrikeFrame
 
-**Version:** v0.5.0  
+**Version:** v0.5.1  
 **Status:** PROJECT COMPLETE  
 **Date:** 2026-03-22
 
@@ -104,7 +104,7 @@ That gap caused:
 - `31 Content Waterfall System/Media Renderer Integration.md`
 - `31 Content Waterfall System/Image Selection Framework.md`
 
-## Future backlog (not blockers for v0.5.0 closeout)
+## Future backlog (not blockers for v0.5.1 closeout)
 1. Real product PNG/cutout flow
 2. Theme tokens and font system
 3. Batch rendering from content manifests

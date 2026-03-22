@@ -4,7 +4,7 @@
 - Added Popeye vision-review integration, calibration dataset wiring, and eval runner
 - Created Dropbox-backed `social-media-kb` parent dataset and registered `AdExamples-kb` as external benchmark seed
 - Validated calibration improvement from 1/4 to 4/4 expectations met on the benchmark eval run
-- Closed current project scope as StrikeFrame v0.5.0
+- Closed current project scope as StrikeFrame v0.5.1
 - Initialized minimal Node project
 - Installed renderer dependency (`sharp`)
 - Built local banner renderer

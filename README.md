@@ -1,10 +1,10 @@
 # StrikeFrame
 
-Version: **v0.5.0**
+Version: **v0.5.1**
 
 Local renderer for banners, social graphics, and simple product composites.
 
-Status: **PROJECT COMPLETE (v0.5.0 scope)**
+Status: **PROJECT COMPLETE (v0.5.1 scope)**
 
 ## What it does
 - renders marketing graphics locally
@@ -119,7 +119,7 @@ More examples and experiments live in:
 - Writes durable run outputs to `/home/tlewis/Dropbox/Tim/Datasets/social-media-kb/03_calibration/strikeframe-vision/runs/`
 
 ## Release status
-- v0.5.0 closes the current StrikeFrame project scope.
+- v0.5.1 closes the current StrikeFrame project scope.
 - Local render/test/config lane is working.
 - Popeye vision review is integrated, benchmarked against external paid-social seeds, and wired to the Dropbox-backed calibration dataset.
 - Future improvements are backlog, not blockers for closing this version.
