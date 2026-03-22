@@ -72,8 +72,26 @@ Before calling an asset done, check:
 
 ## Run
 - `npm install`
-- `node scripts/render.js configs/sample-batch.json`
-- `node scripts/render.js configs/frameworks/contractor-ai-2030.json`
+- `npm run render`
+- `npm run render:square`
+- `npm run render:linkedin`
+- `npm run render:product`
+- `npm run qaqc`
+
+## Test and config hygiene
+- `npm test` — config validation + smoke tests
+- `npm run validate:configs` — parse all config JSON and flag missing repo-local refs
+- `npm run test:smoke` — render self-contained fixtures and run QA/QC on the batch sample
+
+Validation rules:
+- missing repo-local assets = fail
+- missing external asset refs (Dropbox/library paths) = warning only
+- smoke tests fail only on render crashes or `reviewStatus/final_status = fail`
+
+## Asset contract
+- Sample configs are the self-contained test surface and should stay runnable on a clean checkout after `npm install`.
+- Many production configs intentionally reference external asset libraries under Dropbox and other local paths; those are real workflow dependencies, not bundled repo fixtures.
+- If an asset library moves, fix the config paths or the shared defaults instead of pretending the repo is fully portable.
 
 More examples and experiments live in:
 - `configs/frameworks/`

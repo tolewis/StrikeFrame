@@ -31,10 +31,10 @@
       "align": "center",
       "maxHeadlineChars": 14,
       "maxSubheadChars": 23,
-      "headlineY": 185,
-      "subheadY": 470,
-      "ctaRectY": 655,
-      "ctaY": 693,
+      "headlineY": 300,
+      "subheadY": 500,
+      "ctaRectY": 700,
+      "ctaY": 738,
       "footerY": 1000,
       "ctaWidth": 300
     }

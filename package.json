@@ -1,12 +1,18 @@
 {
   "name": "strikeframe",
-  "version": "0.2.0",
+  "version": "0.4.1",
   "private": false,
   "description": "Local renderer for banners, social graphics, and simple product composites",
   "scripts": {
-    "generate": "node scripts/render.js configs/sample-banner.json",
-    "generate:banner": "node scripts/render.js configs/sample-banner.json",
-    "generate:product": "node scripts/render.js configs/sample-product-composite.json"
+    "render": "node scripts/render.js configs/sample-banner.json",
+    "render:banner": "node scripts/render.js configs/sample-banner.json",
+    "render:square": "node scripts/render.js configs/sample-social-square.json",
+    "render:linkedin": "node scripts/render.js configs/sample-linkedin-landscape.json",
+    "render:product": "node scripts/render.js configs/sample-product-composite.json",
+    "qaqc": "python3 scripts/qaqc.py configs/sample-batch.json",
+    "validate:configs": "node scripts/validate-configs.js",
+    "test:smoke": "node scripts/test.js",
+    "test": "npm run validate:configs && npm run test:smoke"
   },
   "dependencies": {
     "sharp": "^0.33.5"
