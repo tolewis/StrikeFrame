@@ -101,6 +101,7 @@ Validation rules:
 - Repo-native code/docs/contracts belong here; generated calibration renders and scratch review batches belong in `/mnt/raid/Data/tmp/openclaw-builds/katya/...` until deliberately promoted.
 - Dropbox is for verified final creative deliverables, not implementation debris.
 - Durable social-media calibration datasets belong in `/home/tlewis/Dropbox/Tim/Datasets/social-media-kb/`; existing `AdExamples-kb` is a registered upstream seed corpus.
+- Calibration manifest loader: `python3 scripts/load_calibration_manifest.py` reads the Dropbox-backed benchmark manifest used for StrikeFrame vision calibration.
 
 More examples and experiments live in:
 - `configs/frameworks/`

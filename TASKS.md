@@ -24,6 +24,7 @@
 - Produced 63 product explainer cards (100% pass QA) — pushed to Dropbox 2026-03-12
 
 ## Next
+- Build calibration ingestion/eval tooling against `/home/tlewis/Dropbox/Tim/Datasets/social-media-kb/03_calibration/strikeframe-vision/benchmark-manifest.json`
 - Stand up Dropbox-backed social-media calibration dataset under `/home/tlewis/Dropbox/Tim/Datasets/social-media-kb/` and absorb `AdExamples-kb` deliberately
 - Build Popeye vision-model QA/QC layer with channel/persona thresholds (`docs/PRD-vision-model-qaqc.md`)
 - Create fixture set for creative regression testing using external qualified good examples and internal bad/diagnostic misses

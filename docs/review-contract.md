@@ -57,3 +57,7 @@ Structured output contract for multimodal creative review in StrikeFrame.
 - High-quality benchmark examples for paid/social creative must come from **external, qualified sources**.
 - Internal StrikeFrame outputs and legacy Tim content are allowed as negative fixtures or diagnostic cases, not as the definition of excellence.
 - Calibration/reference research should be drawn from the social-media and competitive-ad knowledge base, not from our own internal posts.
+
+## Current dataset entrypoint
+- `/home/tlewis/Dropbox/Tim/Datasets/social-media-kb/03_calibration/strikeframe-vision/benchmark-manifest.json`
+- Repo helper: `python3 scripts/load_calibration_manifest.py`
