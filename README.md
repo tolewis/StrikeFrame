@@ -49,8 +49,14 @@ StrikeFrame runs a **single-pass review after file creation**.
 
 It does **not** auto-rerender in a loop. It renders once, inspects once, writes a review file, and reports `pass`, `warn`, or `fail`.
 
+Phase-1 vision review is now scaffolded as an optional second-stage critic against Popeye:
+- `python3 scripts/vision_review.py <image> --channel x --persona tim-operator ...`
+- `python3 scripts/qaqc.py <config> --vision on --channel x --persona tim-operator`
+- `python3 scripts/qaqc.py <config> --vision required --channel x --persona tim-operator`
+
 Review output:
 - `<asset>.review.json`
+- `<asset>.vision-review.json`
 
 Checks include:
 - headline/subhead/CTA fit inside the intended primary region
@@ -92,6 +98,8 @@ Validation rules:
 - Sample configs are the self-contained test surface and should stay runnable on a clean checkout after `npm install`.
 - Many production configs intentionally reference external asset libraries under Dropbox and other local paths; those are real workflow dependencies, not bundled repo fixtures.
 - If an asset library moves, fix the config paths or the shared defaults instead of pretending the repo is fully portable.
+- Repo-native code/docs/contracts belong here; generated calibration renders and scratch review batches belong in `/mnt/raid/Data/tmp/openclaw-builds/katya/...` until deliberately promoted.
+- Dropbox is for verified final creative deliverables, not implementation debris.
 
 More examples and experiments live in:
 - `configs/frameworks/`

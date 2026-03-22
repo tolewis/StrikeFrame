@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "note": "Fixture metadata only. Generated renders and calibration batches live in tmp until deliberately promoted.",
+  "cases": [
+    {
+      "id": "bad-x-plumbing-2026-03-16",
+      "channel": "x",
+      "persona": "tim-operator",
+      "source_config": "configs/waterfall/2026-03-16_x-best5-strikeframe.json",
+      "expected_min_verdict": "fail",
+      "expected_not_pass": true,
+      "reason": "Known bad concept for Tim/X; used to calibrate harsh multimodal review."
+    }
+  ]
+}

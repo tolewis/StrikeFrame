@@ -4,3 +4,4 @@ output/
 .env
 *.review.json
 *.qaqc-report.json
+*.vision-review.json

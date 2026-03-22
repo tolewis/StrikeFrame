@@ -18,6 +18,7 @@ Circuit breaker: max 1 correction pass. No loops.
 """
 
 import json
+import argparse
 import subprocess
 import sys
 import os
@@ -28,6 +29,7 @@ from collections import defaultdict
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 RENDER_SCRIPT = PROJECT_ROOT / "scripts" / "render.js"
+VISION_SCRIPT = PROJECT_ROOT / "scripts" / "vision_review.py"
 
 # ---------------------------------------------------------------------------
 # Config loading
@@ -549,12 +551,66 @@ def print_report(results: list[dict]):
 # Main
 # ---------------------------------------------------------------------------
 
-def main():
-    if len(sys.argv) < 2:
-        print("Usage: python3 scripts/qaqc.py <config.json>")
-        sys.exit(1)
+def run_vision_review(result: dict, cfg: dict, args) -> dict | None:
+    if args.vision == "off":
+        return None
 
-    config_path = sys.argv[1]
+    cmd = [
+        sys.executable,
+        str(VISION_SCRIPT),
+        result.get("output", ""),
+        "--host", args.vision_host,
+        "--model", args.vision_model,
+        "--channel", args.channel,
+        "--persona", args.persona,
+        "--headline", cfg.get("text", {}).get("headline", ""),
+        "--subhead", cfg.get("text", {}).get("subhead", ""),
+        "--cta", cfg.get("text", {}).get("cta", ""),
+        "--footer", cfg.get("text", {}).get("footer", ""),
+        "--source-config", args.config_path,
+        "--write-report",
+    ]
+    proc = subprocess.run(cmd, capture_output=True, text=True)
+    payload = None
+    if proc.stdout.strip():
+        try:
+            payload = json.loads(proc.stdout)
+        except Exception:
+            payload = {"status": "error", "error": "vision review returned non-json", "raw": proc.stdout[-1000:]}
+    else:
+        payload = {"status": "error", "error": proc.stderr.strip() or "vision review produced no stdout"}
+
+    payload["exit_code"] = proc.returncode
+    return payload
+
+
+def merge_status(base_status: str, vision: dict | None, mode: str) -> str:
+    if not vision or mode != "required":
+        return base_status
+    verdict = vision.get("verdict")
+    if verdict == "reject":
+        return "fail"
+    if verdict == "fail":
+        return "fail"
+    if verdict == "warn" and base_status == "pass":
+        return "warn"
+    return base_status
+
+
+def parse_args():
+    ap = argparse.ArgumentParser(description="StrikeFrame QA/QC")
+    ap.add_argument("config_path")
+    ap.add_argument("--vision", choices=["off", "on", "required"], default="off")
+    ap.add_argument("--vision-host", default="http://192.168.0.160:11434")
+    ap.add_argument("--vision-model", default="minicpm-v:latest")
+    ap.add_argument("--channel", default="generic")
+    ap.add_argument("--persona", default="generic")
+    return ap.parse_args()
+
+
+def main():
+    args = parse_args()
+    config_path = args.config_path
     if not os.path.isabs(config_path):
         config_path = str(PROJECT_ROOT / config_path)
 
@@ -629,6 +685,12 @@ def main():
 
         grade = grade_review(review)
         print(f"  Render 1: status={grade['status']}  composition={grade['composition_overall']}/100")
+        vision = run_vision_review(result, cfg, args)
+        if vision:
+            if vision.get("status") == "error":
+                print(f"  Vision: error  {vision.get('error', 'unknown error')}")
+            else:
+                print(f"  Vision: {vision.get('verdict', 'unknown')}  overall={vision.get('overall_score', 0)}/10")
 
         # --- Phase 3: Post-render correction (ONE pass max) ---
         post_fix_list = []
@@ -656,18 +718,26 @@ def main():
                     if review:
                         grade = grade_review(review)
                         print(f"  Render 2: status={grade['status']}  composition={grade['composition_overall']}/100")
+                        vision = run_vision_review(result, fixed_cfg, args)
+                        if vision:
+                            if vision.get("status") == "error":
+                                print(f"  Vision: error  {vision.get('error', 'unknown error')}")
+                            else:
+                                print(f"  Vision: {vision.get('verdict', 'unknown')}  overall={vision.get('overall_score', 0)}/10")
         else:
             print(f"  No fixable issues — skipping correction pass")
 
+        final_status = merge_status(grade["status"], vision, args.vision)
         all_results.append({
             "output": result.get("output", "unknown"),
-            "final_status": grade["status"],
+            "final_status": final_status,
             "composition_overall": grade["composition_overall"],
             "composition_scores": grade.get("composition_scores", {}),
             "pre_fixes": pre_fix_list,
             "post_fixes": post_fix_list,
             "warnings": grade.get("warnings", []),
             "failures": grade.get("failures", []),
+            "vision_review": vision,
         })
 
     # --- Final Report ---
