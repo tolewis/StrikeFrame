@@ -100,6 +100,7 @@ Validation rules:
 - If an asset library moves, fix the config paths or the shared defaults instead of pretending the repo is fully portable.
 - Repo-native code/docs/contracts belong here; generated calibration renders and scratch review batches belong in `/mnt/raid/Data/tmp/openclaw-builds/katya/...` until deliberately promoted.
 - Dropbox is for verified final creative deliverables, not implementation debris.
+- Durable social-media calibration datasets belong in `/home/tlewis/Dropbox/Tim/Datasets/social-media-kb/`; existing `AdExamples-kb` is a registered upstream seed corpus.
 
 More examples and experiments live in:
 - `configs/frameworks/`

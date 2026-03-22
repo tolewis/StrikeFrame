@@ -56,6 +56,8 @@ Primary benchmark sources should come from external knowledge and competitive in
 - `30 Projects/Master Social Media/`
 - `30 Projects/TackleRoom/Competitive Ad Intelligence/`
 - `30 Projects/TackleRoom/Integrations/Meta Ads API/2026-03-10 - Paid Ads Skill Adoption and Thesis Framework.md`
+- Dropbox dataset home: `/home/tlewis/Dropbox/Tim/Datasets/social-media-kb/`
+- Existing seed corpus: `/home/tlewis/Dropbox/Tim/Datasets/AdExamples-kb`
 
 Implication:
 - **good fixtures** should be sourced from external, qualified examples and research

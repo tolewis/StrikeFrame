@@ -9,3 +9,7 @@ Fixture policy:
 Benchmark policy:
 - Good fixtures should come from external, highly qualified paid/social examples and research.
 - Internal content may be stored as known-bad or diagnostic fixtures, but not as gold-standard references.
+
+Durable benchmark dataset home:
+- `/home/tlewis/Dropbox/Tim/Datasets/social-media-kb/`
+- Existing seed corpus: `/home/tlewis/Dropbox/Tim/Datasets/AdExamples-kb`
