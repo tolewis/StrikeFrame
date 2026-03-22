@@ -14,8 +14,34 @@ except ModuleNotFoundError:
     from scripts.review_prompts import load_prompt
 
 DEFAULT_HOST = 'http://192.168.0.160:11434'
-DEFAULT_MODEL = 'minicpm-v:latest'
+DEFAULT_MODEL = 'llava:7b'
 CONTRACT_VERSION = '1.0'
+
+
+def clamp_score(value, default=0.0) -> float:
+    try:
+        v = float(value)
+    except Exception:
+        return float(default)
+    if v < 0:
+        return 0.0
+    if v > 10:
+        return 10.0
+    return v
+
+
+def normalize_bool(value, default=False) -> bool:
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, (int, float)):
+        return value != 0
+    if isinstance(value, str):
+        v = value.strip().lower()
+        if v in {'true','yes','1','pass','warn'}:
+            return True
+        if v in {'false','no','0','fail','reject','should reject','should_reject'}:
+            return False
+    return default
 
 
 def normalize_label_score(value, kind: str) -> str:
@@ -74,6 +100,9 @@ def build_user_prompt(args) -> str:
         'cta': args.cta or '',
         'footer': args.footer or '',
         'source_config': args.source_config or '',
+        'benchmark_role': args.benchmark_role or '',
+        'ad_type': args.ad_type or '',
+        'description': args.description or '',
     }
     return rubric + '\n\nReview context:\n' + json.dumps(context, indent=2)
 
@@ -115,8 +144,8 @@ def extract_json(text: str) -> dict:
 
 
 def normalize_verdict(data: dict, channel: str, persona: str) -> dict:
-    overall = float(data.get('overall_score', 0))
-    fit = float(data.get('copy_visual_fit_score', overall))
+    overall = clamp_score(data.get('overall_score', 0))
+    fit = clamp_score(data.get('copy_visual_fit_score', overall))
     slop = normalize_label_score(data.get('slop_risk', 'high'), 'slop')
 
     verdict = str(data.get('verdict', '')).lower().strip()
@@ -144,7 +173,39 @@ def normalize_verdict(data: dict, channel: str, persona: str) -> dict:
     return data
 
 
+def compute_rubric_total(parsed: dict) -> int:
+    """Compute the weighted rubric total from dimension scores (0-100)."""
+    weights = {
+        'scroll_stop_score': 4,
+        'composition_score': 3,
+        'readability_score': 3,
+        'color_contrast_score': 2,
+        'image_quality_score': 2,
+        'content_value_score': 2,
+        'brand_authenticity_score': 2,
+        'platform_fit_score': 2,
+    }
+    total = 0
+    for field, weight in weights.items():
+        score = parsed.get(field, 3)  # default 3 if missing
+        if isinstance(score, (int, float)):
+            total += min(5, max(1, int(score))) * weight
+        else:
+            total += 3 * weight
+    return total
+
+
 def build_report(args, parsed: dict, raw_response: str) -> dict:
+    # Compute rubric total if dimension scores are present
+    has_rubric = 'scroll_stop_score' in parsed
+    rubric_total = compute_rubric_total(parsed) if has_rubric else None
+    
+    # Map rubric total to 0-10 scale for backward compatibility
+    if rubric_total is not None:
+        overall_from_rubric = round(rubric_total / 10, 1)
+    else:
+        overall_from_rubric = None
+    
     report = {
         'version': CONTRACT_VERSION,
         'model': args.model,
@@ -154,19 +215,36 @@ def build_report(args, parsed: dict, raw_response: str) -> dict:
         'source_image': str(Path(args.image).resolve()),
         'source_config': args.source_config,
         'created_at': datetime.now(UTC).isoformat(),
-        'overall_score': float(parsed.get('overall_score', 0)),
-        'channel_fit_score': float(parsed.get('channel_fit_score', parsed.get('overall_score', 0))),
-        'copy_visual_fit_score': float(parsed.get('copy_visual_fit_score', parsed.get('overall_score', 0))),
-        'readability_score': float(parsed.get('readability_score', parsed.get('overall_score', 0))),
+        'overall_score': clamp_score(overall_from_rubric or parsed.get('overall_score', 0)),
+        'channel_fit_score': clamp_score(parsed.get('channel_fit_score', parsed.get('platform_fit_score', parsed.get('overall_score', 0)))),
+        'copy_visual_fit_score': clamp_score(parsed.get('copy_visual_fit_score', parsed.get('content_value_score', parsed.get('overall_score', 0)))),
+        'readability_score': clamp_score(parsed.get('readability_score', parsed.get('overall_score', 0))),
         'slop_risk': normalize_label_score(parsed.get('slop_risk', 'high'), 'slop'),
         'verdict': parsed.get('verdict', 'reject'),
-        'should_reject': bool(parsed.get('should_reject', True)),
+        'should_reject': normalize_bool(parsed.get('should_reject', parsed.get('verdict', 'reject') in {'fail','reject'}), True),
         'confidence': normalize_label_score(parsed.get('confidence', 'medium'), 'confidence'),
-        'summary': parsed.get('summary', ''),
+        'summary': str(parsed.get('summary', '')).strip(),
+        'weakest_dimension': str(parsed.get('weakest_dimension', '')).strip(),
         'reasons': normalize_list(parsed.get('reasons', [])),
         'fixes': normalize_list(parsed.get('fixes', [])),
         'raw_response': raw_response,
     }
+    
+    # Add rubric dimension scores if present
+    if has_rubric:
+        report['rubric_total'] = rubric_total
+        report['rubric_max'] = 100
+        report['dimension_scores'] = {
+            'scroll_stop': int(parsed.get('scroll_stop_score', 3)),
+            'composition': int(parsed.get('composition_score', 3)),
+            'readability': int(parsed.get('readability_score', 3)),
+            'color_contrast': int(parsed.get('color_contrast_score', 3)),
+            'image_quality': int(parsed.get('image_quality_score', 3)),
+            'content_value': int(parsed.get('content_value_score', 3)),
+            'brand_authenticity': int(parsed.get('brand_authenticity_score', 3)),
+            'platform_fit': int(parsed.get('platform_fit_score', 3)),
+        }
+    
     return report
 
 
@@ -186,6 +264,9 @@ def main():
     ap.add_argument('--cta', default='')
     ap.add_argument('--footer', default='')
     ap.add_argument('--source-config', default='')
+    ap.add_argument('--benchmark-role', default='')
+    ap.add_argument('--ad-type', default='')
+    ap.add_argument('--description', default='')
     ap.add_argument('--timeout', type=int, default=120)
     ap.add_argument('--write-report', action='store_true')
     args = ap.parse_args()

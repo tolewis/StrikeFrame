@@ -16,6 +16,9 @@ def eval_entry(entry: dict, kind: str, args) -> dict:
     image_path = entry.get('linked_path') or entry.get('path') or entry.get('source_path')
     channel = entry.get('channel', args.channel if kind == 'good' else 'x')
     persona = entry.get('persona', args.persona if kind == 'good' else 'tim-operator')
+    if kind == 'good' and (not channel or channel == 'generic'):
+        channel = 'paid-social'
+
     cmd = [
         sys.executable,
         str(VISION_SCRIPT),
@@ -29,13 +32,31 @@ def eval_entry(entry: dict, kind: str, args) -> dict:
         '--cta', entry.get('cta', ''),
         '--footer', entry.get('footer', ''),
         '--source-config', entry.get('source_config', ''),
+        '--benchmark-role', entry.get('benchmark_role', ''),
+        '--ad-type', entry.get('ad_type', ''),
+        '--description', entry.get('description', ''),
+        '--timeout', str(args.timeout),
     ]
-    proc = subprocess.run(cmd, capture_output=True, text=True)
-    payload = None
-    if proc.stdout.strip():
-        payload = json.loads(proc.stdout)
-    else:
-        payload = {'status': 'error', 'error': proc.stderr.strip() or 'no stdout'}
+
+    payload = {'status': 'error', 'error': 'no attempts run'}
+    proc = None
+    attempts = []
+
+    for attempt in range(args.retries + 1):
+        proc = subprocess.run(cmd, capture_output=True, text=True)
+        attempts.append({'attempt': attempt + 1, 'returncode': proc.returncode})
+
+        if proc.stdout.strip():
+            try:
+                payload = json.loads(proc.stdout)
+            except Exception:
+                payload = {'status': 'error', 'error': 'invalid json', 'raw': proc.stdout[-1000:]}
+        else:
+            payload = {'status': 'error', 'error': proc.stderr.strip() or 'no stdout'}
+
+        timed_out = isinstance(payload, dict) and payload.get('status') == 'error' and 'timed out' in str(payload.get('error', '')).lower()
+        if not timed_out:
+            break
 
     result = {
         'id': entry.get('id') or Path(image_path).stem,
@@ -43,8 +64,9 @@ def eval_entry(entry: dict, kind: str, args) -> dict:
         'image_path': image_path,
         'channel': channel,
         'persona': persona,
-        'exit_code': proc.returncode,
+        'exit_code': proc.returncode if proc else 2,
         'review': payload,
+        'attempts': attempts,
     }
 
     verdict = payload.get('verdict') if isinstance(payload, dict) else None
@@ -77,6 +99,8 @@ def main():
     ap.add_argument('--persona', default='generic')
     ap.add_argument('--limit-good', type=int, default=5)
     ap.add_argument('--limit-bad', type=int, default=5)
+    ap.add_argument('--timeout', type=int, default=180)
+    ap.add_argument('--retries', type=int, default=1)
     args = ap.parse_args()
 
     manifest = load_manifest(DEFAULT_MANIFEST)

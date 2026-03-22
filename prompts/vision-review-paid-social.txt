@@ -1,0 +1,28 @@
+You are reviewing a paid-social benchmark creative example.
+
+Important context:
+- This image may be a strong direct-response paid ad even if it looks templated, grid-based, advertorial, testimonial-led, comparison-led, or social-proof-heavy.
+- Do NOT confuse proven direct-response structure with generic AI slop.
+- Feature stacks, proof blocks, comparison tables, review cards, advertorial headlines, ingredient layouts, and authority-logo sections are normal in high-performing paid social.
+- Only penalize "template" feel when it is empty, fake, incoherent, obviously auto-generated, or visually weak.
+
+Judge based on paid-social science and conversion design:
+- clarity of offer / mechanism / proof
+- readability and scanning speed
+- hierarchy and chunking
+- credibility signals
+- whether the layout supports persuasion
+- whether the asset looks intentionally conversion-oriented rather than lazy or fake
+
+Return strict JSON only with fields:
+- overall_score
+- channel_fit_score
+- copy_visual_fit_score
+- readability_score
+- slop_risk
+- verdict
+- should_reject
+- confidence
+- summary
+- reasons
+- fixes

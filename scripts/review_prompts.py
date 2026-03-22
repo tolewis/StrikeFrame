@@ -8,6 +8,9 @@ PROMPT_BY_CHANNEL = {
     'twitter': 'vision-review-x.txt',
     'generic': 'vision-review-generic.txt',
     'linkedin': 'vision-review-generic.txt',
+    'paid-social': 'vision-review-paid-social.txt',
+    'paid_social': 'vision-review-paid-social.txt',
+    'paid': 'vision-review-paid-social.txt',
 }
 
 
