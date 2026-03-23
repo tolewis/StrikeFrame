@@ -144,6 +144,35 @@ def extract_json(text: str) -> dict:
 
 
 def normalize_verdict(data: dict, channel: str, persona: str) -> dict:
+    rubric_type = detect_rubric_type(data)
+    if rubric_type == 'graphic-design':
+        total = compute_rubric_total(data)
+        overall = round(total / 10, 1)
+        data['overall_score'] = overall
+        data['rubric_type'] = 'graphic-design'
+        polish = clamp_score(data.get('visual_polish_score', 3))
+        data['slop_risk'] = 'low' if polish >= 4 else 'medium' if polish >= 3 else 'high'
+        if channel == 'x':
+            if total >= 90:
+                verdict = 'pass'
+            elif total >= 82:
+                verdict = 'warn'
+            elif total >= 65:
+                verdict = 'fail'
+            else:
+                verdict = 'reject'
+        else:
+            if total >= 90:
+                verdict = 'pass'
+            elif total >= 80:
+                verdict = 'warn'
+            elif total >= 65:
+                verdict = 'fail'
+            else:
+                verdict = 'reject'
+        data['verdict'] = verdict
+        data['should_reject'] = verdict in {'fail', 'reject'}
+        return data
     if 'scroll_stop_score' in data:
         total = compute_rubric_total(data)
         overall = round(total / 10, 1)
@@ -190,7 +219,7 @@ def normalize_verdict(data: dict, channel: str, persona: str) -> dict:
             else:
                 verdict = 'reject'
 
-    if channel == 'x' and persona == 'tim-operator':
+    if channel == 'x' and persona == 'tim-operator' and data.get('rubric_type') != 'graphic-design':
         if overall < 9.0 or fit < 9.0 or slop != 'low':
             if overall < 5.0 or slop == 'high':
                 verdict = 'reject'
@@ -216,9 +245,17 @@ def rubric_dimension_score(parsed: dict, field: str) -> float:
     return 3.0
 
 
-def compute_rubric_total(parsed: dict) -> int:
-    """Compute the weighted rubric total from dimension scores (0-100)."""
-    weights = {
+def detect_rubric_type(parsed: dict) -> str:
+    """Detect whether the model returned old photography rubric or new graphic design rubric."""
+    if 'typography_hierarchy_score' in parsed:
+        return 'graphic-design'
+    if 'scroll_stop_score' in parsed:
+        return 'photography'
+    return 'unknown'
+
+
+RUBRIC_WEIGHTS = {
+    'photography': {
         'scroll_stop_score': 4,
         'composition_score': 3,
         'text_readability_score': 3,
@@ -227,7 +264,24 @@ def compute_rubric_total(parsed: dict) -> int:
         'content_value_score': 2,
         'brand_authenticity_score': 2,
         'platform_fit_score': 2,
-    }
+    },
+    'graphic-design': {
+        'typography_hierarchy_score': 4,
+        'layout_composition_score': 3,
+        'text_legibility_score': 3,
+        'color_system_score': 3,
+        'overlay_treatment_score': 2,
+        'cta_design_score': 2,
+        'visual_polish_score': 2,
+        'message_clarity_score': 2,
+    },
+}
+
+
+def compute_rubric_total(parsed: dict) -> int:
+    """Compute the weighted rubric total from dimension scores (0-100)."""
+    rubric_type = detect_rubric_type(parsed)
+    weights = RUBRIC_WEIGHTS.get(rubric_type, RUBRIC_WEIGHTS['photography'])
     total = 0.0
     for field, weight in weights.items():
         total += rubric_dimension_score(parsed, field) * weight
@@ -270,9 +324,25 @@ def build_report(args, parsed: dict, raw_response: str) -> dict:
     }
     
     # Add rubric dimension scores if present
-    if has_rubric:
+    rubric_type = detect_rubric_type(parsed)
+    if rubric_type == 'graphic-design':
+        report['rubric_total'] = rubric_total
+        report['rubric_max'] = 105  # sum of weights * 5
+        report['rubric_type'] = 'graphic-design'
+        report['dimension_scores'] = {
+            'typography_hierarchy': rubric_dimension_score(parsed, 'typography_hierarchy_score'),
+            'layout_composition': rubric_dimension_score(parsed, 'layout_composition_score'),
+            'text_legibility': rubric_dimension_score(parsed, 'text_legibility_score'),
+            'color_system': rubric_dimension_score(parsed, 'color_system_score'),
+            'overlay_treatment': rubric_dimension_score(parsed, 'overlay_treatment_score'),
+            'cta_design': rubric_dimension_score(parsed, 'cta_design_score'),
+            'visual_polish': rubric_dimension_score(parsed, 'visual_polish_score'),
+            'message_clarity': rubric_dimension_score(parsed, 'message_clarity_score'),
+        }
+    elif has_rubric:
         report['rubric_total'] = rubric_total
         report['rubric_max'] = 100
+        report['rubric_type'] = 'photography'
         report['dimension_scores'] = {
             'scroll_stop': rubric_dimension_score(parsed, 'scroll_stop_score'),
             'composition': rubric_dimension_score(parsed, 'composition_score'),
