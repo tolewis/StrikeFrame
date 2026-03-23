@@ -183,7 +183,7 @@
       "output": "output/waterfall/tackleroom_ig_content-factory-cover.jpg",
       "text": {
         "headline": "Your Next Spread\nStarts Here",
-        "subhead": "Hand-built dredges and trolling rigs from anglers who use them.",
+        "subhead": "Hand-built trolling rigs. By anglers, for anglers.",
         "cta": "SHOP",
         "footer": "THE TACKLE ROOM"
       },
@@ -192,20 +192,20 @@
         "subheadColor": "#B8CCE0",
         "footerColor": "#7A9AB8",
         "ctaTextColor": "#FFFFFF",
-        "ctaFill": "rgba(232,93,58,0.95)",
-        "ctaStroke": "rgba(255,160,120,0.50)",
+        "ctaFill": "rgba(232,93,58,0.98)",
+        "ctaStroke": "rgba(255,180,140,0.60)",
         "gradientStart": "#0A1628",
         "gradientEnd": "#1A4060",
-        "textPanelFill": "rgba(0,0,0,0.25)",
-        "textPanelStroke": "rgba(255,255,255,0.10)"
+        "textPanelFill": "rgba(0,0,0,0.30)",
+        "textPanelStroke": "rgba(255,255,255,0.08)"
       },
       "overlay": {
         "leftColor": "6,14,28",
         "midColor": "10,22,42",
         "rightColor": "16,34,58",
-        "leftOpacity": 0.76,
-        "midOpacity": 0.3,
-        "rightOpacity": 0.06
+        "leftOpacity": 0.82,
+        "midOpacity": 0.55,
+        "rightOpacity": 0.3
       },
       "typography": {
         "headlineFontFamily": "Outfit, Arial, sans-serif",
@@ -219,13 +219,13 @@
         "personality": "centered-hero",
         "align": "center",
         "maxHeadlineChars": 14,
-        "maxSubheadChars": 26,
+        "maxSubheadChars": 32,
         "headlineY": 320,
         "subheadY": 620,
-        "ctaRectY": 780,
+        "ctaRectY": 840,
         "ctaWidth": 380,
         "ctaHeight": 89,
-        "footerY": 1200
+        "footerY": 1220
       },
       "backgroundPosition": "attention",
       "shapes": [

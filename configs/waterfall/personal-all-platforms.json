@@ -182,7 +182,7 @@
       "output": "output/waterfall/personal_ig_ai-bedtime-curfew-cover.jpg",
       "text": {
         "headline": "Responsible AI\nIsn't Optional",
-        "subhead": "Curfews. Cost caps. Human oversight. The boring stuff that keeps agents from going sideways.",
+        "subhead": "Curfews. Cost caps. Human oversight. The boring stuff that works.",
         "cta": "LEARN MORE",
         "footer": "TIM LEWIS"
       },
@@ -191,8 +191,8 @@
         "subheadColor": "#A8C0D8",
         "footerColor": "#6A8AA8",
         "ctaTextColor": "#FFF8F0",
-        "ctaFill": "rgba(232,93,58,0.95)",
-        "ctaStroke": "rgba(255,160,120,0.50)",
+        "ctaFill": "rgba(232,93,58,0.98)",
+        "ctaStroke": "rgba(255,180,140,0.60)",
         "gradientStart": "#3A2419",
         "gradientEnd": "#A87956",
         "textPanelFill": "rgba(0,0,0,0.28)",
@@ -202,9 +202,9 @@
         "leftColor": "4,10,22",
         "midColor": "8,18,36",
         "rightColor": "14,28,48",
-        "leftOpacity": 0.76,
-        "midOpacity": 0.3,
-        "rightOpacity": 0.06
+        "leftOpacity": 0.82,
+        "midOpacity": 0.55,
+        "rightOpacity": 0.3
       },
       "typography": {
         "headlineFontFamily": "Source Serif 4, Georgia, serif",
@@ -218,13 +218,13 @@
         "personality": "centered-hero",
         "align": "center",
         "maxHeadlineChars": 14,
-        "maxSubheadChars": 24,
+        "maxSubheadChars": 30,
         "headlineY": 320,
-        "subheadY": 620,
-        "ctaRectY": 800,
+        "subheadY": 580,
+        "ctaRectY": 840,
         "ctaWidth": 380,
         "ctaHeight": 89,
-        "footerY": 1200
+        "footerY": 1220
       },
       "shapes": [
         {
