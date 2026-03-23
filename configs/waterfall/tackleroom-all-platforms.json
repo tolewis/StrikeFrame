@@ -196,8 +196,8 @@
         "ctaStroke": "rgba(255,180,140,0.60)",
         "gradientStart": "#0A1628",
         "gradientEnd": "#1A4060",
-        "textPanelFill": "rgba(0,0,0,0.30)",
-        "textPanelStroke": "rgba(255,255,255,0.08)"
+        "textPanelFill": "rgba(0,0,0,0.28)",
+        "textPanelStroke": "rgba(255,255,255,0.06)"
       },
       "overlay": {
         "leftColor": "6,14,28",
@@ -225,7 +225,11 @@
         "ctaRectY": 840,
         "ctaWidth": 670,
         "ctaHeight": 89,
-        "footerY": 1220
+        "footerY": 1220,
+        "panelX": 165,
+        "panelY": 260,
+        "panelWidth": 750,
+        "panelHeight": 740
       },
       "backgroundPosition": "attention",
       "shapes": [

@@ -514,9 +514,16 @@ function buildPrimaryTextSvg(cfg) {
   const subheadX = headlineX;
   const footerX = headlineX;
   const cta = getCtaGeometry(cfg);
-  const panel = layout.personality === 'split-card'
-    ? `<rect x="${layout.panelX}" y="${layout.panelY}" width="${layout.panelWidth}" height="${layout.panelHeight}" rx="36" fill="${theme.textPanelFill}" stroke="${theme.textPanelStroke}" />`
-    : '';
+  const panelEnabled = theme.textPanelFill && theme.textPanelFill !== 'none';
+  let panel = '';
+  if (layout.personality === 'split-card' && panelEnabled) {
+    panel = `<rect x="${layout.panelX}" y="${layout.panelY}" width="${layout.panelWidth}" height="${layout.panelHeight}" rx="36" fill="${theme.textPanelFill}" stroke="${theme.textPanelStroke || 'none'}" />`;
+  } else if (panelEnabled && layout.panelWidth && layout.panelHeight) {
+    // Centered panel for centered-hero or editorial-left with explicit panel dimensions
+    const panelX = layout.panelX != null ? layout.panelX : Math.round((cfg.width - layout.panelWidth) / 2);
+    const panelY = layout.panelY != null ? layout.panelY : Math.round(layout.headlineY - 60);
+    panel = `<rect x="${panelX}" y="${panelY}" width="${layout.panelWidth}" height="${layout.panelHeight}" rx="36" fill="${theme.textPanelFill}" stroke="${theme.textPanelStroke || 'none'}" />`;
+  }
   const headlineTspans = headlineLines.map((line, i) => `<tspan x="${headlineX}" dy="${i === 0 ? 0 : headlineStep}">${escapeXml(line)}</tspan>`).join('');
   const subheadTspans = subheadLines.map((line, i) => `<tspan x="${subheadX}" dy="${i === 0 ? 0 : subheadStep}">${escapeXml(line)}</tspan>`).join('');
   return Buffer.from(`
