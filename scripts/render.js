@@ -361,11 +361,11 @@ function normalizeConfig(raw) {
     backgroundPath: raw.backgroundPath,
     backgroundPosition: raw.backgroundPosition || null,
     productPath: raw.productPath || null,
-    overlay: Object.assign({ leftOpacity: 0.85, midOpacity: 0.35, rightOpacity: 0.10, vignetteBottom: 0.35, leftColor: '8,12,21', midColor: '12,20,35', rightColor: '18,32,52' }, raw.overlay || {}),
+    overlay: Object.assign({ leftOpacity: 0.78, midOpacity: 0.32, rightOpacity: 0.08, vignetteBottom: 0.28, leftColor: '8,12,21', midColor: '12,20,35', rightColor: '18,32,52' }, raw.overlay || {}),
     text: Object.assign({ headline: 'Headline goes here', subhead: 'Subhead goes here', cta: 'LEARN MORE', footer: 'STRIKEFRAME' }, raw.text || {}),
     theme: Object.assign({
       headlineColor: '#ffffff', subheadColor: '#c8d8e8', footerColor: '#8fa8c0', ctaTextColor: '#ffffff',
-      ctaFill: 'rgba(255,255,255,0.22)', ctaStroke: 'rgba(255,255,255,0.40)', gradientStart: '#0b2a40', gradientEnd: '#1f6b8f',
+      ctaFill: 'rgba(255,255,255,0.28)', ctaStroke: 'rgba(255,255,255,0.50)', gradientStart: '#0b2a40', gradientEnd: '#1f6b8f',
       badgeFill: 'rgba(255,255,255,0.16)', badgeStroke: 'rgba(255,255,255,0.24)', badgeTextColor: '#ffffff',
       productCircleFill: 'rgba(255,255,255,0.94)', productShadowColor: '0,0,0', textPanelFill: 'rgba(255,255,255,0.08)', textPanelStroke: 'rgba(255,255,255,0.16)'
     }, raw.theme || {}),
@@ -374,7 +374,7 @@ function normalizeConfig(raw) {
       headlineWeight: 700, subheadWeight: 400, ctaWeight: 700, footerWeight: 600,
       headlineSize: presetDefault(chosenPreset, 66, chosenPreset === 'linkedin-landscape' ? 58 : 78),
       subheadSize: presetDefault(chosenPreset, 30, chosenPreset === 'linkedin-landscape' ? 28 : 32),
-      ctaSize: 24, footerSize: presetDefault(chosenPreset, 18, chosenPreset === 'linkedin-landscape' ? 18 : 21),
+      ctaSize: 26, footerSize: presetDefault(chosenPreset, 18, chosenPreset === 'linkedin-landscape' ? 18 : 21),
       subheadLineHeight: null,
       footerTracking: 3
     }, raw.typography || {}),
@@ -386,7 +386,7 @@ function normalizeConfig(raw) {
       footerY: chosenPreset === 'social-portrait' ? preset.height - 84 : (chosenPreset === 'linkedin-landscape' ? 565 : preset.height - 88),
       maxHeadlineChars: chosenPreset === 'social-portrait' ? 18 : (chosenPreset === 'linkedin-landscape' ? 24 : 22),
       maxSubheadChars: chosenPreset === 'social-portrait' ? 28 : (chosenPreset === 'linkedin-landscape' ? 46 : 42),
-      ctaWidth: chosenPreset === 'linkedin-landscape' ? 300 : 274, ctaHeight: 58, ctaRectX: 96,
+      ctaWidth: chosenPreset === 'linkedin-landscape' ? 300 : 274, ctaHeight: 64, ctaRectX: 96,
       ctaRectY: chosenPreset === 'social-portrait' ? 612 : (chosenPreset === 'linkedin-landscape' ? 428 : 522),
       ctaGroup: null,
       panelX: 80, panelY: chosenPreset === 'social-portrait' ? 110 : 90,

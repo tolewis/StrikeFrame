@@ -16,8 +16,8 @@
         "subheadColor": "#B8CCE0",
         "footerColor": "#7A9AB8",
         "ctaTextColor": "#FFFFFF",
-        "ctaFill": "rgba(232,93,58,0.92)",
-        "ctaStroke": "rgba(255,140,100,0.45)",
+        "ctaFill": "rgba(56,132,200,0.95)",
+        "ctaStroke": "rgba(120,180,240,0.50)",
         "gradientStart": "#0A1628",
         "gradientEnd": "#1A4060",
         "textPanelFill": "rgba(0,0,0,0.25)",
@@ -27,9 +27,9 @@
         "leftColor": "6,14,28",
         "midColor": "10,22,42",
         "rightColor": "16,34,58",
-        "leftOpacity": 0.88,
-        "midOpacity": 0.4,
-        "rightOpacity": 0.08
+        "leftOpacity": 0.76,
+        "midOpacity": 0.3,
+        "rightOpacity": 0.06
       },
       "typography": {
         "headlineFontFamily": "Outfit, Arial, sans-serif",
@@ -72,7 +72,7 @@
         "footerColor": "#7A9AB8",
         "ctaTextColor": "#FFFFFF",
         "ctaFill": "rgba(232,93,58,0.95)",
-        "ctaStroke": "rgba(255,140,100,0.50)",
+        "ctaStroke": "rgba(255,160,120,0.55)",
         "gradientStart": "#0A1628",
         "gradientEnd": "#1A4060",
         "textPanelFill": "rgba(0,0,0,0.25)",
@@ -82,9 +82,9 @@
         "leftColor": "6,14,28",
         "midColor": "10,22,42",
         "rightColor": "16,34,58",
-        "leftOpacity": 0.88,
-        "midOpacity": 0.4,
-        "rightOpacity": 0.08
+        "leftOpacity": 0.76,
+        "midOpacity": 0.3,
+        "rightOpacity": 0.06
       },
       "typography": {
         "headlineFontFamily": "Outfit, Arial, sans-serif",
@@ -134,8 +134,8 @@
         "subheadColor": "#B8CCE0",
         "footerColor": "#7A9AB8",
         "ctaTextColor": "#FFFFFF",
-        "ctaFill": "rgba(232,93,58,0.92)",
-        "ctaStroke": "rgba(255,140,100,0.45)",
+        "ctaFill": "rgba(56,132,200,0.92)",
+        "ctaStroke": "rgba(100,170,240,0.45)",
         "gradientStart": "#0A1628",
         "gradientEnd": "#1A4060",
         "textPanelFill": "rgba(0,0,0,0.25)",
@@ -145,9 +145,9 @@
         "leftColor": "6,14,28",
         "midColor": "10,22,42",
         "rightColor": "16,34,58",
-        "leftOpacity": 0.88,
-        "midOpacity": 0.4,
-        "rightOpacity": 0.08
+        "leftOpacity": 0.76,
+        "midOpacity": 0.3,
+        "rightOpacity": 0.06
       },
       "typography": {
         "headlineFontFamily": "Outfit, Arial, sans-serif",
@@ -188,7 +188,7 @@
         "footerColor": "#7A9AB8",
         "ctaTextColor": "#FFFFFF",
         "ctaFill": "rgba(232,93,58,0.92)",
-        "ctaStroke": "rgba(255,140,100,0.45)",
+        "ctaStroke": "rgba(255,140,100,0.50)",
         "gradientStart": "#0A1628",
         "gradientEnd": "#1A4060",
         "textPanelFill": "rgba(0,0,0,0.25)",
@@ -198,9 +198,9 @@
         "leftColor": "6,14,28",
         "midColor": "10,22,42",
         "rightColor": "16,34,58",
-        "leftOpacity": 0.88,
-        "midOpacity": 0.4,
-        "rightOpacity": 0.08
+        "leftOpacity": 0.76,
+        "midOpacity": 0.3,
+        "rightOpacity": 0.06
       },
       "typography": {
         "headlineFontFamily": "Outfit, Arial, sans-serif",
