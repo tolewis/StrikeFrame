@@ -210,8 +210,10 @@
       "typography": {
         "headlineFontFamily": "Outfit, Arial, sans-serif",
         "bodyFontFamily": "Source Serif 4, Georgia, serif",
-        "headlineSize": 80,
-        "subheadSize": 32
+        "headlineSize": 89,
+        "subheadSize": 55,
+        "footerSize": 21,
+        "ctaSize": 34
       },
       "layout": {
         "personality": "centered-hero",
@@ -221,8 +223,8 @@
         "headlineY": 320,
         "subheadY": 620,
         "ctaRectY": 780,
-        "ctaWidth": 300,
-        "ctaHeight": 68,
+        "ctaWidth": 380,
+        "ctaHeight": 89,
         "footerY": 1200
       },
       "backgroundPosition": "attention",
