@@ -14,7 +14,8 @@ except ModuleNotFoundError:
     from scripts.review_prompts import load_prompt
 
 DEFAULT_HOST = 'http://192.168.0.160:11434'
-DEFAULT_MODEL = 'minicpm-v:latest'
+DEFAULT_MODEL = 'qwen2.5vl:32b'
+FAST_MODEL = 'qwen2.5vl:7b'
 CONTRACT_VERSION = '1.0'
 
 
