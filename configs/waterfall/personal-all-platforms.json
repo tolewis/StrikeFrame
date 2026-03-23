@@ -6,10 +6,10 @@
       "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/library/04-technology/lukas-NLSXFjl_nhc-unsplash.jpg",
       "output": "output/waterfall/personal_linkedin_ai-bedtime-curfew.jpg",
       "text": {
-        "headline": "My AI Told Me to Go to Bed",
-        "subhead": "At 10:07 PM my own system wrote a bedtime rule. Based on my journals. It was right.",
-        "cta": "@TOLEWIS",
-        "footer": "TIM LEWIS \u00b7 AI PRODUCTS"
+        "headline": "AI Has a Bedtime",
+        "subhead": "I shut down my agents at midnight. Not because they need rest \u2014 because I do. Guardrails aren't weakness.",
+        "cta": "READ MORE",
+        "footer": "TIM LEWIS \u00b7 AI + CONSTRUCTION"
       },
       "theme": {
         "headlineColor": "#FFFFFF",
@@ -61,10 +61,10 @@
       "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/library/04-technology/ilya-pavlov-OqtafYT5kTw-unsplash.jpg",
       "output": "output/waterfall/personal_x_ai-bedtime-curfew.jpg",
       "text": {
-        "headline": "The Bedtime Curfew",
-        "subhead": "Tokens are the ceiling. Guardrails first.",
-        "cta": "READ",
-        "footer": "TIM LEWIS \u00b7 @TOLEWIS"
+        "headline": "Guardrails > Hustle",
+        "subhead": "My AI agents have a curfew. Yours should too.",
+        "cta": "THREAD",
+        "footer": "@TOLEWIS"
       },
       "theme": {
         "headlineColor": "#FFFFFF",
@@ -123,10 +123,10 @@
       "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/library/04-technology/kari-shea-1SAnrIxw5OY-unsplash.jpg",
       "output": "output/waterfall/personal_blog_ai-bedtime-curfew.jpg",
       "text": {
-        "headline": "The AI That Put Me on a Curfew",
-        "subhead": "An AI agent read my journals, saw the late nights, and wrote its own rule. Tokens are the ceiling.",
-        "cta": "@TOLEWIS",
-        "footer": "TIM LEWIS \u00b7 LONG READ"
+        "headline": "Why I Put My AI Agents on a Curfew",
+        "subhead": "Building AI systems that don't run wild at 2 AM. What responsible automation actually looks like when you're running production agents.",
+        "cta": "READ",
+        "footer": "TIM LEWIS \u00b7 CONTRACTOR-AI.COM"
       },
       "theme": {
         "headlineColor": "#FFFFFF",
@@ -176,10 +176,10 @@
       "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/library/04-technology/domenico-loia-hGV2TfOh0ns-unsplash.jpg",
       "output": "output/waterfall/personal_ig_ai-bedtime-curfew-cover.jpg",
       "text": {
-        "headline": "AI Bedtime Curfew",
-        "subhead": "6 slides. Tokens, guardrails, and a system that learned my pattern.",
-        "cta": "SWIPE \u2192",
-        "footer": "TIM LEWIS \u00b7 CAROUSEL"
+        "headline": "Responsible AI\nIsn't Optional",
+        "subhead": "Curfews. Cost caps. Human oversight. The boring stuff that keeps agents from going sideways.",
+        "cta": "LEARN MORE",
+        "footer": "TIM LEWIS"
       },
       "theme": {
         "headlineColor": "#FFFFFF",
