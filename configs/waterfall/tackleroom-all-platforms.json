@@ -196,17 +196,17 @@
         "ctaStroke": "rgba(255,180,140,0.60)",
         "gradientStart": "#0A1628",
         "gradientEnd": "#1A4060",
-        "textPanelFill": "rgba(0,0,0,0.35)",
+        "textPanelFill": "rgba(0,0,0,0.40)",
         "textPanelStroke": "rgba(255,255,255,0.06)"
       },
       "overlay": {
-        "leftColor": "6,14,28",
-        "midColor": "6,14,28",
-        "rightColor": "6,14,28",
-        "leftOpacity": 0.25,
-        "midOpacity": 0.25,
-        "rightOpacity": 0.25,
-        "vignetteBottom": 0.15
+        "leftColor": "0,0,0",
+        "midColor": "0,0,0",
+        "rightColor": "0,0,0",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.0,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.0
       },
       "typography": {
         "headlineFontFamily": "Outfit, Arial, sans-serif",
