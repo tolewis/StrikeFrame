@@ -155,9 +155,10 @@
         "leftColor": "9,19,31",
         "midColor": "20,48,79",
         "rightColor": "44,94,141",
-        "leftOpacity": 0.82,
-        "midOpacity": 0.46,
-        "rightOpacity": 0.16
+        "leftOpacity": 0.88,
+        "midOpacity": 0.56,
+        "rightOpacity": 0.22,
+        "vignetteBottom": 0.34
       },
       "typography": {
         "headlineFontFamily": "Outfit, Arial, sans-serif",
@@ -169,8 +170,26 @@
         "personality": "centered-hero",
         "align": "center",
         "maxHeadlineChars": 16,
-        "maxSubheadChars": 28
-      }
+        "maxSubheadChars": 28,
+        "headlineY": 150,
+        "subheadY": 418,
+        "ctaRectY": 580,
+        "footerY": 1060
+      },
+      "backgroundPosition": "attention",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 90,
+          "y": 80,
+          "width": 780,
+          "height": 610,
+          "radius": 42,
+          "fill": "rgba(7,16,28,0.34)",
+          "stroke": "rgba(255,255,255,0.10)",
+          "strokeWidth": 1
+        }
+      ]
     }
   ]
 }
