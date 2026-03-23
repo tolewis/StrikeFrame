@@ -218,8 +218,8 @@
       "layout": {
         "personality": "centered-hero",
         "align": "center",
-        "maxHeadlineChars": 14,
-        "maxSubheadChars": 28,
+        "maxHeadlineChars": 13,
+        "maxSubheadChars": 26,
         "headlineY": 320,
         "subheadY": 620,
         "ctaRectY": 840,
