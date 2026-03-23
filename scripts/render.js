@@ -374,7 +374,7 @@ function normalizeConfig(raw) {
       headlineWeight: 700, subheadWeight: 400, ctaWeight: 700, footerWeight: 600,
       headlineSize: presetDefault(chosenPreset, 66, chosenPreset === 'linkedin-landscape' ? 58 : 78),
       subheadSize: presetDefault(chosenPreset, 30, chosenPreset === 'linkedin-landscape' ? 28 : 32),
-      ctaSize: 26, footerSize: presetDefault(chosenPreset, 18, chosenPreset === 'linkedin-landscape' ? 18 : 21),
+      ctaSize: 28, footerSize: presetDefault(chosenPreset, 18, chosenPreset === 'linkedin-landscape' ? 18 : 21),
       subheadLineHeight: null,
       footerTracking: 3
     }, raw.typography || {}),

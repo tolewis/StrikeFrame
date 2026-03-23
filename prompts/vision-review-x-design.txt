@@ -16,7 +16,7 @@ DIMENSIONS:
 
 1. TYPOGRAPHY_HIERARCHY (weight ×4): Is the headline BOLD and large enough to read in-feed? Clear size separation between headline/subhead/CTA? Modern, confident font choices? Headline should punch — not whisper. For X, larger is almost always better.
 
-2. LAYOUT_COMPOSITION (weight ×3): Does the layout create immediate visual flow? For X, editorial-left or split-card layouts outperform centered text blocks. Is there a clear anchor point? Does the composition feel designed or default?
+2. LAYOUT_COMPOSITION (weight ×3): Does the layout create immediate visual flow? For X, editorial-left or split-card layouts outperform centered text blocks. Is there a clear anchor point? WHITESPACE CHECK: Does the content fill the canvas confidently? Text blocks that are too small for the canvas look like a template with default sizing. Headlines and subheads should claim their space. On 1080×1080, content should use at least 60% of the vertical space.
 
 3. TEXT_LEGIBILITY (weight ×3): Can you read the headline at X card size (~600px rendered width)? Minimum effective contrast? No text fighting busy background areas? If the overlay doesn't protect the text enough, this fails.
 
@@ -24,7 +24,7 @@ DIMENSIONS:
 
 5. OVERLAY_TREATMENT (weight ×2): Does the gradient create depth without flattening the image into a dark rectangle? The best overlays show enough background to set mood while protecting every character of text.
 
-6. CTA_DESIGN (weight ×2): Is the CTA button/text visible and distinct? On X, CTAs compete with the platform's own UI — they need to be unambiguous. Pill buttons with high-contrast fill work best.
+6. CTA_DESIGN (weight ×2): Is the CTA button/text visible and distinct? It MUST contrast with the overlay — warm orange/red CTA on cool blue composition is the standard. On X, CTAs compete with the platform's own UI — they need to be unambiguous and sized generously. If the CTA button color is close to the overlay/background color, score ≤2.
 
 7. VISUAL_POLISH (weight ×2): Clean edges, aligned elements, intentional accent details? Does it feel crafted or auto-generated? One accent line or design detail that shows intention beats five decorative elements.
 

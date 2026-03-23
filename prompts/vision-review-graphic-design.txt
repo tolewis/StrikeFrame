@@ -10,7 +10,7 @@ DIMENSIONS:
 
 1. TYPOGRAPHY_HIERARCHY (weight ×4): Is there a clear size/weight hierarchy? Headline dominates, subhead supports, CTA is distinct, footer is subtle? Are font choices clean and modern (not dated or generic)? Is letter-spacing intentional? Does the type system feel designed, not default?
 
-2. LAYOUT_COMPOSITION (weight ×3): Does the layout create visual flow — eye moves headline → subhead → CTA naturally? Is there intentional asymmetry or structure (rule of thirds, golden ratio)? Does negative space work or does it feel empty? Is the text positioned to complement the background, not fight it?
+2. LAYOUT_COMPOSITION (weight ×3): Does the layout create visual flow — eye moves headline → subhead → CTA naturally? Is there intentional asymmetry or structure (rule of thirds, golden ratio)? WHITESPACE CHECK: Does the text block fill the composition appropriately, or is it swimming in dead space? Text that occupies less than 40% of the canvas width/height on a landscape banner is undersized. Content should feel confident and fill the space, not huddle in a corner.
 
 3. TEXT_LEGIBILITY (weight ×3): Can you read ALL text instantly at the rendered size? Is there sufficient contrast between text and background/overlay? No text bleeding into busy image areas? Headline readable in under 1 second?
 
@@ -18,7 +18,7 @@ DIMENSIONS:
 
 5. OVERLAY_TREATMENT (weight ×2): Does the gradient/overlay protect text readability without killing the background image? Can you still see enough background to set mood? Is the transition smooth or harsh? Does it feel like depth or like a dark blob?
 
-6. CTA_DESIGN (weight ×2): Is the call-to-action button visually distinct? Does it look clickable/tappable? Right size relative to composition? Clear label? Does it sit naturally in the layout flow?
+6. CTA_DESIGN (weight ×2): Is the call-to-action button visually distinct? Does it CONTRAST with the overlay/background — a warm CTA on a cool composition or vice versa? Does it look clickable/tappable? Is it large enough relative to the canvas (not a tiny pill lost in space)? Clear label? If the CTA blends into the overlay color, score ≤2.
 
 7. VISUAL_POLISH (weight ×2): Are edges clean? Shapes aligned? Accent elements purposeful? Does it feel finished and intentional, or rough and auto-generated? Would a professional designer approve this?
 
