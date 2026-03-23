@@ -361,11 +361,11 @@ function normalizeConfig(raw) {
     backgroundPath: raw.backgroundPath,
     backgroundPosition: raw.backgroundPosition || null,
     productPath: raw.productPath || null,
-    overlay: Object.assign({ leftOpacity: 0.78, midOpacity: 0.42, rightOpacity: 0.18, vignetteBottom: 0.30, leftColor: '5,14,24', midColor: '5,14,24', rightColor: '5,14,24' }, raw.overlay || {}),
+    overlay: Object.assign({ leftOpacity: 0.85, midOpacity: 0.35, rightOpacity: 0.10, vignetteBottom: 0.35, leftColor: '8,12,21', midColor: '12,20,35', rightColor: '18,32,52' }, raw.overlay || {}),
     text: Object.assign({ headline: 'Headline goes here', subhead: 'Subhead goes here', cta: 'LEARN MORE', footer: 'STRIKEFRAME' }, raw.text || {}),
     theme: Object.assign({
-      headlineColor: '#ffffff', subheadColor: '#e8eef2', footerColor: '#d6dde2', ctaTextColor: '#ffffff',
-      ctaFill: 'rgba(255,255,255,0.16)', ctaStroke: 'rgba(255,255,255,0.28)', gradientStart: '#0b2a40', gradientEnd: '#1f6b8f',
+      headlineColor: '#ffffff', subheadColor: '#c8d8e8', footerColor: '#8fa8c0', ctaTextColor: '#ffffff',
+      ctaFill: 'rgba(255,255,255,0.22)', ctaStroke: 'rgba(255,255,255,0.40)', gradientStart: '#0b2a40', gradientEnd: '#1f6b8f',
       badgeFill: 'rgba(255,255,255,0.16)', badgeStroke: 'rgba(255,255,255,0.24)', badgeTextColor: '#ffffff',
       productCircleFill: 'rgba(255,255,255,0.94)', productShadowColor: '0,0,0', textPanelFill: 'rgba(255,255,255,0.08)', textPanelStroke: 'rgba(255,255,255,0.16)'
     }, raw.theme || {}),

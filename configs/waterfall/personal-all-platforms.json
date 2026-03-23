@@ -12,23 +12,23 @@
         "footer": "TIM LEWIS \u00b7 AI PRODUCTS"
       },
       "theme": {
-        "headlineColor": "#FFF8F0",
-        "subheadColor": "#EEDFCF",
-        "footerColor": "#D6C0A8",
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#A8C0D8",
+        "footerColor": "#6A8AA8",
         "ctaTextColor": "#FFF8F0",
-        "ctaFill": "rgba(112,71,42,0.72)",
-        "ctaStroke": "rgba(242,221,196,0.30)",
+        "ctaFill": "rgba(56,132,200,0.92)",
+        "ctaStroke": "rgba(100,170,240,0.45)",
         "gradientStart": "#3A2419",
         "gradientEnd": "#A87956",
-        "textPanelFill": "rgba(255,255,255,0.04)",
-        "textPanelStroke": "rgba(255,255,255,0.09)"
+        "textPanelFill": "rgba(0,0,0,0.28)",
+        "textPanelStroke": "rgba(255,255,255,0.08)"
       },
       "overlay": {
-        "leftColor": "35,20,15",
-        "midColor": "74,47,34",
-        "rightColor": "166,116,82",
-        "leftOpacity": 0.8,
-        "midOpacity": 0.34,
+        "leftColor": "4,10,22",
+        "midColor": "8,18,36",
+        "rightColor": "14,28,48",
+        "leftOpacity": 0.86,
+        "midOpacity": 0.38,
         "rightOpacity": 0.1
       },
       "typography": {
@@ -41,7 +41,19 @@
         "personality": "split-card",
         "panelWidth": 720,
         "panelHeight": 390
-      }
+      },
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 120,
+          "y": 140,
+          "width": 50,
+          "height": 3,
+          "radius": 2,
+          "fill": "rgba(56,132,200,0.85)",
+          "opacity": 1
+        }
+      ]
     },
     {
       "preset": "social-square",
@@ -55,27 +67,29 @@
         "footer": "TIM LEWIS \u00b7 @TOLEWIS"
       },
       "theme": {
-        "headlineColor": "#FFF8F0",
-        "subheadColor": "#EEDFCF",
-        "footerColor": "#D6C0A8",
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#A8C0D8",
+        "footerColor": "#6A8AA8",
         "ctaTextColor": "#FFF8F0",
-        "ctaFill": "rgba(112,71,42,0.72)",
-        "ctaStroke": "rgba(242,221,196,0.30)",
+        "ctaFill": "rgba(56,132,200,0.95)",
+        "ctaStroke": "rgba(100,170,240,0.50)",
         "gradientStart": "#3A2419",
-        "gradientEnd": "#A87956"
+        "gradientEnd": "#A87956",
+        "textPanelFill": "rgba(0,0,0,0.28)",
+        "textPanelStroke": "rgba(255,255,255,0.08)"
       },
       "overlay": {
-        "leftColor": "35,20,15",
-        "midColor": "74,47,34",
-        "rightColor": "166,116,82",
-        "leftOpacity": 0.8,
-        "midOpacity": 0.34,
+        "leftColor": "4,10,22",
+        "midColor": "8,18,36",
+        "rightColor": "14,28,48",
+        "leftOpacity": 0.86,
+        "midOpacity": 0.38,
         "rightOpacity": 0.1
       },
       "typography": {
         "headlineFontFamily": "Source Serif 4, Georgia, serif",
         "bodyFontFamily": "Outfit, Arial, sans-serif",
-        "headlineSize": 72,
+        "headlineSize": 80,
         "subheadSize": 28
       },
       "layout": {
@@ -89,7 +103,19 @@
         "ctaY": 698,
         "footerY": 1000,
         "ctaWidth": 290
-      }
+      },
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 480,
+          "y": 152,
+          "width": 50,
+          "height": 3,
+          "radius": 2,
+          "fill": "rgba(56,132,200,0.85)",
+          "opacity": 1
+        }
+      ]
     },
     {
       "preset": "landscape-banner",
@@ -103,21 +129,23 @@
         "footer": "TIM LEWIS \u00b7 LONG READ"
       },
       "theme": {
-        "headlineColor": "#FFF8F0",
-        "subheadColor": "#EEDFCF",
-        "footerColor": "#D6C0A8",
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#A8C0D8",
+        "footerColor": "#6A8AA8",
         "ctaTextColor": "#FFF8F0",
-        "ctaFill": "rgba(112,71,42,0.72)",
-        "ctaStroke": "rgba(242,221,196,0.30)",
+        "ctaFill": "rgba(56,132,200,0.92)",
+        "ctaStroke": "rgba(100,170,240,0.45)",
         "gradientStart": "#3A2419",
-        "gradientEnd": "#A87956"
+        "gradientEnd": "#A87956",
+        "textPanelFill": "rgba(0,0,0,0.28)",
+        "textPanelStroke": "rgba(255,255,255,0.08)"
       },
       "overlay": {
-        "leftColor": "35,20,15",
-        "midColor": "74,47,34",
-        "rightColor": "166,116,82",
-        "leftOpacity": 0.8,
-        "midOpacity": 0.34,
+        "leftColor": "4,10,22",
+        "midColor": "8,18,36",
+        "rightColor": "14,28,48",
+        "leftOpacity": 0.86,
+        "midOpacity": 0.38,
         "rightOpacity": 0.1
       },
       "typography": {
@@ -128,7 +156,19 @@
       },
       "layout": {
         "personality": "editorial-left"
-      }
+      },
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 120,
+          "y": 140,
+          "width": 50,
+          "height": 3,
+          "radius": 2,
+          "fill": "rgba(56,132,200,0.85)",
+          "opacity": 1
+        }
+      ]
     },
     {
       "preset": "social-portrait",
@@ -142,21 +182,23 @@
         "footer": "TIM LEWIS \u00b7 CAROUSEL"
       },
       "theme": {
-        "headlineColor": "#FFF8F0",
-        "subheadColor": "#EEDFCF",
-        "footerColor": "#D6C0A8",
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#A8C0D8",
+        "footerColor": "#6A8AA8",
         "ctaTextColor": "#FFF8F0",
-        "ctaFill": "rgba(112,71,42,0.72)",
-        "ctaStroke": "rgba(242,221,196,0.30)",
+        "ctaFill": "rgba(56,132,200,0.92)",
+        "ctaStroke": "rgba(100,170,240,0.45)",
         "gradientStart": "#3A2419",
-        "gradientEnd": "#A87956"
+        "gradientEnd": "#A87956",
+        "textPanelFill": "rgba(0,0,0,0.28)",
+        "textPanelStroke": "rgba(255,255,255,0.08)"
       },
       "overlay": {
-        "leftColor": "35,20,15",
-        "midColor": "74,47,34",
-        "rightColor": "166,116,82",
-        "leftOpacity": 0.8,
-        "midOpacity": 0.34,
+        "leftColor": "4,10,22",
+        "midColor": "8,18,36",
+        "rightColor": "14,28,48",
+        "leftOpacity": 0.86,
+        "midOpacity": 0.38,
         "rightOpacity": 0.1
       },
       "typography": {
@@ -170,7 +212,19 @@
         "align": "center",
         "maxHeadlineChars": 16,
         "maxSubheadChars": 28
-      }
+      },
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 480,
+          "y": 140,
+          "width": 50,
+          "height": 3,
+          "radius": 2,
+          "fill": "rgba(56,132,200,0.85)",
+          "opacity": 1
+        }
+      ]
     }
   ]
 }

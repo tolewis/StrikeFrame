@@ -3,7 +3,7 @@
     {
       "preset": "linkedin-landscape",
       "template": "banner",
-      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier4-marginal/01.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/3929D3CB-C97F-4660-8023-7D0BB6273C99.JPG",
       "output": "output/waterfall/tackleroom_linkedin_content-factory.jpg",
       "text": {
         "headline": "Content Factory, Not a Blog",
@@ -12,24 +12,24 @@
         "footer": "TACKLEROOM SUPPLY \u00b7 CONTENT OPS"
       },
       "theme": {
-        "headlineColor": "#F8FBFF",
-        "subheadColor": "#D8E4EF",
-        "footerColor": "#BCD0E4",
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#B8CCE0",
+        "footerColor": "#7A9AB8",
         "ctaTextColor": "#FFFFFF",
-        "ctaFill": "rgba(34,88,170,0.88)",
-        "ctaStroke": "rgba(145,184,242,0.40)",
-        "gradientStart": "#0B1B2B",
-        "gradientEnd": "#2D5C8F",
-        "textPanelFill": "rgba(255,255,255,0.05)",
-        "textPanelStroke": "rgba(255,255,255,0.12)"
+        "ctaFill": "rgba(232,93,58,0.92)",
+        "ctaStroke": "rgba(255,140,100,0.45)",
+        "gradientStart": "#0A1628",
+        "gradientEnd": "#1A4060",
+        "textPanelFill": "rgba(0,0,0,0.25)",
+        "textPanelStroke": "rgba(255,255,255,0.10)"
       },
       "overlay": {
-        "leftColor": "9,19,31",
-        "midColor": "20,48,79",
-        "rightColor": "44,94,141",
-        "leftOpacity": 0.82,
-        "midOpacity": 0.46,
-        "rightOpacity": 0.16
+        "leftColor": "6,14,28",
+        "midColor": "10,22,42",
+        "rightColor": "16,34,58",
+        "leftOpacity": 0.88,
+        "midOpacity": 0.4,
+        "rightOpacity": 0.08
       },
       "typography": {
         "headlineFontFamily": "Outfit, Arial, sans-serif",
@@ -41,12 +41,24 @@
         "personality": "split-card",
         "panelWidth": 720,
         "panelHeight": 390
-      }
+      },
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 120,
+          "y": 138,
+          "width": 60,
+          "height": 3,
+          "radius": 2,
+          "fill": "rgba(232,93,58,0.85)",
+          "opacity": 1
+        }
+      ]
     },
     {
       "preset": "social-square",
       "template": "banner",
-      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier4-marginal/03.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/535BDA24-0D54-4E73-9CCD-474E12D591D7.JPG",
       "output": "output/waterfall/tackleroom_x_content-factory.jpg",
       "text": {
         "headline": "Build the Pipeline First",
@@ -55,28 +67,30 @@
         "footer": "TACKLEROOM \u00b7 @TOLEWIS"
       },
       "theme": {
-        "headlineColor": "#F8FBFF",
-        "subheadColor": "#D8E4EF",
-        "footerColor": "#BCD0E4",
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#B8CCE0",
+        "footerColor": "#7A9AB8",
         "ctaTextColor": "#FFFFFF",
-        "ctaFill": "rgba(34,88,170,0.88)",
-        "ctaStroke": "rgba(145,184,242,0.40)",
-        "gradientStart": "#0B1B2B",
-        "gradientEnd": "#2D5C8F"
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,140,100,0.50)",
+        "gradientStart": "#0A1628",
+        "gradientEnd": "#1A4060",
+        "textPanelFill": "rgba(0,0,0,0.25)",
+        "textPanelStroke": "rgba(255,255,255,0.10)"
       },
       "overlay": {
-        "leftColor": "9,19,31",
-        "midColor": "20,48,79",
-        "rightColor": "44,94,141",
-        "leftOpacity": 0.82,
-        "midOpacity": 0.46,
-        "rightOpacity": 0.16
+        "leftColor": "6,14,28",
+        "midColor": "10,22,42",
+        "rightColor": "16,34,58",
+        "leftOpacity": 0.88,
+        "midOpacity": 0.4,
+        "rightOpacity": 0.08
       },
       "typography": {
         "headlineFontFamily": "Outfit, Arial, sans-serif",
         "bodyFontFamily": "Source Serif 4, Georgia, serif",
-        "headlineSize": 72,
-        "subheadSize": 28
+        "headlineSize": 82,
+        "subheadSize": 30
       },
       "layout": {
         "personality": "centered-hero",
@@ -89,12 +103,24 @@
         "ctaY": 698,
         "footerY": 1000,
         "ctaWidth": 290
-      }
+      },
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 460,
+          "y": 150,
+          "width": 60,
+          "height": 3,
+          "radius": 2,
+          "fill": "rgba(232,93,58,0.85)",
+          "opacity": 1
+        }
+      ]
     },
     {
       "preset": "landscape-banner",
       "template": "banner",
-      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier4-marginal/05.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/666191264.JPG",
       "output": "output/waterfall/tackleroom_blog_content-factory.jpg",
       "text": {
         "headline": "Building a Content Factory",
@@ -103,22 +129,24 @@
         "footer": "TACKLEROOM SUPPLY \u00b7 LONG READ"
       },
       "theme": {
-        "headlineColor": "#F8FBFF",
-        "subheadColor": "#D8E4EF",
-        "footerColor": "#BCD0E4",
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#B8CCE0",
+        "footerColor": "#7A9AB8",
         "ctaTextColor": "#FFFFFF",
-        "ctaFill": "rgba(34,88,170,0.88)",
-        "ctaStroke": "rgba(145,184,242,0.40)",
-        "gradientStart": "#0B1B2B",
-        "gradientEnd": "#2D5C8F"
+        "ctaFill": "rgba(232,93,58,0.92)",
+        "ctaStroke": "rgba(255,140,100,0.45)",
+        "gradientStart": "#0A1628",
+        "gradientEnd": "#1A4060",
+        "textPanelFill": "rgba(0,0,0,0.25)",
+        "textPanelStroke": "rgba(255,255,255,0.10)"
       },
       "overlay": {
-        "leftColor": "9,19,31",
-        "midColor": "20,48,79",
-        "rightColor": "44,94,141",
-        "leftOpacity": 0.82,
-        "midOpacity": 0.46,
-        "rightOpacity": 0.16
+        "leftColor": "6,14,28",
+        "midColor": "10,22,42",
+        "rightColor": "16,34,58",
+        "leftOpacity": 0.88,
+        "midOpacity": 0.4,
+        "rightOpacity": 0.08
       },
       "typography": {
         "headlineFontFamily": "Outfit, Arial, sans-serif",
@@ -128,12 +156,24 @@
       },
       "layout": {
         "personality": "editorial-left"
-      }
+      },
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 120,
+          "y": 138,
+          "width": 60,
+          "height": 3,
+          "radius": 2,
+          "fill": "rgba(232,93,58,0.85)",
+          "opacity": 1
+        }
+      ]
     },
     {
       "preset": "social-portrait",
       "template": "banner",
-      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier4-marginal/09.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/Dolphin_Fish_Hooked.jpg",
       "output": "output/waterfall/tackleroom_ig_content-factory-cover.jpg",
       "text": {
         "headline": "Content Factory for E-Commerce",
@@ -142,23 +182,24 @@
         "footer": "TACKLEROOM SUPPLY \u00b7 CAROUSEL"
       },
       "theme": {
-        "headlineColor": "#F8FBFF",
-        "subheadColor": "#D8E4EF",
-        "footerColor": "#BCD0E4",
+        "headlineColor": "#FFFFFF",
+        "subheadColor": "#B8CCE0",
+        "footerColor": "#7A9AB8",
         "ctaTextColor": "#FFFFFF",
-        "ctaFill": "rgba(34,88,170,0.88)",
-        "ctaStroke": "rgba(145,184,242,0.40)",
-        "gradientStart": "#0B1B2B",
-        "gradientEnd": "#2D5C8F"
+        "ctaFill": "rgba(232,93,58,0.92)",
+        "ctaStroke": "rgba(255,140,100,0.45)",
+        "gradientStart": "#0A1628",
+        "gradientEnd": "#1A4060",
+        "textPanelFill": "rgba(0,0,0,0.25)",
+        "textPanelStroke": "rgba(255,255,255,0.10)"
       },
       "overlay": {
-        "leftColor": "9,19,31",
-        "midColor": "20,48,79",
-        "rightColor": "44,94,141",
+        "leftColor": "6,14,28",
+        "midColor": "10,22,42",
+        "rightColor": "16,34,58",
         "leftOpacity": 0.88,
-        "midOpacity": 0.56,
-        "rightOpacity": 0.22,
-        "vignetteBottom": 0.34
+        "midOpacity": 0.4,
+        "rightOpacity": 0.08
       },
       "typography": {
         "headlineFontFamily": "Outfit, Arial, sans-serif",
@@ -188,6 +229,16 @@
           "fill": "rgba(7,16,28,0.34)",
           "stroke": "rgba(255,255,255,0.10)",
           "strokeWidth": 1
+        },
+        {
+          "type": "rectangle",
+          "x": 460,
+          "y": 120,
+          "width": 60,
+          "height": 3,
+          "radius": 2,
+          "fill": "rgba(232,93,58,0.85)",
+          "opacity": 1
         }
       ]
     }

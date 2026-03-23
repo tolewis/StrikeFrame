@@ -5,3 +5,6 @@ output/
 *.review.json
 *.qaqc-report.json
 *.vision-review.json
+__pycache__/
+*.pyc
+*-scores.json
