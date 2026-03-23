@@ -183,7 +183,7 @@
       "output": "output/waterfall/tackleroom_ig_content-factory-cover.jpg",
       "text": {
         "headline": "Your Next Spread\nStarts Here",
-        "subhead": "Hand-built trolling rigs. By anglers, for anglers.",
+        "subhead": "Hand-built trolling rigs.\nBy anglers, for anglers.",
         "cta": "SHOP",
         "footer": "THE TACKLE ROOM"
       },
@@ -211,7 +211,7 @@
         "headlineFontFamily": "Outfit, Arial, sans-serif",
         "bodyFontFamily": "Source Serif 4, Georgia, serif",
         "headlineSize": 89,
-        "subheadSize": 55,
+        "subheadSize": 44,
         "footerSize": 21,
         "ctaSize": 34
       },
@@ -219,11 +219,11 @@
         "personality": "centered-hero",
         "align": "center",
         "maxHeadlineChars": 14,
-        "maxSubheadChars": 32,
+        "maxSubheadChars": 28,
         "headlineY": 320,
         "subheadY": 620,
         "ctaRectY": 840,
-        "ctaWidth": 580,
+        "ctaWidth": 670,
         "ctaHeight": 89,
         "footerY": 1220
       },
