@@ -16,8 +16,8 @@
         "subheadColor": "#A8C0D8",
         "footerColor": "#6A8AA8",
         "ctaTextColor": "#FFF8F0",
-        "ctaFill": "rgba(56,132,200,0.95)",
-        "ctaStroke": "rgba(120,180,240,0.50)",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.50)",
         "gradientStart": "#3A2419",
         "gradientEnd": "#A87956",
         "textPanelFill": "rgba(0,0,0,0.28)",
@@ -34,13 +34,15 @@
       "typography": {
         "headlineFontFamily": "Source Serif 4, Georgia, serif",
         "bodyFontFamily": "Outfit, Arial, sans-serif",
-        "headlineSize": 54,
-        "subheadSize": 25
+        "headlineSize": 62,
+        "subheadSize": 26
       },
       "layout": {
         "personality": "split-card",
         "panelWidth": 720,
-        "panelHeight": 390
+        "panelHeight": 390,
+        "ctaWidth": 300,
+        "ctaHeight": 62
       },
       "shapes": [
         {
@@ -72,7 +74,7 @@
         "footerColor": "#6A8AA8",
         "ctaTextColor": "#FFF8F0",
         "ctaFill": "rgba(232,93,58,0.95)",
-        "ctaStroke": "rgba(255,160,120,0.55)",
+        "ctaStroke": "rgba(255,160,120,0.50)",
         "gradientStart": "#3A2419",
         "gradientEnd": "#A87956",
         "textPanelFill": "rgba(0,0,0,0.28)",
@@ -89,8 +91,8 @@
       "typography": {
         "headlineFontFamily": "Source Serif 4, Georgia, serif",
         "bodyFontFamily": "Outfit, Arial, sans-serif",
-        "headlineSize": 76,
-        "subheadSize": 28
+        "headlineSize": 80,
+        "subheadSize": 30
       },
       "layout": {
         "personality": "editorial-left",
@@ -134,8 +136,8 @@
         "subheadColor": "#A8C0D8",
         "footerColor": "#6A8AA8",
         "ctaTextColor": "#FFF8F0",
-        "ctaFill": "rgba(56,132,200,0.92)",
-        "ctaStroke": "rgba(100,170,240,0.45)",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.50)",
         "gradientStart": "#3A2419",
         "gradientEnd": "#A87956",
         "textPanelFill": "rgba(0,0,0,0.28)",
@@ -152,11 +154,13 @@
       "typography": {
         "headlineFontFamily": "Source Serif 4, Georgia, serif",
         "bodyFontFamily": "Outfit, Arial, sans-serif",
-        "headlineSize": 72,
-        "subheadSize": 29
+        "headlineSize": 84,
+        "subheadSize": 32
       },
       "layout": {
-        "personality": "editorial-left"
+        "personality": "editorial-left",
+        "ctaWidth": 320,
+        "ctaHeight": 66
       },
       "shapes": [
         {
@@ -187,8 +191,8 @@
         "subheadColor": "#A8C0D8",
         "footerColor": "#6A8AA8",
         "ctaTextColor": "#FFF8F0",
-        "ctaFill": "rgba(232,93,58,0.92)",
-        "ctaStroke": "rgba(255,140,100,0.50)",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.50)",
         "gradientStart": "#3A2419",
         "gradientEnd": "#A87956",
         "textPanelFill": "rgba(0,0,0,0.28)",
@@ -205,7 +209,7 @@
       "typography": {
         "headlineFontFamily": "Source Serif 4, Georgia, serif",
         "bodyFontFamily": "Outfit, Arial, sans-serif",
-        "headlineSize": 66,
+        "headlineSize": 70,
         "subheadSize": 28
       },
       "layout": {
