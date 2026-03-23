@@ -209,14 +209,20 @@
       "typography": {
         "headlineFontFamily": "Source Serif 4, Georgia, serif",
         "bodyFontFamily": "Outfit, Arial, sans-serif",
-        "headlineSize": 70,
-        "subheadSize": 28
+        "headlineSize": 82,
+        "subheadSize": 34
       },
       "layout": {
         "personality": "centered-hero",
         "align": "center",
-        "maxHeadlineChars": 16,
-        "maxSubheadChars": 28
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 24,
+        "headlineY": 320,
+        "subheadY": 620,
+        "ctaRectY": 800,
+        "ctaWidth": 320,
+        "ctaHeight": 68,
+        "footerY": 1200
       },
       "shapes": [
         {

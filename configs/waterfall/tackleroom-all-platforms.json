@@ -210,18 +210,20 @@
       "typography": {
         "headlineFontFamily": "Outfit, Arial, sans-serif",
         "bodyFontFamily": "Source Serif 4, Georgia, serif",
-        "headlineSize": 72,
-        "subheadSize": 30
+        "headlineSize": 80,
+        "subheadSize": 32
       },
       "layout": {
         "personality": "centered-hero",
         "align": "center",
-        "maxHeadlineChars": 16,
-        "maxSubheadChars": 28,
-        "headlineY": 150,
-        "subheadY": 418,
-        "ctaRectY": 580,
-        "footerY": 1060
+        "maxHeadlineChars": 14,
+        "maxSubheadChars": 26,
+        "headlineY": 320,
+        "subheadY": 620,
+        "ctaRectY": 780,
+        "ctaWidth": 300,
+        "ctaHeight": 68,
+        "footerY": 1200
       },
       "backgroundPosition": "attention",
       "shapes": [
