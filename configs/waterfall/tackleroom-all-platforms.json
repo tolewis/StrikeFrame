@@ -184,36 +184,36 @@
       "text": {
         "headline": "Your Next Spread\nStarts Here",
         "subhead": "Hand-built trolling rigs.\nBy anglers, for anglers.",
-        "cta": "SHOP",
+        "cta": "BUILD YOUR SPREAD",
         "footer": "THE TACKLE ROOM"
       },
       "theme": {
         "headlineColor": "#FFFFFF",
-        "subheadColor": "#B8CCE0",
-        "footerColor": "#7A9AB8",
+        "subheadColor": "#E8EEF4",
+        "footerColor": "#A0B8D0",
         "ctaTextColor": "#FFFFFF",
         "ctaFill": "rgba(232,93,58,0.98)",
         "ctaStroke": "rgba(255,180,140,0.60)",
         "gradientStart": "#0A1628",
         "gradientEnd": "#1A4060",
-        "textPanelFill": "rgba(0,0,0,0.40)",
-        "textPanelStroke": "rgba(255,255,255,0.06)"
+        "textPanelFill": "none",
+        "textPanelStroke": "none"
       },
       "overlay": {
-        "leftColor": "0,0,0",
-        "midColor": "0,0,0",
-        "rightColor": "0,0,0",
-        "leftOpacity": 0.0,
-        "midOpacity": 0.0,
-        "rightOpacity": 0.0,
-        "vignetteBottom": 0.0
+        "leftColor": "6,14,28",
+        "midColor": "6,14,28",
+        "rightColor": "6,14,28",
+        "leftOpacity": 0.65,
+        "midOpacity": 0.45,
+        "rightOpacity": 0.2,
+        "vignetteBottom": 0.55
       },
       "typography": {
         "headlineFontFamily": "Outfit, Arial, sans-serif",
         "bodyFontFamily": "Source Serif 4, Georgia, serif",
         "headlineSize": 89,
         "subheadSize": 44,
-        "footerSize": 21,
+        "footerSize": 24,
         "ctaSize": 34
       },
       "layout": {
@@ -226,36 +226,10 @@
         "ctaRectY": 840,
         "ctaWidth": 670,
         "ctaHeight": 89,
-        "footerY": 1220,
-        "panelX": 165,
-        "panelY": 260,
-        "panelWidth": 750,
-        "panelHeight": 740
+        "footerY": 1220
       },
       "backgroundPosition": "attention",
-      "shapes": [
-        {
-          "type": "rectangle",
-          "x": 90,
-          "y": 80,
-          "width": 780,
-          "height": 610,
-          "radius": 42,
-          "fill": "rgba(7,16,28,0.34)",
-          "stroke": "rgba(255,255,255,0.10)",
-          "strokeWidth": 1
-        },
-        {
-          "type": "rectangle",
-          "x": 460,
-          "y": 120,
-          "width": 60,
-          "height": 3,
-          "radius": 2,
-          "fill": "rgba(232,93,58,0.85)",
-          "opacity": 1
-        }
-      ]
+      "shapes": []
     }
   ]
 }
