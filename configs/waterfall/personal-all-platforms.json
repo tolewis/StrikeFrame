@@ -13,8 +13,8 @@
       },
       "theme": {
         "headlineColor": "#FFFFFF",
-        "subheadColor": "#A8C0D8",
-        "footerColor": "#6A8AA8",
+        "subheadColor": "#D8E4F0",
+        "footerColor": "#90A8C0",
         "ctaTextColor": "#FFF8F0",
         "ctaFill": "rgba(232,93,58,0.95)",
         "ctaStroke": "rgba(255,160,120,0.50)",
@@ -27,35 +27,25 @@
         "leftColor": "4,10,22",
         "midColor": "8,18,36",
         "rightColor": "14,28,48",
-        "leftOpacity": 0.76,
-        "midOpacity": 0.3,
-        "rightOpacity": 0.06
+        "leftOpacity": 0.8,
+        "midOpacity": 0.4,
+        "rightOpacity": 0.12
       },
       "typography": {
         "headlineFontFamily": "Source Serif 4, Georgia, serif",
         "bodyFontFamily": "Outfit, Arial, sans-serif",
         "headlineSize": 62,
-        "subheadSize": 26
+        "subheadSize": 32,
+        "ctaSize": 26
       },
       "layout": {
         "personality": "split-card",
-        "panelWidth": 720,
-        "panelHeight": 390,
-        "ctaWidth": 300,
-        "ctaHeight": 62
+        "panelWidth": 780,
+        "panelHeight": 420,
+        "ctaWidth": 340,
+        "ctaHeight": 64
       },
-      "shapes": [
-        {
-          "type": "rectangle",
-          "x": 120,
-          "y": 140,
-          "width": 50,
-          "height": 3,
-          "radius": 2,
-          "fill": "rgba(56,132,200,0.85)",
-          "opacity": 1
-        }
-      ]
+      "shapes": []
     },
     {
       "preset": "social-square",
@@ -65,13 +55,13 @@
       "text": {
         "headline": "Guardrails > Hustle",
         "subhead": "My AI agents have a curfew. Yours should too.",
-        "cta": "THREAD",
+        "cta": "READ THE THREAD",
         "footer": "@TOLEWIS"
       },
       "theme": {
         "headlineColor": "#FFFFFF",
-        "subheadColor": "#A8C0D8",
-        "footerColor": "#6A8AA8",
+        "subheadColor": "#D8E4F0",
+        "footerColor": "#90A8C0",
         "ctaTextColor": "#FFF8F0",
         "ctaFill": "rgba(232,93,58,0.95)",
         "ctaStroke": "rgba(255,160,120,0.50)",
@@ -84,15 +74,16 @@
         "leftColor": "4,10,22",
         "midColor": "8,18,36",
         "rightColor": "14,28,48",
-        "leftOpacity": 0.76,
-        "midOpacity": 0.3,
-        "rightOpacity": 0.06
+        "leftOpacity": 0.78,
+        "midOpacity": 0.38,
+        "rightOpacity": 0.1
       },
       "typography": {
         "headlineFontFamily": "Source Serif 4, Georgia, serif",
         "bodyFontFamily": "Outfit, Arial, sans-serif",
         "headlineSize": 80,
-        "subheadSize": 30
+        "subheadSize": 50,
+        "ctaSize": 30
       },
       "layout": {
         "personality": "editorial-left",
@@ -104,21 +95,11 @@
         "ctaRectY": 660,
         "ctaY": 698,
         "footerY": 1000,
-        "ctaWidth": 290,
-        "leftX": 80
+        "ctaWidth": 480,
+        "leftX": 80,
+        "ctaHeight": 80
       },
-      "shapes": [
-        {
-          "type": "rectangle",
-          "x": 480,
-          "y": 152,
-          "width": 50,
-          "height": 3,
-          "radius": 2,
-          "fill": "rgba(56,132,200,0.85)",
-          "opacity": 1
-        }
-      ]
+      "shapes": []
     },
     {
       "preset": "landscape-banner",
@@ -128,13 +109,13 @@
       "text": {
         "headline": "Why I Put My AI Agents on a Curfew",
         "subhead": "Building AI systems that don't run wild at 2 AM. What responsible automation actually looks like when you're running production agents.",
-        "cta": "READ",
+        "cta": "READ ON CONTRACTOR-AI.COM",
         "footer": "TIM LEWIS \u00b7 CONTRACTOR-AI.COM"
       },
       "theme": {
         "headlineColor": "#FFFFFF",
-        "subheadColor": "#A8C0D8",
-        "footerColor": "#6A8AA8",
+        "subheadColor": "#D8E4F0",
+        "footerColor": "#90A8C0",
         "ctaTextColor": "#FFF8F0",
         "ctaFill": "rgba(232,93,58,0.95)",
         "ctaStroke": "rgba(255,160,120,0.50)",
@@ -147,33 +128,25 @@
         "leftColor": "4,10,22",
         "midColor": "8,18,36",
         "rightColor": "14,28,48",
-        "leftOpacity": 0.76,
-        "midOpacity": 0.3,
-        "rightOpacity": 0.06
+        "leftOpacity": 0.78,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.08
       },
       "typography": {
         "headlineFontFamily": "Source Serif 4, Georgia, serif",
         "bodyFontFamily": "Outfit, Arial, sans-serif",
         "headlineSize": 84,
-        "subheadSize": 32
+        "subheadSize": 52,
+        "ctaSize": 28,
+        "footerSize": 21
       },
       "layout": {
         "personality": "editorial-left",
-        "ctaWidth": 320,
-        "ctaHeight": 66
+        "ctaWidth": 380,
+        "ctaHeight": 72,
+        "maxSubheadChars": 36
       },
-      "shapes": [
-        {
-          "type": "rectangle",
-          "x": 120,
-          "y": 140,
-          "width": 50,
-          "height": 3,
-          "radius": 2,
-          "fill": "rgba(56,132,200,0.85)",
-          "opacity": 1
-        }
-      ]
+      "shapes": []
     },
     {
       "preset": "social-portrait",
@@ -188,29 +161,30 @@
       },
       "theme": {
         "headlineColor": "#FFFFFF",
-        "subheadColor": "#A8C0D8",
-        "footerColor": "#6A8AA8",
+        "subheadColor": "#D8E4F0",
+        "footerColor": "#90A8C0",
         "ctaTextColor": "#FFF8F0",
-        "ctaFill": "rgba(232,93,58,0.98)",
-        "ctaStroke": "rgba(255,180,140,0.60)",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.50)",
         "gradientStart": "#3A2419",
         "gradientEnd": "#A87956",
-        "textPanelFill": "rgba(0,0,0,0.28)",
+        "textPanelFill": "none",
         "textPanelStroke": "rgba(255,255,255,0.08)"
       },
       "overlay": {
         "leftColor": "4,10,22",
-        "midColor": "8,18,36",
-        "rightColor": "14,28,48",
-        "leftOpacity": 0.82,
-        "midOpacity": 0.55,
-        "rightOpacity": 0.3
+        "midColor": "4,10,22",
+        "rightColor": "4,10,22",
+        "leftOpacity": 0.65,
+        "midOpacity": 0.45,
+        "rightOpacity": 0.2,
+        "vignetteBottom": 0.55
       },
       "typography": {
         "headlineFontFamily": "Source Serif 4, Georgia, serif",
         "bodyFontFamily": "Outfit, Arial, sans-serif",
         "headlineSize": 89,
-        "subheadSize": 55,
+        "subheadSize": 44,
         "footerSize": 21,
         "ctaSize": 34
       },
@@ -218,26 +192,15 @@
         "personality": "centered-hero",
         "align": "center",
         "maxHeadlineChars": 14,
-        "maxSubheadChars": 30,
+        "maxSubheadChars": 24,
         "headlineY": 320,
         "subheadY": 580,
         "ctaRectY": 840,
-        "ctaWidth": 380,
+        "ctaWidth": 600,
         "ctaHeight": 89,
         "footerY": 1220
       },
-      "shapes": [
-        {
-          "type": "rectangle",
-          "x": 480,
-          "y": 140,
-          "width": 50,
-          "height": 3,
-          "radius": 2,
-          "fill": "rgba(56,132,200,0.85)",
-          "opacity": 1
-        }
-      ]
+      "shapes": []
     }
   ]
 }

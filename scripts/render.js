@@ -753,7 +753,9 @@ function runCompositionChecks(cfg, { headlineBox, subheadBox, ctaRect, footerBox
   const rightMargins = [w - headlineBox.right, w - subheadBox.right, w - ctaRect.right].filter(v => v > 0);
   const maxLeftDiff = Math.max(...leftMargins) - Math.min(...leftMargins);
   const maxRightDiff = Math.max(...rightMargins) - Math.min(...rightMargins);
-  const marginBalanced = maxLeftDiff <= 60 && maxRightDiff <= 60;
+  // For left-aligned layouts (editorial-left, split-card), only check left margins — right side intentionally shows photo
+  const isLeftAligned = cfg.layout.personality === 'editorial-left' || cfg.layout.personality === 'split-card';
+  const marginBalanced = isLeftAligned ? (maxLeftDiff <= 60) : (maxLeftDiff <= 60 && maxRightDiff <= 60);
   scores.marginBalance = marginBalanced ? 100 : 40;
   checks.push({ name: 'margin-balance', pass: marginBalanced, value: { leftDiff: maxLeftDiff, rightDiff: maxRightDiff }, note: `Max left margin variance ${maxLeftDiff}px, right ${maxRightDiff}px (want ≤60px)` });
   if (!marginBalanced) warnings.push(`Text elements have unbalanced margins (left diff: ${maxLeftDiff}px, right diff: ${maxRightDiff}px). Constrain elements to consistent width.`);

@@ -8,13 +8,13 @@
       "text": {
         "headline": "10 Years on the Water",
         "subhead": "We didn't start with a brand deck. We started with a rigging bench and 200 hand-tied leaders.",
-        "cta": "EXPLORE GEAR",
-        "footer": "THE TACKLE ROOM \u00b7 EST. 2015"
+        "cta": "EXPLORE OFFSHORE GEAR",
+        "footer": ""
       },
       "theme": {
         "headlineColor": "#FFFFFF",
-        "subheadColor": "#B8CCE0",
-        "footerColor": "#7A9AB8",
+        "subheadColor": "#E8EEF4",
+        "footerColor": "#A0B8D0",
         "ctaTextColor": "#FFFFFF",
         "ctaFill": "rgba(232,93,58,0.95)",
         "ctaStroke": "rgba(255,160,120,0.50)",
@@ -27,35 +27,33 @@
         "leftColor": "6,14,28",
         "midColor": "10,22,42",
         "rightColor": "16,34,58",
-        "leftOpacity": 0.76,
-        "midOpacity": 0.3,
-        "rightOpacity": 0.06
+        "leftOpacity": 0.8,
+        "midOpacity": 0.4,
+        "rightOpacity": 0.12
       },
       "typography": {
         "headlineFontFamily": "Outfit, Arial, sans-serif",
         "bodyFontFamily": "Source Serif 4, Georgia, serif",
         "headlineSize": 64,
-        "subheadSize": 28
+        "subheadSize": 32,
+        "ctaSize": 28,
+        "footerSize": 18
       },
       "layout": {
         "personality": "split-card",
-        "panelWidth": 720,
-        "panelHeight": 390,
-        "ctaWidth": 320,
-        "ctaHeight": 62
+        "panelWidth": 780,
+        "panelHeight": 420,
+        "ctaWidth": 380,
+        "ctaHeight": 68
       },
-      "shapes": [
-        {
-          "type": "rectangle",
-          "x": 120,
-          "y": 138,
-          "width": 60,
-          "height": 3,
-          "radius": 2,
-          "fill": "rgba(232,93,58,0.85)",
-          "opacity": 1
-        }
-      ]
+      "shapes": [],
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier4-marginal/tackle-room-logo-2020-rectangle.png",
+      "logo": {
+        "enabled": true,
+        "width": 200,
+        "height": 100,
+        "opacity": 0.9
+      }
     },
     {
       "preset": "social-square",
@@ -65,13 +63,13 @@
       "text": {
         "headline": "Built for Offshore",
         "subhead": "Dredges. Planers. Leaders. The stuff that actually catches fish.",
-        "cta": "SHOP NOW",
-        "footer": "THE TACKLE ROOM \u00b7 @TOLEWIS"
+        "cta": "SHOP TROLLING RIGS",
+        "footer": ""
       },
       "theme": {
         "headlineColor": "#FFFFFF",
-        "subheadColor": "#B8CCE0",
-        "footerColor": "#7A9AB8",
+        "subheadColor": "#E8EEF4",
+        "footerColor": "#A0B8D0",
         "ctaTextColor": "#FFFFFF",
         "ctaFill": "rgba(232,93,58,0.95)",
         "ctaStroke": "rgba(255,160,120,0.50)",
@@ -84,15 +82,16 @@
         "leftColor": "6,14,28",
         "midColor": "10,22,42",
         "rightColor": "16,34,58",
-        "leftOpacity": 0.76,
-        "midOpacity": 0.3,
-        "rightOpacity": 0.06
+        "leftOpacity": 0.78,
+        "midOpacity": 0.38,
+        "rightOpacity": 0.1
       },
       "typography": {
         "headlineFontFamily": "Outfit, Arial, sans-serif",
         "bodyFontFamily": "Source Serif 4, Georgia, serif",
         "headlineSize": 82,
-        "subheadSize": 30
+        "subheadSize": 51,
+        "ctaSize": 30
       },
       "layout": {
         "personality": "editorial-left",
@@ -104,21 +103,18 @@
         "ctaRectY": 660,
         "ctaY": 698,
         "footerY": 1000,
-        "ctaWidth": 290,
-        "leftX": 80
+        "ctaWidth": 500,
+        "leftX": 80,
+        "ctaHeight": 80
       },
-      "shapes": [
-        {
-          "type": "rectangle",
-          "x": 460,
-          "y": 150,
-          "width": 60,
-          "height": 3,
-          "radius": 2,
-          "fill": "rgba(232,93,58,0.85)",
-          "opacity": 1
-        }
-      ]
+      "shapes": [],
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier4-marginal/tackle-room-logo-2020-rectangle.png",
+      "logo": {
+        "enabled": true,
+        "width": 220,
+        "height": 110,
+        "opacity": 0.9
+      }
     },
     {
       "preset": "landscape-banner",
@@ -129,12 +125,12 @@
         "headline": "Rigged Right the First Time",
         "subhead": "Every spread we sell ships with the knots tied, the snaps tested, and the swivels rated. Because nobody wants to re-rig at 5 AM.",
         "cta": "READ THE GUIDE",
-        "footer": "THE TACKLE ROOM \u00b7 OFFSHORE ESSENTIALS"
+        "footer": ""
       },
       "theme": {
         "headlineColor": "#FFFFFF",
-        "subheadColor": "#B8CCE0",
-        "footerColor": "#7A9AB8",
+        "subheadColor": "#E8EEF4",
+        "footerColor": "#A0B8D0",
         "ctaTextColor": "#FFFFFF",
         "ctaFill": "rgba(232,93,58,0.95)",
         "ctaStroke": "rgba(255,160,120,0.50)",
@@ -147,34 +143,33 @@
         "leftColor": "6,14,28",
         "midColor": "10,22,42",
         "rightColor": "16,34,58",
-        "leftOpacity": 0.76,
-        "midOpacity": 0.3,
-        "rightOpacity": 0.06
+        "leftOpacity": 0.78,
+        "midOpacity": 0.35,
+        "rightOpacity": 0.08
       },
       "typography": {
         "headlineFontFamily": "Outfit, Arial, sans-serif",
         "bodyFontFamily": "Source Serif 4, Georgia, serif",
         "headlineSize": 86,
-        "subheadSize": 34
+        "subheadSize": 53,
+        "ctaSize": 30,
+        "footerSize": 21
       },
       "layout": {
         "personality": "editorial-left",
         "maxHeadlineChars": 18,
-        "ctaWidth": 340,
-        "ctaHeight": 68
+        "ctaWidth": 420,
+        "ctaHeight": 76,
+        "maxSubheadChars": 36
       },
-      "shapes": [
-        {
-          "type": "rectangle",
-          "x": 120,
-          "y": 138,
-          "width": 60,
-          "height": 3,
-          "radius": 2,
-          "fill": "rgba(232,93,58,0.85)",
-          "opacity": 1
-        }
-      ]
+      "shapes": [],
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier4-marginal/tackle-room-logo-2020-rectangle.png",
+      "logo": {
+        "enabled": true,
+        "width": 240,
+        "height": 120,
+        "opacity": 0.9
+      }
     },
     {
       "preset": "social-portrait",
@@ -192,8 +187,8 @@
         "subheadColor": "#E8EEF4",
         "footerColor": "#A0B8D0",
         "ctaTextColor": "#FFFFFF",
-        "ctaFill": "rgba(232,93,58,0.98)",
-        "ctaStroke": "rgba(255,180,140,0.60)",
+        "ctaFill": "rgba(232,93,58,0.95)",
+        "ctaStroke": "rgba(255,160,120,0.50)",
         "gradientStart": "#0A1628",
         "gradientEnd": "#1A4060",
         "textPanelFill": "none",
@@ -213,7 +208,7 @@
         "bodyFontFamily": "Source Serif 4, Georgia, serif",
         "headlineSize": 89,
         "subheadSize": 44,
-        "footerSize": 24,
+        "footerSize": 21,
         "ctaSize": 34
       },
       "layout": {
