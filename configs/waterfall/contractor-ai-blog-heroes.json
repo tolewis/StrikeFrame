@@ -31,9 +31,9 @@
     },
     "layout": {
       "personality": "editorial-left",
-      "leftX": 100,
-      "maxHeadlineChars": 18,
-      "maxSubheadChars": 36,
+      "leftX": 80,
+      "maxHeadlineChars": 16,
+      "maxSubheadChars": 30,
       "ctaWidth": 500,
       "ctaHeight": 82,
       "headlineY": 220,
@@ -47,10 +47,11 @@
       "output": "output/waterfall/blog_hero_ai-office-work.jpg",
       "text": {
         "headline": "AI Changes the Office First",
-        "subhead": "Before it changes the field. The admin sludge around construction is the first pressure point.",
+        "subhead": "The admin sludge around construction is the first pressure point.",
         "cta": "CONTRACTOR-AI.COM",
         "footer": "CONTRACTOR-AI \u00b7 LONG READ"
-      }
+      },
+      "backgroundPosition": "right"
     },
     {
       "backgroundPath": "/home/tlewis/Dropbox/Tim/ContractorAI/assets/comfyui/library/03-leadership/cherrydeck-Qx7A7SChpnI-unsplash.jpg",

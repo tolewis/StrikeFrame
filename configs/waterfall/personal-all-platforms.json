@@ -145,10 +145,12 @@
         "personality": "editorial-left",
         "ctaWidth": 500,
         "ctaHeight": 82,
-        "maxSubheadChars": 36,
+        "maxSubheadChars": 30,
         "headlineY": 200,
         "subheadY": 420,
-        "ctaY": 620
+        "ctaY": 620,
+        "leftX": 80,
+        "maxHeadlineChars": 16
       },
       "shapes": []
     },

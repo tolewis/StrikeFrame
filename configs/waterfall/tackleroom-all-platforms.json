@@ -158,13 +158,14 @@
       },
       "layout": {
         "personality": "editorial-left",
-        "maxHeadlineChars": 18,
+        "maxHeadlineChars": 16,
         "ctaWidth": 500,
         "ctaHeight": 82,
-        "maxSubheadChars": 36,
+        "maxSubheadChars": 30,
         "headlineY": 200,
         "subheadY": 420,
-        "ctaY": 620
+        "ctaY": 620,
+        "leftX": 80
       },
       "shapes": [],
       "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier4-marginal/tackle-room-logo-2020-rectangle.png",
