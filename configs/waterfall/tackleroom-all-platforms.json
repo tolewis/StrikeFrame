@@ -185,7 +185,7 @@
         "headline": "Your Next Spread\nStarts Here",
         "subhead": "Hand-built trolling rigs.\nBy anglers, for anglers.",
         "cta": "BUILD YOUR SPREAD",
-        "footer": "THE TACKLE ROOM"
+        "footer": ""
       },
       "theme": {
         "headlineColor": "#FFFFFF",
@@ -229,7 +229,14 @@
         "footerY": 1220
       },
       "backgroundPosition": "attention",
-      "shapes": []
+      "shapes": [],
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/TR-logo-2024-diamond_large.png",
+      "logo": {
+        "enabled": true,
+        "width": 100,
+        "height": 100,
+        "opacity": 0.85
+      }
     }
   ]
 }

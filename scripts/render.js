@@ -403,6 +403,15 @@ function normalizeConfig(raw) {
     }, raw.productComposite || {}),
     review: Object.assign({ enforcePanelFit: true }, raw.review || {}),
     productImage: raw.productImage || null,
+    logoPath: raw.logoPath || null,
+    logo: Object.assign({
+      enabled: !!raw.logoPath,
+      width: 120,
+      height: 120,
+      x: null,  // null = auto-center or auto-position
+      y: null,  // null = use footerY position
+      opacity: 0.85
+    }, raw.logo || {}),
     shapes: Array.isArray(raw.shapes) ? raw.shapes : [],
     textLayers: Array.isArray(raw.textLayers) ? raw.textLayers : [],
     statBlocks: Array.isArray(raw.statBlocks) ? raw.statBlocks : [],
@@ -533,7 +542,7 @@ function buildPrimaryTextSvg(cfg) {
       <text x="${headlineX}" y="${layout.headlineY}" text-anchor="${headlineAnchor}" fill="${theme.headlineColor}" font-size="${typography.headlineSize}" font-family="${typography.headlineFontFamily}" font-weight="${typography.headlineWeight}">${headlineTspans}</text>
       <text x="${subheadX}" y="${layout.subheadY}" text-anchor="${headlineAnchor}" fill="${theme.subheadColor}" font-size="${typography.subheadSize}" font-family="${typography.bodyFontFamily}" font-weight="${typography.subheadWeight}">${subheadTspans}</text>
       <text x="${cta.textX}" y="${cta.textY}" dy="0.35em" text-anchor="${cta.textAnchor}" fill="${theme.ctaTextColor}" font-size="${typography.ctaSize}" font-family="${typography.bodyFontFamily}" font-weight="${typography.ctaWeight}">${escapeXml(text.cta).replace(/★+/g, m => `<tspan fill="#FFD700">${m}</tspan>`)}</text>
-      <text x="${footerX}" y="${layout.footerY}" text-anchor="${headlineAnchor}" fill="${theme.footerColor}" font-size="${typography.footerSize}" font-family="${typography.bodyFontFamily}" font-weight="${typography.footerWeight}" letter-spacing="${typography.footerTracking}">${escapeXml(text.footer)}</text>
+      ${cfg.logo && cfg.logo.enabled ? '' : `<text x="${footerX}" y="${layout.footerY}" text-anchor="${headlineAnchor}" fill="${theme.footerColor}" font-size="${typography.footerSize}" font-family="${typography.bodyFontFamily}" font-weight="${typography.footerWeight}" letter-spacing="${typography.footerTracking}">${escapeXml(text.footer)}</text>`}
     </svg>`);
 }
 
@@ -739,6 +748,16 @@ function runCompositionChecks(cfg, { headlineBox, subheadBox, ctaRect, footerBox
   checks.push({ name: 'canvas-utilization', pass: utilizationOk, value: Math.round(utilization * 100), note: `Content spans ${Math.round(utilization * 100)}% of canvas height` });
   if (!utilizationOk) warnings.push(`Content uses ${Math.round(utilization * 100)}% of canvas height — ${utilization < 0.35 ? 'feels empty' : 'feels crammed'}.`);
 
+  // 8. Margin balance — all text elements should have consistent left margins
+  const leftMargins = [headlineBox.left, subheadBox.left, ctaRect.left].filter(v => v > 0);
+  const rightMargins = [w - headlineBox.right, w - subheadBox.right, w - ctaRect.right].filter(v => v > 0);
+  const maxLeftDiff = Math.max(...leftMargins) - Math.min(...leftMargins);
+  const maxRightDiff = Math.max(...rightMargins) - Math.min(...rightMargins);
+  const marginBalanced = maxLeftDiff <= 60 && maxRightDiff <= 60;
+  scores.marginBalance = marginBalanced ? 100 : 40;
+  checks.push({ name: 'margin-balance', pass: marginBalanced, value: { leftDiff: maxLeftDiff, rightDiff: maxRightDiff }, note: `Max left margin variance ${maxLeftDiff}px, right ${maxRightDiff}px (want ≤60px)` });
+  if (!marginBalanced) warnings.push(`Text elements have unbalanced margins (left diff: ${maxLeftDiff}px, right diff: ${maxRightDiff}px). Constrain elements to consistent width.`);
+
   // Composite score (average of all sub-scores)
   const scoreValues = Object.values(scores);
   scores.overall = Math.round(scoreValues.reduce((a, b) => a + b, 0) / scoreValues.length);
@@ -859,6 +878,21 @@ async function renderOne(rawConfig) {
   const compositeSvg = buildCompositeSvg(cfg); if (compositeSvg) composites.push({ input: compositeSvg });
   const productLayer = await buildProductLayer(cfg);
   if (productLayer) composites.push({ input: productLayer, left: cfg.productComposite.circleX, top: cfg.productComposite.circleY });
+  // Logo layer — replaces footer text when logoPath is set
+  if (cfg.logo.enabled && cfg.logoPath && fileExists(cfg.logoPath)) {
+    const logoW = cfg.logo.width || 120;
+    const logoH = cfg.logo.height || 120;
+    const logoBuf = await sharp(cfg.logoPath)
+      .resize({ width: logoW, height: logoH, fit: 'inside', background: { r: 0, g: 0, b: 0, alpha: 0 } })
+      .ensureAlpha()
+      .png()
+      .toBuffer();
+    const logoMeta = await sharp(logoBuf).metadata();
+    const isCentered = cfg.layout.personality === 'centered-hero' || cfg.layout.align === 'center';
+    const logoX = cfg.logo.x != null ? cfg.logo.x : (isCentered ? Math.round((cfg.width - logoMeta.width) / 2) : cfg.layout.leftX);
+    const logoY = cfg.logo.y != null ? cfg.logo.y : Math.round(cfg.layout.footerY - logoMeta.height / 2);
+    composites.push({ input: logoBuf, left: logoX, top: logoY });
+  }
   const base = (cfg.backgroundPath && fileExists(cfg.backgroundPath))
     ? sharp(cfg.backgroundPath).resize(cfg.width, cfg.height, { fit: 'cover', position: cfg.backgroundPosition || 'center' }).modulate({ brightness: 0.82, saturation: 1.05 })
     : sharp({ create: { width: cfg.width, height: cfg.height, channels: 3, background: { r: 11, g: 42, b: 64 } } }).composite([{ input: Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="${cfg.theme.gradientStart}"/><stop offset="100%" stop-color="${cfg.theme.gradientEnd}"/></linearGradient></defs><rect width="100%" height="100%" fill="url(#g)"/></svg>`) }]);
