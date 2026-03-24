@@ -893,6 +893,15 @@ async function renderOne(rawConfig) {
     const isCentered = cfg.layout.personality === 'centered-hero' || cfg.layout.align === 'center';
     const logoX = cfg.logo.x != null ? cfg.logo.x : (isCentered ? Math.round((cfg.width - logoMeta.width) / 2) : cfg.layout.leftX);
     const logoY = cfg.logo.y != null ? cfg.logo.y : Math.round(cfg.layout.footerY - logoMeta.height / 2);
+    // Logo backdrop for contrast — semi-transparent dark pill behind logo
+    const backdropPad = 20;
+    const bdW = logoMeta.width + backdropPad * 2;
+    const bdH = logoMeta.height + backdropPad * 2;
+    const bdX = logoX - backdropPad;
+    const bdY = logoY - backdropPad;
+    const backdropFill = cfg.logo.backdropFill || 'rgba(0,0,0,0.45)';
+    const backdropSvg = Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg"><rect x="${bdX}" y="${bdY}" width="${bdW}" height="${bdH}" rx="16" fill="${backdropFill}" /></svg>`);
+    composites.push({ input: backdropSvg });
     composites.push({ input: logoBuf, left: logoX, top: logoY });
   }
   const base = (cfg.backgroundPath && fileExists(cfg.backgroundPath))
