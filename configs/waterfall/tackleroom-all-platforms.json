@@ -230,12 +230,12 @@
       },
       "backgroundPosition": "attention",
       "shapes": [],
-      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/TR-logo-2024-diamond_large.png",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier4-marginal/tackle-room-logo-2020-rectangle.png",
       "logo": {
         "enabled": true,
-        "width": 100,
-        "height": 100,
-        "opacity": 0.85
+        "width": 280,
+        "height": 140,
+        "opacity": 0.9
       }
     }
   ]
