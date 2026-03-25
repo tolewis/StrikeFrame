@@ -760,6 +760,26 @@ function runCompositionChecks(cfg, { headlineBox, subheadBox, ctaRect, footerBox
   checks.push({ name: 'margin-balance', pass: marginBalanced, value: { leftDiff: maxLeftDiff, rightDiff: maxRightDiff }, note: `Max left margin variance ${maxLeftDiff}px, right ${maxRightDiff}px (want ≤60px)` });
   if (!marginBalanced) warnings.push(`Text elements have unbalanced margins (left diff: ${maxLeftDiff}px, right diff: ${maxRightDiff}px). Constrain elements to consistent width.`);
 
+  // 9. Panel overflow — text must fit within split-card panel bounds
+  if (cfg.layout.personality === 'split-card' && cfg.layout.panelWidth) {
+    const panelRight = (cfg.layout.panelX || 0) + cfg.layout.panelWidth;
+    const panelBottom = (cfg.layout.panelY || 0) + cfg.layout.panelHeight;
+    const headlineOverflow = headlineBox.right > panelRight;
+    const subheadOverflow = subheadBox.right > panelRight;
+    const ctaOverflow = ctaRect.right > panelRight;
+    const vertOverflow = ctaRect.bottom > panelBottom;
+    const anyOverflow = headlineOverflow || subheadOverflow || ctaOverflow || vertOverflow;
+    scores.panelOverflow = anyOverflow ? 0 : 100;
+    checks.push({ name: 'panel-overflow', pass: !anyOverflow, value: {
+      panelRight, headlineRight: headlineBox.right, subheadRight: subheadBox.right,
+      ctaRight: ctaRect.right, ctaBottom: ctaRect.bottom, panelBottom
+    }, note: anyOverflow ? 'Text overflows panel — reduce font size or maxChars' : 'All text inside panel' });
+    if (headlineOverflow) { warnings.push(`Headline overflows panel by ${headlineBox.right - panelRight}px — reduce headlineSize or maxHeadlineChars.`); failures.push('headline-overflow'); }
+    if (subheadOverflow) { warnings.push(`Subhead overflows panel by ${subheadBox.right - panelRight}px — reduce subheadSize or maxSubheadChars.`); failures.push('subhead-overflow'); }
+    if (ctaOverflow) { warnings.push(`CTA overflows panel by ${ctaRect.right - panelRight}px — reduce ctaWidth.`); failures.push('cta-overflow'); }
+    if (vertOverflow) { warnings.push(`CTA extends below panel by ${ctaRect.bottom - panelBottom}px — adjust vertical positions.`); failures.push('vertical-overflow'); }
+  }
+
   // Composite score (average of all sub-scores)
   const scoreValues = Object.values(scores);
   scores.overall = Math.round(scoreValues.reduce((a, b) => a + b, 0) / scoreValues.length);
@@ -893,15 +913,35 @@ async function renderOne(rawConfig) {
     const isCentered = cfg.layout.personality === 'centered-hero' || cfg.layout.align === 'center';
     const logoX = cfg.logo.x != null ? cfg.logo.x : (isCentered ? Math.round((cfg.width - logoMeta.width) / 2) : cfg.layout.leftX);
     const logoY = cfg.logo.y != null ? cfg.logo.y : Math.round(cfg.layout.footerY - logoMeta.height / 2);
-    // Logo backdrop for contrast — semi-transparent dark pill behind logo
-    const backdropPad = 20;
-    const bdW = logoMeta.width + backdropPad * 2;
-    const bdH = logoMeta.height + backdropPad * 2;
-    const bdX = logoX - backdropPad;
-    const bdY = logoY - backdropPad;
-    const backdropFill = cfg.logo.backdropFill || 'rgba(0,0,0,0.45)';
-    const backdropSvg = Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg"><rect x="${bdX}" y="${bdY}" width="${bdW}" height="${bdH}" rx="16" fill="${backdropFill}" /></svg>`);
-    composites.push({ input: backdropSvg });
+    // White outer glow — blur logo alpha, recolor white, composite under logo
+    // This follows the logo shape (not a rectangle) like Nike/Apple on dark heroes
+    const glowRadius = cfg.logo.glowRadius || 12;
+    const glowOpacity = cfg.logo.glowOpacity || 0.7;
+    const glowBuf = await sharp(logoBuf)
+      .extractChannel(3)  // alpha channel only
+      .toColourspace('b-w')
+      .linear(glowOpacity * 2.5, 0)  // brighten
+      .blur(glowRadius)
+      .toBuffer();
+    // Create white glow from the blurred alpha
+    const glowW = logoMeta.width;
+    const glowH = logoMeta.height;
+    const glowLayer = await sharp({
+      create: { width: glowW, height: glowH, channels: 4, background: { r: 255, g: 255, b: 255, alpha: 0 } }
+    })
+      .composite([{ input: glowBuf, blend: 'dest-in' }])
+      .png()
+      .toBuffer();
+    // Extend glow buffer to match canvas and position it
+    const glowPad = glowRadius * 2;
+    const extendedGlow = await sharp({
+      create: { width: cfg.width, height: cfg.height, channels: 4, background: { r: 0, g: 0, b: 0, alpha: 0 } }
+    })
+      .composite([{ input: glowLayer, left: logoX, top: logoY }])
+      .blur(glowRadius)
+      .png()
+      .toBuffer();
+    composites.push({ input: extendedGlow });
     composites.push({ input: logoBuf, left: logoX, top: logoY });
   }
   const base = (cfg.backgroundPath && fileExists(cfg.backgroundPath))
