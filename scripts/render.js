@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
-const { buildPrimitiveSvgs, getPrimitiveRegistry } = require('../lib/primitives');
+const { buildPrimitiveOutputs, getPrimitiveRegistry } = require('../lib/primitives');
 
 const projectRoot = path.resolve(__dirname, '..');
 const argPath = process.argv[2] || 'configs/sample-banner.json';
@@ -643,6 +643,52 @@ function buildProofHeroSvg(cfg) {
   return Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg">${eyebrow}${quoteMark}<text x="${p.quoteX || 120}" y="${p.quoteY || 110}" fill="${p.quoteColor || '#ffffff'}" font-size="${p.quoteSize || 64}" font-family="${p.quoteFontFamily || 'Georgia, Times New Roman, serif'}" font-weight="${p.quoteWeight || 700}" ${p.quoteStyle ? `font-style="${p.quoteStyle}"` : ''}>${quoteTspans}</text>${starsNode}${cta}</svg>`);
 }
 
+function rectFromXYWH(x, y, width, height) {
+  return { x, y, width, height, left: x, top: y, right: x + width, bottom: y + height, centerX: x + width / 2, centerY: y + height / 2, area: width * height };
+}
+
+function estimateProofHeroGeometry(cfg) {
+  if (!cfg.proofHero) return [];
+  const p = cfg.proofHero;
+  const quoteLines = wrapText(p.quote || '', p.quoteMaxChars || 16);
+  const quoteStep = p.quoteLineHeight || Math.round((p.quoteSize || 64) * 1.08);
+  const quoteWidth = Math.max(...quoteLines.map(line => Math.max(1, line.length))) * ((p.quoteSize || 64) * 0.58);
+  const quoteHeight = Math.max(1, quoteLines.length) * quoteStep;
+  const elements = [
+    { id: 'proofHero.quote', type: 'text', rect: rectFromXYWH(p.quoteX || 120, (p.quoteY || 110) - (p.quoteSize || 64), Math.round(quoteWidth), Math.round(quoteHeight)) },
+    { id: 'proofHero.stars', type: 'text', rect: rectFromXYWH(p.starsX || 260, (p.starsY || 320) - (p.starsSize || 80), Math.round((p.starsSize || 80) * 4.2), Math.round((p.starsSize || 80) * 1.2)) }
+  ];
+  if (p.cta && p.cta.text) elements.push({ id: 'proofHero.cta', type: 'cta', rect: rectFromXYWH(p.cta.x, p.cta.y, p.cta.width, p.cta.height) });
+  return elements;
+}
+
+function buildLayoutSidecar(cfg, primitiveElements = [], resolvedImageLayers = []) {
+  const canvas = rectFromXYWH(0, 0, cfg.width, cfg.height);
+  const elements = [];
+  const allImageLayers = [...(Array.isArray(cfg.imageLayers) ? cfg.imageLayers : []), ...resolvedImageLayers];
+  allImageLayers.forEach((img, i) => {
+    elements.push({ id: `imageLayer.${i + 1}`, type: 'image', source: img.path || null, rect: rectFromXYWH(img.x || 0, img.y || 0, img.width || 0, img.height || 0) });
+  });
+  elements.push(...primitiveElements);
+  if (Array.isArray(cfg.textLayers)) {
+    cfg.textLayers.forEach((t, i) => {
+      const lines = wrapText(t.content || '', t.maxChars || 26);
+      const step = t.lineHeight || Math.round((t.fontSize || 28) * 1.15);
+      const width = Math.max(...lines.map(line => Math.max(1, line.length))) * ((t.fontSize || 28) * 0.58);
+      const height = Math.max(1, lines.length) * step;
+      elements.push({ id: `textLayer.${i + 1}`, type: 'text', rect: rectFromXYWH(t.x || 0, (t.y || 0) - (t.fontSize || 28), Math.round(width), Math.round(height)) });
+    });
+  }
+  return {
+    version: '1.5.1-draft',
+    canvas,
+    designIntent: cfg.designIntent || null,
+    constraintPolicy: cfg.constraintPolicy || null,
+    primitiveIds: cfg.proofHero ? ['proofHero'] : [],
+    elements
+  };
+}
+
 function buildStatBlocksSvg(cfg) {
   if (!cfg.statBlocks || !cfg.statBlocks.length) return null;
   const nodes = cfg.statBlocks.map((s) => {
@@ -927,11 +973,16 @@ async function buildFramedImageLayer(img) {
   const stroke = img.stroke || null;
   const strokeWidth = img.strokeWidth || 0;
   const shadow = img.shadow || null;
-  const resizedBuf = await sharp(img.path)
+  let resizedBuf = await sharp(img.path)
     .resize({ width: w - pad * 2, height: h - pad * 2, fit, background: { r: 255, g: 255, b: 255, alpha: 1 } })
     .png()
     .toBuffer();
   const meta = await sharp(resizedBuf).metadata();
+  if (radius > 0) {
+    const innerRadius = Math.max(0, radius - pad);
+    const mask = Buffer.from(`<svg width="${meta.width}" height="${meta.height}" xmlns="http://www.w3.org/2000/svg"><rect width="${meta.width}" height="${meta.height}" rx="${innerRadius}" ry="${innerRadius}" fill="#fff"/></svg>`);
+    resizedBuf = await sharp(resizedBuf).composite([{ input: mask, blend: 'dest-in' }]).png().toBuffer();
+  }
   const layers = [];
   if (shadow) {
     const shadowSvg = Buffer.from(`<svg width="${w}" height="${h}" xmlns="http://www.w3.org/2000/svg"><rect x="${shadow.x || 0}" y="${shadow.y || 10}" width="${w - (shadow.insetX || 0)}" height="${h - (shadow.insetY || 0)}" rx="${radius}" fill="${shadow.color || 'rgba(0,0,0,0.18)'}"/></svg>`);
@@ -942,12 +993,7 @@ async function buildFramedImageLayer(img) {
     const strokeSvg = Buffer.from(`<svg width="${w}" height="${h}" xmlns="http://www.w3.org/2000/svg"><rect x="${Math.round(strokeWidth/2)}" y="${Math.round(strokeWidth/2)}" width="${w - strokeWidth}" height="${h - strokeWidth}" rx="${Math.max(0, radius - Math.round(strokeWidth/2))}" fill="none" stroke="${stroke}" stroke-width="${strokeWidth}"/></svg>`);
     layers.push({ input: strokeSvg, left: 0, top: 0 });
   }
-  let canvas = sharp({ create: { width: w, height: h, channels: 4, background } }).composite(layers);
-  if (radius > 0) {
-    const mask = Buffer.from(`<svg width="${w}" height="${h}" xmlns="http://www.w3.org/2000/svg"><rect width="${w}" height="${h}" rx="${radius}" ry="${radius}" fill="#fff"/></svg>`);
-    canvas = canvas.composite([{ input: mask, blend: 'dest-in' }]);
-  }
-  return canvas.png().toBuffer();
+  return sharp({ create: { width: w, height: h, channels: 4, background } }).composite(layers).png().toBuffer();
 }
 
 async function buildRectProductLayer(cfg) {
@@ -968,19 +1014,29 @@ async function renderOne(rawConfig) {
     const layer = await buildFramedImageLayer(derivedLogoLayer);
     if (layer) composites.push({ input: layer, left: derivedLogoLayer.x || 0, top: derivedLogoLayer.y || 0 });
   }
+  const primitiveOutputs = buildPrimitiveOutputs(cfg, { wrapText, escapeXml, registry: getPrimitiveRegistry() });
+  const resolvedPrimitiveImageLayers = [];
+  const primitiveElements = [];
+  for (const primitiveOutput of primitiveOutputs) {
+    if (primitiveOutput.svg) composites.push({ input: primitiveOutput.svg });
+    if (Array.isArray(primitiveOutput.imageLayers)) resolvedPrimitiveImageLayers.push(...primitiveOutput.imageLayers);
+    if (Array.isArray(primitiveOutput.elements)) primitiveElements.push(...primitiveOutput.elements);
+  }
   if (Array.isArray(cfg.imageLayers)) {
     for (const img of cfg.imageLayers) {
       const layer = await buildFramedImageLayer(img);
       if (layer) composites.push({ input: layer, left: img.x || 0, top: img.y || 0 });
     }
   }
+  for (const img of resolvedPrimitiveImageLayers) {
+    const layer = await buildFramedImageLayer(img);
+    if (layer) composites.push({ input: layer, left: img.x || 0, top: img.y || 0 });
+  }
   composites.push({ input: buildPrimaryTextSvg(cfg) });
   const textLayers = buildTextLayersSvg(cfg); if (textLayers) composites.push({ input: textLayers });
   const statBlocksSvg = buildStatBlocksSvg(cfg); if (statBlocksSvg) composites.push({ input: statBlocksSvg });
   // New template layers
   const benefitStackSvg = buildBenefitStackSvg(cfg); if (benefitStackSvg) composites.push({ input: benefitStackSvg });
-  const primitiveSvgs = buildPrimitiveSvgs(cfg, { wrapText, escapeXml, registry: getPrimitiveRegistry() });
-  for (const primitiveSvg of primitiveSvgs) composites.push({ input: primitiveSvg.input });
   const testimonialSvg = buildTestimonialSvg(cfg); if (testimonialSvg) composites.push({ input: testimonialSvg });
   const splitRevealSvg = buildSplitRevealSvg(cfg); if (splitRevealSvg) composites.push({ input: splitRevealSvg });
   const offerFrameSvg = buildOfferFrameSvg(cfg); if (offerFrameSvg) composites.push({ input: offerFrameSvg });
@@ -1047,7 +1103,10 @@ async function renderOne(rawConfig) {
   const review = runReview(cfg, meta);
   const reviewPath = cfg.output.replace(/\.[^.]+$/, '') + '.review.json';
   fs.writeFileSync(reviewPath, JSON.stringify(review, null, 2));
-  return { output: cfg.output, width: meta.width, height: meta.height, preset: cfg.preset, template: cfg.template, personality: cfg.layout.personality, reviewStatus: review.status, reviewPath };
+  const layout = buildLayoutSidecar(cfg, primitiveElements, resolvedPrimitiveImageLayers);
+  const layoutPath = cfg.output.replace(/\.[^.]+$/, '') + '.layout.json';
+  fs.writeFileSync(layoutPath, JSON.stringify(layout, null, 2));
+  return { output: cfg.output, width: meta.width, height: meta.height, preset: cfg.preset, template: cfg.template, personality: cfg.layout.personality, reviewStatus: review.status, reviewPath, layoutPath };
 }
 
 async function main() {

@@ -1,0 +1,68 @@
+{
+  "preset": "social-square",
+  "template": "banner",
+  "output": "output/meta-v2/proofhero-canonical-v1.jpg",
+  "designIntent": {
+    "goal": "convert",
+    "channel": "paid-social",
+    "placement": "feed",
+    "audience": "saltwater anglers",
+    "offerType": "proof-led",
+    "proofType": "review-screenshot",
+    "productRole": "supporting",
+    "optimizationTarget": "thumb-stop + credibility + click",
+    "emphasis": "proof-over-product",
+    "diversityTarget": "high"
+  },
+  "constraintPolicy": {
+    "geometry": { "minSafeZone": 40, "allowOverflow": false, "minHeadlineSizeMobile": 44 },
+    "semantic": { "proofRequired": true, "ctaRequired": true, "maxProductProminence": 0.25 },
+    "brand": { "logoModesAllowed": ["white-card-landscape", "transparent-full"], "forbidShadedLogos": true }
+  },
+  "text": { "headline": "", "subhead": "", "cta": "", "footer": "" },
+  "overlay": { "leftColor": "0,0,0", "midColor": "0,0,0", "rightColor": "0,0,0", "leftOpacity": 0.0, "midOpacity": 0.0, "rightOpacity": 0.0, "vignetteBottom": 0.0 },
+  "theme": {
+    "headlineColor": "rgba(0,0,0,0)",
+    "subheadColor": "rgba(0,0,0,0)",
+    "footerColor": "rgba(0,0,0,0)",
+    "ctaTextColor": "rgba(0,0,0,0)",
+    "ctaFill": "rgba(0,0,0,0)",
+    "ctaStroke": "rgba(0,0,0,0)",
+    "textPanelFill": "rgba(0,0,0,0)",
+    "textPanelStroke": "rgba(0,0,0,0)",
+    "gradientStart": "#2f2f2f",
+    "gradientEnd": "#2f2f2f"
+  },
+  "layout": { "personality": "editorial-left", "leftX": 60, "headlineY": -100, "subheadY": -100, "ctaY": -100, "ctaRectY": -100, "footerY": -100 },
+  "proofHero": {
+    "content": {
+      "quote": "When the fish is bigger than you, this is what you want on.",
+      "cta": "SHOP FIGHTING BELTS"
+    },
+    "assets": {
+      "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review11.png",
+      "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier4-marginal/media-renderer-assets__product-photos__seamount-belt-person.jpg"
+    },
+    "quoteSize": 68,
+    "maxQuoteLines": 3,
+    "minQuoteMaxChars": 16,
+    "maxQuoteMaxChars": 26,
+    "maxQuoteWidth": 760,
+    "quoteLineHeight": 76,
+    "quoteFontFamily": "Georgia, Times New Roman, serif",
+    "quoteWeight": 700,
+    "quoteColor": "#FFFFFF",
+    "quoteStyle": "normal",
+    "quoteMark": true,
+    "quoteMarkColor": "rgba(255,255,255,0.9)",
+    "starsColor": "#F4B63D",
+    "starsSize": 98,
+    "reviewWidth": 774,
+    "reviewHeight": 222,
+    "productWidth": 250,
+    "productHeight": 228,
+    "reviewFit": "contain",
+    "productFit": "cover"
+  },
+  "review": { "enforcePanelFit": false }
+}
