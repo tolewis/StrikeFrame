@@ -35,6 +35,30 @@ function wrapText(text, maxChars) {
 }
 function presetDefault(preset, portraitValue, defaultValue) { return preset === 'social-portrait' ? portraitValue : defaultValue; }
 
+const LOGO_MODE_DEFAULTS = {
+  'white-card-landscape': {
+    path: '/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png',
+    width: 250,
+    height: 66,
+    padding: 8,
+    background: { r: 255, g: 255, b: 255, alpha: 1 }
+  },
+  'transparent-full': {
+    path: '/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/TackleRoom 1.1.png',
+    width: 220,
+    height: 88,
+    padding: 0,
+    background: { r: 255, g: 255, b: 255, alpha: 0 }
+  },
+  'compact-square': {
+    path: '/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-square-1200x1200-v2.png',
+    width: 132,
+    height: 132,
+    padding: 8,
+    background: { r: 255, g: 255, b: 255, alpha: 1 }
+  }
+};
+
 // --- Icon glyph SVG paths (simple 24x24 viewBox paths) ---
 const ICON_PATHS = {
   shield: 'M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z',
@@ -56,20 +80,33 @@ function buildIconGlyphSvg(type, x, y, size, color) {
   return `<g transform="translate(${x},${y}) scale(${scale})"><path d="${pathData}" fill="${fill}" ${stroke}/></g>`;
 }
 
+function resolveLogoLayer(cfg) {
+  if (!cfg.logoMode) return null;
+  const mode = LOGO_MODE_DEFAULTS[cfg.logoMode];
+  if (!mode) return null;
+  const marginX = (cfg.logo && cfg.logo.x != null) ? cfg.logo.x : 60;
+  const marginY = (cfg.logo && cfg.logo.y != null) ? cfg.logo.y : 40;
+  return Object.assign({}, mode, cfg.logo || {}, { x: marginX, y: marginY, fit: (cfg.logo && cfg.logo.fit) || 'contain' });
+}
+
 function buildBadgesSvg(cfg) {
   if (!cfg.badges || !cfg.badges.length) return null;
   const nodes = cfg.badges.map((b) => {
     const fontSize = b.fontSize || 16;
-    const textLen = (b.text || '').length;
-    const width = b.width || Math.max(100, Math.round(textLen * fontSize * 0.6 + 32));
+    const text = String(b.text || '').trim();
+    const textLen = text.length;
+    const padX = b.paddingX || 24;
+    const width = b.width || Math.max(100, Math.round(textLen * fontSize * 0.62 + padX * 2));
     const height = b.height || 36;
     const rx = b.radius || Math.round(height / 2);
     const fill = b.fill || 'rgba(232,93,58,0.92)';
     const textColor = b.textColor || '#ffffff';
+    const fontFamily = b.fontFamily || 'Montserrat, Arial, sans-serif';
+    const fontWeight = b.fontWeight || 700;
     const textX = (b.x || 0) + Math.round(width / 2);
     const textY = (b.y || 0) + Math.round(height / 2);
     return `<rect x="${b.x || 0}" y="${b.y || 0}" width="${width}" height="${height}" rx="${rx}" fill="${fill}"/>` +
-      `<text x="${textX}" y="${textY}" dy="0.35em" text-anchor="middle" fill="${textColor}" font-size="${fontSize}" font-family="Montserrat, Arial, sans-serif" font-weight="700">${escapeXml(b.text)}</text>`;
+      `<text x="${textX}" y="${textY}" dy="0.35em" text-anchor="middle" fill="${textColor}" font-size="${fontSize}" font-family="${fontFamily}" font-weight="${fontWeight}">${escapeXml(text)}</text>`;
   }).join('\n');
   return Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg">${nodes}</svg>`);
 }
@@ -404,14 +441,16 @@ function normalizeConfig(raw) {
     review: Object.assign({ enforcePanelFit: true }, raw.review || {}),
     productImage: raw.productImage || null,
     logoPath: raw.logoPath || null,
+    logoMode: raw.logoMode || null,
     logo: Object.assign({
       enabled: !!raw.logoPath,
       width: 120,
       height: 120,
-      x: null,  // null = auto-center or auto-position
-      y: null,  // null = use footerY position
+      x: null,
+      y: null,
       opacity: 0.85
     }, raw.logo || {}),
+    imageLayers: Array.isArray(raw.imageLayers) ? raw.imageLayers : [],
     shapes: Array.isArray(raw.shapes) ? raw.shapes : [],
     textLayers: Array.isArray(raw.textLayers) ? raw.textLayers : [],
     statBlocks: Array.isArray(raw.statBlocks) ? raw.statBlocks : [],
@@ -423,6 +462,7 @@ function normalizeConfig(raw) {
     offerFrame: raw.offerFrame || null,
     comparisonTable: raw.comparisonTable || null,
     authorityBar: raw.authorityBar || null,
+    proofHero: raw.proofHero || null,
     badges: Array.isArray(raw.badges) ? raw.badges : null
   };
   if (cfg.review.enforcePanelFit && cfg.layout.personality === 'split-card') {
@@ -579,6 +619,25 @@ function buildTextLayersSvg(cfg) {
     return `${shadow}<text x="${x}" y="${y}" text-anchor="${anchor}" fill="${t.color || '#ffffff'}" font-size="${t.fontSize || 28}" font-family="${t.fontFamily || cfg.typography.bodyFontFamily}" font-weight="${t.fontWeight || 600}">${tspans}</text>`.replace(/✓/g, '<tspan fill="#4CAF50" font-weight="800">✓</tspan>');
   }).join('\n');
   return Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg">${nodes}</svg>`);
+}
+
+function buildProofHeroSvg(cfg) {
+  if (!cfg.proofHero) return null;
+  const p = cfg.proofHero;
+  const quote = p.quote || '';
+  const quoteLines = wrapText(quote, p.quoteMaxChars || 16);
+  const quoteStep = p.quoteLineHeight || Math.round((p.quoteSize || 64) * 1.08);
+  const quoteTspans = quoteLines.map((line, i) => `<tspan x="${p.quoteX || 120}" dy="${i === 0 ? 0 : quoteStep}">${escapeXml(line)}</tspan>`).join('');
+  const quoteMark = p.quoteMark !== false
+    ? `<text x="${p.quoteMarkX || (p.quoteX || 120) - 22}" y="${p.quoteMarkY || (p.quoteY || 110) - 14}" fill="${p.quoteMarkColor || '#ffffff'}" font-size="${p.quoteMarkSize || 92}" font-family="Georgia, serif" font-weight="700">“</text>`
+    : '';
+  const stars = p.starsText || '★★★★★';
+  const starsNode = `<text x="${p.starsX || 260}" y="${p.starsY || 320}" fill="${p.starsColor || '#F4B63D'}" font-size="${p.starsSize || 80}" font-family="Arial, sans-serif" font-weight="700">${escapeXml(stars)}</text>`;
+  const eyebrow = p.eyebrow ? `<text x="${p.eyebrowX || (p.quoteX || 120)}" y="${p.eyebrowY || 48}" fill="${p.eyebrowColor || 'rgba(255,255,255,0.72)'}" font-size="${p.eyebrowSize || 18}" font-family="${p.eyebrowFontFamily || 'Montserrat, Arial, sans-serif'}" font-weight="${p.eyebrowWeight || 700}" letter-spacing="${p.eyebrowTracking || 2}">${escapeXml(p.eyebrow)}</text>` : '';
+  const cta = p.cta && p.cta.text ? `
+    <rect x="${p.cta.x}" y="${p.cta.y}" width="${p.cta.width}" height="${p.cta.height}" rx="${p.cta.radius || 12}" fill="${p.cta.fill || '#ffffff'}" />
+    <text x="${p.cta.x + Math.round(p.cta.width / 2)}" y="${p.cta.y + Math.round(p.cta.height / 2) + (p.cta.textDy || 10)}" text-anchor="middle" fill="${p.cta.textColor || '#141414'}" font-size="${p.cta.fontSize || 28}" font-family="${p.cta.fontFamily || 'Montserrat, Arial, sans-serif'}" font-weight="${p.cta.fontWeight || 800}">${escapeXml(p.cta.text)}</text>` : '';
+  return Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg">${eyebrow}${quoteMark}<text x="${p.quoteX || 120}" y="${p.quoteY || 110}" fill="${p.quoteColor || '#ffffff'}" font-size="${p.quoteSize || 64}" font-family="${p.quoteFontFamily || 'Georgia, Times New Roman, serif'}" font-weight="${p.quoteWeight || 700}" ${p.quoteStyle ? `font-style="${p.quoteStyle}"` : ''}>${quoteTspans}</text>${starsNode}${cta}</svg>`);
 }
 
 function buildStatBlocksSvg(cfg) {
@@ -854,27 +913,42 @@ function runReview(cfg, meta) {
   return { status, checks, warnings, failures, composition: composition.scores, regions: { canvas, primaryRegion }, output: cfg.output, dimensions: { width: meta.width, height: meta.height } };
 }
 
+async function buildFramedImageLayer(img) {
+  if (!img || !img.path || !fileExists(img.path)) return null;
+  const w = img.width || 400;
+  const h = img.height || 400;
+  const pad = img.padding || 20;
+  const background = img.background || { r: 255, g: 255, b: 255, alpha: 1 };
+  const fit = img.fit || 'contain';
+  const radius = img.radius || 0;
+  const stroke = img.stroke || null;
+  const strokeWidth = img.strokeWidth || 0;
+  const shadow = img.shadow || null;
+  const resizedBuf = await sharp(img.path)
+    .resize({ width: w - pad * 2, height: h - pad * 2, fit, background: { r: 255, g: 255, b: 255, alpha: 1 } })
+    .png()
+    .toBuffer();
+  const meta = await sharp(resizedBuf).metadata();
+  const layers = [];
+  if (shadow) {
+    const shadowSvg = Buffer.from(`<svg width="${w}" height="${h}" xmlns="http://www.w3.org/2000/svg"><rect x="${shadow.x || 0}" y="${shadow.y || 10}" width="${w - (shadow.insetX || 0)}" height="${h - (shadow.insetY || 0)}" rx="${radius}" fill="${shadow.color || 'rgba(0,0,0,0.18)'}"/></svg>`);
+    layers.push({ input: shadowSvg, left: 0, top: 0 });
+  }
+  layers.push({ input: resizedBuf, left: Math.round((w - meta.width) / 2), top: Math.round((h - meta.height) / 2) });
+  if (stroke && strokeWidth > 0) {
+    const strokeSvg = Buffer.from(`<svg width="${w}" height="${h}" xmlns="http://www.w3.org/2000/svg"><rect x="${Math.round(strokeWidth/2)}" y="${Math.round(strokeWidth/2)}" width="${w - strokeWidth}" height="${h - strokeWidth}" rx="${Math.max(0, radius - Math.round(strokeWidth/2))}" fill="none" stroke="${stroke}" stroke-width="${strokeWidth}"/></svg>`);
+    layers.push({ input: strokeSvg, left: 0, top: 0 });
+  }
+  let canvas = sharp({ create: { width: w, height: h, channels: 4, background } }).composite(layers);
+  if (radius > 0) {
+    const mask = Buffer.from(`<svg width="${w}" height="${h}" xmlns="http://www.w3.org/2000/svg"><rect width="${w}" height="${h}" rx="${radius}" ry="${radius}" fill="#fff"/></svg>`);
+    canvas = canvas.composite([{ input: mask, blend: 'dest-in' }]);
+  }
+  return canvas.png().toBuffer();
+}
+
 async function buildRectProductLayer(cfg) {
-  const pi = cfg.productImage;
-  if (!pi || !pi.path || !fileExists(pi.path)) return null;
-  const w = pi.width || 400;
-  const h = pi.height || 400;
-  const pad = pi.padding || 20;
-  const productBuf = await sharp(pi.path)
-    .resize({ width: w - pad * 2, height: h - pad * 2, fit: 'contain', background: { r: 255, g: 255, b: 255, alpha: 1 } })
-    .png()
-    .toBuffer();
-  const prodMeta = await sharp(productBuf).metadata();
-  return sharp({
-    create: { width: w, height: h, channels: 4, background: { r: 255, g: 255, b: 255, alpha: 1 } }
-  })
-    .composite([{
-      input: productBuf,
-      left: Math.round((w - prodMeta.width) / 2),
-      top: Math.round((h - prodMeta.height) / 2)
-    }])
-    .png()
-    .toBuffer();
+  return buildFramedImageLayer(cfg.productImage);
 }
 
 async function renderOne(rawConfig) {
@@ -886,11 +960,23 @@ async function renderOne(rawConfig) {
   // Rectangular product image (for explainer cards)
   const rectProduct = await buildRectProductLayer(cfg);
   if (rectProduct) composites.push({ input: rectProduct, left: cfg.productImage.x || 0, top: cfg.productImage.y || 0 });
+  const derivedLogoLayer = resolveLogoLayer(cfg);
+  if (derivedLogoLayer) {
+    const layer = await buildFramedImageLayer(derivedLogoLayer);
+    if (layer) composites.push({ input: layer, left: derivedLogoLayer.x || 0, top: derivedLogoLayer.y || 0 });
+  }
+  if (Array.isArray(cfg.imageLayers)) {
+    for (const img of cfg.imageLayers) {
+      const layer = await buildFramedImageLayer(img);
+      if (layer) composites.push({ input: layer, left: img.x || 0, top: img.y || 0 });
+    }
+  }
   composites.push({ input: buildPrimaryTextSvg(cfg) });
   const textLayers = buildTextLayersSvg(cfg); if (textLayers) composites.push({ input: textLayers });
   const statBlocksSvg = buildStatBlocksSvg(cfg); if (statBlocksSvg) composites.push({ input: statBlocksSvg });
   // New template layers
   const benefitStackSvg = buildBenefitStackSvg(cfg); if (benefitStackSvg) composites.push({ input: benefitStackSvg });
+  const proofHeroSvg = buildProofHeroSvg(cfg); if (proofHeroSvg) composites.push({ input: proofHeroSvg });
   const testimonialSvg = buildTestimonialSvg(cfg); if (testimonialSvg) composites.push({ input: testimonialSvg });
   const splitRevealSvg = buildSplitRevealSvg(cfg); if (splitRevealSvg) composites.push({ input: splitRevealSvg });
   const offerFrameSvg = buildOfferFrameSvg(cfg); if (offerFrameSvg) composites.push({ input: offerFrameSvg });
