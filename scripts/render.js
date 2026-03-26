@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
+const { buildPrimitiveSvgs, getPrimitiveRegistry } = require('../lib/primitives');
 
 const projectRoot = path.resolve(__dirname, '..');
 const argPath = process.argv[2] || 'configs/sample-banner.json';
@@ -439,6 +440,8 @@ function normalizeConfig(raw) {
       badgeY: chosenPreset === 'social-portrait' ? 180 : 120
     }, raw.productComposite || {}),
     review: Object.assign({ enforcePanelFit: true }, raw.review || {}),
+    designIntent: raw.designIntent || null,
+    constraintPolicy: raw.constraintPolicy || null,
     productImage: raw.productImage || null,
     logoPath: raw.logoPath || null,
     logoMode: raw.logoMode || null,
@@ -976,7 +979,8 @@ async function renderOne(rawConfig) {
   const statBlocksSvg = buildStatBlocksSvg(cfg); if (statBlocksSvg) composites.push({ input: statBlocksSvg });
   // New template layers
   const benefitStackSvg = buildBenefitStackSvg(cfg); if (benefitStackSvg) composites.push({ input: benefitStackSvg });
-  const proofHeroSvg = buildProofHeroSvg(cfg); if (proofHeroSvg) composites.push({ input: proofHeroSvg });
+  const primitiveSvgs = buildPrimitiveSvgs(cfg, { wrapText, escapeXml, registry: getPrimitiveRegistry() });
+  for (const primitiveSvg of primitiveSvgs) composites.push({ input: primitiveSvg.input });
   const testimonialSvg = buildTestimonialSvg(cfg); if (testimonialSvg) composites.push({ input: testimonialSvg });
   const splitRevealSvg = buildSplitRevealSvg(cfg); if (splitRevealSvg) composites.push({ input: splitRevealSvg });
   const offerFrameSvg = buildOfferFrameSvg(cfg); if (offerFrameSvg) composites.push({ input: offerFrameSvg });

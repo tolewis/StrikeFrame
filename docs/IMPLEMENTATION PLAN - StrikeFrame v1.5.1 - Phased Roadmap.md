@@ -49,13 +49,14 @@ Every premium primitive should be judged against real winning ad structures, not
 
 ## Roadmap overview
 ## Phase 0 - Stabilize current state
-## Phase 1 - Geometry foundation
-## Phase 2 - Primitive framework
-## Phase 3 - ProofHero as flagship primitive
-## Phase 4 - Critic loop MVP
-## Phase 5 - Benchmark-aware revision
-## Phase 6 - Additional primitive families
-## Phase 7 - Production hardening
+## Phase 1 - Minimum viable geometry core
+## Phase 2 - Design intent and constraint layer
+## Phase 3 - Primitive framework
+## Phase 4 - ProofHero as flagship primitive
+## Phase 5 - Critic loop MVP
+## Phase 6 - Benchmark profile system
+## Phase 7 - Additional primitive families
+## Phase 8 - Production hardening
 
 ---
 
@@ -85,29 +86,28 @@ Complete enough to proceed.
 
 ---
 
-## Phase 1 - Geometry foundation
+## Phase 1 - Minimum viable geometry core
 ### Goal
-Make StrikeFrame spatially inspectable and measurable.
+Make StrikeFrame spatially inspectable enough to build one strong flagship primitive without turning geometry into a science project.
 
 ### Why this comes first
-Without geometry truth, every later design primitive or critic loop will be partially blind.
+Without geometry truth, every later design primitive or critic loop will be partially blind. But the first implementation should stay tightly scoped to what ProofHero actually needs.
 
 ### Deliverables
 1. canonical rect model
-2. canvas + safe zone model
-3. region model
-4. geometry export sidecar (`.layout.json`)
-5. improved text measurement output
-6. collision and spacing checks
-7. optional debug overlay render
+2. text measurement output
+3. element bounding boxes
+4. safe-zone model
+5. geometry export sidecar (`.layout.json`)
+6. simple spacing and overflow checks
 
 ### Core engineering tasks
 - define a shared rect utility layer
-- normalize all current layout outputs into geometry objects
+- normalize current layout outputs into geometry objects
 - export text block geometry instead of only rough checks
 - export element rects for images, CTAs, badges, logos, shapes, text, and primitive sub-elements
 - add safe-zone checks as first-class logic
-- create a debug overlay mode for geometry inspection
+- keep diagnostics/debug overlay out of the critical path unless needed for active implementation
 
 ### Dependencies
 - none beyond current renderer
@@ -124,12 +124,33 @@ Without geometry truth, every later design primitive or critic loop will be part
 
 ### Suggested milestone output
 - one demo render with `.layout.json`
-- one demo render with `.debug.png`
 - one sample QC trace using geometry data
 
 ---
 
-## Phase 2 - Primitive framework
+## Phase 2 - Design intent and constraint layer
+### Goal
+Introduce the authoring layer above primitives so StrikeFrame does not become a hardcoded one-proof engine.
+
+### Deliverables
+1. `designIntent` config contract
+2. `constraintPolicy` config contract
+3. initial asset capability metadata fields
+4. benchmark profile placeholder contract
+
+### Core engineering tasks
+- define the intent schema used by agents
+- define hard vs soft constraint buckets
+- add pass-through support in config normalization
+- connect intent fields to primitive selection and revision targeting over time
+
+### Success criteria
+- intent and constraint objects can be declared without breaking legacy configs
+- one primitive can consume at least part of the intent model
+
+---
+
+## Phase 3 - Primitive framework
 ### Goal
 Create the architectural layer for named design primitives.
 
@@ -148,7 +169,8 @@ Create the architectural layer for named design primitives.
 - decide whether primitives render directly or compile into low-level layers before final render
 
 ### Dependencies
-- Phase 1 geometry foundation strongly preferred
+- Phase 1 minimum viable geometry core strongly preferred
+- Phase 2 design intent and constraint layer preferred
 
 ### Risks
 - building primitives before the geometry/export model is stable
@@ -166,9 +188,9 @@ Create the architectural layer for named design primitives.
 
 ---
 
-## Phase 3 - ProofHero as flagship primitive
+## Phase 4 - ProofHero as flagship primitive
 ### Goal
-Build one genuinely strong benchmark-oriented primitive.
+Build one genuinely strong benchmark-oriented primitive without hardcoding the whole system around one proof style.
 
 ### Why ProofHero first
 This pattern exposed the system’s current design ceiling more clearly than any other.
@@ -177,11 +199,7 @@ It is also one of the most commercially valuable formats for TackleRoom and futu
 
 ### Deliverables
 1. `proofHero` primitive implementation
-2. variant support:
-   - quote-dominant
-   - review-dominant
-   - balanced
-   - CTA-assisted
+2. one canonical flagship mode first, with a narrow optional second mode only if earned by real use
 3. proof-specific QC hooks
 4. support for proof asset + product asset role separation
 5. proof-specific geometry export
@@ -195,8 +213,9 @@ It is also one of the most commercially valuable formats for TackleRoom and futu
 - tune region ratios and spacing rules against benchmark examples
 
 ### Dependencies
-- Phase 1 geometry
-- Phase 2 primitive framework
+- Phase 1 minimum viable geometry core
+- Phase 2 design intent and constraint layer
+- Phase 3 primitive framework
 
 ### Risks
 - trying to solve every ad type through `proofHero`
@@ -216,7 +235,7 @@ It is also one of the most commercially valuable formats for TackleRoom and futu
 
 ---
 
-## Phase 4 - Critic loop MVP
+## Phase 5 - Critic loop MVP
 ### Goal
 Enable render-inspect-revise cycles with structured feedback.
 
@@ -230,9 +249,9 @@ Enable render-inspect-revise cycles with structured feedback.
 ### Core engineering tasks
 - create `critic.json` output format
 - connect critic inputs to geometry export and render artifact
-- implement rule-based and hybrid checks
+- implement a simple first-pass critic focused on hard fails, hierarchy, readability, CTA visibility, and proof visibility
 - generate revision suggestions at element or primitive role level
-- build compare logic to evaluate iteration improvement
+- build compare logic only after the first-pass critic is trustworthy
 
 ### Dependencies
 - geometry export
@@ -254,21 +273,22 @@ Enable render-inspect-revise cycles with structured feedback.
 
 ---
 
-## Phase 5 - Benchmark-aware revision
+## Phase 6 - Benchmark profile system
 ### Goal
-Teach StrikeFrame to reason relative to strong reference architectures.
+Teach StrikeFrame to reason relative to strong reference architectures without turning benchmark work into fuzzy similarity scoring.
 
 ### Deliverables
 1. benchmark profile format
 2. reference-mode constraints
-3. benchmark similarity outputs
-4. benchmark-aware revision heuristics
+3. architecture-level comparison outputs
+4. benchmark-informed revision heuristics
 
 ### Core engineering tasks
 - define benchmark profile schema
 - encode known winning structures as layout role expectations
-- add benchmark plausibility scoring
+- add benchmark profile schema and profile selection rules
 - compare candidate layout role proportions against target architecture
+- avoid visual resemblance scoring as a first-class requirement
 
 ### Dependencies
 - critic loop MVP
@@ -288,7 +308,7 @@ Teach StrikeFrame to reason relative to strong reference architectures.
 
 ---
 
-## Phase 6 - Additional primitive families
+## Phase 7 - Additional primitive families
 ### Goal
 Extend the system beyond proofHero after the foundation is proven.
 
@@ -314,7 +334,7 @@ Only expand after proofHero is genuinely credible.
 
 ---
 
-## Phase 7 - Production hardening
+## Phase 8 - Production hardening
 ### Goal
 Make the upgraded system dependable for repeated real-world use.
 
@@ -388,14 +408,15 @@ These are the concrete engineering work packages implied by the roadmap.
 ## Sequencing recommendation
 The fastest path to real value is:
 
-1. geometry export + debug overlay  
-2. primitive runtime  
-3. proofHero primitive  
-4. critic MVP  
-5. benchmark mode  
-6. expand primitive library
+1. minimum viable geometry core  
+2. design intent + constraint layer  
+3. primitive runtime  
+4. proofHero primitive  
+5. critic MVP  
+6. benchmark profile system  
+7. expand primitive library
 
-Do not swap steps 3 and 4 unless the critic can meaningfully operate on primitive output.
+Do not swap steps 4 and 5 unless the critic can meaningfully operate on primitive output.
 
 ---
 
@@ -404,9 +425,10 @@ After the PRD and initial tech specs, the docs folder should clearly express the
 
 1. PRD - product vision
 2. Geometry and Layout Model
-3. Primitive Interface Specification
-4. Critic Loop and Iterative Revision System
-5. Phased Roadmap
+3. Design Intent and Constraint Model
+4. Primitive Interface Specification
+5. Critic Loop and Iterative Revision System
+6. Phased Roadmap
 
 This should become the canonical v1.5.1 document chain.
 
