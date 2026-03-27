@@ -106,6 +106,23 @@ This lane is designed to:
 - let an AI or operator shortlist the survivors
 - polish and ship the strongest 1-5
 
+## ActionHero production lane
+ActionHero is the next batch-first lane after ProofHero.
+
+Primary docs:
+- `docs/PLAYBOOK - ActionHero Production Lane.md`
+- `configs/meta-v2-action-hero-v4.json`
+- `scripts/run_actionhero_pipeline.py`
+
+Fast path:
+- `python3 scripts/run_actionhero_pipeline.py`
+
+This lane is designed to:
+- generate a controlled 25-variant action-led batch
+- package a labeled review sheet
+- let AI or an operator shortlist the strongest 5-10
+- polish and ship the best 1-5
+
 ## Test and config hygiene
 - `npm test` — config validation + smoke tests
 - `npm run validate:configs` — parse all config JSON and flag missing repo-local refs

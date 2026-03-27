@@ -1,0 +1,1535 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier4-marginal/IMG_1921.jpg",
+    "backgroundPosition": "center",
+    "output": null,
+    "logoMode": "white-card-landscape",
+    "logo": {
+      "x": 60,
+      "y": 40,
+      "width": 250,
+      "height": 66
+    },
+    "text": {
+      "headline": "Wahoo Don't Wait\nFor Slow Gear",
+      "subhead": "",
+      "cta": "SHOP WAHOO GEAR",
+      "footer": ""
+    },
+    "overlay": {
+      "leftColor": "4,14,28",
+      "midColor": "4,14,28",
+      "rightColor": "4,14,28",
+      "leftOpacity": 0.0,
+      "midOpacity": 0.08,
+      "rightOpacity": 0.0,
+      "vignetteBottom": 0.8
+    },
+    "theme": {
+      "headlineColor": "#FFFFFF",
+      "subheadColor": "rgba(0,0,0,0)",
+      "footerColor": "rgba(0,0,0,0)",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(232,93,58,0.98)",
+      "ctaStroke": "rgba(255,255,255,0.24)",
+      "textPanelFill": "rgba(0,0,0,0)",
+      "textPanelStroke": "rgba(0,0,0,0)"
+    },
+    "typography": {
+      "headlineFontFamily": "Montserrat, Arial, sans-serif",
+      "headlineSize": 78,
+      "headlineWeight": 800,
+      "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+      "ctaSize": 30,
+      "ctaWeight": 800
+    },
+    "layout": {
+      "personality": "editorial-left",
+      "leftX": 60,
+      "headlineY": 820,
+      "subheadY": 2000,
+      "ctaX": 275,
+      "ctaRectX": 60,
+      "ctaRectY": 948,
+      "ctaWidth": 430,
+      "ctaHeight": 72,
+      "ctaRadius": 12,
+      "footerY": 2000,
+      "maxHeadlineChars": 18,
+      "panelX": 0,
+      "panelY": 0,
+      "panelWidth": 0,
+      "panelHeight": 0
+    },
+    "badges": [
+      {
+        "text": "WAHOO SEASON",
+        "x": 810,
+        "y": 40,
+        "fill": "rgba(232,93,58,0.92)",
+        "textColor": "#FFFFFF",
+        "fontSize": 20,
+        "width": 230,
+        "height": 42,
+        "radius": 8
+      }
+    ],
+    "review": {
+      "enforcePanelFit": false
+    }
+  },
+  "renders": [
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-01.jpg",
+      "text": {
+        "headline": "Wahoo Don't Wait\nFor Slow Gear",
+        "subhead": "",
+        "cta": "SHOP WAHOO GEAR",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 72,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 780,
+        "subheadY": 2000,
+        "ctaX": 255,
+        "ctaRectX": 60,
+        "ctaRectY": 930,
+        "ctaWidth": 390,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 978
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.04,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.64
+      },
+      "badges": [
+        {
+          "text": "WAHOO SEASON",
+          "x": 840,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 200,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-02.jpg",
+      "text": {
+        "headline": "Built To Run\nWhen Wahoo Are On",
+        "subhead": "",
+        "cta": "SHOP WAHOO GEAR",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 76,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 780,
+        "subheadY": 2000,
+        "ctaX": 270,
+        "ctaRectX": 60,
+        "ctaRectY": 930,
+        "ctaWidth": 420,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 978
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.64
+      },
+      "badges": [
+        {
+          "text": "OFFSHORE READY",
+          "x": 822,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 218,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-03.jpg",
+      "text": {
+        "headline": "Fast Gear For\nFast Fish",
+        "subhead": "",
+        "cta": "SHOP WAHOO GEAR",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 78,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 780,
+        "subheadY": 2000,
+        "ctaX": 285,
+        "ctaRectX": 60,
+        "ctaRectY": 930,
+        "ctaWidth": 450,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 978
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.12,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.64
+      },
+      "badges": [
+        {
+          "text": "BUILT FOR SPEED",
+          "x": 804,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 236,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-04.jpg",
+      "text": {
+        "headline": "Rig For Wahoo\nNot Wishful Thinking",
+        "subhead": "",
+        "cta": "SHOP WAHOO GEAR",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 80,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 780,
+        "subheadY": 2000,
+        "ctaX": 300,
+        "ctaRectX": 60,
+        "ctaRectY": 930,
+        "ctaWidth": 480,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 978
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.16,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.64
+      },
+      "badges": [
+        {
+          "text": "TOURNAMENT GEAR",
+          "x": 786,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 254,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-05.jpg",
+      "text": {
+        "headline": "When The Bite\nTurns Violent, Go Ready",
+        "subhead": "",
+        "cta": "SHOP WAHOO GEAR",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 84,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 780,
+        "subheadY": 2000,
+        "ctaX": 315,
+        "ctaRectX": 60,
+        "ctaRectY": 930,
+        "ctaWidth": 510,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 978
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.64
+      },
+      "badges": [
+        {
+          "text": "CABLE RIGGED",
+          "x": 768,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 272,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-06.jpg",
+      "text": {
+        "headline": "Wahoo Don't Wait\nFor Slow Gear",
+        "subhead": "",
+        "cta": "SHOP WAHOO LURES",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 72,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 800,
+        "subheadY": 2000,
+        "ctaX": 255,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 390,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 996
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.04,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.72
+      },
+      "badges": [
+        {
+          "text": "WAHOO SEASON",
+          "x": 840,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 200,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-07.jpg",
+      "text": {
+        "headline": "Built To Run\nWhen Wahoo Are On",
+        "subhead": "",
+        "cta": "SHOP WAHOO LURES",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 76,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 800,
+        "subheadY": 2000,
+        "ctaX": 270,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 420,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 996
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.72
+      },
+      "badges": [
+        {
+          "text": "OFFSHORE READY",
+          "x": 822,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 218,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-08.jpg",
+      "text": {
+        "headline": "Fast Gear For\nFast Fish",
+        "subhead": "",
+        "cta": "SHOP WAHOO LURES",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 78,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 800,
+        "subheadY": 2000,
+        "ctaX": 285,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 450,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 996
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.12,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.72
+      },
+      "badges": [
+        {
+          "text": "BUILT FOR SPEED",
+          "x": 804,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 236,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-09.jpg",
+      "text": {
+        "headline": "Rig For Wahoo\nNot Wishful Thinking",
+        "subhead": "",
+        "cta": "SHOP WAHOO LURES",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 80,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 800,
+        "subheadY": 2000,
+        "ctaX": 300,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 480,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 996
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.16,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.72
+      },
+      "badges": [
+        {
+          "text": "TOURNAMENT GEAR",
+          "x": 786,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 254,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-10.jpg",
+      "text": {
+        "headline": "When The Bite\nTurns Violent, Go Ready",
+        "subhead": "",
+        "cta": "SHOP WAHOO LURES",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 84,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 800,
+        "subheadY": 2000,
+        "ctaX": 315,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 510,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 996
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.72
+      },
+      "badges": [
+        {
+          "text": "CABLE RIGGED",
+          "x": 768,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 272,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-11.jpg",
+      "text": {
+        "headline": "Wahoo Don't Wait\nFor Slow Gear",
+        "subhead": "",
+        "cta": "BUILD YOUR WAHOO SPREAD",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 72,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 820,
+        "subheadY": 2000,
+        "ctaX": 255,
+        "ctaRectX": 60,
+        "ctaRectY": 966,
+        "ctaWidth": 390,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 1014
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.04,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.8
+      },
+      "badges": [
+        {
+          "text": "WAHOO SEASON",
+          "x": 840,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 200,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-12.jpg",
+      "text": {
+        "headline": "Built To Run\nWhen Wahoo Are On",
+        "subhead": "",
+        "cta": "BUILD YOUR WAHOO SPREAD",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 76,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 820,
+        "subheadY": 2000,
+        "ctaX": 270,
+        "ctaRectX": 60,
+        "ctaRectY": 966,
+        "ctaWidth": 420,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 1014
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.8
+      },
+      "badges": [
+        {
+          "text": "OFFSHORE READY",
+          "x": 822,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 218,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-13.jpg",
+      "text": {
+        "headline": "Fast Gear For\nFast Fish",
+        "subhead": "",
+        "cta": "BUILD YOUR WAHOO SPREAD",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 78,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 820,
+        "subheadY": 2000,
+        "ctaX": 285,
+        "ctaRectX": 60,
+        "ctaRectY": 966,
+        "ctaWidth": 450,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 1014
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.12,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.8
+      },
+      "badges": [
+        {
+          "text": "BUILT FOR SPEED",
+          "x": 804,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 236,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-14.jpg",
+      "text": {
+        "headline": "Rig For Wahoo\nNot Wishful Thinking",
+        "subhead": "",
+        "cta": "BUILD YOUR WAHOO SPREAD",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 80,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 820,
+        "subheadY": 2000,
+        "ctaX": 300,
+        "ctaRectX": 60,
+        "ctaRectY": 966,
+        "ctaWidth": 480,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 1014
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.16,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.8
+      },
+      "badges": [
+        {
+          "text": "TOURNAMENT GEAR",
+          "x": 786,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 254,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-15.jpg",
+      "text": {
+        "headline": "When The Bite\nTurns Violent, Go Ready",
+        "subhead": "",
+        "cta": "BUILD YOUR WAHOO SPREAD",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 84,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 820,
+        "subheadY": 2000,
+        "ctaX": 315,
+        "ctaRectX": 60,
+        "ctaRectY": 966,
+        "ctaWidth": 510,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 1014
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.8
+      },
+      "badges": [
+        {
+          "text": "CABLE RIGGED",
+          "x": 768,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 272,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-16.jpg",
+      "text": {
+        "headline": "Wahoo Don't Wait\nFor Slow Gear",
+        "subhead": "",
+        "cta": "SHOP CABLE RIGS",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 72,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 840,
+        "subheadY": 2000,
+        "ctaX": 255,
+        "ctaRectX": 60,
+        "ctaRectY": 984,
+        "ctaWidth": 390,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 1032
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.04,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.88
+      },
+      "badges": [
+        {
+          "text": "WAHOO SEASON",
+          "x": 840,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 200,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-17.jpg",
+      "text": {
+        "headline": "Built To Run\nWhen Wahoo Are On",
+        "subhead": "",
+        "cta": "SHOP CABLE RIGS",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 76,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 840,
+        "subheadY": 2000,
+        "ctaX": 270,
+        "ctaRectX": 60,
+        "ctaRectY": 984,
+        "ctaWidth": 420,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 1032
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.88
+      },
+      "badges": [
+        {
+          "text": "OFFSHORE READY",
+          "x": 822,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 218,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-18.jpg",
+      "text": {
+        "headline": "Fast Gear For\nFast Fish",
+        "subhead": "",
+        "cta": "SHOP CABLE RIGS",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 78,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 840,
+        "subheadY": 2000,
+        "ctaX": 285,
+        "ctaRectX": 60,
+        "ctaRectY": 984,
+        "ctaWidth": 450,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 1032
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.12,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.88
+      },
+      "badges": [
+        {
+          "text": "BUILT FOR SPEED",
+          "x": 804,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 236,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-19.jpg",
+      "text": {
+        "headline": "Rig For Wahoo\nNot Wishful Thinking",
+        "subhead": "",
+        "cta": "SHOP CABLE RIGS",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 80,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 840,
+        "subheadY": 2000,
+        "ctaX": 300,
+        "ctaRectX": 60,
+        "ctaRectY": 984,
+        "ctaWidth": 480,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 1032
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.16,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.88
+      },
+      "badges": [
+        {
+          "text": "TOURNAMENT GEAR",
+          "x": 786,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 254,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-20.jpg",
+      "text": {
+        "headline": "When The Bite\nTurns Violent, Go Ready",
+        "subhead": "",
+        "cta": "SHOP CABLE RIGS",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 84,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 840,
+        "subheadY": 2000,
+        "ctaX": 315,
+        "ctaRectX": 60,
+        "ctaRectY": 984,
+        "ctaWidth": 510,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 1032
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.88
+      },
+      "badges": [
+        {
+          "text": "CABLE RIGGED",
+          "x": 768,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 272,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-21.jpg",
+      "text": {
+        "headline": "Wahoo Don't Wait\nFor Slow Gear",
+        "subhead": "",
+        "cta": "GET WAHOO READY",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 72,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 860,
+        "subheadY": 2000,
+        "ctaX": 255,
+        "ctaRectX": 60,
+        "ctaRectY": 1002,
+        "ctaWidth": 390,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 1050
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.04,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.94
+      },
+      "badges": [
+        {
+          "text": "WAHOO SEASON",
+          "x": 840,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 200,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-22.jpg",
+      "text": {
+        "headline": "Built To Run\nWhen Wahoo Are On",
+        "subhead": "",
+        "cta": "GET WAHOO READY",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 76,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 860,
+        "subheadY": 2000,
+        "ctaX": 270,
+        "ctaRectX": 60,
+        "ctaRectY": 1002,
+        "ctaWidth": 420,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 1050
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.94
+      },
+      "badges": [
+        {
+          "text": "OFFSHORE READY",
+          "x": 822,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 218,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-23.jpg",
+      "text": {
+        "headline": "Fast Gear For\nFast Fish",
+        "subhead": "",
+        "cta": "GET WAHOO READY",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 78,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 860,
+        "subheadY": 2000,
+        "ctaX": 285,
+        "ctaRectX": 60,
+        "ctaRectY": 1002,
+        "ctaWidth": 450,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 1050
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.12,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.94
+      },
+      "badges": [
+        {
+          "text": "BUILT FOR SPEED",
+          "x": 804,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 236,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-24.jpg",
+      "text": {
+        "headline": "Rig For Wahoo\nNot Wishful Thinking",
+        "subhead": "",
+        "cta": "GET WAHOO READY",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 80,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 860,
+        "subheadY": 2000,
+        "ctaX": 300,
+        "ctaRectX": 60,
+        "ctaRectY": 1002,
+        "ctaWidth": 480,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 1050
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.16,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.94
+      },
+      "badges": [
+        {
+          "text": "TOURNAMENT GEAR",
+          "x": 786,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 254,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/actionhero-batch-v1/actionhero-25.jpg",
+      "text": {
+        "headline": "When The Bite\nTurns Violent, Go Ready",
+        "subhead": "",
+        "cta": "GET WAHOO READY",
+        "footer": ""
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 84,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 30,
+        "ctaWeight": 800
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 860,
+        "subheadY": 2000,
+        "ctaX": 315,
+        "ctaRectX": 60,
+        "ctaRectY": 1002,
+        "ctaWidth": 510,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 1050
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.94
+      },
+      "badges": [
+        {
+          "text": "CABLE RIGGED",
+          "x": 768,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 272,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    }
+  ]
+}
