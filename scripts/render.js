@@ -104,7 +104,10 @@ async function buildCornerAnchorLogo(cfg, logoResolved) {
   const bgColor = logoResolved.background || { r: 255, g: 255, b: 255, alpha: 1 };
   const radius = logoResolved.panelRadius || 0;
 
-  const logoBuf = await sharp(logoResolved.path)
+  // Trim internal whitespace from logo source before resizing so the panel
+  // fits the actual visible content, not the file's baked-in padding.
+  const trimmedBuf = await sharp(logoResolved.path).trim().ensureAlpha().png().toBuffer();
+  const logoBuf = await sharp(trimmedBuf)
     .resize({ width: logoW, height: logoH, fit: 'inside', background: { r: 0, g: 0, b: 0, alpha: 0 } })
     .ensureAlpha()
     .png()
