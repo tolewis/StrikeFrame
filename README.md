@@ -88,6 +88,24 @@ Before calling an asset done, check:
 - `npm run qaqc:vision`
 - `npm run calibration:eval`
 
+## ProofHero production lane
+ProofHero is the first serious primitive-backed production lane.
+
+Primary docs:
+- `docs/PLAYBOOK - ProofHero Production Lane.md`
+- `configs/proofhero-canonical-v1.json`
+- `scripts/run_proofhero_pipeline.py`
+
+Fast path:
+- `python3 scripts/run_proofhero_pipeline.py --vision off`
+- `python3 scripts/run_proofhero_pipeline.py --vision on --model qwen2.5vl:32b`
+
+This lane is designed to:
+- generate a controlled 25-variant batch
+- hard-fail obviously broken outputs
+- let an AI or operator shortlist the survivors
+- polish and ship the strongest 1-5
+
 ## Test and config hygiene
 - `npm test` — config validation + smoke tests
 - `npm run validate:configs` — parse all config JSON and flag missing repo-local refs
