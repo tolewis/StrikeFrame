@@ -2,16 +2,16 @@
   "defaults": {
     "preset": "social-square",
     "template": "banner",
-    "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier4-marginal/IMG_1921.jpg",
+    "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/sportfisher-running-c.jpg",
     "backgroundPosition": "center",
     "output": null,
     "logoMode": "white-card-landscape",
     "logo": {
       "placement": "corner-anchor",
       "corner": "top-left",
-      "width": 220,
-      "height": 58,
-      "clearSpace": 16
+      "width": 190,
+      "height": 44,
+      "clearSpace": 6
     },
     "text": {
       "headline": "Wahoo Don't Wait\nFor Slow Gear",

@@ -96,11 +96,11 @@ async function buildCornerAnchorLogo(cfg, logoResolved) {
   if (!logoResolved || logoResolved.placement !== 'corner-anchor') return null;
   const logoW = logoResolved.width || 250;
   const logoH = logoResolved.height || 66;
-  const clearSpace = logoResolved.clearSpace || Math.round(logoH * 0.35);
+  const clearSpace = logoResolved.clearSpace || Math.round(logoH * 0.2);
   const corner = logoResolved.corner || 'top-left';
 
-  const panelW = clearSpace + logoW + clearSpace;
-  const panelH = clearSpace + logoH + clearSpace;
+  // Consistent padding on all four sides per logo guidelines.
+  const pad = clearSpace;
   const bgColor = logoResolved.background || { r: 255, g: 255, b: 255, alpha: 1 };
   const radius = logoResolved.panelRadius || 0;
 
@@ -111,44 +111,42 @@ async function buildCornerAnchorLogo(cfg, logoResolved) {
     .toBuffer();
   const logoMeta = await sharp(logoBuf).metadata();
 
-  // Build the white panel that bleeds to the canvas edge
-  // For top-left: panel starts at (0,0), logo is inset by clearSpace on the inner sides
-  // The panel extends to the canvas edge on the corner sides and has a rounded inner corner
+  // Panel dimensions: equal padding on all four sides
+  const panelW = pad + logoW + pad;
+  const panelH = pad + logoH + pad;
   let panelX = 0, panelY = 0;
   let logoX = 0, logoY = 0;
-  let innerRadius = radius || Math.round(Math.min(panelW, panelH) * 0.06);
 
   if (corner === 'top-left') {
     panelX = 0; panelY = 0;
-    logoX = clearSpace;
-    logoY = clearSpace;
+    logoX = pad;
+    logoY = pad;
   } else if (corner === 'top-right') {
     panelX = cfg.width - panelW; panelY = 0;
-    logoX = panelX + clearSpace;
-    logoY = clearSpace;
+    logoX = panelX + pad;
+    logoY = pad;
   } else if (corner === 'bottom-left') {
     panelX = 0; panelY = cfg.height - panelH;
-    logoX = clearSpace;
-    logoY = panelY + clearSpace;
+    logoX = pad;
+    logoY = panelY + pad;
   } else if (corner === 'bottom-right') {
     panelX = cfg.width - panelW; panelY = cfg.height - panelH;
-    logoX = panelX + clearSpace;
-    logoY = panelY + clearSpace;
+    logoX = panelX + pad;
+    logoY = panelY + pad;
   }
 
-  // SVG panel with one rounded inner corner
+  const r = radius || Math.round(Math.min(panelW, panelH) * 0.08);
+
+  // SVG panel with one rounded inner corner only
   let panelPath;
-  const r = innerRadius;
   if (corner === 'top-left') {
     panelPath = `M0,0 H${panelW} V${panelH - r} Q${panelW},${panelH} ${panelW - r},${panelH} H0 Z`;
   } else if (corner === 'top-right') {
     panelPath = `M0,0 H${panelW} V${panelH} H${r} Q0,${panelH} 0,${panelH - r} V0 Z`;
   } else if (corner === 'bottom-left') {
-    panelPath = `M0,0 H${panelW} Q${panelW},0 ${panelW},0 V${panelH} H0 V${r} Q0,0 0,0 Z`;
     panelPath = `M0,0 V${panelH} H${panelW} V${r} Q${panelW},0 ${panelW - r},0 H0 Z`;
   } else {
     panelPath = `M${r},0 H${panelW} V${panelH} H0 V0 Q0,0 ${r},0 Z`;
-    panelPath = `M0,0 H${panelW} V${panelH} H0 V0 Z`;
   }
 
   const panelSvg = Buffer.from(`<svg width="${panelW}" height="${panelH}" xmlns="http://www.w3.org/2000/svg"><path d="${panelPath}" fill="rgba(${bgColor.r || 255},${bgColor.g || 255},${bgColor.b || 255},${bgColor.alpha != null ? bgColor.alpha : 1})"/></svg>`);
