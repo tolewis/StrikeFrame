@@ -96,7 +96,7 @@ async function buildCornerAnchorLogo(cfg, logoResolved) {
   if (!logoResolved || logoResolved.placement !== 'corner-anchor') return null;
   const logoW = logoResolved.width || 250;
   const logoH = logoResolved.height || 66;
-  const clearSpace = logoResolved.clearSpace || Math.round(logoH * 0.6);
+  const clearSpace = logoResolved.clearSpace || Math.round(logoH * 0.35);
   const corner = logoResolved.corner || 'top-left';
 
   const panelW = clearSpace + logoW + clearSpace;
@@ -1081,7 +1081,7 @@ async function renderOne(rawConfig) {
   const rectProduct = await buildRectProductLayer(cfg);
   if (rectProduct) composites.push({ input: rectProduct, left: cfg.productImage.x || 0, top: cfg.productImage.y || 0 });
   const derivedLogoLayer = resolveLogoLayer(cfg);
-  if (derivedLogoLayer) {
+  if (derivedLogoLayer && derivedLogoLayer.placement !== 'corner-anchor') {
     const layer = await buildFramedImageLayer(derivedLogoLayer);
     if (layer) composites.push({ input: layer, left: derivedLogoLayer.x || 0, top: derivedLogoLayer.y || 0 });
   }

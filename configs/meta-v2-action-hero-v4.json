@@ -5,7 +5,7 @@
   "backgroundPosition": "center",
   "output": "output/meta-v2/action-hero-wahoo-v4.jpg",
   "logoMode": "white-card-landscape",
-  "logo": { "placement": "corner-anchor", "corner": "top-left", "width": 250, "height": 66, "clearSpace": 24 },
+  "logo": { "placement": "corner-anchor", "corner": "top-left", "width": 220, "height": 58, "clearSpace": 16 },
   "text": {
     "headline": "Wahoo Don't Wait\nFor Slow Gear",
     "subhead": "",
