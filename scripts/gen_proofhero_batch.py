@@ -49,6 +49,7 @@ for i in range(25):
     cfg['proofHero']['productWidth'] = PRODUCT_WIDTHS[(i // len(REVIEW_HEIGHTS)) % len(PRODUCT_WIDTHS)]
     cfg['proofHero']['productHeight'] = cfg['proofHero']['productWidth']
     cfg['proofHero']['productY'] = 720 if cfg['proofHero']['reviewHeight'] <= 210 else 740
+    cfg['proofHero'].setdefault('cta', {})
     cfg['proofHero']['cta']['width'] = 400 if i % 2 == 0 else 430
     renders.append(cfg)
 

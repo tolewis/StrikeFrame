@@ -1,0 +1,1034 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "output": null,
+    "designIntent": {
+      "goal": "convert",
+      "channel": "paid-social",
+      "placement": "feed",
+      "audience": "saltwater anglers",
+      "offerType": "proof-led",
+      "proofType": "review-screenshot",
+      "productRole": "supporting",
+      "optimizationTarget": "thumb-stop + credibility + click",
+      "emphasis": "proof-over-product",
+      "diversityTarget": "high"
+    },
+    "constraintPolicy": {
+      "geometry": {
+        "minSafeZone": 40,
+        "allowOverflow": false,
+        "minHeadlineSizeMobile": 44
+      },
+      "semantic": {
+        "proofRequired": true,
+        "ctaRequired": true,
+        "maxProductProminence": 0.25
+      },
+      "brand": {
+        "logoModesAllowed": [
+          "white-card-landscape",
+          "transparent-full"
+        ],
+        "forbidShadedLogos": true
+      }
+    },
+    "text": {
+      "headline": "",
+      "subhead": "",
+      "cta": "",
+      "footer": ""
+    },
+    "overlay": {
+      "leftColor": "0,0,0",
+      "midColor": "0,0,0",
+      "rightColor": "0,0,0",
+      "leftOpacity": 0.0,
+      "midOpacity": 0.0,
+      "rightOpacity": 0.0,
+      "vignetteBottom": 0.0
+    },
+    "theme": {
+      "headlineColor": "rgba(0,0,0,0)",
+      "subheadColor": "rgba(0,0,0,0)",
+      "footerColor": "rgba(0,0,0,0)",
+      "ctaTextColor": "rgba(0,0,0,0)",
+      "ctaFill": "rgba(0,0,0,0)",
+      "ctaStroke": "rgba(0,0,0,0)",
+      "textPanelFill": "rgba(0,0,0,0)",
+      "textPanelStroke": "rgba(0,0,0,0)",
+      "gradientStart": "#2f2f2f",
+      "gradientEnd": "#2f2f2f"
+    },
+    "layout": {
+      "personality": "editorial-left",
+      "leftX": 60,
+      "headlineY": -100,
+      "subheadY": -100,
+      "ctaY": -100,
+      "ctaRectY": -100,
+      "footerY": -100
+    },
+    "proofHero": {
+      "content": {
+        "quote": "When the fish is bigger than you, this is what you want on.",
+        "cta": "SHOP FIGHTING BELTS"
+      },
+      "assets": {
+        "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review11.png",
+        "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier4-marginal/media-renderer-assets__product-photos__seamount-belt-person.jpg"
+      },
+      "quoteSize": 68,
+      "maxQuoteLines": 3,
+      "minQuoteMaxChars": 16,
+      "maxQuoteMaxChars": 26,
+      "maxQuoteWidth": 760,
+      "quoteLineHeight": 76,
+      "quoteFontFamily": "Georgia, Times New Roman, serif",
+      "quoteWeight": 700,
+      "quoteColor": "#FFFFFF",
+      "quoteStyle": "normal",
+      "quoteMark": true,
+      "quoteMarkColor": "rgba(255,255,255,0.9)",
+      "starsColor": "#F4B63D",
+      "starsSize": 98,
+      "reviewWidth": 774,
+      "reviewHeight": 222,
+      "productWidth": 250,
+      "productHeight": 228,
+      "reviewFit": "contain",
+      "productFit": "cover"
+    },
+    "review": {
+      "enforcePanelFit": false
+    }
+  },
+  "renders": [
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-01.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "When the fish is bigger than you, this is what you want on.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review08.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier4-marginal/media-renderer-assets__product-photos__seamount-belt-person.jpg"
+        },
+        "quoteSize": 62,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 720,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 180,
+        "productWidth": 180,
+        "productHeight": 180,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 720,
+        "cta": {
+          "width": 400
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-02.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "Forty minutes on a blue marlin and the belt never shifted.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review11.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier4-marginal/media-renderer-assets__product-photos__seamount-belt-person.jpg"
+        },
+        "quoteSize": 64,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 720,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 195,
+        "productWidth": 180,
+        "productHeight": 180,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 720,
+        "cta": {
+          "width": 430
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-03.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "Charter captains put these on the rail every morning.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/RReview05.1.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier4-marginal/media-renderer-assets__product-photos__seamount-belt-person.jpg"
+        },
+        "quoteSize": 66,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 720,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 210,
+        "productWidth": 180,
+        "productHeight": 180,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 720,
+        "cta": {
+          "width": 400
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-04.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "Built for the long fight, not the first five minutes.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review08.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier1-ready/media-renderer-assets__product-photos__seamount-gimbal.jpg"
+        },
+        "quoteSize": 68,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 720,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 225,
+        "productWidth": 180,
+        "productHeight": 180,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 740,
+        "cta": {
+          "width": 430
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-05.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "If the gimbal moves, everything else gets harder.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review11.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier1-ready/media-renderer-assets__product-photos__seamount-gimbal.jpg"
+        },
+        "quoteSize": 70,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 720,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 240,
+        "productWidth": 180,
+        "productHeight": 180,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 740,
+        "cta": {
+          "width": 400
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-06.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "When the fish is bigger than you, this is what you want on.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/RReview05.1.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier1-ready/media-renderer-assets__product-photos__seamount-gimbal.jpg"
+        },
+        "quoteSize": 62,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 760,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 180,
+        "productWidth": 200,
+        "productHeight": 200,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 720,
+        "cta": {
+          "width": 430
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-07.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "Forty minutes on a blue marlin and the belt never shifted.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review08.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier4-marginal/media-renderer-assets__product-photos__seamount-belt-person.jpg"
+        },
+        "quoteSize": 64,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 760,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 195,
+        "productWidth": 200,
+        "productHeight": 200,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 720,
+        "cta": {
+          "width": 400
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-08.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "Charter captains put these on the rail every morning.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review11.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier4-marginal/media-renderer-assets__product-photos__seamount-belt-person.jpg"
+        },
+        "quoteSize": 66,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 760,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 210,
+        "productWidth": 200,
+        "productHeight": 200,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 720,
+        "cta": {
+          "width": 430
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-09.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "Built for the long fight, not the first five minutes.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/RReview05.1.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier4-marginal/media-renderer-assets__product-photos__seamount-belt-person.jpg"
+        },
+        "quoteSize": 68,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 760,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 225,
+        "productWidth": 200,
+        "productHeight": 200,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 740,
+        "cta": {
+          "width": 400
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-10.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "If the gimbal moves, everything else gets harder.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review08.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier1-ready/media-renderer-assets__product-photos__seamount-gimbal.jpg"
+        },
+        "quoteSize": 70,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 760,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 240,
+        "productWidth": 200,
+        "productHeight": 200,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 740,
+        "cta": {
+          "width": 430
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-11.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "When the fish is bigger than you, this is what you want on.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review11.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier1-ready/media-renderer-assets__product-photos__seamount-gimbal.jpg"
+        },
+        "quoteSize": 62,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 800,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 180,
+        "productWidth": 220,
+        "productHeight": 220,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 720,
+        "cta": {
+          "width": 400
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-12.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "Forty minutes on a blue marlin and the belt never shifted.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/RReview05.1.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier1-ready/media-renderer-assets__product-photos__seamount-gimbal.jpg"
+        },
+        "quoteSize": 64,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 800,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 195,
+        "productWidth": 220,
+        "productHeight": 220,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 720,
+        "cta": {
+          "width": 430
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-13.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "Charter captains put these on the rail every morning.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review08.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier4-marginal/media-renderer-assets__product-photos__seamount-belt-person.jpg"
+        },
+        "quoteSize": 66,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 800,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 210,
+        "productWidth": 220,
+        "productHeight": 220,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 720,
+        "cta": {
+          "width": 400
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-14.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "Built for the long fight, not the first five minutes.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review11.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier4-marginal/media-renderer-assets__product-photos__seamount-belt-person.jpg"
+        },
+        "quoteSize": 68,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 800,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 225,
+        "productWidth": 220,
+        "productHeight": 220,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 740,
+        "cta": {
+          "width": 430
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-15.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "If the gimbal moves, everything else gets harder.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/RReview05.1.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier4-marginal/media-renderer-assets__product-photos__seamount-belt-person.jpg"
+        },
+        "quoteSize": 70,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 800,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 240,
+        "productWidth": 220,
+        "productHeight": 220,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 740,
+        "cta": {
+          "width": 400
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-16.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "When the fish is bigger than you, this is what you want on.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review08.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier1-ready/media-renderer-assets__product-photos__seamount-gimbal.jpg"
+        },
+        "quoteSize": 62,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 840,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 180,
+        "productWidth": 240,
+        "productHeight": 240,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 720,
+        "cta": {
+          "width": 430
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-17.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "Forty minutes on a blue marlin and the belt never shifted.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review11.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier1-ready/media-renderer-assets__product-photos__seamount-gimbal.jpg"
+        },
+        "quoteSize": 64,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 840,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 195,
+        "productWidth": 240,
+        "productHeight": 240,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 720,
+        "cta": {
+          "width": 400
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-18.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "Charter captains put these on the rail every morning.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/RReview05.1.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier1-ready/media-renderer-assets__product-photos__seamount-gimbal.jpg"
+        },
+        "quoteSize": 66,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 840,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 210,
+        "productWidth": 240,
+        "productHeight": 240,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 720,
+        "cta": {
+          "width": 430
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-19.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "Built for the long fight, not the first five minutes.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review08.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier4-marginal/media-renderer-assets__product-photos__seamount-belt-person.jpg"
+        },
+        "quoteSize": 68,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 840,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 225,
+        "productWidth": 240,
+        "productHeight": 240,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 740,
+        "cta": {
+          "width": 400
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-20.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "If the gimbal moves, everything else gets harder.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review11.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier4-marginal/media-renderer-assets__product-photos__seamount-belt-person.jpg"
+        },
+        "quoteSize": 70,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 840,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 240,
+        "productWidth": 240,
+        "productHeight": 240,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 740,
+        "cta": {
+          "width": 430
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-21.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "When the fish is bigger than you, this is what you want on.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/RReview05.1.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier4-marginal/media-renderer-assets__product-photos__seamount-belt-person.jpg"
+        },
+        "quoteSize": 62,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 880,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 180,
+        "productWidth": 260,
+        "productHeight": 260,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 720,
+        "cta": {
+          "width": 400
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-22.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "Forty minutes on a blue marlin and the belt never shifted.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review08.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier1-ready/media-renderer-assets__product-photos__seamount-gimbal.jpg"
+        },
+        "quoteSize": 64,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 880,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 195,
+        "productWidth": 260,
+        "productHeight": 260,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 720,
+        "cta": {
+          "width": 430
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-23.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "Charter captains put these on the rail every morning.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review11.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier1-ready/media-renderer-assets__product-photos__seamount-gimbal.jpg"
+        },
+        "quoteSize": 66,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 880,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 210,
+        "productWidth": 260,
+        "productHeight": 260,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 720,
+        "cta": {
+          "width": 400
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-24.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "Built for the long fight, not the first five minutes.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/RReview05.1.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier1-ready/media-renderer-assets__product-photos__seamount-gimbal.jpg"
+        },
+        "quoteSize": 68,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 880,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 225,
+        "productWidth": 260,
+        "productHeight": 260,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 740,
+        "cta": {
+          "width": 430
+        }
+      }
+    },
+    {
+      "output": "/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1/proofhero-25.jpg",
+      "proofHero": {
+        "content": {
+          "quote": "If the gimbal moves, everything else gets harder.",
+          "cta": "SHOP FIGHTING BELTS"
+        },
+        "assets": {
+          "reviewPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review08.png",
+          "productPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier4-marginal/media-renderer-assets__product-photos__seamount-belt-person.jpg"
+        },
+        "quoteSize": 70,
+        "maxQuoteLines": 3,
+        "minQuoteMaxChars": 16,
+        "maxQuoteMaxChars": 26,
+        "maxQuoteWidth": 880,
+        "quoteLineHeight": 76,
+        "quoteFontFamily": "Georgia, Times New Roman, serif",
+        "quoteWeight": 700,
+        "quoteColor": "#FFFFFF",
+        "quoteStyle": "normal",
+        "quoteMark": true,
+        "quoteMarkColor": "rgba(255,255,255,0.9)",
+        "starsColor": "#F4B63D",
+        "starsSize": 98,
+        "reviewWidth": 774,
+        "reviewHeight": 240,
+        "productWidth": 260,
+        "productHeight": 260,
+        "reviewFit": "contain",
+        "productFit": "cover",
+        "productY": 740,
+        "cta": {
+          "width": 400
+        }
+      }
+    }
+  ]
+}
