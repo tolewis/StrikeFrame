@@ -58,7 +58,7 @@ Those should become other primitives such as `actionHero`, `priceAnchor`, or `co
 - `scripts/run_proofhero_pipeline.py`
 
 ### Batch outputs
-- `output/meta-v2/proofhero-batch-v1/`
+- `/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/proofhero-batch-v1/`
 
 ---
 
@@ -122,13 +122,13 @@ Use this when the Popeye/Ollama vision endpoint is reachable.
 
 ## Output artifacts
 After a pipeline run, look for:
-- `output/meta-v2/proofhero-batch-v1/proofhero-01.jpg` ... `proofhero-25.jpg`
-- `output/meta-v2/proofhero-batch-v1/*.layout.json`
-- `output/meta-v2/proofhero-batch-v1/proofhero-batch-analysis.json`
-- `output/meta-v2/proofhero-batch-v1/proofhero-pipeline-summary.json`
-- `output/meta-v2/proofhero-batch-v1/proofhero-pipeline-summary.md`
-- `output/meta-v2/proofhero-batch-v1/proofhero-pass-sheet.jpg`
-- `output/meta-v2/proofhero-batch-v1/proofhero-fail-sheet.jpg`
+- `/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/proofhero-batch-v1/proofhero-01.jpg` ... `proofhero-25.jpg`
+- `/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/proofhero-batch-v1/*.layout.json`
+- `/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/proofhero-batch-v1/proofhero-batch-analysis.json`
+- `/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/proofhero-batch-v1/proofhero-pipeline-summary.json`
+- `/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/proofhero-batch-v1/proofhero-pipeline-summary.md`
+- `/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/proofhero-batch-v1/proofhero-pass-sheet.jpg`
+- `/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/proofhero-batch-v1/proofhero-fail-sheet.jpg`
 
 These are the minimum artifacts an agent should use to decide what ships.
 

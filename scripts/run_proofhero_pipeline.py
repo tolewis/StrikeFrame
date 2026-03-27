@@ -18,7 +18,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path('/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP')
-OUTPUT_DIR = ROOT / 'output' / 'meta-v2' / 'proofhero-batch-v1'
+OUTPUT_DIR = Path('/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/proofhero-batch-v1')
 ANALYSIS_PATH = OUTPUT_DIR / 'proofhero-batch-analysis.json'
 SUMMARY_JSON = OUTPUT_DIR / 'proofhero-pipeline-summary.json'
 SUMMARY_MD = OUTPUT_DIR / 'proofhero-pipeline-summary.md'

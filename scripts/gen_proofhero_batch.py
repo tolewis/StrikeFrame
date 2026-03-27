@@ -4,6 +4,7 @@ from copy import deepcopy
 from pathlib import Path
 
 ROOT = Path('/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP')
+TMP_ROOT = Path('/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/proofhero-batch-v1')
 BASE = ROOT / 'configs' / 'proofhero-canonical-v1.json'
 OUT = ROOT / 'configs' / 'proofhero-batch-v1.json'
 
@@ -36,9 +37,11 @@ defaults = deepcopy(base)
 defaults['output'] = None
 renders = []
 
+TMP_ROOT.mkdir(parents=True, exist_ok=True)
+
 for i in range(25):
     cfg = {}
-    cfg['output'] = str(ROOT / 'output' / 'meta-v2' / 'proofhero-batch-v1' / f'proofhero-{i+1:02d}.jpg')
+    cfg['output'] = str(TMP_ROOT / f'proofhero-{i+1:02d}.jpg')
     cfg['proofHero'] = deepcopy(defaults['proofHero'])
     cfg['proofHero']['content']['quote'] = QUOTES[i % len(QUOTES)]
     cfg['proofHero']['assets']['reviewPath'] = REVIEWS[i % len(REVIEWS)]

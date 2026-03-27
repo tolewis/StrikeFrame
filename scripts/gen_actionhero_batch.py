@@ -4,6 +4,7 @@ from copy import deepcopy
 from pathlib import Path
 
 ROOT = Path('/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP')
+TMP_ROOT = Path('/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-batch-v1')
 BASE = ROOT / 'configs' / 'meta-v2-action-hero-v4.json'
 OUT = ROOT / 'configs' / 'actionhero-batch-v1.json'
 
@@ -34,9 +35,11 @@ defaults = deepcopy(base)
 defaults['output'] = None
 renders = []
 
+TMP_ROOT.mkdir(parents=True, exist_ok=True)
+
 for i in range(25):
     cfg = {}
-    cfg['output'] = str(ROOT / 'output' / 'meta-v2' / 'actionhero-batch-v1' / f'actionhero-{i+1:02d}.jpg')
+    cfg['output'] = str(TMP_ROOT / f'actionhero-{i+1:02d}.jpg')
     cfg['text'] = deepcopy(defaults['text'])
     cfg['text']['headline'] = HEADLINES[i % len(HEADLINES)]
     cfg['text']['cta'] = CTA_TEXTS[(i // len(HEADLINES)) % len(CTA_TEXTS)]

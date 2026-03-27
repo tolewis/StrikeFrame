@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 from collections import Counter,defaultdict
 
-ROOT = Path('/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP/output/meta-v2/proofhero-batch-v1')
+ROOT = Path('/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/proofhero-batch-v1')
 canvas_area = 1080*1080
 issues = Counter()
 examples = defaultdict(list)

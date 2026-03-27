@@ -38,7 +38,7 @@ Examples:
 - `configs/meta-v2-action-hero-v4.json`
 - `scripts/gen_actionhero_batch.py`
 - `scripts/run_actionhero_pipeline.py`
-- `output/meta-v2/actionhero-batch-v1/`
+- `/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-batch-v1/`
 
 ---
 
@@ -74,10 +74,10 @@ That is enough to get a real spread without turning the lane into chaos.
 
 ## Output artifacts
 After a run, look for:
-- `output/meta-v2/actionhero-batch-v1/actionhero-01.jpg` ... `actionhero-25.jpg`
-- `output/meta-v2/actionhero-batch-v1/actionhero-review-sheet.jpg`
-- `output/meta-v2/actionhero-batch-v1/actionhero-pipeline-summary.json`
-- `output/meta-v2/actionhero-batch-v1/actionhero-pipeline-summary.md`
+- `/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-batch-v1/actionhero-01.jpg` ... `actionhero-25.jpg`
+- `/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-batch-v1/actionhero-review-sheet.jpg`
+- `/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-batch-v1/actionhero-pipeline-summary.json`
+- `/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-batch-v1/actionhero-pipeline-summary.md`
 
 ---
 

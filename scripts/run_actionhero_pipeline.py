@@ -16,7 +16,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path('/home/tlewis/Documents/projects/30 Projects/TackleRoom/Media Renderer MVP')
-OUTPUT_DIR = ROOT / 'output' / 'meta-v2' / 'actionhero-batch-v1'
+OUTPUT_DIR = Path('/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-batch-v1')
 SUMMARY_JSON = OUTPUT_DIR / 'actionhero-pipeline-summary.json'
 SUMMARY_MD = OUTPUT_DIR / 'actionhero-pipeline-summary.md'
 SHEET = OUTPUT_DIR / 'actionhero-review-sheet.jpg'
