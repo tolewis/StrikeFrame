@@ -87,7 +87,78 @@ function resolveLogoLayer(cfg) {
   if (!mode) return null;
   const marginX = (cfg.logo && cfg.logo.x != null) ? cfg.logo.x : 60;
   const marginY = (cfg.logo && cfg.logo.y != null) ? cfg.logo.y : 40;
-  return Object.assign({}, mode, cfg.logo || {}, { x: marginX, y: marginY, fit: (cfg.logo && cfg.logo.fit) || 'contain' });
+  const placement = (cfg.logo && cfg.logo.placement) || 'default';
+  const corner = (cfg.logo && cfg.logo.corner) || 'top-left';
+  return Object.assign({}, mode, cfg.logo || {}, { x: marginX, y: marginY, fit: (cfg.logo && cfg.logo.fit) || 'contain', placement, corner });
+}
+
+async function buildCornerAnchorLogo(cfg, logoResolved) {
+  if (!logoResolved || logoResolved.placement !== 'corner-anchor') return null;
+  const logoW = logoResolved.width || 250;
+  const logoH = logoResolved.height || 66;
+  const clearSpace = logoResolved.clearSpace || Math.round(logoH * 0.6);
+  const corner = logoResolved.corner || 'top-left';
+
+  const panelW = clearSpace + logoW + clearSpace;
+  const panelH = clearSpace + logoH + clearSpace;
+  const bgColor = logoResolved.background || { r: 255, g: 255, b: 255, alpha: 1 };
+  const radius = logoResolved.panelRadius || 0;
+
+  const logoBuf = await sharp(logoResolved.path)
+    .resize({ width: logoW, height: logoH, fit: 'inside', background: { r: 0, g: 0, b: 0, alpha: 0 } })
+    .ensureAlpha()
+    .png()
+    .toBuffer();
+  const logoMeta = await sharp(logoBuf).metadata();
+
+  // Build the white panel that bleeds to the canvas edge
+  // For top-left: panel starts at (0,0), logo is inset by clearSpace on the inner sides
+  // The panel extends to the canvas edge on the corner sides and has a rounded inner corner
+  let panelX = 0, panelY = 0;
+  let logoX = 0, logoY = 0;
+  let innerRadius = radius || Math.round(Math.min(panelW, panelH) * 0.06);
+
+  if (corner === 'top-left') {
+    panelX = 0; panelY = 0;
+    logoX = clearSpace;
+    logoY = clearSpace;
+  } else if (corner === 'top-right') {
+    panelX = cfg.width - panelW; panelY = 0;
+    logoX = panelX + clearSpace;
+    logoY = clearSpace;
+  } else if (corner === 'bottom-left') {
+    panelX = 0; panelY = cfg.height - panelH;
+    logoX = clearSpace;
+    logoY = panelY + clearSpace;
+  } else if (corner === 'bottom-right') {
+    panelX = cfg.width - panelW; panelY = cfg.height - panelH;
+    logoX = panelX + clearSpace;
+    logoY = panelY + clearSpace;
+  }
+
+  // SVG panel with one rounded inner corner
+  let panelPath;
+  const r = innerRadius;
+  if (corner === 'top-left') {
+    panelPath = `M0,0 H${panelW} V${panelH - r} Q${panelW},${panelH} ${panelW - r},${panelH} H0 Z`;
+  } else if (corner === 'top-right') {
+    panelPath = `M0,0 H${panelW} V${panelH} H${r} Q0,${panelH} 0,${panelH - r} V0 Z`;
+  } else if (corner === 'bottom-left') {
+    panelPath = `M0,0 H${panelW} Q${panelW},0 ${panelW},0 V${panelH} H0 V${r} Q0,0 0,0 Z`;
+    panelPath = `M0,0 V${panelH} H${panelW} V${r} Q${panelW},0 ${panelW - r},0 H0 Z`;
+  } else {
+    panelPath = `M${r},0 H${panelW} V${panelH} H0 V0 Q0,0 ${r},0 Z`;
+    panelPath = `M0,0 H${panelW} V${panelH} H0 V0 Z`;
+  }
+
+  const panelSvg = Buffer.from(`<svg width="${panelW}" height="${panelH}" xmlns="http://www.w3.org/2000/svg"><path d="${panelPath}" fill="rgba(${bgColor.r || 255},${bgColor.g || 255},${bgColor.b || 255},${bgColor.alpha != null ? bgColor.alpha : 1})"/></svg>`);
+
+  return {
+    panelBuf: panelSvg,
+    panelX, panelY, panelW, panelH,
+    logoBuf, logoX, logoY,
+    logoW: logoMeta.width, logoH: logoMeta.height
+  };
 }
 
 function buildBadgesSvg(cfg) {
@@ -1046,8 +1117,15 @@ async function renderOne(rawConfig) {
   const compositeSvg = buildCompositeSvg(cfg); if (compositeSvg) composites.push({ input: compositeSvg });
   const productLayer = await buildProductLayer(cfg);
   if (productLayer) composites.push({ input: productLayer, left: cfg.productComposite.circleX, top: cfg.productComposite.circleY });
-  // Logo layer — replaces footer text when logoPath is set
-  if (cfg.logo.enabled && cfg.logoPath && fileExists(cfg.logoPath)) {
+  // Corner-anchor logo layer (new logo guidelines)
+  const logoResolved = resolveLogoLayer(cfg);
+  const cornerAnchor = await buildCornerAnchorLogo(cfg, logoResolved);
+  if (cornerAnchor) {
+    composites.push({ input: cornerAnchor.panelBuf, left: cornerAnchor.panelX, top: cornerAnchor.panelY });
+    composites.push({ input: cornerAnchor.logoBuf, left: cornerAnchor.logoX, top: cornerAnchor.logoY });
+  }
+  // Legacy logo layer — replaces footer text when logoPath is set
+  if (!cornerAnchor && cfg.logo.enabled && cfg.logoPath && fileExists(cfg.logoPath)) {
     const logoW = cfg.logo.width || 120;
     const logoH = cfg.logo.height || 120;
     const logoBuf = await sharp(cfg.logoPath)

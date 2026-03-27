@@ -7,10 +7,11 @@
     "output": null,
     "logoMode": "white-card-landscape",
     "logo": {
-      "x": 60,
-      "y": 40,
+      "placement": "corner-anchor",
+      "corner": "top-left",
       "width": 250,
-      "height": 66
+      "height": 66,
+      "clearSpace": 24
     },
     "text": {
       "headline": "Wahoo Don't Wait\nFor Slow Gear",

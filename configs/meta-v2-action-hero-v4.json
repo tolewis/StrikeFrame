@@ -1,0 +1,76 @@
+{
+  "preset": "social-square",
+  "template": "banner",
+  "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier4-marginal/IMG_1921.jpg",
+  "backgroundPosition": "center",
+  "output": "output/meta-v2/action-hero-wahoo-v4.jpg",
+  "logoMode": "white-card-landscape",
+  "logo": { "placement": "corner-anchor", "corner": "top-left", "width": 250, "height": 66, "clearSpace": 24 },
+  "text": {
+    "headline": "Wahoo Don't Wait\nFor Slow Gear",
+    "subhead": "",
+    "cta": "SHOP WAHOO GEAR",
+    "footer": ""
+  },
+  "overlay": {
+    "leftColor": "4,14,28",
+    "midColor": "4,14,28",
+    "rightColor": "4,14,28",
+    "leftOpacity": 0.0,
+    "midOpacity": 0.08,
+    "rightOpacity": 0.0,
+    "vignetteBottom": 0.80
+  },
+  "theme": {
+    "headlineColor": "#FFFFFF",
+    "subheadColor": "rgba(0,0,0,0)",
+    "footerColor": "rgba(0,0,0,0)",
+    "ctaTextColor": "#FFFFFF",
+    "ctaFill": "rgba(232,93,58,0.98)",
+    "ctaStroke": "rgba(255,255,255,0.24)",
+    "textPanelFill": "rgba(0,0,0,0)",
+    "textPanelStroke": "rgba(0,0,0,0)"
+  },
+  "typography": {
+    "headlineFontFamily": "Montserrat, Arial, sans-serif",
+    "headlineSize": 78,
+    "headlineWeight": 800,
+    "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+    "ctaSize": 30,
+    "ctaWeight": 800
+  },
+  "layout": {
+    "personality": "editorial-left",
+    "leftX": 60,
+    "headlineY": 820,
+    "subheadY": 2000,
+    "ctaX": 275,
+    "ctaRectX": 60,
+    "ctaRectY": 948,
+    "ctaWidth": 430,
+    "ctaHeight": 72,
+    "ctaRadius": 12,
+    "footerY": 2000,
+    "maxHeadlineChars": 18,
+    "panelX": 0,
+    "panelY": 0,
+    "panelWidth": 0,
+    "panelHeight": 0
+  },
+  "badges": [
+    {
+      "text": "WAHOO SEASON",
+      "x": 810,
+      "y": 40,
+      "fill": "rgba(232,93,58,0.92)",
+      "textColor": "#FFFFFF",
+      "fontSize": 20,
+      "width": 230,
+      "height": 42,
+      "radius": 8
+    }
+  ],
+  "review": {
+    "enforcePanelFit": false
+  }
+}
