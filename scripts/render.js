@@ -114,9 +114,11 @@ async function buildCornerAnchorLogo(cfg, logoResolved) {
     .toBuffer();
   const logoMeta = await sharp(logoBuf).metadata();
 
-  // Panel dimensions: equal padding on all four sides
-  const panelW = pad + logoW + pad;
-  const panelH = pad + logoH + pad;
+  // Panel dimensions: equal padding on all four sides, built from ACTUAL rendered logo size
+  const actualLogoW = logoMeta.width;
+  const actualLogoH = logoMeta.height;
+  const panelW = pad + actualLogoW + pad;
+  const panelH = pad + actualLogoH + pad;
   let panelX = 0, panelY = 0;
   let logoX = 0, logoY = 0;
 
