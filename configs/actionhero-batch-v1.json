@@ -9,9 +9,9 @@
     "logo": {
       "placement": "corner-anchor",
       "corner": "top-left",
-      "width": 190,
-      "height": 44,
-      "clearSpace": 6
+      "width": 260,
+      "height": 60,
+      "clearSpace": 15
     },
     "text": {
       "headline": "Wahoo Don't Wait\nFor Slow Gear",
