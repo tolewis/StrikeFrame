@@ -503,7 +503,8 @@ function normalizeConfig(raw) {
       ctaGroup: null,
       panelX: 80, panelY: chosenPreset === 'social-portrait' ? 110 : 90,
       panelWidth: chosenPreset === 'social-portrait' ? 840 : (chosenPreset === 'linkedin-landscape' ? 700 : 760),
-      panelHeight: chosenPreset === 'social-portrait' ? 760 : (chosenPreset === 'linkedin-landscape' ? 390 : 600)
+      panelHeight: chosenPreset === 'social-portrait' ? 760 : (chosenPreset === 'linkedin-landscape' ? 390 : 600),
+      minHeadlineCtaGap: 40
     }, raw.layout || {}),
     productComposite: Object.assign({
       enabled: raw.template === 'product-composite', circleDiameter: chosenPreset === 'social-portrait' ? 360 : 300,
@@ -566,6 +567,35 @@ function normalizeConfig(raw) {
     const requiredHeight = estimatedPanelBottom - cfg.layout.panelY;
     if (requiredHeight > cfg.layout.panelHeight) cfg.layout.panelHeight = requiredHeight;
   }
+
+  // --- minHeadlineCtaGap enforcement ---
+  // Compute estimated headline box (same approach as estimateTextBlock)
+  {
+    const minGap = cfg.layout.minHeadlineCtaGap;
+    const headlineLines = wrapText(cfg.text.headline, cfg.layout.maxHeadlineChars);
+    const headlineStep = preset.height >= 1350 ? 82 : (chosenPreset === 'linkedin-landscape' ? 68 : 88);
+    const isCentered = cfg.layout.personality === 'centered-hero' || cfg.layout.align === 'center';
+    const textX = isCentered ? Math.round(cfg.width / 2) : cfg.layout.leftX;
+    const headlineEstHeight = Math.round(cfg.typography.headlineSize + ((Math.max(headlineLines.length, 1) - 1) * headlineStep));
+    const headlineTop = Math.round(cfg.layout.headlineY - cfg.typography.headlineSize * 0.82);
+    const headlineBottom = headlineTop + headlineEstHeight;
+
+    const gap = cfg.layout.ctaRectY - headlineBottom;
+    if (gap < minGap) {
+      const deficit = minGap - gap;
+      // Try pushing CTA down first
+      const safeZoneBottom = cfg.height - 40 - cfg.layout.ctaHeight;
+      const newCtaRectY = cfg.layout.ctaRectY + deficit;
+      if (newCtaRectY <= safeZoneBottom) {
+        cfg.layout.ctaRectY = newCtaRectY;
+        cfg.layout.ctaY = newCtaRectY + Math.round(cfg.layout.ctaHeight / 2);
+      } else {
+        // CTA would go below safe zone — push headlineY UP instead
+        cfg.layout.headlineY -= deficit;
+      }
+    }
+  }
+
   return cfg;
 }
 
@@ -753,12 +783,35 @@ function buildLayoutSidecar(cfg, primitiveElements = [], resolvedImageLayers = [
       elements.push({ id: `textLayer.${i + 1}`, type: 'text', rect: rectFromXYWH(t.x || 0, (t.y || 0) - (t.fontSize || 28), Math.round(width), Math.round(height)) });
     });
   }
+  // Include primary layout positions for gap verification
+  const isCenteredLayout = cfg.layout.personality === 'centered-hero' || cfg.layout.align === 'center';
+  const headlineLines = wrapText(cfg.text.headline, cfg.layout.maxHeadlineChars);
+  const headlineStep = cfg.height >= 1350 ? 82 : (cfg.preset === 'linkedin-landscape' ? 68 : 88);
+  const headlineEstHeight = Math.round(cfg.typography.headlineSize + ((Math.max(headlineLines.length, 1) - 1) * headlineStep));
+  const headlineTop = Math.round(cfg.layout.headlineY - cfg.typography.headlineSize * 0.82);
+  const headlineBottom = headlineTop + headlineEstHeight;
+  const ctaTop = cfg.layout.ctaRectY;
+  const ctaBottom = ctaTop + cfg.layout.ctaHeight;
+  const minGap = cfg.layout.minHeadlineCtaGap != null ? cfg.layout.minHeadlineCtaGap : 40;
+  const actualGap = ctaTop - headlineBottom;
+
   return {
     version: '1.5.1-draft',
     canvas,
     designIntent: cfg.designIntent || null,
     constraintPolicy: cfg.constraintPolicy || null,
     primitiveIds: cfg.proofHero ? ['proofHero'] : [],
+    primaryLayout: {
+      headlineY: cfg.layout.headlineY,
+      headlineTop,
+      headlineBottom,
+      ctaRectY: cfg.layout.ctaRectY,
+      ctaTop,
+      ctaBottom,
+      headlineCtaGap: actualGap,
+      minHeadlineCtaGap: minGap,
+      gapEnforced: actualGap >= minGap
+    },
     elements
   };
 }
@@ -1010,6 +1063,12 @@ function runReview(cfg, meta) {
   if (verticalGap2 < 24) warnings.push('Subhead/CTA spacing is too tight.');
   checks.push({ name: 'cta-to-footer-gap', pass: verticalGap3 >= 20, value: verticalGap3 });
   if (verticalGap3 < 20) warnings.push('CTA/footer spacing is too tight.');
+
+  // --- headline-to-CTA gap check (minHeadlineCtaGap) ---
+  const minHeadlineCtaGap = cfg.layout.minHeadlineCtaGap != null ? cfg.layout.minHeadlineCtaGap : 40;
+  const headlineCtaGap = ctaRect.top - headlineBox.bottom;
+  checks.push({ name: 'headline-to-cta-gap', pass: headlineCtaGap >= minHeadlineCtaGap, value: headlineCtaGap, note: `Gap between headline bottom and CTA top: ${headlineCtaGap}px (min ${minHeadlineCtaGap}px)` });
+  if (headlineCtaGap < minHeadlineCtaGap) warnings.push(`Headline sits too close to CTA — gap is ${headlineCtaGap}px, minimum is ${minHeadlineCtaGap}px. Layout was auto-adjusted.`);
 
   if (cfg.layout.personality === 'split-card') {
     const panelPaddingLeft = headlineBox.left - primaryRegion.left;
