@@ -368,6 +368,14 @@ function buildComparisonTableSvg(cfg) {
   const dividerColor = ct.dividerColor || 'rgba(255,255,255,0.25)';
   const dividerWidth = ct.dividerWidth || 3;
   nodes += `<rect x="${dividerX}" y="${startY - 10}" width="${dividerWidth}" height="${rows.length * rowHeight + 60}" rx="1" fill="${dividerColor}"/>`;
+  // Icon sizing
+  const iconSize = ct.iconSize || Math.round(bodySize * 1.6);
+  const iconGap = ct.iconGap || Math.round(iconSize * 0.5);
+  const badColor = ct.badColor || '#e05050';
+  const goodColor = ct.goodColor || '#4ade80';
+  const textLeftX = startX + iconSize + iconGap;
+  const textRightX = startX + colWidth + 40 + iconSize + iconGap;
+
   // Rows
   rows.forEach((row, i) => {
     const ry = rowStartY + i * rowHeight + 30;
@@ -375,8 +383,18 @@ function buildComparisonTableSvg(cfg) {
     if (i > 0) {
       nodes += `<rect x="${startX}" y="${ry - Math.round(rowHeight / 2) - 5}" width="${colWidth * 2 + 40}" height="1" fill="rgba(255,255,255,0.06)"/>`;
     }
-    nodes += `<text x="${leftCenter}" y="${ry}" text-anchor="middle" fill="${leftBodyColor}" font-size="${bodySize}" font-family="${font}" font-weight="400">${escapeXml(row.left || '')}</text>`;
-    nodes += `<text x="${rightCenter}" y="${ry}" text-anchor="middle" fill="#ffffff" font-size="${bodySize}" font-family="${font}" font-weight="600">${escapeXml(row.right || '')}</text>`;
+    // Strip leading icon characters from text
+    const leftText = (row.left || '').replace(/^[✗✕✖×xX]\s*/u, '').replace(/^\s*/, '');
+    const rightText = (row.right || '').replace(/^[✓✔✅]\s*/u, '').replace(/^\s*/, '');
+
+    // Left column: red X icon + text
+    const leftIconY = ry - Math.round(iconSize * 0.35);
+    nodes += `<text x="${startX + Math.round(iconSize / 2)}" y="${ry}" text-anchor="middle" fill="${badColor}" font-size="${iconSize}" font-family="${headFont}" font-weight="900">✗</text>`;
+    nodes += `<text x="${textLeftX}" y="${ry}" text-anchor="start" fill="${leftBodyColor}" font-size="${bodySize}" font-family="${font}" font-weight="400">${escapeXml(leftText)}</text>`;
+
+    // Right column: green check icon + text
+    nodes += `<text x="${startX + colWidth + 40 + Math.round(iconSize / 2)}" y="${ry}" text-anchor="middle" fill="${goodColor}" font-size="${iconSize}" font-family="${headFont}" font-weight="900">✓</text>`;
+    nodes += `<text x="${textRightX}" y="${ry}" text-anchor="start" fill="#ffffff" font-size="${bodySize}" font-family="${font}" font-weight="600">${escapeXml(rightText)}</text>`;
   });
 
   return Buffer.from(`<svg width="${cfg.width}" height="${cfg.height}" xmlns="http://www.w3.org/2000/svg">${nodes}</svg>`);
