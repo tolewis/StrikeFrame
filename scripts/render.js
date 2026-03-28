@@ -360,7 +360,9 @@ function buildComparisonTableSvg(cfg) {
     nodes += `<rect x="${startX - 10}" y="${startY - 20}" width="${colWidth + 20}" height="${rows.length * rowHeight + 80}" rx="16" fill="rgba(232,93,58,0.08)" stroke="rgba(232,93,58,0.2)" stroke-width="1"/>`;
   }
   // Column headers
-  nodes += `<text x="${leftCenter}" y="${headerY}" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="${headerSize}" font-family="${headFont}" font-weight="700" letter-spacing="1">${escapeXml((ct.leftHeader || 'STATUS QUO').toUpperCase())}</text>`;
+  const leftHeaderColor = ct.leftHeaderColor || ct.leftTextColor || 'rgba(255,255,255,0.5)';
+  const leftBodyColor = ct.leftTextColor || 'rgba(255,255,255,0.5)';
+  nodes += `<text x="${leftCenter}" y="${headerY}" text-anchor="middle" fill="${leftHeaderColor}" font-size="${headerSize}" font-family="${headFont}" font-weight="700" letter-spacing="1">${escapeXml((ct.leftHeader || 'STATUS QUO').toUpperCase())}</text>`;
   nodes += `<text x="${rightCenter}" y="${headerY}" text-anchor="middle" fill="rgba(232,93,58,0.92)" font-size="${headerSize}" font-family="${headFont}" font-weight="700" letter-spacing="1">${escapeXml((ct.rightHeader || 'TACKLEROOM').toUpperCase())}</text>`;
   // Divider
   nodes += `<rect x="${dividerX}" y="${startY - 10}" width="2" height="${rows.length * rowHeight + 60}" rx="1" fill="rgba(255,255,255,0.1)"/>`;
@@ -371,7 +373,7 @@ function buildComparisonTableSvg(cfg) {
     if (i > 0) {
       nodes += `<rect x="${startX}" y="${ry - Math.round(rowHeight / 2) - 5}" width="${colWidth * 2 + 40}" height="1" fill="rgba(255,255,255,0.06)"/>`;
     }
-    nodes += `<text x="${leftCenter}" y="${ry}" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="${bodySize}" font-family="${font}" font-weight="400">${escapeXml(row.left || '')}</text>`;
+    nodes += `<text x="${leftCenter}" y="${ry}" text-anchor="middle" fill="${leftBodyColor}" font-size="${bodySize}" font-family="${font}" font-weight="400">${escapeXml(row.left || '')}</text>`;
     nodes += `<text x="${rightCenter}" y="${ry}" text-anchor="middle" fill="#ffffff" font-size="${bodySize}" font-family="${font}" font-weight="600">${escapeXml(row.right || '')}</text>`;
   });
 

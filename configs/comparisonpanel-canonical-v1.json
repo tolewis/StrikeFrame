@@ -1,0 +1,96 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#FFFFFF",
+      "subheadColor": "#e4e4e7",
+      "footerColor": "rgba(255,255,255,0.35)",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(232,93,58,0.92)",
+      "ctaStroke": "rgba(255,160,120,0.35)"
+    }
+  },
+  "renders": [
+    {
+      "_comment": "=== ComparisonPanel Canonical v1 | TackleRoom vs Generic Shop ===",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-v1/comparisonpanel-canonical-v1.jpg",
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9109.jpg",
+      "backgroundPosition": "attention",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 200,
+        "height": 52,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "WHY CAPTAINS CHOOSE\nTACKLE ROOM",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.82,
+        "midOpacity": 0.78,
+        "rightOpacity": 0.82,
+        "vignetteBottom": 0.2
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 52,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 190,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 936,
+        "ctaX": 540,
+        "ctaY": 964,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 340,
+        "colWidth": 440,
+        "rowHeight": 68,
+        "headerSize": 21,
+        "bodySize": 19,
+        "highlightCol": "right",
+        "leftHeader": "GENERIC SHOP",
+        "rightHeader": "THE TACKLE ROOM",
+        "rows": [
+          { "left": "Generic Freshwater Stock",   "right": "Offshore-Only Inventory" },
+          { "left": "Ask Google for Rigging Tips", "right": "Captain-Tested Rigging Advice" },
+          { "left": "1-2 Week Shipping",           "right": "Ships Same Day, Mon-Fri" },
+          { "left": "Hit or Miss on 80lb+ Gear",   "right": "Full Heavy Tackle Selection" },
+          { "left": "No One to Call",              "right": "Live Expert on the Line" },
+          { "left": "Restocking Fees Apply",       "right": "Hassle-Free Returns" }
+        ]
+      }
+    }
+  ]
+}
