@@ -1,0 +1,104 @@
+{
+  "preset": "social-square",
+  "template": "banner",
+  "backgroundPath": "",
+  "backgroundPosition": "center",
+  "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-v2/comparisonpanel-benchmark-v1.jpg",
+  "logoMode": "white-card-landscape",
+  "logo": {
+    "placement": "corner-anchor",
+    "corner": "top-left",
+    "width": 260,
+    "height": 60,
+    "clearSpace": 15
+  },
+  "text": {
+    "headline": "YOUR RIGGING SETUP\nIS COSTING YOU BITES",
+    "subhead": "",
+    "cta": "SHOP OFFSHORE TACKLE",
+    "footer": ""
+  },
+  "overlay": {
+    "leftColor": "0,0,0",
+    "midColor": "0,0,0",
+    "rightColor": "0,0,0",
+    "leftOpacity": 0.0,
+    "midOpacity": 0.0,
+    "rightOpacity": 0.0,
+    "vignetteBottom": 0.0
+  },
+  "theme": {
+    "headlineColor": "#FFFFFF",
+    "subheadColor": "rgba(0,0,0,0)",
+    "footerColor": "rgba(0,0,0,0)",
+    "ctaTextColor": "#FFFFFF",
+    "ctaFill": "rgba(232,93,58,0.98)",
+    "ctaStroke": "rgba(255,255,255,0.12)",
+    "textPanelFill": "rgba(0,0,0,0)",
+    "textPanelStroke": "rgba(0,0,0,0)",
+    "gradientStart": "#1a1a2e",
+    "gradientEnd": "#16213e"
+  },
+  "typography": {
+    "headlineFontFamily": "Montserrat, Arial, sans-serif",
+    "headlineSize": 52,
+    "headlineWeight": 900,
+    "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+    "subheadSize": 1,
+    "subheadWeight": 400,
+    "ctaSize": 28,
+    "ctaWeight": 800,
+    "footerSize": 1,
+    "footerTracking": 4
+  },
+  "layout": {
+    "personality": "centered-hero",
+    "leftX": 60,
+    "headlineY": 180,
+    "subheadY": -200,
+    "ctaX": 540,
+    "ctaRectX": 290,
+    "ctaRectY": 940,
+    "ctaWidth": 500,
+    "ctaHeight": 72,
+    "ctaRadius": 12,
+    "footerY": -200,
+    "maxHeadlineChars": 22,
+    "panelX": 0,
+    "panelY": 0,
+    "panelWidth": 0,
+    "panelHeight": 0
+  },
+  "comparisonTable": {
+    "startY": 340,
+    "rowHeight": 120,
+    "headerSize": 26,
+    "bodySize": 24,
+    "colWidth": 420,
+    "leftHeader": "GENERIC SHOP",
+    "rightHeader": "TACKLE ROOM",
+    "highlightCol": "right",
+    "leftTextColor": "rgba(255,255,255,0.70)",
+    "rows": [
+      {
+        "left": "\u2717  Generic mono leaders",
+        "right": "\u2713  Species-matched fluoro"
+      },
+      {
+        "left": "\u2717  Guess your hook size",
+        "right": "\u2713  Rigged for your target"
+      },
+      {
+        "left": "\u2717  Piece it together yourself",
+        "right": "\u2713  Complete kits, nothing missing"
+      },
+      {
+        "left": "\u2717  Ships when they get to it",
+        "right": "\u2713  Same-day ship before 2pm"
+      }
+    ]
+  },
+  "review": {
+    "enforcePanelFit": false
+  }
+}

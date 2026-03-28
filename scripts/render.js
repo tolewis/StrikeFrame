@@ -365,7 +365,9 @@ function buildComparisonTableSvg(cfg) {
   nodes += `<text x="${leftCenter}" y="${headerY}" text-anchor="middle" fill="${leftHeaderColor}" font-size="${headerSize}" font-family="${headFont}" font-weight="700" letter-spacing="1">${escapeXml((ct.leftHeader || 'STATUS QUO').toUpperCase())}</text>`;
   nodes += `<text x="${rightCenter}" y="${headerY}" text-anchor="middle" fill="rgba(232,93,58,0.92)" font-size="${headerSize}" font-family="${headFont}" font-weight="700" letter-spacing="1">${escapeXml((ct.rightHeader || 'TACKLEROOM').toUpperCase())}</text>`;
   // Divider
-  nodes += `<rect x="${dividerX}" y="${startY - 10}" width="2" height="${rows.length * rowHeight + 60}" rx="1" fill="rgba(255,255,255,0.1)"/>`;
+  const dividerColor = ct.dividerColor || 'rgba(255,255,255,0.25)';
+  const dividerWidth = ct.dividerWidth || 3;
+  nodes += `<rect x="${dividerX}" y="${startY - 10}" width="${dividerWidth}" height="${rows.length * rowHeight + 60}" rx="1" fill="${dividerColor}"/>`;
   // Rows
   rows.forEach((row, i) => {
     const ry = rowStartY + i * rowHeight + 30;
