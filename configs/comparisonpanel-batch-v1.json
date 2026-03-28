@@ -1,0 +1,2491 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "theme": {
+      "headlineColor": "#FFFFFF",
+      "subheadColor": "#e4e4e7",
+      "footerColor": "rgba(255,255,255,0.35)",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(232,93,58,0.92)",
+      "ctaStroke": "rgba(255,160,120,0.35)"
+    }
+  },
+  "renders": [
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_8585.png",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-01-01.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "THEY GUESS.\nWE KNOW.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.82,
+        "midOpacity": 0.5,
+        "rightOpacity": 0.82,
+        "vignetteBottom": 0.2
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "BIG BOX",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "\"Works for saltwater\"",
+            "right": "Offshore-specific advice"
+          },
+          {
+            "left": "Staff never fished blue water",
+            "right": "OBX charter captain on staff"
+          },
+          {
+            "left": "Recommends whatever moves",
+            "right": "Spec'd for your target species"
+          },
+          {
+            "left": "Can't answer leader questions",
+            "right": "Knows 80 lb vs 150 lb fluoro"
+          },
+          {
+            "left": "No seasonal guidance",
+            "right": "Species-by-season rigging tips"
+          },
+          {
+            "left": "Generic setup advice",
+            "right": "Wahoo, tuna, mahi - by name"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_8700.png",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-01-02.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "THEY GUESS.\nWE KNOW.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.78,
+        "midOpacity": 0.44,
+        "rightOpacity": 0.8,
+        "vignetteBottom": 0.22
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "BIG BOX",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "\"Works for saltwater\"",
+            "right": "Offshore-specific advice"
+          },
+          {
+            "left": "Staff never fished blue water",
+            "right": "OBX charter captain on staff"
+          },
+          {
+            "left": "Recommends whatever moves",
+            "right": "Spec'd for your target species"
+          },
+          {
+            "left": "Can't answer leader questions",
+            "right": "Knows 80 lb vs 150 lb fluoro"
+          },
+          {
+            "left": "No seasonal guidance",
+            "right": "Species-by-season rigging tips"
+          },
+          {
+            "left": "Generic setup advice",
+            "right": "Wahoo, tuna, mahi - by name"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9117.jpg",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-01-03.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "THEY GUESS.\nWE KNOW.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.85,
+        "midOpacity": 0.55,
+        "rightOpacity": 0.85,
+        "vignetteBottom": 0.18
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "BIG BOX",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "\"Works for saltwater\"",
+            "right": "Offshore-specific advice"
+          },
+          {
+            "left": "Staff never fished blue water",
+            "right": "OBX charter captain on staff"
+          },
+          {
+            "left": "Recommends whatever moves",
+            "right": "Spec'd for your target species"
+          },
+          {
+            "left": "Can't answer leader questions",
+            "right": "Knows 80 lb vs 150 lb fluoro"
+          },
+          {
+            "left": "No seasonal guidance",
+            "right": "Species-by-season rigging tips"
+          },
+          {
+            "left": "Generic setup advice",
+            "right": "Wahoo, tuna, mahi - by name"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/Dolphin_Fish_Hooked.jpg",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-01-04.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "THEY GUESS.\nWE KNOW.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.8,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.82,
+        "vignetteBottom": 0.24
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "BIG BOX",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "\"Works for saltwater\"",
+            "right": "Offshore-specific advice"
+          },
+          {
+            "left": "Staff never fished blue water",
+            "right": "OBX charter captain on staff"
+          },
+          {
+            "left": "Recommends whatever moves",
+            "right": "Spec'd for your target species"
+          },
+          {
+            "left": "Can't answer leader questions",
+            "right": "Knows 80 lb vs 150 lb fluoro"
+          },
+          {
+            "left": "No seasonal guidance",
+            "right": "Species-by-season rigging tips"
+          },
+          {
+            "left": "Generic setup advice",
+            "right": "Wahoo, tuna, mahi - by name"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9109.jpg",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-01-05.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "THEY GUESS.\nWE KNOW.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.76,
+        "midOpacity": 0.52,
+        "rightOpacity": 0.78,
+        "vignetteBottom": 0.2
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "BIG BOX",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "\"Works for saltwater\"",
+            "right": "Offshore-specific advice"
+          },
+          {
+            "left": "Staff never fished blue water",
+            "right": "OBX charter captain on staff"
+          },
+          {
+            "left": "Recommends whatever moves",
+            "right": "Spec'd for your target species"
+          },
+          {
+            "left": "Can't answer leader questions",
+            "right": "Knows 80 lb vs 150 lb fluoro"
+          },
+          {
+            "left": "No seasonal guidance",
+            "right": "Species-by-season rigging tips"
+          },
+          {
+            "left": "Generic setup advice",
+            "right": "Wahoo, tuna, mahi - by name"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9098.jpg",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-02-01.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "OFFSHORE GEAR.\nNOT AISLE 12.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.82,
+        "midOpacity": 0.5,
+        "rightOpacity": 0.82,
+        "vignetteBottom": 0.2
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "GENERIC SHOP",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "3 trolling lure options",
+            "right": "50+ offshore trolling heads"
+          },
+          {
+            "left": "One size of circle hook",
+            "right": "Mustad 3/0-16/0 by target"
+          },
+          {
+            "left": "No spreader bar stock",
+            "right": "Daisy chains + spreaders in stock"
+          },
+          {
+            "left": "Spinning rods, maybe one braid",
+            "right": "60 lb-130 lb stand-up outfits"
+          },
+          {
+            "left": "Mono leaders - one weight",
+            "right": "Fluorocarbon 60-200 lb options"
+          },
+          {
+            "left": "No trolling weights",
+            "right": "Trolling sinkers, skirts, ballyhoo"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_8585.png",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-02-02.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "OFFSHORE GEAR.\nNOT AISLE 12.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.78,
+        "midOpacity": 0.44,
+        "rightOpacity": 0.8,
+        "vignetteBottom": 0.22
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "GENERIC SHOP",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "3 trolling lure options",
+            "right": "50+ offshore trolling heads"
+          },
+          {
+            "left": "One size of circle hook",
+            "right": "Mustad 3/0-16/0 by target"
+          },
+          {
+            "left": "No spreader bar stock",
+            "right": "Daisy chains + spreaders in stock"
+          },
+          {
+            "left": "Spinning rods, maybe one braid",
+            "right": "60 lb-130 lb stand-up outfits"
+          },
+          {
+            "left": "Mono leaders - one weight",
+            "right": "Fluorocarbon 60-200 lb options"
+          },
+          {
+            "left": "No trolling weights",
+            "right": "Trolling sinkers, skirts, ballyhoo"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_8700.png",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-02-03.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "OFFSHORE GEAR.\nNOT AISLE 12.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.85,
+        "midOpacity": 0.55,
+        "rightOpacity": 0.85,
+        "vignetteBottom": 0.18
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "GENERIC SHOP",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "3 trolling lure options",
+            "right": "50+ offshore trolling heads"
+          },
+          {
+            "left": "One size of circle hook",
+            "right": "Mustad 3/0-16/0 by target"
+          },
+          {
+            "left": "No spreader bar stock",
+            "right": "Daisy chains + spreaders in stock"
+          },
+          {
+            "left": "Spinning rods, maybe one braid",
+            "right": "60 lb-130 lb stand-up outfits"
+          },
+          {
+            "left": "Mono leaders - one weight",
+            "right": "Fluorocarbon 60-200 lb options"
+          },
+          {
+            "left": "No trolling weights",
+            "right": "Trolling sinkers, skirts, ballyhoo"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9117.jpg",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-02-04.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "OFFSHORE GEAR.\nNOT AISLE 12.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.8,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.82,
+        "vignetteBottom": 0.24
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "GENERIC SHOP",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "3 trolling lure options",
+            "right": "50+ offshore trolling heads"
+          },
+          {
+            "left": "One size of circle hook",
+            "right": "Mustad 3/0-16/0 by target"
+          },
+          {
+            "left": "No spreader bar stock",
+            "right": "Daisy chains + spreaders in stock"
+          },
+          {
+            "left": "Spinning rods, maybe one braid",
+            "right": "60 lb-130 lb stand-up outfits"
+          },
+          {
+            "left": "Mono leaders - one weight",
+            "right": "Fluorocarbon 60-200 lb options"
+          },
+          {
+            "left": "No trolling weights",
+            "right": "Trolling sinkers, skirts, ballyhoo"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/Dolphin_Fish_Hooked.jpg",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-02-05.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "OFFSHORE GEAR.\nNOT AISLE 12.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.76,
+        "midOpacity": 0.52,
+        "rightOpacity": 0.78,
+        "vignetteBottom": 0.2
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "GENERIC SHOP",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "3 trolling lure options",
+            "right": "50+ offshore trolling heads"
+          },
+          {
+            "left": "One size of circle hook",
+            "right": "Mustad 3/0-16/0 by target"
+          },
+          {
+            "left": "No spreader bar stock",
+            "right": "Daisy chains + spreaders in stock"
+          },
+          {
+            "left": "Spinning rods, maybe one braid",
+            "right": "60 lb-130 lb stand-up outfits"
+          },
+          {
+            "left": "Mono leaders - one weight",
+            "right": "Fluorocarbon 60-200 lb options"
+          },
+          {
+            "left": "No trolling weights",
+            "right": "Trolling sinkers, skirts, ballyhoo"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9109.jpg",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-03-01.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "ON THE WATER\nWEDNESDAY.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.82,
+        "midOpacity": 0.5,
+        "rightOpacity": 0.82,
+        "vignetteBottom": 0.2
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "OTHER STORES",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "5-7 day handling time",
+            "right": "Ships same day if ordered by 2 PM"
+          },
+          {
+            "left": "\"Usually in stock\"",
+            "right": "Live inventory - no surprises"
+          },
+          {
+            "left": "No pre-trip urgency option",
+            "right": "Overnight available at checkout"
+          },
+          {
+            "left": "Generic packing, items loose",
+            "right": "Rigged orders packed to fish"
+          },
+          {
+            "left": "No order status updates",
+            "right": "Tracking same day, every order"
+          },
+          {
+            "left": "Out of stock on weekends",
+            "right": "Stocked hard before peak season"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9098.jpg",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-03-02.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "ON THE WATER\nWEDNESDAY.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.78,
+        "midOpacity": 0.44,
+        "rightOpacity": 0.8,
+        "vignetteBottom": 0.22
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "OTHER STORES",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "5-7 day handling time",
+            "right": "Ships same day if ordered by 2 PM"
+          },
+          {
+            "left": "\"Usually in stock\"",
+            "right": "Live inventory - no surprises"
+          },
+          {
+            "left": "No pre-trip urgency option",
+            "right": "Overnight available at checkout"
+          },
+          {
+            "left": "Generic packing, items loose",
+            "right": "Rigged orders packed to fish"
+          },
+          {
+            "left": "No order status updates",
+            "right": "Tracking same day, every order"
+          },
+          {
+            "left": "Out of stock on weekends",
+            "right": "Stocked hard before peak season"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_8585.png",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-03-03.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "ON THE WATER\nWEDNESDAY.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.85,
+        "midOpacity": 0.55,
+        "rightOpacity": 0.85,
+        "vignetteBottom": 0.18
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "OTHER STORES",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "5-7 day handling time",
+            "right": "Ships same day if ordered by 2 PM"
+          },
+          {
+            "left": "\"Usually in stock\"",
+            "right": "Live inventory - no surprises"
+          },
+          {
+            "left": "No pre-trip urgency option",
+            "right": "Overnight available at checkout"
+          },
+          {
+            "left": "Generic packing, items loose",
+            "right": "Rigged orders packed to fish"
+          },
+          {
+            "left": "No order status updates",
+            "right": "Tracking same day, every order"
+          },
+          {
+            "left": "Out of stock on weekends",
+            "right": "Stocked hard before peak season"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_8700.png",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-03-04.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "ON THE WATER\nWEDNESDAY.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.8,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.82,
+        "vignetteBottom": 0.24
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "OTHER STORES",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "5-7 day handling time",
+            "right": "Ships same day if ordered by 2 PM"
+          },
+          {
+            "left": "\"Usually in stock\"",
+            "right": "Live inventory - no surprises"
+          },
+          {
+            "left": "No pre-trip urgency option",
+            "right": "Overnight available at checkout"
+          },
+          {
+            "left": "Generic packing, items loose",
+            "right": "Rigged orders packed to fish"
+          },
+          {
+            "left": "No order status updates",
+            "right": "Tracking same day, every order"
+          },
+          {
+            "left": "Out of stock on weekends",
+            "right": "Stocked hard before peak season"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9117.jpg",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-03-05.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "ON THE WATER\nWEDNESDAY.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.76,
+        "midOpacity": 0.52,
+        "rightOpacity": 0.78,
+        "vignetteBottom": 0.2
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "OTHER STORES",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "5-7 day handling time",
+            "right": "Ships same day if ordered by 2 PM"
+          },
+          {
+            "left": "\"Usually in stock\"",
+            "right": "Live inventory - no surprises"
+          },
+          {
+            "left": "No pre-trip urgency option",
+            "right": "Overnight available at checkout"
+          },
+          {
+            "left": "Generic packing, items loose",
+            "right": "Rigged orders packed to fish"
+          },
+          {
+            "left": "No order status updates",
+            "right": "Tracking same day, every order"
+          },
+          {
+            "left": "Out of stock on weekends",
+            "right": "Stocked hard before peak season"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/Dolphin_Fish_Hooked.jpg",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-04-01.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "RIG IT RIGHT.\nOR DON'T LEAVE.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.82,
+        "midOpacity": 0.5,
+        "rightOpacity": 0.82,
+        "vignetteBottom": 0.2
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "OTHER SHOPS",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "No bridle info on listings",
+            "right": "Ballyhoo bridle needle + kit"
+          },
+          {
+            "left": "Sells leaders, not spreads",
+            "right": "Full dredge + teaser setups"
+          },
+          {
+            "left": "Can't explain leader length",
+            "right": "12 ft mono for wahoo, here's why"
+          },
+          {
+            "left": "No planer rigging guidance",
+            "right": "Planer bridles made by hand"
+          },
+          {
+            "left": "Hook size? \"Depends\"",
+            "right": "7/0 for mahi, 10/0 for blue marlin"
+          },
+          {
+            "left": "Generic swivel + snap advice",
+            "right": "Ball-bearing swivels by trolling speed"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9109.jpg",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-04-02.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "RIG IT RIGHT.\nOR DON'T LEAVE.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.78,
+        "midOpacity": 0.44,
+        "rightOpacity": 0.8,
+        "vignetteBottom": 0.22
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "OTHER SHOPS",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "No bridle info on listings",
+            "right": "Ballyhoo bridle needle + kit"
+          },
+          {
+            "left": "Sells leaders, not spreads",
+            "right": "Full dredge + teaser setups"
+          },
+          {
+            "left": "Can't explain leader length",
+            "right": "12 ft mono for wahoo, here's why"
+          },
+          {
+            "left": "No planer rigging guidance",
+            "right": "Planer bridles made by hand"
+          },
+          {
+            "left": "Hook size? \"Depends\"",
+            "right": "7/0 for mahi, 10/0 for blue marlin"
+          },
+          {
+            "left": "Generic swivel + snap advice",
+            "right": "Ball-bearing swivels by trolling speed"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9098.jpg",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-04-03.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "RIG IT RIGHT.\nOR DON'T LEAVE.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.85,
+        "midOpacity": 0.55,
+        "rightOpacity": 0.85,
+        "vignetteBottom": 0.18
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "OTHER SHOPS",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "No bridle info on listings",
+            "right": "Ballyhoo bridle needle + kit"
+          },
+          {
+            "left": "Sells leaders, not spreads",
+            "right": "Full dredge + teaser setups"
+          },
+          {
+            "left": "Can't explain leader length",
+            "right": "12 ft mono for wahoo, here's why"
+          },
+          {
+            "left": "No planer rigging guidance",
+            "right": "Planer bridles made by hand"
+          },
+          {
+            "left": "Hook size? \"Depends\"",
+            "right": "7/0 for mahi, 10/0 for blue marlin"
+          },
+          {
+            "left": "Generic swivel + snap advice",
+            "right": "Ball-bearing swivels by trolling speed"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_8585.png",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-04-04.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "RIG IT RIGHT.\nOR DON'T LEAVE.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.8,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.82,
+        "vignetteBottom": 0.24
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "OTHER SHOPS",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "No bridle info on listings",
+            "right": "Ballyhoo bridle needle + kit"
+          },
+          {
+            "left": "Sells leaders, not spreads",
+            "right": "Full dredge + teaser setups"
+          },
+          {
+            "left": "Can't explain leader length",
+            "right": "12 ft mono for wahoo, here's why"
+          },
+          {
+            "left": "No planer rigging guidance",
+            "right": "Planer bridles made by hand"
+          },
+          {
+            "left": "Hook size? \"Depends\"",
+            "right": "7/0 for mahi, 10/0 for blue marlin"
+          },
+          {
+            "left": "Generic swivel + snap advice",
+            "right": "Ball-bearing swivels by trolling speed"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_8700.png",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-04-05.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "RIG IT RIGHT.\nOR DON'T LEAVE.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.76,
+        "midOpacity": 0.52,
+        "rightOpacity": 0.78,
+        "vignetteBottom": 0.2
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "OTHER SHOPS",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "No bridle info on listings",
+            "right": "Ballyhoo bridle needle + kit"
+          },
+          {
+            "left": "Sells leaders, not spreads",
+            "right": "Full dredge + teaser setups"
+          },
+          {
+            "left": "Can't explain leader length",
+            "right": "12 ft mono for wahoo, here's why"
+          },
+          {
+            "left": "No planer rigging guidance",
+            "right": "Planer bridles made by hand"
+          },
+          {
+            "left": "Hook size? \"Depends\"",
+            "right": "7/0 for mahi, 10/0 for blue marlin"
+          },
+          {
+            "left": "Generic swivel + snap advice",
+            "right": "Ball-bearing swivels by trolling speed"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9117.jpg",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-05-01.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "ONE STOP.\nFULL SPREAD.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.82,
+        "midOpacity": 0.5,
+        "rightOpacity": 0.82,
+        "vignetteBottom": 0.2
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "PIECE IT OUT",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "Buy hooks, leader, lures separate",
+            "right": "Complete trolling kits, ready to fish"
+          },
+          {
+            "left": "Wrong components, wasted trips",
+            "right": "Matched tackle by species + depth"
+          },
+          {
+            "left": "4 orders, 4 shipping charges",
+            "right": "One order, one box, one ship date"
+          },
+          {
+            "left": "No kit guidance - figure it out",
+            "right": "\"What are you targeting?\" first"
+          },
+          {
+            "left": "Missing one piece, whole rig fails",
+            "right": "Checklist approach - nothing missing"
+          },
+          {
+            "left": "Overspend on stuff you won't use",
+            "right": "Species-focused kits cut wasted spend"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/Dolphin_Fish_Hooked.jpg",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-05-02.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "ONE STOP.\nFULL SPREAD.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.78,
+        "midOpacity": 0.44,
+        "rightOpacity": 0.8,
+        "vignetteBottom": 0.22
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "PIECE IT OUT",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "Buy hooks, leader, lures separate",
+            "right": "Complete trolling kits, ready to fish"
+          },
+          {
+            "left": "Wrong components, wasted trips",
+            "right": "Matched tackle by species + depth"
+          },
+          {
+            "left": "4 orders, 4 shipping charges",
+            "right": "One order, one box, one ship date"
+          },
+          {
+            "left": "No kit guidance - figure it out",
+            "right": "\"What are you targeting?\" first"
+          },
+          {
+            "left": "Missing one piece, whole rig fails",
+            "right": "Checklist approach - nothing missing"
+          },
+          {
+            "left": "Overspend on stuff you won't use",
+            "right": "Species-focused kits cut wasted spend"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9109.jpg",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-05-03.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "ONE STOP.\nFULL SPREAD.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.85,
+        "midOpacity": 0.55,
+        "rightOpacity": 0.85,
+        "vignetteBottom": 0.18
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "PIECE IT OUT",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "Buy hooks, leader, lures separate",
+            "right": "Complete trolling kits, ready to fish"
+          },
+          {
+            "left": "Wrong components, wasted trips",
+            "right": "Matched tackle by species + depth"
+          },
+          {
+            "left": "4 orders, 4 shipping charges",
+            "right": "One order, one box, one ship date"
+          },
+          {
+            "left": "No kit guidance - figure it out",
+            "right": "\"What are you targeting?\" first"
+          },
+          {
+            "left": "Missing one piece, whole rig fails",
+            "right": "Checklist approach - nothing missing"
+          },
+          {
+            "left": "Overspend on stuff you won't use",
+            "right": "Species-focused kits cut wasted spend"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9098.jpg",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-05-04.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "ONE STOP.\nFULL SPREAD.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.8,
+        "midOpacity": 0.48,
+        "rightOpacity": 0.82,
+        "vignetteBottom": 0.24
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "PIECE IT OUT",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "Buy hooks, leader, lures separate",
+            "right": "Complete trolling kits, ready to fish"
+          },
+          {
+            "left": "Wrong components, wasted trips",
+            "right": "Matched tackle by species + depth"
+          },
+          {
+            "left": "4 orders, 4 shipping charges",
+            "right": "One order, one box, one ship date"
+          },
+          {
+            "left": "No kit guidance - figure it out",
+            "right": "\"What are you targeting?\" first"
+          },
+          {
+            "left": "Missing one piece, whole rig fails",
+            "right": "Checklist approach - nothing missing"
+          },
+          {
+            "left": "Overspend on stuff you won't use",
+            "right": "Species-focused kits cut wasted spend"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_8585.png",
+      "backgroundPosition": "attention",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-batch-v1/comparisonpanel-05-05.jpg",
+      "logoPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "enabled": true,
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15,
+        "x": 32,
+        "y": 32,
+        "opacity": 0.95
+      },
+      "text": {
+        "headline": "ONE STOP.\nFULL SPREAD.",
+        "subhead": "",
+        "cta": "SHOP OFFSHORE TACKLE",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "5,18,30",
+        "midColor": "5,18,30",
+        "rightColor": "5,18,30",
+        "leftOpacity": 0.76,
+        "midOpacity": 0.52,
+        "rightOpacity": 0.78,
+        "vignetteBottom": 0.2
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+        "headlineSize": 42,
+        "subheadSize": 1,
+        "headlineWeight": 900,
+        "subheadWeight": 400,
+        "ctaSize": 22,
+        "ctaWeight": 700,
+        "footerSize": 1,
+        "footerTracking": 4
+      },
+      "layout": {
+        "personality": "centered-hero",
+        "align": "center",
+        "leftX": 540,
+        "headlineY": 158,
+        "subheadY": 310,
+        "maxHeadlineChars": 22,
+        "maxSubheadChars": 1,
+        "ctaWidth": 380,
+        "ctaHeight": 56,
+        "ctaRectX": 350,
+        "ctaRectY": 892,
+        "ctaX": 540,
+        "ctaY": 925,
+        "footerY": 1060
+      },
+      "comparisonTable": {
+        "startX": 72,
+        "startY": 260,
+        "colWidth": 440,
+        "rowHeight": 66,
+        "headerSize": 23,
+        "bodySize": 22,
+        "highlightCol": "right",
+        "leftHeader": "PIECE IT OUT",
+        "rightHeader": "TACKLE ROOM",
+        "rows": [
+          {
+            "left": "Buy hooks, leader, lures separate",
+            "right": "Complete trolling kits, ready to fish"
+          },
+          {
+            "left": "Wrong components, wasted trips",
+            "right": "Matched tackle by species + depth"
+          },
+          {
+            "left": "4 orders, 4 shipping charges",
+            "right": "One order, one box, one ship date"
+          },
+          {
+            "left": "No kit guidance - figure it out",
+            "right": "\"What are you targeting?\" first"
+          },
+          {
+            "left": "Missing one piece, whole rig fails",
+            "right": "Checklist approach - nothing missing"
+          },
+          {
+            "left": "Overspend on stuff you won't use",
+            "right": "Species-focused kits cut wasted spend"
+          }
+        ],
+        "leftTextColor": "rgba(255,255,255,0.82)"
+      }
+    }
+  ]
+}
