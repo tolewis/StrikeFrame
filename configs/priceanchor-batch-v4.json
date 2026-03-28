@@ -1,0 +1,2710 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9109.jpg",
+    "backgroundPosition": "center",
+    "output": null,
+    "logoMode": "white-card-landscape",
+    "logo": {
+      "placement": "corner-anchor",
+      "corner": "top-left",
+      "width": 260,
+      "height": 60,
+      "clearSpace": 15
+    },
+    "text": {
+      "headline": "",
+      "subhead": "",
+      "cta": "SHOP THE BUNDLE",
+      "footer": ""
+    },
+    "overlay": {
+      "leftColor": "4,14,28",
+      "midColor": "4,14,28",
+      "rightColor": "4,14,28",
+      "leftOpacity": 0.0,
+      "midOpacity": 0.2,
+      "rightOpacity": 0.0,
+      "vignetteBottom": 0.88
+    },
+    "theme": {
+      "headlineColor": "rgba(0,0,0,0)",
+      "subheadColor": "rgba(0,0,0,0)",
+      "footerColor": "rgba(0,0,0,0)",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(232,93,58,0.82)",
+      "ctaStroke": "rgba(255,255,255,0.24)",
+      "textPanelFill": "rgba(0,0,0,0)",
+      "textPanelStroke": "rgba(0,0,0,0)"
+    },
+    "typography": {
+      "headlineFontFamily": "Montserrat, Arial, sans-serif",
+      "headlineSize": 14,
+      "headlineWeight": 800,
+      "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+      "ctaSize": 32,
+      "ctaWeight": 900
+    },
+    "layout": {
+      "personality": "editorial-left",
+      "leftX": 60,
+      "headlineY": -200,
+      "subheadY": -200,
+      "ctaX": 320,
+      "ctaRectX": 60,
+      "ctaRectY": 860,
+      "ctaWidth": 520,
+      "ctaHeight": 72,
+      "ctaRadius": 12,
+      "footerY": -200,
+      "maxHeadlineChars": 16,
+      "panelX": 0,
+      "panelY": 0,
+      "panelWidth": 0,
+      "panelHeight": 0,
+      "ctaY": 896
+    },
+    "textLayers": [
+      {
+        "content": "COMPLETE DREDGE SYSTEM",
+        "x": 60,
+        "y": 260,
+        "fontSize": 52,
+        "fontFamily": "Montserrat, Arial, sans-serif",
+        "fontWeight": 800,
+        "color": "rgba(255,255,255,0.80)",
+        "letterSpacing": 2
+      },
+      {
+        "content": "$469.99",
+        "x": 60,
+        "y": 610,
+        "fontSize": 148,
+        "fontFamily": "Montserrat, Arial, sans-serif",
+        "fontWeight": 900,
+        "color": "#FFFFFF",
+        "shadow": {
+          "dx": 0,
+          "dy": 4,
+          "color": "rgba(0,0,0,0.55)"
+        }
+      },
+      {
+        "content": "130-squid spread. 400lb mono. Built for billfish.",
+        "x": 60,
+        "y": 720,
+        "fontSize": 30,
+        "fontFamily": "Montserrat, Arial, sans-serif",
+        "fontWeight": 600,
+        "color": "rgba(255,255,255,0.90)"
+      }
+    ],
+    "badges": [],
+    "review": {
+      "enforcePanelFit": false
+    }
+  },
+  "renders": [
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9109.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/dredge-01.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Shop Dredge Systems",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.16,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.72
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Complete Dredge Rig\nReady to Splash",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$289",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "130-squid spread. 400lb mono. Built for billfish.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9098.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/dredge-02.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Build Your Spread",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.8
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Offshore Dredge Kit\nNothing to Add",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$349",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "8-arm spreader. 80-squid teaser. Heavy-duty swivels.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9109.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/dredge-03.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Get the Full Rig",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.14,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.88
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Spread More Baits.\nCatch More Fish.",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$449",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "6-arm rig, 60-squid spread. Ready to deploy.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9098.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/dredge-04.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Shop Dredge Systems",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.18,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.92
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Tournament-Ready\nDredge System",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$549",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "Double-bar dredge, 100 squids. Tournament-proven.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9109.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/dredge-05.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Build Your Spread",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.12,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.96
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Full Dredge Teaser\nShip Same Day",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$699",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "400lb mono. Stainless spreader bar. Blue-water ready.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9098.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/dredge-06.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Get the Full Rig",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.22,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.84
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Complete Dredge Rig\nReady to Splash",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$289",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "Full offshore teaser. Squid & bird combo included.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9109.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/dredge-07.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Shop Dredge Systems",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.16,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.76
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Offshore Dredge Kit\nNothing to Add",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$349",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "10-arm dredge, 120 squids. Rigged and ready.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_8585.png",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/belt-08.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Shop Fighting Belts",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.16,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.72
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Stand-Up Belt Kit\nGimbal Included",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$89",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "Padded gimbal bucket. 60\u00b0-gimbal insert. Full harness ready.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_8700.png",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/belt-09.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Get the Full Kit",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.8
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Fight Bigger Fish.\nWork Smarter.",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$119",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "Kidney belt, gimbal, and shoulder harness kit.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9117.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/belt-10.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Gear Up Now",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.14,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.88
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Complete Belt Kit\nShip Tomorrow",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$149",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "Stand-up pad, adjustable harness, heavy-duty buckle.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/Dolphin_Fish_Hooked.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/belt-11.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Shop Fighting Belts",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.18,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.92
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Harness the Pull.\nWin the Fight.",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$189",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "Deluxe fighting belt with integrated rod holder.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_8585.png",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/belt-12.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Get the Full Kit",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.12,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.96
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Gimbal Belt Combo\nNothing Missing",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$249",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "Full stand-up kit. Fits 30-50W reels. Ships complete.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_8700.png",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/belt-13.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Gear Up Now",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.22,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.84
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Stand-Up Belt Kit\nGimbal Included",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$89",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "Neoprene belt, stainless gimbal. Big-game proven.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/Dolphin_Fish_Hooked.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/lure-14.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Shop Wahoo Kits",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.16,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.72
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Wahoo Trolling Kit\n5 Proven Colors",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$49",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "High-speed heads, 12\"-14\". Wire-rigged and ready.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9109.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/lure-15.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Get the Lure Pack",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.8
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Rigged. Tested.\nWahoo-Ready.",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$69",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "6 colors: pink, blue, white, purple, green, black.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/Dolphin_Fish_Hooked.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/lure-16.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Troll Faster",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.14,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.88
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "High-Speed Wahoo\nLure Kit",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$89",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "Pre-rigged #9 Mustad hooks, 200lb Malin wire.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9109.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/lure-17.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Shop Wahoo Kits",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.18,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.92
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Hit Wahoo Speed.\nFull Kit. Done.",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$119",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "18\"-24\" trolling lures. Wahoo-proven patterns.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/Dolphin_Fish_Hooked.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/lure-18.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Get the Lure Pack",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.12,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.96
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Wahoo Kit - 6 Lures\nReady to Troll",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$149",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "6 wire-rigged runners. 12-24 kts tested.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9109.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/lure-19.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Troll Faster",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.22,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.84
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Wahoo Trolling Kit\n5 Proven Colors",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$49",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "400lb wire leaders. Speed-tested at 15+ kts.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9109.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/planer-20.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Shop Bridle Kits",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.16,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.72
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Complete Bridle Kit\nPlaner Ready",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$39",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "Hand-tied bridles. #2 and #4 planer included.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9098.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/planer-21.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Get the Full Kit",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.2,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.8
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Rig It Right.\nFull Kit. Go.",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$49",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "Stainless bridle clips. Fits #2, #3, #4 planers.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9117.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/planer-22.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Rig Up Now",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.14,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.88
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Planer Bridle Kit\nHand-Built. Tight.",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$59",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "Complete bridle set. 30-50lb mono. Kink-resistant.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_8585.png",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/planer-23.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Shop Bridle Kits",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.18,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.92
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Bridles. Planers.\nNothing Missing.",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$69",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "Pre-tied bridles. Planers, clips, and leader included.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9109.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/planer-24.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Get the Full Kit",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.12,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.96
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Depth Matters.\nGet the Full Kit.",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$89",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "Mono bridle loops, swivel snap, 4-size planer kit.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9098.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-batch-v1/planer-25.jpg",
+      "logoMode": "white-card-landscape",
+      "logo": {
+        "placement": "corner-anchor",
+        "corner": "top-left",
+        "width": 260,
+        "height": 60,
+        "clearSpace": 15
+      },
+      "text": {
+        "headline": "",
+        "subhead": "",
+        "cta": "Rig Up Now",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.22,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.84
+      },
+      "theme": {
+        "headlineColor": "rgba(0,0,0,0)",
+        "subheadColor": "rgba(0,0,0,0)",
+        "footerColor": "rgba(0,0,0,0)",
+        "ctaTextColor": "#FFFFFF",
+        "ctaFill": "rgba(232,93,58,0.82)",
+        "ctaStroke": "rgba(255,255,255,0.24)",
+        "textPanelFill": "rgba(0,0,0,0)",
+        "textPanelStroke": "rgba(0,0,0,0)"
+      },
+      "typography": {
+        "headlineFontFamily": "Montserrat, Arial, sans-serif",
+        "headlineSize": 14,
+        "headlineWeight": 800,
+        "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+        "ctaSize": 32,
+        "ctaWeight": 900
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": -200,
+        "subheadY": -200,
+        "ctaX": 320,
+        "ctaRectX": 60,
+        "ctaRectY": 860,
+        "ctaWidth": 520,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": -200,
+        "maxHeadlineChars": 16,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0,
+        "ctaY": 896
+      },
+      "review": {
+        "enforcePanelFit": false
+      },
+      "textLayers": [
+        {
+          "content": "Complete Bridle Kit\nPlaner Ready",
+          "x": 60,
+          "y": 260,
+          "fontSize": 52,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 800,
+          "color": "rgba(255,255,255,0.80)",
+          "letterSpacing": 2
+        },
+        {
+          "content": "$39",
+          "x": 60,
+          "y": 610,
+          "fontSize": 148,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 900,
+          "color": "#FFFFFF",
+          "shadow": {
+            "dx": 0,
+            "dy": 4,
+            "color": "rgba(0,0,0,0.55)"
+          }
+        },
+        {
+          "content": "Ready-tied bridles. 20-50lb leader. Clip-and-go.",
+          "x": 60,
+          "y": 720,
+          "fontSize": 30,
+          "fontFamily": "Montserrat, Arial, sans-serif",
+          "fontWeight": 600,
+          "color": "rgba(255,255,255,0.90)"
+        }
+      ],
+      "badges": []
+    }
+  ]
+}
