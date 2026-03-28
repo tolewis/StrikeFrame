@@ -1,0 +1,113 @@
+{
+  "preset": "social-square",
+  "template": "banner",
+  "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9109.jpg",
+  "backgroundPosition": "center",
+  "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/priceanchor-v1/priceanchor-canonical-v4.jpg",
+  "logoMode": "white-card-landscape",
+  "logo": { "placement": "corner-anchor", "corner": "top-left", "width": 260, "height": 60, "clearSpace": 15 },
+  "text": {
+    "headline": "",
+    "subhead": "",
+    "cta": "SHOP THE BUNDLE",
+    "footer": ""
+  },
+  "overlay": {
+    "leftColor": "4,14,28",
+    "midColor": "4,14,28",
+    "rightColor": "4,14,28",
+    "leftOpacity": 0.0,
+    "midOpacity": 0.20,
+    "rightOpacity": 0.0,
+    "vignetteBottom": 0.88
+  },
+  "theme": {
+    "headlineColor": "rgba(0,0,0,0)",
+    "subheadColor": "rgba(0,0,0,0)",
+    "footerColor": "rgba(0,0,0,0)",
+    "ctaTextColor": "#FFFFFF",
+    "ctaFill": "rgba(232,93,58,0.82)",
+    "ctaStroke": "rgba(255,255,255,0.24)",
+    "textPanelFill": "rgba(0,0,0,0)",
+    "textPanelStroke": "rgba(0,0,0,0)"
+  },
+  "typography": {
+    "headlineFontFamily": "Montserrat, Arial, sans-serif",
+    "headlineSize": 14,
+    "headlineWeight": 800,
+    "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+    "ctaSize": 26,
+    "ctaWeight": 700
+  },
+  "layout": {
+    "personality": "editorial-left",
+    "leftX": 60,
+    "headlineY": -200,
+    "subheadY": -200,
+    "ctaX": 282,
+    "ctaRectX": 60,
+    "ctaRectY": 965,
+    "ctaWidth": 340,
+    "ctaHeight": 56,
+    "ctaRadius": 12,
+    "footerY": -200,
+    "maxHeadlineChars": 16,
+    "panelX": 0,
+    "panelY": 0,
+    "panelWidth": 0,
+    "panelHeight": 0
+  },
+  "textLayers": [
+    {
+      "content": "COMPLETE DREDGE SYSTEM",
+      "x": 60,
+      "y": 620,
+      "fontSize": 36,
+      "fontFamily": "Montserrat, Arial, sans-serif",
+      "fontWeight": 700,
+      "color": "rgba(255,255,255,0.80)",
+      "letterSpacing": 2
+    },
+    {
+      "content": "$469.99",
+      "x": 60,
+      "y": 745,
+      "fontSize": 148,
+      "fontFamily": "Montserrat, Arial, sans-serif",
+      "fontWeight": 900,
+      "color": "#FFFFFF",
+      "shadow": {
+        "dx": 0,
+        "dy": 4,
+        "color": "rgba(0,0,0,0.55)"
+      }
+    },
+    {
+      "content": "130-squid spread. 400lb mono. Built for billfish.",
+      "x": 60,
+      "y": 840,
+      "fontSize": 30,
+      "fontFamily": "Montserrat, Arial, sans-serif",
+      "fontWeight": 600,
+      "color": "rgba(255,255,255,0.90)"
+    }
+  ],
+  "badges": [
+    {
+      "text": "SAVE $80",
+      "x": 60,
+      "y": 540,
+      "fill": "rgba(232,93,58,0.96)",
+      "textColor": "#FFFFFF",
+      "fontSize": 22,
+      "width": 150,
+      "height": 46,
+      "radius": 8,
+      "fontFamily": "Montserrat, Arial, sans-serif",
+      "fontWeight": 800
+    }
+  ],
+  "review": {
+    "enforcePanelFit": false
+  }
+}
