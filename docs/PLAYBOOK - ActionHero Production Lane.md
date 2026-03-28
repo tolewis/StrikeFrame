@@ -111,6 +111,32 @@ That is enough to call the lane real.
 
 ---
 
+## Multi-product batches
+ActionHero now supports multi-product batch generation across categories.
+
+### Current version: v5
+- Generator: `scripts/gen_actionhero_multiproduct_batch_v5.py`
+- Config: `configs/actionhero-multiproduct-batch-v5.json`
+- Image pool: `/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/content-match-map-v3.json`
+- Copy: `/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/category-copy-sets-v2.json`
+
+### Categories supported
+- Belts (7 renders) - fighting/lifestyle backgrounds
+- Dredges (6 renders) - trolling/teaser/spread backgrounds
+- Lures (6 renders) - lure products and offshore action
+- Planers (6 renders) - bridle hardware and offshore context
+
+### Critical rules learned (2026-03-27)
+1. **Only use verified clean raw photography.** No StrikeFrame-rendered ads as backgrounds. Many files in tier1-ready folders are actually finished ads with baked-in text.
+2. **Strategic content matching is required.** Belt headlines over belt/fighting images, not random ocean shots.
+3. **Not all product photos work as hero backgrounds.** White-bg hardware closeups (bridle clips, compact items) don't carry ActionHero energy. Colorful lures with visual presence can work.
+4. **Use GPT vision subagent to QC every batch before sending to Tim.**
+
+### Known issues to fix in next iteration
+- Headline-to-CTA spacing can get too tight on some tiles. Need `minHeadlineCtaGap` constraint.
+- Some headline/photo pairings are still loose. Need tighter semantic matching.
+- Small hardware product photos on white backgrounds need to be filtered from the hero pool.
+
 ## Next expansions
 After ActionHero is stable, likely next lanes are:
 - `priceAnchor`

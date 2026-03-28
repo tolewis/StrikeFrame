@@ -100,6 +100,14 @@
       "reviewFit": "contain",
       "productFit": "cover"
     },
+    "logoMode": "white-card-landscape",
+    "logo": {
+      "placement": "corner-anchor",
+      "corner": "top-left",
+      "width": 160,
+      "height": 40,
+      "clearSpace": 10
+    },
     "review": {
       "enforcePanelFit": false
     }

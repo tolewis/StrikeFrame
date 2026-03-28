@@ -1,0 +1,1387 @@
+{
+  "defaults": {
+    "preset": "social-square",
+    "template": "banner",
+    "logoMode": "white-card-landscape",
+    "logo": {
+      "placement": "corner-anchor",
+      "corner": "top-left",
+      "width": 260,
+      "height": 60,
+      "clearSpace": 15
+    },
+    "theme": {
+      "headlineColor": "#FFFFFF",
+      "subheadColor": "rgba(0,0,0,0)",
+      "footerColor": "rgba(0,0,0,0)",
+      "ctaTextColor": "#FFFFFF",
+      "ctaFill": "rgba(232,93,58,0.98)",
+      "ctaStroke": "rgba(255,255,255,0.24)",
+      "textPanelFill": "rgba(0,0,0,0)",
+      "textPanelStroke": "rgba(0,0,0,0)"
+    },
+    "typography": {
+      "headlineFontFamily": "Montserrat, Arial, sans-serif",
+      "headlineSize": 78,
+      "headlineWeight": 800,
+      "bodyFontFamily": "Source Sans 3, Arial, sans-serif",
+      "ctaSize": 30,
+      "ctaWeight": 800
+    },
+    "review": {
+      "enforcePanelFit": false
+    }
+  },
+  "renders": [
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/belt-04-3-seconds.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-belts-01.jpg",
+      "text": {
+        "headline": "FIGHT ALL DAY\nNO BACK PAIN",
+        "subhead": "",
+        "cta": "SHOP FIGHTING BELTS",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.65
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 855,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 84
+      },
+      "badges": [
+        {
+          "text": "FIGHTING BELTS",
+          "x": 800,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier1-ready/seamount-fish-fighting-belt-b.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-belts-02.jpg",
+      "text": {
+        "headline": "BLUE MARLIN\nDON'T WAIT",
+        "subhead": "",
+        "cta": "RIG UP NOW",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.74
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 827,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 82
+      },
+      "badges": [
+        {
+          "text": "OFFSHORE READY",
+          "x": 800,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/belt-04-3-seconds.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-belts-03.jpg",
+      "text": {
+        "headline": "HOLD THE ROD\nNOT YOUR BACK",
+        "subhead": "",
+        "cta": "GET YOURS",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.73
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 848,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 74
+      },
+      "badges": [
+        {
+          "text": "BLUE WATER GEAR",
+          "x": 780,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier1-ready/fighting-belts-landscape.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-belts-04.jpg",
+      "text": {
+        "headline": "BIG TUNA\nNEED REAL GEAR",
+        "subhead": "",
+        "cta": "SHOP FIGHTING BELTS",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.74
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 806,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 78
+      },
+      "badges": [
+        {
+          "text": "FIGHT HARD",
+          "x": 810,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier1-ready/belt-06-entry-point.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-belts-05.jpg",
+      "text": {
+        "headline": "WAHOO RUN\nBE READY",
+        "subhead": "",
+        "cta": "RIG UP NOW",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.85
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 816,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 80
+      },
+      "badges": [
+        {
+          "text": "FIGHTING BELTS",
+          "x": 820,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier1-ready/seamount-fish-fighting-belt-c.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-belts-06.jpg",
+      "text": {
+        "headline": "FIGHT ALL DAY\nNO BACK PAIN",
+        "subhead": "",
+        "cta": "GET YOURS",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.89
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 807,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 80
+      },
+      "badges": [
+        {
+          "text": "OFFSHORE READY",
+          "x": 820,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/belts/tier1-ready/belts-proof-11-value.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-belts-07.jpg",
+      "text": {
+        "headline": "BLUE MARLIN\nDON'T WAIT",
+        "subhead": "",
+        "cta": "SHOP FIGHTING BELTS",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.72
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 835,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 72
+      },
+      "badges": [
+        {
+          "text": "BLUE WATER GEAR",
+          "x": 810,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/dredges/tier1-ready/flying-fish-daisy-chain-a.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-dredges-01.jpg",
+      "text": {
+        "headline": "RAISE FISH\nFAST",
+        "subhead": "",
+        "cta": "SHOP DREDGES",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.85
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 810,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 82
+      },
+      "badges": [
+        {
+          "text": "DREDGE SEASON",
+          "x": 820,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/dredges/tier1-ready/dredge-03-every-charter.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-dredges-02.jpg",
+      "text": {
+        "headline": "TROLL SMARTER\nNOT HARDER",
+        "subhead": "",
+        "cta": "BUILD YOUR SPREAD",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.75
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 804,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 80
+      },
+      "badges": [
+        {
+          "text": "TROLL SMARTER",
+          "x": 820,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/dredges/tier2-polish/compact-squid-dredge-a.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-dredges-03.jpg",
+      "text": {
+        "headline": "TOURNAMENT\nREADY SPREAD",
+        "subhead": "",
+        "cta": "SEE TEASERS",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.89
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 816,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 80
+      },
+      "badges": [
+        {
+          "text": "OFFSHORE SPREAD",
+          "x": 780,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/dredges/tier2-polish/strip-dredge-a.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-dredges-04.jpg",
+      "text": {
+        "headline": "PULL THEM UP\nCLOSE",
+        "subhead": "",
+        "cta": "SHOP DREDGES",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.68
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 846,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 82
+      },
+      "badges": [
+        {
+          "text": "TOURNAMENT RIG",
+          "x": 810,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/dredges/tier2-polish/compact-phat-squid-dredge-a.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-dredges-05.jpg",
+      "text": {
+        "headline": "DREDGE DEEP\nWIN MORE",
+        "subhead": "",
+        "cta": "BUILD YOUR SPREAD",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.74
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 841,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 84
+      },
+      "badges": [
+        {
+          "text": "DREDGE SEASON",
+          "x": 810,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/dredges/tier2-polish/v4-final-v2-1080x1080.png",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-dredges-06.jpg",
+      "text": {
+        "headline": "RAISE FISH\nFAST",
+        "subhead": "",
+        "cta": "SEE TEASERS",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.76
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 810,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 78
+      },
+      "badges": [
+        {
+          "text": "TROLL SMARTER",
+          "x": 810,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/lures/tier1-ready/lure-06-wrong-everything.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-lures-01.jpg",
+      "text": {
+        "headline": "WAHOO\nKILLER LURES",
+        "subhead": "",
+        "cta": "SHOP LURES",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.71
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 854,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 84
+      },
+      "badges": [
+        {
+          "text": "WAHOO SEASON",
+          "x": 820,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/lures/tier2-polish/IMG_20220918_171630.JPG",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-lures-02.jpg",
+      "text": {
+        "headline": "MAHI ON\nSTAINLESS HEADS",
+        "subhead": "",
+        "cta": "FIND YOUR SETUP",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.7
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 830,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 78
+      },
+      "badges": [
+        {
+          "text": "OFFSHORE LURES",
+          "x": 820,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/lures/tier1-ready/bluewater-candy-jagahoo-trolling-kit-purple.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-lures-03.jpg",
+      "text": {
+        "headline": "TUNA LOVE\nTHESE SKIRTS",
+        "subhead": "",
+        "cta": "TROLL READY",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.74
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 810,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 72
+      },
+      "badges": [
+        {
+          "text": "TROLL READY",
+          "x": 820,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/lures/tier2-polish/IMG_2051.JPG",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-lures-04.jpg",
+      "text": {
+        "headline": "TROLL FASTER\nCATCH MORE",
+        "subhead": "",
+        "cta": "SHOP LURES",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.85
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 859,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 76
+      },
+      "badges": [
+        {
+          "text": "MAHI COLORS",
+          "x": 820,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/lures/tier2-polish/Clarkspoon Email Banner.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-lures-05.jpg",
+      "text": {
+        "headline": "OFFSHORE LURES\nTHAT WORK",
+        "subhead": "",
+        "cta": "FIND YOUR SETUP",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.82
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 827,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 76
+      },
+      "badges": [
+        {
+          "text": "WAHOO SEASON",
+          "x": 820,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/lures/tier1-ready/squidnation-mini-chugger-pink.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-lures-06.jpg",
+      "text": {
+        "headline": "WAHOO\nKILLER LURES",
+        "subhead": "",
+        "cta": "TROLL READY",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.72
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 812,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 74
+      },
+      "badges": [
+        {
+          "text": "OFFSHORE LURES",
+          "x": 780,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/planers/tier1-ready/planer-pdp-12-beginner.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-planers-01.jpg",
+      "text": {
+        "headline": "SPREAD WIDE\nCATCH MORE",
+        "subhead": "",
+        "cta": "SHOP PLANERS",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.88
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 820,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 80
+      },
+      "badges": [
+        {
+          "text": "PLANER KITS",
+          "x": 800,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/planers/tier1-ready/planer-bridle-b.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-planers-02.jpg",
+      "text": {
+        "headline": "BRIDLE UP\nDO IT RIGHT",
+        "subhead": "",
+        "cta": "GET BRIDLE KITS",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.73
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 845,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 82
+      },
+      "badges": [
+        {
+          "text": "BRIDLE UP",
+          "x": 810,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/planers/tier1-ready/planer-benefit-stack-kit.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-planers-03.jpg",
+      "text": {
+        "headline": "OUTRIGGER\nRIG KITS",
+        "subhead": "",
+        "cta": "RIG UP",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.82
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 808,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 78
+      },
+      "badges": [
+        {
+          "text": "RIG IT RIGHT",
+          "x": 810,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/planers/tier1-ready/BridleClipsLownoLogo.png",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-planers-04.jpg",
+      "text": {
+        "headline": "PLANER BOARDS\nTHAT HOLD",
+        "subhead": "",
+        "cta": "SHOP PLANERS",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.88
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 820,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 78
+      },
+      "badges": [
+        {
+          "text": "SPREAD WIDE",
+          "x": 780,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/planers/tier1-ready/planer-comparison-downrigger.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-planers-05.jpg",
+      "text": {
+        "headline": "RIG IT TIGHT\nFISH HARD",
+        "subhead": "",
+        "cta": "GET BRIDLE KITS",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.81
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 829,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 72
+      },
+      "badges": [
+        {
+          "text": "PLANER KITS",
+          "x": 780,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/planers/tier1-ready/planer-comparison-downrigger.jpg",
+      "backgroundPosition": "center",
+      "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/actionhero-multiproduct-v1/actionhero-planers-06.jpg",
+      "text": {
+        "headline": "SPREAD WIDE\nCATCH MORE",
+        "subhead": "",
+        "cta": "RIG UP",
+        "footer": ""
+      },
+      "overlay": {
+        "leftColor": "4,14,28",
+        "midColor": "4,14,28",
+        "rightColor": "4,14,28",
+        "leftOpacity": 0.0,
+        "midOpacity": 0.08,
+        "rightOpacity": 0.0,
+        "vignetteBottom": 0.7
+      },
+      "layout": {
+        "personality": "editorial-left",
+        "leftX": 60,
+        "headlineY": 834,
+        "subheadY": 2000,
+        "ctaX": 275,
+        "ctaRectX": 60,
+        "ctaRectY": 948,
+        "ctaWidth": 430,
+        "ctaHeight": 72,
+        "ctaRadius": 12,
+        "footerY": 2000,
+        "maxHeadlineChars": 18,
+        "panelX": 0,
+        "panelY": 0,
+        "panelWidth": 0,
+        "panelHeight": 0
+      },
+      "typography": {
+        "headlineSize": 72
+      },
+      "badges": [
+        {
+          "text": "BRIDLE UP",
+          "x": 810,
+          "y": 40,
+          "fill": "rgba(232,93,58,0.92)",
+          "textColor": "#FFFFFF",
+          "fontSize": 20,
+          "width": 230,
+          "height": 42,
+          "radius": 8
+        }
+      ]
+    }
+  ]
+}

@@ -6,6 +6,11 @@ Local renderer for banners, social graphics, and simple product composites.
 
 Status: **PROJECT COMPLETE (v0.5.1 scope)**
 
+## Repo provenance
+- Canonical tracked location is this folder inside the main vault repo: `tolewis/projects` on `master`.
+- On 2026-03-27, the old nested standalone StrikeFrame git working tree at this path was folded into the vault repo and the stale gitlink/submodule entry was removed.
+- Standalone StrikeFrame history still exists in `git@github.com:tolewis/StrikeFrame.git`; this folder is now documented and tracked as part of the vault repo.
+
 ## What it does
 - renders marketing graphics locally
 - uses JSON config files
