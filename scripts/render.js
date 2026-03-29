@@ -1280,7 +1280,7 @@ async function renderOne(rawConfig) {
     const layer = await buildFramedImageLayer(derivedLogoLayer);
     if (layer) composites.push({ input: layer, left: derivedLogoLayer.x || 0, top: derivedLogoLayer.y || 0 });
   }
-  const primitiveOutputs = buildPrimitiveOutputs(cfg, { wrapText, escapeXml, registry: getPrimitiveRegistry() });
+  const primitiveOutputs = buildPrimitiveOutputs(cfg, { wrapText, escapeXml, registry: getPrimitiveRegistry(), buildIconGlyphSvg, buildStarRatingSvg });
   const resolvedPrimitiveImageLayers = [];
   const primitiveElements = [];
   const activePrimitiveIds = new Set();
@@ -1303,16 +1303,25 @@ async function renderOne(rawConfig) {
   composites.push({ input: buildPrimaryTextSvg(cfg) });
   const textLayers = buildTextLayersSvg(cfg); if (textLayers) composites.push({ input: textLayers });
   const statBlocksSvg = buildStatBlocksSvg(cfg); if (statBlocksSvg) composites.push({ input: statBlocksSvg });
-  // New template layers
-  const benefitStackSvg = buildBenefitStackSvg(cfg); if (benefitStackSvg) composites.push({ input: benefitStackSvg });
-  const testimonialSvg = buildTestimonialSvg(cfg); if (testimonialSvg) composites.push({ input: testimonialSvg });
-  const splitRevealSvg = buildSplitRevealSvg(cfg); if (splitRevealSvg) composites.push({ input: splitRevealSvg });
-  const offerFrameSvg = buildOfferFrameSvg(cfg); if (offerFrameSvg) composites.push({ input: offerFrameSvg });
-  // Skip inline builder when primitive handles it
+  // Template layers — skip inline builders when primitives handle them
+  if (!activePrimitiveIds.has('benefitStack')) {
+    const benefitStackSvg = buildBenefitStackSvg(cfg); if (benefitStackSvg) composites.push({ input: benefitStackSvg });
+  }
+  if (!activePrimitiveIds.has('testimonial')) {
+    const testimonialSvg = buildTestimonialSvg(cfg); if (testimonialSvg) composites.push({ input: testimonialSvg });
+  }
+  if (!activePrimitiveIds.has('splitReveal')) {
+    const splitRevealSvg = buildSplitRevealSvg(cfg); if (splitRevealSvg) composites.push({ input: splitRevealSvg });
+  }
+  if (!activePrimitiveIds.has('offerFrame')) {
+    const offerFrameSvg = buildOfferFrameSvg(cfg); if (offerFrameSvg) composites.push({ input: offerFrameSvg });
+  }
   if (!activePrimitiveIds.has('comparisonPanel')) {
     const comparisonTableSvg = buildComparisonTableSvg(cfg); if (comparisonTableSvg) composites.push({ input: comparisonTableSvg });
   }
-  const authorityBarSvg = buildAuthorityBarSvg(cfg); if (authorityBarSvg) composites.push({ input: authorityBarSvg });
+  if (!activePrimitiveIds.has('authorityBar')) {
+    const authorityBarSvg = buildAuthorityBarSvg(cfg); if (authorityBarSvg) composites.push({ input: authorityBarSvg });
+  }
   const badgesSvg = buildBadgesSvg(cfg); if (badgesSvg) composites.push({ input: badgesSvg });
   const compositeSvg = buildCompositeSvg(cfg); if (compositeSvg) composites.push({ input: compositeSvg });
   const productLayer = await buildProductLayer(cfg);
