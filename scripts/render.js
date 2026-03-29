@@ -3,6 +3,7 @@ const path = require('path');
 const sharp = require('sharp');
 const { buildPrimitiveOutputs, getPrimitiveRegistry } = require('../lib/primitives');
 const { Rect, Text, SafeZone } = require('../lib/geometry');
+const { critique } = require('../lib/critic');
 
 const projectRoot = path.resolve(__dirname, '..');
 const argPath = process.argv[2] || 'configs/sample-banner.json';
@@ -1393,7 +1394,10 @@ async function renderOne(rawConfig) {
   const layout = buildLayoutSidecar(cfg, primitiveElements, resolvedPrimitiveImageLayers);
   const layoutPath = cfg.output.replace(/\.[^.]+$/, '') + '.layout.json';
   fs.writeFileSync(layoutPath, JSON.stringify(layout, null, 2));
-  return { output: cfg.output, width: meta.width, height: meta.height, preset: cfg.preset, template: cfg.template, personality: cfg.layout.personality, reviewStatus: review.status, reviewPath, layoutPath };
+  const criticResult = critique(layout);
+  const criticPath = cfg.output.replace(/\.[^.]+$/, '') + '.critic.json';
+  fs.writeFileSync(criticPath, JSON.stringify(criticResult, null, 2));
+  return { output: cfg.output, width: meta.width, height: meta.height, preset: cfg.preset, template: cfg.template, personality: cfg.layout.personality, reviewStatus: review.status, criticScore: criticResult.overallScore, criticStatus: criticResult.status, reviewPath, layoutPath, criticPath };
 }
 
 async function main() {
