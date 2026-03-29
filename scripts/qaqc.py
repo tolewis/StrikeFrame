@@ -560,7 +560,8 @@ def run_vision_review(result: dict, cfg: dict, args) -> dict | None:
         str(VISION_SCRIPT),
         result.get("output", ""),
         "--host", args.vision_host,
-        "--model", args.vision_model,
+        "--backend", args.vision_backend,
+        "--purpose", "human-review" if args.human_review else args.vision_purpose,
         "--channel", args.channel,
         "--persona", args.persona,
         "--headline", cfg.get("text", {}).get("headline", ""),
@@ -570,6 +571,8 @@ def run_vision_review(result: dict, cfg: dict, args) -> dict | None:
         "--source-config", args.config_path,
         "--write-report",
     ]
+    if args.vision_model:
+        cmd.extend(["--model", args.vision_model])
     proc = subprocess.run(cmd, capture_output=True, text=True)
     payload = None
     if proc.stdout.strip():
@@ -584,9 +587,16 @@ def run_vision_review(result: dict, cfg: dict, args) -> dict | None:
     return payload
 
 
-def merge_status(base_status: str, vision: dict | None, mode: str) -> str:
+def merge_status(base_status: str, vision: dict | None, mode: str, human_review: bool = False) -> str:
+    if human_review:
+        if not vision or vision.get('status') == 'error':
+            return 'fail'
+        return 'pass' if base_status == 'pass' and vision.get('verdict') == 'pass' else 'fail'
+
     if not vision or mode != "required":
         return base_status
+    if vision.get('status') == 'error':
+        return 'fail'
     verdict = vision.get("verdict")
     if verdict == "reject":
         return "fail"
@@ -602,7 +612,10 @@ def parse_args():
     ap.add_argument("config_path")
     ap.add_argument("--vision", choices=["off", "on", "required"], default="off")
     ap.add_argument("--vision-host", default="http://192.168.0.160:11434")
-    ap.add_argument("--vision-model", default="minicpm-v:latest")
+    ap.add_argument("--vision-backend", choices=["auto", "ollama", "openai"], default="auto")
+    ap.add_argument("--vision-model", default=None)
+    ap.add_argument("--vision-purpose", choices=["prototype", "human-review", "bulk", "final"], default="prototype")
+    ap.add_argument("--human-review", action="store_true", help="Hard gate: only PASS assets may be shown to a human reviewer")
     ap.add_argument("--channel", default="generic")
     ap.add_argument("--persona", default="generic")
     return ap.parse_args()
@@ -727,7 +740,7 @@ def main():
         else:
             print(f"  No fixable issues — skipping correction pass")
 
-        final_status = merge_status(grade["status"], vision, args.vision)
+        final_status = merge_status(grade["status"], vision, args.vision, args.human_review)
         all_results.append({
             "output": result.get("output", "unknown"),
             "final_status": final_status,
@@ -738,6 +751,7 @@ def main():
             "warnings": grade.get("warnings", []),
             "failures": grade.get("failures", []),
             "vision_review": vision,
+            "human_review_gate": args.human_review,
         })
 
     # --- Final Report ---

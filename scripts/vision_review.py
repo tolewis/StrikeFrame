@@ -2,6 +2,7 @@
 import argparse
 import base64
 import json
+import os
 import re
 import sys
 from datetime import datetime, UTC
@@ -9,14 +10,20 @@ from pathlib import Path
 from urllib import request, error
 
 try:
+    from openai import OpenAI
+except Exception:
+    OpenAI = None
+
+try:
     from review_prompts import load_prompt
 except ModuleNotFoundError:
     from scripts.review_prompts import load_prompt
 
 DEFAULT_HOST = 'http://192.168.0.160:11434'
-DEFAULT_MODEL = 'qwen2.5vl:32b'
+DEFAULT_OLLAMA_MODEL = 'qwen2.5vl:32b'
 FAST_MODEL = 'qwen2.5vl:7b'
-CONTRACT_VERSION = '1.0'
+DEFAULT_OPENAI_MODEL = os.environ.get('SF_VISION_OPENAI_MODEL', 'gpt-4.1-mini')
+CONTRACT_VERSION = '1.1'
 
 
 def clamp_score(value, default=0.0) -> float:
@@ -130,6 +137,74 @@ def call_ollama(host: str, model: str, prompt: str, image_path: Path, timeout: i
     with request.urlopen(req, timeout=timeout) as resp:
         data = json.loads(resp.read().decode())
     return data['message']['content']
+
+
+def call_openai(model: str, prompt: str, image_path: Path, timeout: int) -> str:
+    if OpenAI is None:
+        raise RuntimeError('openai package not installed')
+    if not os.environ.get('OPENAI_API_KEY'):
+        raise RuntimeError('OPENAI_API_KEY is not set')
+
+    mime = 'image/jpeg'
+    suffix = image_path.suffix.lower()
+    if suffix == '.png':
+        mime = 'image/png'
+    elif suffix == '.webp':
+        mime = 'image/webp'
+    elif suffix == '.gif':
+        mime = 'image/gif'
+
+    image_b64 = base64.b64encode(image_path.read_bytes()).decode('ascii')
+    client = OpenAI(timeout=timeout)
+    resp = client.chat.completions.create(
+        model=model,
+        response_format={'type': 'json_object'},
+        messages=[
+            {
+                'role': 'system',
+                'content': 'You are a harsh but fair graphic design QA reviewer. Return valid JSON only.',
+            },
+            {
+                'role': 'user',
+                'content': [
+                    {'type': 'text', 'text': prompt},
+                    {'type': 'image_url', 'image_url': {'url': f'data:{mime};base64,{image_b64}'}},
+                ],
+            },
+        ],
+    )
+    return resp.choices[0].message.content
+
+
+def resolve_backend(preferred: str, purpose: str) -> list[str]:
+    choice = (preferred or 'auto').lower()
+    if choice in {'ollama', 'openai'}:
+        return [choice]
+    purpose = (purpose or 'prototype').lower()
+    if purpose in {'bulk', 'final'}:
+        return ['ollama', 'openai']
+    return ['openai', 'ollama']
+
+
+def resolve_model(backend: str, explicit_model: str | None) -> str:
+    if explicit_model:
+        return explicit_model
+    if backend == 'openai':
+        return DEFAULT_OPENAI_MODEL
+    return DEFAULT_OLLAMA_MODEL
+
+
+def call_reviewer(args, prompt: str, image_path: Path) -> tuple[str, str]:
+    errors = []
+    for backend in resolve_backend(args.backend, args.purpose):
+        model = resolve_model(backend, args.model)
+        try:
+            if backend == 'openai':
+                return backend, call_openai(model, prompt, image_path, args.timeout)
+            return backend, call_ollama(args.host, model, prompt, image_path, args.timeout)
+        except Exception as exc:
+            errors.append(f'{backend}: {exc}')
+    raise RuntimeError('; '.join(errors) or 'no reviewer backend available')
 
 
 def extract_json(text: str) -> dict:
@@ -302,8 +377,10 @@ def build_report(args, parsed: dict, raw_response: str) -> dict:
     
     report = {
         'version': CONTRACT_VERSION,
-        'model': args.model,
-        'host': args.host,
+        'model': args.resolved_model,
+        'backend': args.resolved_backend,
+        'host': args.host if args.resolved_backend == 'ollama' else 'openai',
+        'review_purpose': args.purpose,
         'channel': args.channel,
         'persona': args.persona,
         'source_image': str(Path(args.image).resolve()),
@@ -366,7 +443,9 @@ def main():
     ap = argparse.ArgumentParser(description='Run multimodal creative review on a rendered StrikeFrame asset.')
     ap.add_argument('image')
     ap.add_argument('--host', default=DEFAULT_HOST)
-    ap.add_argument('--model', default=DEFAULT_MODEL)
+    ap.add_argument('--backend', choices=['auto', 'ollama', 'openai'], default='auto')
+    ap.add_argument('--model', default=None)
+    ap.add_argument('--purpose', choices=['prototype', 'human-review', 'bulk', 'final'], default='prototype')
     ap.add_argument('--channel', default='generic')
     ap.add_argument('--persona', default='generic')
     ap.add_argument('--headline', default='')
@@ -387,7 +466,8 @@ def main():
         sys.exit(2)
 
     try:
-        raw_response = call_ollama(args.host, args.model, build_user_prompt(args), image_path, args.timeout)
+        args.resolved_backend, raw_response = call_reviewer(args, build_user_prompt(args), image_path)
+        args.resolved_model = resolve_model(args.resolved_backend, args.model)
         parsed = extract_json(raw_response)
         parsed = normalize_verdict(parsed, args.channel.lower(), args.persona.lower())
         report = build_report(args, parsed, raw_response)

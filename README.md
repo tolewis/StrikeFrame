@@ -52,18 +52,23 @@ If agents overfit to the examples, all output will look the same. That is failur
 ![editorial-premium](./examples/featured/editorial-premium.jpg)
 
 ## QA/QC review layer
-StrikeFrame runs a **single-pass review after file creation**.
+StrikeFrame runs a **single-pass deterministic review plus a routed vision-review gate** after file creation.
 
-It does **not** auto-rerender in a loop. It renders once, inspects once, writes a review file, and reports `pass`, `warn`, or `fail`.
+It still does **not** auto-rerender forever. It renders once, inspects once, may run one correction pass, writes review files, and reports `pass`, `warn`, or `fail`.
 
-StrikeFrame now includes a calibrated second-stage Popeye critic for benchmarked review and evaluation:
-- `python3 scripts/vision_review.py <image> --channel x --persona tim-operator ...`
-- `python3 scripts/qaqc.py <config> --vision on --channel x --persona tim-operator`
-- `python3 scripts/qaqc.py <config> --vision required --channel x --persona tim-operator`
+Reviewer routing is now explicit:
+- **Prototype / human-review gate:** prefer cloud vision (`--backend auto`, purpose `prototype`/`human-review`)
+- **Bulk / final review:** prefer Popeye/Ollama (`--backend ollama`, purpose `bulk`/`final`)
+
+Key commands:
+- `python3 scripts/vision_review.py <image> --channel x --persona tim-operator --backend auto --purpose human-review`
+- `python3 scripts/qaqc.py <config> --vision required --human-review --vision-backend auto --channel x --persona tim-operator`
+- `python3 scripts/qaqc.py <config> --vision required --vision-backend ollama --vision-purpose bulk --channel paid-social --persona tim-operator`
 
 Review output:
 - `<asset>.review.json`
 - `<asset>.vision-review.json`
+- `<config>.qaqc-report.json` with human-review gate status when enabled
 
 Checks include:
 - headline/subhead/CTA fit inside the intended primary region
@@ -102,13 +107,14 @@ Primary docs:
 - `scripts/run_proofhero_pipeline.py`
 
 Fast path:
-- `python3 scripts/run_proofhero_pipeline.py --vision off`
-- `python3 scripts/run_proofhero_pipeline.py --vision on --model qwen2.5vl:32b`
+- `python3 scripts/run_proofhero_pipeline.py`
+- `python3 scripts/run_proofhero_pipeline.py --bulk-review on --bulk-model qwen2.5vl:32b`
 
 This lane is designed to:
 - generate a controlled 25-variant batch
 - hard-fail obviously broken outputs
-- let an AI or operator shortlist the survivors
+- run **required prototype QC before any human review sheet exists**
+- optionally run Popeye bulk/final review on the best survivors
 - polish and ship the strongest 1-5
 
 ## ActionHero production lane
@@ -121,11 +127,12 @@ Primary docs:
 
 Fast path:
 - `python3 scripts/run_actionhero_pipeline.py`
+- `python3 scripts/run_actionhero_pipeline.py --bulk-review on --bulk-model qwen2.5vl:32b`
 
 This lane is designed to:
 - generate a controlled 25-variant action-led batch
-- package a labeled review sheet
-- let AI or an operator shortlist the strongest 5-10
+- run **required prototype QC before packaging a human review sheet**
+- optionally run Popeye bulk/final review on the best survivors
 - polish and ship the best 1-5
 
 ## Test and config hygiene

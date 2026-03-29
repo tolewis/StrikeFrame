@@ -9,7 +9,9 @@ Structured output contract for multimodal creative review in StrikeFrame.
 ## Required top-level fields
 - `version` — contract version string
 - `model` — model id used for review
-- `host` — review host base URL
+- `backend` — `openai|ollama` actual reviewer backend used
+- `host` — review host base URL or provider label
+- `review_purpose` — `prototype|human-review|bulk|final`
 - `channel` — target channel (`x`, `linkedin`, `generic`, etc.)
 - `persona` — target persona/profile (`tim-operator`, etc.)
 - `source_image` — reviewed image path
@@ -63,3 +65,13 @@ Structured output contract for multimodal creative review in StrikeFrame.
 - Repo helper: `python3 scripts/load_calibration_manifest.py`
 
 - Calibration runner: `python3 scripts/run_calibration_eval.py`
+
+## Human review gate
+- Any asset sent to a human review board should have both deterministic QA and vision review completed first.
+- In `qaqc.py`, use `--human-review` to require an actual `pass` before an asset is considered human-review-safe.
+- Pipeline contact sheets should be built only from prototype-QC-passed assets.
+
+## Reviewer routing
+- `--backend auto` prefers cloud review for prototype/human-review work.
+- `--backend ollama` is the default preference for bulk/final review runs.
+- If the preferred backend is unavailable, auto mode may fall back to the alternate reviewer; the emitted `backend` field is the source of truth.
