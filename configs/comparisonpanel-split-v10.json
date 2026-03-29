@@ -85,17 +85,6 @@
       "opacity": 1
     },
     {
-      "_comment": "Gradient blend strip at photo/panel boundary (y=370-410)",
-      "type": "rectangle",
-      "x": 0,
-      "y": 340,
-      "width": 1080,
-      "height": 30,
-      "fill": "rgba(255,255,255,0.7)",
-      "radius": 0,
-      "opacity": 1
-    },
-    {
       "_comment": "Thin orange accent rule above comparison rows",
       "type": "rectangle",
       "x": 0,
