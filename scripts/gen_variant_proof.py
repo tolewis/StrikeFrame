@@ -27,11 +27,11 @@ RENDER_JS = os.path.join(SCRIPT_DIR, 'render.js')
 COMPARISON_PANEL_CONTENT = {
     'comparisonTable': {
         'startX': 72,
-        'startY': 340,
+        'startY': 320,
         'colWidth': 440,
-        'rowHeight': 68,
+        'rowHeight': 80,
         'headerSize': 22,
-        'bodySize': 19,
+        'bodySize': 20,
         'highlightCol': 'right',
         'leftHeader': 'GENERIC SHOP',
         'rightHeader': 'THE TACKLE ROOM',
@@ -51,17 +51,17 @@ OFFER_FRAME_CONTENT = {
         'salePrice': '$224.99',
         'savings': 'SAVE 22%',
         'offerText': 'FREE SHIPPING OVER $99',
-        'salePriceSize': 72,
-        'originalPriceSize': 28,
-        'priceY': 620
+        'salePriceSize': 96,
+        'originalPriceSize': 32,
+        'priceY': 560
     }
 }
 
 BENEFIT_STACK_CONTENT = {
     'benefitStack': {
         'startX': 80,
-        'startY': 520,
-        'spacing': 90,
+        'startY': 380,
+        'spacing': 110,
         'iconSize': 36,
         'textSize': 28,
         'items': [
@@ -77,19 +77,19 @@ TESTIMONIAL_CONTENT = {
     'testimonial': {
         'quote': 'This dredge changed our tournament results completely.',
         'stars': 5,
-        'starSize': 32,
+        'starSize': 36,
         'name': 'Capt. Mike Henderson',
         'role': 'Blue Water Charters, Islamorada',
-        'quoteSize': 36,
-        'quoteMaxChars': 28,
-        'startY': 280
+        'quoteSize': 40,
+        'quoteMaxChars': 26,
+        'startY': 320
     }
 }
 
 SPLIT_REVEAL_CONTENT = {
     'splitReveal': {
-        'startY': 380,
-        'rowHeight': 70,
+        'startY': 360,
+        'rowHeight': 100,
         'textSize': 22,
         'problemLabel': 'THE PROBLEM',
         'solutionLabel': 'THE FIX',
@@ -104,7 +104,7 @@ SPLIT_REVEAL_CONTENT = {
 
 AUTHORITY_BAR_CONTENT = {
     'authorityBar': {
-        'barY': 720,
+        'barY': 820,
         'barHeight': 40,
         'textSize': 13,
         'publications': ['TOURNAMENT TESTED', 'CAPTAIN VERIFIED', 'OFFSHORE PROVEN']
@@ -181,14 +181,17 @@ PRIMITIVES = {
         'content': ACTION_HERO_CONTENT,
         'variants': ['bottom-heavy', 'center-band', 'split-action', 'compact-strip'],
         'headline': 'WAHOO DON\'T WAIT\nFOR SLOW GEAR',
-        'cta': 'SHOP WAHOO GEAR →'
+        'cta': 'SHOP WAHOO GEAR →',
+        'subhead': 'High-speed trolling lures, wire rigs, and\ncable leaders built for 40+ knot strikes.',
+        'badge': {'text': 'WAHOO SEASON', 'x': 340, 'y': 60, 'fill': 'rgba(232,93,58,0.92)', 'textColor': '#ffffff', 'fontSize': 16, 'width': 200, 'height': 38}
     },
     'proofHero': {
         'configKey': 'proofHero',
         'content': PROOF_HERO_CONTENT,
         'variants': ['quote-dominant', 'review-dominant', 'balanced'],
         'headline': '',
-        'cta': ''
+        'cta': '',
+        'no_base_cta': True  # proofHero renders its own CTA
     }
 }
 
@@ -202,34 +205,72 @@ def build_config(primitive_name, variant_name, output_path):
     if config_key in content:
         content[config_key]['variant'] = variant_name
 
+    # CTA position: close to bottom but not stranded
+    cta_y = 920
+    cta_text = prim['cta']
+
+    # proofHero renders its own CTA — suppress the base renderer CTA
+    if prim.get('no_base_cta'):
+        cta_text = ''
+        cta_y = 1200  # push off-canvas
+
+    subhead = prim.get('subhead', '')
+    badges = [prim['badge']] if prim.get('badge') else None
+
     config = {
         'preset': 'social-square',
         'template': 'banner',
         'text': {
             'headline': prim['headline'],
-            'subhead': '',
-            'cta': prim['cta'],
-            'footer': 'THETACKLEROOM.COM'
+            'subhead': subhead,
+            'cta': cta_text,
+            'footer': ''
         },
         'theme': {
             'gradientStart': '#0b2a40',
-            'gradientEnd': '#1f6b8f'
+            'gradientEnd': '#1a5f7a',
+            # Solid orange CTA — not translucent gray
+            'ctaFill': 'rgba(232,93,58,0.95)',
+            'ctaStroke': 'none',
+            'ctaTextColor': '#ffffff',
+            # No panel for these proofs
+            'textPanelFill': 'none',
+            'textPanelStroke': 'none'
         },
         'typography': {
             'headlineFontFamily': 'Montserrat, Arial, sans-serif',
             'bodyFontFamily': 'Source Sans Pro, Arial, sans-serif',
             'headlineSize': 48,
-            'subheadSize': 1,
+            'headlineWeight': 800,
+            'subheadSize': 24 if subhead else 1,
             'ctaSize': 22,
             'footerSize': 1
         },
         'layout': {
             'personality': 'centered-hero',
-            'minHeadlineCtaGap': 40
+            'minHeadlineCtaGap': 40,
+            'ctaRectY': cta_y,
+            'ctaY': cta_y + 28,
+            'ctaWidth': 380,
+            'ctaHeight': 56,
+            'ctaRadius': 12,
+            'headlineY': 130
+        },
+        'overlay': {
+            'leftColor': '8,24,42',
+            'midColor': '8,24,42',
+            'rightColor': '8,24,42',
+            'leftOpacity': 0.45,
+            'midOpacity': 0.35,
+            'rightOpacity': 0.45,
+            'vignetteBottom': 0.15
         },
         'output': output_path,
         **content
     }
+
+    if badges:
+        config['badges'] = badges
 
     return config
 

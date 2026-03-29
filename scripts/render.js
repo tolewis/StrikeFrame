@@ -696,10 +696,13 @@ function buildPrimaryTextSvg(cfg) {
   const cta = getCtaGeometry(cfg);
   const panelEnabled = theme.textPanelFill && theme.textPanelFill !== 'none';
   let panel = '';
+  // Panel only renders for split-card personality (frosted panel over hero image).
+  // Other personalities (centered-hero, editorial-left) rely on the vignette overlay
+  // for text contrast — they should NOT get a panel unless explicitly requested.
   if (layout.personality === 'split-card' && panelEnabled) {
     panel = `<rect x="${layout.panelX}" y="${layout.panelY}" width="${layout.panelWidth}" height="${layout.panelHeight}" rx="36" fill="${theme.textPanelFill}" stroke="${theme.textPanelStroke || 'none'}" />`;
-  } else if (panelEnabled && layout.panelWidth && layout.panelHeight) {
-    // Centered panel for centered-hero or editorial-left with explicit panel dimensions
+  } else if (layout.showPanel && panelEnabled && layout.panelWidth && layout.panelHeight) {
+    // Explicit panel request for non-split-card layouts
     const panelX = layout.panelX != null ? layout.panelX : Math.round((cfg.width - layout.panelWidth) / 2);
     const panelY = layout.panelY != null ? layout.panelY : Math.round(layout.headlineY - 60);
     panel = `<rect x="${panelX}" y="${panelY}" width="${layout.panelWidth}" height="${layout.panelHeight}" rx="36" fill="${theme.textPanelFill}" stroke="${theme.textPanelStroke || 'none'}" />`;
