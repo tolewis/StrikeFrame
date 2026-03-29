@@ -612,7 +612,7 @@ def parse_args():
     ap.add_argument("config_path")
     ap.add_argument("--vision", choices=["off", "on", "required"], default="off")
     ap.add_argument("--vision-host", default="http://192.168.0.160:11434")
-    ap.add_argument("--vision-backend", choices=["auto", "ollama", "openai"], default="auto")
+    ap.add_argument("--vision-backend", choices=["auto", "ollama", "openai", "anthropic"], default="auto")
     ap.add_argument("--vision-model", default=None)
     ap.add_argument("--vision-purpose", choices=["prototype", "human-review", "bulk", "final"], default="prototype")
     ap.add_argument("--human-review", action="store_true", help="Hard gate: only PASS assets may be shown to a human reviewer")

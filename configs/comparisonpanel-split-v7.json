@@ -1,0 +1,494 @@
+{
+  "_comment": "=== ComparisonPanel Split v1 | LMNT-style split panel | 1080x1080 ===",
+  "preset": "social-square",
+  "template": "banner",
+  "backgroundPath": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_8535.jpg",
+  "backgroundPosition": "center",
+  "output": "/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe/comparisonpanel-v2/comparisonpanel-split-v7.jpg",
+  "logoMode": "white-card-landscape",
+  "logo": {
+    "placement": "corner-anchor",
+    "corner": "top-left",
+    "width": 230,
+    "height": 56,
+    "clearSpace": 14
+  },
+  "text": {
+    "headline": "",
+    "subhead": "",
+    "cta": "SHOP OFFSHORE TACKLE",
+    "footer": ""
+  },
+  "overlay": {
+    "leftColor": "0,0,0",
+    "midColor": "0,0,0",
+    "rightColor": "0,0,0",
+    "leftOpacity": 0.0,
+    "midOpacity": 0.0,
+    "rightOpacity": 0.0,
+    "vignetteBottom": 0.0
+  },
+  "theme": {
+    "headlineColor": "rgba(0,0,0,0)",
+    "subheadColor": "rgba(0,0,0,0)",
+    "footerColor": "rgba(0,0,0,0)",
+    "ctaTextColor": "#FFFFFF",
+    "ctaFill": "#E85D3A",
+    "ctaStroke": "rgba(255,255,255,0.15)",
+    "gradientStart": "#1a1a2e",
+    "gradientEnd": "#16213e"
+  },
+  "typography": {
+    "headlineFontFamily": "Montserrat, Arial, sans-serif",
+    "bodyFontFamily": "Source Sans Pro, Arial, sans-serif",
+    "headlineSize": 1,
+    "subheadSize": 1,
+    "headlineWeight": 900,
+    "subheadWeight": 400,
+    "ctaSize": 28,
+    "ctaWeight": 800,
+    "footerSize": 1,
+    "footerTracking": 0
+  },
+  "layout": {
+    "personality": "centered-hero",
+    "align": "center",
+    "leftX": 540,
+    "headlineY": -400,
+    "subheadY": -400,
+    "ctaRectX": 290,
+    "ctaRectY": 985,
+    "ctaX": 540,
+    "ctaY": 1021,
+    "ctaWidth": 500,
+    "ctaHeight": 66,
+    "ctaRadius": 12,
+    "footerY": -400,
+    "maxHeadlineChars": 22,
+    "maxSubheadChars": 1,
+    "panelX": 0,
+    "panelY": 0,
+    "panelWidth": 0,
+    "panelHeight": 0,
+    "minHeadlineCtaGap": 0
+  },
+  "shapes": [
+    {
+      "_comment": "Dark charcoal panel \u2014 covers bottom, hard cutoff at y=400",
+      "type": "rectangle",
+      "x": 0,
+      "y": 510,
+      "width": 1080,
+      "height": 570,
+      "fill": "#18222E",
+      "radius": 0,
+      "opacity": 1
+    },
+    {
+      "_comment": "Gradient blend strip at photo/panel boundary (y=370-410)",
+      "type": "rectangle",
+      "x": 0,
+      "y": 340,
+      "width": 1080,
+      "height": 30,
+      "fill": "rgba(255,255,255,0.7)",
+      "radius": 0,
+      "opacity": 1
+    },
+    {
+      "_comment": "Thin orange accent rule above comparison rows",
+      "type": "rectangle",
+      "x": 0,
+      "y": 510,
+      "width": 1080,
+      "height": 3,
+      "fill": "#E85D3A",
+      "radius": 0,
+      "opacity": 0.7
+    },
+    {
+      "_comment": "Row 1 \u2014 Left X circle bg (center: 96, 565)",
+      "type": "ellipse",
+      "x": 68,
+      "y": 541,
+      "width": 56,
+      "height": 56,
+      "fill": "rgba(220,50,50,0.22)",
+      "opacity": 1
+    },
+    {
+      "_comment": "Row 1 \u2014 Right check circle bg (center: 576, 565)",
+      "type": "ellipse",
+      "x": 548,
+      "y": 541,
+      "width": 56,
+      "height": 56,
+      "fill": "rgba(60,200,100,0.18)",
+      "opacity": 1
+    },
+    {
+      "_comment": "Row 2 \u2014 Left X circle bg (center: 96, 675)",
+      "type": "ellipse",
+      "x": 68,
+      "y": 651,
+      "width": 56,
+      "height": 56,
+      "fill": "rgba(220,50,50,0.22)",
+      "opacity": 1
+    },
+    {
+      "_comment": "Row 2 \u2014 Right check circle bg (center: 576, 675)",
+      "type": "ellipse",
+      "x": 548,
+      "y": 651,
+      "width": 56,
+      "height": 56,
+      "fill": "rgba(60,200,100,0.18)",
+      "opacity": 1
+    },
+    {
+      "_comment": "Row 3 \u2014 Left X circle bg (center: 96, 785)",
+      "type": "ellipse",
+      "x": 68,
+      "y": 761,
+      "width": 56,
+      "height": 56,
+      "fill": "rgba(220,50,50,0.22)",
+      "opacity": 1
+    },
+    {
+      "_comment": "Row 3 \u2014 Right check circle bg (center: 576, 785)",
+      "type": "ellipse",
+      "x": 548,
+      "y": 761,
+      "width": 56,
+      "height": 56,
+      "fill": "rgba(60,200,100,0.18)",
+      "opacity": 1
+    },
+    {
+      "_comment": "Row 4 \u2014 Left X circle bg (center: 96, 895)",
+      "type": "ellipse",
+      "x": 68,
+      "y": 871,
+      "width": 56,
+      "height": 56,
+      "fill": "rgba(220,50,50,0.22)",
+      "opacity": 1
+    },
+    {
+      "_comment": "Row 4 \u2014 Right check circle bg (center: 576, 895)",
+      "type": "ellipse",
+      "x": 548,
+      "y": 871,
+      "width": 56,
+      "height": 56,
+      "fill": "rgba(60,200,100,0.18)",
+      "opacity": 1
+    },
+    {
+      "type": "rectangle",
+      "x": 0,
+      "y": 370,
+      "width": 1080,
+      "height": 140,
+      "fill": "#FFFFFF",
+      "radius": 0
+    }
+  ],
+  "badges": [
+    {
+      "_comment": "VS badge \u2014 centered, large, orange pill at y=420",
+      "text": "VS",
+      "x": 440,
+      "y": 484,
+      "width": 200,
+      "height": 76,
+      "fontSize": 38,
+      "fontFamily": "Montserrat, Arial, sans-serif",
+      "fontWeight": 900,
+      "fill": "#E85D3A",
+      "textColor": "#FFFFFF",
+      "radius": 12,
+      "paddingX": 32
+    }
+  ],
+  "textLayers": [
+    {
+      "_comment": "VS zone \u2014 LEFT label (centered in left half ~x=220)",
+      "content": "GENERIC SHOP",
+      "x": 220,
+      "y": 455,
+      "fontSize": 38,
+      "fontFamily": "Montserrat, Arial, sans-serif",
+      "fontWeight": 900,
+      "color": "#1a1a2e",
+      "align": "center",
+      "maxChars": 20
+    },
+    {
+      "_comment": "VS zone \u2014 RIGHT label (centered in right half ~x=858)",
+      "content": "",
+      "x": 858,
+      "y": 475,
+      "fontSize": 1,
+      "fontFamily": "Montserrat, Arial, sans-serif",
+      "fontWeight": 900,
+      "color": "rgba(232,93,58,1.0)",
+      "align": "center",
+      "maxChars": 20
+    },
+    {
+      "_comment": "Row 1 \u2014 Left \u2717 icon (center of circle at 96, 569)",
+      "content": "\u2717",
+      "x": 96,
+      "y": 580,
+      "fontSize": 34,
+      "fontFamily": "Montserrat, Arial, sans-serif",
+      "fontWeight": 900,
+      "color": "#E05050",
+      "align": "center",
+      "maxChars": 2
+    },
+    {
+      "_comment": "Row 1 \u2014 Left text (starts at x=148, vertically centered ~y=575)",
+      "content": "Generic Freshwater Stock",
+      "x": 148,
+      "y": 574,
+      "fontSize": 30,
+      "fontFamily": "Source Sans Pro, Arial, sans-serif",
+      "fontWeight": 600,
+      "color": "rgba(255,255,255,0.62)",
+      "align": "left",
+      "maxChars": 20,
+      "lineHeight": 33
+    },
+    {
+      "_comment": "Row 1 \u2014 Right \u2713 icon",
+      "content": "\u2713",
+      "x": 576,
+      "y": 580,
+      "fontSize": 34,
+      "fontFamily": "Montserrat, Arial, sans-serif",
+      "fontWeight": 900,
+      "color": "#3EC878",
+      "align": "center",
+      "maxChars": 2
+    },
+    {
+      "_comment": "Row 1 \u2014 Right text",
+      "content": "Offshore-Only Inventory",
+      "x": 628,
+      "y": 574,
+      "fontSize": 30,
+      "fontFamily": "Source Sans Pro, Arial, sans-serif",
+      "fontWeight": 700,
+      "color": "#FFFFFF",
+      "align": "left",
+      "maxChars": 20,
+      "lineHeight": 33
+    },
+    {
+      "_comment": "Row 2 \u2014 Left \u2717 icon",
+      "content": "\u2717",
+      "x": 96,
+      "y": 690,
+      "fontSize": 34,
+      "fontFamily": "Montserrat, Arial, sans-serif",
+      "fontWeight": 900,
+      "color": "#E05050",
+      "align": "center",
+      "maxChars": 2
+    },
+    {
+      "_comment": "Row 2 \u2014 Left text",
+      "content": "Ask Google for Rigging Tips",
+      "x": 148,
+      "y": 684,
+      "fontSize": 30,
+      "fontFamily": "Source Sans Pro, Arial, sans-serif",
+      "fontWeight": 600,
+      "color": "rgba(255,255,255,0.62)",
+      "align": "left",
+      "maxChars": 20,
+      "lineHeight": 33
+    },
+    {
+      "_comment": "Row 2 \u2014 Right \u2713 icon",
+      "content": "\u2713",
+      "x": 576,
+      "y": 690,
+      "fontSize": 34,
+      "fontFamily": "Montserrat, Arial, sans-serif",
+      "fontWeight": 900,
+      "color": "#3EC878",
+      "align": "center",
+      "maxChars": 2
+    },
+    {
+      "_comment": "Row 2 \u2014 Right text (shorter to fit right half)",
+      "content": "Captain-Tested Rigging Help",
+      "x": 628,
+      "y": 684,
+      "fontSize": 30,
+      "fontFamily": "Source Sans Pro, Arial, sans-serif",
+      "fontWeight": 700,
+      "color": "#FFFFFF",
+      "align": "left",
+      "maxChars": 20,
+      "lineHeight": 33
+    },
+    {
+      "_comment": "Row 3 \u2014 Left \u2717 icon",
+      "content": "\u2717",
+      "x": 96,
+      "y": 800,
+      "fontSize": 34,
+      "fontFamily": "Montserrat, Arial, sans-serif",
+      "fontWeight": 900,
+      "color": "#E05050",
+      "align": "center",
+      "maxChars": 2
+    },
+    {
+      "_comment": "Row 3 \u2014 Left text",
+      "content": "1-2 Week Shipping",
+      "x": 148,
+      "y": 800,
+      "fontSize": 30,
+      "fontFamily": "Source Sans Pro, Arial, sans-serif",
+      "fontWeight": 600,
+      "color": "rgba(255,255,255,0.62)",
+      "align": "left",
+      "maxChars": 20,
+      "lineHeight": 33
+    },
+    {
+      "_comment": "Row 3 \u2014 Right \u2713 icon",
+      "content": "\u2713",
+      "x": 576,
+      "y": 800,
+      "fontSize": 34,
+      "fontFamily": "Montserrat, Arial, sans-serif",
+      "fontWeight": 900,
+      "color": "#3EC878",
+      "align": "center",
+      "maxChars": 2
+    },
+    {
+      "_comment": "Row 3 \u2014 Right text",
+      "content": "Ships Same Day, Mon-Fri",
+      "x": 628,
+      "y": 800,
+      "fontSize": 30,
+      "fontFamily": "Source Sans Pro, Arial, sans-serif",
+      "fontWeight": 700,
+      "color": "#FFFFFF",
+      "align": "left",
+      "maxChars": 20,
+      "lineHeight": 33
+    },
+    {
+      "_comment": "Row 4 \u2014 Left \u2717 icon",
+      "content": "\u2717",
+      "x": 96,
+      "y": 910,
+      "fontSize": 34,
+      "fontFamily": "Montserrat, Arial, sans-serif",
+      "fontWeight": 900,
+      "color": "#E05050",
+      "align": "center",
+      "maxChars": 2
+    },
+    {
+      "_comment": "Row 4 \u2014 Left text",
+      "content": "No One to Call",
+      "x": 148,
+      "y": 910,
+      "fontSize": 30,
+      "fontFamily": "Source Sans Pro, Arial, sans-serif",
+      "fontWeight": 600,
+      "color": "rgba(255,255,255,0.62)",
+      "align": "left",
+      "maxChars": 20,
+      "lineHeight": 33
+    },
+    {
+      "_comment": "Row 4 \u2014 Right \u2713 icon",
+      "content": "\u2713",
+      "x": 576,
+      "y": 910,
+      "fontSize": 34,
+      "fontFamily": "Montserrat, Arial, sans-serif",
+      "fontWeight": 900,
+      "color": "#3EC878",
+      "align": "center",
+      "maxChars": 2
+    },
+    {
+      "_comment": "Row 4 \u2014 Right text",
+      "content": "Live Expert on the Line",
+      "x": 628,
+      "y": 910,
+      "fontSize": 30,
+      "fontFamily": "Source Sans Pro, Arial, sans-serif",
+      "fontWeight": 700,
+      "color": "#FFFFFF",
+      "align": "left",
+      "maxChars": 20,
+      "lineHeight": 33
+    }
+  ],
+  "dividers": [
+    {
+      "_comment": "Vertical center divider \u2014 full comparison zone height",
+      "type": "vertical",
+      "x": 538,
+      "y": 510,
+      "width": 3,
+      "height": 435,
+      "color": "rgba(255,255,255,0.18)"
+    },
+    {
+      "_comment": "Row separator 1\u20132",
+      "type": "horizontal",
+      "x": 60,
+      "y": 628,
+      "width": 960,
+      "height": 1,
+      "color": "rgba(255,255,255,0.08)"
+    },
+    {
+      "_comment": "Row separator 2\u20133",
+      "type": "horizontal",
+      "x": 60,
+      "y": 738,
+      "width": 960,
+      "height": 1,
+      "color": "rgba(255,255,255,0.08)"
+    },
+    {
+      "_comment": "Row separator 3\u20134",
+      "type": "horizontal",
+      "x": 60,
+      "y": 848,
+      "width": 960,
+      "height": 1,
+      "color": "rgba(255,255,255,0.08)"
+    }
+  ],
+  "review": {
+    "enforcePanelFit": false
+  },
+  "imageLayers": [
+    {
+      "path": "/home/tlewis/Dropbox/Tim/TackleRoom/Creative/logos/tr-wordmark-landscape-1200x300-v2.png",
+      "x": 600,
+      "y": 385,
+      "width": 500,
+      "height": 110,
+      "fit": "inside",
+      "trim": true
+    }
+  ]
+}

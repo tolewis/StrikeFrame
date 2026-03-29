@@ -23,7 +23,10 @@ DEFAULT_HOST = 'http://192.168.0.160:11434'
 DEFAULT_OLLAMA_MODEL = 'qwen2.5vl:32b'
 FAST_MODEL = 'qwen2.5vl:7b'
 DEFAULT_OPENAI_MODEL = os.environ.get('SF_VISION_OPENAI_MODEL', 'gpt-4.1-mini')
+DEFAULT_ANTHROPIC_MODEL = os.environ.get('SF_VISION_ANTHROPIC_MODEL', 'claude-sonnet-4-6')
 CONTRACT_VERSION = '1.1'
+
+OPENCLAW_CONFIG_PATH = Path.home() / '.openclaw' / 'openclaw.json'
 
 
 def clamp_score(value, default=0.0) -> float:
@@ -176,14 +179,90 @@ def call_openai(model: str, prompt: str, image_path: Path, timeout: int) -> str:
     return resp.choices[0].message.content
 
 
+def _get_anthropic_api_key() -> str:
+    """Pull Anthropic API key from env or OpenClaw config."""
+    key = os.environ.get('ANTHROPIC_API_KEY', '')
+    if key:
+        return key
+    if OPENCLAW_CONFIG_PATH.exists():
+        try:
+            cfg = json.loads(OPENCLAW_CONFIG_PATH.read_text())
+            key = cfg.get('models', {}).get('providers', {}).get('anthropic', {}).get('apiKey', '')
+        except Exception:
+            pass
+    return key
+
+
+def call_anthropic(model: str, prompt: str, image_path: Path, timeout: int) -> str:
+    api_key = _get_anthropic_api_key()
+    if not api_key:
+        raise RuntimeError('No Anthropic API key found in env or OpenClaw config')
+
+    mime = 'image/jpeg'
+    suffix = image_path.suffix.lower()
+    if suffix == '.png':
+        mime = 'image/png'
+    elif suffix == '.webp':
+        mime = 'image/webp'
+
+    image_b64 = base64.b64encode(image_path.read_bytes()).decode('ascii')
+
+    payload = {
+        'model': model,
+        'max_tokens': 4096,
+        'messages': [
+            {
+                'role': 'user',
+                'content': [
+                    {
+                        'type': 'image',
+                        'source': {
+                            'type': 'base64',
+                            'media_type': mime,
+                            'data': image_b64,
+                        },
+                    },
+                    {
+                        'type': 'text',
+                        'text': prompt + '\n\nReturn valid JSON only.',
+                    },
+                ],
+            },
+        ],
+    }
+
+    headers = {
+        'Content-Type': 'application/json',
+        'anthropic-version': '2023-06-01',
+    }
+    # OAuth tokens (sk-ant-oat*) use Bearer auth; direct API keys use x-api-key
+    if api_key.startswith('sk-ant-oat'):
+        headers['Authorization'] = f'Bearer {api_key}'
+    else:
+        headers['x-api-key'] = api_key
+
+    req = request.Request(
+        'https://api.anthropic.com/v1/messages',
+        data=json.dumps(payload).encode(),
+        headers=headers,
+    )
+    with request.urlopen(req, timeout=timeout) as resp:
+        data = json.loads(resp.read().decode())
+    # Extract text from first content block
+    for block in data.get('content', []):
+        if block.get('type') == 'text':
+            return block['text']
+    raise RuntimeError('Anthropic response had no text content')
+
+
 def resolve_backend(preferred: str, purpose: str) -> list[str]:
     choice = (preferred or 'auto').lower()
-    if choice in {'ollama', 'openai'}:
+    if choice in {'ollama', 'openai', 'anthropic'}:
         return [choice]
     purpose = (purpose or 'prototype').lower()
     if purpose in {'bulk', 'final'}:
-        return ['ollama', 'openai']
-    return ['openai', 'ollama']
+        return ['anthropic', 'ollama', 'openai']
+    return ['anthropic', 'openai', 'ollama']
 
 
 def resolve_model(backend: str, explicit_model: str | None) -> str:
@@ -191,6 +270,8 @@ def resolve_model(backend: str, explicit_model: str | None) -> str:
         return explicit_model
     if backend == 'openai':
         return DEFAULT_OPENAI_MODEL
+    if backend == 'anthropic':
+        return DEFAULT_ANTHROPIC_MODEL
     return DEFAULT_OLLAMA_MODEL
 
 
@@ -199,6 +280,8 @@ def call_reviewer(args, prompt: str, image_path: Path) -> tuple[str, str]:
     for backend in resolve_backend(args.backend, args.purpose):
         model = resolve_model(backend, args.model)
         try:
+            if backend == 'anthropic':
+                return backend, call_anthropic(model, prompt, image_path, args.timeout)
             if backend == 'openai':
                 return backend, call_openai(model, prompt, image_path, args.timeout)
             return backend, call_ollama(args.host, model, prompt, image_path, args.timeout)
@@ -443,7 +526,7 @@ def main():
     ap = argparse.ArgumentParser(description='Run multimodal creative review on a rendered StrikeFrame asset.')
     ap.add_argument('image')
     ap.add_argument('--host', default=DEFAULT_HOST)
-    ap.add_argument('--backend', choices=['auto', 'ollama', 'openai'], default='auto')
+    ap.add_argument('--backend', choices=['auto', 'ollama', 'openai', 'anthropic'], default='auto')
     ap.add_argument('--model', default=None)
     ap.add_argument('--purpose', choices=['prototype', 'human-review', 'bulk', 'final'], default='prototype')
     ap.add_argument('--channel', default='generic')
