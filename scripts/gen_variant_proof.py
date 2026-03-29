@@ -60,15 +60,16 @@ def _center_start(content_height):
 
 
 # ComparisonPanel: headers(50) + 5 rows × 100px = 550px content
-_cp_content_h = 50 + 5 * 100
+# Benchmark: LMNT comparison fills entire canvas. Bold text. Icon+text rows.
+_cp_content_h = 60 + 5 * 110
 COMPARISON_PANEL_CONTENT = {
     'comparisonTable': {
-        'startX': 72,
+        'startX': 60,
         'startY': _center_start(_cp_content_h),
-        'colWidth': 440,
-        'rowHeight': 100,
-        'headerSize': 22,
-        'bodySize': 20,
+        'colWidth': 450,
+        'rowHeight': 110,
+        'headerSize': 24,
+        'bodySize': 22,
         'highlightCol': 'right',
         'leftHeader': 'GENERIC SHOP',
         'rightHeader': 'THE TACKLE ROOM',
@@ -82,8 +83,9 @@ COMPARISON_PANEL_CONTENT = {
     }
 }
 
-# OfferFrame: orig(32) + gap(16) + sale(96) + badge(32) + gap(18) + offer(20) ≈ 220px
-_of_content_h = 220
+# OfferFrame: Benchmark says price IS the hero. Make it massive.
+# orig(36) + gap(20) + sale(148) + badge(36) + gap(20) + offer(24) ≈ 290px
+_of_content_h = 290
 _of_center = ZONE_TOP + (ZONE_HEIGHT - _of_content_h) // 2
 OFFER_FRAME_CONTENT = {
     'offerFrame': {
@@ -91,21 +93,21 @@ OFFER_FRAME_CONTENT = {
         'salePrice': '$224.99',
         'savings': 'SAVE 22%',
         'offerText': 'FREE SHIPPING OVER $99',
-        'salePriceSize': 96,
-        'originalPriceSize': 32,
-        'priceY': _of_center + 140  # sale price baseline
+        'salePriceSize': 148,
+        'originalPriceSize': 36,
+        'priceY': _of_center + 180  # sale price baseline
     }
 }
 
-# BenefitStack: 4 items × 130px spacing = 390px content
-_bs_content_h = 4 * 130
+# BenefitStack: Benchmark has bold text + large icons. Fill the zone.
+_bs_content_h = 4 * 135
 BENEFIT_STACK_CONTENT = {
     'benefitStack': {
         'startX': 80,
         'startY': _center_start(_bs_content_h),
-        'spacing': 130,
-        'iconSize': 40,
-        'textSize': 30,
+        'spacing': 135,
+        'iconSize': 44,
+        'textSize': 32,
         'items': [
             {'icon': 'shield', 'label': '500lb rated hardware'},
             {'icon': 'wave', 'label': 'Built for offshore current'},
@@ -115,28 +117,29 @@ BENEFIT_STACK_CONTENT = {
     }
 }
 
-# Testimonial: quote mark(80) + quote(~150) + gap(40) + stars(36) + gap(24) + name(22) + role(18) ≈ 370px
-_tm_content_h = 370
+# Testimonial: Benchmark — quote is HUGE, the visual hero. Stars oversized.
+# LMNT: "I'll never go back to Gatorade" fills 40% of canvas.
+_tm_content_h = 450
 TESTIMONIAL_CONTENT = {
     'testimonial': {
         'quote': 'This dredge changed our tournament results completely.',
         'stars': 5,
-        'starSize': 40,
+        'starSize': 48,
         'name': 'Capt. Mike Henderson',
         'role': 'Blue Water Charters, Islamorada',
-        'quoteSize': 42,
-        'quoteMaxChars': 24,
+        'quoteSize': 52,
+        'quoteMaxChars': 20,
         'startY': _center_start(_tm_content_h)
     }
 }
 
-# SplitReveal: labels(30) + 4 rows × 120px = 510px
-_sr_content_h = 30 + 4 * 120
+# SplitReveal: bigger text, tighter to fill zone
+_sr_content_h = 40 + 4 * 125
 SPLIT_REVEAL_CONTENT = {
     'splitReveal': {
         'startY': _center_start(_sr_content_h),
-        'rowHeight': 120,
-        'textSize': 24,
+        'rowHeight': 125,
+        'textSize': 26,
         'problemLabel': 'THE PROBLEM',
         'solutionLabel': 'THE FIX',
         'items': [
@@ -304,10 +307,12 @@ def build_config(primitive_name, variant_name, output_path):
             'footer': ''
         },
         'theme': {
-            # Solid orange CTA — not translucent gray
+            # Benchmark-informed: solid accent CTA, high contrast
             'ctaFill': 'rgba(232,93,58,0.95)',
             'ctaStroke': 'none',
             'ctaTextColor': '#ffffff',
+            'headlineColor': '#ffffff',
+            'subheadColor': 'rgba(255,255,255,0.85)',
             # No panel for these proofs
             'textPanelFill': 'none',
             'textPanelStroke': 'none'
@@ -315,10 +320,12 @@ def build_config(primitive_name, variant_name, output_path):
         'typography': {
             'headlineFontFamily': 'Montserrat, Arial, sans-serif',
             'bodyFontFamily': 'Source Sans Pro, Arial, sans-serif',
-            'headlineSize': 48,
-            'headlineWeight': 800,
-            'subheadSize': 24 if subhead else 1,
-            'ctaSize': 22,
+            # Benchmark: headlines are HUGE. LMNT fills 25-30% of canvas width.
+            'headlineSize': 56,
+            'headlineWeight': 900,
+            'subheadSize': 26 if subhead else 1,
+            'ctaSize': 24,
+            'ctaWeight': 700,
             'footerSize': 1
         },
         'layout': {
@@ -326,21 +333,22 @@ def build_config(primitive_name, variant_name, output_path):
             'minHeadlineCtaGap': 40,
             'ctaRectY': cta_y,
             'ctaY': cta_y + 28,
-            'ctaWidth': 380,
-            'ctaHeight': 56,
-            'ctaRadius': 12,
-            'headlineY': 130,
+            'ctaWidth': 400,
+            'ctaHeight': 62,
+            'ctaRadius': 14,
+            'headlineY': 140,
             'subheadY': prim.get('subheadY', 310)
         },
         'overlay': {
-            # Darker overlay for text readability on real photos
-            'leftColor': '5,18,30',
-            'midColor': '5,18,30',
-            'rightColor': '5,18,30',
-            'leftOpacity': 0.72,
-            'midOpacity': 0.58,
-            'rightOpacity': 0.72,
-            'vignetteBottom': 0.25
+            # Benchmark-dark: LMNT uses near-black backgrounds.
+            # Heavy vignette for text readability on real photos.
+            'leftColor': '5,12,22',
+            'midColor': '5,12,22',
+            'rightColor': '5,12,22',
+            'leftOpacity': 0.82,
+            'midOpacity': 0.68,
+            'rightOpacity': 0.82,
+            'vignetteBottom': 0.35
         },
         'output': output_path,
         **content
