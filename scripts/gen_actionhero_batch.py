@@ -30,6 +30,9 @@ CTA_YS = [930, 948, 966, 984, 1002]
 VIGNETTES = [0.64, 0.72, 0.80, 0.88, 0.94]
 MID_OPACITIES = [0.04, 0.08, 0.12, 0.16, 0.20]
 
+# Structural layout variants — cycle through for real layout diversity
+LAYOUT_VARIANTS = ['bottom-heavy', 'center-band', 'split-action', 'compact-strip']
+
 base = json.loads(BASE.read_text())
 defaults = deepcopy(base)
 defaults['output'] = None
@@ -62,6 +65,9 @@ for i in range(25):
     cfg['badges'][0]['text'] = BADGES[i % len(BADGES)]
     cfg['badges'][0]['width'] = 200 + (i % 5) * 18
     cfg['badges'][0]['x'] = 1040 - cfg['badges'][0]['width']
+
+    # Structural variant — activates actionHero primitive for geometry export
+    cfg['actionHero'] = {'variant': LAYOUT_VARIANTS[i % len(LAYOUT_VARIANTS)]}
 
     renders.append(cfg)
 

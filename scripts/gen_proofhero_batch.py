@@ -32,6 +32,9 @@ QUOTE_WIDTHS = [720, 760, 800, 840, 880]
 PRODUCT_WIDTHS = [180, 200, 220, 240, 260]
 REVIEW_HEIGHTS = [180, 195, 210, 225, 240]
 
+# Structural layout variants — cycle through for real layout diversity
+LAYOUT_VARIANTS = ['quote-dominant', 'review-dominant', 'balanced']
+
 base = json.loads(BASE.read_text())
 defaults = deepcopy(base)
 defaults['output'] = None
@@ -54,6 +57,8 @@ for i in range(25):
     cfg['proofHero']['productY'] = 720 if cfg['proofHero']['reviewHeight'] <= 210 else 740
     cfg['proofHero'].setdefault('cta', {})
     cfg['proofHero']['cta']['width'] = 400 if i % 2 == 0 else 430
+    # Structural variant — cycle through layout modes for diversity
+    cfg['proofHero']['variant'] = LAYOUT_VARIANTS[i % len(LAYOUT_VARIANTS)]
     renders.append(cfg)
 
 batch = {

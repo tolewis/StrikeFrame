@@ -91,6 +91,9 @@ DESCRIPTIONS = {
 VIGNETTES = [0.72, 0.80, 0.88, 0.92, 0.96, 0.84, 0.76]
 MID_OPACITIES = [0.16, 0.20, 0.14, 0.18, 0.12, 0.22, 0.16]
 
+# Structural layout variants for offerFrame primitive
+LAYOUT_VARIANTS = ['standard', 'hero-price', 'badge-first']
+
 # ---------------------------------------------------------------------------
 # Build per-category renders
 # ---------------------------------------------------------------------------
@@ -205,6 +208,17 @@ for cat_key, count, slug in PLAN:
                 'color': 'rgba(255,255,255,0.90)'
             }
         ]
+
+        # OfferFrame primitive — provides geometry + variant tracking
+        # The actual price rendering is still done by textLayers above,
+        # but this activates the primitive for layout sidecar geometry
+        cfg['offerFrame'] = {
+            'salePrice': f'${price}',
+            'savings': badge['text'],
+            'salePriceSize': 148,
+            'priceY': 745,
+            'variant': LAYOUT_VARIANTS[n % len(LAYOUT_VARIANTS)]
+        }
 
         # SAVE badge
         badge_text = badge['text']

@@ -111,6 +111,10 @@ AUTHORITY_BAR_CONTENT = {
     }
 }
 
+ACTION_HERO_CONTENT = {
+    'actionHero': {}  # variant injected below
+}
+
 PROOF_HERO_CONTENT = {
     'proofHero': {
         'quote': 'Best offshore tackle supplier I have found. Period.',
@@ -171,6 +175,13 @@ PRIMITIVES = {
         'variants': ['standard', 'bold'],
         'headline': 'OFFSHORE TACKLE\nYOU CAN TRUST',
         'cta': 'SHOP ALL GEAR →'
+    },
+    'actionHero': {
+        'configKey': 'actionHero',
+        'content': ACTION_HERO_CONTENT,
+        'variants': ['bottom-heavy', 'center-band', 'split-action', 'compact-strip'],
+        'headline': 'WAHOO DON\'T WAIT\nFOR SLOW GEAR',
+        'cta': 'SHOP WAHOO GEAR →'
     },
     'proofHero': {
         'configKey': 'proofHero',

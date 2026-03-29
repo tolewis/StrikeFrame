@@ -4,6 +4,9 @@
 Structure: 5 copy sets × 5 renders each = 25 total.
 For each copy set, vary the background from the hero image list.
 Hero images are cycled across all 25 renders so all 6 images appear.
+
+v2: Cycles through primitive variant modes (standard, hero-right,
+compact, split-weight) for structural layout diversity across renders.
 """
 
 import json
@@ -49,6 +52,9 @@ OVERLAY_VARIANTS = [
     {'leftOpacity': 0.80, 'midOpacity': 0.48, 'rightOpacity': 0.82, 'vignetteBottom': 0.24},
     {'leftOpacity': 0.76, 'midOpacity': 0.52, 'rightOpacity': 0.78, 'vignetteBottom': 0.20},
 ]
+
+# Structural layout variants — cycle through for real layout diversity
+LAYOUT_VARIANTS = ['standard', 'hero-right', 'compact', 'split-weight']
 
 # ---------------------------------------------------------------------------
 # Load canonical render as template
@@ -127,6 +133,8 @@ for set_idx, cs in enumerate(copy_sets):
         cfg['comparisonTable']['rows'] = deepcopy(cs['rows'])
         # Required: leftTextColor on all renders
         cfg['comparisonTable']['leftTextColor'] = 'rgba(255,255,255,0.82)'
+        # Structural variant — cycle through layout modes for diversity
+        cfg['comparisonTable']['variant'] = LAYOUT_VARIANTS[global_idx % len(LAYOUT_VARIANTS)]
 
         renders.append(cfg)
 
