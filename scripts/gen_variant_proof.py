@@ -1,0 +1,378 @@
+#!/usr/bin/env python3
+"""
+Generate variant proof renders for all StrikeFrame primitives.
+
+For each primitive × each variant, renders a sample image using
+representative content. Outputs to a proof directory with labeled
+filenames: {primitive}-{variant}.jpg
+
+Then assembles a labeled contact sheet (proof-sheet.jpg).
+
+Usage:
+    python3 scripts/gen_variant_proof.py [--output-dir DIR]
+"""
+
+import json
+import os
+import sys
+import subprocess
+import argparse
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+RENDER_JS = os.path.join(SCRIPT_DIR, 'render.js')
+
+# --- Sample content for each primitive ---
+
+COMPARISON_PANEL_CONTENT = {
+    'comparisonTable': {
+        'startX': 72,
+        'startY': 340,
+        'colWidth': 440,
+        'rowHeight': 68,
+        'headerSize': 22,
+        'bodySize': 19,
+        'highlightCol': 'right',
+        'leftHeader': 'GENERIC SHOP',
+        'rightHeader': 'THE TACKLE ROOM',
+        'rows': [
+            {'left': 'Generic Freshwater Stock', 'right': 'Offshore-Only Inventory'},
+            {'left': 'Ask Google for Tips', 'right': 'Captain-Tested Advice'},
+            {'left': '1-2 Week Shipping', 'right': 'Ships Same Day'},
+            {'left': 'Hit or Miss 80lb+ Gear', 'right': 'Full Heavy Tackle'},
+            {'left': 'No One to Call', 'right': 'Live Expert on the Line'},
+        ]
+    }
+}
+
+OFFER_FRAME_CONTENT = {
+    'offerFrame': {
+        'originalPrice': '$289.99',
+        'salePrice': '$224.99',
+        'savings': 'SAVE 22%',
+        'offerText': 'FREE SHIPPING OVER $99',
+        'salePriceSize': 72,
+        'originalPriceSize': 28,
+        'priceY': 620
+    }
+}
+
+BENEFIT_STACK_CONTENT = {
+    'benefitStack': {
+        'startX': 80,
+        'startY': 520,
+        'spacing': 90,
+        'iconSize': 36,
+        'textSize': 28,
+        'items': [
+            {'icon': 'shield', 'label': '500lb rated hardware'},
+            {'icon': 'wave', 'label': 'Built for offshore current'},
+            {'icon': 'check', 'label': 'Complete kit, nothing missing'},
+            {'icon': 'anchor', 'label': 'Captain-verified gear'}
+        ]
+    }
+}
+
+TESTIMONIAL_CONTENT = {
+    'testimonial': {
+        'quote': 'This dredge changed our tournament results completely.',
+        'stars': 5,
+        'starSize': 32,
+        'name': 'Capt. Mike Henderson',
+        'role': 'Blue Water Charters, Islamorada',
+        'quoteSize': 36,
+        'quoteMaxChars': 28,
+        'startY': 280
+    }
+}
+
+SPLIT_REVEAL_CONTENT = {
+    'splitReveal': {
+        'startY': 380,
+        'rowHeight': 70,
+        'textSize': 22,
+        'problemLabel': 'THE PROBLEM',
+        'solutionLabel': 'THE FIX',
+        'items': [
+            {'left': 'Incomplete planer kits', 'right': 'Every piece included'},
+            {'left': 'Wrong bridle size', 'right': 'Matched to your planer'},
+            {'left': 'Cheap snap swivels', 'right': '500lb ball bearings'},
+            {'left': 'No rigging guidance', 'right': 'Captain setup guide'}
+        ]
+    }
+}
+
+AUTHORITY_BAR_CONTENT = {
+    'authorityBar': {
+        'barY': 720,
+        'barHeight': 40,
+        'textSize': 13,
+        'publications': ['TOURNAMENT TESTED', 'CAPTAIN VERIFIED', 'OFFSHORE PROVEN']
+    }
+}
+
+PROOF_HERO_CONTENT = {
+    'proofHero': {
+        'quote': 'Best offshore tackle supplier I have found. Period.',
+        'quoteSize': 58,
+        'quoteMaxChars': 22,
+        'maxQuoteLines': 3,
+        'starsText': '★★★★★',
+        'starsSize': 72,
+        'cta': {
+            'text': 'SHOP OFFSHORE TACKLE',
+            'width': 420,
+            'height': 64,
+        }
+    }
+}
+
+# --- Primitive definitions with their variants ---
+
+PRIMITIVES = {
+    'comparisonPanel': {
+        'configKey': 'comparisonTable',
+        'content': COMPARISON_PANEL_CONTENT,
+        'variants': ['standard', 'hero-right', 'compact', 'split-weight'],
+        'headline': 'WHY SERIOUS ANGLERS\nCHOOSE THE TACKLE ROOM',
+        'cta': 'SHOP NOW →'
+    },
+    'offerFrame': {
+        'configKey': 'offerFrame',
+        'content': OFFER_FRAME_CONTENT,
+        'variants': ['standard', 'hero-price', 'badge-first'],
+        'headline': 'COMPLETE DREDGE\nSPREAD SYSTEM',
+        'cta': 'SAVE NOW →'
+    },
+    'benefitStack': {
+        'configKey': 'benefitStack',
+        'content': BENEFIT_STACK_CONTENT,
+        'variants': ['standard', 'compact', 'card'],
+        'headline': 'TOURNAMENT-GRADE\nDREDGE SYSTEMS',
+        'cta': 'BUILD YOUR SPREAD →'
+    },
+    'testimonial': {
+        'configKey': 'testimonial',
+        'content': TESTIMONIAL_CONTENT,
+        'variants': ['standard', 'quote-hero', 'attribution-forward'],
+        'headline': 'WHAT CAPTAINS SAY',
+        'cta': 'READ MORE REVIEWS →'
+    },
+    'splitReveal': {
+        'configKey': 'splitReveal',
+        'content': SPLIT_REVEAL_CONTENT,
+        'variants': ['standard', 'pain-heavy', 'solution-hero'],
+        'headline': 'PLANER BRIDLE KITS\nDONE RIGHT',
+        'cta': 'SEE COMPLETE KITS →'
+    },
+    'authorityBar': {
+        'configKey': 'authorityBar',
+        'content': AUTHORITY_BAR_CONTENT,
+        'variants': ['standard', 'bold'],
+        'headline': 'OFFSHORE TACKLE\nYOU CAN TRUST',
+        'cta': 'SHOP ALL GEAR →'
+    },
+    'proofHero': {
+        'configKey': 'proofHero',
+        'content': PROOF_HERO_CONTENT,
+        'variants': ['quote-dominant', 'review-dominant', 'balanced'],
+        'headline': '',
+        'cta': ''
+    }
+}
+
+def build_config(primitive_name, variant_name, output_path):
+    """Build a complete render config for one primitive variant."""
+    prim = PRIMITIVES[primitive_name]
+    content = json.loads(json.dumps(prim['content']))  # deep copy
+
+    # Inject variant into content
+    config_key = prim['configKey']
+    if config_key in content:
+        content[config_key]['variant'] = variant_name
+
+    config = {
+        'preset': 'social-square',
+        'template': 'banner',
+        'text': {
+            'headline': prim['headline'],
+            'subhead': '',
+            'cta': prim['cta'],
+            'footer': 'THETACKLEROOM.COM'
+        },
+        'theme': {
+            'gradientStart': '#0b2a40',
+            'gradientEnd': '#1f6b8f'
+        },
+        'typography': {
+            'headlineFontFamily': 'Montserrat, Arial, sans-serif',
+            'bodyFontFamily': 'Source Sans Pro, Arial, sans-serif',
+            'headlineSize': 48,
+            'subheadSize': 1,
+            'ctaSize': 22,
+            'footerSize': 1
+        },
+        'layout': {
+            'personality': 'centered-hero',
+            'minHeadlineCtaGap': 40
+        },
+        'output': output_path,
+        **content
+    }
+
+    return config
+
+
+def main():
+    parser = argparse.ArgumentParser(description='Generate variant proof renders')
+    parser.add_argument('--output-dir', default=os.path.join(
+        '/mnt/raid/Data/tmp/openclaw-builds/captain-bill/strikeframe', 'variant-proof'))
+    args = parser.parse_args()
+
+    output_dir = args.output_dir
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Write all configs as a batch
+    renders = []
+    manifest = []
+
+    for prim_name, prim_def in PRIMITIVES.items():
+        for variant in prim_def['variants']:
+            filename = f'{prim_name}-{variant}.jpg'
+            output_path = os.path.join(output_dir, filename)
+            config = build_config(prim_name, variant, output_path)
+            renders.append(config)
+            manifest.append({
+                'primitive': prim_name,
+                'variant': variant,
+                'output': output_path,
+                'critic': output_path.replace('.jpg', '.critic.json')
+            })
+
+    # Write batch config
+    batch_path = os.path.join(output_dir, 'variant-proof-batch.json')
+    # Render individually since each config is self-contained
+    results = []
+    for i, config in enumerate(renders):
+        entry = manifest[i]
+        config_path = os.path.join(output_dir, f'_tmp_{entry["primitive"]}-{entry["variant"]}.json')
+        with open(config_path, 'w') as f:
+            json.dump(config, f, indent=2)
+
+        result = subprocess.run(
+            ['node', RENDER_JS, config_path],
+            capture_output=True, text=True, cwd=PROJECT_ROOT
+        )
+        if result.returncode != 0:
+            print(f'  FAIL: {entry["primitive"]}-{entry["variant"]}: {result.stderr.strip()}')
+            entry['status'] = 'fail'
+            entry['error'] = result.stderr.strip()
+        else:
+            try:
+                render_data = json.loads(result.stdout)
+                if isinstance(render_data, list):
+                    render_data = render_data[0]
+                entry['criticScore'] = render_data.get('criticScore', 0)
+                entry['criticStatus'] = render_data.get('criticStatus', 'unknown')
+                entry['status'] = 'ok'
+                print(f'  OK: {entry["primitive"]}-{entry["variant"]} — critic {entry["criticScore"]}/100 ({entry["criticStatus"]})')
+            except json.JSONDecodeError:
+                entry['status'] = 'ok'
+                entry['criticScore'] = 0
+                print(f'  OK: {entry["primitive"]}-{entry["variant"]} (no critic data)')
+
+        # Clean up temp config
+        os.remove(config_path)
+        results.append(entry)
+
+    # Write manifest
+    manifest_path = os.path.join(output_dir, 'manifest.json')
+    with open(manifest_path, 'w') as f:
+        json.dump(results, f, indent=2)
+
+    # Summary
+    ok = sum(1 for r in results if r['status'] == 'ok')
+    fail = sum(1 for r in results if r['status'] == 'fail')
+    print(f'\n{ok}/{len(results)} renders succeeded, {fail} failed')
+    print(f'Output: {output_dir}')
+    print(f'Manifest: {manifest_path}')
+
+    # Build proof sheet
+    build_proof_sheet(results, output_dir)
+
+    return 0 if fail == 0 else 1
+
+
+def build_proof_sheet(results, output_dir):
+    """Assemble a labeled contact sheet using ImageMagick montage."""
+    # Check if montage is available
+    check = subprocess.run(['which', 'montage'], capture_output=True)
+    if check.returncode != 0:
+        print('WARNING: ImageMagick montage not found — skipping proof sheet')
+        return
+
+    ok_results = [r for r in results if r['status'] == 'ok' and os.path.exists(r['output'])]
+    if not ok_results:
+        print('No successful renders to assemble')
+        return
+
+    # Group by primitive
+    by_primitive = {}
+    for r in ok_results:
+        by_primitive.setdefault(r['primitive'], []).append(r)
+
+    # Build one row per primitive — labeled tiles
+    labeled_tiles = []
+    for prim_name, prim_results in by_primitive.items():
+        for r in prim_results:
+            score = r.get('criticScore', '?')
+            status = r.get('criticStatus', '?')
+            label = f'{prim_name}\\n{r["variant"]}\\n{score}/100 ({status})'
+
+            # Create labeled tile
+            labeled_path = r['output'].replace('.jpg', '-labeled.jpg')
+            subprocess.run([
+                'convert', r['output'],
+                '-gravity', 'South',
+                '-background', '#111111',
+                '-fill', '#ffffff',
+                '-font', 'DejaVu-Sans',
+                '-pointsize', '24',
+                '-splice', '0x80',
+                '-annotate', '+0+10', label,
+                '-resize', '400x480',
+                labeled_path
+            ], capture_output=True)
+            if os.path.exists(labeled_path):
+                labeled_tiles.append(labeled_path)
+            else:
+                labeled_tiles.append(r['output'])
+
+    if not labeled_tiles:
+        return
+
+    # Montage — max 5 columns
+    proof_path = os.path.join(output_dir, 'proof-sheet.jpg')
+    cols = min(5, max(len(v) for v in by_primitive.values()))
+    subprocess.run([
+        'montage',
+        *labeled_tiles,
+        '-tile', f'{cols}x',
+        '-geometry', '400x480+4+4',
+        '-background', '#1a1a1a',
+        proof_path
+    ], capture_output=True)
+
+    if os.path.exists(proof_path):
+        print(f'Proof sheet: {proof_path}')
+    else:
+        print('WARNING: Proof sheet assembly failed')
+
+    # Clean up labeled tiles
+    for t in labeled_tiles:
+        if t.endswith('-labeled.jpg') and os.path.exists(t):
+            os.remove(t)
+
+
+if __name__ == '__main__':
+    sys.exit(main())
