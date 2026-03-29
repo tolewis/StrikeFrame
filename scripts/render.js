@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
 const { buildPrimitiveOutputs, getPrimitiveRegistry } = require('../lib/primitives');
+const { Rect, Text, SafeZone } = require('../lib/geometry');
 
 const projectRoot = path.resolve(__dirname, '..');
 const argPath = process.argv[2] || 'configs/sample-banner.json';
@@ -309,7 +310,7 @@ function buildOfferFrameSvg(cfg) {
   // Original price with strikethrough
   if (of.originalPrice) {
     const origY = priceY - salePriceSize - 12;
-    const origTextWidth = Math.round(of.originalPrice.length * origPriceSize * 0.58);
+    const origTextWidth = Text.measureWidth(of.originalPrice, origPriceSize, font, { mode: 'narrow' });
     const origTextX = isCentered ? Math.round(baseX - origTextWidth / 2) : baseX;
     nodes += `<text x="${baseX}" y="${origY}" text-anchor="${anchor}" fill="rgba(255,255,255,0.45)" font-size="${origPriceSize}" font-family="${font}" font-weight="400">${escapeXml(of.originalPrice)}</text>`;
     nodes += `<rect x="${origTextX - 4}" y="${origY - Math.round(origPriceSize * 0.35)}" width="${origTextWidth + 8}" height="2" fill="rgba(255,255,255,0.6)"/>`;
@@ -579,8 +580,8 @@ function normalizeConfig(raw) {
     if (cfg.layout.leftX < panelLeft) cfg.layout.leftX = panelLeft;
     const headlineLines = wrapText(cfg.text.headline, cfg.layout.maxHeadlineChars);
     const subheadLines = wrapText(cfg.text.subhead, cfg.layout.maxSubheadChars);
-    const estHeadlineW = Math.round(Math.max(1, ...headlineLines.map(l => l.length)) * cfg.typography.headlineSize * 0.58);
-    const estSubheadW = Math.round(Math.max(1, ...subheadLines.map(l => l.length)) * cfg.typography.subheadSize * 0.58);
+    const estHeadlineW = Math.max(...headlineLines.map(l => Text.measureWidth(l, cfg.typography.headlineSize, cfg.typography.headlineFontFamily, { fontWeight: cfg.typography.headlineWeight })));
+    const estSubheadW = Math.max(...subheadLines.map(l => Text.measureWidth(l, cfg.typography.subheadSize, cfg.typography.bodyFontFamily)));
     const maxTextRight = cfg.layout.leftX + Math.max(estHeadlineW, estSubheadW, cfg.layout.ctaWidth);
     const requiredWidth = maxTextRight - cfg.layout.panelX + panelPad;
     const maxPanelWidth = cfg.width - cfg.layout.panelX - 40;
@@ -770,7 +771,7 @@ function buildProofHeroSvg(cfg) {
 }
 
 function rectFromXYWH(x, y, width, height) {
-  return { x, y, width, height, left: x, top: y, right: x + width, bottom: y + height, centerX: x + width / 2, centerY: y + height / 2, area: width * height };
+  return Rect.create(x, y, width, height);
 }
 
 function estimateProofHeroGeometry(cfg) {
@@ -778,48 +779,134 @@ function estimateProofHeroGeometry(cfg) {
   const p = cfg.proofHero;
   const quoteLines = wrapText(p.quote || '', p.quoteMaxChars || 16);
   const quoteStep = p.quoteLineHeight || Math.round((p.quoteSize || 64) * 1.08);
-  const quoteWidth = Math.max(...quoteLines.map(line => Math.max(1, line.length))) * ((p.quoteSize || 64) * 0.58);
+  const quoteFontFamily = p.quoteFontFamily || 'Georgia, Times New Roman, serif';
+  const quoteWidth = Math.max(...quoteLines.map(line => Text.measureWidth(line, p.quoteSize || 64, quoteFontFamily, { fontWeight: p.quoteWeight || 700 })));
   const quoteHeight = Math.max(1, quoteLines.length) * quoteStep;
+  const starsText = p.starsText || '★★★★★';
+  const starsWidth = Text.measureWidth(starsText, p.starsSize || 80, 'Arial, sans-serif');
   const elements = [
-    { id: 'proofHero.quote', type: 'text', rect: rectFromXYWH(p.quoteX || 120, (p.quoteY || 110) - (p.quoteSize || 64), Math.round(quoteWidth), Math.round(quoteHeight)) },
-    { id: 'proofHero.stars', type: 'text', rect: rectFromXYWH(p.starsX || 260, (p.starsY || 320) - (p.starsSize || 80), Math.round((p.starsSize || 80) * 4.2), Math.round((p.starsSize || 80) * 1.2)) }
+    { id: 'proofHero.quote', type: 'text', fontSize: p.quoteSize || 64, rect: rectFromXYWH(p.quoteX || 120, (p.quoteY || 110) - (p.quoteSize || 64), Math.round(quoteWidth), Math.round(quoteHeight)) },
+    { id: 'proofHero.stars', type: 'text', fontSize: p.starsSize || 80, rect: rectFromXYWH(p.starsX || 260, (p.starsY || 320) - (p.starsSize || 80), Math.round(starsWidth), Math.round((p.starsSize || 80) * 1.2)) }
   ];
-  if (p.cta && p.cta.text) elements.push({ id: 'proofHero.cta', type: 'cta', rect: rectFromXYWH(p.cta.x, p.cta.y, p.cta.width, p.cta.height) });
+  if (p.cta && p.cta.text) elements.push({ id: 'proofHero.cta', type: 'cta', fontSize: p.cta.fontSize || 28, rect: rectFromXYWH(p.cta.x, p.cta.y, p.cta.width, p.cta.height) });
   return elements;
 }
 
 function buildLayoutSidecar(cfg, primitiveElements = [], resolvedImageLayers = []) {
-  const canvas = rectFromXYWH(0, 0, cfg.width, cfg.height);
+  const canvas = Rect.create(0, 0, cfg.width, cfg.height);
   const elements = [];
+
+  // --- Collect all elements with geometry ---
+
+  // Image layers
   const allImageLayers = [...(Array.isArray(cfg.imageLayers) ? cfg.imageLayers : []), ...resolvedImageLayers];
   allImageLayers.forEach((img, i) => {
-    elements.push({ id: `imageLayer.${i + 1}`, type: 'image', source: img.path || null, rect: rectFromXYWH(img.x || 0, img.y || 0, img.width || 0, img.height || 0) });
+    elements.push({ id: `imageLayer.${i + 1}`, type: 'image', source: img.path || null, rect: Rect.create(img.x || 0, img.y || 0, img.width || 0, img.height || 0) });
   });
+
+  // Primitive elements (from proofHero etc.)
   elements.push(...primitiveElements);
+
+  // Text layers
   if (Array.isArray(cfg.textLayers)) {
     cfg.textLayers.forEach((t, i) => {
       const lines = wrapText(t.content || '', t.maxChars || 26);
-      const step = t.lineHeight || Math.round((t.fontSize || 28) * 1.15);
-      const width = Math.max(...lines.map(line => Math.max(1, line.length))) * ((t.fontSize || 28) * 0.58);
+      const fontSize = t.fontSize || 28;
+      const fontFamily = t.fontFamily || cfg.typography.bodyFontFamily;
+      const step = t.lineHeight || Math.round(fontSize * 1.15);
+      const width = Math.max(...lines.map(line => Text.measureWidth(line, fontSize, fontFamily)));
       const height = Math.max(1, lines.length) * step;
-      elements.push({ id: `textLayer.${i + 1}`, type: 'text', rect: rectFromXYWH(t.x || 0, (t.y || 0) - (t.fontSize || 28), Math.round(width), Math.round(height)) });
+      elements.push({ id: `textLayer.${i + 1}`, type: 'text', fontSize, rect: Rect.create(t.x || 0, (t.y || 0) - fontSize, Math.round(width), Math.round(height)) });
     });
   }
-  // Include primary layout positions for gap verification
+
+  // Primary text elements (headline, subhead, CTA, footer)
   const isCenteredLayout = cfg.layout.personality === 'centered-hero' || cfg.layout.align === 'center';
+  const textAlign = isCenteredLayout ? 'center' : 'left';
+  const textX = isCenteredLayout ? Math.round(cfg.width / 2) : cfg.layout.leftX;
+
   const headlineLines = wrapText(cfg.text.headline, cfg.layout.maxHeadlineChars);
   const headlineStep = cfg.height >= 1350 ? 82 : (cfg.preset === 'linkedin-landscape' ? 68 : 88);
-  const headlineEstHeight = Math.round(cfg.typography.headlineSize + ((Math.max(headlineLines.length, 1) - 1) * headlineStep));
-  const headlineTop = Math.round(cfg.layout.headlineY - cfg.typography.headlineSize * 0.82);
-  const headlineBottom = headlineTop + headlineEstHeight;
-  const ctaTop = cfg.layout.ctaRectY;
+  const headlineBlock = estimateTextBlock({
+    lines: headlineLines, fontSize: cfg.typography.headlineSize, lineStep: headlineStep,
+    x: textX, y: cfg.layout.headlineY, align: textAlign,
+    fontFamily: cfg.typography.headlineFontFamily, fontWeight: cfg.typography.headlineWeight
+  });
+  elements.push({ id: 'headline', type: 'text', fontSize: cfg.typography.headlineSize, rect: Rect.fromObject(headlineBlock) });
+
+  const subheadLines = wrapText(cfg.text.subhead, cfg.layout.maxSubheadChars);
+  const subheadStep = cfg.typography.subheadLineHeight || (cfg.preset === 'linkedin-landscape' ? 34 : Math.round(cfg.typography.subheadSize * 1.22));
+  const subheadBlock = estimateTextBlock({
+    lines: subheadLines, fontSize: cfg.typography.subheadSize, lineStep: subheadStep,
+    x: textX, y: cfg.layout.subheadY, align: textAlign,
+    fontFamily: cfg.typography.bodyFontFamily
+  });
+  elements.push({ id: 'subhead', type: 'text', fontSize: cfg.typography.subheadSize, rect: Rect.fromObject(subheadBlock) });
+
+  const ctaGeom = getCtaGeometry(cfg);
+  const ctaRect = Rect.create(ctaGeom.rectX, ctaGeom.rectY, cfg.layout.ctaWidth, cfg.layout.ctaHeight);
+  elements.push({ id: 'cta', type: 'cta', fontSize: cfg.typography.ctaSize, rect: ctaRect });
+
+  const footerBlock = estimateTextBlock({
+    lines: [cfg.text.footer], fontSize: cfg.typography.footerSize, lineStep: cfg.typography.footerSize,
+    x: textX, y: cfg.layout.footerY, align: textAlign,
+    fontFamily: cfg.typography.bodyFontFamily, fontWeight: cfg.typography.footerWeight
+  });
+  elements.push({ id: 'footer', type: 'text', fontSize: cfg.typography.footerSize, rect: Rect.fromObject(footerBlock) });
+
+  // Badge elements
+  if (Array.isArray(cfg.badges)) {
+    cfg.badges.forEach((b, i) => {
+      const bw = b.width || Text.measureWidth(b.text || '', b.fontSize || 16, 'Montserrat') + 24;
+      const bh = b.height || (b.fontSize || 16) + 16;
+      elements.push({ id: `badge.${i + 1}`, type: 'badge', rect: Rect.create(b.x || 0, b.y || 0, bw, bh) });
+    });
+  }
+
+  // Logo element (corner-anchor or legacy)
+  const logoResolved = resolveLogoLayer(cfg);
+  if (logoResolved) {
+    elements.push({ id: 'logo', type: 'logo', rect: Rect.create(logoResolved.x || 0, logoResolved.y || 0, logoResolved.width || 0, logoResolved.height || 0) });
+  }
+
+  // --- Primary layout gap analysis ---
+  const headlineTop = headlineBlock.top;
+  const headlineBottom = headlineBlock.bottom;
+  const ctaTop = ctaGeom.rectY;
   const ctaBottom = ctaTop + cfg.layout.ctaHeight;
   const minGap = cfg.layout.minHeadlineCtaGap != null ? cfg.layout.minHeadlineCtaGap : 40;
   const actualGap = ctaTop - headlineBottom;
 
+  // --- Safe-zone analysis ---
+  const zones = SafeZone.getSafeZones(cfg.width, cfg.height, cfg.preset);
+  const safeZoneCheck = SafeZone.checkAll(elements, zones);
+  const mobileWarnings = SafeZone.mobileReadabilityCheck(elements, cfg.width);
+
+  // --- Collision detection ---
+  const collisions = Rect.findCollisions(elements);
+
+  // --- Occupancy metrics ---
+  const occupancyMetrics = Rect.computeOccupancy(elements, canvas);
+
+  // --- Spacing analysis ---
+  const spacingChecks = [];
+  // Headline → subhead gap
+  const hlSubGap = Rect.verticalGap(Rect.fromObject(headlineBlock), Rect.fromObject(subheadBlock));
+  spacingChecks.push({ pair: ['headline', 'subhead'], gap: hlSubGap, min: 24, pass: hlSubGap >= 24 });
+  // Subhead → CTA gap
+  const subCtaGap = Rect.verticalGap(Rect.fromObject(subheadBlock), ctaRect);
+  spacingChecks.push({ pair: ['subhead', 'cta'], gap: subCtaGap, min: 24, pass: subCtaGap >= 24 });
+  // CTA → footer gap
+  const ctaFooterGap = Rect.verticalGap(ctaRect, Rect.fromObject(footerBlock));
+  spacingChecks.push({ pair: ['cta', 'footer'], gap: ctaFooterGap, min: 20, pass: ctaFooterGap >= 20 });
+  // Headline → CTA gap (the big constraint)
+  spacingChecks.push({ pair: ['headline', 'cta'], gap: actualGap, min: minGap, pass: actualGap >= minGap });
+
   return {
-    version: '1.5.1-draft',
+    version: '1.5.1',
     canvas,
+    preset: cfg.preset,
+    personality: cfg.layout.personality,
     designIntent: cfg.designIntent || null,
     constraintPolicy: cfg.constraintPolicy || null,
     primitiveIds: cfg.proofHero ? ['proofHero'] : [],
@@ -834,7 +921,24 @@ function buildLayoutSidecar(cfg, primitiveElements = [], resolvedImageLayers = [
       minHeadlineCtaGap: minGap,
       gapEnforced: actualGap >= minGap
     },
-    elements
+    elements,
+    safeZones: {
+      canvasSafe: zones.canvasSafe,
+      textSafe: zones.textSafe,
+      ctaSafe: zones.ctaSafe,
+      check: safeZoneCheck.summary,
+      violations: safeZoneCheck.violations
+    },
+    collisions,
+    spacing: spacingChecks,
+    occupancy: occupancyMetrics,
+    mobileReadability: mobileWarnings,
+    warnings: [
+      ...safeZoneCheck.violations.filter(v => v.type === 'hard').map(v => `${v.id} violates ${v.zone} safe zone by ${v.severity}px`),
+      ...collisions.map(c => `${c.a} overlaps ${c.b} (${c.intersection.width}x${c.intersection.height}px)`),
+      ...spacingChecks.filter(s => !s.pass).map(s => `${s.pair.join('→')} gap ${s.gap}px < min ${s.min}px`),
+      ...mobileWarnings.map(w => w.message)
+    ]
   };
 }
 
@@ -930,19 +1034,26 @@ async function buildProductLayer(cfg) {
 }
 
 
-function estimateTextBlock({ lines, fontSize, lineStep, x, y, align = 'left', maxChars = 24 }) {
-  const maxLen = Math.max(1, ...lines.map((l) => l.length));
-  const estWidth = Math.round(maxLen * fontSize * 0.58);
-  const estHeight = Math.round(fontSize + ((Math.max(lines.length, 1) - 1) * lineStep));
-  let left = x;
-  if (align === 'center') left = Math.round(x - estWidth / 2);
-  if (align === 'right') left = Math.round(x - estWidth);
-  const top = Math.round(y - fontSize * 0.82);
-  return { left, top, width: estWidth, height: estHeight, right: left + estWidth, bottom: top + estHeight, lines: lines.length, maxChars };
+function estimateTextBlock({ lines, fontSize, lineStep, x, y, align = 'left', maxChars = 24, fontFamily, fontWeight }) {
+  const block = Text.measureBlock({
+    lines, fontSize, fontFamily,
+    lineHeight: lineStep,
+    x, y, align, fontWeight
+  });
+  // Return backward-compatible shape with extra geometry data
+  return {
+    left: block.rect.left, top: block.rect.top,
+    width: block.rect.width, height: block.rect.height,
+    right: block.rect.right, bottom: block.rect.bottom,
+    lines: lines.length, maxChars,
+    _measured: true,
+    _lineRects: block.lineRects,
+    _maxLineWidth: block.maxLineWidth
+  };
 }
 
 function boxInside(inner, outer, pad = 0) {
-  return inner.left >= outer.left + pad && inner.top >= outer.top + pad && inner.right <= outer.right - pad && inner.bottom <= outer.bottom - pad;
+  return Rect.containsWithMargin(Rect.fromObject(outer), Rect.fromObject(inner), pad);
 }
 
 function boxCenter(box) {
@@ -1058,9 +1169,9 @@ function runReview(cfg, meta) {
   const subheadStep = cfg.typography.subheadLineHeight || (cfg.preset === 'linkedin-landscape' ? 34 : Math.round(cfg.typography.subheadSize * 1.22));
   const anchor = isCentered ? 'center' : 'left';
   const textX = isCentered ? Math.round(cfg.width / 2) : cfg.layout.leftX;
-  const headlineBox = estimateTextBlock({ lines: headlineLines, fontSize: cfg.typography.headlineSize, lineStep: headlineStep, x: textX, y: cfg.layout.headlineY, align: anchor, maxChars: cfg.layout.maxHeadlineChars });
-  const subheadBox = estimateTextBlock({ lines: subheadLines, fontSize: cfg.typography.subheadSize, lineStep: subheadStep, x: textX, y: cfg.layout.subheadY, align: anchor, maxChars: cfg.layout.maxSubheadChars });
-  const footerBox = estimateTextBlock({ lines: [cfg.text.footer], fontSize: cfg.typography.footerSize, lineStep: cfg.typography.footerSize, x: textX, y: cfg.layout.footerY, align: anchor, maxChars: 60 });
+  const headlineBox = estimateTextBlock({ lines: headlineLines, fontSize: cfg.typography.headlineSize, lineStep: headlineStep, x: textX, y: cfg.layout.headlineY, align: anchor, maxChars: cfg.layout.maxHeadlineChars, fontFamily: cfg.typography.headlineFontFamily, fontWeight: cfg.typography.headlineWeight });
+  const subheadBox = estimateTextBlock({ lines: subheadLines, fontSize: cfg.typography.subheadSize, lineStep: subheadStep, x: textX, y: cfg.layout.subheadY, align: anchor, maxChars: cfg.layout.maxSubheadChars, fontFamily: cfg.typography.bodyFontFamily });
+  const footerBox = estimateTextBlock({ lines: [cfg.text.footer], fontSize: cfg.typography.footerSize, lineStep: cfg.typography.footerSize, x: textX, y: cfg.layout.footerY, align: anchor, maxChars: 60, fontFamily: cfg.typography.bodyFontFamily, fontWeight: cfg.typography.footerWeight });
   const ctaGeom = getCtaGeometry(cfg);
   const ctaRect = { left: ctaGeom.rectX, top: ctaGeom.rectY, right: ctaGeom.rectX + cfg.layout.ctaWidth, bottom: ctaGeom.rectY + cfg.layout.ctaHeight };
 
