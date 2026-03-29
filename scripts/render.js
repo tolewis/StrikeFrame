@@ -1283,7 +1283,9 @@ async function renderOne(rawConfig) {
   const primitiveOutputs = buildPrimitiveOutputs(cfg, { wrapText, escapeXml, registry: getPrimitiveRegistry() });
   const resolvedPrimitiveImageLayers = [];
   const primitiveElements = [];
+  const activePrimitiveIds = new Set();
   for (const primitiveOutput of primitiveOutputs) {
+    if (primitiveOutput.id) activePrimitiveIds.add(primitiveOutput.id);
     if (primitiveOutput.svg) composites.push({ input: primitiveOutput.svg });
     if (Array.isArray(primitiveOutput.imageLayers)) resolvedPrimitiveImageLayers.push(...primitiveOutput.imageLayers);
     if (Array.isArray(primitiveOutput.elements)) primitiveElements.push(...primitiveOutput.elements);
@@ -1306,7 +1308,10 @@ async function renderOne(rawConfig) {
   const testimonialSvg = buildTestimonialSvg(cfg); if (testimonialSvg) composites.push({ input: testimonialSvg });
   const splitRevealSvg = buildSplitRevealSvg(cfg); if (splitRevealSvg) composites.push({ input: splitRevealSvg });
   const offerFrameSvg = buildOfferFrameSvg(cfg); if (offerFrameSvg) composites.push({ input: offerFrameSvg });
-  const comparisonTableSvg = buildComparisonTableSvg(cfg); if (comparisonTableSvg) composites.push({ input: comparisonTableSvg });
+  // Skip inline builder when primitive handles it
+  if (!activePrimitiveIds.has('comparisonPanel')) {
+    const comparisonTableSvg = buildComparisonTableSvg(cfg); if (comparisonTableSvg) composites.push({ input: comparisonTableSvg });
+  }
   const authorityBarSvg = buildAuthorityBarSvg(cfg); if (authorityBarSvg) composites.push({ input: authorityBarSvg });
   const badgesSvg = buildBadgesSvg(cfg); if (badgesSvg) composites.push({ input: badgesSvg });
   const compositeSvg = buildCompositeSvg(cfg); if (compositeSvg) composites.push({ input: compositeSvg });
