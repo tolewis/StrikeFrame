@@ -33,6 +33,26 @@ ZONE_TOP = 290   # just below 2-line headline
 ZONE_BOTTOM = 900 # just above CTA
 ZONE_HEIGHT = ZONE_BOTTOM - ZONE_TOP  # 610px
 
+# -----------------------------------------------------------------------
+# Real TackleRoom assets
+# -----------------------------------------------------------------------
+HERO_IMAGES = [
+    '/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_8585.png',
+    '/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_8700.png',
+    '/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9117.jpg',
+    '/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/Dolphin_Fish_Hooked.jpg',
+    '/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9109.jpg',
+    '/home/tlewis/Dropbox/Tim/TackleRoom/Creative/brand-lifestyle/tier1-ready/IMG_9098.jpg',
+]
+
+LOGO_PATH = '/home/tlewis/Dropbox/Tim/TackleRoom/Creative/camera-strikeframe/tier1-ready/logo-landscape-1200x300-v2.png'
+
+REVIEW_IMAGES = [
+    '/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review08.png',
+    '/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review11.png',
+    '/home/tlewis/Dropbox/Tim/TackleRoom/Creative/review-proof/tier2-polish/Review03.png',
+]
+
 
 def _center_start(content_height):
     """Return startY that centers content_height in the zone."""
@@ -153,6 +173,11 @@ PROOF_HERO_CONTENT = {
         'maxQuoteLines': 3,
         'starsText': '★★★★★',
         'starsSize': 72,
+        'assets': {
+            'reviewPath': REVIEW_IMAGES[0],
+        },
+        'reviewWidth': 700,
+        'reviewHeight': 200,
         'cta': {
             'text': 'SHOP OFFSHORE TACKLE',
             'width': 420,
@@ -252,9 +277,26 @@ def build_config(primitive_name, variant_name, output_path):
     subhead = prim.get('subhead', '')
     badges = [prim['badge']] if prim.get('badge') else None
 
+    # Cycle through hero images based on variant index for visual variety
+    all_variants = prim['variants']
+    variant_idx = all_variants.index(variant_name) if variant_name in all_variants else 0
+    bg_image = HERO_IMAGES[variant_idx % len(HERO_IMAGES)]
+
     config = {
         'preset': 'social-square',
         'template': 'banner',
+        'backgroundPath': bg_image,
+        'backgroundPosition': 'center',
+        'logoMode': 'white-card-landscape',
+        'logo': {
+            'placement': 'corner-anchor',
+            'corner': 'top-left',
+            'width': 240,
+            'height': 56,
+            'clearSpace': 12,
+            'x': 28,
+            'y': 28
+        },
         'text': {
             'headline': prim['headline'],
             'subhead': subhead,
@@ -262,8 +304,6 @@ def build_config(primitive_name, variant_name, output_path):
             'footer': ''
         },
         'theme': {
-            'gradientStart': '#0b2a40',
-            'gradientEnd': '#1a5f7a',
             # Solid orange CTA — not translucent gray
             'ctaFill': 'rgba(232,93,58,0.95)',
             'ctaStroke': 'none',
@@ -293,13 +333,14 @@ def build_config(primitive_name, variant_name, output_path):
             'subheadY': prim.get('subheadY', 310)
         },
         'overlay': {
-            'leftColor': '8,24,42',
-            'midColor': '8,24,42',
-            'rightColor': '8,24,42',
-            'leftOpacity': 0.45,
-            'midOpacity': 0.35,
-            'rightOpacity': 0.45,
-            'vignetteBottom': 0.15
+            # Darker overlay for text readability on real photos
+            'leftColor': '5,18,30',
+            'midColor': '5,18,30',
+            'rightColor': '5,18,30',
+            'leftOpacity': 0.72,
+            'midOpacity': 0.58,
+            'rightOpacity': 0.72,
+            'vignetteBottom': 0.25
         },
         'output': output_path,
         **content
