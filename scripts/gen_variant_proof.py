@@ -24,12 +24,29 @@ RENDER_JS = os.path.join(SCRIPT_DIR, 'render.js')
 
 # --- Sample content for each primitive ---
 
+# -----------------------------------------------------------------------
+# Content zone: headline bottom (~280px) to CTA top (920px) = 640px
+# Each primitive's content should be vertically centered in this zone.
+# ZONE_TOP and ZONE_BOTTOM define the available area.
+# -----------------------------------------------------------------------
+ZONE_TOP = 290   # just below 2-line headline
+ZONE_BOTTOM = 900 # just above CTA
+ZONE_HEIGHT = ZONE_BOTTOM - ZONE_TOP  # 610px
+
+
+def _center_start(content_height):
+    """Return startY that centers content_height in the zone."""
+    return ZONE_TOP + (ZONE_HEIGHT - content_height) // 2
+
+
+# ComparisonPanel: headers(50) + 5 rows × 100px = 550px content
+_cp_content_h = 50 + 5 * 100
 COMPARISON_PANEL_CONTENT = {
     'comparisonTable': {
         'startX': 72,
-        'startY': 320,
+        'startY': _center_start(_cp_content_h),
         'colWidth': 440,
-        'rowHeight': 80,
+        'rowHeight': 100,
         'headerSize': 22,
         'bodySize': 20,
         'highlightCol': 'right',
@@ -45,6 +62,9 @@ COMPARISON_PANEL_CONTENT = {
     }
 }
 
+# OfferFrame: orig(32) + gap(16) + sale(96) + badge(32) + gap(18) + offer(20) ≈ 220px
+_of_content_h = 220
+_of_center = ZONE_TOP + (ZONE_HEIGHT - _of_content_h) // 2
 OFFER_FRAME_CONTENT = {
     'offerFrame': {
         'originalPrice': '$289.99',
@@ -53,17 +73,19 @@ OFFER_FRAME_CONTENT = {
         'offerText': 'FREE SHIPPING OVER $99',
         'salePriceSize': 96,
         'originalPriceSize': 32,
-        'priceY': 560
+        'priceY': _of_center + 140  # sale price baseline
     }
 }
 
+# BenefitStack: 4 items × 130px spacing = 390px content
+_bs_content_h = 4 * 130
 BENEFIT_STACK_CONTENT = {
     'benefitStack': {
         'startX': 80,
-        'startY': 380,
-        'spacing': 110,
-        'iconSize': 36,
-        'textSize': 28,
+        'startY': _center_start(_bs_content_h),
+        'spacing': 130,
+        'iconSize': 40,
+        'textSize': 30,
         'items': [
             {'icon': 'shield', 'label': '500lb rated hardware'},
             {'icon': 'wave', 'label': 'Built for offshore current'},
@@ -73,24 +95,28 @@ BENEFIT_STACK_CONTENT = {
     }
 }
 
+# Testimonial: quote mark(80) + quote(~150) + gap(40) + stars(36) + gap(24) + name(22) + role(18) ≈ 370px
+_tm_content_h = 370
 TESTIMONIAL_CONTENT = {
     'testimonial': {
         'quote': 'This dredge changed our tournament results completely.',
         'stars': 5,
-        'starSize': 36,
+        'starSize': 40,
         'name': 'Capt. Mike Henderson',
         'role': 'Blue Water Charters, Islamorada',
-        'quoteSize': 40,
-        'quoteMaxChars': 26,
-        'startY': 320
+        'quoteSize': 42,
+        'quoteMaxChars': 24,
+        'startY': _center_start(_tm_content_h)
     }
 }
 
+# SplitReveal: labels(30) + 4 rows × 120px = 510px
+_sr_content_h = 30 + 4 * 120
 SPLIT_REVEAL_CONTENT = {
     'splitReveal': {
-        'startY': 360,
-        'rowHeight': 100,
-        'textSize': 22,
+        'startY': _center_start(_sr_content_h),
+        'rowHeight': 120,
+        'textSize': 24,
         'problemLabel': 'THE PROBLEM',
         'solutionLabel': 'THE FIX',
         'items': [
@@ -102,11 +128,12 @@ SPLIT_REVEAL_CONTENT = {
     }
 }
 
+# AuthorityBar: sits just above CTA
 AUTHORITY_BAR_CONTENT = {
     'authorityBar': {
-        'barY': 820,
-        'barHeight': 40,
-        'textSize': 13,
+        'barY': ZONE_BOTTOM - 50,
+        'barHeight': 44,
+        'textSize': 14,
         'publications': ['TOURNAMENT TESTED', 'CAPTAIN VERIFIED', 'OFFSHORE PROVEN']
     }
 }
@@ -115,11 +142,14 @@ ACTION_HERO_CONTENT = {
     'actionHero': {}  # variant injected below
 }
 
+# ProofHero: quote(~180) + stars(72) + gaps ≈ 350px — push down into zone
+_ph_quote_start = _center_start(350) - 40  # offset for quote mark
 PROOF_HERO_CONTENT = {
     'proofHero': {
         'quote': 'Best offshore tackle supplier I have found. Period.',
         'quoteSize': 58,
         'quoteMaxChars': 22,
+        'quoteY': _ph_quote_start + 100,
         'maxQuoteLines': 3,
         'starsText': '★★★★★',
         'starsSize': 72,
@@ -127,6 +157,10 @@ PROOF_HERO_CONTENT = {
             'text': 'SHOP OFFSHORE TACKLE',
             'width': 420,
             'height': 64,
+            'y': ZONE_BOTTOM - 20,
+            'x': 110,
+            'fill': 'rgba(232,93,58,0.95)',
+            'textColor': '#ffffff'
         }
     }
 }
@@ -183,6 +217,7 @@ PRIMITIVES = {
         'headline': 'WAHOO DON\'T WAIT\nFOR SLOW GEAR',
         'cta': 'SHOP WAHOO GEAR →',
         'subhead': 'High-speed trolling lures, wire rigs, and\ncable leaders built for 40+ knot strikes.',
+        'subheadY': ZONE_TOP + ZONE_HEIGHT // 3,  # upper third of content zone
         'badge': {'text': 'WAHOO SEASON', 'x': 340, 'y': 60, 'fill': 'rgba(232,93,58,0.92)', 'textColor': '#ffffff', 'fontSize': 16, 'width': 200, 'height': 38}
     },
     'proofHero': {
@@ -254,7 +289,8 @@ def build_config(primitive_name, variant_name, output_path):
             'ctaWidth': 380,
             'ctaHeight': 56,
             'ctaRadius': 12,
-            'headlineY': 130
+            'headlineY': 130,
+            'subheadY': prim.get('subheadY', 310)
         },
         'overlay': {
             'leftColor': '8,24,42',
