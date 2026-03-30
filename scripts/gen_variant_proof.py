@@ -246,7 +246,6 @@ PRIMITIVES = {
         'cta': 'SHOP WAHOO GEAR →',
         'subhead': 'High-speed trolling lures, wire rigs, and\ncable leaders built for 40+ knot strikes.',
         'subheadY': ZONE_TOP + ZONE_HEIGHT // 3,  # upper third of content zone
-        'badge': {'text': 'WAHOO SEASON', 'x': 340, 'y': 60, 'fill': 'rgba(232,93,58,0.92)', 'textColor': '#ffffff', 'fontSize': 16, 'width': 200, 'height': 38}
     },
     'proofHero': {
         'configKey': 'proofHero',

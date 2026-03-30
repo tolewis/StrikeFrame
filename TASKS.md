@@ -1,6 +1,7 @@
 # TASKS
 
 ## Done
+- Folded the legacy nested StrikeFrame repo into the main vault repo and removed the stale gitlink/submodule entry (2026-03-27)
 - Added Popeye vision-review integration, calibration dataset wiring, and eval runner
 - Created Dropbox-backed `social-media-kb` parent dataset and registered `AdExamples-kb` as external benchmark seed
 - Validated calibration improvement from 1/4 to 4/4 expectations met on the benchmark eval run
@@ -26,6 +27,19 @@
 - Updated SKILL.md with full capability reference
 - Produced 50 TOF lifestyle ads — pushed to Dropbox 2026-03-12
 - Produced 63 product explainer cards (100% pass QA) — pushed to Dropbox 2026-03-12
+
+## Current — v1.5.1 Engine (03-29)
+- [x] Phase 1: Geometry core (rect model, text measurement, safe zones, layout sidecar)
+- [x] Phase 2: Primitive framework (registry, detect/resolve/build lifecycle, variant system)
+- [x] Phase 3: Extract all 7 inline templates into primitives with structural variants
+- [x] Phase 4: Critic loop (5-dimension scoring, .critic.json sidecar)
+- [x] Phase 5: Variant proof generator + proof sheet assembler (25/25 passing)
+- [x] Batch generators updated with variant cycling (comparisonPanel, proofHero, actionHero, priceAnchor)
+- [x] Benchmark calibration against LMNT ads (social-media-kb)
+- [ ] Product image compositing into primitives (every LMNT benchmark has product visible)
+- [ ] ProofHero CTA safe-zone edge case (score stuck at 80)
+- [ ] Production lane reruns with variant diversity
+- [ ] Critic threshold tuning against Tim's taste calibration
 
 ## Future backlog
 - Use calibration runner against external benchmark manifest and tune Popeye reviewer until good seeds pass/warn and bad diagnostics fail/reject consistently
